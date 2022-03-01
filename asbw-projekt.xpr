@@ -13,13 +13,13 @@
                                     <String>text/any</String>
                                 </field>
                                 <field name="unparsedInsertString">
-                                    <String>&lt;change who="MAM" when="${date(yyyy-MM-dd)}">Durchsicht&lt;/change></String>
+                                    <String>&lt;change who="LU" when="${date(yyyy-MM-dd)}">Durchsicht&lt;/change></String>
                                 </field>
                                 <field name="descriptionString">
                                     <String></String>
                                 </field>
                                 <field name="renderString">
-                                    <String>&lt;change></String>
+                                    <String>&lt;change> LU</String>
                                 </field>
                                 <field name="enabled">
                                     <Boolean>true</Boolean>
@@ -33,13 +33,13 @@
                                     <String>text/any</String>
                                 </field>
                                 <field name="unparsedInsertString">
-                                    <String>»«</String>
+                                    <String>&lt;change who="MAM" when="${date(yyyy-MM-dd)}">Durchsicht&lt;/change></String>
                                 </field>
                                 <field name="descriptionString">
                                     <String></String>
                                 </field>
                                 <field name="renderString">
-                                    <String>Anführungszeichen</String>
+                                    <String>&lt;change> MAM</String>
                                 </field>
                                 <field name="enabled">
                                     <Boolean>true</Boolean>
@@ -203,26 +203,6 @@
                                     <String>text/any</String>
                                 </field>
                                 <field name="unparsedInsertString">
-                                    <String>–</String>
-                                </field>
-                                <field name="descriptionString">
-                                    <String></String>
-                                </field>
-                                <field name="renderString">
-                                    <String>Halbgeviertstrich</String>
-                                </field>
-                                <field name="enabled">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="accelerator">
-                                    <null/>
-                                </field>
-                            </codeTemplateItem>
-                            <codeTemplateItem>
-                                <field name="contentType">
-                                    <String>text/any</String>
-                                </field>
-                                <field name="unparsedInsertString">
                                     <String>&lt;change who="MAM" when="${date(yyyy-MM-dd)}">Index check&lt;/change></String>
                                 </field>
                                 <field name="descriptionString">
@@ -283,13 +263,13 @@
                                     <String>text/any</String>
                                 </field>
                                 <field name="unparsedInsertString">
-                                    <String>&lt;space unit="chars" quantity="1"/></String>
+                                    <String>&amp;#160;</String>
                                 </field>
                                 <field name="descriptionString">
                                     <String></String>
                                 </field>
                                 <field name="renderString">
-                                    <String>Leerzeichen (space)</String>
+                                    <String>Leerzeichen (Fix)</String>
                                 </field>
                                 <field name="enabled">
                                     <Boolean>true</Boolean>
@@ -303,13 +283,13 @@
                                     <String>text/any</String>
                                 </field>
                                 <field name="unparsedInsertString">
-                                    <String>&amp;#160;</String>
+                                    <String>&lt;space unit="chars" quantity="1"/></String>
                                 </field>
                                 <field name="descriptionString">
                                     <String></String>
                                 </field>
                                 <field name="renderString">
-                                    <String>Leerzeichen, fixes</String>
+                                    <String>Leerzeichen (space)</String>
                                 </field>
                                 <field name="enabled">
                                     <Boolean>true</Boolean>
@@ -388,6 +368,26 @@
                                     <String>text/any</String>
                                 </field>
                                 <field name="unparsedInsertString">
+                                    <String>&lt;rs type="work" ref="#33243">Tagebuch&lt;/rs></String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>Tagebuch</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/any</String>
+                                </field>
+                                <field name="unparsedInsertString">
                                     <String>&lt;anchor type="textConst" xml:id="T_${cfn}-"/>${selection}&lt;note type='textConst' xml:id="T_${cfn}-h">&lt;/note></String>
                                 </field>
                                 <field name="descriptionString">
@@ -435,50 +435,6 @@
                                 </field>
                                 <field name="renderString">
                                     <String>Wien</String>
-                                </field>
-                                <field name="enabled">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="accelerator">
-                                    <null/>
-                                </field>
-                            </codeTemplateItem>
-                            <codeTemplateItem>
-                                <field name="contentType">
-                                    <String>text/any</String>
-                                </field>
-                                <field name="unparsedInsertString">
-                                    <String>&lt;incident type="receiver">
-    &lt;desc>mit rotem Buntstift zwei Unterstreichungen&lt;/desc>
-&lt;/incident></String>
-                                </field>
-                                <field name="descriptionString">
-                                    <String></String>
-                                </field>
-                                <field name="renderString">
-                                    <String>incident-receiver-unterstreichungen</String>
-                                </field>
-                                <field name="enabled">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="accelerator">
-                                    <null/>
-                                </field>
-                            </codeTemplateItem>
-                            <codeTemplateItem>
-                                <field name="contentType">
-                                    <String>text/any</String>
-                                </field>
-                                <field name="unparsedInsertString">
-                                    <String>&lt;incident type="archival">
-    &lt;desc>mit Bleistift von &lt;rs type="person" ref="#22728">Frieda Pollak&lt;/rs> (?) mit dem Buchstaben »&lt;quote>A&lt;/quote>« (Abgeschrieben/Abschrift) gekennzeichnet&lt;/desc>
-&lt;/incident></String>
-                                </field>
-                                <field name="descriptionString">
-                                    <String>für mit A für Abschrift versehene Briefstücke</String>
-                                </field>
-                                <field name="renderString">
-                                    <String>»A«</String>
                                 </field>
                                 <field name="enabled">
                                     <Boolean>true</Boolean>
