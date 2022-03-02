@@ -6,10 +6,14 @@
    <xsl:strip-space elements="*"/>
    <!-- subst root persName address body div sourceDesc physDesc witList msIdentifier fileDesc teiHeader correspDesc correspAction date witnessdate -->
    <!-- Globale Parameter -->
-   <xsl:param name="persons" select="document('../indices/listperson.xml')"/>
-   <xsl:param name="works" select="document('../indices/listwork.xml')"/>
-   <xsl:param name="orgs" select="document('../indices/listorg.xml')"/>
-   <xsl:param name="places" select="document('../indices/listplace.xml')"/>
+   <xsl:param name="persons"
+      select="document('/Users/oldfiche/Documents/schnitzler-git/PMB-csv_to_TEI-list/personen/listperson-pmb.xml')"/>
+   <xsl:param name="works"
+      select="document('/Users/oldfiche/Documents/schnitzler-git/PMB-csv_to_TEI-list/werke/listwork-pmb.xml')"/>
+   <xsl:param name="orgs"
+      select="document('/Users/oldfiche/Documents/schnitzler-git/PMB-csv_to_TEI-list/institution/listorg-pmb.xml')"/>
+   <xsl:param name="places"
+      select="document('/Users/oldfiche/Documents/schnitzler-git/PMB-csv_to_TEI-list/orte/listplace-pmb.xml')"/>
    <xsl:param name="sigle" select="document('../indices/siglen.xml')"/>
    <xsl:key name="person-lookup" match="tei:person" use="replace(@xml:id, 'pmb', '#')"/>
    <xsl:key name="work-lookup" match="tei:bibl" use="replace(@xml:id, 'pmb', '#')"/>
@@ -74,9 +78,9 @@
          </xsl:when>
          <xsl:otherwise>
             <xsl:value-of select="number($iso-day)"/>
-            <xsl:text>.&#160;</xsl:text>
+            <xsl:text>.&#8239;</xsl:text>
             <xsl:value-of select="number($iso-month)"/>
-            <xsl:text>.&#160;</xsl:text>
+            <xsl:text>.&#8239;</xsl:text>
             <xsl:value-of select="number($iso-year)"/>
          </xsl:otherwise>
       </xsl:choose>
@@ -100,12 +104,12 @@
                   test="starts-with($kGeburtsTodesDatum, '-') and string-length($kGeburtsTodesDatum) &lt; 6">
                   <xsl:value-of
                      select="foo:date-iso(normalize-space(substring(concat($kGeburtsTodesDatum, '-00-00'), 2)))"/>
-                  <xsl:text> v.&#160;u.&#160;Z.</xsl:text>
+                  <xsl:text> v.&#8239;u.&#8239;Z.</xsl:text>
                </xsl:when>
                <xsl:when test="starts-with($kGeburtsTodesDatum, '-')">
                   <xsl:value-of
                      select="foo:date-iso(normalize-space(substring(concat($kGeburtsTodesDatum, '-00-00'), 2)))"/>
-                  <xsl:text> v.&#160;u.&#160;Z.</xsl:text>
+                  <xsl:text> v.&#8239;u.&#8239;Z.</xsl:text>
                </xsl:when>
                <xsl:when test="(string-length($kGeburtsTodesDatum) &lt; 5)">
                   <xsl:value-of
@@ -134,26 +138,38 @@
       <xsl:variable name="kforename" as="xs:string?"
          select="normalize-space($indexkey/tei:persName/tei:forename)"/>
       <xsl:variable name="kZusatz" as="xs:string?" select="normalize-space($indexkey/Zusatz)"/>
-      <xsl:variable name="kBeruf" as="xs:string?" select="normalize-space($indexkey/Beruf)"/>
+      <xsl:variable name="kBeruf" as="xs:boolean">
+         <xsl:choose>
+            <xsl:when
+               test="$indexkey/tei:occupation[1] and not(starts-with($indexkey/tei:persName/tei:surname, '??'))">
+               <xsl:value-of select="true()"/>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="false()"/>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:variable>
       <xsl:variable name="kTodesort" as="xs:string?">
          <xsl:choose>
-            <xsl:when test="$indexkey/tei:death/tei:placeName[not(@type)]">
+            <xsl:when test="$indexkey/tei:death/tei:placeName[not(@type)]/tei:settlement">
                <xsl:value-of
-                  select="fn:normalize-space($indexkey/tei:death/tei:placeName[not(@type)])"/>
+                  select="fn:normalize-space($indexkey/tei:death/tei:placeName[not(@type)]/tei:settlement)"
+               />
             </xsl:when>
             <xsl:when test="$indexkey/tei:death/tei:placeName[@type = 'deportation']">
                <xsl:value-of
-                  select="concat('deportiert ', fn:normalize-space($indexkey/tei:death/tei:placeName))"
+                  select="concat('deportiert ', fn:normalize-space($indexkey/tei:death/tei:placeName/tei:settlement))"
                />
             </xsl:when>
             <xsl:when test="$indexkey/tei:death/tei:placeName[@type = 'burial']">
                <xsl:value-of
-                  select="concat('beerdigt ', fn:normalize-space($indexkey/tei:death/tei:placeName))"
+                  select="concat('beerdigt ', fn:normalize-space($indexkey/tei:death/tei:placeName/tei:settlement))"
                />
             </xsl:when>
          </xsl:choose>
       </xsl:variable>
-      <xsl:variable name="kGeburtsort" as="xs:string?" select="$indexkey/tei:birth/tei:placeName"/>
+      <xsl:variable name="kGeburtsort" as="xs:string?"
+         select="$indexkey/tei:birth/tei:placeName/tei:settlement"/>
       <xsl:variable name="birth_day" as="xs:string?">
          <xsl:choose>
             <xsl:when test="string-length($kGeburtsort) &gt; 0">
@@ -165,8 +181,14 @@
             </xsl:otherwise>
          </xsl:choose>
       </xsl:variable>
+      <xsl:variable name="ebenda" as="xs:boolean"
+         select="$kGeburtsort = $kTodesort and fn:string-length($kGeburtsort) &gt; 1"/>
       <xsl:variable name="death_day" as="xs:string?">
          <xsl:choose>
+            <xsl:when test="$ebenda">
+               <xsl:value-of select="concat($indexkey[1]/tei:death[1]/tei:date[1]/text(), ' ebd.')"
+               />
+            </xsl:when>
             <xsl:when test="string-length($kTodesort) &gt; 0">
                <xsl:value-of
                   select="concat($indexkey[1]/tei:death[1]/tei:date[1]/text(), ' ', $kTodesort)"/>
@@ -193,21 +215,6 @@
          </xsl:choose>
       </xsl:variable>
       <xsl:choose>
-         <xsl:when test="normalize-space($kName) = '??'">
-            <xsl:choose>
-               <xsl:when test="substring($kBeruf, 1, 3) = 'A00'">
-                  <xsl:value-of select="foo:person-fuer-index(substring-before($kBeruf, ' '))"/>
-                  <xsl:text>!0</xsl:text>
-                  <xsl:value-of select="foo:index-sortiert(substring-after($kBeruf, ' '), 'sc')"/>
-               </xsl:when>
-               <xsl:otherwise>
-                  <xsl:text>+@Nicht ermittelte Personen</xsl:text>
-                  <xsl:if test="not($kBeruf = '')">
-                     <xsl:value-of select="foo:index-sortiert($kBeruf, 'sc')"/>
-                  </xsl:if>
-               </xsl:otherwise>
-            </xsl:choose>
-         </xsl:when>
          <xsl:when test="not($kforename = '') and not($kName = '')">
             <xsl:value-of
                select="foo:umlaute-entfernen(concat($kName, ', ', $kforename, ' ', $lebensdaten))"/>
@@ -231,7 +238,7 @@
             <xsl:text>}</xsl:text>
          </xsl:when>
          <xsl:otherwise>
-            <xsl:text>\textcolor{red}{XXXX INDEXFEHLER}</xsl:text>
+            <xsl:text>\textcolor{red}{\textsuperscript{XXXX indx}}</xsl:text>
          </xsl:otherwise>
       </xsl:choose>
       <xsl:if test="not($kZusatz = '')">
@@ -308,9 +315,18 @@
             </xsl:choose>
          </xsl:otherwise>
       </xsl:choose>-->
-      <xsl:if test="(not($kBeruf = '') or empty($kBeruf)) and not($kName = '??')">
+      <xsl:if test="$kBeruf and not($kName = '??')">
          <xsl:text>, \emph{</xsl:text>
-         <xsl:value-of select="normalize-space($kBeruf)"/>
+         <xsl:for-each select="$indexkey/tei:occupation">
+            <xsl:if test="fn:position() &lt; 4">
+               <!-- Nur drei Berufe aufnehmen -->
+               <xsl:value-of select="normalize-space(.)"/>
+               <xsl:if test="not(fn:position() = last()) and not(fn:position() = 3)">
+                  <!-- 2. Teil von nur drei Berufe -->
+                  <xsl:text>, </xsl:text>
+               </xsl:if>
+            </xsl:if>
+         </xsl:for-each>
          <xsl:text>}</xsl:text>
          <xsl:text/>
       </xsl:if>
@@ -464,7 +480,13 @@
          </xsl:when>
          <xsl:when test="$work-entry/tei:author[@role = 'author']">
             <xsl:variable name="author-ref"
-               select="replace($work-entry/tei:author[@role = 'author'][$author-zaehler]/@ref, 'pmb', '#')"/>
+               select="replace($work-entry/tei:author[@role = 'author'][$author-zaehler]/tei:idno[@type = 'pmb'], 'pmb', '#')"/>
+            <xsl:value-of select="foo:person-in-index($author-ref, $endung, false())"/>
+            <xsl:text>!</xsl:text>
+         </xsl:when>
+         <xsl:when test="$work-entry/tei:author[@role = 'abbreviated-name']">
+            <xsl:variable name="author-ref"
+               select="replace($work-entry/tei:author[@role = 'abbreviated-name'][$author-zaehler]/tei:idno[@type = 'pmb'], 'pmb', '#')"/>
             <xsl:value-of select="foo:person-in-index($author-ref, $endung, false())"/>
             <xsl:text>!</xsl:text>
          </xsl:when>
@@ -554,7 +576,14 @@
                   select="normalize-space(foo:date-translate($work-entry/Erscheinungsdatum))"/>
             </xsl:if>
             <xsl:value-of select="($work-entry/Typ)"/>
-            <xsl:text>@\strich\emph{</xsl:text>
+            <xsl:choose>
+               <xsl:when test="$work-entry/tei:author and not($author-zaehler = 0)">
+                  <xsl:text>@\strich\emph{</xsl:text>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:text>@\emph{</xsl:text>
+               </xsl:otherwise>
+            </xsl:choose>
             <xsl:choose>
                <xsl:when
                   test="$work-entry/tei:author/@xml:id = 'A002003' and contains($work-entry/tei:title, 'O. V.:')">
@@ -584,7 +613,7 @@
       <xsl:variable name="typ" select="$org-entry/tei:desc[1]/tei:gloss[1]"/>
       <xsl:choose>
          <xsl:when test="string-length($org-entry/tei:orgName[1]) = 0">
-            <xsl:text>\orgindex{XXXX ORGangabe fehlt|pw}</xsl:text>
+            <xsl:text>XXXX ORGangabe fehlt</xsl:text>
          </xsl:when>
          <xsl:otherwise>
             <xsl:choose>
@@ -824,9 +853,9 @@
          <xsl:when
             test="number(substring-before($date-string, '.')) = number(substring-before($date-string, '.')) and number(substring-before($monatjahr, '.')) = number(substring-before($monatjahr, '.')) and number($jahr) = number($jahr)">
             <xsl:value-of select="substring-before($date-string, '.')"/>
-            <xsl:text>.&#160;</xsl:text>
+            <xsl:text>.&#8239;</xsl:text>
             <xsl:value-of select="substring-before($monatjahr, '.')"/>
-            <xsl:text>.&#160;</xsl:text>
+            <xsl:text>.&#8239;</xsl:text>
             <xsl:value-of select="$jahr"/>
          </xsl:when>
          <xsl:otherwise>
@@ -837,15 +866,15 @@
                   <xsl:choose>
                      <xsl:when
                         test="number(substring($date-string, $counter + 1, 1)) = number(substring($date-string, $counter + 1, 1))">
-                        <xsl:text>&#160;</xsl:text>
+                        <xsl:text>&#8239;</xsl:text>
                      </xsl:when>
                      <xsl:when
                         test="substring($date-string, $counter + 1, 1) = '[' and number(substring($date-string, $counter + 2, 1)) = number(substring($date-string, $counter + 2, 1))">
-                        <xsl:text>&#160;</xsl:text>
+                        <xsl:text>&#8239;</xsl:text>
                      </xsl:when>
                      <xsl:when
                         test="string-length(translate(substring($date-string, $counter + 1, 1), $roman, '')) = 0 and string-length(translate(substring($date-string, $counter + 2, 1), $romanzwo, '')) = 0">
-                        <xsl:text>&#160;</xsl:text>
+                        <xsl:text>&#8239;</xsl:text>
                      </xsl:when>
                      <xsl:otherwise>
                         <xsl:value-of select="substring($date-string, $counter, 1)"/>
@@ -858,15 +887,15 @@
                   <xsl:choose>
                      <xsl:when
                         test="number(substring($date-string, $counter + 1, 1)) = number(substring($date-string, $counter + 1, 1))">
-                        <xsl:text>&#160;</xsl:text>
+                        <xsl:text>&#8239;</xsl:text>
                      </xsl:when>
                      <xsl:when
                         test="substring($date-string, $counter + 1, 1) = '[' and number(substring($date-string, $counter + 2, 1)) = number(substring($date-string, $counter + 2, 1))">
-                        <xsl:text>&#160;</xsl:text>
+                        <xsl:text>&#8239;</xsl:text>
                      </xsl:when>
                      <xsl:when
                         test="string-length(translate(substring($date-string, $counter + 1, 1), $roman, '')) = 0 and string-length(translate(substring($date-string, $counter + 2, 1), $romanzwo, '')) = 0">
-                        <xsl:text>&#160;</xsl:text>
+                        <xsl:text>&#8239;</xsl:text>
                      </xsl:when>
                      <xsl:otherwise>
                         <xsl:value-of select="substring($date-string, $counter, 1)"/>
@@ -879,11 +908,11 @@
                   <xsl:choose>
                      <xsl:when
                         test="number(substring($date-string, $counter + 1, 1)) = number(substring($date-string, $counter + 1, 1))">
-                        <xsl:text>&#160;</xsl:text>
+                        <xsl:text>&#8239;</xsl:text>
                      </xsl:when>
                      <xsl:when
                         test="substring($date-string, $counter + 1, 1) = '[' and number(substring($date-string, $counter + 2, 1)) = number(substring($date-string, $counter + 2, 1))">
-                        <xsl:text>&#160;</xsl:text>
+                        <xsl:text>&#8239;</xsl:text>
                      </xsl:when>
                      <xsl:otherwise>
                         <xsl:value-of select="substring($date-string, $counter, 1)"/>
@@ -966,12 +995,15 @@
          <xsl:apply-templates/>
       </root>
    </xsl:template>
-   <xsl:template match="TEI[starts-with(@id, 'E')]">
+   <xsl:template match="TEI[starts-with(@id, 'E_')]">
       <root>
          <xsl:text>\addchap{</xsl:text>
          <xsl:value-of
             select="normalize-space(teiHeader[1]/fileDesc[1]/titleStmt[1]/title[@level = 'a'])"/>
          <xsl:text>}</xsl:text>
+         <xsl:text>\lohead{\textsc{</xsl:text>
+         <xsl:value-of select="descendant::titleStmt/title[@level = 'a']/fn:normalize-space(.)"/>
+         <xsl:text>}}</xsl:text>
          <xsl:text>\mylabel{</xsl:text>
          <xsl:value-of select="concat(foo:umlaute-entfernen(@id), 'v')"/>
          <xsl:text>}</xsl:text>
@@ -979,91 +1011,71 @@
          <xsl:text>\mylabel{</xsl:text>
          <xsl:value-of select="concat(foo:umlaute-entfernen(@id), 'h')"/>
          <xsl:text>}</xsl:text>
-         <xsl:text>\footnotesize{}\vspace{0.4em}</xsl:text>
-         <xsl:choose>
-            <xsl:when
-               test="descendant::revisionDesc[@status = 'proposed'] and count(descendant::revisionDesc/change[contains(text(), 'Index check')]) = 0">
-               <xsl:text>\begin{anhang}</xsl:text>
-               <xsl:apply-templates select="teiHeader"/>
-               <xsl:text>\subsection*{Index}</xsl:text>
-               <xsl:value-of
-                  select="count(descendant::revisionDesc/change[contains(text(), 'Index check')])"/>
-               <xsl:text>\doendnotes{B}</xsl:text>
-               <xsl:text>\end{anhang}</xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-               <xsl:apply-templates select="teiHeader"/>
-               <!--  <xsl:text>\doendnotes{B}</xsl:text>-->
-            </xsl:otherwise>
-         </xsl:choose>
-      </root>
+         <xsl:text>\vspace{0.4em}</xsl:text>
+         </root>
    </xsl:template>
-   <xsl:template match="TEI">
+   <xsl:template match="TEI[not(starts-with(@id, 'E_'))]">
       <xsl:variable name="jahr-davor" as="xs:string"
          select="substring(preceding-sibling::TEI[1]/@when, 1, 4)"/>
-      <xsl:if test="(@bw != preceding-sibling::TEI[1]/@bw) or position() = 1">
-         <xsl:text>\addpart[</xsl:text>
-         <xsl:value-of
-            select="concat(key('person-lookup', (@bw), $persons)/forename, ' ', key('person-lookup', (@bw), $persons)/tei:persName/tei:surname)"/>
-         <xsl:text> (</xsl:text>
-         <xsl:value-of select="count(following-sibling::TEI[@bw = current()/@bw]) + 1"/>
-         <xsl:text> \textsuperscript{Von AS </xsl:text>
-         <xsl:value-of
-            select="count(parent::root/TEI[@bw = current()/@bw and descendant::correspDesc/correspAction[@type = 'sent']/persName/@ref = '#2121'])"/>
-         <xsl:text>}</xsl:text>
-         <xsl:text>)]{</xsl:text>
-         <xsl:value-of
-            select="concat(key('person-lookup', (@bw), $persons)/forename, ' ', key('person-lookup', (@bw), $persons)/tei:persName/tei:surname)"/>
-         <xsl:text>}\ihead{}</xsl:text>
-      </xsl:if>
-      <xsl:variable name="correspAction-date"
-         select="descendant::correspDesc/correspAction[@type = 'sent']/date" as="node()"/>
-      <xsl:variable name="dokument-id">
+      <xsl:variable name="correspAction-date">
+         <!-- Datum für die Sortierung -->
          <xsl:choose>
-            <xsl:when test="descendant::correspDesc">
-               <xsl:variable name="n" as="xs:string">
-                  <xsl:choose>
-                     <xsl:when test="string-length($correspAction-date/@n) = 1">
-                        <xsl:value-of select="concat('0', $correspAction-date/@n)"/>
-                     </xsl:when>
-                     <xsl:otherwise>
-                        <xsl:value-of select="$correspAction-date/@n"/>
-                     </xsl:otherwise>
-                  </xsl:choose>
-               </xsl:variable>
-               <xsl:variable name="when" as="xs:string">
-                  <xsl:variable name="whenNotBeforeNotAfter">
-                     <xsl:choose>
-                        <xsl:when test="$correspAction-date/@when">
-                           <xsl:value-of select="$correspAction-date/@when"/>
-                        </xsl:when>
-                        <xsl:when test="$correspAction-date/@notBefore">
-                           <xsl:value-of select="$correspAction-date/@notBefore"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                           <xsl:value-of select="$correspAction-date/@notAfter"/>
-                        </xsl:otherwise>
-                     </xsl:choose>
-                  </xsl:variable>
-                  <xsl:value-of
-                     select="concat(substring($whenNotBeforeNotAfter, 1, 4), '-', substring($whenNotBeforeNotAfter, 5, 2), '-', substring($whenNotBeforeNotAfter, 7, 8))"
-                  />
-               </xsl:variable>
-               <xsl:value-of select="concat('L', $when, '_', $n)"/>
+            <xsl:when test="descendant::correspDesc/correspAction[@type = 'sent']">
+               <xsl:variable name="correspDate"
+                  select="descendant::correspDesc/correspAction[@type = 'sent']/date"/>
+               <xsl:choose>
+                  <xsl:when test="@when">
+                     <xsl:value-of select="@when"/>
+                  </xsl:when>
+                  <xsl:when test="@from">
+                     <xsl:value-of select="@from"/>
+                  </xsl:when>
+                  <xsl:when test="@notBefore">
+                     <xsl:value-of select="@notBefore"/>
+                  </xsl:when>
+                  <xsl:when test="@to">
+                     <xsl:value-of select="@to"/>
+                  </xsl:when>
+                  <xsl:when test="@notAfter">
+                     <xsl:value-of select="@notAfter"/>
+                  </xsl:when>
+                  <xsl:otherwise>
+                     <xsl:text>XXXX Datumsproblem in correspDesc</xsl:text>
+                  </xsl:otherwise>
+               </xsl:choose>
+            </xsl:when>
+            <xsl:when test="descendant::sourceDesc[1]/listWit/witness">
+               <xsl:choose>
+                  <xsl:when test="descendant::sourceDesc[1]/listWit/witness//date/@when">
+                     <xsl:value-of select="descendant::sourceDesc[1]/listWit/witness//date/@when"/>
+                  </xsl:when>
+                  <xsl:otherwise>
+                     <xsl:text>XXXX Datumsproblem beim Archivzeugen</xsl:text>
+                  </xsl:otherwise>
+               </xsl:choose>
+            </xsl:when>
+            <xsl:when test="descendant::sourceDesc[1]/listBibl[1]//origDate[1]/@when">
+               <xsl:value-of select="descendant::sourceDesc[1]/listBibl[1]//origDate[1]/@when"/>
+            </xsl:when>
+            <xsl:when test="descendant::sourceDesc[1]/listBibl[1]/biblStruct[1]/date/@when">
+               <xsl:value-of select="descendant::sourceDesc[1]/listBibl[1]/biblStruct[1]/date/@when"
+               />
             </xsl:when>
             <xsl:otherwise>
-               <xsl:value-of select="@xml:id"/>
+               <xsl:text>XXXX Datumsproblem </xsl:text>
             </xsl:otherwise>
          </xsl:choose>
       </xsl:variable>
+      <xsl:variable name="dokument-id" select="@id"/>
       <xsl:if test="substring(@when, 1, 4) != $jahr-davor">
-         <xsl:text>\leavevmode\addchap{</xsl:text>
+         <xsl:text>\leavevmode\addchap*{</xsl:text>
          <xsl:value-of select="substring(@when, 1, 4)"/>
          <xsl:text>}
       </xsl:text>
       </xsl:if>
       <xsl:choose>
-         <xsl:when test="starts-with(@id, 'E')">
+         <xsl:when test="starts-with($dokument-id, 'E_')">
+            <!-- Herausgeber*innentext -->
             <xsl:text>\leavevmode\addchap{</xsl:text>
             <xsl:value-of
                select="normalize-space(teiHeader[1]/fileDesc[1]/titleStmt[1]/title[@level = 'a'])"/>
@@ -1075,15 +1087,14 @@
             <xsl:value-of
                select="foo:sectionInToc(teiHeader/fileDesc/titleStmt/title[@level = 'a'], 0, count(contains(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')))"/>
             <xsl:text>]{</xsl:text>
-            <xsl:value-of select="@id"/>
-            <xsl:text> </xsl:text>
-            <xsl:value-of
-               select="substring-before(teiHeader/fileDesc/titleStmt/title[@level = 'a'], tokenize(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')[last()])"/>
-            <xsl:value-of
-               select="foo:date-translate(tokenize(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')[last()])"/>
-            <xsl:if test="@short = 'true()'">
-               <xsl:text>\kuerzung{}</xsl:text>
-            </xsl:if>
+            <xsl:value-of select="$dokument-id"/>
+            <!-- HIER DER TITEL FÜR DIE ÜBERSCHRIFT AUSKOMMENTIERT 
+                    <xsl:value-of
+                     select="substring-before(teiHeader/fileDesc/titleStmt/title[@level = 'a'], tokenize(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')[last()])"/>
+                  <xsl:value-of
+                     select="foo:date-translate(tokenize(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')[last()])"
+                  />-->
+            <!-- Hier Entscheidung, ob Unveröffentlicht seitlich in der Marginalspalte steht -->
             <xsl:text>}</xsl:text>
          </xsl:otherwise>
       </xsl:choose>
@@ -1286,60 +1297,161 @@
       <xsl:apply-templates select="incident[@type = 'additional-information']"/>
       <xsl:apply-templates select="incident[@type = 'editorial']"/>
    </xsl:template>
-   <xsl:template match="incident/desc">
-      <xsl:variable name="typ" select="parent::incident/@type"/>
-      <xsl:variable name="anzahl" select="count(ancestor::additions/child::incident[@type = $typ])"/>
-      <xsl:variable name="posizion"
-         select="count(parent::incident/preceding-sibling::incident[@type = $typ])"/>
-      <xsl:variable name="art" as="xs:string">
-         <xsl:choose>
-            <xsl:when test="$typ = 'supplement' and $anzahl = 1">
-               <xsl:text>Beilage</xsl:text>
-            </xsl:when>
-            <xsl:when test="$typ = 'supplement'">
-               <xsl:text>Beilagen</xsl:text>
-            </xsl:when>
-            <xsl:when test="$typ = 'postal'">
-               <xsl:text>Versand</xsl:text>
-            </xsl:when>
-            <xsl:when test="$typ = 'receiver'">
-               <xsl:value-of
-                  select="substring-before(ancestor::teiHeader/descendant::correspDesc/correspAction[@type = 'received']/persName[1], ',')"
-               />
-            </xsl:when>
-            <xsl:when test="$typ = 'archival'">
-               <xsl:text>Ordnung</xsl:text>
-            </xsl:when>
-            <xsl:when test="$typ = 'additional-information'">
-               <xsl:text>Zusatz</xsl:text>
-            </xsl:when>
-            <xsl:when test="$typ = 'editorial' and $anzahl = 1">
-               <xsl:text>Editorischer Hinweis</xsl:text>
-            </xsl:when>
-            <xsl:when test="$typ = 'editorial'">
-               <xsl:text>Editorische Hinweise</xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-               <xsl:text>SEX</xsl:text>
-            </xsl:otherwise>
-         </xsl:choose>
-      </xsl:variable>
+   <xsl:template match="incident[@type = 'supplement']/desc">
+      <xsl:variable name="poschitzion"
+         select="count(parent::incident/preceding-sibling::incident[@type = 'supplement'])"/>
       <xsl:choose>
-         <xsl:when test="$posizion = 0">
-            <xsl:text>\newline{}</xsl:text>
-            <xsl:value-of select="$art"/>
-            <xsl:text>: </xsl:text>
-            <xsl:if test="$anzahl &gt; 1">
-               <xsl:text>1) </xsl:text>
-            </xsl:if>
-            <xsl:apply-templates/>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>\hspace{1em}</xsl:text>
-            <xsl:value-of select="$posizion + 1"/>
+         <xsl:when test="$poschitzion &gt; 0">
+            <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
             <xsl:apply-templates/>
+         </xsl:when>
+         <xsl:when
+            test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'supplement'])">
+            <xsl:text>\newline{}Beilage: </xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> </xsl:text>
+         </xsl:when>
+         <xsl:when
+            test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'supplement']">
+            <xsl:text>\newline{}Beilagen: </xsl:text>
+            <xsl:value-of select="$poschitzion + 1"/>
+            <xsl:text>)&#160;</xsl:text>
+            <xsl:apply-templates/>
+         <xsl:text> </xsl:text>
+         </xsl:when>
+         </xsl:choose>
+   </xsl:template>
+   <xsl:template match="desc[parent::incident[@type = 'postal']]">
+      <xsl:variable name="poschitzion"
+         select="count(parent::incident/preceding-sibling::incident[@type = 'postal'])"/>
+      <xsl:choose>
+         <xsl:when test="$poschitzion &gt; 0">
+            <xsl:value-of select="$poschitzion + 1"/>
+            <xsl:text>)&#160;</xsl:text>
+            <xsl:apply-templates/>
+         </xsl:when>
+         <xsl:when
+            test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'postal'])">
+            <xsl:text>\newline{}Versand: </xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> </xsl:text>
+         </xsl:when>
+         <xsl:when
+            test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'postal']">
+            <xsl:text>\newline{}Versand: </xsl:text>
+            <xsl:value-of select="$poschitzion + 1"/>
+            <xsl:text>)&#160;</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> </xsl:text>
+         </xsl:when>
+      </xsl:choose>
+   </xsl:template>
+   <xsl:template match="incident[@type = 'receiver']/desc">
+      <xsl:variable name="receiver"
+         select="substring-before(ancestor::teiHeader//correspDesc/correspAction[@type = 'received']/persName[1], ',')"/>
+      <xsl:variable name="poschitzion"
+         select="count(parent::incident/preceding-sibling::incident[@type = 'receiver'])"/>
+      <xsl:choose>
+         <xsl:when test="$poschitzion &gt; 0">
+            <xsl:value-of select="$poschitzion + 1"/>
+            <xsl:text>)&#160;</xsl:text>
+            <xsl:apply-templates/>
+         </xsl:when>
+         <xsl:when
+            test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'receiver']">
+            <xsl:text>
+\newline{}</xsl:text>
+            <xsl:value-of select="$receiver"/>
+            <xsl:text>: </xsl:text>
+            <xsl:value-of select="$poschitzion + 1"/>
+            <xsl:text>)&#160;</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> </xsl:text>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:text>
+\newline{}</xsl:text>
+            <xsl:value-of select="$receiver"/>
+            <xsl:text>: </xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> </xsl:text>
          </xsl:otherwise>
+      </xsl:choose>
+   </xsl:template>
+   <xsl:template match="desc[parent::incident[@type = 'archival']]">
+      <xsl:variable name="poschitzion"
+         select="count(parent::incident/preceding-sibling::incident[@type = 'archival'])"/>
+      <xsl:choose>
+         <xsl:when test="$poschitzion &gt; 0">
+            <xsl:value-of select="$poschitzion + 1"/>
+            <xsl:text>)&#160;</xsl:text>
+            <xsl:apply-templates/>
+         </xsl:when>
+         <xsl:when
+            test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'archival'])">
+            <xsl:text>\newline{}Ordnung: </xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> </xsl:text>
+         </xsl:when>
+         <xsl:when
+            test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'archival']">
+            <xsl:text>\newline{}Ordnung: </xsl:text>
+            <xsl:value-of select="$poschitzion + 1"/>
+            <xsl:text>)&#160;</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> </xsl:text>
+         </xsl:when>
+      </xsl:choose>
+   </xsl:template>
+   <xsl:template match="desc[parent::incident[@type = 'additional-information']]">
+      <xsl:variable name="poschitzion"
+         select="count(parent::incident/preceding-sibling::incident[@type = 'additional-information'])"/>
+      <xsl:choose>
+         <xsl:when test="$poschitzion &gt; 0">
+            <xsl:value-of select="$poschitzion + 1"/>
+            <xsl:text>)&#160;</xsl:text>
+            <xsl:apply-templates/>
+         </xsl:when>
+         <xsl:when
+            test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'additional-information'])">
+            <xsl:text>\newline{}Zusatz: </xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> </xsl:text>
+         </xsl:when>
+         <xsl:when
+            test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'additional-information']">
+            <xsl:text>\newline{}Zusatz: </xsl:text>
+            <xsl:value-of select="$poschitzion + 1"/>
+            <xsl:text>)&#160;</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> </xsl:text>
+         </xsl:when>
+      </xsl:choose>
+   </xsl:template>
+   <xsl:template match="desc[parent::incident[@type = 'editorial']]">
+      <xsl:variable name="poschitzion"
+         select="count(parent::incident/preceding-sibling::incident[@type = 'editorial'])"/>
+      <xsl:choose>
+         <xsl:when test="$poschitzion &gt; 0">
+            <xsl:value-of select="$poschitzion + 1"/>
+            <xsl:text>)&#160;</xsl:text>
+            <xsl:apply-templates/>
+         </xsl:when>
+         <xsl:when
+            test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'editorial'])">
+            <xsl:text>\newline{}Editorischer Hinweis: </xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> </xsl:text>
+         </xsl:when>
+         <xsl:when
+            test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'editorial']">
+            <xsl:text>\newline{}Editorischer Hinweise: </xsl:text>
+            <xsl:value-of select="$poschitzion + 1"/>
+            <xsl:text>)&#160;</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text> </xsl:text>
+         </xsl:when>
       </xsl:choose>
    </xsl:template>
    <xsl:template match="typeDesc">
@@ -1356,7 +1468,8 @@
             <xsl:value-of select="foo:handNote(handNote)"/>
          </xsl:when>
          <!-- Der Hauptautor, aber mit mehr Schriften -->
-         <xsl:when test="count(distinct-values(handNote/@corresp))=1 and handNote[1]/@corresp = ancestor::TEI/teiHeader[1]/fileDesc[1]/titleStmt[1][not(child::author[2])]/author[1]/@ref">
+         <xsl:when
+            test="count(distinct-values(handNote/@corresp)) = 1 and handNote[1]/@corresp = ancestor::TEI/teiHeader[1]/fileDesc[1]/titleStmt[1][not(child::author[2])]/author[1]/@ref">
                <xsl:variable name="handDesc-v" select="current()"/>
                <xsl:for-each select="distinct-values(handNote/@corresp)">
                   <xsl:variable name="corespi" select="."/>
@@ -1510,14 +1623,7 @@
       </xsl:choose>
       <xsl:if test="string-length(.) &gt; 1">
          <xsl:text> (</xsl:text>
-         <xsl:choose>
-            <xsl:when test="not(child::*[1])">
-               <xsl:value-of select="normalize-space(.)"/>
-            </xsl:when>
-            <xsl:otherwise>
-               <xsl:apply-templates/>
-            </xsl:otherwise>
-         </xsl:choose>
+         <xsl:value-of select="normalize-space(.)"/>
          <xsl:text>)</xsl:text>
       </xsl:if>
    </xsl:template>
@@ -1533,14 +1639,7 @@
       </xsl:choose>
       <xsl:if test="string-length(.) &gt; 1">
          <xsl:text> (</xsl:text>
-         <xsl:choose>
-            <xsl:when test="not(child::*[1])">
-               <xsl:apply-templates/>
-            </xsl:when>
-            <xsl:otherwise>
-               <xsl:apply-templates/>
-            </xsl:otherwise>
-         </xsl:choose>
+         <xsl:value-of select="normalize-space(.)"/>
          <xsl:text>)</xsl:text>
       </xsl:if>
       <xsl:if
@@ -1566,7 +1665,7 @@
    <xsl:template match="objectDesc/desc[@type = 'karte']">
       <xsl:choose>
          <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:apply-templates/>
+            <xsl:value-of select="normalize-space(.)"/>
          </xsl:when>
          <xsl:when test="@subtype = 'bildpostkarte'">
             <xsl:text>Bildpostkarte</xsl:text>
@@ -1592,7 +1691,7 @@
    <xsl:template match="objectDesc/desc[@type = 'reproduktion']">
       <xsl:choose>
          <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:apply-templates/>
+            <xsl:value-of select="normalize-space(.)"/>
          </xsl:when>
          <xsl:when test="@subtype = 'fotokopie'">
             <xsl:text>Fotokopie</xsl:text>
@@ -1650,7 +1749,7 @@
    <xsl:template match="objectDesc/desc[@type = 'brief']">
       <xsl:choose>
          <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:apply-templates/>
+            <xsl:value-of select="normalize-space(.)"/>
          </xsl:when>
          <xsl:otherwise>
             <xsl:text>Brief</xsl:text>
@@ -1664,7 +1763,7 @@
    <xsl:template match="objectDesc/desc[@type = 'bild']">
       <xsl:choose>
          <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:apply-templates/>
+            <xsl:value-of select="normalize-space(.)"/>
          </xsl:when>
          <xsl:when test="@subtype = 'fotografie'">
             <xsl:text>Fotografie</xsl:text>
@@ -1681,21 +1780,21 @@
    <xsl:template match="objectDesc/desc[@type = 'kartenbrief']">
       <xsl:choose>
          <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:apply-templates/>
+            <xsl:value-of select="normalize-space(.)"/>
          </xsl:when>
          <xsl:otherwise>
             <xsl:text>Kartenbrief</xsl:text>
          </xsl:otherwise>
       </xsl:choose>
       <xsl:if
-         test="(following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type='_blaetter' or @type='_seiten']) or (preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf'  or @type='_blaetter' or @type='_seiten'])">
+         test="(following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten']) or (preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten'])">
          <xsl:text>, </xsl:text>
       </xsl:if>
    </xsl:template>
    <xsl:template match="objectDesc/desc[@type = 'umschlag']">
       <xsl:choose>
          <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:apply-templates/>
+            <xsl:value-of select="normalize-space(.)"/>
          </xsl:when>
          <xsl:otherwise>
             <xsl:text>Umschlag</xsl:text>
@@ -1709,7 +1808,7 @@
    <xsl:template match="objectDesc/desc[@type = 'telegramm']">
       <xsl:choose>
          <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:apply-templates/>
+            <xsl:value-of select="normalize-space(.)"/>
          </xsl:when>
          <xsl:otherwise>
             <xsl:text>Telegramm</xsl:text>
@@ -1764,26 +1863,37 @@
    <xsl:template match="physDesc">
       <xsl:text>
 \physDesc{</xsl:text>
-      <xsl:if test="objectDesc">
-         <xsl:apply-templates select="objectDesc"/>
-         <xsl:if test="typeDesc or handDesc">
-            <xsl:text>
+      <xsl:choose>
+         <xsl:when
+            test="child::objectDesc or child::typeDesc or child::handDesc or child::additions">
+            <xsl:if test="objectDesc">
+               <xsl:apply-templates select="objectDesc"/>
+               <xsl:if test="typeDesc or handDesc">
+                  <xsl:text>
 \newline{}</xsl:text>
-         </xsl:if>
-      </xsl:if>
-      <xsl:if test="typeDesc">
-         <xsl:apply-templates select="typeDesc"/>
-         <xsl:if test="handDesc">
-            <xsl:text>
+               </xsl:if>
+            </xsl:if>
+            <xsl:if test="typeDesc">
+               <xsl:apply-templates select="typeDesc"/>
+               <xsl:if test="handDesc">
+                  <xsl:text>
 \newline{}</xsl:text>
-         </xsl:if>
-      </xsl:if>
-      <xsl:if test="handDesc">
-         <xsl:apply-templates select="handDesc"/>
-      </xsl:if>
-      <xsl:if test="additions">
-         <xsl:apply-templates select="additions"/>
-      </xsl:if>
+               </xsl:if>
+            </xsl:if>
+            <xsl:if test="handDesc">
+               <xsl:apply-templates select="handDesc"/>
+            </xsl:if>
+            <xsl:if test="additions">
+               <xsl:apply-templates select="additions"/>
+            </xsl:if>
+         </xsl:when>
+         <xsl:when test="child::p">
+            <xsl:apply-templates/>
+         </xsl:when>
+      <xsl:otherwise>
+            <xsl:text>XXXX PHYSDESC FEHLER</xsl:text>
+         </xsl:otherwise>
+      </xsl:choose>
       <xsl:text>}</xsl:text>
    </xsl:template>
    <xsl:template match="listBibl">
@@ -1805,27 +1915,27 @@
    </xsl:template>
    <xsl:template match="editor"/>
    <xsl:template match="biblScope[@unit = 'pp']">
-      <xsl:text>, S.&#160;</xsl:text>
+      <xsl:text>, S.&#8239;</xsl:text>
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="biblScope[@unit = 'col']">
-      <xsl:text>, Sp.&#160;</xsl:text>
+      <xsl:text>, Sp.&#8239;</xsl:text>
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="biblScope[@unit = 'vol']">
-      <xsl:text>, Bd.&#160;</xsl:text>
+      <xsl:text>, Bd.&#8239;</xsl:text>
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="biblScope[@unit = 'jg']">
-      <xsl:text>, Jg.&#160;</xsl:text>
+      <xsl:text>, Jg.&#8239;</xsl:text>
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="biblScope[@unit = 'nr']">
-      <xsl:text>, Nr.&#160;</xsl:text>
+      <xsl:text>, Nr.&#8239;</xsl:text>
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="biblScope[@unit = 'sec']">
-      <xsl:text>, Sec.&#160;</xsl:text>
+      <xsl:text>, Sec.&#8239;</xsl:text>
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="imprint/date">
@@ -1841,9 +1951,9 @@
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="stamp">
-      <xsl:text>Stempel: »</xsl:text>
+      <xsl:text>Stempel: »\nobreak{}</xsl:text>
       <xsl:apply-templates/>
-      <xsl:text>«</xsl:text>
+      <xsl:text>\nobreak{}«. </xsl:text>
    </xsl:template>
    <xsl:template match="time">
       <xsl:apply-templates/>
@@ -1851,7 +1961,7 @@
    <xsl:template match="stamp/placeName | addSpan | stamp/date | stamp/time">
       <xsl:if test="current() != ''">
          <xsl:choose>
-            <xsl:when test="self::placeName and @ref = 'A000250'"/>
+            <xsl:when test="self::placeName and @ref = '#50'"/>
             <!-- Wien raus -->
             <xsl:when test="self::placeName and ((@ref = '') or empty(@ref))">
                <xsl:text>\textcolor{red}{\textsuperscript{\textbf{KEY}}}</xsl:text>
@@ -2147,12 +2257,12 @@
       <xsl:param name="monogr" as="node()"/>
       <!-- Ist Jahrgang vorhanden, stehts als erstes -->
       <xsl:if test="$monogr//biblScope[@unit = 'jg']">
-         <xsl:text>, Jg.&#160;</xsl:text>
+         <xsl:text>, Jg.&#8239;</xsl:text>
          <xsl:value-of select="$monogr//biblScope[@unit = 'jg']"/>
       </xsl:if>
       <!-- Ist Band vorhanden, stets auch -->
       <xsl:if test="$monogr//biblScope[@unit = 'vol']">
-         <xsl:text>, Bd.&#160;</xsl:text>
+         <xsl:text>, Bd.&#8239;</xsl:text>
          <xsl:value-of select="$monogr//biblScope[@unit = 'vol']"/>
       </xsl:if>
       <!-- Jetzt abfragen, wie viel vom Datum vorhanden: vier Stellen=Jahr, sechs Stellen: Jahr und Monat, acht Stellen: komplettes Datum
@@ -2163,13 +2273,13 @@
             <xsl:value-of select="$monogr/imprint/date"/>
             <xsl:text>)</xsl:text>
             <xsl:if test="$monogr//biblScope[@unit = 'nr']">
-               <xsl:text> Nr.&#160;</xsl:text>
+               <xsl:text> Nr.&#8239;</xsl:text>
                <xsl:value-of select="$monogr//biblScope[@unit = 'nr']"/>
             </xsl:if>
          </xsl:when>
          <xsl:when test="string-length($monogr/imprint/date/@when) = 6">
             <xsl:if test="$monogr//biblScope[@unit = 'nr']">
-               <xsl:text>, Nr.&#160;</xsl:text>
+               <xsl:text>, Nr.&#8239;</xsl:text>
                <xsl:value-of select="$monogr//biblScope[@unit = 'nr']"/>
             </xsl:if>
             <xsl:text> (</xsl:text>
@@ -2178,7 +2288,7 @@
          </xsl:when>
          <xsl:otherwise>
             <xsl:if test="$monogr//biblScope[@unit = 'nr']">
-               <xsl:text>, Nr.&#160;</xsl:text>
+               <xsl:text>, Nr.&#8239;</xsl:text>
                <xsl:value-of select="$monogr//biblScope[@unit = 'nr']"/>
             </xsl:if>
             <xsl:if test="$monogr/imprint/date">
@@ -2209,7 +2319,32 @@
              </xsl:choose>-->
       <xsl:if test="$monogr/editor[1]">
          <xsl:text>. </xsl:text>
-         <xsl:value-of select="$monogr/editor"/>
+         <xsl:choose>
+            <xsl:when test="$monogr/editor[2]">
+               <xsl:text>Hg. </xsl:text>
+               <xsl:for-each select="$monogr/editor">
+                  <xsl:choose>
+                     <xsl:when test="contains(., ', ')">
+                        <xsl:value-of select="normalize-space(substring-after(., ', '))"/>
+                        <xsl:text> </xsl:text>
+                        <xsl:value-of select="normalize-space(substring-before(., ', '))"/>
+                     </xsl:when>
+                  </xsl:choose>
+                  <xsl:choose>
+                     <xsl:when test="position() = last()"/>
+                     <xsl:when test="not(position() = last() - 1)">
+                        <xsl:text>, </xsl:text>
+                     </xsl:when>
+                     <xsl:otherwise>
+                        <xsl:text> und </xsl:text>
+                     </xsl:otherwise>
+                  </xsl:choose>
+               </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="$monogr/editor"/>
+            </xsl:otherwise>
+         </xsl:choose>
          <xsl:if test="count($monogr/editor/persName/@ref) &gt; 0">
             <xsl:for-each select="$monogr/editor/persName/@ref">
                <xsl:value-of
@@ -2311,7 +2446,7 @@
       <xsl:variable name="analytic" as="node()" select="$gedruckte-quellen/analytic"/>
       <xsl:choose>
          <xsl:when test="$analytic/author[1]/@ref = 'A002003'">
-            <xsl:text>[O.&#160;V.:] </xsl:text>
+            <xsl:text>[O.&#8239;V.:] </xsl:text>
          </xsl:when>
          <xsl:when test="$analytic/author[1]">
             <xsl:value-of
@@ -2392,34 +2527,14 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:function>
-   <xsl:function name="foo:werk-indexName-Routine-autoren">
-      <!-- Das soll die Varianten abfangen, dass mehrere Verfasser an einem Werk beteiligt sein können -->
-      <xsl:param name="first" as="xs:string"/>
-      <xsl:param name="endung" as="xs:string"/>
-      <xsl:variable name="work-entry-authors"
-         select="key('work-lookup', $first, $works)/tei:author[@role = 'author']"/>
-      <xsl:variable name="work-entry-authors-count" select="count($work-entry-authors)"/>
-      <xsl:choose>
-         <xsl:when test="not(key('work-lookup', $first, $works))">
-            <xsl:text>\textcolor{red}{XXXX INDEXFEHLER}</xsl:text>
-         </xsl:when>
-         <xsl:when test="$work-entry-authors-count = 0">
-            <xsl:value-of select="foo:werk-in-index($first, $endung, 0)"/>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:for-each select="$work-entry-authors">
-               <xsl:value-of select="foo:werk-in-index($first, $endung, position())"/>
-            </xsl:for-each>
-         </xsl:otherwise>
-      </xsl:choose>
-   </xsl:function>
+   
    <xsl:function name="foo:weitere-drucke">
       <xsl:param name="gedruckte-quellen" as="node()"/>
       <xsl:param name="anzahl-drucke" as="xs:integer"/>
       <xsl:param name="drucke-zaehler" as="xs:integer"/>
       <xsl:param name="erster-druck-druckvorlage" as="xs:boolean"/>
       <xsl:variable name="seitenangabe" as="xs:string?"
-         select="$gedruckte-quellen/biblStruct[$drucke-zaehler]//biblScope[1][@unit = 'pp']"/>
+         select="$gedruckte-quellen/biblStruct[$drucke-zaehler]//biblScope[@unit = 'pp'][1]"/>
       <xsl:text>\weitereDrucke{</xsl:text>
       <xsl:if
          test="($anzahl-drucke &gt; 1 and not($erster-druck-druckvorlage)) or ($anzahl-drucke &gt; 2 and $erster-druck-druckvorlage)">
@@ -2513,7 +2628,7 @@
             </xsl:if>
          </xsl:when>
          <xsl:when test="not(empty($seitenangabe) or $seitenangabe = '')">
-            <xsl:text>&#160;</xsl:text>
+            <xsl:text> </xsl:text>
             <xsl:value-of select="$seitenangabe"/>
          </xsl:when>
       </xsl:choose>
@@ -2524,11 +2639,11 @@
       <xsl:param name="gedruckte-quellen" as="node()"/>
       <xsl:param name="ists-druckvorlage" as="xs:boolean"/>
       <!-- wenn hier true ist, dann wird die erste bibliografische Angabe als Druckvorlage ausgewiesen -->
-      <xsl:choose>
-         <xsl:when
-            test="$ists-druckvorlage and not($gedruckte-quellen/biblStruct[1]/@corresp = 'ASTB')">
-            <!-- Schnitzlers Tagebuch kommt nicht rein -->
-            <xsl:text>\buchAlsQuelle{</xsl:text>
+      <!-- ASI SPEZIAL: NACHDEM DIE QUELLE UNTERHALB DES FLIESSTEXTES STEHT, WIRD SIE HIER NIE WIEDERGEGEBEN, DRUM NÄCHSTES IF AUSKOMMENTIERT -->
+      <xsl:if 
+            test="($ists-druckvorlage) and not($gedruckte-quellen/biblStruct[1]/@corresp = 'ASTB')">
+         <!-- Schnitzlers Tagebuch kommt nicht rein -->
+            <xsl:text>\buchAlsQuelle{</xsl:text><!-- Diese Zeile statt der vorigen ist die alte Einstellung, die die bibliografische Angabe in den Anhang schreibt -->
             <xsl:choose>
                <!-- Für denn Fall, dass es sich um siglierte Literatur handelt: -->
                <xsl:when test="$gedruckte-quellen/biblStruct[1]/@corresp">
@@ -2576,8 +2691,7 @@
                </xsl:otherwise>
             </xsl:choose>
             <xsl:text>}</xsl:text>
-         </xsl:when>
-      </xsl:choose>
+         </xsl:if>
       <xsl:choose>
          <xsl:when
             test="($ists-druckvorlage and $gedruckte-quellen/biblStruct[2]) or (not($ists-druckvorlage) and $gedruckte-quellen/biblStruct[1])">
@@ -2626,7 +2740,7 @@
          <!-- Jetzt abfragen ob mehrere monogr -->
          <xsl:when test="count($biblstruct/monogr) = 2">
             <xsl:value-of select="foo:monogr-angabe($biblstruct/monogr[last()])"/>
-            <xsl:text>.&#160;Band</xsl:text>
+            <xsl:text>.&#8239;Band</xsl:text>
             <!-- <xsl:if test="$biblstruct/monogr[last()]/biblScope/@unit='vol'">
                   <xsl:text> </xsl:text>
                   <xsl:value-of select="$biblstruct/monogr[last()]/biblScope[@unit='vol']"/>
@@ -2640,15 +2754,15 @@
          </xsl:otherwise>
       </xsl:choose>
       <xsl:if test="not(empty($biblstruct/monogr//biblScope[@unit = 'sec']))">
-         <xsl:text>, Sec.&#160;</xsl:text>
+         <xsl:text>, Sec.&#8239;</xsl:text>
          <xsl:value-of select="$biblstruct/monogr//biblScope[@unit = 'sec']"/>
       </xsl:if>
       <xsl:if test="not(empty($biblstruct/monogr//biblScope[@unit = 'pp']))">
-         <xsl:text>, S.&#160;</xsl:text>
+         <xsl:text>, S.&#8239;</xsl:text>
          <xsl:value-of select="$biblstruct/monogr//biblScope[@unit = 'pp']"/>
       </xsl:if>
       <xsl:if test="not(empty($biblstruct/monogr//biblScope[@unit = 'col']))">
-         <xsl:text>, Sp.&#160;</xsl:text>
+         <xsl:text>, Sp.&#8239;</xsl:text>
          <xsl:value-of select="$biblstruct/monogr//biblScope[@unit = 'col']"/>
       </xsl:if>
       <xsl:if test="not(empty($biblstruct/series))">
@@ -2676,55 +2790,77 @@
             select="foo:mehrere-witnesse($witness-count, $witnesse - 1, $listWitnode)"/>
       </xsl:if>
    </xsl:function>
-   <xsl:function name="foo:biographicalNote-rekursiv">
-      <xsl:param name="biographicalNote" as="node()"/>
-      <xsl:param name="counter" as="xs:integer"/>
-      <xsl:variable name="anzahl" as="xs:integer" select="count($biographicalNote/note)"/>
+   <xsl:template match="div1">
       <xsl:choose>
-         <xsl:when test="$counter = 1">
+         <xsl:when test="position() = 1">
             <xsl:text>\biographical{</xsl:text>
          </xsl:when>
          <xsl:otherwise>
             <xsl:text>\biographicalOhne{</xsl:text>
+         <!-- Das setzt das kleine Köpfchen nur beim ersten Vorkommen einer biografischen Note -->
          </xsl:otherwise>
       </xsl:choose>
       <xsl:choose>
-         <xsl:when test="$biographicalNote/note[$counter]/bibl">
-            <xsl:apply-templates select="$biographicalNote/note[$counter]/bibl"/>
+         <xsl:when test="ref[@type = 'schnitzlerDiary']">
+            <xsl:text>\emph{Tagebuch}, </xsl:text>
+            <xsl:value-of select="
+                  format-date(ref[@type = 'schnitzlerDiary']/@target,
+                  '[D1].&#8239;[M1].&#8239;[Y0001]')"/>
             <xsl:text>: </xsl:text>
          </xsl:when>
-         <xsl:when test="not($biographicalNote/note[$counter][bibl])">
-            <xsl:text>\textcolor{red}{FEHLER QUELLENANGABE}</xsl:text>
+         <xsl:when test="bibl">
+            <xsl:text>\emph{</xsl:text>
+            <xsl:apply-templates select="bibl"/>
+            <xsl:text>}: </xsl:text>
          </xsl:when>
+         <xsl:otherwise>
+            <xsl:text>\textcolor{red}{FEHLER QUELLENANGABE}</xsl:text>
+         </xsl:otherwise>
       </xsl:choose>
       <xsl:text>»</xsl:text>
-      <xsl:apply-templates select="$biographicalNote/note[$counter]/quote"/>
+      <xsl:choose>
+         <xsl:when test="quote/p">
+            <xsl:for-each select="quote/p[not(position() = last())]">
+               <xsl:apply-templates/>
+               <xsl:text>{ / }</xsl:text>
+            </xsl:for-each>
+            <xsl:apply-templates select="quote/p[(position() = last())]"/>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:apply-templates select="quote"/>
+         </xsl:otherwise>
+      </xsl:choose>
       <xsl:text>«</xsl:text>
-      <xsl:if
-         test="not(substring(normalize-space($biographicalNote/note[$counter]/quote), string-length(normalize-space($biographicalNote/note[$counter]/quote)), 1) = '.' or substring(normalize-space($biographicalNote/note[$counter]/quote), string-length(normalize-space($biographicalNote/note[$counter]/quote)), 1) = '?' or substring(normalize-space($biographicalNote/note[$counter]/quote), string-length(normalize-space($biographicalNote/note[$counter]/quote)), 1) = '!' or $biographicalNote/note[$counter]/quote/node()[position() = last()]/self::dots or substring(normalize-space($biographicalNote/note[$counter]/quote), string-length(normalize-space($biographicalNote/note[$counter]/quote)) - 1, 2) = '.–')">
+      <xsl:if test="
+            not(substring(normalize-space(quote), string-length(normalize-space(quote)), 1) = '.' or substring(normalize-space(quote), string-length(normalize-space(quote)), 1) = '?' or substring(normalize-space(quote), string-length(normalize-space(quote)), 1) = '!'
+            or quote/node()[position() = last()]/self::dots or substring(normalize-space(quote), string-length(normalize-space(quote)) - 1, 2) = '.–')">
          <xsl:text>.</xsl:text>
       </xsl:if>
       <xsl:text>}</xsl:text>
-      <xsl:if test="$anzahl &gt; $counter">
-         <xsl:value-of select="foo:biographicalNote-rekursiv($biographicalNote, $counter + 1)"/>
-      </xsl:if>
-   </xsl:function>
+      </xsl:template>
+   
    <!-- eigentlicher Fließtext root -->
    <xsl:template match="body">
-      <xsl:param name="quellen" as="node()" select="ancestor::TEI/teiHeader/fileDesc/sourceDesc"/>
-      <xsl:param name="gedruckte-quellen-count" as="xs:integer"
-         select="count($quellen/listBibl/biblStruct)"/>
-      <xsl:variable name="titel" as="xs:string"
-         select="ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']"/>
-      <xsl:variable name="titel-ohne-datum" as="xs:string"
-         select="substring-before($titel, tokenize($titel, ',')[last()])"/>
-      <xsl:variable name="datum" as="xs:string"
-         select="substring(substring-after($titel, tokenize($titel, ',')[last() - 1]), 2)"/>
+      
+      <xsl:variable name="correspAction-date" as="node()">
+         <xsl:choose>
+            <xsl:when
+               test="ancestor::TEI/descendant::correspDesc/correspAction[@type = 'sent']/date">
+               <xsl:apply-templates
+                  select="ancestor::TEI/descendant::correspDesc/correspAction[@type = 'sent']/date"
+               />
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:text>EDITI</xsl:text>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:variable>
+      <xsl:variable name="dokument-id" select="ancestor::TEI/@id"/>
       <!-- Hier komplett abgedruckte Texte fett in den Index -->
       <xsl:if
-         test="starts-with(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, 'A0')">
+         test="starts-with(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, '#')">
          <xsl:value-of
-            select="foo:abgedruckte-workNameRoutine(substring(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, 1, 7), substring-after(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, ' '), true())"
+            select="foo:abgedruckte-workNameRoutine(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, true())"
          />
       </xsl:if>
       <!-- Hier Briefe bei den Personen in den Personenindex -->
@@ -2836,6 +2972,14 @@
       <xsl:text>}</xsl:text>-->
       <xsl:value-of select="ancestor::TEI/@id"/>
       <xsl:text> }{</xsl:text>
+      <xsl:variable name="quellen" as="node()"
+         select="ancestor::TEI/teiHeader/fileDesc/sourceDesc"/>
+      <xsl:variable name="titel" as="xs:string"
+         select="ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']"/>
+      <xsl:variable name="titel-ohne-datum" as="xs:string"
+         select="substring-before($titel, tokenize($titel, ',')[last()])"/>
+      <xsl:variable name="datum" as="xs:string"
+         select="substring(substring-after($titel, tokenize($titel, ',')[last() - 1]), 2)"/>
       <xsl:value-of select="$titel-ohne-datum"/>
       <xsl:value-of select="foo:date-translate($datum)"/>
       <xsl:text>\nopagebreak}</xsl:text>
@@ -2873,10 +3017,6 @@
             </xsl:otherwise>
          </xsl:choose>
       </xsl:if>
-      <xsl:if test="child::div[@type = 'biographical']">
-         <xsl:text>\toendnotes[C]{\smallbreak}</xsl:text>
-         <xsl:value-of select="foo:biographicalNote-rekursiv(./div[@type = 'biographical'], 1)"/>
-      </xsl:if>
       <xsl:choose>
          <xsl:when test="$quellen/listBibl/biblStruct/@corresp = 'ASTB'"/>
          <!-- Bei Schnitzler-Tagebuch keinen Abstand zwischen Titelzeile und Kommentar, da der Standort und die Drucke nicht vermerkt werden -->
@@ -2898,7 +3038,7 @@
       <xsl:if
          test="starts-with(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, 'A0')">
          <xsl:value-of
-            select="foo:abgedruckte-workNameRoutine(substring(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, 1, 7), substring-after(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, ' '), false())"
+            select="foo:abgedruckte-workNameRoutine(substring(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, 1, 7), false())"
          />
       </xsl:if>
       <xsl:if test="ancestor::TEI/teiHeader/profileDesc/correspDesc">
@@ -2937,111 +3077,8 @@
    <xsl:template match="image">
       <xsl:apply-templates/>
    </xsl:template>
-   <xsl:template match="body[parent::image]">
-      <xsl:param name="quellen" as="node()" select="ancestor::TEI/teiHeader/fileDesc/sourceDesc"/>
-      <xsl:param name="gedruckte-quellen-count" as="xs:integer"
-         select="count($quellen/listBibl/biblStruct)"/>
-      <xsl:variable name="titel" as="xs:string"
-         select="ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']"/>
-      <xsl:variable name="titel-ohne-datum" as="xs:string"
-         select="substring-before($titel, tokenize($titel, ',')[last()])"/>
-      <xsl:variable name="datum" as="xs:string"
-         select="substring(substring-after($titel, tokenize($titel, ',')[last() - 1]), 2)"/>
-      <!-- Hier komplett abgedruckte Texte fett in den Index -->
-      <xsl:if
-         test="starts-with(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, 'A0')">
-         <xsl:value-of
-            select="foo:abgedruckte-workNameRoutine(substring(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, 1, 7), substring-after(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, ' '), true())"
-         />
-      </xsl:if>
-      <xsl:text>\normalsize
-        \beginnumbering\nopagebreak
-        \pstart\ </xsl:text>
-      <xsl:if test="ancestor::TEI/teiHeader/profileDesc/correspDesc">
-         <xsl:value-of
-            select="foo:briefempfaenger-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@when, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"/>
-         <xsl:value-of
-            select="foo:briefsender-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@when, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"
-         />
-      </xsl:if>
-      <!-- Das Folgende schreibt Titel in den Anhang zum Kommentar -->
-      <!-- Zuerst mal Abstand, ob klein oder groß, je nachdem, ob Archivsignatur und Kommentar war -->
-      <xsl:choose>
-         <xsl:when
-            test="ancestor::TEI/preceding-sibling::TEI[1]/teiHeader/fileDesc/sourceDesc/listBibl/biblStruct[1]/monogr/imprint/date/xs:integer(substring(@when, 1, 4)) &lt; 1935"
-            > \toendnotes[C]{\medbreak} </xsl:when>
-         <xsl:when
-            test="ancestor::TEI/preceding-sibling::TEI[1]/teiHeader/fileDesc/sourceDesc/listWit">
-            \toendnotes[C]{\medbreak} </xsl:when>
-         <xsl:when test="ancestor::TEI/preceding-sibling::TEI[1]/body//*[@subtype]">
-            \toendnotes[C]{\medbreak} </xsl:when>
-         <xsl:when test="ancestor::TEI/preceding-sibling::TEI[1]/body//descendant::kommentar">
-            \toendnotes[C]{\medbreak} </xsl:when>
-         <xsl:when test="ancestor::TEI/preceding-sibling::TEI[1]/body//descendant::textkonstitution"
-            > \toendnotes[C]{\medbreak} </xsl:when>
-         <xsl:otherwise> \toendnotes[C]{\smallbreak} </xsl:otherwise>
-      </xsl:choose>
-      <xsl:text>\anhangTitel{\myrangeref{</xsl:text>
-      <xsl:value-of select="concat(ancestor::TEI/@id, 'v')"/>
-      <xsl:text>}{</xsl:text>
-      <xsl:value-of select="concat(ancestor::TEI/@id, 'h')"/>
-      <xsl:text>}}{</xsl:text>
-      <xsl:value-of select="$titel-ohne-datum"/>
-      <xsl:value-of select="foo:date-translate($datum)"/>
-      <xsl:text>}
-     </xsl:text>
-      <!--       Zuerst mal die Archivsignaturen  
--->
-      <xsl:if test="ancestor::TEI/teiHeader/fileDesc/sourceDesc/listWit">
-         <xsl:text>\datumImAnhang{</xsl:text>
-         <xsl:value-of select="foo:monatUndJahrInKopfzeile(ancestor::TEI/@when)"/>
-         <xsl:text>}</xsl:text>
-         <xsl:choose>
-            <xsl:when test="count($quellen/listWit/witness) = 1">
-               <xsl:apply-templates select="$quellen/listWit/witness[1]"/>
-            </xsl:when>
-            <xsl:otherwise>
-               <xsl:apply-templates
-                  select="foo:mehrere-witnesse(count($quellen/listWit/witness), count($quellen/listWit/witness), $quellen/listWit)"
-               />
-            </xsl:otherwise>
-         </xsl:choose>
-      </xsl:if>
-      <!-- Alternativ noch testen, ob es gedruckt wurde -->
-      <xsl:if test="$quellen/listBibl">
-         <xsl:choose>
-            <!-- Gibt es kein listWit ist das erste biblStruct die Quelle -->
-            <xsl:when
-               test="not(ancestor::TEI/teiHeader/fileDesc/sourceDesc/listWit) and $quellen/listBibl/biblStruct">
-               <xsl:value-of select="foo:buchAlsQuelle($quellen/listBibl, true())"/>
-            </xsl:when>
-            <xsl:otherwise>
-               <xsl:value-of select="foo:buchAlsQuelle($quellen/listBibl, false())"/>
-            </xsl:otherwise>
-         </xsl:choose>
-      </xsl:if>
-      <xsl:text>\unskip\pend
-        \endnumbering\leavevmode\vspace{-3em} 
-     </xsl:text>
-      <xsl:apply-templates/>
-      <xsl:if
-         test="starts-with(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, 'A0')">
-         <xsl:value-of
-            select="foo:abgedruckte-workNameRoutine(substring(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, 1, 7), substring-after(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, ' '), false())"
-         />
-      </xsl:if>
-      <xsl:choose>
-         <xsl:when test="ancestor::TEI/teiHeader/profileDesc/correspDesc">
-            <xsl:value-of
-               select="foo:briefempfaenger-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@when, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, false())"/>
-            <xsl:value-of
-               select="foo:briefsender-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@when, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, false())"
-            />
-         </xsl:when>
-      </xsl:choose>
-   </xsl:template>
    <!-- body und Absätze von Hrsg-Texten -->
-   <xsl:template match="body[ancestor::TEI[starts-with(@id, 'E')]]">
+   <xsl:template match="body[ancestor::TEI[starts-with(@id, 'E_')]]">
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="p[ancestor::TEI[starts-with(@id, 'E')]]">
@@ -3055,7 +3092,8 @@
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="lb">
-      <xsl:text>{\\[\baselineskip]}</xsl:text>
+      <xsl:text>{\\}</xsl:text>
+   <!--<xsl:text>{\\[\baselineskip]}</xsl:text>-->
    </xsl:template>
    <xsl:template match="lb[parent::item]">
       <xsl:text>{\newline}</xsl:text>
@@ -3068,11 +3106,76 @@
       </xsl:for-each>
       <xsl:text>}</xsl:text>
    </xsl:template>
-   <xsl:template match="p">
-      <xsl:if test="ancestor::quote[ancestor::physDesc] and not(position() = 1)">
-         <xsl:text> / </xsl:text>
+   <xsl:template
+      match="p[ancestor::TEI[starts-with(@id, 'E_')] and not(child::*[1] = space[@dim] and not(child::*[2]) and (fn:normalize-space(.) = ''))]">
+      <xsl:if test="self::p[@rend = 'inline']">
+         <xsl:text>\leftskip=3em{}</xsl:text>
       </xsl:if>
+      <xsl:choose>
+         <xsl:when test="ancestor::quote[ancestor::physDesc] and not(position() = 1)">
+            <xsl:text>{ / }</xsl:text>
+         </xsl:when>
+         <xsl:when test="not(@rend) and not(preceding-sibling::p[1])">
+            <xsl:text>\noindent{}</xsl:text>
+         </xsl:when>
+         <xsl:when test="@rend and not(preceding-sibling::p[1]/@rend = @rend)">
+            <xsl:text>\noindent{}</xsl:text>
+         </xsl:when>
+      </xsl:choose>
+      <xsl:choose>
+         <xsl:when test="@rend = 'center'">
+            <xsl:text>\begin{center}</xsl:text>
+         </xsl:when>
+         <xsl:when test="@rend = 'right'">
+            <xsl:text>\begin{flushright}</xsl:text>
+         </xsl:when>
+      </xsl:choose>
       <xsl:apply-templates/>
+      <xsl:choose>
+         <xsl:when test="@rend = 'center'">
+            <xsl:text>\end{center}</xsl:text>
+         </xsl:when>
+         <xsl:when test="@rend = 'right'">
+            <xsl:text>\end{flushright}</xsl:text>
+         </xsl:when>
+      </xsl:choose>
+      <xsl:choose>
+         <xsl:when test="not(fn:position() = last())">
+            <xsl:text>\par
+      </xsl:text>
+         </xsl:when>
+      </xsl:choose>
+      <xsl:if test="self::p[@rend = 'inline']">\leftskip=0em{}</xsl:if>
+   </xsl:template>
+   <xsl:template match="p">
+      <xsl:choose>
+         <xsl:when test="ancestor::quote[ancestor::physDesc] and not(position() = 1)">
+            <xsl:text>{ / }</xsl:text>
+         </xsl:when>
+         <xsl:when test="not(@rend) and not(preceding-sibling::p[1])">
+            <xsl:text>\noindent{}</xsl:text>
+         </xsl:when>
+         <xsl:when test="@rend and not(preceding-sibling::p[1]/@rend = @rend)">
+            <xsl:text>\noindent{}</xsl:text>
+         </xsl:when>
+      </xsl:choose>
+      <xsl:choose>
+         <xsl:when test="@rend = 'center'">
+            <xsl:text>\begin{center}</xsl:text>
+         </xsl:when>
+         <xsl:when test="@rend = 'right'">
+            <xsl:text>\begin{flushright}</xsl:text>
+         </xsl:when>
+      </xsl:choose>
+      <xsl:apply-templates/>
+      <xsl:choose>
+         <xsl:when test="@rend = 'center'">
+            <xsl:text>\end{center}</xsl:text>
+         </xsl:when>
+         <xsl:when test="@rend = 'right'">
+            <xsl:text>\end{flushright}</xsl:text>
+         </xsl:when>
+      </xsl:choose>
    </xsl:template>
    <xsl:template match="seg">
       <xsl:apply-templates/>
@@ -3084,37 +3187,52 @@
       match="p[ancestor::body and not(ancestor::TEI[starts-with(@id, 'E')]) and not(child::space[@dim] and not(child::*[2]) and empty(text())) and not(ancestor::div[@type = 'biographical']) and not(parent::footNote)] | closer | dateline">
       <!--     <xsl:if test="self::closer">\leftskip=1em{}</xsl:if>
 -->
-      <xsl:if test="self::p[@rend = 'inline']">\leftskip=3em{}</xsl:if>
+      <xsl:if test="self::p[@rend = 'inline']">
+         <xsl:text>\leftskip=3em{}</xsl:text>
+      </xsl:if>
       <xsl:choose>
          <xsl:when test="table"/>
          <xsl:when test="textkonstitution/zu-anmerken/table"/>
          <xsl:when test="ancestor::quote[ancestor::note] | ancestor::quote[ancestor::physDesc]">
             <xsl:if test="not(position() = 1)">
-               <xsl:text> / </xsl:text>
+               <xsl:text>{ / }</xsl:text>
             </xsl:if>
          </xsl:when>
          <xsl:otherwise>
             <xsl:text>\pstart
            </xsl:text>
-            <xsl:if test="self::p and preceding-sibling::*[1] = preceding-sibling::head[1]">
-               <xsl:text>\noindent{}</xsl:text>
-            </xsl:if>
-            <xsl:if test="parent::div[child::*[1]] = self::p">
-               <xsl:text>\noindent{}</xsl:text>
-            </xsl:if>
-            <xsl:if
-               test="self::p and preceding-sibling::*[1] = preceding-sibling::p[@rend = 'right' or @rend = 'center']">
-               <xsl:text>\noindent{}</xsl:text>
-            </xsl:if>
-            <xsl:if
-               test="self::p[not(@rend = 'inline')] and preceding-sibling::*[1] = preceding-sibling::p[@rend = 'inline']">
-               <xsl:text>\noindent{}</xsl:text>
-            </xsl:if>
-            <xsl:if
-               test="self::p[preceding-sibling::*[1][self::p[(descendant::*[1] = space[@dim = 'vertical']) and not(descendant::*[2]) and empty(text())]]]">
-               <xsl:text>\noindent{}</xsl:text>
-            </xsl:if>
-         </xsl:otherwise>
+            <xsl:choose>
+               <xsl:when test="self::p and position() = 1">
+                  <xsl:text>\noindent{}</xsl:text>
+               </xsl:when>
+               <xsl:when test="self::p and preceding-sibling::*[1] = preceding-sibling::head[1]">
+                  <xsl:text>\noindent{}</xsl:text>
+               </xsl:when>
+               <xsl:when test="parent::div[child::*[1]] = self::p">
+                  <xsl:text>\noindent{}</xsl:text>
+               </xsl:when>
+               <xsl:when
+                  test="self::p and preceding-sibling::*[1] = preceding-sibling::p[@rend = 'right' or @rend = 'center']">
+                  <xsl:text>\noindent{}</xsl:text>
+               </xsl:when>
+               <xsl:when
+                  test="self::p[not(@rend = 'inline')] and preceding-sibling::*[1] = preceding-sibling::p[@rend = 'inline']">
+                  <xsl:text>\noindent{}</xsl:text>
+               </xsl:when>
+               <xsl:when
+                  test="self::p[preceding-sibling::*[1][self::p[(descendant::*[1] = space[@dim = 'vertical']) and not(descendant::*[2]) and empty(text())]]]">
+                  <xsl:text>\noindent{}</xsl:text>
+               </xsl:when>
+               <xsl:when
+                  test="self::p[@rend = 'inline'] and (preceding-sibling::*[1]/not(@rend = 'inline') or preceding-sibling::*[1]/not(@rend))">
+                  <xsl:text>\noindent{}</xsl:text>
+               </xsl:when>
+               <xsl:when
+                  test="ancestor::body[child::div[@type = 'original'] and child::div[@type = 'translation']] and not(ancestor::div[@type = 'biographical'] or ancestor::note)">
+                  <xsl:text>\einruecken{}</xsl:text>
+               </xsl:when>
+            </xsl:choose>
+            </xsl:otherwise>
       </xsl:choose>
       <xsl:choose>
          <!-- Das hier dient dazu, leere Zeilen, Zeilen mit Trennstrich und weggelassene Absätze (Zeile mit Absatzzeichen in eckiger Klammer) nicht in der Zeilenzählung zu berücksichtigen  -->
@@ -3140,7 +3258,7 @@
       </xsl:if>
       <xsl:choose>
          <xsl:when test="missing-paragraph">
-            <xsl:text>\noindent{[}{&#160;\footnotesize\textparagraph\normalsize&#160;}{]}</xsl:text>
+            <xsl:text>\noindent{[}{&#8239;\footnotesize\textparagraph\normalsize&#8239;}{]}</xsl:text>
          </xsl:when>
       </xsl:choose>
       <xsl:apply-templates/>
@@ -3484,14 +3602,24 @@
    </xsl:template>
    <!-- Sonderfall anchors, die einen Text umrahmen, damit man auf eine Textstelle verweisen kann -->
    <xsl:template match="anchor[@type = 'label']">
-      <xsl:text>\label{</xsl:text>
-      <xsl:value-of select="@id"/>
-      <xsl:text>v}</xsl:text>
-      <xsl:apply-templates/>
-      <xsl:text>\label{</xsl:text>
-      <xsl:value-of select="@id"/>
-      <xsl:text>h}</xsl:text>
-   </xsl:template>
+      <xsl:choose>
+         <xsl:when test="ends-with(@id, 'v') or ends-with(@id, 'h')">
+            <xsl:text>\label{</xsl:text>
+            <xsl:value-of select="@id"/>
+            <xsl:text>}</xsl:text>
+            <xsl:apply-templates/>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:text>\label{</xsl:text>
+            <xsl:value-of select="@id"/>
+            <xsl:text>v}</xsl:text>
+            <xsl:apply-templates/>
+            <xsl:text>\label{</xsl:text>
+            <xsl:value-of select="@id"/>
+            <xsl:text>h}</xsl:text>
+         </xsl:otherwise>
+      </xsl:choose>
+      </xsl:template>
    <!-- anchors in Fussnoten, sehr seltener Fall-->
    <xsl:template
       match="anchor[(@type = 'textConst' or @type = 'commentary') and ancestor::footNote]">
@@ -3500,14 +3628,14 @@
       <xsl:value-of select="@id"/>
       <xsl:text>v}</xsl:text>
       <xsl:apply-templates/>
-      <xsl:text>\toendnotes[C]{\begin{minipage}[t]{4em}{\makebox[3.6em][r]{\tiny{Fußnote}}}\end{minipage}\begin{minipage}[t]{\dimexpr\linewidth-4em}\textit{</xsl:text>
+      <xsl:text>\toendnotes[C]{\footnotesize\hangpara{4em}{1}{\makebox[4em][l]{\makebox[3.6em][l]\zeilennummerierungsschrift{}\scriptsize Fußnote}}#1\endgraf}}\textit{</xsl:text>
       <xsl:for-each-group select="following-sibling::node()"
          group-ending-with="note[@type = 'commentary']">
          <xsl:if test="position() eq 1">
             <xsl:apply-templates select="current-group()[position() != last()]" mode="lemma"/>
             <xsl:text>}\,{]} </xsl:text>
             <xsl:apply-templates select="current-group()[position() = last()]" mode="text"/>
-            <xsl:text>\end{minipage}\par}</xsl:text>
+            <xsl:text>\endgraf}}</xsl:text>
          </xsl:if>
       </xsl:for-each-group>
    </xsl:template>
@@ -3529,18 +3657,76 @@
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template
+      match="note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::footNote)]"
+      mode="lemma"/>
+   <xsl:template match="space[@unit = 'chars' and @quantity = '1']" mode="lemma">
+      <xsl:text> </xsl:text>
+   </xsl:template>
+   <xsl:template
       match="note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::footNote)]">
       <xsl:text>}{</xsl:text>
+      <!-- Der Teil hier bildet das Lemma und kürzt es -->
+      <xsl:variable name="lemma-start" as="xs:string"
+         select="substring(@id, 1, string-length(@id) - 1)"/>
+      <xsl:variable name="lemma-end" as="xs:string" select="@id"/>
+      <xsl:variable name="lemmaganz">
+         <xsl:for-each-group
+            select="ancestor::*/anchor[@id = $lemma-start]/following-sibling::node()"
+            group-ending-with="note[@id = $lemma-end]">
+            <xsl:if test="position() eq 1">
+               <xsl:apply-templates select="current-group()[position() != last()]" mode="lemma"/>
+            </xsl:if>
+         </xsl:for-each-group>
+      </xsl:variable>
+      <xsl:variable name="lemma" as="xs:string">
+         <xsl:choose>
+            <xsl:when test="not(contains($lemmaganz, ' '))">
+               <xsl:value-of select="$lemmaganz"/>
+            </xsl:when>
+            <xsl:when test="string-length(normalize-space($lemmaganz)) &gt; 24">
+               <xsl:variable name="lemma-kurz"
+                  select="concat(tokenize(normalize-space($lemmaganz), ' ')[1], ' … ', tokenize(normalize-space($lemmaganz), ' ')[last()])"/>
+               <xsl:choose>
+                  <xsl:when
+                     test="string-length(normalize-space($lemmaganz)) - string-length($lemma-kurz) &lt; 5">
+                     <xsl:value-of select="normalize-space($lemmaganz)"/>
+                  </xsl:when>
+                  <xsl:otherwise>
+                     <xsl:value-of select="$lemma-kurz"/>
+                  </xsl:otherwise>
+               </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="$lemmaganz"/>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:variable>
+      <xsl:text>\lemma{\textnormal{\emph{</xsl:text>
       <xsl:choose>
          <xsl:when test="Lemma">
-            <xsl:text>\lemma{\textnormal{</xsl:text>
             <xsl:value-of select="Lemma"/>
-            <xsl:text>}}</xsl:text>
          </xsl:when>
-         <!--  <xsl:otherwise>
-         </xsl:otherwise>-->
+         <xsl:otherwise>
+            <xsl:choose>
+               <xsl:when test="string-length($lemma) &gt; 0">
+                  <xsl:value-of select="$lemma"/>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:text>XXXX Lemmafehler</xsl:text>
+               </xsl:otherwise>
+            </xsl:choose>
+         </xsl:otherwise>
       </xsl:choose>
-      <xsl:text>\Cendnote{\textnormal{</xsl:text>
+      <xsl:text>}}}</xsl:text>
+      <xsl:choose>
+         <xsl:when test="@type = 'textConst'">
+            <!-- Trennt TextConst und Kommentar auf, sonst nur CendNote  -->
+            <xsl:text>\Aendnote{\textnormal{</xsl:text>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:text>\Cendnote{\textnormal{</xsl:text>
+         </xsl:otherwise>
+      </xsl:choose>
       <xsl:apply-templates select="node() except Lemma"/>
       <xsl:text>}}}</xsl:text>
       <xsl:text>\label{</xsl:text>
@@ -3601,58 +3787,55 @@
    <!-- Titel -->
    <xsl:template match="head">
       <xsl:choose>
-         <xsl:when test="position() = 1 and parent::div/position() = 1"/>
-         <xsl:when
-            test="preceding-sibling::*[1][self::p[child::*[1][self::gap[@reason = 'outOfScope'] and not(child::*[2])]]]"
-            >[\ldots]</xsl:when>
-         <xsl:when test="preceding-sibling::*[1][self::head]"/>
+         <xsl:when test="not(preceding-sibling::*)">
+            <xsl:text>\nopagebreak[4] </xsl:text>
+         </xsl:when>
          <xsl:otherwise>
-            <xsl:text>\vspace{2\baselineskip}
-         </xsl:text>
+            <xsl:text>\pagebreak[2] </xsl:text>
          </xsl:otherwise>
-      </xsl:choose>
-      <xsl:text>
-        {\centering\pstart\noindent\leftskip=3em plus1fill\rightskip\leftskip
-      </xsl:text>
-      <xsl:apply-templates/>
-      <xsl:text>\pend}
-      </xsl:text>
+         </xsl:choose>
       <xsl:choose>
          <xsl:when
-            test="following-sibling::*[1][self::p[child::*[1][self::gap[@reason = 'outOfScope'] and not(child::*[2])]]]"
-            >[\ldots]</xsl:when>
-         <xsl:when test="following-sibling::*[1][self::head[@type = 'sub']]">
-            <xsl:text>\vspace{0.5\baselineskip}
-         </xsl:text>
+            test="not(position() = 1) and not(preceding-sibling::*[1][self::head]) and @type = 'sub'">
+            <!-- Es befindet sich im Text und direkt davor steht nicht schon ein head -->
+            <xsl:text>
+               {\centering\pstart[\vspace{0.35\baselineskip}]\noindent\leftskip=3em plus1fill\rightskip\leftskip
+            </xsl:text>
+         </xsl:when>
+         <xsl:when test="not(position() = 1) and not(preceding-sibling::*[1][self::head])">
+            <!-- Es befindet sich im Text und direkt davor steht nicht schon ein head -->
+            <xsl:text>
+               {\centering\pstart[\vspace{1\baselineskip}]\noindent\leftskip=3em plus1fill\rightskip\leftskip
+            </xsl:text>
+         </xsl:when>
+         <xsl:otherwise>
+            <!-- kein Abstand davor wenn es das erste Element-->
+            <xsl:text>
+               {\centering\pstart\noindent\leftskip=3em plus1fill\rightskip\leftskip
+            </xsl:text>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:if test="not(@type = 'sub')">
+         <xsl:text/>
+         <xsl:text>\textbf{</xsl:text>
+      </xsl:if>
+      <xsl:apply-templates/>
+      <xsl:if test="not(@type = 'sub')">
+         <xsl:text>}</xsl:text>
+      </xsl:if>
+      <xsl:choose>
+         <xsl:when test="not(following-sibling::*[1][self::head]) and @type = 'sub'">
+            <xsl:text>\pend[\vspace{0.15\baselineskip}]}</xsl:text>
          </xsl:when>
          <xsl:when test="not(following-sibling::*[1][self::head])">
-            <xsl:text>\vspace{\baselineskip}
-         </xsl:text>
+            <xsl:text>\pend[\vspace{0.5\baselineskip}]}</xsl:text>
          </xsl:when>
-      </xsl:choose>
-   </xsl:template>
-   <!-- Untertitel -->
-   <xsl:template match="head[@type = 'sub']">
-      <xsl:choose>
-         <xsl:when test="preceding-sibling::*[1][self::head]"/>
-         <xsl:otherwise>
-            <xsl:text>\vspace{\baselineskip}
-         </xsl:text>
+      <xsl:otherwise>
+            <xsl:text>\pend}
+            </xsl:text>
          </xsl:otherwise>
       </xsl:choose>
-      <xsl:text>
-        {\centering\pstart\noindent\leftskip=3em plus1fill\rightskip\leftskip
-      </xsl:text>
-      <xsl:apply-templates/>
-      <xsl:text>\pend}
-      </xsl:text>
-      <xsl:choose>
-         <xsl:when test="following-sibling::*[1][self::head]"/>
-         <xsl:otherwise>
-            <xsl:text>\vspace{0.5\baselineskip}
-         </xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
+   <xsl:text>\nopagebreak[4] </xsl:text>
    </xsl:template>
    <xsl:template match="head[ancestor::TEI[starts-with(@id, 'E')]]">
       <xsl:choose>
@@ -3660,7 +3843,7 @@
             <xsl:text>\subsection{</xsl:text>
          </xsl:when>
          <xsl:otherwise>
-            <xsl:text>\addsec{</xsl:text>
+            <xsl:text>\addsec*{</xsl:text>
          </xsl:otherwise>
       </xsl:choose>
       <xsl:apply-templates/>
@@ -3702,15 +3885,9 @@
    <xsl:template match="div[@type = 'image']">
       <xsl:apply-templates select="figure"/>
    </xsl:template>
-   <xsl:template match="div[@type = 'biographical']"/>
-   <xsl:template match="div[@type = 'address']">
-      <xsl:for-each select="address">
-         <xsl:apply-templates/>
-         <xsl:text>{\bigskip}</xsl:text>
-      </xsl:for-each>
-   </xsl:template>
    <xsl:template match="address">
       <xsl:apply-templates/>
+      <xsl:text>{\bigskip}</xsl:text>
    </xsl:template>
    <xsl:template match="addrLine">
       <xsl:text>\pstart{}</xsl:text>
@@ -3912,14 +4089,13 @@
       <xsl:value-of select="foo:gapigap(@quantity)"/>
    </xsl:template>
    <xsl:template match="gap[@unit = 'lines' and @reason = 'illegible']">
-      <xsl:text>\textcolor{gray}{</xsl:text>
-      <xsl:text> {[</xsl:text>
+      <xsl:text>\textcolor{gray}{[</xsl:text>
       <xsl:value-of select="@quantity"/>
       <xsl:text> Zeilen unleserlich{]} </xsl:text>
       <xsl:text>}</xsl:text>
    </xsl:template>
    <xsl:template match="gap[@reason = 'outOfScope']">
-      <xsl:text>[\ldots]</xsl:text>
+      <xsl:text>{[}\ldots{]}</xsl:text>
    </xsl:template>
    <xsl:template match="gap[@reason = 'gabelsberger']">
       <xsl:text>\textcolor{BurntOrange}{[Gabelsberger]}</xsl:text>
@@ -4213,7 +4389,8 @@
    </xsl:template>
    <xsl:template match="hi[@rend = 'capitals' and (descendant::note or descendant::footNote)]//text()">
       <xsl:choose>
-         <xsl:when test="ancestor-or-self::footNote[not(descendant::hi[@rend='capitals'])]|ancestor-or-self::note[not(descendant::hi[@rend='capitals'])]">
+         <xsl:when
+            test="ancestor-or-self::footNote[not(descendant::hi[@rend = 'capitals'])] | ancestor-or-self::note[not(descendant::hi[@rend = 'capitals'])]">
             <xsl:value-of select="."/>
          </xsl:when>
          <xsl:otherwise>
@@ -4266,23 +4443,48 @@
       <xsl:text>] </xsl:text>
    </xsl:template>
    <!-- Dieses Template bereitet den Schriftwechsel für griechische Zeichen vor -->
-   <xsl:template match="foreign[@lang = 'el' or @xml:lang = 'el']">
+   <xsl:template match="foreign[starts-with(@lang, 'el') or starts-with(@xml:lang, 'el')]">
       <xsl:text>\griechisch{</xsl:text>
       <xsl:apply-templates/>
       <xsl:text>}</xsl:text>
    </xsl:template>
-   <xsl:template match="foreign[@lang = 'en' or @xml:lang = 'en']">
+   <xsl:template match="foreign[starts-with(@lang, 'en') or starts-with(@xml:lang, 'en')]">
       <xsl:text>\begin{otherlanguage}{english}</xsl:text>
       <xsl:apply-templates/>
       <xsl:text>\end{otherlanguage}</xsl:text>
    </xsl:template>
-   <xsl:template match="foreign[@lang = 'fr' or @xml:lang = 'fr']">
+   <xsl:template match="foreign[starts-with(@lang, 'fr') or starts-with(@xml:lang, 'fr')]">
       <xsl:text>\begin{otherlanguage}{french}</xsl:text>
       <xsl:apply-templates/>
       <xsl:text>\end{otherlanguage}</xsl:text>
    </xsl:template>
-   <xsl:template match="foreign[@lang = 'ru' or @xml:lang = 'ru']">
-      <xsl:text>\begin{otherlanguage}{russian}</xsl:text>
+   <xsl:template match="foreign[starts-with(@lang, 'ru') or starts-with(@xml:lang, 'ru')]">
+      <xsl:text>\begin{otherlanguage}{russian}\cyrillic{</xsl:text>
+      <xsl:apply-templates/>
+      <xsl:text>}\end{otherlanguage}</xsl:text>
+   </xsl:template>
+   <xsl:template match="foreign[starts-with(@lang, 'hu') or starts-with(@xml:lang, 'hu')]">
+      <xsl:text>\begin{otherlanguage}{magyar}</xsl:text>
+      <xsl:apply-templates/>
+      <xsl:text>\end{otherlanguage}</xsl:text>
+   </xsl:template>
+   <xsl:template match="foreign[starts-with(@xml:lang, 'dk') or starts-with(@lang, 'dk')]">
+      <xsl:text>\begin{otherlanguage}{dansk}</xsl:text>
+      <xsl:apply-templates/>
+      <xsl:text>\end{otherlanguage}</xsl:text>
+   </xsl:template>
+   <xsl:template match="foreign[starts-with(@xml:lang, 'nl') or starts-with(@lang, 'nl')]">
+      <xsl:text>\begin{otherlanguage}{dutch}</xsl:text>
+      <xsl:apply-templates/>
+      <xsl:text>\end{otherlanguage}</xsl:text>
+   </xsl:template>
+   <xsl:template match="foreign[starts-with(@xml:lang, 'sv') or starts-with(@lang, 'sv')]">
+      <xsl:text>\begin{otherlanguage}{swedish}</xsl:text>
+      <xsl:apply-templates/>
+      <xsl:text>\end{otherlanguage}</xsl:text>
+   </xsl:template>
+   <xsl:template match="foreign[starts-with(@xml:lang, 'it') or starts-with(@lang, 'it')]">
+      <xsl:text>\begin{otherlanguage}{italienisch}</xsl:text>
       <xsl:apply-templates/>
       <xsl:text>\end{otherlanguage}</xsl:text>
    </xsl:template>
@@ -4432,137 +4634,27 @@
       <xsl:value-of select="substring-after($first, '#')"/>
    </xsl:function>
    
-   <xsl:template match="persName | workName | orgName | placeName | rs">
-      <xsl:variable name="first" select="tokenize(@ref, ' ')[1]" as="xs:string"/>
-      <xsl:variable name="rest" select="substring-after(@ref, concat($first, ' '))" as="xs:string"/>
-      <xsl:variable name="index-test-bestanden" as="xs:boolean"
-         select="count(ancestor::TEI/teiHeader/revisionDesc/change[contains(text(), 'Index check')]) &gt; 0"/>
-      <xsl:variable name="candidate" as="xs:boolean"
-         select="ancestor::TEI/teiHeader/revisionDesc/@status = 'approved' or ancestor::TEI/teiHeader/revisionDesc/@status = 'candidate'"/>
-      <!-- In diesen Fällen befindet sich das rs im Text: -->
-      <xsl:variable name="im-text" as="xs:boolean"
-         select="ancestor::body and not(ancestor::note) and not(ancestor::caption) and not(parent::bibl) and not(ancestor::TEI[starts-with(@id, 'E')]) and not(ancestor::div[@type = 'biographical'])"/>
-      <!-- In diesen Fällen werden orgs und titel kursiv geschrieben: -->
-      <xsl:variable name="kommentar-herausgeber" as="xs:boolean"
-         select="(ancestor::note[@type = 'commentary'] or ancestor::note[@type = 'textConst'] or ancestor::TEI[starts-with(@id, 'E')] or ancestor::tei:bibl or ancestor::div[@type = 'biographical']) and not(ancestor::quote)"/>
-      <!-- Ist's implizit vorkommend -->
-      <xsl:variable name="verweis" as="xs:boolean" select="@subtype = 'implied'"/>
-      <!-- Kursiv ja / nein -->
-      <xsl:variable name="emph"
-         select="not(@subtype = 'implied') and ($kommentar-herausgeber and (@type = 'work' or @type = 'org'))"/>
-      <xsl:variable name="cert" as="xs:boolean" select="(@cert = 'low') or (@cert = 'medium')"/>
-      <xsl:variable name="endung-index" as="xs:string">
-         <xsl:choose>
-            <xsl:when test="$cert and $verweis and $kommentar-herausgeber">
-               <xsl:text>|pwuvk}</xsl:text>
-            </xsl:when>
-            <xsl:when test="$cert and $verweis">
-               <xsl:text>|pwuv}</xsl:text>
-            </xsl:when>
-            <xsl:when test="$cert and $kommentar-herausgeber">
-               <xsl:text>|pwuk}</xsl:text>
-            </xsl:when>
-            <xsl:when test="$verweis and $kommentar-herausgeber">
-               <xsl:text>|pwkv}</xsl:text>
-            </xsl:when>
-            <xsl:when test="$kommentar-herausgeber">
-               <xsl:text>|pwk}</xsl:text>
-            </xsl:when>
-            <xsl:when test="$cert">
-               <xsl:text>|pwu}</xsl:text>
-            </xsl:when>
-            <xsl:when test="$verweis">
-               <xsl:text>|pwv}</xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-               <xsl:text>|pw}</xsl:text>
-            </xsl:otherwise>
-         </xsl:choose>
-      </xsl:variable>
+   <xsl:function name="foo:werk-indexName-Routine-autoren">
+      <!-- Das soll die Varianten abfangen, dass mehrere Verfasser an einem Werk beteiligt sein können -->
+      <xsl:param name="first" as="xs:string"/>
+      <xsl:param name="endung" as="xs:string"/>
+      <xsl:variable name="work-entry-authors"
+         select="key('work-lookup', $first, $works)/tei:author[@role = 'author' or @role = 'abbreviated-name']"/>
+      <xsl:variable name="work-entry-authors-count" select="count($work-entry-authors)"/>
       <xsl:choose>
-         <xsl:when test="$first = '' or empty($first)">
-            <!-- Hier der Fall, dass die @ref-Nummer fehlt -->
-            <xsl:apply-templates/>
-            <!--<xsl:choose>
-               <xsl:when test="not(child::*[1]) and ancestor::hi[@rend = 'capitals']">
-                  <xsl:value-of select="fn:upper-case(.)"/>
-               </xsl:when>
-               <xsl:otherwise>
-                  <xsl:apply-templates/>
-               </xsl:otherwise>
-            </xsl:choose>-->
-            <xsl:text>\textcolor{red}{\textsuperscript{\textbf{KEY}}}</xsl:text>
+         <xsl:when test="not(key('work-lookup', $first, $works))">
+            <xsl:text>\textcolor{red}{\textsuperscript{XXXX indx}}</xsl:text>
+         </xsl:when>
+         <xsl:when test="$work-entry-authors-count = 0">
+            <xsl:value-of select="foo:werk-in-index($first, $endung, 0)"/>
          </xsl:when>
          <xsl:otherwise>
-            <xsl:choose>
-               <xsl:when test="$candidate">
-                  <xsl:if test="$emph">
-                     <xsl:text>\emph{</xsl:text>
-                  </xsl:if>
-                  <xsl:apply-templates/>
-                  <!--<xsl:choose>
-                     <xsl:when test="not(child::*[1]) and ancestor::hi[@rend = 'capitals']">
-                        <xsl:value-of select="fn:upper-case(.)"/>
-                     </xsl:when>
-                     <xsl:otherwise>
-                        <xsl:apply-templates/>
-                     </xsl:otherwise>
-                  </xsl:choose>-->
-                  <xsl:if test="$emph">
-                     <xsl:text>}</xsl:text>
-                  </xsl:if>
-                  <xsl:value-of
-                     select="foo:indexName-Routine(@type, tokenize(@ref, ' ')[1], substring-after(@ref, ' '), $endung-index)"
-                  />
-               </xsl:when>
-               <xsl:otherwise>
-                  <xsl:if test="$im-text and not(@ref = '#2121' or @ref = '#50') and not($index-test-bestanden)">
-                     <xsl:text>\edtext{</xsl:text>
-                  </xsl:if>
-                  <!-- Wenn der Index schon überprüft wurde, aber der Text noch nicht abgeschlossen, erscheinen
-              die indizierten Begriffe bunt-->
-                  <xsl:choose>
-                     <xsl:when test="@type = 'person'">
-                        <xsl:text>\textcolor{blue}{</xsl:text>
-                     </xsl:when>
-                     <xsl:when test="@type = 'work'">
-                        <xsl:text>\textcolor{green}{</xsl:text>
-                     </xsl:when>
-                     <xsl:when test="@type = 'org'">
-                        <xsl:text>\textcolor{brown}{</xsl:text>
-                     </xsl:when>
-                     <xsl:when test="@type = 'place'">
-                        <xsl:text>\textcolor{pink}{</xsl:text>
-                     </xsl:when>
-                  </xsl:choose>
-                  <xsl:apply-templates/>
-                  <!--<xsl:choose>
-                     
-                     <xsl:when test="not(child::*[1]) and ancestor::hi[@rend = 'capitals']">
-                        <xsl:value-of select="fn:upper-case(.)"/>
-                     </xsl:when>
-                     <xsl:otherwise>
-                        <xsl:apply-templates/>
-                     </xsl:otherwise>
-                  </xsl:choose>-->
-                  <xsl:text>}</xsl:text>
-                  <xsl:value-of
-                     select="foo:indexName-Routine(@type, tokenize(@ref, ' ')[1], substring-after(@ref, ' '), $endung-index)"/>
-                  <xsl:choose>
-                     <xsl:when test="$im-text and not(@ref = '#2121' or @ref = '#50') and not($index-test-bestanden)">
-                        <xsl:text>}{</xsl:text>
-                        <xsl:value-of select="foo:lemma(.)"/>
-                        <xsl:text>\Bendnote{</xsl:text>
-                        <xsl:value-of
-                           select="foo:indexName-EndnoteRoutine(@type, $verweis, $first, $rest)"/>
-                        <xsl:text>}}</xsl:text>
-                     </xsl:when>
-                  </xsl:choose>
-               </xsl:otherwise>
-            </xsl:choose>
+            <xsl:for-each select="$work-entry-authors">
+               <xsl:value-of select="foo:werk-in-index($first, $endung, position())"/>
+            </xsl:for-each>
          </xsl:otherwise>
       </xsl:choose>
-   </xsl:template>
+   </xsl:function>
    <xsl:function name="foo:indexName-Routine">
       <xsl:param name="typ" as="xs:string"/>
       <xsl:param name="first" as="xs:string"/>
@@ -4598,37 +4690,145 @@
          />
       </xsl:if>
    </xsl:function>
-   <!-- Da mehrere Werke-keys angegeben sein können, kommt diese Routine zum Einsatz: -->
-   <xsl:function name="foo:abgedruckte-workNameRoutine">
-      <xsl:param name="first" as="xs:string"/>
-      <xsl:param name="rest" as="xs:string"/>
-      <xsl:param name="vorne" as="xs:boolean"/>
-      <xsl:if test="$first != ''">
+   <xsl:template match="persName | workName | orgName | placeName | rs">
+      <xsl:variable name="first" select="tokenize(@ref, ' ')[1]" as="xs:string?"/>
+      <xsl:variable name="rest" select="substring-after(@ref, concat($first, ' '))" as="xs:string"/>
+      <xsl:variable name="index-test-bestanden" as="xs:boolean"
+         select="count(ancestor::TEI/teiHeader/revisionDesc/change[contains(text(), 'Index check')]) &gt; 0"/>
+      <xsl:variable name="candidate" as="xs:boolean"
+         select="ancestor::TEI/teiHeader/revisionDesc/@status = 'approved' or ancestor::TEI/teiHeader/revisionDesc/@status = 'candidate' or ancestor::TEI/teiHeader/revisionDesc/change[contains(text(), 'Index check')]"/>
+      <!-- In diesen Fällen befindet sich das rs im Text: -->
+      <xsl:variable name="im-text" as="xs:boolean"
+         select="ancestor::body and not(ancestor::note) and not(ancestor::caption) and not(parent::bibl) and not(ancestor::TEI[starts-with(@id, 'E')]) and not(ancestor::div[@type = 'biographical'])"/>
+      <!-- In diesen Fällen werden orgs und titel kursiv geschrieben: -->
+      <xsl:variable name="kommentar-herausgeber" as="xs:boolean"
+         select="(ancestor::note[@type = 'commentary'] or ancestor::note[@type = 'textConst'] or ancestor::TEI[starts-with(@id, 'E')] or ancestor::tei:bibl or ancestor::div[@type = 'biographical']) and not(ancestor::quote)"/>
+      <!-- Ist's implizit vorkommend -->
+      <xsl:variable name="verweis" as="xs:boolean" select="@subtype = 'implied'"/>
+      <!-- Kursiv ja / nein -->
+      <xsl:variable name="emph"
+         select="not(@subtype = 'implied') and $kommentar-herausgeber and (@type = 'work' or @type = 'org')"/>
+      <xsl:variable name="cert" as="xs:boolean" select="(@cert = 'low') or (@cert = 'medium')"/>
+      <xsl:variable name="endung-index" as="xs:string">
          <xsl:choose>
-            <xsl:when test="not(starts-with($first, '#'))">
-               <xsl:text>\textcolor{red}{WERKINDEX FEHLER}</xsl:text>
+            <xsl:when test="$cert and $verweis and $kommentar-herausgeber">
+               <xsl:text>|pwuvk}</xsl:text>
+            </xsl:when>
+            <xsl:when test="$cert and $verweis">
+               <xsl:text>|pwuv}</xsl:text>
+            </xsl:when>
+            <xsl:when test="$cert and $kommentar-herausgeber">
+               <xsl:text>|pwuk}</xsl:text>
+            </xsl:when>
+            <xsl:when test="$cert">
+               <xsl:text>|pwu}</xsl:text>
+            </xsl:when>
+            <xsl:when test="$verweis and $kommentar-herausgeber">
+               <xsl:text>|pwkv}</xsl:text>
+            </xsl:when>
+            <xsl:when test="$verweis">
+               <xsl:text>|pwv}</xsl:text>
+            </xsl:when>
+            <xsl:when test="$kommentar-herausgeber">
+               <xsl:text>|pwk}</xsl:text>
             </xsl:when>
             <xsl:otherwise>
-               <xsl:variable name="author"
-                  select="key('work-lookup', $first, $works)/tei:author[@role = 'author']"/>
-               <xsl:choose>
-                  <!-- Hier nun gleich der Fall von einem Autor, mehreren Autoren abgefangen -->
-                  <xsl:when test="not($author)">
-                     <xsl:value-of select="foo:werk-in-index($first, '|pwt', 0)"/>
-                     <xsl:choose>
-                        <xsl:when test="$vorne">
-                           <xsl:text>(</xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise>
-                           <xsl:text>)</xsl:text>
-                        </xsl:otherwise>
-                     </xsl:choose>
+               <xsl:text>|pw}</xsl:text>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:variable>
+      <xsl:choose>
+         <xsl:when test="$first = '' or empty($first)">
+            <!-- Hier der Fall, dass die @ref-Nummer fehlt -->
+            <xsl:apply-templates/>
+            <xsl:text>\textcolor{red}{\textsuperscript{\textbf{KEY}}}</xsl:text>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:choose>
+               <xsl:when test="$candidate">
+                  <xsl:if test="$emph">
+                     <xsl:text>\emph{</xsl:text>
+                  </xsl:if>
+                  <xsl:apply-templates/>
+                  <xsl:if test="$emph">
                      <xsl:text>}</xsl:text>
-                  </xsl:when>
-                  <xsl:otherwise>
-                     <xsl:for-each
-                        select="key('work-lookup', $first, $works)/tei:author[@role = 'author']">
-                        <xsl:value-of select="foo:werk-in-index($first, '|pwt', position())"/>
+                  </xsl:if>
+                  <xsl:value-of
+                     select="foo:indexName-Routine(@type, tokenize(@ref, ' ')[1], substring-after(@ref, ' '), $endung-index)"
+                  />
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:if
+                     test="$im-text and not(@ref = '#2121' or @ref = '#50') and not($index-test-bestanden)">
+                     <xsl:text>\edtext{</xsl:text>
+                  </xsl:if>
+                  <xsl:if test="$emph">
+                     <xsl:text>\emph{</xsl:text>
+                  </xsl:if>
+                  <!-- Wenn der Index schon überprüft wurde, aber der Text noch nicht abgeschlossen, erscheinen
+              die indizierten Begriffe bunt-->
+                  <xsl:choose>
+                     <xsl:when test="@type = 'person'">
+                        <xsl:text>\textcolor{blue}{</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="@type = 'work'">
+                        <xsl:text>\textcolor{green}{</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="@type = 'org'">
+                        <xsl:text>\textcolor{brown}{</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="@type = 'place'">
+                        <xsl:text>\textcolor{pink}{</xsl:text>
+                     </xsl:when>
+                  </xsl:choose>
+                  <xsl:apply-templates/>
+                  <xsl:text>}</xsl:text>
+                  <xsl:value-of
+                     select="foo:indexName-Routine(@type, tokenize(@ref, ' ')[1], substring-after(@ref, ' '), $endung-index)"/>
+                  <xsl:choose>
+                     <xsl:when
+                        test="$im-text and not(@ref = '#2121' or @ref = '#50') and not($index-test-bestanden)">
+                        <xsl:text>}{</xsl:text>
+                        <xsl:value-of select="foo:lemma(.)"/>
+                        <xsl:text>\Bendnote{</xsl:text>
+                        <xsl:value-of
+                           select="foo:indexName-EndnoteRoutine(@type, $verweis, $first, $rest)"/>
+                        <xsl:text>}}</xsl:text>
+                     </xsl:when>
+                  </xsl:choose>
+                  <xsl:if test="$emph">
+                     <xsl:text>}</xsl:text>
+                  </xsl:if>
+               </xsl:otherwise>
+            </xsl:choose>
+         </xsl:otherwise>
+      </xsl:choose>
+   </xsl:template>
+   <!-- Hier wird, je nachdem ob es sich um vorne oder hinten im Text handelt, ein Indexmarker gesetzt, der zeigt,
+   dass ein Werk über mehrere Seiten geht bzw. dieser geschlossen -->
+   <xsl:function name="foo:abgedruckte-workNameRoutine">
+      <xsl:param name="first" as="xs:string"/>
+      <xsl:param name="vorne" as="xs:boolean"/>
+      <xsl:choose>
+         <xsl:when test="$first = ''">
+            <xsl:text>\textcolor{red}{INDEX FEHLER W}</xsl:text>
+         </xsl:when>
+         <xsl:when test="not(starts-with($first, '#'))">
+            <xsl:text>\textcolor{red}{WERKINDEX FEHLER}</xsl:text>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:variable name="entry" select="key('work-lookup', $first, $works)" as="node()?"/>
+            <xsl:variable name="author"
+               select="$entry/tei:author[@role = 'author' or @role = 'abbreviated-name']"/>
+            <xsl:choose>
+               <xsl:when test="not($entry) or $entry = ''">
+                  <xsl:text>\pwindex{XXXX Abgedrucktes Werk, Nummer nicht vorhanden|pwt}</xsl:text>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:choose>
+                     <!-- Hier nun gleich der Fall von einem Autor, mehreren Autoren abgefangen -->
+                     <xsl:when test="not($author)">
+                        <xsl:value-of select="foo:werk-in-index($first, '|pwt', 0)"/>
                         <xsl:choose>
                            <xsl:when test="$vorne">
                               <xsl:text>(</xsl:text>
@@ -4638,30 +4838,44 @@
                            </xsl:otherwise>
                         </xsl:choose>
                         <xsl:text>}</xsl:text>
-                     </xsl:for-each>
-                  </xsl:otherwise>
-               </xsl:choose>
-            </xsl:otherwise>
-         </xsl:choose>
-         <xsl:if test="$rest != ''">
+                     </xsl:when>
+                     <xsl:otherwise>
+                        <xsl:for-each
+                           select="$entry/tei:author[@role = 'author' or @role = 'abbreviated-name']">
+                           <xsl:value-of select="foo:werk-in-index($first, '|pwt', position())"/>
+                           <xsl:choose>
+                              <xsl:when test="$vorne">
+                                 <xsl:text>(</xsl:text>
+                              </xsl:when>
+                              <xsl:otherwise>
+                                 <xsl:text>)</xsl:text>
+                              </xsl:otherwise>
+                           </xsl:choose>
+                           <xsl:text>}</xsl:text>
+                        </xsl:for-each>
+                     </xsl:otherwise>
+                  </xsl:choose>
+               </xsl:otherwise>
+            </xsl:choose>
+         </xsl:otherwise>
+      </xsl:choose>
+      <!--<xsl:if test="$rest != ''">
             <xsl:value-of
                select="foo:abgedruckte-workNameRoutine(substring($rest, 1, 7), substring-after($rest, ' '), $vorne)"
             />
-         </xsl:if>
-      </xsl:if>
+         </xsl:if>-->
    </xsl:function>
    <xsl:function name="foo:werkInEndnote">
       <xsl:param name="first" as="xs:string"/>
       <xsl:param name="verweis" as="xs:boolean"/>
       <xsl:variable name="entry" select="key('work-lookup', $first, $works)"/>
       <xsl:variable name="author-entry" select="$entry/tei:author"/>
-      <!--<xsl:value-of select="foo:werk-in-index($first,false(), false())"/>
-       <xsl:text>|pwk}</xsl:text>-->
       <xsl:if test="$verweis">
          <xsl:text>$\rightarrow$</xsl:text>
       </xsl:if>
-      <xsl:if test="$entry/tei:author[1]/tei:surname/text() != ''">
-         <xsl:for-each select="$entry/tei:author">
+      <xsl:if
+         test="$entry/tei:author[@role = 'author' or @role = 'abbreviated-name']/tei:surname/text() != ''">
+         <xsl:for-each select="$entry/tei:author[@role = 'author' or @role = 'abbreviated-name']">
             <xsl:choose>
                <xsl:when test="tei:persName/tei:forename = '' and tei:persName/tei:surname = ''">
                   <xsl:text>\textcolor{red}{KEIN NAME}</xsl:text>
@@ -4898,36 +5112,59 @@
          </xsl:analyze-string>
       </xsl:variable>
       <xsl:variable name="caption" as="node()?" select="parent::div/caption"/>
-      <!-- Zwei Varianten. Wenn das Bild max. bis zur halben Textbreite geht, wird die Bildunterschrift daneben gesetzt = Variante 1 -->
+      <!-- Drei Varianten:
+         - Bild ohne Bildtext zentriert
+         - Bild mit Bildtext, halbe Textbreite, Bildtext daneben
+         - Bild mit Bildtext, Bildtext drunter
+        Wenn
+         
+         Wenn das Bild max. bis zur halben Textbreite geht, wird die Bildunterschrift daneben gesetzt = Variante 1 -->
       <xsl:choose>
+         <xsl:when test="not($caption)">
+            <xsl:choose>
+               <!-- Bilder in Herausgebertexten sind nicht auf Platz fixiert -->
+               <xsl:when test="ancestor::TEI/starts-with(@id, 'E_')">
+                  <xsl:text>\noindent</xsl:text>
+                  <xsl:text>\begin{figure}[htbp]</xsl:text>
+                  <xsl:text>\centering</xsl:text>
+                  <xsl:apply-templates/>
+                  <xsl:text>\end{figure}</xsl:text>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:text>\begin{figure}[H]\centering</xsl:text>
+                  <xsl:apply-templates/>
+                  <xsl:text>\end{figure}</xsl:text>
+               </xsl:otherwise>
+            </xsl:choose>
+         </xsl:when>
          <xsl:when test="$numbers &lt; 7">
             <xsl:choose>
-               <xsl:when
-                  test="ancestor::TEI//teiHeader[1]/fileDesc[1]/publicationStmt[1]/idno[1]/@type = 'ASI-E'">
+               <!-- Herausgebertext:  -->
+               <xsl:when test="ancestor::TEI/starts-with(@id, 'E_')">
                   <xsl:text>\begin{figure}[htbp]</xsl:text>
-                  <xsl:text>\begin{minipage}[t]{</xsl:text>
+                  <xsl:text>\noindent\begin{minipage}[t]{</xsl:text>
                   <xsl:value-of select="$numbers"/>
                   <xsl:text>cm}</xsl:text>
                   <xsl:text>\noindent</xsl:text>
                   <xsl:apply-templates/>
                   <xsl:text>\end{minipage</xsl:text>
-                  <xsl:text>\begin{minipage}[t]{\dimexpr\halbtextwidth-</xsl:text>
+                  <xsl:text>\noindent\begin{minipage}[t]{\dimexpr\halbtextwidth-</xsl:text>
                   <xsl:value-of select="graphic/@width"/>
                   <xsl:text>\relax}</xsl:text>
-                  <xsl:apply-templates select="$caption"/>
+                  <xsl:apply-templates select="$caption" mode="halbetextbreite"/>
                   <xsl:text>\end{minipage}</xsl:text>
                   <xsl:text>\end{figure}</xsl:text>
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:text>\begin{minipage}[t]{</xsl:text>
+                  <xsl:text>\noindent\begin{minipage}[t]{</xsl:text>
                   <xsl:value-of select="$numbers"/>
                   <xsl:text>cm}</xsl:text>
                   <xsl:apply-templates/>
                   <xsl:text>\end{minipage}</xsl:text>
-                  <xsl:text>\begin{minipage}[t]{\dimexpr\halbtextwidth-</xsl:text>
+                  <xsl:text>\noindent\begin{minipage}[t]{\dimexpr\halbtextwidth-</xsl:text>
                   <xsl:value-of select="graphic/@width"/>
                   <xsl:text>\relax}</xsl:text>
-                  <xsl:apply-templates select="$caption"/>
+                  <xsl:apply-templates select="$caption" mode="halbetextbreite"/>
                   <xsl:text>\end{minipage}</xsl:text>
                </xsl:otherwise>
             </xsl:choose>
@@ -4935,8 +5172,8 @@
          <xsl:otherwise>
             <xsl:choose>
                <!-- Bilder in Herausgebertexten sind nicht auf Platz fixiert -->
-               <xsl:when
-                  test="ancestor::TEI//teiHeader[1]/fileDesc[1]/publicationStmt[1]/idno[1]/@type = 'ASI-E'">
+               <xsl:when test="ancestor::TEI/starts-with(@id, 'E_')">
+                  <xsl:text>\noindent</xsl:text>
                   <xsl:text>\begin{figure}[htbp]</xsl:text>
                   <xsl:text>\centering</xsl:text>
                   <xsl:text>\noindent</xsl:text>
@@ -4954,12 +5191,20 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
-   <xsl:template match="caption">
+   <xsl:template match="caption" mode="halbetextbreite">
       <!-- Falls es eine Bildunterschrift gibt -->
       <xsl:text>\hspace{0.5cm}\begin{minipage}[b]{0.85\textwidth}\noindent</xsl:text>
-      <xsl:text>\begin{flushleft}\footnotesize\emph{</xsl:text>
+      <xsl:text>\begin{RaggedRight}\small\emph{</xsl:text>
       <xsl:apply-templates/>
-      <xsl:text>}\end{flushleft}\end{minipage}\vspace{\baselineskip}
+      <xsl:text>}\end{RaggedRight}\end{minipage}\vspace{\baselineskip}
+      </xsl:text>
+   </xsl:template>
+   <xsl:template match="caption">
+      <!-- Falls es eine Bildunterschrift gibt -->
+      <xsl:text>\hspace{0.5cm}\noindent</xsl:text>
+      <xsl:text>\begin{center}\small\emph{</xsl:text>
+      <xsl:apply-templates/>
+      <xsl:text>}\end{center}\vspace{\baselineskip}
       </xsl:text>
    </xsl:template>
    <xsl:template match="graphic">
@@ -5025,6 +5270,47 @@
       <xsl:apply-templates/>
       <xsl:text>}</xsl:text>
    </xsl:template>
+   <xsl:template match="ref[@type = 'pointer']">
+      <!-- Pointer funktionieren so, dass sie, wenn sie auf v enden, auf einen Bereich zeigen, sonst
+      wird einfach zweimal der selbe Punkt gesetzt-->
+      <xsl:choose>
+         <xsl:when test="@subtype = 'see'">
+            <xsl:text>siehe </xsl:text>
+         </xsl:when>
+         <xsl:when test="@subtype = 'cf'">
+            <xsl:text>vgl. </xsl:text>
+         </xsl:when>
+         <xsl:when test="@subtype = 'See'">
+            <xsl:text>Siehe </xsl:text>
+         </xsl:when>
+         <xsl:when test="@subtype = 'cf'">
+            <xsl:text>Vgl. </xsl:text>
+         </xsl:when>
+      </xsl:choose>
+      <xsl:text>$\triangleright$</xsl:text>
+      <xsl:variable name="start-label" select="substring-after(@target, '#')"/>
+      <xsl:choose>
+         <xsl:when test="$start-label = ''">
+            <xsl:text>\textcolor{red}{XXXX Labelref}</xsl:text>
+         </xsl:when>
+         <xsl:when test="ends-with(@target, 'v')">
+            <xsl:variable name="end-label"
+               select="concat(substring-after(substring-before(@target, 'v'), '#'), 'h')"/>
+            <xsl:text>\myrangeref{</xsl:text>
+            <xsl:value-of select="$start-label"/>
+            <xsl:text>}{</xsl:text>
+            <xsl:value-of select="$end-label"/>
+            <xsl:text>}</xsl:text>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:text>\myrangeref{</xsl:text>
+            <xsl:value-of select="$start-label"/>
+            <xsl:text>v}{</xsl:text>
+            <xsl:value-of select="$start-label"/>
+            <xsl:text>h}</xsl:text>
+         </xsl:otherwise>
+      </xsl:choose>
+   </xsl:template>
    <xsl:template match="ref[@type = 'schnitzlerDiary']">
       <xsl:if test="not(@subtype = 'date-only')">
          <xsl:choose>
@@ -5034,18 +5320,23 @@
             <xsl:when test="@subtype = 'cf'">
                <xsl:text>vgl. </xsl:text>
             </xsl:when>
-            <xsl:when test="@subtype = 'See'">
+         <xsl:when test="@subtype = 'See'">
                <xsl:text>Siehe </xsl:text>
             </xsl:when>
-            <xsl:when test="@subtype = 'Cf'">
+            <xsl:when test="@subtype = 'cf'">
                <xsl:text>Vgl. </xsl:text>
             </xsl:when>
-                     </xsl:choose>
-         <xsl:text>A.&#160;S.: \emph{Tagebuch}, </xsl:text>
+         </xsl:choose>
+      <xsl:text>A.&#8239;S.: \emph{Tagebuch}, </xsl:text>
       </xsl:if>
       <xsl:value-of select="
-         format-date(@target,
-         '[D1].&#160;[M1].&#160;[Y0001]')"/>
+            format-date(@target,
+            '[D1].&#8239;[M1].&#8239;[Y0001]')"/>
+   </xsl:template>
+   <xsl:template match="ref[@type = 'url']">
+      <xsl:text>\uline{\url{</xsl:text>
+      <xsl:value-of select="(@target)"/>
+      <xsl:text>}}</xsl:text>
    </xsl:template>
    <xsl:template match="ref[@type = 'toLetter']">
       <xsl:variable name="target-path" as="xs:string">
@@ -5066,17 +5357,11 @@
          </xsl:when>
          <xsl:otherwise>
             <xsl:choose>
-               <xsl:when test="@subtype = 'See'">
+               <xsl:when test="@subtype = 'see'">
                   <xsl:text>Siehe </xsl:text>
                </xsl:when>
-               <xsl:when test="@subtype = 'Cf'">
-                  <xsl:text>Vgl. </xsl:text>
-               </xsl:when>
-               <xsl:when test="@subtype = 'see'">
-                  <xsl:text>siehe </xsl:text>
-               </xsl:when>
                <xsl:when test="@subtype = 'cf'">
-                  <xsl:text>vgl. </xsl:text>
+                  <xsl:text>Vgl. </xsl:text>
                </xsl:when>
             </xsl:choose>
             <xsl:value-of
@@ -5085,41 +5370,8 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
-   <!-- neu 2021-09-09 -->
-   <xsl:template match="div1">
-      <xsl:choose>
-         <xsl:when test="position() = 1">
-            <xsl:text>\biographical{</xsl:text>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>\biographicalOhne{</xsl:text>
-            <!-- Das setzt das kleine Köpfchen nur beim ersten Vorkommen einer biografischen Note -->
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:choose>
-         <xsl:when test="ref[@type = 'schnitzlerDiary']">
-            <xsl:text>\emph{Tagebuch}, </xsl:text>
-            <xsl:value-of select="
-               format-date(ref[@type = 'schnitzlerDiary']/@target,
-               '[D1].&#160;[M1].&#160;[Y0001]')"/>
-            <xsl:text>: </xsl:text>
-         </xsl:when>
-         <xsl:when test="bibl">
-            <xsl:apply-templates select="bibl"/>
-            <xsl:text>: </xsl:text>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>\textcolor{red}{FEHLER QUELLENANGABE}</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:text>»</xsl:text>
-      <xsl:apply-templates select="quote"/>
-      <xsl:text>«</xsl:text>
-      <xsl:if test="
-         not(substring(normalize-space(quote), string-length(normalize-space(quote)), 1) = '.' or substring(normalize-space(quote), string-length(normalize-space(quote)), 1) = '?' or substring(normalize-space(quote), string-length(normalize-space(quote)), 1) = '!'
-         or quote/node()[position() = last()]/self::dots or substring(normalize-space(quote), string-length(normalize-space(quote)) - 1, 2) = '.–')">
-         <xsl:text>.</xsl:text>
-      </xsl:if>
-      <xsl:text>}</xsl:text>
+   <!-- Das hier reicht die LateX-Befehler direkt durch, die mit <?latex ....> markiert sind -->
+   <xsl:template match="processing-instruction()[name() = 'latex']">
+      <xsl:value-of select="concat('{', normalize-space(.), '}')"/>
    </xsl:template>
 </xsl:stylesheet>
