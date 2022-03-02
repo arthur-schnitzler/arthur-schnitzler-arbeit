@@ -1598,7 +1598,7 @@
             <xsl:text>Fotokopie</xsl:text>
          </xsl:when>
          <xsl:when test="@subtype = 'fotografische_vervielfaeltigung'">
-            <xsl:text>Fotografische Vervielfältigung</xsl:text>
+            <xsl:text>fotografische Vervielfältigung</xsl:text>
          </xsl:when>
          <xsl:when test="@subtype = 'ms_abschrift'">
             <xsl:text>maschinelle Abschrift</xsl:text>
@@ -5051,10 +5051,10 @@
       <xsl:variable name="target-path" as="xs:string">
          <xsl:choose>
             <xsl:when test="ends-with(@target, '.xml')">
-               <xsl:value-of select="concat('../data/', @target)"/>
+               <xsl:value-of select="concat('../editions/', @target)"/>
             </xsl:when>
             <xsl:otherwise>
-               <xsl:value-of select="concat('../data/', @target, '.xml')"/>
+               <xsl:value-of select="concat('../editions/', @target, '.xml')"/>
             </xsl:otherwise>
          </xsl:choose>
       </xsl:variable>
