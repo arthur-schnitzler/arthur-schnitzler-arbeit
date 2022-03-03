@@ -3718,8 +3718,11 @@
       <xsl:text>}}}</xsl:text>
       <xsl:choose>
          <xsl:when test="@type = 'textConst'">
-            <!-- Trennt TextConst und Kommentar auf, sonst nur CendNote  -->
-            <xsl:text>\Aendnote{\textnormal{</xsl:text>
+            <!-- 
+            möchte man textConst abgespalten, dann <xsl:text>\Aendnote{\textnormal{</xsl:text>
+            
+            -->
+            <xsl:text>\Cendnote{\textnormal{</xsl:text>
          </xsl:when>
          <xsl:otherwise>
             <xsl:text>\Cendnote{\textnormal{</xsl:text>
