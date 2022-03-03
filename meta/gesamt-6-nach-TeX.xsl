@@ -1088,13 +1088,11 @@
                select="foo:sectionInToc(teiHeader/fileDesc/titleStmt/title[@level = 'a'], 0, count(contains(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')))"/>
             <xsl:text>]{</xsl:text>
             <xsl:value-of select="$dokument-id"/>
-            <!-- HIER DER TITEL FÜR DIE ÜBERSCHRIFT AUSKOMMENTIERT 
                     <xsl:value-of
                      select="substring-before(teiHeader/fileDesc/titleStmt/title[@level = 'a'], tokenize(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')[last()])"/>
                   <xsl:value-of
                      select="foo:date-translate(tokenize(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')[last()])"
-                  />-->
-            <!-- Hier Entscheidung, ob Unveröffentlicht seitlich in der Marginalspalte steht -->
+                  />
             <xsl:text>}</xsl:text>
          </xsl:otherwise>
       </xsl:choose>
@@ -3628,14 +3626,14 @@
       <xsl:value-of select="@id"/>
       <xsl:text>v}</xsl:text>
       <xsl:apply-templates/>
-      <xsl:text>\toendnotes[C]{\footnotesize\hangpara{4em}{1}{\makebox[4em][l]{\makebox[3.6em][l]\zeilennummerierungsschrift{}\scriptsize Fußnote}}#1\endgraf}}\textit{</xsl:text>
+      <xsl:text>\toendnotes[C]{\begin{minipage}[t]{4em}{\makebox[3.6em][r]{\tiny{Fußnote}}}\end{minipage}\begin{minipage}[t]{\dimexpr\linewidth-4em}\textit{</xsl:text>
       <xsl:for-each-group select="following-sibling::node()"
          group-ending-with="note[@type = 'commentary']">
          <xsl:if test="position() eq 1">
             <xsl:apply-templates select="current-group()[position() != last()]" mode="lemma"/>
             <xsl:text>}\,{]} </xsl:text>
             <xsl:apply-templates select="current-group()[position() = last()]" mode="text"/>
-            <xsl:text>\endgraf}}</xsl:text>
+            <xsl:text>\end{minipage}\par}</xsl:text>
          </xsl:if>
       </xsl:for-each-group>
    </xsl:template>
