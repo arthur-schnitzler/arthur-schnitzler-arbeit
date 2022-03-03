@@ -1087,7 +1087,7 @@
             <xsl:value-of
                select="foo:sectionInToc(teiHeader/fileDesc/titleStmt/title[@level = 'a'], 0, count(contains(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')))"/>
             <xsl:text>]{</xsl:text>
-            <xsl:value-of select="$dokument-id"/>
+            <xsl:value-of select="$dokument-id"/><xsl:text> </xsl:text>
                     <xsl:value-of
                      select="substring-before(teiHeader/fileDesc/titleStmt/title[@level = 'a'], tokenize(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')[last()])"/>
                   <xsl:value-of
