@@ -80,7 +80,8 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="kartenbrief"/><!-- nochmal nachschauen -->
+                           <desc type="kartenbrief"/>
+                           <!-- nochmal nachschauen -->
                            <desc type="_blaetter" n="1"/>
                            <desc type="_seiten" n="2"/>
                         </objectDesc>
@@ -89,12 +90,17 @@
                         </handDesc>
                         <additions>
                            <incident type="receiver">
-                              <desc>mit rotem Buntstift Vermerk »<quote><hi rend="latintype"
-                                 >[überschrieben] <rs type="person" ref="#11666">Herzfeld</rs></hi></quote>«</desc><!-- nochmal anschauen -->
+                              <desc>mit rotem Buntstift Vermerk »<quote><hi rend="latintype"><subst>
+                                          <del rend="overwritten"><gap unit="chars"
+                                                reason="illegible" quantity=""/></del>
+                                          <add place="inline"><rs type="person" ref="#11666"
+                                                >Herzfeld</rs></add>
+                                       </subst></hi></quote>«</desc>
+                              <!-- LU: quantity und Schachtelung -->
                            </incident>
                            <incident type="receiver">
                               <desc>mit rotem Buntstift Vermerk »<quote><hi rend="latintype"
-                                 >31.</hi></quote>«</desc>
+                                       >31.</hi></quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -110,7 +116,8 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#11666">Herzfeld, Marie</persName>
-               <date when="1931-03-12" n="1">12.&#8239;3.&#8239;1931</date><!-- Datum überprüfen, ggf. hier und oben korrigieren -->
+               <date when="1931-03-12" n="1">12.&#8239;3.&#8239;1931</date>
+               <!-- Datum überprüfen, ggf. hier und oben korrigieren -->
             </correspAction>
             <correspAction type="received">
                <persName ref="#2121">Schnitzler, Arthur</persName>
@@ -147,7 +154,15 @@
    <text type="letter">
       <body>
          <div type="writingSession" n="1">
-            <opener><dateline rend="center"></dateline></opener>
+            <opener>
+               <dateline rend="center"><pb facs="D20210927-125"/><date>12/III</date></dateline>
+               <salute rend="inline">Lieber A-Schnitzler</salute>
+            </opener>
+            <p>welche schöne Ueberraschung! Es gibt noch unerwartete Freuden. Am liebsten würde ich
+               Ihnen gar nicht danken, <hi rend="underline" n="1">nur</hi> lesen – (anstatt zu
+               arbeiten!), aber ich werde erst <pb facs="D20210927-126"/>ordentlich danken, wenn ich
+               gelesen habe: dann schreibe ich ausführlich. Einstweilen nur: welche Freude! </p>
+            <closer><signed>Marie Herzfeld</signed></closer>
          </div>
       </body>
    </text>
