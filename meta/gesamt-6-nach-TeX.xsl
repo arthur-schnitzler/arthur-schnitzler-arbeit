@@ -5365,9 +5365,18 @@
                   <xsl:text>Vgl. </xsl:text>
                </xsl:when>
             </xsl:choose>
-            <xsl:value-of
-               select="document(resolve-uri($target-path, document-uri(/)))//tei:titleStmt/tei:title[@level = 'a']"
-            />
+            <xsl:choose>
+               <xsl:when test="document(resolve-uri($target-path, document-uri(/)))//tei:titleStmt/tei:title[@level = 'a']">
+                  <xsl:value-of
+                     select="document(resolve-uri($target-path, document-uri(/)))//tei:titleStmt/tei:title[@level = 'a']"
+                     >
+                  </xsl:value-of>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:text>XXXX Auszeichnungsfehler</xsl:text>
+               </xsl:otherwise>
+            </xsl:choose>
+            
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
