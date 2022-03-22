@@ -69,30 +69,30 @@
             <p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
          </seriesStmt>
          <sourceDesc>
-            <listWit>
+            <!--<listWit>
                <witness n="1">
                   <msDesc>
-                     <!--<msIdentifier>
+                     <!-\-<msIdentifier>
                         <country></country>
                         <settlement></settlement>
                         <repository></repository>
                         <idno></idno>
-                     </msIdentifier>-->
+                     </msIdentifier>-\->
                      <physDesc>
                         <objectDesc>
                            <desc type="brief"/>
-                           <!-- LU: ggf. weitere desc(s) nach Original -->
+                           <!-\- LU: ggf. weitere desc(s) nach Original -\->
                            <desc type="_blaetter" n="1"/>
-                           <!-- LU: ggf. nach Original korrigieren -->
+                           <!-\- LU: ggf. nach Original korrigieren -\->
                            <desc type="_seiten" n="1"/>
-                           <!-- LU: ggf. nach Original korrigieren -->
+                           <!-\- LU: ggf. nach Original korrigieren -\->
                         </objectDesc>
                         <typeDesc>
                            <p/>
-                           <!-- LU: ggf. nach Original ausfüllen -->
+                           <!-\- LU: ggf. nach Original ausfüllen -\->
                         </typeDesc>
                         <handDesc/>
-                        <!-- LU: ggf. nach Original ausfüllen -->
+                        <!-\- LU: ggf. nach Original ausfüllen -\->
                         <additions>
                            <incident type="editorial">
                               <desc>vorgedruckter Briefkopf: »<quote><p><hi rend="pre-print">Dr
@@ -104,7 +104,7 @@
                      </physDesc>
                   </msDesc>
                </witness>
-            </listWit>
+            </listWit>-->
             <listBibl>
                <biblStruct>
                   <analytic>
@@ -167,7 +167,11 @@
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <dateline rend="right"><date>29/1&#160;908</date></dateline>
+               <dateline><seg rend="left"><hi rend="pre-print">Dr.&#160;Arthur
+                     Schnitzler</hi></seg><seg rend="right"
+                  ><date>29/1&#160;908</date></seg></dateline>
+               <p><hi rend="pre-print"><rs type="place" ref="#133">Wien XVIII.
+                        Spoettelgasse&#160;7</rs>.</hi></p>
                <salute rend="left">Verehrtes Fräulein,</salute>
             </opener>
             <p>ich danke Ihnen herzlich für Ihren liebenswürdigen <anchor type="commentary"
@@ -213,8 +217,9 @@
                 so müssen Sie es auch geduldig hinnehmen, dass ich mich Ihrer reizvollen <rs
                   type="person" ref="#10828">Bang</rs>  <anchor type="commentary"
                   xml:id="K_L02599-6"/><rs type="work"
-                  >Silhouette</rs><!-- LU: rs raus, weil unspezifisch? --><note type="commentary"
-                  xml:id="K_L02599-6h">nicht ermittelt</note> mit Vergnügen erinnere.</p>
+                  >Silhouette</rs><!-- LU: rs raus, weil unspezifisch? MAM: nein, anlegen und PMB-Nummer vergeben --><note
+                  type="commentary" xml:id="K_L02599-6h">nicht ermittelt</note> mit Vergnügen
+               erinnere.</p>
             <closer>Mit herzlichem Gruß Ihr sehr ergebener <lb/><signed>Arthur
                Schnitzler</signed></closer>
          </div>
