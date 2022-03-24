@@ -3088,6 +3088,7 @@
    <!-- body -->
    <xsl:template match="div[@type = 'address']/address">
       <xsl:apply-templates/>
+      <xsl:text>{\bigskip}</xsl:text>
    </xsl:template>
    <xsl:template match="lb">
       <xsl:text>{\\}</xsl:text>
