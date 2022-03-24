@@ -678,6 +678,9 @@
          <xs:assert
             test="not(descendant::tei:placeName) and not(descendant::tei:orgName) and not(descendant::tei:workName) and not(descendant::tei:persName)"
          />
+         <xs:assert
+            test="not(@type='address' and child::*[name() != 'address'])"
+         />
       </xs:complexType>
    </xs:element>
    <xs:element name="lg">
@@ -766,7 +769,7 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:assert
-            test="(position() = 1 and following-sibling::*[1]/name() = 'tei:seg' and not(following-sibling::*[2])) or position() = last()"
+            test="(position() = 1 and following-sibling::*[1]/name() = 'tei:seg' and not(following-sibling::*[2])) or (position() = last() and position()=2)"
          />
       </xs:complexType>
    </xs:element>

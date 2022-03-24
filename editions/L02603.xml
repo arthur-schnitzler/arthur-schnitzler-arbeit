@@ -175,6 +175,7 @@
       </encodingDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2022-03-23">Angelegt</change>
+         <change who="MAM" when="2022-03-24">Index check</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -184,19 +185,22 @@
    <text type="letter">
       <body>
          <div type="address">
-            <p>
-               <seg rend="left"><pb facs="Palsbo_Ac_Schnitzler-Arthur_Michaelis-Karin_1916_001"/>
-                  <hi rend="pre-print">Dr. Arthur Schnitzler</hi><lb/><hi rend="pre-print">
-                     <rs ref="#150" type="place">Wien&#160;XVIII.
-                     Sternwartestrasse&#160;71</rs></hi></seg>
-            </p>
-            <p>
-               <seg rend="right"><pb facs="Palsbo_Ac_Schnitzler-Arthur_Michaelis-Karin_1916_001"
-                  />Frau Karin Michaelis<lb/>adr<lb/>
-                  <rs ref="#65740" type="person">Frau Herdis Bergström</rs><lb/><rs type="place"
-                     ref="#65741" cert="medium">Dosseringen
-                     204<lb/>Kobenha<unclear>vn</unclear></rs></seg>
-            </p>
+            <address>
+               <addrLine><pb facs="Palsbo_Ac_Schnitzler-Arthur_Michaelis-Karin_1916_001"/><hi rend="pre-print">Dr. Arthur Schnitzler</hi></addrLine>
+               <addrLine><hi rend="pre-print"> <rs ref="#150" type="place">Wien&#160;XVIII.
+                  Sternwartestrasse&#160;71</rs></hi></addrLine>
+            </address>
+            <address>
+               <addrLine><pb facs="Palsbo_Ac_Schnitzler-Arthur_Michaelis-Karin_1916_001"
+               />Frau Karin Michaelis</addrLine>
+               <addrLine>adr</addrLine>
+               <addrLine><rs ref="#65740" type="person">Frau Herdis Bergström</rs></addrLine>
+               <addrLine><rs type="place"
+                  ref="#65741" cert="medium">Dosseringen
+                  204<lb/>Kobenha<unclear>vn</unclear></rs></addrLine>
+            </address>
+            
+           
          </div>
          <div type="writingSession" n="1">
             <opener>
@@ -215,10 +219,10 @@
                Karte – die nach meiner Erfahrung sichrer ins neutrale <rs type="place"
                   subtype="implied" ref="#43570">Ausland</rs> gelangt als
                Briefe<!-- ggf. Kommentar (Zensur) --> – <pb
-                  facs="Palsbo_Ac_Schnitzler-Arthur_Michaelis-Karin_1916_002"/><seg rend="left">auf
+                  facs="Palsbo_Ac_Schnitzler-Arthur_Michaelis-Karin_1916_002"/>auf
                   die Gefahr hin, daß Sie mich für minder correct
-                  (<unclear>aber</unclear><!-- oder? --> gerade zu langweilig) halten wie
-                  früher.<!-- ggf. Kommentar --></seg>
+                  (aber gerade zu langweilig) halten wie
+                  früher.<!-- ggf. Kommentar -->
             </p>
             <closer><pb facs="Palsbo_Ac_Schnitzler-Arthur_Michaelis-Karin_1916_002"/>Auf Wiedersehen
                hoffentlich, und <unclear>schoene</unclear><!-- nochmal anschauen --> Grüße, auch von
