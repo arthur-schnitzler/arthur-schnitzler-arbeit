@@ -277,7 +277,13 @@
   </xd:doc>
   <!-- Templates for PAGE, text -->
   <xsl:template match="p:Page" mode="text">
-    <pb facs=""/>
+    <xsl:param name="imageName" />
+    <xsl:param name="numCurr" tunnel="true"/>
+    
+    <xsl:variable name="coords" select="tokenize(p:PrintSpace/p:Coords/@points, ' ')"/>
+    <xsl:variable name="type" select="@imageFilename"/>
+    
+    <pb facs="{substring-before($type, '.jpg')}"/>
     <xsl:apply-templates select="p:TextRegion | p:SeparatorRegion | p:GraphicRegion | p:TableRegion"
       mode="text"/>
   </xsl:template>
