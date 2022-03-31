@@ -361,7 +361,7 @@
       <!-- the fallback option should be a semantically open element such as <ab> -->
       <xsl:otherwise>
         <p>
-          <xsl:apply-templates select="p:TextLine"/>
+        <xsl:apply-templates select="p:TextLine"/>
         </p>
       </xsl:otherwise>
     </xsl:choose>
@@ -735,12 +735,50 @@
         </rs>
       </xsl:when>
       
-      <xsl:when test="@type = 'latintype'">
-        <hi rend="latintype">
+      <xsl:when test="@type = 'salute'">
+        <salute>
           <xsl:call-template name="elem">
             <xsl:with-param name="elem" select="$elem"/>
           </xsl:call-template>
-        </hi>
+        </salute>
+      </xsl:when>
+      
+      <xsl:when test="@type = 'closer'">
+        <closer>
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </closer>
+      </xsl:when>
+      
+      <xsl:when test="@type = 'signed'">
+        <signed>
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </signed>
+      </xsl:when>
+      
+      <xsl:when test="@type = 'latintype'">
+        <rs type="" ref="">
+          <hi rend="latintype">
+            <xsl:call-template name="elem">
+              <xsl:with-param name="elem" select="$elem"/>
+            </xsl:call-template>
+          </hi>
+        </rs>
+      </xsl:when>
+      
+      <xsl:when test="@type = 'paragraph-begin'">
+        <xsl:text>&lt;p&gt;</xsl:text>
+      </xsl:when>
+      
+      <xsl:when test="@type = 'paragraph-end'">
+        <xsl:text>&lt;/p&gt;</xsl:text>
+      </xsl:when>
+      
+      <xsl:when test="@type = 'paragraph-inbetween'">
+        <xsl:text>&lt;p&gt;&lt;/p&gt;</xsl:text>
       </xsl:when>
 
       <xsl:when test="@type = 'date'">
@@ -831,7 +869,7 @@
         </xsl:element>
       </xsl:otherwise>
     </xsl:choose>
-
+    
     <xsl:apply-templates
       select="following-sibling::local:m[@pos = 'e' and @o = $o]/following-sibling::node()[1][self::text()]"
     />
