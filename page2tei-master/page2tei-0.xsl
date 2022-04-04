@@ -277,12 +277,12 @@
   </xd:doc>
   <!-- Templates for PAGE, text -->
   <xsl:template match="p:Page" mode="text">
-    <xsl:param name="imageName" />
+    <xsl:param name="imageName"/>
     <xsl:param name="numCurr" tunnel="true"/>
-    
+
     <xsl:variable name="coords" select="tokenize(p:PrintSpace/p:Coords/@points, ' ')"/>
     <xsl:variable name="type" select="@imageFilename"/>
-    
+
     <pb facs="{substring-before($type, '.jpg')}"/>
     <xsl:apply-templates select="p:TextRegion | p:SeparatorRegion | p:GraphicRegion | p:TableRegion"
       mode="text"/>
@@ -361,7 +361,7 @@
       <!-- the fallback option should be a semantically open element such as <ab> -->
       <xsl:otherwise>
         <p>
-        <xsl:apply-templates select="p:TextLine"/>
+          <xsl:apply-templates select="p:TextLine"/>
         </p>
       </xsl:otherwise>
     </xsl:choose>
@@ -621,18 +621,16 @@
       <xsl:when test="@type = 'textStyle'">
         <xsl:choose>
           <xsl:when test="@o[contains(., 'strikethrough')]">
-          <del
-            rend="strikethrough">
-            <xsl:call-template name="elem">
-              <xsl:with-param name="elem" select="$elem"/>
-            </xsl:call-template>
-          </del>
+            <del rend="strikethrough">
+              <xsl:call-template name="elem">
+                <xsl:with-param name="elem" select="$elem"/>
+              </xsl:call-template>
+            </del>
           </xsl:when>
         </xsl:choose>
         <xsl:choose>
           <xsl:when test="@o[contains(., 'bold')]">
-            <hi
-              rend="bold">
+            <hi rend="bold">
               <xsl:call-template name="elem">
                 <xsl:with-param name="elem" select="$elem"/>
               </xsl:call-template>
@@ -641,8 +639,7 @@
         </xsl:choose>
         <xsl:choose>
           <xsl:when test="@o[contains(., 'italic')]">
-            <hi
-              rend="italics">
+            <hi rend="italics">
               <xsl:call-template name="elem">
                 <xsl:with-param name="elem" select="$elem"/>
               </xsl:call-template>
@@ -651,8 +648,7 @@
         </xsl:choose>
         <xsl:choose>
           <xsl:when test="@o[contains(., 'subscript')]">
-            <hi
-              rend="subscript">
+            <hi rend="subscript">
               <xsl:call-template name="elem">
                 <xsl:with-param name="elem" select="$elem"/>
               </xsl:call-template>
@@ -661,8 +657,7 @@
         </xsl:choose>
         <xsl:choose>
           <xsl:when test="@o[contains(., 'superscript')]">
-            <hi
-              rend="superscript">
+            <hi rend="superscript">
               <xsl:call-template name="elem">
                 <xsl:with-param name="elem" select="$elem"/>
               </xsl:call-template>
@@ -671,8 +666,7 @@
         </xsl:choose>
         <xsl:choose>
           <xsl:when test="@o[contains(., 'underlined')]">
-            <hi
-              rend="underline" n="">
+            <hi rend="underline" n="">
               <xsl:call-template name="elem">
                 <xsl:with-param name="elem" select="$elem"/>
               </xsl:call-template>
@@ -681,8 +675,7 @@
         </xsl:choose>
         <xsl:choose>
           <xsl:when test="@o[contains(., 'smallCaps')]">
-            <hi
-              rend="small_caps">
+            <hi rend="small_caps">
               <xsl:call-template name="elem">
                 <xsl:with-param name="elem" select="$elem"/>
               </xsl:call-template>
@@ -691,8 +684,7 @@
         </xsl:choose>
         <xsl:choose>
           <xsl:when test="@o[contains(., 'letterSpaced')]">
-            <hi
-              rend="spaced_out">
+            <hi rend="spaced_out">
               <xsl:call-template name="elem">
                 <xsl:with-param name="elem" select="$elem"/>
               </xsl:call-template>
@@ -700,7 +692,7 @@
           </xsl:when>
         </xsl:choose>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'supplied'">
         <supplied>
           <xsl:call-template name="elem">
@@ -718,15 +710,21 @@
       </xsl:when>
 
       <xsl:when test="@type = 'comment'">
+        <xsl:variable name="comment" select="@o/substring-before(substring-after(., 'comment:'), ';')"/>
         <comment>
-          <xsl:text>XXXX</xsl:text>
+          <xsl:text>XXXX </xsl:text>
           <xsl:call-template name="elem">
             <xsl:with-param name="elem" select="$elem"/>
           </xsl:call-template>
-          <xsl:text>YYYY</xsl:text>
+          <xsl:text> YYYY</xsl:text>
+          <xsl:text> [Kommentar: </xsl:text>
+          <xsl:value-of select="$comment"/>
+          <xsl:text>]</xsl:text>
         </comment>
       </xsl:when>
-      
+
+      <!--      <TextLine id="line_1648725614556_91" custom="readingOrder {index:0;} comment {offset:0; length:5;comment:test;}">-->
+
       <xsl:when test="@type = 'work'">
         <rs type="work" ref="">
           <xsl:call-template name="elem">
@@ -734,7 +732,7 @@
           </xsl:call-template>
         </rs>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'salute'">
         <salute>
           <xsl:call-template name="elem">
@@ -742,7 +740,7 @@
           </xsl:call-template>
         </salute>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'closer'">
         <closer>
           <xsl:call-template name="elem">
@@ -750,7 +748,7 @@
           </xsl:call-template>
         </closer>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'signed'">
         <signed>
           <xsl:call-template name="elem">
@@ -758,7 +756,7 @@
           </xsl:call-template>
         </signed>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'latintype'">
         <rs type="" ref="">
           <hi rend="latintype">
@@ -768,15 +766,15 @@
           </hi>
         </rs>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'paragraph-begin'">
         <xsl:text>&lt;p&gt;</xsl:text>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'paragraph-end'">
         <xsl:text>&lt;/p&gt;</xsl:text>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'paragraph-inbetween'">
         <xsl:text>&lt;p&gt;&lt;/p&gt;</xsl:text>
       </xsl:when>
@@ -869,7 +867,7 @@
         </xsl:element>
       </xsl:otherwise>
     </xsl:choose>
-    
+
     <xsl:apply-templates
       select="following-sibling::local:m[@pos = 'e' and @o = $o]/following-sibling::node()[1][self::text()]"
     />
