@@ -1,12 +1,16 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L00716" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
-   <teiHeader type="text">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02632"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Arthur Schnitzler an Richard Beer-Hofmann, 14. 8. 1897</title>
-            <author ref="#2121">Schnitzler, Arthur</author>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 14.&#160;8.&#160;1897</title>
+            <author ref="#11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
+               <name>Untner, Laura</name>
             </editor>
             <funder>
                <name>FWF - Der Wissenschaftsfonds</name>
@@ -24,15 +28,15 @@
             <edition>ASBW</edition>
             <respStmt>
                <resp>Transkription und Kommentierung</resp>
-               <name>Martin Anton Müller</name>
-               <name>Susen, Gerd-Hermann</name>
+               <name>Müller, Martin Anton</name>
+               <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L00716</idno>
+            <idno type="asbw">L02632</idno>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
             <pubPlace>Vienna</pubPlace>
-            <date when="2021">2021</date>
+            <date when="2022">2022</date>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
                   <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
@@ -59,7 +63,8 @@
                      beschränken.</p>
                </licence>
             </availability>
-         <idno type="handle">https://hdl.handle.net/21.11115/0000-000E-6DED-E</idno></publicationStmt>
+            <idno type="handle">https://hdl.handle.net/21.11115/0000-000E-6B22-4</idno>
+         </publicationStmt>
          <seriesStmt>
             <p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
          </seriesStmt>
@@ -75,17 +80,28 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="umschlag"/>
-                           <desc type="brief"/>
-                           <desc n="1" type="_blaetter"/>
-                           <desc n="1" type="_seiten"/>
+                           <desc type="telegramm"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="bleistift" style="deutsche-kurrent"/>
-                        </handDesc>
+                        <typeDesc>
+                           <p>maschinell</p>
+                        </typeDesc>
                         <additions>
                            <incident type="postal">
-                              <desc>ohne postalischen Übermittlungsvermerk</desc>
+                              <desc><stamp n="1">
+                                    <date>14/8</date>
+                                    <addSpan>M21 <rs type="person" ref="">Wölfer</rs></addSpan>
+                                 </stamp></desc>
+                           </incident>
+                           <incident type="postal">
+                              <desc><stamp n="2">
+                                    <placeName ref="#59">Wien 9/2 71</placeName>
+                                    <date when="1897-08-14">14&#160;VIII&#160;97</date>
+                                    <time>12&#160;50N</time>
+                                 </stamp></desc>
+                           </incident>
+                           <incident type="archival">
+                              <desc>mit Bleistift von unbekannter Hand datiert:
+                                       »<quote><date>14.&#160;8.&#160;1897</date></quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -100,24 +116,15 @@
          </langUsage>
          <correspDesc>
             <correspAction type="sent">
-               <persName ref="#2121">Schnitzler, Arthur</persName>
-               <placeName ref="#50">Wien</placeName>
-               <date when="1897-08-14" n="01">14. 8. 1897</date>
+               <persName ref="#11485">Goldmann, Paul</persName>
+               <date when="1897-08-14" n="1">14.&#160;8.&#160;1897</date>
+               <placeName ref="#45258">München</placeName>
             </correspAction>
             <correspAction type="received">
-               <persName ref="#10863">Beer-Hofmann, Richard</persName>
+               <persName ref="#2121">Schnitzler, Arthur</persName>
                <placeName ref="#50">Wien</placeName>
+               <date when="1897-08-14" n="1">14.&#160;8.&#160;1897</date>
             </correspAction>
-            <correspContext>
-               <ref type="belongsToCorrespondence" target="#10863">Beer-Hofmann, Richard</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00715">Hofmannsthal
-                  an Schnitzler, [9. 8. 1897]</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00717">Schnitzler an
-                  Beer-Hofmann, 17. 8. 1897</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" target="L00714">Beer-Hofmann an Schnitzler, 7. 8. 1897</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L00717">Schnitzler an
-                  Beer-Hofmann, 17. 8. 1897</ref>
-            </correspContext>
          </correspDesc>
       </profileDesc>
       <encodingDesc>
@@ -127,49 +134,35 @@
                'https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__1891-05-15.html' </ab>
          </refsDecl>
       </encodingDesc>
-      <revisionDesc status="approved">
-         <change who="GHS" when="2019-11-06">angelegt aus Faksimile</change>
-         <change who="MAM" when="2019-11-13">Durchsicht</change>
-         <change who="MAM" when="2019-11-07">Index check</change>
-         <change who="MAM" when="2022-04-06">Beilage als eigenes Dokument</change>
+      <revisionDesc status="proposed">
+         <change who="MAM" when="2022-04-04">Angelegt aus Beilage von RBH-Brief</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile>
-      <graphic url="1897_AS_RBH_2_00057"/>
-      <graphic url="1897_AS_RBH_2_00058"/>
-      <graphic url="1897_AS_RBH_2_00059"/>
-      <graphic url="1897_AS_RBH_2_00060"/>
-   </facsimile>
-   <text type="letter">
+   <text type="telegram">
       <body>
          <div type="address">
             <address>
-               <addrLine>
-                  <pb facs="1897_AS_RBH_2_00057"/>Herrn Doctor</addrLine>
-               <addrLine>Richard Beer-Hofmann</addrLine>
-               <addrLine>
-                  <rs ref="#50" type="place">Wien</rs>
-               </addrLine>
-               <addrLine>
-                  <hi rend="latintype">
-                     <rs ref="#585" type="place">VIII. Hotel Ha<c rendition="#gemination-m"/>erand</rs> (<rs ref="#42773" type="place">Schlösselgasse</rs>)</hi>
-               </addrLine>
+               <addrLine><pb facs="1897_AS_RBH_2_00059"/>doctor schnitzler <rs type="place"
+                     ref="#50">win</rs></addrLine>
+               <addrLine><rs type="place" ref="#397">neunt bezirk frankgasze 1</rs>.</addrLine>
             </address>
          </div>
          <div type="writingSession" n="1">
-            <opener>
-               <dateline>
-                  <pb facs="1897_AS_RBH_2_00058"/>
-                  <date>14/8 97</date>
-               </dateline>
-               <salute>Lieber Richard,</salute>
-            </opener>
-            <p>Eben, <date>2 Uhr N. M.</date> ko<c rendition="#gemination-m"/>t dieſes <anchor type="commentary" xml:id="K_L00716-1"/>Telegr.<note type='commentary' xml:id="K_L00716-1h"><ref target="L02632" type="toLetter"/></note> –</p>
-            <p>Auf Wiederſehn heut Abend. Bitte, nicht ſpät.</p>
-            <closer>Herzlich Ihr <signed>Arth</signed>
-            </closer>
+            <p rend="center"><pb facs="1897_AS_RBH_2_00059"/>
+               <rs type="place" ref="#50">win</rs> fr <rs ref="#45258" type="place">muenchen</rs>
+               8915 15 <date>14/8</date>
+               <space unit="chars" quantity="1"/>
+               <time>11</time>
+            </p>
+            <p>
+               <date>montag</date> oder <date>dinstag</date><space unit="chars" quantity="1"
+                  /><anchor type="commentary" xml:id="K_L02632-1"/>komme ich<note type="commentary"
+                  xml:id="K_L02632-1h">Dieses Telegramm wurde als Beilage von <rs type="person"
+                     ref="#2121">Schnitzler</rs> an <rs type="person" ref="#10863">Richard
+                     Beer-Hofmann</rs> übermittelt, <ref target="L00716" type="toLetter"/></note>
+               nach <rs ref="#30" type="place">salzburg</rs> grusz = <rs ref="#11485" type="person"
+                  >goldmann</rs>. </p>
          </div>
-         
       </body>
    </text>
 </TEI>
