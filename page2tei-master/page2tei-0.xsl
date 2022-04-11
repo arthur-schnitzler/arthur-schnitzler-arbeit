@@ -360,13 +360,13 @@
       </xsl:when>
       <!-- the fallback option should be a semantically open element such as <ab> -->
       <xsl:otherwise>
-        <p>
+        <seite><!-- LU -->
           <xsl:apply-templates select="p:TextLine"/>
-        </p>
+        </seite>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
+  
   <xd:doc>
     <xd:desc>create a table</xd:desc>
     <xd:param name="numCurr"/>
@@ -710,7 +710,8 @@
       </xsl:when>
 
       <xsl:when test="@type = 'comment'">
-        <xsl:variable name="comment" select="@o/substring-before(substring-after(., 'comment:'), ';')"/>
+        <xsl:variable name="comment"
+          select="@o/substring-before(substring-after(., 'comment:'), ';')"/>
         <comment>
           <xsl:text>XXXX </xsl:text>
           <xsl:call-template name="elem">
@@ -919,6 +920,8 @@
     <xd:desc>Text nodes to be copied</xd:desc>
   </xd:doc>
   <xsl:template match="text()">
-    <xsl:value-of select="."/>
+    <!--<xsl:value-of select="."/>-->
+    <xsl:value-of select="translate(., '¬', '-')"/><!-- Zeilenumbruchszeichen entfernen und mit Bindestrich -->
   </xsl:template>
+  
 </xsl:stylesheet>
