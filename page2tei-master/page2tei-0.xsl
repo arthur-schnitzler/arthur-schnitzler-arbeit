@@ -476,6 +476,7 @@
 
     <xsl:variable name="text" select="p:TextEquiv/p:Unicode"/>
     <xsl:variable name="custom" as="text()*">
+      
       <xsl:for-each select="tokenize(@custom, '\}')">
         <xsl:choose>
           <xsl:when
@@ -584,12 +585,18 @@
     <!-- TODO parameter to create <l>...</l> - #1 -->
     <xsl:text>
       </xsl:text>
+    <xsl:if test="contains(@custom,'type:paragraph')">
+      <xsl:text>&lt;p&gt;</xsl:text>
+    </xsl:if>
     <!--<lb facs="#facs_{$numCurr}_{@id}" n="N{format-number($pos, '000')}"/>-->
     <xsl:apply-templates select="$prepared/text()[not(preceding-sibling::local:m)]"/>
     <xsl:apply-templates select="
         $prepared/local:m[@pos = 's']
         [count(preceding-sibling::local:m[@pos = 's']) = count(preceding-sibling::local:m[@pos = 'e'])]"/>
     <!--[not(preceding-sibling::local:m[1][@pos='s'])]" />-->
+    <xsl:if test="following-sibling::p:TextLine[1]/contains(@custom,'type:paragraph')">
+      <xsl:text>&lt;/p&gt;</xsl:text>
+    </xsl:if>
   </xsl:template>
 
   <xd:doc>
@@ -921,7 +928,7 @@
   </xd:doc>
   <xsl:template match="text()">
     <!--<xsl:value-of select="."/>-->
-    <xsl:value-of select="translate(., '¬', '-')"/><!-- Zeilenumbruchszeichen entfernen und mit Bindestrich -->
+    <xsl:value-of select="translate(., '¬', '')"/><!-- Zeilenumbruchszeichen entfernen -->
   </xsl:template>
   
 </xsl:stylesheet>
