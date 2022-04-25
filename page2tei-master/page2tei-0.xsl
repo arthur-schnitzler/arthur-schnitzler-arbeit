@@ -719,16 +719,15 @@
       <xsl:when test="@type = 'comment'">
         <xsl:variable name="comment"
           select="@o/substring-before(substring-after(., 'comment:'), ';')"/>
-        <comment>
-          <xsl:text>XXXX </xsl:text>
+        <anchor type="commentary" xml:id="XXXX">
           <xsl:call-template name="elem">
             <xsl:with-param name="elem" select="$elem"/>
           </xsl:call-template>
-          <xsl:text> YYYY</xsl:text>
-          <xsl:text> [Kommentar: </xsl:text>
+          <xsl:text>[Kommentar: </xsl:text>
           <xsl:value-of select="$comment"/>
           <xsl:text>]</xsl:text>
-        </comment>
+        </anchor>
+        <note type="commentary" xml:id="XXXX"/>
       </xsl:when>
 
       <!--      <TextLine id="line_1648725614556_91" custom="readingOrder {index:0;} comment {offset:0; length:5;comment:test;}">-->
@@ -739,6 +738,14 @@
             <xsl:with-param name="elem" select="$elem"/>
           </xsl:call-template>
         </rs>
+      </xsl:when>
+      
+      <xsl:when test="@type = 'pre-print'">
+        <hi rend="pre-print">
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </hi>
       </xsl:when>
 
       <xsl:when test="@type = 'salute'">
@@ -766,25 +773,27 @@
       </xsl:when>
 
       <xsl:when test="@type = 'latintype'">
-        <rs type="" ref="">
           <hi rend="latintype">
             <xsl:call-template name="elem">
               <xsl:with-param name="elem" select="$elem"/>
             </xsl:call-template>
           </hi>
-        </rs>
       </xsl:when>
 
       <xsl:when test="@type = 'paragraph-begin'">
         <xsl:text>&lt;p&gt;</xsl:text>
       </xsl:when>
+      
+      <xsl:when test="@type = 'paragraph-start'">
+        <xsl:text>&lt;p&gt;</xsl:text>
+      </xsl:when>
 
       <xsl:when test="@type = 'paragraph-end'">
-        <xsl:text>&lt;/p&gt;</xsl:text>
+        <xsl:text>&lt;&#47;p&gt;</xsl:text>
       </xsl:when>
 
       <xsl:when test="@type = 'paragraph-inbetween'">
-        <xsl:text>&lt;p&gt;&lt;/p&gt;</xsl:text>
+        <xsl:text>&lt;p&gt;&lt;&#47;p&gt;</xsl:text>
       </xsl:when>
 
       <xsl:when test="@type = 'date'">
