@@ -1,12 +1,12 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02656"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02657"
    xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, 27.&#160;9.&#160;1901</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, [6.&#160;2.&#160;1903?]</title>
             <author ref="#11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -31,7 +31,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02656</idno>
+            <idno type="asbw">L02657</idno>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -76,7 +76,7 @@
                         <country>D</country>
                         <settlement>Marbach am Neckar</settlement>
                         <repository>Deutsches Literaturarchiv</repository>
-                        <idno>A:Schnitzler, HS.NZ85.1.3171</idno>
+                        <idno>A:Schnitzler, HS.NZ85.1.3173</idno>
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
@@ -86,6 +86,14 @@
                            <p>maschinell</p>
                         </typeDesc>
                         <additions>
+                           <incident type="postal">
+                              <desc>»<quote>
+                                    <p>
+                                       <hi rend="pre-print">Aufgenommen durch</hi>
+                                       <space unit="chars" quantity="1"/><hi rend="stamp"><rs
+                                             type="person" ref="#88490">J.
+                                    Khom</rs></hi></p></quote>«</desc>
+                           </incident>
                            <incident type="archival">
                               <desc>beschnitten</desc>
                            </incident>
@@ -103,7 +111,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#11485">Goldmann, Paul</persName>
-               <date when="1901-09-27" n="1">27.&#160;9.&#160;1901</date>
+               <date when="1903-02-06" n="1">[6.&#160;2.&#160;1903?]</date>
                <placeName ref="#168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
@@ -135,25 +143,27 @@
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="DLA_85.1.3171_00083"/>
+      <graphic url="DLA_85.1.3173_00009"/>
    </facsimile>
    <text type="telegram">
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <dateline><pb facs="DLA_85.1.3171_00083"/>de <rs type="place" ref="#168">berlin</rs>
-                  44846 22 <date>27&#160;9</date> 15m=</dateline>
+               <dateline><pb facs="DLA_85.1.3173_00009"/>de <rs type="place" ref="#168">berlin</rs>
+                  25111 <date>17&#160;6</date>
+                  <time>9-35.-m</time>=</dateline>
             </opener>
-            <p><rs type="work" ref="#59803">lokalanzeiger</rs><space unit="chars" quantity="1"
-                  /><anchor type="commentary" xml:id="K_L02656-1"/><rs type="work" subtype="implied"
-                  ref="#88486">meldet</rs><note type="commentary" xml:id="K_L02656-1h"><bibl><rs
-                        type="work" ref="#88486">XXXX</rs>. In: <rs type="work" ref="#59803"
-                        >Berliner Lokal-Anzeiger</rs>, YYYY</bibl></note> verlobung von frauelein
-                  <rs type="person" ref="#14953">marie gluemer</rs> mit direktor <rs type="person"
-                  ref="#21119">martin</rs>. <anchor type="commentary" xml:id="K_L02656-2"/>weisst du
-               etwas darueber<note type="commentary" xml:id="K_L02656-2h"><ref target="1901-09-27"
-                     type="schnitzlerDiary" subtype="see"/></note>?</p>
-            <closer>gruesse = <signed>goldmann&#160;.+</signed></closer>
+            <p><rs type="work" ref="#41531">tageblatt</rs> bringt <anchor type="commentary"
+                  xml:id="K_L02657-1"/><rs type="work" ref="#88513" subtype="implied"
+                  >ankuendigung</rs><note type="commentary" xml:id="K_L02657-1h"><rs type="work"
+                     ref="#88513">XXXX</rs>. In: <rs type="work" ref="#41531">Berliner
+                     Tageblatt</rs>, YYYY</note> dass <rs type="work" ref="#29857">beatrice</rs>
+               noch diesen monat aufgefuehrt wird.</p>
+            <closer>gruss = <signed>goldmann&#160;.+</signed></closer>
+            <!-- gerade kann ich das berliner tageblatt online nicht einsehen. seltsam sind ein paar sachen:
+            mit Brahm-Bw schaut es so aus, als wäre die berliner premiere eigentlich immer für 7. märz geplant
+            gewesen, die Meldung also immer falsch. aus der telegrammzeile wiederum scheint der 17.6. als datum
+            hervorzugehen-->
          </div>
       </body>
    </text>
