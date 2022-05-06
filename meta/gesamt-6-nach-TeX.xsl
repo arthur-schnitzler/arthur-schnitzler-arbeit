@@ -3641,9 +3641,10 @@
    <!-- Normaler anchor, Inhalt leer -->
    <xsl:template
       match="anchor[(@type = 'textConst' or @type = 'commentary') and not(ancestor::footNote)]">
+      <xsl:variable name="typ-i-typ" select="@type"/>
       <xsl:variable name="lemmatext" as="xs:string">
          <xsl:for-each-group select="following-sibling::node()"
-            group-ending-with="note[@type = 'commentary']">
+            group-ending-with="note[@type = $typ-i-typ]">
             <xsl:if test="position() eq 1">
                <xsl:apply-templates select="current-group()[position() != last()]" mode="lemma"/>
             </xsl:if>
