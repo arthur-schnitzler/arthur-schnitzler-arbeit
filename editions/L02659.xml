@@ -1,12 +1,12 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02657"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02659"
    xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, [6.&#160;2.&#160;1903?]</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 27.&#160;4.&#160;1900</title>
             <author ref="#11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -31,7 +31,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02657</idno>
+            <idno type="asbw">L02659</idno>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -76,7 +76,7 @@
                         <country>D</country>
                         <settlement>Marbach am Neckar</settlement>
                         <repository>Deutsches Literaturarchiv</repository>
-                        <idno>A:Schnitzler, HS.NZ85.1.3173</idno>
+                        <idno>A:Schnitzler, HS.NZ85.1.3170</idno>
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
@@ -87,12 +87,19 @@
                         </typeDesc>
                         <additions>
                            <incident type="postal">
-                              <desc>»<quote>
-                                    <p>
-                                       <hi rend="pre-print">Aufgenommen durch</hi>
-                                       <space unit="chars" quantity="1"/><hi rend="stamp"><rs
-                                             type="person" ref="#88490">J.
-                                    Khom</rs></hi></p></quote>«</desc>
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#59"><supplied>Wien</supplied> 9/2</placeName>
+                                    <date when="1900-04-27">27IV00</date>
+                                 </stamp></desc>
+                           </incident>
+                           <incident type="postal">
+                              <desc>»<quote><p><hi rend="stamp"><date>27 Apr</date></hi></p><p><hi
+                                          rend="stamp"><rs type="person" ref="#88520"
+                                          >Zaunegger</rs></hi></p><p><hi rend="stamp">Ausgefertigt
+                                             <date>27 Apr</date><space unit="chars" quantity="1"
+                                                /><time>8<hi rend="subscript"
+                                       >10></hi></time></hi></p></quote>«</desc>
                            </incident>
                            <incident type="archival">
                               <desc>beschnitten</desc>
@@ -111,12 +118,12 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#11485">Goldmann, Paul</persName>
-               <date when="1903-02-06" n="1">[6.&#160;2.&#160;1903?]</date>
+               <date when="1900-04-27" n="1">27.&#160;4.&#160;1900</date>
                <placeName ref="#168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#2121">Schnitzler, Arthur</persName>
-               <date when="1903-02-06">[6.&#160;2.&#160;1903?]</date>
+               <date when="1900-04-27">27.&#160;4.&#160;1900</date>
                <placeName ref="#50">Wien</placeName>
             </correspAction>
             <correspContext>
@@ -144,27 +151,27 @@
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="DLA_85.1.3173_00009"/>
+      <graphic url="DLA_85.1.3170_00030"/>
    </facsimile>
    <text type="telegram">
       <body>
+         <div type="address">
+            <address>
+               <addrLine><pb facs="DLA_85.1.3170_00030"/>= arthur schnitzler <rs type="place"
+                     ref="#50">wien</rs></addrLine>
+               <addrLine><rs type="place" ref="#397">neuntbezirk frankgasse</rs> =</addrLine>
+            </address>
+         </div>
          <div type="writingSession" n="1">
             <opener>
-               <dateline><pb facs="DLA_85.1.3173_00009"/>de <rs type="place" ref="#168">berlin</rs>
-                  25111 <date>17&#160;6</date>
-                  <time>9-35.-m</time>=</dateline>
+               <dateline><pb facs="DLA_85.1.3170_00030"/>v<supplied>on</supplied><space unit="chars"
+                     quantity="1"/><rs type="place" ref="#168">berlin</rs> 68646
+                     2<date>4&#160;27</date>
+                  <time>6&#160;33&#160;S</time></dateline>
             </opener>
-            <p><rs type="work" ref="#41531">tageblatt</rs> bringt <anchor type="commentary"
-                  xml:id="K_L02657-1"/><rs type="work" ref="#88513" subtype="implied"
-                  >ankuendigung</rs><note type="commentary" xml:id="K_L02657-1h"><rs type="work"
-                     ref="#88513">XXXX</rs>. In: <rs type="work" ref="#41531">Berliner
-                     Tageblatt</rs>, YYYY</note> dass <rs type="work" ref="#29857">beatrice</rs>
-               noch diesen monat aufgefuehrt wird.</p>
-            <closer>gruss = <signed>goldmann&#160;.+</signed></closer>
-            <!-- gerade kann ich das berliner tageblatt online nicht einsehen. seltsam sind ein paar sachen:
-            mit Brahm-Bw schaut es so aus, als wäre die berliner premiere eigentlich immer für 7. märz geplant
-            gewesen, die Meldung also immer falsch. aus der telegrammzeile wiederum scheint der 17.6. als datum
-            hervorzugehen-->
+            <p>ich glaube nicht dasz die <anchor type="commentary" xml:id="K_L02659-1"/><rs type="work" subtype="implied" ref="#88522">notizen</rs><note
+                  type="commentary" xml:id="K_L02659-1h">XXXX<!-- klärt sich vielleicht bei den briefen? --></note> irgendwelche folgen haben
+               werden; sie sind nur taktlos und albern. herzlichst = <signed>goldmann</signed></p>
          </div>
       </body>
    </text>
