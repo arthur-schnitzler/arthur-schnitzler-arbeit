@@ -196,7 +196,7 @@
             <xs:element ref="tei:p" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
          <xs:assert
-            test="tei:ref[(@type = 'belongsToCorrespondence' and starts-with(@target, '#')) or ((@type = 'withinCorrespondence' or @type = 'withinCollection') and (@subtype = 'previous_letter' or @subtype = 'next_letter'))]"
+            test="tei:ref[(@type = 'belongsToCorrespondence' and starts-with(@target, '#pmb')) or ((@type = 'withinCorrespondence' or @type = 'withinCollection') and (@subtype = 'previous_letter' or @subtype = 'next_letter'))]"
          />
       </xs:complexType>
    </xs:element>
@@ -369,7 +369,7 @@
          </xs:attribute>
          <xs:attribute name="corresp" type="xs:string" use="optional"/>
          <xs:assert
-            test="(not(@corresp) or (starts-with(@corresp, '#') and string(number(substring-after(@corresp, '#'))) != 'NaN') or (@corresp = 'schreibkraft'))"
+            test="(not(@corresp) or (starts-with(@corresp, '#pmb') and string(number(substring-after(@corresp, '#pmb'))) != 'NaN') or (@corresp = 'schreibkraft'))"
          />
       </xs:complexType>
    </xs:element>
@@ -385,7 +385,7 @@
          </xs:sequence>
          <xs:attribute name="n" use="required" type="xs:integer"/>
          <xs:assert
-            test="tei:placeName[(starts-with(@ref, '#') and string(number(substring-after(@ref, '#'))) != 'NaN') or (tokenize(@ref, ' #')[2])] or not(child::tei:placeName)"
+            test="tei:placeName[(starts-with(@ref, '#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN') or (tokenize(@ref, ' #pmb')[2])] or not(child::tei:placeName)"
          />
       </xs:complexType>
    </xs:element>
@@ -1290,7 +1290,7 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:assert
-            test="(starts-with(@ref, '#') and string(number(substring-after(@ref, '#'))) != 'NaN') or (tokenize(@ref, ' #')[2])"
+            test="(starts-with(@ref, '#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN') or (tokenize(@ref, ' #pmb')[2])"
          />
       </xs:complexType>
    </xs:element>
@@ -1400,7 +1400,7 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:assert
-            test="((starts-with(@ref, '#') and string(number(substring-after(@ref, '#'))) != 'NaN') or (tokenize(@ref, ' #')[2]))"
+            test="((starts-with(@ref, '#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN') or (tokenize(@ref, ' #pmb')[2]))"
          />
       </xs:complexType>
    </xs:element>
@@ -1415,7 +1415,7 @@
          </xs:attribute>
          <xs:attribute name="scribe" type="xs:string" use="optional"/>
          <xs:assert
-            test="(starts-with(@scribe, '#') and string(number(substring-after(@scribe, '#'))) != 'NaN') or (not(@scribe) and @medium) or (not(@scribe) and not(@medium))"
+            test="(starts-with(@scribe, '#pmb') and string(number(substring-after(@scribe, '#pmb'))) != 'NaN') or (not(@scribe) and @medium) or (not(@scribe) and not(@medium))"
          />
       </xs:complexType>
    </xs:element>
@@ -1743,6 +1743,7 @@
                   <xs:enumeration value="#dots"/>
                   <xs:enumeration value="#geschwungene-klammer-zu"/>
                   <xs:enumeration value="#geschwungene-klammer-auf"/>
+                  <xs:enumeration value="#langesS"/>
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
