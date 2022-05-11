@@ -1841,7 +1841,7 @@
          </xsl:otherwise>
       </xsl:choose>
       <xsl:if
-         test="(following-sibling::desc[@type = 'fragment']) or (preceding-sibling::desc[@type = 'fragment'])">
+         test="((following-sibling::desc[@type = 'fragment']) or (preceding-sibling::desc[@type = 'fragment']))">
          <xsl:text>, </xsl:text>
       </xsl:if>
    </xsl:template>
