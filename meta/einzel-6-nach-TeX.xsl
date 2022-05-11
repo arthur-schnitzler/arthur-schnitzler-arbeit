@@ -15,10 +15,10 @@
    <xsl:param name="places"
       select="document('/Users/oldfiche/Documents/schnitzler-git/PMB-csv_to_TEI-list/orte/listplace-pmb.xml')"/>
    <xsl:param name="sigle" select="document('../indices/siglen.xml')"/>
-   <xsl:key name="person-lookup" match="tei:person" use="replace(@xml:id, 'pmb', '#')"/>
-   <xsl:key name="work-lookup" match="tei:bibl" use="replace(@xml:id, 'pmb', '#')"/>
-   <xsl:key name="org-lookup" match="tei:org" use="replace(@xml:id, 'pmb', '#')"/>
-   <xsl:key name="place-lookup" match="tei:place" use="replace(@xml:id, 'pmb', '#')"/>
+   <xsl:key name="person-lookup" match="tei:person" use="replace(@xml:id, '', '#')"/>
+   <xsl:key name="work-lookup" match="tei:bibl" use="replace(@xml:id, '', '#')"/>
+   <xsl:key name="org-lookup" match="tei:org" use="replace(@xml:id, '', '#')"/>
+   <xsl:key name="place-lookup" match="tei:place" use="replace(@xml:id, '', '#')"/>
    <xsl:key name="sigle-lookup" match="row" use="siglekey"/>
    <!-- Funktionen -->
    <!-- Ersetzt im übergegeben String die Umlaute mit ae, oe, ue etc. -->
@@ -472,7 +472,7 @@
          <xsl:when test="$first = '' or empty($first)">
             <xsl:text>\textcolor{red}{\textsuperscript{\textbf{KEY}}}</xsl:text>
          </xsl:when>
-         <xsl:when test="not(starts-with($first, '#'))">
+         <xsl:when test="not(starts-with($first, '#pmb'))">
             <xsl:text>\textcolor{red}{FEHLER2}</xsl:text>
          </xsl:when>
          <xsl:when test="empty($work-entry)">
@@ -480,13 +480,13 @@
          </xsl:when>
          <xsl:when test="$work-entry/tei:author[@role = 'author']">
             <xsl:variable name="author-ref"
-               select="replace($work-entry/tei:author[@role = 'author'][$author-zaehler]/tei:idno[@type = 'pmb'], 'pmb', '#')"/>
+               select="replace($work-entry/tei:author[@role = 'author'][$author-zaehler]/tei:idno[@type = 'pmb'], '', '#')"/>
             <xsl:value-of select="foo:person-in-index($author-ref, $endung, false())"/>
             <xsl:text>!</xsl:text>
          </xsl:when>
          <xsl:when test="$work-entry/tei:author[@role = 'abbreviated-name']">
             <xsl:variable name="author-ref"
-               select="replace($work-entry/tei:author[@role = 'abbreviated-name'][$author-zaehler]/tei:idno[@type = 'pmb'], 'pmb', '#')"/>
+               select="replace($work-entry/tei:author[@role = 'abbreviated-name'][$author-zaehler]/tei:idno[@type = 'pmb'], '', '#')"/>
             <xsl:value-of select="foo:person-in-index($author-ref, $endung, false())"/>
             <xsl:text>!</xsl:text>
          </xsl:when>

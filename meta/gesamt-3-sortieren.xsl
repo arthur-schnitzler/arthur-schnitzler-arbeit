@@ -6,7 +6,7 @@
    <xsl:output method="xml" encoding="utf-8" indent="no"/>
    <!-- Globale Parameter -->
    <xsl:param name="persons" select="document('../indices/listperson.xml')"/>
-   <xsl:key name="person-lookup" match="tei:person" use="replace(@xml:id, 'pmb', '#')"/>
+   <xsl:key name="person-lookup" match="tei:person" use="replace(@xml:id, '', '#')"/>
    <!-- Identity template : copy all text nodes, elements and attributes -->
    <xsl:template match="@* | node()">
       <xsl:copy>

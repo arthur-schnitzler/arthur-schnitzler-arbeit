@@ -10,9 +10,9 @@
     <xsl:key name="received-by" match="TEI"
         use="descendant::correspDesc/correspAction[@type = 'received']/persName/@ref"/>
     <xsl:variable name="sent-by-arthur"
-        select="key('sent-by', ('#2121', '#2173', '#12698', '#12692'))"/>
+        select="key('sent-by', ('#pmb2121', '#pmb2173', '#pmb12698', '#pmb12692'))"/>
     <xsl:variable name="received-by-arthur"
-        select="key('received-by', ('#2121', '#2173', '#12698', '#12692'))"/>
+        select="key('received-by', ('#pmb2121', '#pmb2173', '#pmb12698', '#pmb12692'))"/>
   
     <xsl:template match="/*">
         <xsl:element name="root">
