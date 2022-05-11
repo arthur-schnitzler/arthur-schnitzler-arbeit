@@ -1641,7 +1641,7 @@
          <xsl:text>)</xsl:text>
       </xsl:if>
       <xsl:if
-         test="preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'entwurf' or @type = 'reproduktion'] or following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'entwurf' or @type = 'reproduktion']">
+         test="preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'entwurf' or @type = 'reproduktion' or @type = 'telegramm'] or following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'entwurf' or @type = 'reproduktion']">
          <xsl:text>, </xsl:text>
       </xsl:if>
    </xsl:template>
