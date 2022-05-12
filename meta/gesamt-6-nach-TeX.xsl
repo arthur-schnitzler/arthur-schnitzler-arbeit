@@ -4773,9 +4773,14 @@
                   />
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:if
-                     test="$im-text and not($first = 'pmb2121' or $first = 'pmb50') and not($index-test-bestanden)">
-                     <xsl:text>\edtext{</xsl:text>
+                 <xsl:if
+                     test="$im-text and not($index-test-bestanden)">
+                    <xsl:choose>
+                       <xsl:when test="$first = 'pmb2121' or $first = 'pmb50'"/><!-- Schnitzler und Wien raus -->
+                       <xsl:otherwise>
+                          <xsl:text>\edtext{</xsl:text>
+                       </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:if>
                   <xsl:if test="$emph">
                      <xsl:text>\emph{</xsl:text>
@@ -4798,21 +4803,24 @@
                   </xsl:choose>
                   <xsl:apply-templates/>
                   <xsl:text>}</xsl:text>
-                  <xsl:value-of
-                     select="foo:indexName-Routine(@type, $first, $rest, $endung-index)"/>
-                  <xsl:choose>
-                     <xsl:when
-                        test="$im-text and ($first = 'pmb2121' or $first = 'pmb50') and not($index-test-bestanden)">
-                        <xsl:text>}{</xsl:text>
-                        <xsl:value-of select="foo:lemma(.)"/>
-                        <xsl:text>\Bendnote{</xsl:text>
-                        <xsl:value-of
-                           select="foo:indexName-EndnoteRoutine(@type, $verweis, $first, $rest)"/>
-                        <xsl:text>}}</xsl:text>
-                     </xsl:when>
-                  </xsl:choose>
                   <xsl:if test="$emph">
                      <xsl:text>}</xsl:text>
+                  </xsl:if>
+                  <xsl:value-of
+                     select="foo:indexName-Routine(@type, $first, $rest, $endung-index)"/>
+                  <xsl:if
+                     test="$im-text and not($index-test-bestanden)">
+                     <xsl:choose>
+                        <xsl:when test="$first = 'pmb2121' or $first = 'pmb50'"/><!-- Schnitzler und Wien raus -->
+                        <xsl:otherwise>
+                           <xsl:text>}{</xsl:text>
+                           <xsl:value-of select="foo:lemma(.)"/>
+                           <xsl:text>\Bendnote{</xsl:text>
+                           <xsl:value-of
+                              select="foo:indexName-EndnoteRoutine(@type, $verweis, $first, $rest)"/>
+                           <xsl:text>}}</xsl:text>
+                        </xsl:otherwise>
+                     </xsl:choose>
                   </xsl:if>
                </xsl:otherwise>
             </xsl:choose>
