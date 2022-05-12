@@ -4577,29 +4577,29 @@
       <xsl:param name="typ" as="xs:string"/>
       <xsl:param name="verweis" as="xs:boolean"/>
       <xsl:param name="first" as="xs:string"/>
-      <xsl:param name="rest" as="xs:string"/>
+      <xsl:param name="rest" as="xs:string?"/>
       <xsl:choose>
-         <xsl:when test="not(starts-with($first, 'pmb'))">
+         <xsl:when test="not(starts-with(foo:stripHash($first), 'pmb'))">
             <xsl:text>\textcolor{red}{KEY PROBLEM}</xsl:text>
          </xsl:when>
          <xsl:when test="$typ = 'person'">
             <xsl:choose>
-               <xsl:when test="$first = 'pmb2121'">
+               <xsl:when test="foo:stripHash($first) = 'pmb2121'">
                   <!-- Einträge  Schnitzler raus -->
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:value-of select="foo:personInEndnote($first, $verweis)"/>
+                  <xsl:value-of select="foo:personInEndnote(foo:stripHash($first), $verweis)"/>
                </xsl:otherwise>
             </xsl:choose>
          </xsl:when>
          <xsl:when test="$typ = 'work'">
-            <xsl:value-of select="foo:werkInEndnote($first, $verweis)"/>
+            <xsl:value-of select="foo:werkInEndnote(foo:stripHash($first), $verweis)"/>
          </xsl:when>
          <xsl:when test="$typ = 'org'">
-            <xsl:value-of select="foo:orgInEndnote($first, $verweis)"/>
+            <xsl:value-of select="foo:orgInEndnote(foo:stripHash($first), $verweis)"/>
          </xsl:when>
          <xsl:when test="$typ = 'place'">
-            <xsl:value-of select="foo:placeInEndnote($first, $verweis)"/>
+            <xsl:value-of select="foo:placeInEndnote(foo:stripHash($first), $verweis)"/>
          </xsl:when>
       </xsl:choose>
       <xsl:if test="$rest != ''">
@@ -4668,12 +4668,9 @@
    <xsl:function name="foo:indexName-Routine">
       <xsl:param name="typ" as="xs:string"/>
       <xsl:param name="first" as="xs:string"/>
-      <xsl:param name="rest" as="xs:string"/>
+      <xsl:param name="rest" as="xs:string?"/>
       <xsl:param name="endung" as="xs:string"/>
       <xsl:choose>
-         <xsl:when test="$first = '' or empty($first)">
-            <xsl:text>\textcolor{red}{\textsuperscript{\textbf{KEY}}}</xsl:text>
-         </xsl:when>
          <xsl:when test="$typ = 'person'">
             <xsl:choose>
                <xsl:when test="$first = 'pmb2121'">
@@ -4694,15 +4691,23 @@
             <xsl:value-of select="foo:place-in-index($first, $endung, true())"/>
          </xsl:when>
       </xsl:choose>
-      <xsl:if test="normalize-space($rest) != ''">
+      <xsl:if test="$rest != ''">
          <xsl:value-of
-            select="foo:indexName-Routine($typ, substring-after(tokenize($rest, ' ')[1],'#'), substring-after($rest, ' #'), $endung)"
+            select="foo:indexName-Routine($typ, tokenize($rest,' ')[1], substring-after($rest, ' '), $endung)"
          />
       </xsl:if>
    </xsl:function>
    <xsl:template match="persName | workName | orgName | placeName | rs">
-      <xsl:variable name="first" select="tokenize(@ref, ' ')[1]" as="xs:string?"/>
-      <xsl:variable name="rest" select="substring-after(@ref, concat($first, ' '))" as="xs:string"/>
+      <xsl:variable name="ref-ohne" select="replace(@ref,'#','')" as="xs:string?"/>
+      <xsl:variable name="first" as="xs:string?" select="tokenize($ref-ohne, ' ')[1]"/>
+      <xsl:variable name="rest"  as="xs:string?">
+         <xsl:choose>
+            <xsl:when test="contains($ref-ohne,' ')">
+               <xsl:value-of select="substring-after($ref-ohne, $first)"/>
+            </xsl:when>
+            <xsl:otherwise/>
+         </xsl:choose>
+      </xsl:variable> 
       <xsl:variable name="index-test-bestanden" as="xs:boolean"
          select="count(ancestor::TEI/teiHeader/revisionDesc/change[contains(text(), 'Index check')]) &gt; 0"/>
       <xsl:variable name="candidate" as="xs:boolean"
@@ -4764,12 +4769,12 @@
                      <xsl:text>}</xsl:text>
                   </xsl:if>
                   <xsl:value-of
-                     select="foo:indexName-Routine(@type, foo:stripHash(tokenize(@ref, ' ')[1]), substring-after(@ref, ' '), $endung-index)"
+                     select="foo:indexName-Routine(@type, $first, $rest, $endung-index)"
                   />
                </xsl:when>
                <xsl:otherwise>
                   <xsl:if
-                     test="$im-text and not(@ref = '#pmb2121' or @ref = '#pmb50') and not($index-test-bestanden)">
+                     test="$im-text and not($first = 'pmb2121' or $first = 'pmb50') and not($index-test-bestanden)">
                      <xsl:text>\edtext{</xsl:text>
                   </xsl:if>
                   <xsl:if test="$emph">
@@ -4794,10 +4799,10 @@
                   <xsl:apply-templates/>
                   <xsl:text>}</xsl:text>
                   <xsl:value-of
-                     select="foo:indexName-Routine(@type, foo:stripHash(tokenize(@ref, ' ')[1]), substring-after(@ref, ' '), $endung-index)"/>
+                     select="foo:indexName-Routine(@type, $first, $rest, $endung-index)"/>
                   <xsl:choose>
                      <xsl:when
-                        test="$im-text and not(foo:stripHash(@ref) = 'pmb2121' or foo:stripHash(@ref) = 'pmb50') and not($index-test-bestanden)">
+                        test="$im-text and ($first = 'pmb2121' or $first = 'pmb50') and not($index-test-bestanden)">
                         <xsl:text>}{</xsl:text>
                         <xsl:value-of select="foo:lemma(.)"/>
                         <xsl:text>\Bendnote{</xsl:text>
