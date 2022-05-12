@@ -4579,33 +4579,33 @@
       <xsl:param name="first" as="xs:string"/>
       <xsl:param name="rest" as="xs:string?"/>
       <xsl:choose>
-         <xsl:when test="not(starts-with(foo:stripHash($first), 'pmb'))">
+         <xsl:when test="not(starts-with($first, 'pmb'))">
             <xsl:text>\textcolor{red}{KEY PROBLEM}</xsl:text>
          </xsl:when>
          <xsl:when test="$typ = 'person'">
             <xsl:choose>
-               <xsl:when test="foo:stripHash($first) = 'pmb2121'">
+               <xsl:when test="$first = 'pmb2121'">
                   <!-- Einträge  Schnitzler raus -->
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:value-of select="foo:personInEndnote(foo:stripHash($first), $verweis)"/>
+                  <xsl:value-of select="foo:personInEndnote($first, $verweis)"/>
                </xsl:otherwise>
             </xsl:choose>
          </xsl:when>
          <xsl:when test="$typ = 'work'">
-            <xsl:value-of select="foo:werkInEndnote(foo:stripHash($first), $verweis)"/>
+            <xsl:value-of select="foo:werkInEndnote($first, $verweis)"/>
          </xsl:when>
          <xsl:when test="$typ = 'org'">
-            <xsl:value-of select="foo:orgInEndnote(foo:stripHash($first), $verweis)"/>
+            <xsl:value-of select="foo:orgInEndnote($first, $verweis)"/>
          </xsl:when>
          <xsl:when test="$typ = 'place'">
-            <xsl:value-of select="foo:placeInEndnote(foo:stripHash($first), $verweis)"/>
+            <xsl:value-of select="foo:placeInEndnote($first, $verweis)"/>
          </xsl:when>
       </xsl:choose>
-      <xsl:if test="$rest != ''">
+      <xsl:if test="normalize-space($rest) != ''">
          <xsl:text>{\newline}</xsl:text>
          <xsl:value-of
-            select="foo:indexName-EndnoteRoutine($typ, $verweis, tokenize($rest, ' ')[1], substring-after($rest, ' '))"
+            select="foo:indexName-EndnoteRoutine($typ, $verweis, normalize-space(tokenize($rest, ' ')[1]), normalize-space(substring-after($rest, ' ')))"
          />
       </xsl:if>
    </xsl:function>
@@ -4703,7 +4703,7 @@
       <xsl:variable name="rest"  as="xs:string?">
          <xsl:choose>
             <xsl:when test="contains($ref-ohne,' ')">
-               <xsl:value-of select="substring-after($ref-ohne, $first)"/>
+               <xsl:value-of select="normalize-space(substring-after($ref-ohne, $first))"/>
             </xsl:when>
             <xsl:otherwise/>
          </xsl:choose>
