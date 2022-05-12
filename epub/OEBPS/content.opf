@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="bookid">
+
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+        xmlns:opf="http://www.idpf.org/2007/opf"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+        <dc:identifier id="bookid">ID</dc:identifier>
+
+        <dc:title>Titel</dc:title>
+
+        <dc:creator>Autor_in</dc:creator>
+
+        <dc:publisher>Herausgeber_in</dc:publisher>
+
+        <dc:language>Sprache</dc:language>
+
+        <dc:date>1111-01-01</dc:date>
+
+        <dc:subject>desc type</dc:subject>
+
+        <meta name="cover" content="coverimage"/>
+
+    </metadata>
+
+    <manifest>
+
+        <item id="inhaltsverzeichnis" href="texts/inhaltsverzeichnis.ncx"
+            media-type="application/x-dtbncx+xml"/>
+
+        <item id="cover" href="texts/titel.xhtml" media-type="application/xhtml+xml"/>
+
+        <item id="coverimage" href="images/cover.png" media-type="image/png"/>
+
+        <item id="L00001" href="texts/L00001.xhtml" media-type="application/xhtml+xml"/>
+        <item id="L00002" href="texts/L00002.xhtml" media-type="application/xhtml+xml"/>
+        <item id="L00003" href="texts/L00003.xhtml" media-type="application/xhtml+xml"/>
+        <item id="L00004" href="texts/L00004.xhtml" media-type="application/xhtml+xml"/>
+        <item id="L00005" href="texts/L00005.xhtml" media-type="application/xhtml+xml"/>
+        <item id="L00006" href="texts/L00006.xhtml" media-type="application/xhtml+xml"/>
+        <item id="L00007" href="texts/L00007.xhtml" media-type="application/xhtml+xml"/>
+        <item id="L00008" href="texts/L00008.xhtml" media-type="application/xhtml+xml"/>
+        <item id="L00009" href="texts/L00009.xhtml" media-type="application/xhtml+xml"/>
+        <item id="L00010" href="texts/L00010.xhtml" media-type="application/xhtml+xml"/>
+
+        <item id="ende" href="texts/ende.xhtml" media-type="application/xhtml+xml"/>
+
+        <item id="css" href="styles/stylesheet.css" media-type="text/css"/>
+
+    </manifest>
+
+    <spine toc="inhaltsverzeichnis">
+        <itemref idref="cover"/>
+        <itemref idref="L00001"/>
+        <itemref idref="L00002"/>
+        <itemref idref="L00003"/>
+        <itemref idref="L00004"/>
+        <itemref idref="L00005"/>
+        <itemref idref="L00006"/>
+        <itemref idref="L00007"/>
+        <itemref idref="L00008"/>
+        <itemref idref="L00009"/>
+        <itemref idref="L00010"/>
+        <itemref idref="ende"/>
+    </spine>
+
+</package>
