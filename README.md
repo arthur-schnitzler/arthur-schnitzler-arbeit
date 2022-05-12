@@ -1,3 +1,1 @@
-# schnitzler-briefe-data-arbeit
-
-Das Arbeitsverzeichnis, in dem die Briefe bearbeitet werden. Nicht öffentlich
+This is the working directory of Arthur Schnitzler - Briefe. There are many undocumented things here. So quite frankly: You don't want this and want to visit: https://github.com/arthur-schnitzler/schnitzler-briefe-data
