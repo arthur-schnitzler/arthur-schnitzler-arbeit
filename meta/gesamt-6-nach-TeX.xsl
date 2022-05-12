@@ -15,10 +15,10 @@
    <xsl:param name="places"
       select="document('/Users/oldfiche/Documents/schnitzler-git/PMB-csv_to_TEI-list/orte/listplace-pmb.xml')"/>
    <xsl:param name="sigle" select="document('../indices/siglen.xml')"/>
-   <xsl:key name="person-lookup" match="tei:person" use="replace(@xml:id, '', '#')"/>
-   <xsl:key name="work-lookup" match="tei:bibl" use="replace(@xml:id, '', '#')"/>
-   <xsl:key name="org-lookup" match="tei:org" use="replace(@xml:id, '', '#')"/>
-   <xsl:key name="place-lookup" match="tei:place" use="replace(@xml:id, '', '#')"/>
+   <xsl:key name="person-lookup" match="tei:person" use="@xml:id"/>
+   <xsl:key name="work-lookup" match="tei:bibl" use="@xml:id"/>
+   <xsl:key name="org-lookup" match="tei:org" use="@xml:id"/>
+   <xsl:key name="place-lookup" match="tei:place" use="@xml:id"/>
    <xsl:key name="sigle-lookup" match="row" use="siglekey"/>
    <!-- Funktionen -->
    <!-- Ersetzt im übergegeben String die Umlaute mit ae, oe, ue etc. -->
@@ -472,7 +472,7 @@
          <xsl:when test="$first = '' or empty($first)">
             <xsl:text>\textcolor{red}{\textsuperscript{\textbf{KEY}}}</xsl:text>
          </xsl:when>
-         <xsl:when test="not(starts-with($first, '#'))">
+         <xsl:when test="not(starts-with($first, 'pmb'))">
             <xsl:text>\textcolor{red}{FEHLER2}</xsl:text>
          </xsl:when>
          <xsl:when test="empty($work-entry)">
@@ -480,13 +480,13 @@
          </xsl:when>
          <xsl:when test="$work-entry/tei:author[@role = 'author']">
             <xsl:variable name="author-ref"
-               select="replace($work-entry/tei:author[@role = 'author'][$author-zaehler]/tei:idno[@type = 'pmb'], '', '#')"/>
+               select="$work-entry/tei:author[@role = 'author'][$author-zaehler]/tei:idno[@type = 'pmb']"/>
             <xsl:value-of select="foo:person-in-index($author-ref, $endung, false())"/>
             <xsl:text>!</xsl:text>
          </xsl:when>
          <xsl:when test="$work-entry/tei:author[@role = 'abbreviated-name']">
             <xsl:variable name="author-ref"
-               select="replace($work-entry/tei:author[@role = 'abbreviated-name'][$author-zaehler]/tei:idno[@type = 'pmb'], '', '#')"/>
+               select="$work-entry/tei:author[@role = 'abbreviated-name'][$author-zaehler]/tei:idno[@type = 'pmb']"/>
             <xsl:value-of select="foo:person-in-index($author-ref, $endung, false())"/>
             <xsl:text>!</xsl:text>
          </xsl:when>
@@ -1967,7 +1967,7 @@
             <xsl:when test="self::placeName">
                <xsl:variable name="endung" as="xs:string" select="'|pwk}'"/>
                <xsl:value-of
-                  select="foo:indexName-Routine('place', tokenize(@ref, ' ')[1], substring-after(@ref, ' '), $endung)"
+                  select="foo:indexName-Routine('place', substring-after(tokenize(@ref, ' ')[1],'#'), substring-after(@ref, ' #'), $endung)"
                />
             </xsl:when>
          </xsl:choose>
@@ -2637,11 +2637,9 @@
       <xsl:param name="gedruckte-quellen" as="node()"/>
       <xsl:param name="ists-druckvorlage" as="xs:boolean"/>
       <!-- wenn hier true ist, dann wird die erste bibliografische Angabe als Druckvorlage ausgewiesen -->
-      <!-- ASI SPEZIAL: NACHDEM DIE QUELLE UNTERHALB DES FLIESSTEXTES STEHT, WIRD SIE HIER NIE WIEDERGEGEBEN, DRUM NÄCHSTES IF AUSKOMMENTIERT -->
       <xsl:if 
-            test="($ists-druckvorlage) and not($gedruckte-quellen/biblStruct[1]/@corresp = 'ASTB')">
-         <!-- Schnitzlers Tagebuch kommt nicht rein -->
-            <xsl:text>\buchAlsQuelle{</xsl:text><!-- Diese Zeile statt der vorigen ist die alte Einstellung, die die bibliografische Angabe in den Anhang schreibt -->
+            test="($ists-druckvorlage)">
+            <xsl:text>\buchAlsQuelle{</xsl:text>
             <xsl:choose>
                <!-- Für denn Fall, dass es sich um siglierte Literatur handelt: -->
                <xsl:when test="$gedruckte-quellen/biblStruct[1]/@corresp">
@@ -2649,9 +2647,11 @@
                   <xsl:variable name="seitenangabe" as="xs:string?"
                      select="$gedruckte-quellen/biblStruct[1]/descendant::biblScope[@unit = 'pp']"/>
                   <!-- Zuerst indizierte Sachen in den Index: -->
-                  <xsl:for-each select="$gedruckte-quellen/biblStruct[1]//title/@ref">
+                  <xsl:if test="$gedruckte-quellen/biblStruct[1]//title/@ref">
+                  <xsl:for-each select="foo:stripHash($gedruckte-quellen/biblStruct[1]//title/@ref)">
                      <xsl:value-of select="foo:werk-indexName-Routine-autoren(., '|pwk}')"/>
                   </xsl:for-each>
+                  </xsl:if>
                   <xsl:choose>
                      <!-- Der Analytic-Teil wird auch bei siglierter Literatur ausgegeben -->
                      <xsl:when
@@ -2716,7 +2716,7 @@
       <!-- Wenn mehrere Abdrucke und da der analytic-Teil gleich, dann braucht der nicht wiederholt werden, dann mit-analytic -->
       <!-- Zuerst das in den Index schreiben von Autor, Zeitschrift etc. -->
       <xsl:for-each select="$biblstruct//title/@ref">
-         <xsl:value-of select="foo:indexName-Routine('work', ., '', '|pwk}')"/>
+         <xsl:value-of select="foo:indexName-Routine('work', foo:stripHash(.), '', '|pwk}')"/>
       </xsl:for-each>
       <!--
          Hier kann man es sich sparen, den Autor in den Index zu setzen, da ja das Werk verzeichnet wird
@@ -2858,7 +2858,7 @@
       <xsl:if
          test="starts-with(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, '#pmb')">
          <xsl:value-of
-            select="foo:abgedruckte-workNameRoutine(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, true())"
+            select="foo:abgedruckte-workNameRoutine(foo:stripHash(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref), true())"
          />
       </xsl:if>
       <!-- Hier Briefe bei den Personen in den Personenindex -->
@@ -4550,7 +4550,7 @@
          <xsl:text>$\rightarrow$</xsl:text>
       </xsl:if>
       <xsl:choose>
-         <xsl:when test="$first = ''">
+         <xsl:when test="$first = '' or empty($first)">
             <xsl:text>\textsuperscript{\textbf{\textcolor{red}{PERSON OFFEN}}}</xsl:text>
          </xsl:when>
          <xsl:otherwise>
@@ -4579,12 +4579,12 @@
       <xsl:param name="first" as="xs:string"/>
       <xsl:param name="rest" as="xs:string"/>
       <xsl:choose>
-         <xsl:when test="not(starts-with($first, '#pmb'))">
+         <xsl:when test="not(starts-with($first, 'pmb'))">
             <xsl:text>\textcolor{red}{KEY PROBLEM}</xsl:text>
          </xsl:when>
          <xsl:when test="$typ = 'person'">
             <xsl:choose>
-               <xsl:when test="$first = '#pmb2121'">
+               <xsl:when test="$first = 'pmb2121'">
                   <!-- Einträge  Schnitzler raus -->
                </xsl:when>
                <xsl:otherwise>
@@ -4634,7 +4634,14 @@
    </xsl:function>
    <xsl:function name="foo:stripHash">
       <xsl:param name="first" as="xs:string"/>
-      <xsl:value-of select="substring-after($first, '#pmb')"/>
+      <xsl:choose>
+         <xsl:when test="starts-with($first,'#')">
+            <xsl:value-of select="substring-after($first,'#')"/>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:value-of select="$first"/>
+         </xsl:otherwise>
+      </xsl:choose>
    </xsl:function>
    
    <xsl:function name="foo:werk-indexName-Routine-autoren">
@@ -4669,7 +4676,7 @@
          </xsl:when>
          <xsl:when test="$typ = 'person'">
             <xsl:choose>
-               <xsl:when test="$first = '#pmb2121'">
+               <xsl:when test="$first = 'pmb2121'">
                   <!-- Einträge  Schnitzler raus -->
                </xsl:when>
                <xsl:otherwise>
@@ -4689,7 +4696,7 @@
       </xsl:choose>
       <xsl:if test="normalize-space($rest) != ''">
          <xsl:value-of
-            select="foo:indexName-Routine($typ, tokenize($rest, ' ')[1], substring-after($rest, ' '), $endung)"
+            select="foo:indexName-Routine($typ, substring-after(tokenize($rest, ' ')[1],'#'), substring-after($rest, ' #'), $endung)"
          />
       </xsl:if>
    </xsl:function>
@@ -4757,7 +4764,7 @@
                      <xsl:text>}</xsl:text>
                   </xsl:if>
                   <xsl:value-of
-                     select="foo:indexName-Routine(@type, tokenize(@ref, ' ')[1], substring-after(@ref, ' '), $endung-index)"
+                     select="foo:indexName-Routine(@type, foo:stripHash(tokenize(@ref, ' ')[1]), substring-after(@ref, ' '), $endung-index)"
                   />
                </xsl:when>
                <xsl:otherwise>
@@ -4787,10 +4794,10 @@
                   <xsl:apply-templates/>
                   <xsl:text>}</xsl:text>
                   <xsl:value-of
-                     select="foo:indexName-Routine(@type, tokenize(@ref, ' ')[1], substring-after(@ref, ' '), $endung-index)"/>
+                     select="foo:indexName-Routine(@type, foo:stripHash(tokenize(@ref, ' ')[1]), substring-after(@ref, ' '), $endung-index)"/>
                   <xsl:choose>
                      <xsl:when
-                        test="$im-text and not(@ref = '#pmb2121' or @ref = '#pmb50') and not($index-test-bestanden)">
+                        test="$im-text and not(foo:stripHash(@ref) = 'pmb2121' or foo:stripHash(@ref) = 'pmb50') and not($index-test-bestanden)">
                         <xsl:text>}{</xsl:text>
                         <xsl:value-of select="foo:lemma(.)"/>
                         <xsl:text>\Bendnote{</xsl:text>
@@ -4813,10 +4820,10 @@
       <xsl:param name="first" as="xs:string"/>
       <xsl:param name="vorne" as="xs:boolean"/>
       <xsl:choose>
-         <xsl:when test="$first = ''">
+         <xsl:when test="$first = '' or empty($first)">
             <xsl:text>\textcolor{red}{INDEX FEHLER W}</xsl:text>
          </xsl:when>
-         <xsl:when test="not(starts-with($first, '#pmb'))">
+         <xsl:when test="not(starts-with($first, 'pmb'))">
             <xsl:text>\textcolor{red}{WERKINDEX FEHLER}</xsl:text>
          </xsl:when>
          <xsl:otherwise>
@@ -5073,7 +5080,7 @@
       <xsl:variable name="passive" select="$place/belongsTo/@passive"/>
       <xsl:variable name="typ" select="$place/tei:desc/tei:gloss"/>
       <xsl:choose>
-         <xsl:when test="not(starts-with($first, '#pmb'))">
+         <xsl:when test="not(starts-with($first, 'pmb'))">
             <xsl:text>\textcolor{red}{FEHLER4}</xsl:text>
          </xsl:when>
          <xsl:otherwise>
