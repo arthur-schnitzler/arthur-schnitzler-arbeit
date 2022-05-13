@@ -25,7 +25,7 @@
                     <xsl:for-each select="distinct-values(descendant::tei:handShift/@scribe)">
                         <xsl:element name="person" namespace="http://www.tei-c.org/ns/1.0">
                             <xsl:attribute name="xml:id">
-                                <xsl:value-of select="."/>
+                                <xsl:value-of select="replace(.,'#','')"/>
                             </xsl:attribute>
                         </xsl:element>
                     </xsl:for-each>
