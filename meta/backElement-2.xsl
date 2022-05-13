@@ -4,6 +4,18 @@
     xmlns:fn="http://www.w3.org/2005/xpath-functions" version="3.0">
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
+    
+    <xsl:template match="*" mode="copy-no-namespaces">
+        <xsl:element name="{local-name()}">
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates select="node()" mode="copy-no-namespaces"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="comment()| processing-instruction()" mode="copy-no-namespaces">
+        <xsl:copy/>
+    </xsl:template>
+    
     <xsl:template match="tei:back/tei:listPerson">
         <xsl:element name="listPerson" namespace="http://www.tei-c.org/ns/1.0">
         <xsl:for-each select="distinct-values(tei:person/@xml:id)">
@@ -35,7 +47,7 @@
                         as="xs:string"/>
                     <xsl:choose>
                         <xsl:when test="doc-available($eintrag)">
-                            <xsl:copy-of select="document($eintrag)"/>
+                            <xsl:apply-templates select="document($eintrag)" mode="copy-no-namespaces"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:element name="error">
@@ -61,7 +73,7 @@
                 as="xs:string"/>
             <xsl:choose>
                 <xsl:when test="doc-available($eintrag)">
-                    <xsl:copy-of select="document($eintrag)"/>
+                    <xsl:apply-templates select="document($eintrag)" mode="copy-no-namespaces"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:element name="error">
@@ -84,7 +96,8 @@
                 as="xs:string"/>
             <xsl:choose>
                 <xsl:when test="doc-available($eintrag)">
-                    <xsl:copy-of select="document($eintrag)"/>
+                    <xsl:apply-templates select="document($eintrag)" mode="copy-no-namespaces"/>
+                    
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:element name="error">
@@ -107,7 +120,7 @@
                 as="xs:string"/>
             <xsl:choose>
                 <xsl:when test="doc-available($eintrag)">
-                    <xsl:copy-of select="document($eintrag)"/>
+                    <xsl:apply-templates select="document($eintrag)" mode="copy-no-namespaces"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:element name="error">
