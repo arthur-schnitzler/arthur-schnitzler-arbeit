@@ -882,11 +882,29 @@
          </xs:sequence>
       </xs:complexType>
    </xs:element>
+   
+   
    <xs:element name="placeName">
       <xs:complexType mixed="true">
         <xs:all>
-            <xs:element ref="tei:country" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:settlement" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:anchor" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:country" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:note" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:pb" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:persName" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:rs" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:settlement" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:unclear" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:gap" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:del" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:add" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:subst" maxOccurs="unbounded" minOccurs="0"/>
+           <xs:element ref="tei:damage" maxOccurs="unbounded" minOccurs="0"/>
         </xs:all>
          <xs:attribute name="ref" type="xs:string" use="optional"/>
          <xs:attribute name="type" type="xs:string" use="optional"/>
