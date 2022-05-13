@@ -1013,7 +1013,7 @@
    
    
    <xs:element name="note">
-      <xs:alternative type="backNote_type" test="@type='work_kind' or @type='uri_worklink' or @type='bibliografische_angabe'"/>
+      <xs:alternative type="backNote_type" test="@type='work_kind' or @type='uri_worklink' or @type='bibliografische_angabe' or @type='references'"/>
       <xs:alternative type="normalNote"/>
    </xs:element>
    
@@ -1487,6 +1487,7 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
+         <xs:attribute name="type" type="xs:string"/>
       </xs:complexType>
    </xs:element>
    

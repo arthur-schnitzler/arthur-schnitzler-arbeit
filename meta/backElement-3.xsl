@@ -246,5 +246,6 @@
     <xsl:template match="tei:back//tei:placeName[. = preceding-sibling::tei:placeName/.]"/>
     
     <xsl:template match="tei:back//tei:listEvent"/>
+    <xsl:template match="tei:listOrg[not(child::*)]|tei:listBibl[not(child::*)]|tei:listPerson[not(child::*)]|tei:listPlace[not(child::*)]"/>
     
 </xsl:stylesheet>
