@@ -5,7 +5,6 @@
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
     
-    <xsl:template match="tei:back"/> <!-- Alte back-Elemente löschen -->
     
     <xsl:template match="tei:TEI">
         <xsl:element name="TEI" namespace="http://www.tei-c.org/ns/1.0">
@@ -31,11 +30,13 @@
                         </xsl:element>
                     </xsl:for-each>
                     <xsl:for-each select="distinct-values(descendant::tei:handNote/@corresp)">
-                        <xsl:element name="person" namespace="http://www.tei-c.org/ns/1.0">
-                            <xsl:attribute name="xml:id">
-                                <xsl:value-of select="."/>
-                            </xsl:attribute>
-                        </xsl:element>
+                        <xsl:if test="not(.='schreibkraft')">
+                            <xsl:element name="person" namespace="http://www.tei-c.org/ns/1.0">
+                                <xsl:attribute name="xml:id">
+                                    <xsl:value-of select="replace(.,'#','')"/>
+                                </xsl:attribute>
+                            </xsl:element>
+                        </xsl:if>
                     </xsl:for-each>
                 </xsl:element>
                 <xsl:element name="listBibl" namespace="http://www.tei-c.org/ns/1.0">
@@ -77,6 +78,7 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
+    
     
     
 </xsl:stylesheet>
