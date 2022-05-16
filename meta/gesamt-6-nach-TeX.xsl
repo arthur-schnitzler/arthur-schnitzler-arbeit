@@ -4242,18 +4242,19 @@
       </xsl:choose>
    </xsl:template>
    <xsl:template match="handShift[@scribe]">
-      <xsl:text>{[}hs. </xsl:text>
+      <xsl:text>{[}hs.</xsl:text>
       <xsl:choose>
          <!-- Sonderregel für den von Hermine Benedict und  Hofmansnthal verfassten Brief -->
          <xsl:when test="ancestor::TEI[@id = 'L042294'] and @scribe = 'A002011'">
-            <xsl:text>H.</xsl:text>
+            <xsl:text> H.</xsl:text>
          </xsl:when>
          <xsl:when test="ancestor::TEI[@id = 'L042294'] and @scribe = 'A002406'">
-            <xsl:text>B.</xsl:text>
+            <xsl:text> B.</xsl:text>
          </xsl:when>
          <!-- Sonderregel für Gerty Schlesinger -->
          <xsl:when
             test="ancestor::TEI[@id = 'L041802'] and (@scribe = 'A003800' or @scribe = 'A004750' or @scribe = 'A004756')">
+            <xsl:text> </xsl:text>
             <xsl:value-of
                select="substring(normalize-space(key('person-lookup', (@scribe), $persons)/tei:persName/tei:forename), 1)"/>
             <xsl:text> </xsl:text>
@@ -4263,16 +4264,17 @@
          </xsl:when>
          <xsl:when
             test="@scribe = 'A002134' and ancestor::TEI/teiHeader[1]/fileDesc[1]/sourceDesc[1]/correspDesc[1]/dateSender[1]/date[1][starts-with(@when, '18')]">
-            <xsl:text>G. Schlesinger</xsl:text>
+            <xsl:text> G. Schlesinger</xsl:text>
          </xsl:when>
          <xsl:when test="@scribe = 'A003025'">
-            <xsl:text>Georg von Franckenstein</xsl:text>
+            <xsl:text> Georg von Franckenstein</xsl:text>
          </xsl:when>
          <xsl:otherwise>
             <xsl:choose>
                <!-- Sonderregeln wenn Gerty, Julie Wassermann, Mary Mell und Olga im gleichen Brief vorkommen wie Schnitzler und Hofmannsthal -->
                <xsl:when
                   test="@scribe = '#pmb2173' and ancestor::TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author/@ref = '#pmb2121'">
+                  <xsl:text> </xsl:text>
                   <xsl:value-of
                      select="substring(normalize-space(key('person-lookup', (@scribe), $persons)/tei:persName/tei:forename), 1, 1)"/>
                   <xsl:text>. </xsl:text>
@@ -4280,6 +4282,7 @@
                <!-- Wassermann: -->
                <xsl:when
                   test="@scribe = '#pmb13058' and ancestor::TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author/@ref = '#pmb13055'">
+                  <xsl:text> </xsl:text>
                   <xsl:value-of
                      select="normalize-space(key('person-lookup', (@scribe), $persons)/tei:persName/tei:forename)"
                   />
@@ -4287,25 +4290,25 @@
                <!-- Mary Mell -->
                <xsl:when
                   test="@scribe = '#pmb5765' and ancestor::TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author/@ref = '#pmb12225'">
-                  <xsl:value-of
+                  <xsl:text> </xsl:text><xsl:value-of
                      select="normalize-space(key('person-lookup', (@scribe), $persons)/tei:persName/tei:forename)"
                   />
                </xsl:when>
                <xsl:when
                   test="@scribe = '#pmb2292' and ancestor::TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author/@ref = '#pmb11740'">
-                  <xsl:value-of
+                  <xsl:text> </xsl:text><xsl:value-of
                      select="substring(normalize-space(key('person-lookup', (@scribe), $persons)/tei:persName/tei:forename), 1, 1)"/>
                   <xsl:text>. </xsl:text>
                </xsl:when>
                <xsl:when
                   test="@scribe = '#pmb27886' and ancestor::TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author/@ref = '#pmb27882'">
-                  <xsl:value-of
+                  <xsl:text> </xsl:text><xsl:value-of
                      select="substring(normalize-space(key('person-lookup', (@scribe), $persons)/tei:persName/tei:forename), 1, 1)"/>
                   <xsl:text>. </xsl:text>
                </xsl:when>
                <xsl:when
                   test="@scribe = '#pmb23918' and ancestor::TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author/@ref = '#pmb2167'">
-                  <xsl:value-of
+                  <xsl:text> </xsl:text><xsl:value-of
                      select="substring(normalize-space(key('person-lookup', (@scribe), $persons)/tei:persName/tei:forename), 1, 1)"/>
                   <xsl:text>. </xsl:text>
                </xsl:when>
