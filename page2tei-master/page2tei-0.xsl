@@ -360,13 +360,13 @@
       </xsl:when>
       <!-- the fallback option should be a semantically open element such as <ab> -->
       <xsl:otherwise>
-        <seite><!-- LU -->
+        <seite>
           <xsl:apply-templates select="p:TextLine"/>
         </seite>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-  
+
   <xd:doc>
     <xd:desc>create a table</xd:desc>
     <xd:param name="numCurr"/>
@@ -476,7 +476,7 @@
 
     <xsl:variable name="text" select="p:TextEquiv/p:Unicode"/>
     <xsl:variable name="custom" as="text()*">
-      
+
       <xsl:for-each select="tokenize(@custom, '\}')">
         <xsl:choose>
           <xsl:when
@@ -585,7 +585,7 @@
     <!-- TODO parameter to create <l>...</l> - #1 -->
     <xsl:text>
       </xsl:text>
-    <xsl:if test="contains(@custom,'type:paragraph')">
+    <xsl:if test="contains(@custom, 'type:paragraph')">
       <xsl:text>&lt;p&gt;</xsl:text>
     </xsl:if>
     <!--<lb facs="#facs_{$numCurr}_{@id}" n="N{format-number($pos, '000')}"/>-->
@@ -594,7 +594,7 @@
         $prepared/local:m[@pos = 's']
         [count(preceding-sibling::local:m[@pos = 's']) = count(preceding-sibling::local:m[@pos = 'e'])]"/>
     <!--[not(preceding-sibling::local:m[1][@pos='s'])]" />-->
-    <xsl:if test="following-sibling::p:TextLine[1]/contains(@custom,'type:paragraph')">
+    <xsl:if test="following-sibling::p:TextLine[1]/contains(@custom, 'type:paragraph')">
       <xsl:text>&lt;/p&gt;</xsl:text>
     </xsl:if>
   </xsl:template>
@@ -739,7 +739,7 @@
           </xsl:call-template>
         </rs>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'pre-print'">
         <hi rend="pre-print">
           <xsl:call-template name="elem">
@@ -773,17 +773,17 @@
       </xsl:when>
 
       <xsl:when test="@type = 'latintype'">
-          <hi rend="latintype">
-            <xsl:call-template name="elem">
-              <xsl:with-param name="elem" select="$elem"/>
-            </xsl:call-template>
-          </hi>
+        <hi rend="latintype">
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </hi>
       </xsl:when>
 
       <xsl:when test="@type = 'paragraph-begin'">
         <xsl:text>&lt;p&gt;</xsl:text>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'paragraph-start'">
         <xsl:text>&lt;p&gt;</xsl:text>
       </xsl:when>
@@ -937,7 +937,8 @@
   </xd:doc>
   <xsl:template match="text()">
     <!--<xsl:value-of select="."/>-->
-    <xsl:value-of select="translate(., '¬', '')"/><!-- Zeilenumbruchszeichen entfernen -->
+    <xsl:value-of select="translate(., '¬', '')"/>
+    <!-- Zeilenumbruchszeichen entfernen -->
   </xsl:template>
-  
+
 </xsl:stylesheet>
