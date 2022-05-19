@@ -795,6 +795,14 @@
       <xsl:when test="@type = 'paragraph-inbetween'">
         <xsl:text>&lt;p&gt;&lt;&#47;p&gt;</xsl:text>
       </xsl:when>
+      
+      <xsl:when test="@type = 'letter-begin'">
+        <xsl:text>&lt;letter&gt;</xsl:text>
+      </xsl:when>
+      
+      <xsl:when test="@type = 'letter-end'">
+        <xsl:text>&lt;&#47;letter&gt;</xsl:text>
+      </xsl:when>
 
       <xsl:when test="@type = 'date'">
         <date>
@@ -815,6 +823,7 @@
           </xsl:call-template>
         </date>
       </xsl:when>
+      
       <xsl:when test="@type = 'person'">
         <xsl:variable name="elName" select="
             if ($rs) then
