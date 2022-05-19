@@ -1,12 +1,15 @@
 # page2tei
 
-1. Export der Transkribus-Dokumente als PAGEs
-2. Transformation der mets.xml-Dateien mit page2tei-0.xsl
-3. Transformation der xml-Dateien mit remove-seite.xsl
-4. Falls mit Tags `paragraph-begin` und `paragraph-end` gearbeitet wurde: [an automatisierter Lösung wird aufgrund des neuen Workflows, der diese Tags ausschließt, nicht gearbeitet]
-    1. `&lt;` ersetzen mit `<`
-    2. `&gt;` ersetzen mit `>`
-    3. `&#47;` ersetzen mit `/`
+1. Export des Transkribus-Dokuments als PAGE
+2. Transformation der mets-Datei mit page2tei-0.xsl
+3. Transformation der xml-Datei mit remove-seite.xsl
+4. `&lt;` ersetzen mit `<`
+5. `&gt;` ersetzen mit `>`
+6. `&#47;` ersetzen mit `/`
+7. Transformation der xml-Datei mit n2letters.xsl
+8. ggf. Adaption von split-files.xsl (Jahr, Personen etc.)
+9. Transformation der xml-Datei mit split-files.xsl
+10. neue xml-Dokumente formatieren
 
 ## Contributors
 - @tboenig
