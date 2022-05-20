@@ -12,11 +12,16 @@
         </xsl:element>
     </xsl:template>
     
+    <xsl:template match="tei:back/tei:listPerson[not(child::*)]"/>
+    <xsl:template match="tei:back/tei:listPlace[not(child::*)]"/>
+    <xsl:template match="tei:back/tei:listOrg[not(child::*)]"/>
+    <xsl:template match="tei:back/tei:listBibl[not(child::*)]"/>
+    
     <xsl:template match="comment()| processing-instruction()" mode="copy-no-namespaces">
         <xsl:copy/>
     </xsl:template>
     
-    <xsl:template match="tei:back/tei:listPerson">
+    <xsl:template match="tei:back/tei:listPerson[child::*]">
         <xsl:element name="listPerson" namespace="http://www.tei-c.org/ns/1.0">
         <xsl:for-each select="distinct-values(tei:person/@xml:id)">
             <xsl:choose>
@@ -47,7 +52,14 @@
                         as="xs:string"/>
                     <xsl:choose>
                         <xsl:when test="doc-available($eintrag)">
-                            <xsl:apply-templates select="document($eintrag)" mode="copy-no-namespaces"/>
+                            <xsl:element name="person" namespace="http://www.tei-c.org/ns/1.0">
+                                <xsl:attribute name="xml:id">
+                                    <xsl:value-of select="concat('pmb', $nummer)"/>
+                                </xsl:attribute>
+                            <xsl:variable name="eintrag_inhalt" select="document($eintrag)/person"/>
+                                <xsl:apply-templates select="$eintrag_inhalt/persName[not(@type='loschen')]|$eintrag_inhalt/birth|$eintrag_inhalt/death|$eintrag_inhalt/sex|$eintrag_inhalt/occupation|$eintrag_inhalt/idno" mode="copy-no-namespaces"/>
+                            </xsl:element>
+                            <!--<xsl:apply-templates select="document($eintrag)" mode="copy-no-namespaces"/>-->
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:element name="error">
@@ -63,7 +75,7 @@
         </xsl:for-each>
         </xsl:element>
     </xsl:template>
-    <xsl:template match="tei:back/tei:listBibl">
+    <xsl:template match="tei:back/tei:listBibl[child::*]">
         <xsl:element name="listBibl" namespace="http://www.tei-c.org/ns/1.0">
         
         <xsl:for-each select="distinct-values(tei:bibl/@xml:id)">
@@ -73,7 +85,14 @@
                 as="xs:string"/>
             <xsl:choose>
                 <xsl:when test="doc-available($eintrag)">
-                    <xsl:apply-templates select="document($eintrag)" mode="copy-no-namespaces"/>
+                        <xsl:element name="bibl" namespace="http://www.tei-c.org/ns/1.0">
+                            <xsl:attribute name="xml:id">
+                                <xsl:value-of select="concat('pmb', $nummer)"/>
+                            </xsl:attribute>
+                            <xsl:variable name="eintrag_inhalt" select="document($eintrag)/bibl"/>
+                            <xsl:apply-templates select="$eintrag_inhalt/title[not(@type='loschen')]|$eintrag_inhalt/author|$eintrag_inhalt/date|$eintrag_inhalt/note[@type]|$eintrag_inhalt/idno" mode="copy-no-namespaces"/>
+                        </xsl:element>
+                    <!--<xsl:apply-templates select="document($eintrag)" mode="copy-no-namespaces"/>-->
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:element name="error">
@@ -87,7 +106,7 @@
         </xsl:for-each>
         </xsl:element>
     </xsl:template>
-    <xsl:template match="tei:back/tei:listPlace">
+    <xsl:template match="tei:back/tei:listPlace[child::*]">
         <xsl:element name="listPlace" namespace="http://www.tei-c.org/ns/1.0">
         <xsl:for-each select="distinct-values(tei:place/@xml:id)">
             <xsl:variable name="nummer" select="substring-after(., 'pmb')"/>
@@ -111,7 +130,7 @@
         </xsl:for-each>
         </xsl:element>
     </xsl:template>
-    <xsl:template match="tei:back/tei:listOrg">
+    <xsl:template match="tei:back/tei:listOrg[child::*]">
         <xsl:element name="listOrg" namespace="http://www.tei-c.org/ns/1.0">
         <xsl:for-each select="distinct-values(tei:org/@xml:id)">
             <xsl:variable name="nummer" select="substring-after(., 'pmb')"/>

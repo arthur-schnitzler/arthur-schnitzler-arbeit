@@ -17,10 +17,10 @@
         <xsl:copy>
             <xsl:variable name="folderURI" select="resolve-uri('.',base-uri())"/>
             <xsl:for-each select="collection(concat($folderURI, '/editions/?select=L0*.xml;recurse=yes'))/node()">
-                <xsl:apply-templates mode="copy" select="."/>
+                <xsl:apply-templates mode="copy" select=".[not(name()='back')]"/>
             </xsl:for-each>
             <xsl:for-each select="collection(concat($folderURI, '/editions/?select=mmL*.xml;recurse=yes'))/node()">
-                <xsl:apply-templates mode="copy" select="."/>
+                <xsl:apply-templates mode="copy" select=".[not(name()='back')]"/>
             </xsl:for-each>
             
            <!-- <xsl:for-each select="collection(concat($folderURI, '?select=L041*.xml;recurse=yes'))/node()">
@@ -56,6 +56,7 @@
             <xsl:apply-templates mode="copy"/>
         </xsl:copy>
     </xsl:template>
+    
     
     <!-- Handle default matching -->
 
