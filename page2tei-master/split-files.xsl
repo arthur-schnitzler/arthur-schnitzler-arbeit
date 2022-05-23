@@ -158,7 +158,7 @@
                                 <xsl:attribute name="n">
                                     <xsl:value-of select="'1'"/>
                                 </xsl:attribute>
-                                <xsl:copy-of select="*" copy-namespaces="no"/>
+                                <xsl:value-of select="*" disable-output-escaping="yes"/>
                             </xsl:element>
                         </body>
                     </text>
