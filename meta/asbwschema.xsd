@@ -427,7 +427,7 @@
    </xs:complexType>
    <xs:complexType name="listBibl_in_back">
       <xs:sequence>
-         <xs:element maxOccurs="unbounded" ref="tei:bibl"/>
+         <xs:element maxOccurs="unbounded" ref="tei:bibl" minOccurs="1"/>
       </xs:sequence>
    </xs:complexType>
    
