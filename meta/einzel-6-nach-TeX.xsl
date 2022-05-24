@@ -4900,7 +4900,7 @@
                            select="foo:indexName-EndnoteRoutine(@type, $verweis, $first, $rest)"/>
                         <xsl:text>}</xsl:text>-->
                         <xsl:text>}</xsl:text>
-                        <xsl:text>\ledouternote{</xsl:text>
+                        <xsl:text>\ledrightnote{</xsl:text>
                         <xsl:value-of select="foo:marginpar-EndnoteRoutine(@type, $verweis, $first, $rest)"/>
                            <xsl:text>}</xsl:text>
                         
@@ -5449,6 +5449,7 @@
       <xsl:text>}}</xsl:text>
    </xsl:template>
    <xsl:template match="ref[@type = 'toLetter']">
+      <xsl:variable name="current-folder" select="substring-before(document-uri(/), '/meta')"/>
       <xsl:variable name="target-path" as="xs:string">
          <xsl:choose>
             <xsl:when test="ends-with(@target, '.xml')">
@@ -5481,14 +5482,14 @@
                </xsl:when>
             </xsl:choose>
             <xsl:choose>
-               <xsl:when test="document(resolve-uri($target-path, document-uri(/)))//titleStmt/title[@level = 'a']">
+               <xsl:when test="document($target-path)//tei:titleStmt/tei:title[@level = 'a']">
                   <xsl:value-of
-                     select="document(resolve-uri($target-path, document-uri(/)))//titleStmt/title[@level = 'a']"
+                     select="document($target-path)//tei:titleStmt/tei:title[@level = 'a']"
                      >
                   </xsl:value-of>
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:text>XXXX Auszeichnungsfehler</xsl:text>
+                  <xsl:text>XXXX Auszeichnungsfehler</xsl:text><xsl:value-of select="document($target-path)"/>
                </xsl:otherwise>
             </xsl:choose>
             
