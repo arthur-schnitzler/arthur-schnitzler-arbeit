@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:tei="http://www.tei-c.org/ns/1.0" version="3.0">
     
     <xsl:output indent="yes"
                method="xml"
@@ -28,6 +29,14 @@
     <!-- template to copy the rest of the nodes -->
     <xsl:template match="comment() | text() | processing-instruction()">
          <xsl:copy/>
+    </xsl:template>
+    
+    <xsl:template match="tei:TEI">
+       <xsl:element name="TEI">
+           <xsl:copy-of select="@xml:id"/>
+            <xsl:apply-templates/>
+       </xsl:element>
+        
     </xsl:template>
     
 </xsl:stylesheet>
