@@ -8,20 +8,16 @@
     <xsl:output method="xml" omit-xml-declaration="yes"/>
     
     <xsl:template match="/">
-        <xsl:copy>
                 <xsl:apply-templates mode="rootcopy"/>
-        </xsl:copy>
     </xsl:template>
     
     <xsl:template match="node()" mode="rootcopy">
         <xsl:copy>
             <xsl:variable name="folderURI" select="resolve-uri('.',base-uri())"/>
             <xsl:for-each select="collection(concat($folderURI, '/editions/?select=L0*.xml;recurse=yes'))/node()">
-                <xsl:apply-templates mode="copy" select=".[not(name()='back')]"/>
+                <xsl:copy-of select="." copy-namespaces="no"/>
             </xsl:for-each>
-            <xsl:for-each select="collection(concat($folderURI, '/editions/?select=mmL*.xml;recurse=yes'))/node()">
-                <xsl:apply-templates mode="copy" select=".[not(name()='back')]"/>
-            </xsl:for-each>
+        </xsl:copy>
             
            <!-- <xsl:for-each select="collection(concat($folderURI, '?select=L041*.xml;recurse=yes'))/node()">
                 <xsl:apply-templates mode="copy" select="."/>
@@ -44,7 +40,7 @@
             <xsl:for-each select="collection(concat($folderURI, '?select=J041*.xml;recurse=yes'))/node()">
                 <xsl:apply-templates mode="copy" select="."/>
             </xsl:for-each>-->
-        </xsl:copy>    
+            
     </xsl:template>
     
     
@@ -84,7 +80,7 @@
         <xsl:element name="TEI">
             <xsl:copy-of select="@*"/>
             <xsl:attribute name="noNamespaceSchemaLocation"
-                        namespace="http://www.w3.org/2001/XMLSchema-instance">your-value</xsl:attribute>--&gt;
+                        namespace="http://www.w3.org/2001/XMLSchema-instance">your-value</xsl:attribute>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
