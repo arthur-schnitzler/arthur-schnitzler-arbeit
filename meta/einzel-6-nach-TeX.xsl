@@ -1556,7 +1556,7 @@
             <xsl:for-each select="distinct-values(handNote/@corresp)">
                <xsl:variable name="corespi" select="."/>
                <xsl:variable name="corespi-name"
-                  select="key('person-lookup', ($corespi), $persons)/persName" as="node()?"/>
+                  select="key('person-lookup', ($corespi), $persons)/persName[1]" as="node()?"/>
                <xsl:text>Handschrift </xsl:text>
                <xsl:value-of
                   select="concat($corespi-name/forename, ' ', $corespi-name/surname)"/>
