@@ -14,7 +14,7 @@
       select="//back/listOrg"/>
    <xsl:param name="places"
       select="//back/listPlace"/>
-   <xsl:param name="sigle" select="document('../indices/siglen.xml')"/>
+   <!--<xsl:param name="sigle" select="document('../indices/siglen.xml')"/>-->
    <xsl:key name="person-lookup" match="person" use="concat('#', @id)"/>
    <xsl:key name="work-lookup" match="bibl" use="concat('#', @id)"/>
    <xsl:key name="org-lookup" match="org" use="concat('#', @id)"/>
@@ -2590,7 +2590,8 @@
          </xsl:choose>
          <xsl:text>) </xsl:text>
       </xsl:if>
-      <xsl:choose>
+      <!-- Hier Sigle auskommentiert -->
+      <!--<xsl:choose>
          <xsl:when test="$gedruckte-quellen/biblStruct[$drucke-zaehler]/@corresp">
             <xsl:if
                test="not(empty($gedruckte-quellen/biblStruct[$drucke-zaehler]/monogr/title[@level = 'm']/@ref))">
@@ -2611,7 +2612,7 @@
                </xsl:otherwise>
             </xsl:choose>
          </xsl:when>
-         <xsl:otherwise>
+         <xsl:otherwise>-->
             <xsl:choose>
                <xsl:when test="$drucke-zaehler = 1">
                   <xsl:value-of
@@ -2634,8 +2635,8 @@
                   </xsl:choose>
                </xsl:otherwise>
             </xsl:choose>
-         </xsl:otherwise>
-      </xsl:choose>
+        <!-- </xsl:otherwise>
+      </xsl:choose>-->
       <xsl:text>} </xsl:text>
       <xsl:if test="$drucke-zaehler &lt; $anzahl-drucke">
          <xsl:value-of
@@ -2643,7 +2644,7 @@
          />
       </xsl:if>
    </xsl:function>
-   <xsl:function name="foo:sigle-schreiben">
+   <!--<xsl:function name="foo:sigle-schreiben">
       <xsl:param name="siglen-wert" as="xs:string"/>
       <xsl:param name="seitenangabe" as="xs:string"/>
       <xsl:variable name="sigle-eintrag" select="key('sigle-lookup', $siglen-wert, $sigle)"
@@ -2675,7 +2676,7 @@
          </xsl:when>
       </xsl:choose>
       <xsl:text>. </xsl:text>
-   </xsl:function>
+   </xsl:function>-->
    <!-- Diese Funktion dient dazu, jene Publikationen in die Endnote zu setzen, die als vollständige Quelle wiedergegeben werden, wenn es keine Archivsignatur gibt -->
    <xsl:function name="foo:buchAlsQuelle">
       <xsl:param name="gedruckte-quellen" as="node()"/>
@@ -2686,18 +2687,18 @@
             test="($ists-druckvorlage) and not($gedruckte-quellen/biblStruct[1]/@corresp = 'ASTB')">
          <!-- Schnitzlers Tagebuch kommt nicht rein -->
             <xsl:text>\buchAlsQuelle{</xsl:text><!-- Diese Zeile statt der vorigen ist die alte Einstellung, die die bibliografische Angabe in den Anhang schreibt -->
-            <xsl:choose>
-               <!-- Für denn Fall, dass es sich um siglierte Literatur handelt: -->
+           <!-- <xsl:choose>
+               <!-\- Für denn Fall, dass es sich um siglierte Literatur handelt: -\->
                <xsl:when test="$gedruckte-quellen/biblStruct[1]/@corresp">
-                  <!-- Siglierte Literatur -->
+                  <!-\- Siglierte Literatur -\->
                   <xsl:variable name="seitenangabe" as="xs:string?"
                      select="$gedruckte-quellen/biblStruct[1]/descendant::biblScope[@unit = 'pp']"/>
-                  <!-- Zuerst indizierte Sachen in den Index: -->
+                  <!-\- Zuerst indizierte Sachen in den Index: -\->
                   <xsl:for-each select="$gedruckte-quellen/biblStruct[1]//title/@ref">
                      <xsl:value-of select="foo:werk-indexName-Routine-autoren(., '|pwk}')"/>
                   </xsl:for-each>
                   <xsl:choose>
-                     <!-- Der Analytic-Teil wird auch bei siglierter Literatur ausgegeben -->
+                     <!-\- Der Analytic-Teil wird auch bei siglierter Literatur ausgegeben -\->
                      <xsl:when
                         test="not(empty($gedruckte-quellen/biblStruct[1]/analytic)) and empty($seitenangabe)">
                         <xsl:value-of select="foo:analytic-angabe($gedruckte-quellen/biblStruct[1])"/>
@@ -2726,12 +2727,12 @@
                      </xsl:otherwise>
                   </xsl:choose>
                </xsl:when>
-               <xsl:otherwise>
+               <xsl:otherwise>-->
                   <xsl:value-of
                      select="foo:bibliographische-angabe($gedruckte-quellen/biblStruct[1], true())"
                   />
-               </xsl:otherwise>
-            </xsl:choose>
+              <!-- </xsl:otherwise>
+            </xsl:choose>-->
             <xsl:text>}</xsl:text>
          </xsl:if>
       <xsl:choose>
