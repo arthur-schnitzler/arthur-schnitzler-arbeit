@@ -4677,7 +4677,7 @@
                   <!-- Einträge  Schnitzler raus -->
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:variable name="namens-eintrag" select="key('person-lookup', $first, $persons)//persName[1]" as="node()"/>
+                  <xsl:variable name="namens-eintrag" select="key('person-lookup', $first, $persons)/persName[1]" as="node()"/>
                   <xsl:choose>
                      <xsl:when test="$namens-eintrag/surname and $namens-eintrag/forename">
                         <xsl:value-of select="concat($namens-eintrag/forename, ' ', $namens-eintrag/surname)"/>
@@ -4694,13 +4694,13 @@
             </xsl:choose>
          </xsl:when>
          <xsl:when test="$typ = 'work'">
-            <xsl:value-of select="key('work-lookup', $first, $works)//title[1]"/>
+            <xsl:value-of select="key('work-lookup', $first, $works)/title[1]"/>
          </xsl:when>
          <xsl:when test="$typ = 'org'">
-            <xsl:value-of select="key('org-lookup', $first, $orgs)//orgName[1]"/>
+            <xsl:value-of select="key('org-lookup', $first, $orgs)/orgName[1]"/>
          </xsl:when>
          <xsl:when test="$typ = 'place'">
-            <xsl:value-of select="key('place-lookup', $first, $places)//placeName[1]"/>
+            <xsl:value-of select="key('place-lookup', $first, $places)/placeName[1]"/>
          </xsl:when>
       </xsl:choose>
       <xsl:if test="$rest != ''">
@@ -4893,7 +4893,7 @@
                      select="foo:indexName-Routine(@type, tokenize(@ref, ' ')[1], substring-after(@ref, ' '), $endung-index)"/>-->
                   <xsl:choose>
                      <xsl:when
-                        test="$im-text and not(@ref = '#2121' or @ref = '#50') and not($index-test-bestanden)">
+                        test="$im-text and not(@ref = '#2121' or @ref = '#50')">
                         <xsl:text>{</xsl:text>
                         <!--<xsl:value-of select="foo:lemma(.)"/>
                         <xsl:text>\Bendnote{</xsl:text>
@@ -5464,7 +5464,7 @@
       <xsl:choose>
          <xsl:when test="@subtype = 'date-only'">
             <xsl:value-of
-               select="document(resolve-uri($target-path, document-uri(/)))//correspDesc/correspAction[@type = 'sent']/date/text()"
+               select="document(resolve-uri($target-path, document-uri(/)))//tei:correspDesc/tei:correspAction[@type = 'sent']/tei:date/text()"
             />
          </xsl:when>
          <xsl:otherwise>
