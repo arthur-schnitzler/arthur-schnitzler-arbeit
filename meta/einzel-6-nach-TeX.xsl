@@ -4667,6 +4667,9 @@
       <xsl:param name="verweis" as="xs:boolean"/>
       <xsl:param name="first" as="xs:string"/>
       <xsl:param name="rest" as="xs:string"/>
+      <xsl:if test="$verweis">
+         <xsl:text>→</xsl:text>
+      </xsl:if>
       <xsl:choose>
          <xsl:when test="not(starts-with($first, '#pmb'))">
             <xsl:text>\textcolor{red}{KEY PROBLEM}</xsl:text>
