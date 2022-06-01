@@ -84,7 +84,7 @@
                         <objectDesc>
                            <desc type="brief"/>
                            <desc type="_blaetter" n="1"/>
-                           <desc type="_seiten" n="1"/>
+                           <desc type="_seiten" n="2"/>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="schwarze_tinte" style="deutsche-kurrent"/>
@@ -121,6 +121,9 @@
       <revisionDesc status="proposed">
          <change who="LU" when="2022-04-21">Angelegt</change>
          <change who="LU" when="2022-05-11">Durchsicht der unvollständigen Version</change>
+         <change who="MAM" when="2022-06-01">Erweiterung um OGL-Kopie</change>
+         <change who="MAM" when="2022-06-01">Index check</change>
+         <change who="MAM" when="2022-06-01">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <text type="letter">
@@ -129,18 +132,28 @@
             <opener>
                <dateline rend="left">
                   <pb facs="DLA_62_90_00035 HS.NZ85.1.3162_0030"/>
-                  <rs type="place" ref="#pmb50">Wien</rs> den <date>20/ <hi rend="subscript">12</hi>
-                     1890</date>.</dateline>
+                  <rs type="place" ref="#pmb50">Wien</rs> den <date>
+                     <hi rend="superscript">20</hi>/<hi rend="subscript">12</hi>
+                  1890</date>.</dateline>
             </opener>
             <p>
                <salute rend="inline">Lieber Arthur!</salute> Ich ſchreibe dieſe Zeilen in fliegender
-               Eile in einem <hi rend="latintype">Café</hi> auf der <rs type="place" ref="#pmb302">Mariahilferſtraße</rs>. Soeben iſt ein ſcharfer Conflict zwiſchen dem bisherigen
-                  <rs type="person" subtype="implied" ref="#pmb3727">Verleger</rs> der »<rs type="work" ref="#pmb35860">Blauen Donau</rs>« und der »<rs type="work" ref="#pmb41189">Preſſe</rs>«
-               zum Ausbruch gekommen. <rs type="org" subtype="implied" ref="#pmb29698">Erſteren</rs>
-               verärgert die Ausfolgung des Materials; ich habe ſoeben mit ihm und ſeinem <anchor type="commentary" xml:id="K_L02652-2"/>Advocaten<note type="commentary" xml:id="K_L02652-2h">nicht identifiziert</note> conferirt und muß ſofort wieder
-               einer zweiten Conferenz beiwohnen. Theile dies, bitte, deiner Frau <rs type="person" subtype="implied" ref="#pmb2461">Schweſter</rs> u. Deinem Herrn <rs type="person" subtype="implied" ref="#pmb2284">Schwager</rs> – unter Discretion – mit! Unter dieſen
-               Umſtänden</p>
-            <!-- XXXX Vorlage noch unvollständig -->
+               Eile in einem <hi rend="latintype">Café</hi> auf der <rs type="place" ref="#pmb302">Mariahilferſtraße</rs>. Soeben iſt ein ſcharfer Conflict zwiſchen dem <anchor type="commentary" xml:id="K_L02652-1"/>bisherigen <rs type="person" subtype="implied" ref="#pmb3727">Verleger</rs>
+               <note type="commentary" xml:id="K_L02652-1h">Die ersten fünf Jahrgänge von <rs type="org" ref="#pmb29698">An der schönen blauen Donau</rs> wurden von der Druckerei <rs type="org" ref="#pmb53104">Josef Eberle</rs> in der <rs type="place" ref="#pmb53101">Seidengasse</rs> nahe der <rs type="place" ref="#pmb302">Mariahilferſtraße</rs> hergestellt. Mit dem 6. Jahrgang übernahm ab
+                     <date>1891</date> die Druckerei der Tageszeitung <rs type="org" ref="#pmb29270">Die Presse</rs> die Produktion.</note> der »<rs type="org" ref="#pmb29698">Blauen Donau</rs>« und der »<rs type="org" ref="#pmb29270">Preſſe</rs>« zum
+               Ausbruch gekommen. <rs type="org" subtype="implied" ref="#pmb88891">Erſteren</rs>
+               verärgert die Ausfolgung des Materials; ich habe ſoeben mit ihm und ſeinem <anchor type="commentary" xml:id="K_L02652-2"/>
+               <rs type="person" subtype="implied" ref="#pmb88895">Advocaten</rs>
+               <note type="commentary" xml:id="K_L02652-2h">nicht
+                  identifiziert</note> conferirt und muß ſofort wieder einer zweiten Conferenz
+               beiwohnen. Theile dies, bitte, deiner Frau <rs type="person" subtype="implied" ref="#pmb2461">Schweſter</rs> u. Deinem Herrn <rs type="person" subtype="implied" ref="#pmb2284">Schwager</rs> – unter Discretion – mit! Unter dieſen Umſtänden <pb facs=""/>werden ſie mein Nichterſcheinen wohl entſchuldigen. Ich bedaure
+               unendlich, daß mir die Freude verſtört wird, dieſen Abend bei ihnen zubringen zu
+               können. Und wie verſtört! Näheres mündlich!</p>
+            <p>Ich habe auch nicht früher ſchreiben können, weil ſich die ganze Geſchichte erſt um
+                  <time>7 Uhr Abends</time> begeben hat.</p>
+            <closer>Viele Grüße!<lb/>Dein<lb/>
+               <signed>Paul.</signed>
+            </closer>
          </div>
       </body>
    </text>
@@ -241,6 +254,14 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb3727</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/3727</idno>
          </person>
+         <person xml:id="pmb88895">
+            <persName>
+               <surname>?? [Anwalt der Buchdruckerei Eberle, 1891]</surname>
+            </persName>
+            <sex value="male"/>
+            <occupation ref="pmb106">Rechtsanwalt/Rechtsanwältin</occupation>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88895/</idno>
+         </person>
          <person xml:id="pmb2461">
             <persName>
                <forename>Gisela</forename>
@@ -305,27 +326,6 @@
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2284</idno>
          </person>
       </listPerson>
-      <listBibl>
-         <bibl xml:id="pmb35860">
-            <title>An der schönen blauen Donau</title>
-            <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/An_der_Schönen_Blauen_Donau</idno>
-            <title type="uri_anno">https://anno.onb.ac.at/cgi-content/anno-plus?aid=asd&amp;size=45</title>
-            <date when="1886-01-01">1886</date>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/35860/</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35860</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb35860</idno>
-            <note type="work_kind">Publikationsorgan &gt;&gt; Zeitschrift</note>
-         </bibl>
-         <bibl xml:id="pmb41189">
-            <title>Die Presse</title>
-            <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=apr</note>
-            <date when="1848-07-03">3.7.1848</date>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41189/</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41189</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41189</idno>
-            <note type="work_kind">Publikationsorgan &gt;&gt; Tageszeitung</note>
-         </bibl>
-      </listBibl>
       <listPlace>
          <place xml:id="pmb50">
             <placeName>Wien</placeName>
@@ -373,6 +373,18 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/302</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb302</idno>
          </place>
+         <place xml:id="pmb53101">
+            <placeName>Seidengasse</placeName>
+            <location type="coords">
+               <geo>48,2002 16,3397</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb57">VII., Neubau</placeName>
+               <geo>48,2 16,35</geo>
+            </location>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53101/</idno>
+            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb53101</idno>
+         </place>
       </listPlace>
       <listOrg>
          <org xml:id="pmb29698">
@@ -394,6 +406,46 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29698</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29698</idno>
          </org>
+         <org xml:id="pmb53104">
+            <orgName>Josef Eberle  Stein-, Buch und Musikaliendruckerei</orgName>
+            <location type="located_in_place">
+               <placeName ref="pmb53101">Seidengasse</placeName>
+               <geo>48,2002 16,3397</geo>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53101/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb53101</idno>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb57">VII., Neubau</placeName>
+               <geo>48,2 16,35</geo>
+               <idno type="URL" subtype="geonames">http://sws.geonames.org/2770853/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb57</idno>
+            </location>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53104/</idno>
+            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb53104</idno>
+         </org>
+         <org xml:id="pmb29270">
+            <orgName>Die Presse</orgName>
+            <location type="located_in_place">
+               <placeName ref="pmb50">Wien</placeName>
+               <geo>48,2066 16,37341</geo>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
+               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
+               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+            </location>
+            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29270</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29270</idno>
+            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29270</idno>
+         </org>
+         <error type="org">88891</error>
       </listOrg>
    </back>
 </TEI>
