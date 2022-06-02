@@ -153,12 +153,11 @@
                         <body>
                             <xsl:element name="div" namespace="http://www.tei-c.org/ns/1.0">
                                 <xsl:attribute name="type">
-                                    <xsl:value-of select="'div'"/>
+                                    <xsl:value-of select="'writingSession'"/>
                                 </xsl:attribute>
                                 <xsl:attribute name="n">
                                     <xsl:value-of select="'1'"/>
                                 </xsl:attribute>
-                                <!--<xsl:value-of select="*" disable-output-escaping="yes"/>-->
                                 <xsl:copy-of select="."/>
                             </xsl:element>
                         </body>

@@ -1,25 +1,37 @@
 # page2tei
 
-## manuell I
-1. Export des Transkribus-Dokuments als PAGE
+- Export des Transkribus-Dokuments als PAGE
+    - Funktioniert
+    - Derzeit manuell, langfristiges Ziel: GitHub-Action
 
-## Transformation I: "trans2tei-1"
-1. Transformation der **mets-Datei** mit page2tei-0.xsl
+- Transformation der mets-Datei mit page2tei-0.xsl
+    - Funktioniert
 
-## Transformation II: "trans2tei-2"
-1. Transformation der **xml-Datei** mit remove-seite.xsl
+- Transformation der mets-Datei mit letter-tags-1.xsl
+    - Funktioniert
 
-## manuell II
-1. ggf. Adaption von split-files.xsl (Jahr, Personen etc.)
+- Transformation der mets-Datei mit letter-tags-2.xsl
+    - Funktioniert
 
-## Transformation III: "trans2tei-3"
-1. Transformation der **xml-Datei** mit split-files.xsl
+- Transformation der mets-Datei mit letter-tags-3.xsl
+    - Funktioniert
 
-## Transformation IV: "trans2tei-4"
-1. Transformation der **neuen xml-Dateien** mit replace.xsl
+- Transformation der mets-Datei mit p-correction.xsl
+    - Funktioniert noch nicht
 
-## manuell III
-1. neue xml-Dokumente formatieren
+- Transformation der mets-Datei mit replace_seite-esc-lb-continued.xsl
+    - Funktioniert grundsätzlich, wurde aber noch nicht ausführlich getestet und wird evtl. noch erweitert
+
+- Wohlgeformtheit überprüfen
+    - Derzeit manuell, wird aber evtl. mit p-correction.xsl (halbwegs) überflüssig
+
+- Transformation der mets-Datei mit split-files.xsl
+    - Funktioniert noch nicht perfekt (Pfade müssen noch angepasst werden, beim Export wird derzeit noch das letzte Dokument überschrieben [position() +1?])
+    - Muss manuell an Jahrgang, involvierte Personen etc. angepasst werden
+
+- Transformation der neuen xml-Dateien mit back-element-hinzufügen-Transformation
+    - Funktioniert (dient Formatierung und ID-Generierung)
+
 
 ## Contributors
 - @tboenig
