@@ -4681,6 +4681,7 @@
                </xsl:when>
                <xsl:otherwise>
                   <xsl:variable name="namens-eintrag" select="key('person-lookup', $first, $persons)/persName[1]" as="node()"/>
+                  <xsl:text>\textcolor{blue}{</xsl:text>
                   <xsl:choose>
                      <xsl:when test="$namens-eintrag/surname and $namens-eintrag/forename">
                         <xsl:value-of select="concat($namens-eintrag/forename, ' ', $namens-eintrag/surname)"/>
@@ -4693,17 +4694,24 @@
                         <xsl:value-of select="$namens-eintrag"/>
                      </xsl:otherwise>
                   </xsl:choose>
+               <xsl:text>}</xsl:text>
                </xsl:otherwise>
             </xsl:choose>
          </xsl:when>
          <xsl:when test="$typ = 'work'">
+            <xsl:text>\textcolor{green}{</xsl:text>
             <xsl:value-of select="key('work-lookup', $first, $works)/title[1]"/>
+            <xsl:text>}</xsl:text>
          </xsl:when>
          <xsl:when test="$typ = 'org'">
+            <xsl:text>\textcolor{brown}{</xsl:text>
             <xsl:value-of select="key('org-lookup', $first, $orgs)/orgName[1]"/>
+            <xsl:text>}</xsl:text>
          </xsl:when>
          <xsl:when test="$typ = 'place'">
+            <xsl:text>\textcolor{pink}{</xsl:text>
             <xsl:value-of select="key('place-lookup', $first, $places)/placeName[1]"/>
+            <xsl:text>}</xsl:text>
          </xsl:when>
       </xsl:choose>
       <xsl:if test="$rest != ''">
