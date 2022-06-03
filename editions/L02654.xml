@@ -8,7 +8,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Lasker-Schüler an Arthur Schnitzler, 28. 4. [1925]</title>
+            <title level="a">Paul Lasker-Schüler an Arthur Schnitzler, 28. 4. [1925?]</title>
             <author ref="#pmb88324">Lasker-Schüler, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02654</idno>
+            <idno type="asbw" n="02654"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -104,7 +104,7 @@
             <correspAction type="sent">
                <persName ref="#pmb88324">Lasker-Schüler, Paul</persName>
                <placeName ref="#pmb50">Wien</placeName>
-               <date when="1925-04-28" n="1">28. 4. [1925]</date>
+               <date when="1925-04-28" n="1">28. 4. [1925?]</date>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -132,11 +132,12 @@
                'https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__1891-05-15.html' </ab>
          </refsDecl>
       </encodingDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2022-04-21">Angelegt</change>
          <change who="MAM" when="2022-05-02">Durchsicht</change>
          <change who="LU" when="2022-05-17">Durchsicht</change>
          <change who="LU" when="2022-05-17">Index check</change>
+         <change who="MAM" when="2022-06-02">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -148,20 +149,26 @@
             <opener>
                <dateline>
                   <pb facs="DLA_85.1.3876"/>
+                  <anchor type="commentary" xml:id="K_L02654-1"/>
                   <date>28. IV.</date>
+                  <note type="commentary" xml:id="K_L02654-1h">Es ist kein Besuch <rs type="person" ref="#pmb88324">Paul Lasker-Schüler</rs>s bei <rs type="person" ref="#pmb2121">Schnitzler</rs> bekannt, durch den das Datum des Briefes gesichert bestimmt
+                     werden könnte. Da der Brief nur in Abschrift vorliegt, lässt sich nicht 
+                     mit Gewissheit ausschließen, dass der Abschreiber, die Abschreiberin bei der Entzifferung der Monatsangabe keinen
+                     Fehler gemacht hat. Mit Hilfe der freundlichen Auskunft von Karl Jürgen
+                     Skrodzki lässt sich folgende Argumentation führen, warum der Brief <date>1925</date>
+                     entstanden sein muss. Unter der Annahme, dass die Monatsangabe stimmt, kommen nur
+                     die Jahre <date>1924</date> und <date>1925</date> in Betracht, da sich
+                     hier <rs type="person" ref="#pmb88324">Paul Lasker-Schüler</rs> im April in <rs type="place" ref="#pmb50">Wien</rs>
+                     aufhielt. Der Brief wurde mit großer Wahrscheinlichkeit nicht vor jenem <rs type="person" ref="#pmb38973">Else Lasker-Schüler</rs>s an <rs type="person" ref="#pmb2121">Schnitzler</rs>
+                     (<ref target="L02653" subtype="date-only" type="toLetter"/>) verfasst. Paul Lasker-Schüler hätte ohne
+                     diese Vorarbeit seiner <rs type="person" subtype="implied" ref="#pmb38973">Mutter</rs> vermutlich nicht an <rs type="person" ref="#pmb2121">Schnitzler</rs> geschrieben.</note>
                </dateline>
             </opener>
             <p rend="center">Paul Lasker-Schüler</p>
             <p>
                <space dim="vertical" unit="line" quantity="1"/>
             </p>
-            <p>bittet vielmals darum, <anchor type="commentary" xml:id="K_L02654-1"/>empfangen<note type="commentary" xml:id="K_L02654-1h">Es ist kein Besuch <rs type="person" ref="#pmb88324">Paul Lasker-Schüler</rs>s bei <rs type="person" ref="#pmb2121">Schnitzler</rs> bekannt. Mithilfe der freundlichen Auskunft Karl Jürgen
-                  Skrodzkis lässt sich der Brief jedoch auf den <date>28. 4. 1925</date> datieren.
-                  Grund dafür ist, dass der Brief mit großer Wahrscheinlichkeit nicht vor jenem <rs type="person" ref="#pmb38973">Else Lasker-Schüler</rs>s an Arthur Schnitzler
-                     (<ref target="L02653" subtype="date-only" type="toLetter"/>) verfasst wurde, in
-                  dem sie bereits um den Empfang ihres Sohnes bittet. Paul Lasker-Schüler hätte ohne
-                  diese Vorarbeit seiner <rs type="person" subtype="implied" ref="#pmb38973">Mutter</rs> vermutlich nicht an Schnitzler geschrieben. Dazu kommt, dass sich
-                  Paul Lasker-Schüler, wie diverse Briefe seiner <rs type="person" subtype="implied" ref="#pmb38973">Mutter</rs> bezeugen, im <date>April 1925</date> noch in <rs type="place" ref="#pmb50">Wien</rs> aufhielt.</note> zu werden, wenn es irgend
+            <p>bittet vielmals darum, empfangen zu werden, wenn es irgend
                möglich vielleicht noch <date>heute</date>, denn es handelt sich um einen <anchor type="commentary" xml:id="K_L02654-2"/>medizinischen Ratschlag<note type="commentary" xml:id="K_L02654-2h">Im <date when="1925-12">Dezember 1925</date> erkrankte Paul Lasker-Schüler an Tuberkulose.</note>.</p>
             <p>Ich bitte Sie vielmals Herr Doktor, mir meine Aufdringlichkeit nicht übel zu nehmen.
                Meine Adresse ist <rs type="place" ref="#pmb88413">Pension Bleckmann</rs>
@@ -290,9 +297,16 @@
          </place>
          <place xml:id="pmb88413">
             <placeName>Pension Bleckmann</placeName>
+            <location type="coords">
+               <geo>48,21822882495184 16,35792314399167</geo>
+            </location>
             <location type="located_in_place">
                <placeName ref="pmb312">Währingerstraße</placeName>
                <geo>48,222471880213 16,345264113127</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb59">IX., Alsergrund</placeName>
+               <geo>48,22387 16,35641</geo>
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88413/</idno>
          </place>
