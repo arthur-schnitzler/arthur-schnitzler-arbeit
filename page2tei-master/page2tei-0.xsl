@@ -944,10 +944,10 @@
   <xd:doc>
     <xd:desc>Text nodes to be copied</xd:desc>
   </xd:doc>
-  <xsl:template match="text()">
-    <!--<xsl:value-of select="."/>-->
+  <!--<xsl:template match="text()">
+    <!-\-<xsl:value-of select="."/>-\->
     <xsl:value-of select="translate(., '¬', '')"/>
-    <!-- Zeilenumbruchszeichen entfernen -->
-  </xsl:template>
+    <!-\- Zeilenumbruchszeichen entfernen -\->
+  </xsl:template>-->
 
 </xsl:stylesheet>
