@@ -4700,17 +4700,41 @@
          </xsl:when>
          <xsl:when test="$typ = 'work'">
             <xsl:text>\textcolor{green}{</xsl:text>
-            <xsl:value-of select="key('work-lookup', $first, $works)/title[1]"/>
+            <xsl:variable name="eintrag" select="key('work-lookup', $first, $works)/title[1]" as="xs:string"/>
+            <xsl:choose>
+               <xsl:when test="$eintrag=''">
+                  <xsl:text>XXXX</xsl:text>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:value-of select="$eintrag"/>
+               </xsl:otherwise>
+            </xsl:choose>
             <xsl:text>}</xsl:text>
          </xsl:when>
          <xsl:when test="$typ = 'org'">
             <xsl:text>\textcolor{brown}{</xsl:text>
-            <xsl:value-of select="key('org-lookup', $first, $orgs)/orgName[1]"/>
+            <xsl:variable name="eintrag" select="key('org-lookup', $first, $orgs)/orgName[1]" as="xs:string"/>
+            <xsl:choose>
+               <xsl:when test="$eintrag=''">
+                  <xsl:text>XXXX</xsl:text>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:value-of select="$eintrag"/>
+               </xsl:otherwise>
+            </xsl:choose>
             <xsl:text>}</xsl:text>
          </xsl:when>
          <xsl:when test="$typ = 'place'">
             <xsl:text>\textcolor{pink}{</xsl:text>
-            <xsl:value-of select="key('place-lookup', $first, $places)/placeName[1]"/>
+            <xsl:variable name="eintrag" select="key('place-lookup', $first, $places)/placeName[1]" as="xs:string"/>
+            <xsl:choose>
+               <xsl:when test="$eintrag=''">
+                  <xsl:text>XXXX</xsl:text>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:value-of select="$eintrag"/>
+               </xsl:otherwise>
+            </xsl:choose>
             <xsl:text>}</xsl:text>
          </xsl:when>
       </xsl:choose>
