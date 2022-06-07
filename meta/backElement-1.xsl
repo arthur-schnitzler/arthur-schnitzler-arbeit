@@ -50,6 +50,16 @@
                             </xsl:element>
                         </xsl:if>
                     </xsl:for-each>
+                    <xsl:for-each
+                        select="distinct-values(descendant::tei:biblStruct//tei:title/@ref/tokenize(., '#'))">
+                        <xsl:if test="normalize-space(.) != ''">
+                            <xsl:element name="bibl" namespace="http://www.tei-c.org/ns/1.0">
+                                <xsl:attribute name="xml:id">
+                                    <xsl:value-of select="."/>
+                                </xsl:attribute>
+                            </xsl:element>
+                        </xsl:if>
+                    </xsl:for-each>
                 </xsl:element>
                 <xsl:element name="listPlace" namespace="http://www.tei-c.org/ns/1.0">
                     <xsl:for-each
