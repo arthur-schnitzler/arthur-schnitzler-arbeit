@@ -1,6 +1,6 @@
 # page2tei
 
-- Export des Transkribus-Dokuments als PAGE
+- Export des Transkribus-Dokuments als PAGE nach "trans-out"
     - Funktioniert
     - Derzeit manuell, langfristiges Ziel: GitHub-Action
 
@@ -20,14 +20,17 @@
     - Funktioniert noch nicht
 
 - Transformation der mets-Datei mit replace_seite-esc-lb-continued.xsl
-    - Funktioniert grundsätzlich, wurde aber noch nicht ausführlich getestet und wird evtl. noch erweitert
+    - Funktioniert
 
 - Wohlgeformtheit überprüfen
-    - Derzeit manuell, wird aber evtl. mit p-correction.xsl (halbwegs) überflüssig
+    - Derzeit manuell, wird aber mit p-correction.xsl (größtenteils) überflüssig
 
 - Transformation der mets-Datei mit split-files.xsl
-    - Funktioniert noch nicht perfekt (Pfade müssen noch angepasst werden, beim Export wird derzeit noch das letzte Dokument überschrieben [position() +1?])
+    - Funktioniert
     - Muss manuell an Jahrgang, involvierte Personen etc. angepasst werden
+
+- Transformation der mets-Datei mit strip-letter.xsl
+    - Funktioniert
 
 - Transformation der neuen xml-Dateien mit back-element-hinzufügen-Transformation
     - Funktioniert (dient Formatierung und ID-Generierung)
