@@ -537,8 +537,8 @@
          </xs:attribute>
       </xs:complexType>
    </xs:element>
-   <xs:element name="desc">
-      <xs:complexType mixed="true">
+   
+      <xs:complexType   name="normal_desc_type" mixed="true">
          <xs:all minOccurs="0">
             <xs:element ref="tei:pb" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:anchor" maxOccurs="unbounded" minOccurs="0"/>
@@ -603,24 +603,41 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:assert test="
-               (parent::tei:incident)
-               or (parent::tei:objectDesc and (
-               (@type = 'karte') or
-               (@type = 'reproduktion' and (@subtype = 'fotokopie' or @subtype = 'fotografische_vervielfaeltigung' or @subtype = 'durchschlag' or @subtype = 'ms_abschrift' or @subtype = 'hs_abschrift')) or
-               (@type = 'widmung' and contains(@subtype, 'widmung'))
-               or (@type = '_blaetter' and @n) or (@type = '_seiten' and @n)
-               or (@type = 'kartenbrief' and not(@subtype))
-               or (@type = 'telegramm' and not(@subtype))
-               or (@type = 'brief' and not(@subtype))
-               or (@type = 'entwurf' and not(@subtype))
-               or (@type = 'fragment' and not(@subtype))
-               or (@type = 'umschlag' and not(@subtype))
-               or (@type = 'bild' and not(@subtype)) or (@type = 'bild' and 'fotografie')
-               or (@type = 'anderes' and text() != '')
-               )) or ancestor::tei:back
-               "/>
+            (parent::tei:incident)
+            or (parent::tei:objectDesc and (
+            (@type = 'karte') or
+            (@type = 'reproduktion' and (@subtype = 'fotokopie' or @subtype = 'fotografische_vervielfaeltigung' or @subtype = 'durchschlag' or @subtype = 'ms_abschrift' or @subtype = 'hs_abschrift')) or
+            (@type = 'widmung' and contains(@subtype, 'widmung'))
+            or (@type = '_blaetter' and @n) or (@type = '_seiten' and @n)
+            or (@type = 'kartenbrief' and not(@subtype))
+            or (@type = 'telegramm' and not(@subtype))
+            or (@type = 'brief' and not(@subtype))
+            or (@type = 'entwurf' and not(@subtype))
+            or (@type = 'fragment' and not(@subtype))
+            or (@type = 'umschlag' and not(@subtype))
+            or (@type = 'bild' and not(@subtype)) or (@type = 'bild' and 'fotografie')
+            or (@type = 'anderes' and text() != '')
+            )) or ancestor::tei:back
+            "/>
       </xs:complexType>
+   
+   <xs:complexType   name="back_desc_type">
+      
+         <xs:simpleContent>
+            <xs:extension base="xs:string">
+               <xs:attribute name="type" type="xs:string" use="required" />
+            </xs:extension>
+         </xs:simpleContent>
+      
+   </xs:complexType>
+   
+   <xs:element name="desc">
+      <xs:alternative type="back_desc_type"
+         test="@type = 'entity_type' or @type = 'entity_type_id'"/>
+      <xs:alternative type="normal_desc_type"/>
    </xs:element>
+      
+     
    <xs:element name="incident">
       <xs:complexType>
          <xs:sequence>
@@ -1010,9 +1027,6 @@
          </xs:extension>
       </xs:simpleContent>
    </xs:complexType>
-
-
-
 
    <xs:element name="note">
       <xs:alternative type="backNote_type"
@@ -1497,6 +1511,7 @@
    <xs:element name="author">
       <xs:complexType mixed="true">
          <xs:attribute name="ref" type="xs:string"/>
+         <xs:attribute name="role" type="xs:string"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="editor">
@@ -1939,10 +1954,12 @@
       <xs:complexType>
          <xs:sequence>
             <xs:element maxOccurs="unbounded" ref="tei:placeName"/>
+            <xs:element maxOccurs="unbounded" ref="tei:desc"/>
             <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:location"/>
             <xs:element maxOccurs="unbounded" ref="tei:idno"/>
             <xs:element minOccurs="0" ref="tei:listBibl"/>
             <xs:element minOccurs="0" ref="tei:note"/>
+            
          </xs:sequence>
          <xs:attribute ref="xml:id" use="required"/>
       </xs:complexType>
