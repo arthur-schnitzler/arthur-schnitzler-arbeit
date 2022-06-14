@@ -1019,6 +1019,13 @@
       />
    </xs:complexType>
 
+   <xs:complexType name="backNote_type-org">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="tei:date" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="required" />
+   </xs:complexType>
+   
    <xs:complexType name="backNote_type">
       <!-- Element mit Textinhalt und Attributen, aber keinen Kindern -->
       <xs:simpleContent>
@@ -1031,6 +1038,8 @@
    <xs:element name="note">
       <xs:alternative type="backNote_type"
          test="@type = 'work_kind' or @type = 'uri_worklink' or @type = 'bibliografische_angabe' or @type = 'references'"/>
+      <xs:alternative type="backNote_type-org"
+         test="@type = 'apis_dates'"/>
       <xs:alternative type="normalNote"/>
    </xs:element>
 
