@@ -2,13 +2,13 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L02691"
+     xml:id="L02693"
      xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, [24. 8. 1896?]</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, [10. 10. 1895?]</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="02691"/>
+            <idno type="asbw" n="02693"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -78,7 +78,7 @@
                         <country>D</country>
                         <settlement>Marbach am Neckar</settlement>
                         <repository>Deutsches Literaturarchiv</repository>
-                        <idno>A:Schnitzler, HS.NZ85.1.3166</idno>
+                        <idno>A:Schnitzler, HS.NZ85.1.3165</idno>
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
@@ -92,7 +92,8 @@
                         <additions>
                            <incident type="receiver">
                               <desc>mit Bleistift datiert: »<quote>
-                                    <date>Jann 96</date>
+                                    <date>Oct 9<unclear>5</unclear>
+                                    </date>
                                  </quote>«</desc>
                            </incident>
                            <incident type="archival">
@@ -112,11 +113,13 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1896-08-24" n="1">[24. 8. 1896?]</date>
+               <date when="1895-10-10" n="03">[10. 10. 1895?]</date>
+               <placeName ref="#pmb182">Paris</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1896-08-24">[24. 8. 1896?]</date>
+               <date when="1895-10-10">[10. 10. 1895?]</date>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -128,23 +131,34 @@
          </refsDecl>
       </encodingDesc>
       <revisionDesc status="proposed">
-         <change who="MAM" when="2022-06-09">Angelegt</change>
+         <change who="MAM" when="2022-06-14">Angelegt</change>
       </revisionDesc>
    </teiHeader>
    <text type="telegram">
       <body>
          <div type="writingSession" n="1">
-            <p>
-               <pb facs="HS.NZ85.1.3166_0136"/>tausend dank fuer frohe nachricht und von ganzen herzen glueckwunsch
-               jetzt ist dir das <anchor type="commentary" xml:id="K_L02691-1"/>
-               <rs type="work" ref="#pmb29899" subtype="implied" cert="low">stueck</rs>
-               <note type="commentary" xml:id="K_L02691-1h">Das Telegramm weist keine
-               Datierung auf, wird aber in <rs type="person" ref="#pmb2121">Schnitzler</rs>s Nachlass mit den Korrespondenzstücken des
-                  Jahres <date>1896</date> aufbewahrt. Inhaltlich passt es in diesem Jahr am besten zu <rs type="work" ref="#pmb29899">Freiwild</rs>,
-                  dem <rs type="person" ref="#pmb2121">Schnitzler</rs> selbst skeptisch gegenüber stand, das aber bei einem Treffen
-                  am <ref target="1896-08-23" subtype="date-only" type="schnitzlerDiary"/> von <rs type="person" ref="#pmb10986">Otto Brahm</rs> für das <rs type="org" ref="#pmb35597">Deutsche Theater</rs>
-                  angenommen wurde.</note> hoffentlich sympathischer <signed>goldmann =</signed>
+            <opener>
+               <dateline rend="center">
+                  <pb facs="HS.NZ85.1.3165_0083"/>
+                  <damage>
+                     <unclear>
+                        <rs type="place" ref="#pmb182">paris</rs>
+                     </unclear>
+                  </damage>
+                  45789 <damage>
+                     <unclear>10 10</unclear>
+                  </damage>
+               </dateline>
+            </opener>
+            <p>ob der <anchor type="commentary" xml:id="K_L02693-1"/>erfolg<note type="commentary" xml:id="K_L02693-1h">Am Vortag, dem <ref target="1895-10-09" subtype="date-only" type="schnitzlerDiary"/>, hatte die Uraufführung der <rs ref="#pmb29917" type="work">Liebelei</rs> am
+               <rs type="org" ref="#pmb36247">Burgtheater</rs>
+            stattgefunden.</note> nachhaelt ist einstweilen <anchor type="textConst" xml:id="T_L02693-1"/>gleichgiltig<note type="textConst" xml:id="T_L02693-1h">im Original steht: »<quote>gleichgittig</quote>«</note>
+               wichtig war nur der gestrige abend er ist gut verlaufen folglich ist das <rs type="work" subtype="implied" ref="#pmb29917">werk</rs> gelungen</p>
+            <p>ich danke dir fuer die frohe nachricht und <anchor type="textConst" xml:id="T_L02693-2"/>beglueckwuensche<note type="textConst" xml:id="T_L02693-2h">im Original steht: »<quote>begluekwensche</quote>«</note>
+               dich von ganzem herzen es musste so kommen aber es ist doch schoen dass es so kam
             </p>
+            <closer>gruesse = <signed>goldmann</signed>
+            </closer>
          </div>
       </body>
    </text>
@@ -215,84 +229,116 @@
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
          </person>
-         <person xml:id="pmb10986">
-            <persName>
-               <forename>Otto</forename>
-               <surname>Brahm</surname>
-            </persName>
-            <persName type="geburtsname_nachname">Abrahamson</persName>
-            <birth>
-               <date when="1856-02-05">05.02.1856</date>
-               <settlement ref="pmb506">
-                  <placeName type="pref">Hamburg</placeName>
-                  <location>
-                     <geo>53,57532 10,01534</geo>
-                  </location>
-               </settlement>
-            </birth>
-            <death>
-               <date when="1912-11-28">28.11.1912</date>
-               <settlement ref="pmb168">
-                  <placeName type="pref">Berlin</placeName>
-                  <location>
-                     <geo>52,52437 13,41053</geo>
-                  </location>
-               </settlement>
-            </death>
-            <sex value="male"/>
-            <occupation ref="pmb103">Theaterleiter/Theaterleiterin</occupation>
-            <occupation ref="pmb104">Regisseur/Regisseurin</occupation>
-            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13913</idno>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118514245</idno>
-            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb10986</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10986</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10986</idno>
-            <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10986.html</idno>
-         </person>
       </listPerson>
       <listBibl>
-         <bibl xml:id="pmb29899">
-            <title>Freiwild. Schauspiel in 3 Akten</title>
+         <bibl xml:id="pmb29917">
+            <title>Liebelei. Schauspiel in drei Akten</title>
             <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-            <date when="1896-01-01">1896</date>
-            <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.21</idno>
-            <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1454877</idno>
-            <idno type="URL" subtype="theadok">https://theadok.at/work/30487</idno>
-            <idno type="URL" subtype="">http://ds.ub.uni-bielefeld.de/viewer/image/67488/1/</idno>
-            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29899</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29899</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29899</idno>
-            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29899.html</idno>
+            <date when="1895-10-09">9.10.1895</date>
+            <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.27</idno>
+            <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1823758</idno>
+            <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-liebelei</idno>
+            <idno type="URL" subtype="theadok">https://theadok.at/work/31062</idno>
+            <idno type="URL" subtype="deutschestextarchiv">http://www.deutschestextarchiv.de/book/show/schnitzler_liebelei_1896</idno>
+            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29917</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29917</idno>
+            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29917</idno>
+            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29917.html</idno>
             <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
          </bibl>
       </listBibl>
+      <listPlace>
+         <place xml:id="pmb182">
+            <placeName>Paris</placeName>
+            <placeName type="alternative-name">P'ariz</placeName>
+            <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4044660-8</placeName>
+            <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
+            <placeName type="alternative-name">Pariž</placeName>
+            <placeName type="alternative-name">Parisius</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
+            <location type="coords">
+               <geo>48,85341 2,3488</geo>
+            </location>
+            <idno type="URL" subtype="geonames">http://sws.geonames.org/2988507/</idno>
+            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
+            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
+            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+         </place>
+         <place xml:id="pmb50">
+            <placeName>Wien</placeName>
+            <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+            <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
+            <placeName type="alternative-name">Bécs</placeName>
+            <placeName type="alternative-name">Land Wien</placeName>
+            <placeName type="alternative-name">Vídeň</placeName>
+            <placeName type="alternative-name">Wenia</placeName>
+            <placeName type="alternative-name">Beč</placeName>
+            <placeName type="alternative-name">Vindobona (Wien)</placeName>
+            <placeName type="legacy-name-merge">Vindobona</placeName>
+            <placeName type="alternative-name">Vienna</placeName>
+            <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
+            <location type="coords">
+               <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb41240">Österreich</placeName>
+               <geo>47,33333 13,33333</geo>
+            </location>
+            <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
+            <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
+            <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
+            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
+            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+         </place>
+      </listPlace>
       <listOrg>
-         <org xml:id="pmb35597">
-            <orgName>Deutsches Theater Berlin</orgName>
-            <orgName type="alternative-name">Deutsches Theater</orgName>
-            <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Deutsches_Theater_(Berlin)</idno>
+         <org xml:id="pmb36247">
+            <orgName>Burgtheater</orgName>
+            <orgName type="alternative-name">Burgtheater GmbH</orgName>
             <desc type="entity_type">Theater</desc>
             <desc type="entity_type_id">1012</desc>
             <location type="located_in_place">
-               <placeName ref="pmb168">Berlin</placeName>
-               <geo>52,52437 13,41053</geo>
-               <idno type="URL" subtype="geonames">http://sws.geonames.org/2950159/</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb168</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
+               <placeName ref="pmb51">I., Innere Stadt</placeName>
+               <geo>48,20769 16,37049</geo>
+               <idno type="URL" subtype="geonames">http://sws.geonames.org/2775259/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36789/</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb51</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51010/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2775259/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb51</idno>
             </location>
             <location type="located_in_place">
-               <placeName ref="pmb3">Deutsches Theater Berlin</placeName>
-               <geo>52,524444 13,382222</geo>
-               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q703955</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb3</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/3</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb3</idno>
+               <placeName ref="pmb14">Burgtheater</placeName>
+               <geo>48,210333 16,361139</geo>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:Burgtheater+%28Gebäude</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb14</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb14</idno>
             </location>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4058252-8</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35597</idno>
-            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb35597</idno>
+            <location type="located_in_place">
+               <placeName ref="pmb44649">Schlosstheater Schönbrunn</placeName>
+               <geo>48,186667 16,3125</geo>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44649/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb44649</idno>
+            </location>
+            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/38633-9</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36247</idno>
+            <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36247</idno>
+            <note type="apis_dates">
+               <date notBefore="1852-01-01" when="1852-07-01">1852</date>
+            </note>
          </org>
       </listOrg>
    </back>
