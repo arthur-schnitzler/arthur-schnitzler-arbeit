@@ -77,6 +77,17 @@
             </xsl:choose>
         </xsl:attribute>
     </xsl:template>
+    <xsl:template match="@from-iso">
+        <xsl:attribute name="from">
+            <xsl:value-of select="."/>
+        </xsl:attribute>
+    </xsl:template>
+    
+    <xsl:template match="@to-iso">
+        <xsl:attribute name="to">
+            <xsl:value-of select="."/>
+        </xsl:attribute>
+    </xsl:template>
     <xsl:template match="@key">
         <xsl:attribute name="ref">
             <xsl:value-of select="concat('pmb', .)"/>

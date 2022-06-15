@@ -21,6 +21,8 @@
         <xsl:copy/>
     </xsl:template>
     
+    
+    
     <xsl:template match="tei:back/tei:listPerson[child::*]">
         <xsl:element name="listPerson" namespace="http://www.tei-c.org/ns/1.0">
         <xsl:for-each select="distinct-values(tei:person/@xml:id)">
