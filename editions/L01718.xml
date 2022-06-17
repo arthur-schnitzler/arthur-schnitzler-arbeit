@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01718</idno>
+            <idno type="asbw" n="01718"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -257,7 +257,7 @@
             <title type="legacy-uri-merge">https://asaf.com/S.04.02.06</title>
             <title type="legacy-uri-merge">https://www.wikidata.org/wiki/Q1171482</title>
             <note type="bibliografische_angabe">Neue Freie Presse, 23. 4. 1905, S. 31–34</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1905-04-23">23.04.1905</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19050423&amp;seite=31&amp;zoom=33</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30655</idno>
@@ -268,7 +268,7 @@
          </bibl>
          <bibl xml:id="pmb29877">
             <title>Die letzten Masken</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1901-01-01">1901</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.17</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/31483</idno>
@@ -283,8 +283,8 @@
             <title>Die Fremde</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Die_Fremde_(Schnitzler)</idno>
             <title type="namensvariante">Dämmerseele</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1902-05-18">18.5.1902</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>18.5.1902  – 18.5.1902</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.24</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1212750</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33776</idno>
@@ -295,7 +295,7 @@
          <bibl xml:id="pmb29863">
             <title>Lebendige Stunden. Vier Einakter</title>
             <note type="uri_worklink">https://archive.org/details/3490676/page/n4</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1901-12-23">1901-12-23</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.26</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q30337144</idno>
@@ -312,7 +312,7 @@
             <note type="bibliografische_angabe">Jugend, Jg. 7, Nr. 30, [16.] 7. 1902</note>
             <title type="arbeitstitel">Du bist mir zu lustig</title>
             <title type="namensvariante">Exzentrik</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1902-07-16">16.07.1902</date>
             <idno type="URL" subtype="digi">https://digi.ub.uni-heidelberg.de/diglit/jugend1902_2/0057/image</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29893</idno>
@@ -324,7 +324,7 @@
          <bibl xml:id="pmb30167">
             <title>Die griechische Tänzerin. Novellette</title>
             <note type="bibliografische_angabe">Die Zeit, Die Sonntags-Zeit, Nr. 2, 28. 9. 1902, S. 4</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1902-09-28">28.09.1902</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=zei&amp;datum=19020928&amp;seite=28&amp;zoom=33</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30167</idno>
@@ -347,6 +347,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -368,6 +370,8 @@
          </place>
          <place xml:id="pmb1210">
             <placeName>Königseggasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,19563 16,3499</geo>
             </location>

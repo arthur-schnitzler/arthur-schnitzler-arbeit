@@ -34,7 +34,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01084</idno>
+            <idno type="asbw" n="01084"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -320,7 +320,7 @@
             <persName type="legacy-name-merge">Kochel, Moritz</persName>
             <persName type="uri_wikipedia">https://de.wikipedia.org/wiki/Moritz_Coschell</persName>
             <birth>
-               <date when="1872-09-18">18.9.1872</date>
+               <date when="1872-09-18">1872-09-18</date>
                <settlement ref="pmb50">
                   <placeName type="pref">Wien</placeName>
                   <location>
@@ -329,7 +329,7 @@
                </settlement>
             </birth>
             <death>
-               <date when="1943-01-01">11.71943</date>
+               <date when="1943-07-11">1943-07-11</date>
                <settlement ref="pmb50">
                   <placeName type="pref">Wien</placeName>
                   <location>
@@ -349,8 +349,9 @@
       <listBibl>
          <bibl xml:id="pmb29935">
             <title>Anatol</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1892-10-29">1892-10-29</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
+            <date>1892-10-29  – 1892-10-29</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.03</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q487409</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-anatol</idno>
@@ -377,6 +378,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -404,6 +407,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -422,6 +427,8 @@
          <org xml:id="pmb29639">
             <orgName>S. Fischer Verlag</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/S._Fischer_Verlag</idno>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -456,6 +463,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29639</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29639</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29639</idno>
+            <note type="apis_dates">
+               <date notBefore="1886-01-01" when="1886-07-02">1886</date>
+            </note>
          </org>
       </listOrg>
    </back>

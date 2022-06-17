@@ -34,7 +34,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01593</idno>
+            <idno type="asbw" n="01593"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -376,9 +376,9 @@
       <listBibl>
          <bibl xml:id="pmb31075">
             <title>Der Bürger als Edelmann</title>
-            <author ref="pmbperson__3272">Molière, Jean-Baptiste</author>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
-            <date notBefore="1670-01-01" when="1670-07-02" notAfter="1670-12-31">1670</date>
+            <author ref="pmbperson__3272" role="hat-geschaffen">Molière</author>
+            <author ref="pmbperson__11740" role="hat-ubersetzt">Hofmannsthal, Hugo von</author>
+            <date notBefore="1670-01-01" when="1670-07-02">1670</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31075</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31075</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31075</idno>
@@ -387,7 +387,7 @@
          <bibl xml:id="pmb29859">
             <title>Marionetten. Drei Einakter</title>
             <note type="uri_worklink">https://www.arthur-schnitzler.de/edition/genetisch</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1906-01-01">1906</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.29</idno>
             <idno type="URL" subtype="arthur-schnitzler">https://www.arthur-schnitzler.de/edition/genetisch</idno>
@@ -412,6 +412,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -439,6 +441,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -457,6 +461,8 @@
          <org xml:id="pmb29639">
             <orgName>S. Fischer Verlag</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/S._Fischer_Verlag</idno>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -491,6 +497,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29639</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29639</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29639</idno>
+            <note type="apis_dates">
+               <date notBefore="1886-01-01" when="1886-07-02">1886</date>
+            </note>
          </org>
       </listOrg>
    </back>

@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02062</idno>
+            <idno type="asbw" n="02062"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -298,7 +298,6 @@
             <persName type="geburtsname_vorname">Richard</persName>
             <persName type="geburtsname_nachname">Engländer</persName>
             <persName type="pseudonym">Peter Altenberg</persName>
-            <persName type="legacy-name-merge">Engländer, Richard</persName>
             <birth>
                <date when="1859-03-09">09.03.1859</date>
                <settlement ref="pmb50">
@@ -528,8 +527,8 @@
             <title type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A021236</title>
             <note type="bibliografische_angabe">Österreichische Rundschau, Bd. 15, 1. 4. 1908, S. 19–26</note>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Der_Tod_des_Junggesellen</idno>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1908-04-01">1.4.1908</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.16</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1197440</idno>
@@ -542,8 +541,8 @@
          <bibl xml:id="pmb33243">
             <title>Tagebuch</title>
             <note type="uri_worklink">https://schnitzler-tagebuch.acdh.oeaw.ac.at</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1981-01-01">1981</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1981  – 2000</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
@@ -552,7 +551,7 @@
          <bibl xml:id="pmb32816">
             <title>Masken und Wunder. Novellen</title>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=1666&amp;teil=0302&amp;seite=00000001&amp;zoom=2</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1912-05-06">1912-05-06</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno-buch?bid=AC06428574</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32816</idno>
@@ -573,6 +572,8 @@
             <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4054504-0</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/23656/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,64224 15,8241</geo>
             </location>
@@ -584,6 +585,8 @@
          <place xml:id="pmb204">
             <placeName>Hotel Panhans</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Hotel_Panhans</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,637222 15,825278</geo>
             </location>
@@ -595,9 +598,14 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb204</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/204</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb204</idno>
+            <note type="apis_dates">
+               <date notBefore="1888-01-01" when="1888-07-01">1888</date>
+            </note>
          </place>
          <place xml:id="pmb634">
             <placeName>Hotel Erzherzog Johann</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,63255 15,82889</geo>
             </location>
@@ -611,6 +619,8 @@
          </place>
          <place xml:id="pmb53381">
             <placeName>Kirche zur heiligen Familie</placeName>
+            <desc type="entity_type">Kirche (K.KRC)</desc>
+            <desc type="entity_type_id">33</desc>
             <location type="coords">
                <geo>47,638938131 15,82551</geo>
             </location>
@@ -620,12 +630,17 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53381/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb53381</idno>
+            <note type="apis_dates">
+               <date notBefore="1895-01-01" when="1895-07-02">1895</date>
+            </note>
          </place>
          <place xml:id="pmb842">
             <placeName>Karlsbad</placeName>
             <placeName type="none">Karlovy Vary</placeName>
             <placeName type="legacy-name">Edlitz</placeName>
             <placeName type="legacy-name-merge">bei Karlsbad</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,23271 12,87117</geo>
             </location>
@@ -650,6 +665,8 @@
             <placeName type="none">Marianske Lázne</placeName>
             <placeName type="alternative-name">Mariánské Lázně</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4037541-9</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>49,96115 12,72872</geo>
             </location>
@@ -662,6 +679,8 @@
          <place xml:id="pmb390">
             <placeName>Franzensbad</placeName>
             <placeName type="none">Františkovy Lázně</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,12033 12,35174</geo>
             </location>
@@ -674,6 +693,8 @@
          <place xml:id="pmb955">
             <placeName>Teplice</placeName>
             <placeName type="alternative-name">Teplitz-Schönau</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,6404 13,82451</geo>
             </location>
@@ -697,6 +718,8 @@
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000958</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3194097</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/3194099/</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1134</desc>
             <location type="coords">
                <geo>45,33771 14,30515</geo>
             </location>
@@ -715,6 +738,8 @@
          </place>
          <place xml:id="pmb53379">
             <placeName>Grado</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1410</desc>
             <location type="coords">
                <geo>45,67774 13,40323</geo>
             </location>
@@ -732,6 +757,8 @@
             <placeName>Bad Gastein</placeName>
             <placeName type="namensvariante">Badgastein</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4086227-6</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,11547 13,13467</geo>
             </location>
@@ -745,6 +772,8 @@
             <placeName>Piešťany</placeName>
             <placeName type="legacy-name-merge">Bad Pistyan</placeName>
             <placeName type="legacy-name-merge">Pöstyn</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1419</desc>
             <location type="coords">
                <geo>48,59479 17,82591</geo>
             </location>
@@ -762,6 +791,8 @@
          </place>
          <place xml:id="pmb892">
             <placeName>Davos</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>46,80429 9,83723</geo>
             </location>
@@ -773,6 +804,8 @@
          </place>
          <place xml:id="pmb873">
             <placeName>Triest</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>45,66667 13,76667</geo>
             </location>
@@ -787,6 +820,8 @@
          <org xml:id="pmb53383">
             <orgName>Österreichischer Wintersport-Klub</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Österreichischer_Wintersportclub</idno>
+            <desc type="entity_type">Verein</desc>
+            <desc type="entity_type_id">974</desc>
             <location type="located_in_place">
                <placeName ref="pmb204">Hotel Panhans</placeName>
                <geo>47,637222 15,825278</geo>
@@ -805,6 +840,9 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53383/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb53383</idno>
+            <note type="apis_dates">
+               <date notBefore="1904-01-01" when="1904-07-01">1904</date>
+            </note>
          </org>
       </listOrg>
    </back>

@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02482</idno>
+            <idno type="asbw" n="02482"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -320,7 +320,7 @@
          <bibl xml:id="pmb32069">
             <title>Der weiße Fächer. Ein Zwischenspiel</title>
             <note type="bibliografische_angabe">Die Zeit, Bd. 14, Nr. 175, 5. 2. 1898</note>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             <date when="1898-02-05">05.02.1898</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32069</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32069</idno>
@@ -343,6 +343,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -364,12 +366,18 @@
          </place>
          <place xml:id="pmb68">
             <placeName>XVIII., Währing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,23333 16,31667</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb243">Sommerhaidenweg</placeName>
+               <geo>48,248935842869 16,296768550115</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb68</idno>
@@ -378,6 +386,8 @@
          </place>
          <place xml:id="pmb150">
             <placeName>Sternwartestraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,23099349198 16,340117830625</geo>
             </location>
@@ -393,6 +403,8 @@
          <place xml:id="pmb1006">
             <placeName>Badgasse</placeName>
             <placeName type="namensvariante">Ketzergasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,130176324727 16,278871077438</geo>
             </location>
@@ -409,6 +421,8 @@
             <placeName>Rodaun</placeName>
             <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11742/</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>48,132793312328 16,256152195922</geo>
             </location>
@@ -427,6 +441,8 @@
             <placeName type="alternative-name">Provinz Agrigent</placeName>
             <placeName type="legacy-name">Agrigent</placeName>
             <placeName type="legacy-name">Province of Agrigento</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1134</desc>
             <location type="coords">
                <geo>37,31065 13,57661</geo>
             </location>
@@ -444,6 +460,8 @@
             <placeName>Volkstheater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Volkstheater_(Wien)</placeName>
             <placeName type="namensvariante">Deutsches Volkstheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,205142 16,3566</geo>
             </location>
@@ -458,6 +476,8 @@
          </place>
          <place xml:id="pmb25">
             <placeName>Hochschule und Akademie für Musik und Darstellende Kunst</placeName>
+            <desc type="entity_type">Universität (K.UNI)</desc>
+            <desc type="entity_type_id">15</desc>
             <location type="coords">
                <geo>48,201667 16,385</geo>
             </location>
@@ -472,6 +492,8 @@
          </place>
          <place xml:id="pmb451">
             <placeName>Sizilien</placeName>
+            <desc type="entity_type">Region</desc>
+            <desc type="entity_type_id">47</desc>
             <location type="coords">
                <geo>37,75 14,25</geo>
             </location>
@@ -487,6 +509,8 @@
          </place>
          <place xml:id="pmb906">
             <placeName>Taormina</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>37,85358 15,28851</geo>
             </location>
@@ -499,6 +523,8 @@
          <place xml:id="pmb48769">
             <placeName>Syrakus</placeName>
             <placeName type="alternative-name">Syracuse</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1419</desc>
             <location type="coords">
                <geo>37,07542 15,28664</geo>
             </location>

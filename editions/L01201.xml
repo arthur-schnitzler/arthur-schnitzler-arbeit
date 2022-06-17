@@ -34,7 +34,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01201</idno>
+            <idno type="asbw" n="01201"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -256,7 +256,7 @@
             <title>Paracelsus</title>
             <note type="bibliografische_angabe">Cosmopolis, Jg. 3, Bd. 12, Nr. 35, November 1898</note>
             <note type="uri_worklink">https://www.degruyter.com/document/doi/10.1515/9783110712247/html</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1898-11-01">01.11.1898</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.30</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1757723</idno>
@@ -269,8 +269,9 @@
          </bibl>
          <bibl xml:id="pmb29935">
             <title>Anatol</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1892-10-29">1892-10-29</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
+            <date>1892-10-29  – 1892-10-29</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.03</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q487409</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-anatol</idno>
@@ -297,6 +298,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -318,6 +321,8 @@
          </place>
          <place xml:id="pmb1223">
             <placeName>Bern</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>46,9489 7,4638</geo>
             </location>

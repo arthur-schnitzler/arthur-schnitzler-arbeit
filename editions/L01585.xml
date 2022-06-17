@@ -34,7 +34,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01585</idno>
+            <idno type="asbw" n="01585"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -283,8 +283,7 @@
                <forename>Otto</forename>
                <surname>Brahm</surname>
             </persName>
-            <persName type="namensvariante">Abrahamson</persName>
-            <persName type="geburtsname_nachname">Abraham</persName>
+            <persName type="geburtsname_nachname">Abrahamson</persName>
             <birth>
                <date when="1856-02-05">05.02.1856</date>
                <settlement ref="pmb506">
@@ -352,7 +351,7 @@
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Der_Ruf_des_Lebens</idno>
             <note type="uri_worklink">http://www.literature.at/viewer.alo?objid=12117&amp;page=1&amp;viewmode=fullscreen</note>
             <title type="arbeitstitel">Vatermörderin</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1906-02-20">1906-02-20</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.12</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1196563</idno>
@@ -367,8 +366,8 @@
          <bibl xml:id="pmb33043">
             <title>Und Pippa tanzt!</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Und_Pippa_tanzt!</idno>
-            <author ref="pmbperson__11617">Hauptmann, Gerhart</author>
-            <date notBefore="1906-01-01" when="1906-07-02" notAfter="1906-12-31">1906</date>
+            <author ref="pmbperson__11617" role="hat-geschaffen">Hauptmann, Gerhart</author>
+            <date notBefore="1906-01-01" when="1906-07-02">1906</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33043</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33043</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33043.html</idno>
@@ -384,6 +383,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -399,6 +400,8 @@
          </place>
          <place xml:id="pmb399">
             <placeName>Hotel Continental</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>52,518889 13,385556</geo>
             </location>
@@ -409,9 +412,14 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb399</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/399</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb399</idno>
+            <note type="apis_dates">
+               <date from="1884-01-01" to="1884-12-31">1884  – 1944</date>
+            </note>
          </place>
          <place xml:id="pmb3">
             <placeName>Deutsches Theater Berlin</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>52,524444 13,382222</geo>
             </location>
@@ -430,6 +438,8 @@
          </place>
          <place xml:id="pmb1103">
             <placeName>Marburger Straße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>52,502809 13,3365775</geo>
             </location>
@@ -442,6 +452,8 @@
          </place>
          <place xml:id="pmb1104">
             <placeName>Hospiz des Westens</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>52,502809 13,3365775</geo>
             </location>

@@ -32,7 +32,7 @@
                <name>Martin Anton Müller</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02052</idno>
+            <idno type="asbw" n="02052"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -338,7 +338,7 @@
       <listBibl>
          <bibl xml:id="pmb30207">
             <title>Das weite Land. Tragikomödie in fünf Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1910-10-20">1910-10-20</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.06</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1171735</idno>
@@ -357,7 +357,7 @@
             <title type="pseudonym">st. gr.</title>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=aze&amp;datum=19111015&amp;seite=3&amp;zoom=33</note>
             <note type="bibliografische_angabe">st. gr.: Schnitzlers »Weites Land«. Erste Aufführung im Burgtheater. In: Arbeiter-Zeitung, Jg. 23, Nr. 284, 15.11.1910, S. 3–4.</note>
-            <author ref="pmbperson__11527">Großmann, Stefan</author>
+            <author ref="pmbperson__11527" role="hat-unter-pseudonym-geschrieben">Großmann, Stefan</author>
             <date when="1911-10-15">1911-10-15</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46196/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb46196</idno>
@@ -367,8 +367,8 @@
             <title>Arbeiter-Zeitung</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arbeiter-Zeitung</idno>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?apm=0&amp;aid=aze</note>
-            <author ref="pmbperson__59249">Kovanda, Václav</author>
-            <date when="1881-07-12">12.7.1881</date>
+            <author ref="pmbperson__59249" role="hat-herausgegeben">Kovanda, Václav</author>
+            <date>12.7.1881  – 31.10.1991</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41202/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41202</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41202</idno>
@@ -387,16 +387,10 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4127793-4</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000355</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3220837</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb45258">München</placeName>
-               <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb54315">Brienner Straße</placeName>
-               <geo>48,14512778708449 11,568353382899355</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb314">Bayern</placeName>
@@ -425,6 +419,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -447,6 +443,8 @@
          <place xml:id="pmb485">
             <placeName>Hotel Vier Jahreszeiten</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Hotel_Vier_Jahreszeiten_(München)</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>48,138889 11,581667</geo>
             </location>
@@ -465,6 +463,8 @@
             <placeName type="alternative-name">West Germany</placeName>
             <placeName type="alternative-name">Federal Republic of Germany</placeName>
             <placeName type="legacy-name-merge">Germany</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>51,5 10,5</geo>
             </location>

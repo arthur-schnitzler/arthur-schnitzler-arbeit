@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01476</idno>
+            <idno type="asbw" n="01476"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -481,6 +481,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -503,6 +505,8 @@
          <place xml:id="pmb118">
             <placeName>Carl-Theater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Carltheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,215 16,384444</geo>
             </location>
@@ -515,11 +519,16 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb118</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/118</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb118</idno>
+            <note type="apis_dates">
+               <date>10.12.1847  – 29.5.1929</date>
+            </note>
          </place>
       </listPlace>
       <listOrg>
          <org xml:id="pmb50267">
             <orgName>Erstes öffentliches Kinderkrankeninstitut</orgName>
+            <desc type="entity_type">Krankenhaus</desc>
+            <desc type="entity_type_id">1375</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -542,6 +551,9 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50267/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50267</idno>
+            <note type="apis_dates">
+               <date notBefore="1787-01-01" when="1787-07-02">1787</date>
+            </note>
          </org>
       </listOrg>
    </back>

@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L00737</idno>
+            <idno type="asbw" n="00737"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -363,7 +363,7 @@
          <bibl xml:id="pmb29833">
             <title>Die Toten schweigen</title>
             <note type="bibliografische_angabe">Cosmopolis, Bd. 8, H. 22, Oktober 1897, S. 193–211</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1897-10-01">01.10.1897</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.29</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1216835</idno>
@@ -376,7 +376,7 @@
          </bibl>
          <bibl xml:id="pmb41521">
             <title>Cosmopolis</title>
-            <date when="1896-01-01">1896</date>
+            <date>1896  – 1898</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41521/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41521</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41521</idno>
@@ -397,6 +397,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -418,6 +420,8 @@
          </place>
          <place xml:id="pmb296">
             <placeName>Günthergasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,216599877109 16,358330000258</geo>
             </location>
@@ -434,6 +438,8 @@
       <listOrg>
          <org xml:id="pmb29209">
             <orgName>Die Zeit. Wiener Wochenschrift</orgName>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

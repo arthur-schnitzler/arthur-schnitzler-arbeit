@@ -34,7 +34,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02581</idno>
+            <idno type="asbw" n="02581"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -220,12 +220,6 @@
                      <geo>49,22351 17,26127</geo>
                   </location>
                </settlement>
-               <settlement ref="pmb62137">
-                  <placeName type="pref">Troubky-Zdislavice</placeName>
-                  <location>
-                     <geo>49,22756 17,26848</geo>
-                  </location>
-               </settlement>
             </birth>
             <death>
                <date when="1916-03-12">12.03.1916</date>
@@ -314,7 +308,8 @@
             <note type="bibliografische_angabe">Neue Freie Presse, Nr. 13053, 25. 12. 1900, S. 34–41</note>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19001225&amp;seite=34&amp;zoom=33</note>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Leutnant_Gustl</idno>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
             <date when="1900-12-25">25.12.1900</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.39</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1821658</idno>
@@ -330,8 +325,8 @@
             <title>Frau Bertha Garlan. Roman</title>
             <note type="bibliografische_angabe">Neue Deutsche Rundschau, Jg. 12, H. 1. (Januar) – H. 3 (März 1901)</note>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frau_Bertha_Garlan</idno>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1901-01-15">15.1.1901</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>15.1.1901  – 15.3.1901</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.36</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1451457</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30486</idno>
@@ -343,14 +338,14 @@
          <bibl xml:id="pmb65201">
             <title>Westermanns Monatshefte</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Westermanns_Monatshefte</idno>
-            <date when="1856-10-01">Oktober 1856</date>
+            <date>Oktober 1856</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65201/</idno>
             <note type="work_kind">Publikationsorgan &gt;&gt; Zeitschrift &gt;&gt; Monatsschrift</note>
          </bibl>
          <bibl xml:id="pmb65202">
             <title>Romane und Novellen</title>
             <note type="uri_worklink">https://archive.org/details/bub_gb_i3AmAQAAIAAJ/page/157/mode/2up?q=gustl</note>
-            <author ref="pmbperson__11212">Düsel, Friedrich</author>
+            <author ref="pmbperson__11212" role="hat-unter-einem-kurzel-veroffentlicht">Düsel, Friedrich</author>
             <date when="1901-10-01">Oktober 1901</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65202/</idno>
             <note type="work_kind">Rezension</note>
@@ -359,6 +354,8 @@
       <listPlace>
          <place xml:id="pmb65192">
             <placeName>Zdislavice</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>49,22351 17,26127</geo>
             </location>
@@ -386,6 +383,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -407,6 +406,8 @@
          </place>
          <place xml:id="pmb65195">
             <placeName>Schloss Zdislavice</placeName>
+            <desc type="entity_type">Schloss (K.SLS)</desc>
+            <desc type="entity_type_id">41</desc>
             <location type="coords">
                <geo>49,222117536943315 17,262990494582777</geo>
             </location>
@@ -418,6 +419,8 @@
          </place>
          <place xml:id="pmb65198">
             <placeName>Zdounky</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>49,22771 17,31899</geo>
             </location>

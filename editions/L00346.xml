@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00346</idno>
+            <idno type="asbw" n="00346"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -204,7 +204,6 @@
             <persName type="geburtsname_vorname">Richard</persName>
             <persName type="geburtsname_nachname">Engländer</persName>
             <persName type="pseudonym">Peter Altenberg</persName>
-            <persName type="legacy-name-merge">Engländer, Richard</persName>
             <birth>
                <date when="1859-03-09">09.03.1859</date>
                <settlement ref="pmb50">
@@ -269,15 +268,15 @@
       <listBibl>
          <bibl xml:id="pmb33374">
             <title>See-Ufer</title>
-            <author ref="pmbperson__2147">Altenberg, Peter</author>
+            <author ref="pmbperson__2147" role="hat-geschaffen">Altenberg, Peter</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33374</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33374</idno>
             <note type="work_kind">Novelle</note>
          </bibl>
          <bibl xml:id="pmb30965">
             <title>Wie ich es sehe</title>
-            <author ref="pmbperson__2147">Altenberg, Peter</author>
-            <date notBefore="1896-01-01" when="1896-07-01" notAfter="1896-12-31">1896</date>
+            <author ref="pmbperson__2147" role="hat-geschaffen">Altenberg, Peter</author>
+            <date notBefore="1896-01-01" when="1896-07-01">1896</date>
             <idno type="URL" subtype="refubium">https://refubium.fu-berlin.de/handle/fub188/20512</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30965</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30965</idno>
@@ -291,6 +290,8 @@
          <org xml:id="pmb29639">
             <orgName>S. Fischer Verlag</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/S._Fischer_Verlag</idno>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -325,6 +326,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29639</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29639</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29639</idno>
+            <note type="apis_dates">
+               <date notBefore="1886-01-01" when="1886-07-02">1886</date>
+            </note>
          </org>
       </listOrg>
    </back>

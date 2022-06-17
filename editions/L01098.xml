@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01098</idno>
+            <idno type="asbw" n="01098"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -373,6 +373,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -395,6 +397,8 @@
          <place xml:id="pmb683">
             <placeName>Steyrerhof</placeName>
             <placeName type="uri_wien-geschichte-wiki">https://www.geschichtewiki.wien.gv.at/Steyrerhof</placeName>
+            <desc type="entity_type">Gebäude (K.GBD)</desc>
+            <desc type="entity_type_id">24</desc>
             <location type="coords">
                <geo>48,21117 16,37606</geo>
             </location>
@@ -409,11 +413,13 @@
          <place xml:id="pmb165">
             <placeName>Ober Sankt Veit</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Ober_Sankt_Veit</placeName>
+            <desc type="entity_type">eingemeindeter Ort (A.VOO)</desc>
+            <desc type="entity_type_id">40</desc>
             <location type="coords">
                <geo>48,188056 16,266389</geo>
             </location>
             <location type="located_in_place">
-               <placeName ref="pmb665">St. Veit</placeName>
+               <placeName ref="pmb665">Sankt Veit</placeName>
                <geo>48,18805 16,26638</geo>
             </location>
             <location type="located_in_place">
@@ -434,6 +440,8 @@
             <orgName type="loschen">http://anno.onb.ac.at/info/nwg_info.htm</orgName>
             <orgName type="legacy-name-merge">Neues Wiener Tagblatt</orgName>
             <idno type="URL" subtype="pmb">http://https://pmb.acdh.oeaw.ac.at/apis/api2/entity/37476/</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -459,6 +467,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29414</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29414</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29414</idno>
+            <note type="apis_dates">
+               <date from="1867-01-01" to="1867-12-31">1867  – 1945</date>
+            </note>
          </org>
       </listOrg>
    </back>

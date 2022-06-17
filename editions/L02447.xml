@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02447</idno>
+            <idno type="asbw" n="02447"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -269,6 +269,8 @@
       <listPlace>
          <place xml:id="pmb44248">
             <placeName>Forte dei Marmi</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1410</desc>
             <location type="coords">
                <geo>43,96388 10,17478</geo>
             </location>
@@ -295,6 +297,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -316,12 +320,18 @@
          </place>
          <place xml:id="pmb68">
             <placeName>XVIII., Währing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,23333 16,31667</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb243">Sommerhaidenweg</placeName>
+               <geo>48,248935842869 16,296768550115</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb68</idno>
@@ -330,6 +340,8 @@
          </place>
          <place xml:id="pmb383">
             <placeName>Hasenauerstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,233816866614 16,337927920952</geo>
             </location>
@@ -349,6 +361,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
             <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
             <placeName type="alternative-name">Republic of Austria</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,33333 13,33333</geo>
             </location>
@@ -364,6 +378,8 @@
          </place>
          <place xml:id="pmb52707">
             <placeName>Monte Corchia</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#T.MT</desc>
+            <desc type="entity_type_id">1623</desc>
             <location type="coords">
                <geo>44,03626 10,29291</geo>
             </location>
@@ -377,6 +393,8 @@
          </place>
          <place xml:id="pmb52710">
             <placeName>Monte Pania della Croce</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#T.MT</desc>
+            <desc type="entity_type_id">1623</desc>
             <location type="coords">
                <geo>44,03542 10,32291</geo>
             </location>
@@ -390,6 +408,8 @@
          </place>
          <place xml:id="pmb52713">
             <placeName>Monte Matanna</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#T.MT</desc>
+            <desc type="entity_type_id">1623</desc>
             <location type="coords">
                <geo>43,98333 10,33333</geo>
             </location>
@@ -403,6 +423,8 @@
          </place>
          <place xml:id="pmb52718">
             <placeName>Monte Gabberi</placeName>
+            <desc type="entity_type">Berg (N.BRG)</desc>
+            <desc type="entity_type_id">28</desc>
             <location type="coords">
                <geo>43,96624724746293 10,29492852362407</geo>
             </location>
@@ -415,6 +437,8 @@
          </place>
          <place xml:id="pmb52720">
             <placeName>Monte Prana</placeName>
+            <desc type="entity_type">Berg (N.BRG)</desc>
+            <desc type="entity_type_id">28</desc>
             <location type="coords">
                <geo>43,95264762520863 10,353809629207152</geo>
             </location>
@@ -427,6 +451,8 @@
          </place>
          <place xml:id="pmb52716">
             <placeName>Grand Hotel Forte dei Marmi</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>43,95291802957647 10,173758622210785</geo>
             </location>
@@ -436,6 +462,9 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52716/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb52716</idno>
+            <note type="apis_dates">
+               <date notBefore="1921-01-01" when="1921-07-02">1921</date>
+            </note>
          </place>
       </listPlace>
    </back>

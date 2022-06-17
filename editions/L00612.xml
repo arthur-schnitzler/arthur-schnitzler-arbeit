@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00612</idno>
+            <idno type="asbw" n="00612"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -282,7 +282,6 @@
             <persName type="geburtsname_vorname">Richard</persName>
             <persName type="geburtsname_nachname">Engländer</persName>
             <persName type="pseudonym">Peter Altenberg</persName>
-            <persName type="legacy-name-merge">Engländer, Richard</persName>
             <birth>
                <date when="1859-03-09">09.03.1859</date>
                <settlement ref="pmb50">
@@ -547,8 +546,8 @@
       <listBibl>
          <bibl xml:id="pmb31539">
             <title>Ashantee</title>
-            <author ref="pmbperson__2147">Altenberg, Peter</author>
-            <date notBefore="1897-01-01" when="1897-07-02" notAfter="1897-12-31">1897</date>
+            <author ref="pmbperson__2147" role="hat-geschaffen">Altenberg, Peter</author>
+            <date notBefore="1897-01-01" when="1897-07-02">1897</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31539</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31539</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31539</idno>
@@ -558,7 +557,7 @@
          <bibl xml:id="pmb33420">
             <title>Wiener Erinnerungen</title>
             <note type="bibliografische_angabe">Neue Freie Presse, 20. 12. 1931</note>
-            <author ref="pmbperson__11701">Hirschfeld, Georg</author>
+            <author ref="pmbperson__11701" role="hat-geschaffen">Hirschfeld, Georg</author>
             <date when="1931-12-20">20.12.1931</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19311220&amp;seite=31&amp;zoom=33&amp;query=%22nabadu%22&amp;ref=anno-search</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33420</idno>
@@ -568,9 +567,9 @@
          <bibl xml:id="pmb36374">
             <title>Neue Freie Presse</title>
             <title type="uri_anno">http://anno.onb.ac.at/cgi-content/anno?aid=nfp</title>
-            <author ref="pmbperson__10875">Benedikt, Moriz</author>
-            <author ref="pmbperson__10872">Benedikt, Ernst</author>
-            <date notBefore="1864-01-01" when="1864-07-01" notAfter="1864-12-31">1864</date>
+            <author ref="pmbperson__10875" role="hat-herausgegeben">Benedikt, Moriz</author>
+            <author ref="pmbperson__10872" role="hat-herausgegeben">Benedikt, Ernst</author>
+            <date from="1864-01-01" to="1864-12-31">1864  – 1939</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36374/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36374</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36374</idno>
@@ -578,7 +577,7 @@
          </bibl>
          <bibl xml:id="pmb33424">
             <title>Der Giaur</title>
-            <author ref="pmbperson__11057">Byron, George Gordon Noël Lord</author>
+            <author ref="pmbperson__11057" role="hat-geschaffen">Byron, George Gordon Noël Lord</author>
             <date when="1813-01-01">1813</date>
             <idno type="URL" subtype="books">https://books.google.at/books?id=HMQ-AAAAYAAJ</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33424</idno>
@@ -587,8 +586,8 @@
          </bibl>
          <bibl xml:id="pmb33422">
             <title>Sämmtliche Werke</title>
-            <author ref="pmbperson__11057">Byron, George Gordon Noël Lord</author>
-            <date notBefore="1839-01-01" when="1839-07-02" notAfter="1839-12-31">1839</date>
+            <author ref="pmbperson__11057" role="hat-geschaffen">Byron, George Gordon Noël Lord</author>
+            <date notBefore="1839-01-01" when="1839-07-02">1839</date>
             <idno type="URL" subtype="books">https://books.google.com/books?id=HMQ-AAAAYAAJ&amp;pg=PA96&amp;dq=%22Wahnsinn+meiner+Seele%22&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwiAwq-A1_bdAhVKx1QKHUx4B-UQ6AEIOjAD#v=onepage&amp;q=%22Wahnsinn%20meiner%20Seele%22&amp;f=false</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33422</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33422</idno>
@@ -604,6 +603,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -630,6 +631,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -658,6 +661,8 @@
             <placeName type="legacy-uri-merge">Sch%C3%B6nbrunn</placeName>
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q131330</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/6354998</placeName>
+            <desc type="entity_type">Schloss (K.SLS)</desc>
+            <desc type="entity_type_id">41</desc>
             <location type="coords">
                <geo>48,18479 16,31227</geo>
             </location>
@@ -674,6 +679,8 @@
          <org xml:id="pmb29639">
             <orgName>S. Fischer Verlag</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/S._Fischer_Verlag</idno>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -708,6 +715,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29639</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29639</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29639</idno>
+            <note type="apis_dates">
+               <date notBefore="1886-01-01" when="1886-07-02">1886</date>
+            </note>
          </org>
       </listOrg>
    </back>

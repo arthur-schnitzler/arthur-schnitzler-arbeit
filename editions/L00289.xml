@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00289</idno>
+            <idno type="asbw" n="00289"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -239,7 +239,7 @@
          </person>
          <person xml:id="pmb2450">
             <persName>
-               <forename>Friedrich M.</forename>
+               <forename>Friedrich Michael</forename>
                <surname>Fels</surname>
             </persName>
             <persName type="geburtsname_nachname">Mayer</persName>
@@ -266,8 +266,8 @@
       <listBibl>
          <bibl xml:id="pmb41931">
             <title>Eine böse Nacht. Lustspiel in 3 Acten</title>
-            <author ref="pmbperson__12240">Meyer-Förster, Wilhelm</author>
-            <date notBefore="1893-01-01" when="1893-07-02" notAfter="1893-12-31">1893</date>
+            <author ref="pmbperson__12240" role="hat-geschaffen">Meyer-Förster, Wilhelm</author>
+            <date notBefore="1893-01-01" when="1893-07-02">1893</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41931/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41931</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41931</idno>
@@ -275,8 +275,8 @@
          </bibl>
          <bibl xml:id="pmb41936">
             <title>Das Bild des Signorelli. Schauspiel in 4 Acten</title>
-            <author ref="pmbperson__10723">Jaffé, Richard</author>
-            <date notBefore="1893-01-01" when="1893-07-02" notAfter="1893-12-31">1893</date>
+            <author ref="pmbperson__10723" role="hat-geschaffen">Jaffé, Richard</author>
+            <date notBefore="1893-01-01" when="1893-07-02">1893</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41936/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41936</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41936</idno>
@@ -297,6 +297,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -318,6 +320,8 @@
          </place>
          <place xml:id="pmb77">
             <placeName>Raimund-Theater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,192222 16,339722</geo>
             </location>
@@ -328,9 +332,14 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb77</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/77</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb77</idno>
+            <note type="apis_dates">
+               <date when="1893-11-27">27.11.1893</date>
+            </note>
          </place>
          <place xml:id="pmb262">
             <placeName>Café Central</placeName>
+            <desc type="entity_type">Kaffeehaus (K.KAF)</desc>
+            <desc type="entity_type_id">20</desc>
             <location type="coords">
                <geo>48,210278 16,365278</geo>
             </location>

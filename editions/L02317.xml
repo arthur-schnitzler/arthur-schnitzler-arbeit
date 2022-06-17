@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02317</idno>
+            <idno type="asbw" n="02317"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -344,8 +344,8 @@
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Professor_Bernhardi</idno>
             <title type="arbeitstitel">Ärztestück</title>
             <title type="arbeitstitel">Junggesellenstück</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date notBefore="1912-01-01" when="1912-07-01" notAfter="1912-12-31">1912</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date notBefore="1912-01-01" when="1912-07-01">1912</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.31</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q872683</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-professor-bernhardi</idno>
@@ -363,7 +363,7 @@
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Die_Schwestern_oder_Casanova_in_Spa</idno>
             <title type="arbeitstitel">Eifersucht</title>
             <title type="arbeitstitel">Die Wiederkehr</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1919-10-01">01.10.1919</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.18</idno>
             <idno type="URL" subtype="babel">https://babel.hathitrust.org/cgi/pt?id=uc1.b3914645</idno>
@@ -388,6 +388,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -409,6 +411,8 @@
          </place>
          <place xml:id="pmb34024">
             <placeName>Stallburggasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,20744 16,368048</geo>
             </location>

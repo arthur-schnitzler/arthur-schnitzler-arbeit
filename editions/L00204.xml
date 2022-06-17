@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00204</idno>
+            <idno type="asbw" n="00204"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -327,7 +327,7 @@
          </person>
          <person xml:id="pmb2450">
             <persName>
-               <forename>Friedrich M.</forename>
+               <forename>Friedrich Michael</forename>
                <surname>Fels</surname>
             </persName>
             <persName type="geburtsname_nachname">Mayer</persName>
@@ -483,7 +483,7 @@
       <listBibl>
          <bibl xml:id="pmb41362">
             <title>Der ledige Hof. Schauspiel in 4 Akten</title>
-            <author ref="pmbperson__10772">Anzengruber, Ludwig</author>
+            <author ref="pmbperson__10772" role="hat-geschaffen">Anzengruber, Ludwig</author>
             <date when="1877-01-27">27.1.1877</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41362/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41362</idno>
@@ -493,8 +493,8 @@
          <bibl xml:id="pmb33243">
             <title>Tagebuch</title>
             <note type="uri_worklink">https://schnitzler-tagebuch.acdh.oeaw.ac.at</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1981-01-01">1981</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1981  – 2000</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
@@ -515,6 +515,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -536,6 +538,8 @@
          </place>
          <place xml:id="pmb338">
             <placeName>Wollzeile</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,20852 16,37592</geo>
             </location>
@@ -551,6 +555,8 @@
          <place xml:id="pmb118">
             <placeName>Carl-Theater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Carltheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,215 16,384444</geo>
             </location>
@@ -563,6 +569,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb118</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/118</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb118</idno>
+            <note type="apis_dates">
+               <date>10.12.1847  – 29.5.1929</date>
+            </note>
          </place>
       </listPlace>
    </back>

@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00374</idno>
+            <idno type="asbw" n="00374"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -279,6 +279,8 @@
                <surname>Léon</surname>
             </persName>
             <persName type="geburtsname_nachname">Hirschfeld</persName>
+            <persName type="namensvariante">Léon</persName>
+            <persName type="legacy-name-merge">Hirschfeld, Victor</persName>
             <birth>
                <date when="1858-01-04">4.1.1858</date>
                <settlement ref="pmb45111">
@@ -286,6 +288,9 @@
                   <location>
                      <geo>48,67922 17,36697</geo>
                   </location>
+               </settlement>
+               <settlement ref="pmb18315">
+                  <placeName type="pref">Senica</placeName>
                </settlement>
             </birth>
             <death>
@@ -296,12 +301,21 @@
                      <geo>48,2066 16,37341</geo>
                   </location>
                </settlement>
+               <settlement ref="pmb50">
+                  <placeName type="pref">Wien</placeName>
+                  <location>
+                     <geo>48,2066 16,37341</geo>
+                  </location>
+               </settlement>
             </death>
             <sex value="male"/>
             <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+            <occupation ref="pmb115">Dramaturg/Dramaturgin</occupation>
             <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/115460608</idno>
+            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_17448</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2337</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2337</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/18314</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2337</idno>
          </person>
          <person xml:id="pmb26602">
@@ -473,12 +487,12 @@
       <listBibl>
          <bibl xml:id="pmb38879">
             <title>Tata-Toto</title>
-            <author ref="pmbperson__14211">Bilhaud, Paul</author>
-            <author ref="pmbperson__13768">Barré, Albert</author>
-            <author ref="pmbperson__13716">Banès, Antoine</author>
-            <author ref="pmbperson__2337">Léon, Victor</author>
-            <author ref="pmbperson__26666">Walzel, Camillo</author>
-            <date notBefore="1892-01-01" when="1892-07-01" notAfter="1892-12-31">1892</date>
+            <author ref="pmbperson__14211" role="hat-geschaffen">Bilhaud, Paul</author>
+            <author ref="pmbperson__13768" role="hat-geschaffen">Barré, Albert</author>
+            <author ref="pmbperson__13716" role="hat-vertont">Banès, Antoine</author>
+            <author ref="pmbperson__2337" role="hat-ubersetzt">Léon, Victor</author>
+            <author ref="pmbperson__26666" role="hat-ubersetzt">Walzel, Camillo</author>
+            <date from="1892-01-01" to="1892-12-31">1892  – 1892</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/38879/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38879</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb38879</idno>
@@ -487,7 +501,7 @@
          </bibl>
          <bibl xml:id="pmb29917">
             <title>Liebelei. Schauspiel in drei Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1895-10-09">9.10.1895</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.27</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1823758</idno>
@@ -502,10 +516,10 @@
          </bibl>
          <bibl xml:id="pmb36340">
             <title>Die Zeit. Wiener Wochenschrift</title>
-            <author ref="pmbperson__12790">Singer, Isidor</author>
-            <author ref="pmbperson__11867">Kanner, Heinrich</author>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
-            <date when="1894-01-01">1894</date>
+            <author ref="pmbperson__12790" role="hat-herausgegeben">Singer, Isidor</author>
+            <author ref="pmbperson__11867" role="hat-herausgegeben">Kanner, Heinrich</author>
+            <author ref="pmbperson__10815" role="hat-herausgegeben">Bahr, Hermann</author>
+            <date>1894  – 1904</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36340/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36340</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36340</idno>
@@ -514,7 +528,7 @@
          <bibl xml:id="pmb42162">
             <title>Wiener Caricaturen</title>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=wcc</note>
-            <date notBefore="1881-01-01" when="1881-07-02" notAfter="1881-12-31">1881</date>
+            <date from="1881-01-01" to="1881-12-31">1881  – 1925</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42162/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42162</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42162</idno>
@@ -523,7 +537,7 @@
          <bibl xml:id="pmb42158">
             <title>Der Floh</title>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=flo</note>
-            <date notBefore="1869-01-01" when="1869-07-02" notAfter="1869-12-31">1869</date>
+            <date from="1869-01-01" to="1869-12-31">1869  – 1919</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42158/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42158</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42158</idno>
@@ -532,7 +546,7 @@
          <bibl xml:id="pmb42160">
             <title>Die Bombe</title>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=bom</note>
-            <date notBefore="1871-01-01" when="1871-07-02" notAfter="1871-12-31">1871</date>
+            <date from="1871-01-01" to="1871-12-31">1871  – 1925</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42160/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42160</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42160</idno>
@@ -560,6 +574,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -582,6 +598,8 @@
          <place xml:id="pmb263">
             <placeName>Florenz</placeName>
             <placeName type="alternative-name">Florence</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>43,77925 11,24626</geo>
             </location>
@@ -601,6 +619,8 @@
             <placeName>Pallanza</placeName>
             <placeName type="alternative-name">Verbania-Pallanza</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4531027-0</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>45,92298 8,55045</geo>
             </location>
@@ -622,6 +642,8 @@
          <place xml:id="pmb40">
             <placeName>Theater in der Josefstadt</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Theater_in_der_Josefstadt</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,209583 16,351111</geo>
             </location>
@@ -636,6 +658,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb40</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40</idno>
+            <note type="apis_dates">
+               <date when="1788-01-01">1788</date>
+            </note>
          </place>
       </listPlace>
    </back>

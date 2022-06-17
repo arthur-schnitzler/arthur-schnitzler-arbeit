@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01870</idno>
+            <idno type="asbw" n="01870"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -263,7 +263,7 @@
       <listBibl>
          <bibl xml:id="pmb52005">
             <title>Theatinerkirche</title>
-            <author ref="pmbperson__2306">Kley, Heinrich</author>
+            <author ref="pmbperson__2306" role="hat-geschaffen">Kley, Heinrich</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52005/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb52005</idno>
             <note type="work_kind">Aquarell</note>
@@ -281,16 +281,10 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4127793-4</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000355</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3220837</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb45258">München</placeName>
-               <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb54315">Brienner Straße</placeName>
-               <geo>48,14512778708449 11,568353382899355</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb314">Bayern</placeName>
@@ -308,6 +302,8 @@
          </place>
          <place xml:id="pmb843">
             <placeName>Santa Maria Elisabetta</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>45,41748 12,36861</geo>
             </location>
@@ -326,6 +322,8 @@
          <place xml:id="pmb259">
             <placeName>Lido</placeName>
             <placeName type="loschen">x</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>45,38333 12,35</geo>
             </location>
@@ -341,6 +339,8 @@
          <place xml:id="pmb40983">
             <placeName>Grand Hotel des Bains</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Grand_Hotel_des_Bains_(Venedig)</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>45,413333 12,374722</geo>
             </location>
@@ -351,10 +351,15 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40983/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40983</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40983</idno>
+            <note type="apis_dates">
+               <date>1900  – 2010</date>
+            </note>
          </place>
          <place xml:id="pmb52007">
             <placeName>Theatinerkirche</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Theatinerkirche_(München)</placeName>
+            <desc type="entity_type">Kirche (K.KRC)</desc>
+            <desc type="entity_type_id">33</desc>
             <location type="coords">
                <geo>48,142114 11,576481</geo>
             </location>

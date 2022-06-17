@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01344</idno>
+            <idno type="asbw" n="01344"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -262,8 +262,8 @@
             <title type="arbeitstitel">Die Egoisten</title>
             <title type="arbeitstitel">Einsame Wege</title>
             <title type="arbeitstitel">Wege ins Dunkle</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date notBefore="1904-01-01" when="1904-07-01" notAfter="1904-12-31">1904</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date notBefore="1904-01-01" when="1904-07-01">1904</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.08</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1198519</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-der-einsame-weg</idno>
@@ -277,8 +277,9 @@
          </bibl>
          <bibl xml:id="pmb29935">
             <title>Anatol</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1892-10-29">1892-10-29</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
+            <date>1892-10-29  – 1892-10-29</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.03</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q487409</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-anatol</idno>
@@ -296,6 +297,8 @@
             <placeName>Rodaun</placeName>
             <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11742/</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>48,132793312328 16,256152195922</geo>
             </location>
@@ -322,6 +325,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>

@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01981</idno>
+            <idno type="asbw" n="01981"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -963,7 +963,7 @@
          <bibl xml:id="pmb29937">
             <title>Der junge Medardus. Dramatische Historie in einem Vorspiel und fünf Aufzügen</title>
             <note type="bibliografische_angabe">Der junge Medardus. Dramatische Historie in einem Vorspiel und fünf Aufzügen. Berlin: S. Fischer [26.10.]1910</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1910-10-26">1910-10-26</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.11</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1198956</idno>
@@ -977,8 +977,8 @@
          </bibl>
          <bibl xml:id="pmb30009">
             <title>Hamlet</title>
-            <author ref="pmbperson__2412">Shakespeare, William</author>
-            <date notBefore="1600-01-01" when="1600-07-01" notAfter="1600-12-31">1600</date>
+            <author ref="pmbperson__2412" role="hat-geschaffen">Shakespeare, William</author>
+            <date notBefore="1600-01-01" when="1600-07-01">1600</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30009</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30009</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30009</idno>
@@ -987,8 +987,8 @@
          </bibl>
          <bibl xml:id="pmb30027">
             <title>Gespenster</title>
-            <author ref="pmbperson__11798">Ibsen, Henrik</author>
-            <date notBefore="1881-01-01" when="1881-07-02" notAfter="1881-12-31">1881</date>
+            <author ref="pmbperson__11798" role="hat-geschaffen">Ibsen, Henrik</author>
+            <date notBefore="1881-01-01" when="1881-07-02">1881</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30027</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30027</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30027</idno>
@@ -997,8 +997,8 @@
          </bibl>
          <bibl xml:id="pmb30029">
             <title>Prinz Friedrich von Homburg</title>
-            <author ref="pmbperson__11933">Kleist, Heinrich von</author>
-            <date notBefore="1821-01-01" when="1821-07-02" notAfter="1821-12-31">1821</date>
+            <author ref="pmbperson__11933" role="hat-geschaffen">Kleist, Heinrich von</author>
+            <date notBefore="1821-01-01" when="1821-07-02">1821</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30029</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30029</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30029</idno>
@@ -1007,8 +1007,8 @@
          </bibl>
          <bibl xml:id="pmb30031">
             <title>Torquato Tasso</title>
-            <author ref="pmbperson__11461">Goethe, Johann Wolfgang von</author>
-            <date notBefore="1790-01-01" when="1790-07-02" notAfter="1790-12-31">1790</date>
+            <author ref="pmbperson__11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
+            <date notBefore="1790-01-01" when="1790-07-02">1790</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30031</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30031</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30031</idno>
@@ -1030,6 +1030,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -1051,6 +1053,8 @@
          </place>
          <place xml:id="pmb150">
             <placeName>Sternwartestraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,23099349198 16,340117830625</geo>
             </location>
@@ -1065,6 +1069,8 @@
          </place>
          <place xml:id="pmb14">
             <placeName>Burgtheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,210333 16,361139</geo>
             </location>
@@ -1088,16 +1094,10 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4127793-4</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000355</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3220837</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb45258">München</placeName>
-               <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb54315">Brienner Straße</placeName>
-               <geo>48,14512778708449 11,568353382899355</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb314">Bayern</placeName>
@@ -1115,6 +1115,8 @@
          </place>
          <place xml:id="pmb667">
             <placeName>Garmisch-Partenkirchen</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,49209 11,09576</geo>
             </location>

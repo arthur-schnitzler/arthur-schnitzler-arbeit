@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00116</idno>
+            <idno type="asbw" n="00116"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -334,8 +334,8 @@
          <bibl xml:id="pmb41537">
             <title>Spanisches Strandleben</title>
             <note type="bibliografische_angabe">Jg. 36, Nr. 232, Erstes Morgenblatt, 19.8.1892 S. 1–3</note>
-            <author ref="pmbperson__11485">Goldmann, Paul</author>
-            <date when="1892-08-19">19.8.1892</date>
+            <author ref="pmbperson__11485" role="hat-geschaffen">Goldmann, Paul</author>
+            <date>19.8.1892  – 19.8.1892</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41537/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41537</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41537</idno>
@@ -344,7 +344,7 @@
          <bibl xml:id="pmb36344">
             <title>Frankfurter Zeitung</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurter_Zeitung</idno>
-            <date notBefore="1856-01-01" when="1856-07-01" notAfter="1856-12-31">1856</date>
+            <date from="1856-01-01" to="1856-12-31">1856  – 1943</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36344/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36344</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36344</idno>
@@ -365,6 +365,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -387,6 +389,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -401,6 +405,8 @@
          </place>
          <place xml:id="pmb1220">
             <placeName>Grazer Straße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>47,70918 13,62156</geo>
             </location>
@@ -413,6 +419,8 @@
          </place>
          <place xml:id="pmb40845">
             <placeName>Kreuzplatz</placeName>
+            <desc type="entity_type">Platz (K.PLT)</desc>
+            <desc type="entity_type_id">21</desc>
             <location type="coords">
                <geo>47,713083 13,621408</geo>
             </location>
@@ -426,6 +434,8 @@
          </place>
          <place xml:id="pmb717">
             <placeName>Opernring</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,202859933076 16,366977055984</geo>
             </location>
@@ -444,6 +454,8 @@
          </place>
          <place xml:id="pmb501">
             <placeName>Kärntnerring</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,201874800905 16,371985203093</geo>
             </location>
@@ -463,6 +475,8 @@
          <place xml:id="pmb542">
             <placeName>Bösendorferstraße</placeName>
             <placeName type="alternative-name">Giselastraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,201213 16,371141</geo>
             </location>
@@ -479,6 +493,8 @@
             <placeName>San Sebastian</placeName>
             <placeName type="alternative-name">Donostia-San Sebastián</placeName>
             <placeName type="legacy-name">San Sebastián</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1134</desc>
             <location type="coords">
                <geo>43,31283 -1,97499</geo>
             </location>

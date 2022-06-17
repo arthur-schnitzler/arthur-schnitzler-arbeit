@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02600</idno>
+            <idno type="asbw" n="02600"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -246,7 +246,7 @@
       <listBibl>
          <bibl xml:id="pmb65249">
             <title>Die Familie Lowositz. Roman</title>
-            <author ref="pmbperson__2524">Hauschner, Auguste</author>
+            <author ref="pmbperson__2524" role="hat-geschaffen">Hauschner, Auguste</author>
             <date when="1908-06-02">1908-06-02</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65249/</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb65249.html</idno>
@@ -254,8 +254,8 @@
          </bibl>
          <bibl xml:id="pmb65632">
             <title>Kunst. Roman</title>
-            <author ref="pmbperson__2524">Hauschner, Auguste</author>
-            <date notBefore="1904-01-01" when="1904-07-01" notAfter="1904-12-31">1904</date>
+            <author ref="pmbperson__2524" role="hat-geschaffen">Hauschner, Auguste</author>
+            <date notBefore="1904-01-01" when="1904-07-01">1904</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65632/</idno>
             <note type="work_kind">Roman</note>
          </bibl>
@@ -263,6 +263,8 @@
       <listPlace>
          <place xml:id="pmb988">
             <placeName>Seis am Schlern</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>46,54133 11,55868</geo>
             </location>
@@ -280,6 +282,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -296,6 +300,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -321,6 +327,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>

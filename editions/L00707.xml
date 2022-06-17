@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00707</idno>
+            <idno type="asbw" n="00707"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -492,7 +492,7 @@
       <listBibl>
          <bibl xml:id="pmb29899">
             <title>Freiwild. Schauspiel in 3 Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1896-01-01">1896</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.21</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1454877</idno>
@@ -507,7 +507,7 @@
          <bibl xml:id="pmb40006">
             <title>Man schreibt uns aus Gmunden</title>
             <note type="bibliografische_angabe">Fremden-Blatt, Jg. 51, Nr. 198, 19.7.1897, Abend-Blatt, S. 6</note>
-            <date when="1895-07-19">19.7.1895</date>
+            <date>19.7.1895  – 19.7.1895</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40006/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40006</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40006</idno>
@@ -515,7 +515,7 @@
          </bibl>
          <bibl xml:id="pmb40003">
             <title>Fremden-Blatt</title>
-            <date when="1847-07-01">1.7.1847</date>
+            <date>1.7.1847  – 22.3.1919</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40003/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40003</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40003</idno>
@@ -523,8 +523,8 @@
          </bibl>
          <bibl xml:id="pmb31303">
             <title>Der Hüttenbesitzer</title>
-            <author ref="pmbperson__12371">Ohnet, Georges</author>
-            <date notBefore="1882-01-01" when="1882-07-02" notAfter="1882-12-31">1882</date>
+            <author ref="pmbperson__12371" role="hat-geschaffen">Ohnet, Georges</author>
+            <date notBefore="1882-01-01" when="1882-07-02">1882</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31303</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31303</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31303</idno>
@@ -536,6 +536,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -550,6 +552,8 @@
          </place>
          <place xml:id="pmb39671">
             <placeName>Hallstatt</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1123</desc>
             <location type="coords">
                <geo>47,56231 13,64912</geo>
             </location>
@@ -566,6 +570,8 @@
             <placeName type="legacy-name-merge">Fusch an der Großglocknerstrasse</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/2779089/</placeName>
             <placeName type="legacy-name-merge">Fusch an der Grossglocknerstrasse</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,22729 12,82727</geo>
             </location>
@@ -583,6 +589,8 @@
          </place>
          <place xml:id="pmb874">
             <placeName>Gmunden</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,91839 13,79933</geo>
             </location>
@@ -599,6 +607,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
             <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
             <placeName type="alternative-name">Republic of Austria</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,33333 13,33333</geo>
             </location>
@@ -625,6 +635,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -650,6 +662,8 @@
             <orgName>Volkstheater</orgName>
             <orgName type="namensvariante">Deutsches Volkstheater</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Volkstheater_(Wien)</idno>
+            <desc type="entity_type">Theater</desc>
+            <desc type="entity_type_id">1012</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -676,6 +690,9 @@
             <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/146313-5</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36430</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36430</idno>
+            <note type="apis_dates">
+               <date notBefore="1889-01-01" when="1889-07-02">1889</date>
+            </note>
          </org>
       </listOrg>
    </back>

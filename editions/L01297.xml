@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01297</idno>
+            <idno type="asbw" n="01297"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -385,8 +385,8 @@
       <listBibl>
          <bibl xml:id="pmb30763">
             <title>Briefwechsel mit Freunden und berühmten Zeitgenossen</title>
-            <author ref="pmbperson__2404">Hebbel, Friedrich</author>
-            <date notBefore="1890-01-01" when="1890-07-02" notAfter="1890-12-31">1890</date>
+            <author ref="pmbperson__2404" role="hat-geschaffen">Hebbel, Friedrich</author>
+            <date notBefore="1890-01-01" when="1890-07-02">1890</date>
             <idno type="URL" subtype="books">https://books.google.com/books?id=noAOAQAAMAAJ&amp;pg=PR11&amp;dq=hebbel+briefe&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwj4mPTa5abVAhVJi1QKHdA3AQsQ6AEIJzAA#v=onepage&amp;q=wehe&amp;f=false</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30763</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30763</idno>
@@ -396,8 +396,8 @@
          <bibl xml:id="pmb30247">
             <title>Faust</title>
             <note type="uri_worklink">http://faustedition.net</note>
-            <author ref="pmbperson__11461">Goethe, Johann Wolfgang von</author>
-            <date when="1790-01-01">1790</date>
+            <author ref="pmbperson__11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
+            <date>1790  – 1832</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30247</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30247</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30247</idno>
@@ -409,6 +409,8 @@
          <place xml:id="pmb34199">
             <placeName>Cortina d'Ampezzo</placeName>
             <placeName type="alternative-name">Cortina d’Ampezzo</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>46,5369 12,13903</geo>
             </location>
@@ -433,6 +435,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -454,6 +458,8 @@
          </place>
          <place xml:id="pmb44409">
             <placeName>Hôtel und Pension Faloria</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>46,532042 12,146962</geo>
             </location>
@@ -466,6 +472,8 @@
          </place>
          <place xml:id="pmb44411">
             <placeName>Bellevue</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>46,5406 12,13482</geo>
             </location>
@@ -479,6 +487,8 @@
          <place xml:id="pmb969">
             <placeName>Südtirol</placeName>
             <placeName type="namensvariante">Autonome Provinz Bozen</placeName>
+            <desc type="entity_type">Teil eines Landes (A.LNDX)</desc>
+            <desc type="entity_type_id">13</desc>
             <location type="coords">
                <geo>46,71667 11,5</geo>
             </location>
@@ -512,6 +522,8 @@
             <placeName type="alternative-name">Peterburg</placeName>
             <placeName type="alternative-name">Saint Petersburg</placeName>
             <placeName type="alternative-name">Petrograd</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>59,93863 30,31413</geo>
             </location>
@@ -535,13 +547,22 @@
             <placeName>London</placeName>
             <placeName type="alternative-name">Landan</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4074335-4</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1103</desc>
             <location type="coords">
                <geo>51,50853 -0,12574</geo>
             </location>
-            <idno type="URL" subtype="geonames">http://sws.geonames.org/2643743/</idno>
+            <location type="located_in_place">
+               <placeName ref="pmb34523">Vereinigtes Königreich</placeName>
+               <geo>54,75844 -2,69531</geo>
+            </location>
+            <idno type="URL" subtype="geonames">https://sws.geonames.org/2643743/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb224</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/224</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb224</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62748/</idno>
+            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4074335-4</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64147/</idno>
          </place>
          <place xml:id="pmb168">
             <placeName>Berlin</placeName>
@@ -551,6 +572,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>

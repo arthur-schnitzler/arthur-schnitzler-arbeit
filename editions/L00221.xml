@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00221</idno>
+            <idno type="asbw" n="00221"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -313,7 +313,7 @@
       <listBibl>
          <bibl xml:id="pmb30165">
             <title>Die Braut</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1932-01-01">1932</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.20</idno>
             <idno type="URL" subtype="">http://gutenberg.spiegel.de/buch/die-braut-5352/1</idno>
@@ -325,7 +325,7 @@
          </bibl>
          <bibl xml:id="pmb34237">
             <title>Die Frau als Verbrecherin und Prostituierte</title>
-            <author ref="pmbperson__20586">Lombroso, Cesare</author>
+            <author ref="pmbperson__20586" role="hat-geschaffen">Lombroso, Cesare</author>
             <date when="1893-01-01">1893</date>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34237/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34237</idno>
@@ -342,6 +342,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -368,6 +370,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -390,6 +394,8 @@
          <place xml:id="pmb1275">
             <placeName>Friedrichshagen</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Berlin-Friedrichshagen</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>52,45 13,616667</geo>
             </location>

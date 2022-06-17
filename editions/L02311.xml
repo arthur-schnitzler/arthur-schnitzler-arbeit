@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02311</idno>
+            <idno type="asbw" n="02311"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -406,7 +406,7 @@
       <listBibl>
          <bibl xml:id="pmb33606">
             <title>Der Fremde</title>
-            <author ref="pmbperson__12438">Adam, Robert</author>
+            <author ref="pmbperson__12438" role="hat-geschaffen">Adam, Robert</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33606</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33606</idno>
             <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb33606.html</idno>
@@ -414,7 +414,7 @@
          </bibl>
          <bibl xml:id="pmb33604">
             <title>Yppl. Idylle in fünf Akten</title>
-            <author ref="pmbperson__12438">Adam, Robert</author>
+            <author ref="pmbperson__12438" role="hat-geschaffen">Adam, Robert</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33604</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33604</idno>
             <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb33604.html</idno>
@@ -432,7 +432,7 @@
          <bibl xml:id="pmb39950">
             <title>Wiener Allgemeine Zeitung</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wiener_Allgemeine_Zeitung</idno>
-            <date when="1880-03-01">1.3.1880</date>
+            <date>1.3.1880  – 11.2.1934</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/39950/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39950</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb39950</idno>
@@ -450,7 +450,7 @@
          <bibl xml:id="pmb41507">
             <title>Prager Tagblatt</title>
             <title type="uri_anno">https://anno.onb.ac.at/cgi-content/anno?aid=ptb</title>
-            <date notBefore="1876-01-01" when="1876-07-01" notAfter="1876-12-31">1876</date>
+            <date from="1876-01-01" to="1876-12-31">1876  – 1939</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41507/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41507</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41507</idno>
@@ -471,6 +471,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -494,6 +496,8 @@
             <placeName>Volkstheater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Volkstheater_(Wien)</placeName>
             <placeName type="namensvariante">Deutsches Volkstheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,205142 16,3566</geo>
             </location>
@@ -513,6 +517,8 @@
             <placeName type="alternative-name">West Germany</placeName>
             <placeName type="alternative-name">Federal Republic of Germany</placeName>
             <placeName type="legacy-name-merge">Germany</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>51,5 10,5</geo>
             </location>
@@ -538,6 +544,8 @@
             <placeName type="legacy-name-merge">Prag-Smichow</placeName>
             <placeName type="legacy-name-merge">Bohnitz bei Prag</placeName>
             <placeName type="legacy-name-merge">Prag-Dejwitz</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,08333 14,46667</geo>
             </location>
@@ -559,6 +567,8 @@
       <listOrg>
          <org xml:id="pmb29605">
             <orgName>Bezirksgericht Wien Josefstadt</orgName>
+            <desc type="entity_type">Gericht</desc>
+            <desc type="entity_type_id">1037</desc>
             <location type="located_in_place">
                <placeName ref="pmb58">VIII., Josefstadt</placeName>
                <geo>48,21126 16,34706</geo>
@@ -582,6 +592,8 @@
             <orgName>Prager Tagblatt</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Prager_Tagblatt</idno>
             <idno type="URL" subtype="">http://anno.onb.ac.at/info/ptb_info.htm</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb652">Prag</placeName>
                <geo>50,08333 14,46667</geo>

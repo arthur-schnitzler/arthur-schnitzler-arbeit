@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02538</idno>
+            <idno type="asbw" n="02538"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -296,8 +296,8 @@
       <listBibl>
          <bibl xml:id="pmb33618">
             <title>Margot und das Jugendgericht</title>
-            <author ref="pmbperson__12438">Adam, Robert</author>
-            <date notBefore="1931-01-01" when="1931-07-02" notAfter="1931-12-31">1931</date>
+            <author ref="pmbperson__12438" role="hat-geschaffen">Adam, Robert</author>
+            <date notBefore="1931-01-01" when="1931-07-02">1931</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33618</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33618</idno>
             <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
@@ -317,6 +317,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -344,6 +346,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -361,6 +365,8 @@
       <listOrg>
          <org xml:id="pmb29591">
             <orgName>Handelsgericht Wien</orgName>
+            <desc type="entity_type">Gericht</desc>
+            <desc type="entity_type_id">1037</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -386,6 +392,8 @@
          </org>
          <org xml:id="pmb33886">
             <orgName>Drei Masken-Verlag</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb168">Berlin</placeName>
                <geo>52,52437 13,41053</geo>
@@ -407,6 +415,9 @@
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33886/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33886</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33886</idno>
+            <note type="apis_dates">
+               <date when="1910-11-24">24.11.1910</date>
+            </note>
          </org>
       </listOrg>
    </back>

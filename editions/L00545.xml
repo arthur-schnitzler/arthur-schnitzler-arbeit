@@ -32,7 +32,7 @@
                <name>Martin Anton Müller</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00545</idno>
+            <idno type="asbw" n="00545"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -512,21 +512,9 @@
                      <geo>37,97945 23,71622</geo>
                   </location>
                </settlement>
-               <settlement ref="pmb505">
-                  <placeName type="pref">Athen</placeName>
-                  <location>
-                     <geo>37,97945 23,71622</geo>
-                  </location>
-               </settlement>
             </birth>
             <death>
                <date when="0001-01-01">347/348 v. u. Z.</date>
-               <settlement ref="pmb505">
-                  <placeName type="pref">Athen</placeName>
-                  <location>
-                     <geo>37,97945 23,71622</geo>
-                  </location>
-               </settlement>
                <settlement ref="pmb505">
                   <placeName type="pref">Athen</placeName>
                   <location>
@@ -622,7 +610,7 @@
       <listBibl>
          <bibl xml:id="pmb29899">
             <title>Freiwild. Schauspiel in 3 Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1896-01-01">1896</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.21</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1454877</idno>
@@ -638,7 +626,7 @@
             <title>An der schönen blauen Donau</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/An_der_Schönen_Blauen_Donau</idno>
             <title type="uri_anno">https://anno.onb.ac.at/cgi-content/anno-plus?aid=asd&amp;size=45</title>
-            <date when="1886-01-01">1886</date>
+            <date>1886  – 1896</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/35860/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35860</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb35860</idno>
@@ -649,6 +637,8 @@
          <place xml:id="pmb636">
             <placeName>Tlumatsch</placeName>
             <placeName type="none">Tłumacz</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,86403 25,00325</geo>
             </location>
@@ -671,6 +661,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -692,6 +684,8 @@
          </place>
          <place xml:id="pmb644">
             <placeName>Galizien</placeName>
+            <desc type="entity_type">Region</desc>
+            <desc type="entity_type_id">47</desc>
             <location type="coords">
                <geo>49,521 23,245</geo>
             </location>

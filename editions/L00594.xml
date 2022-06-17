@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00594</idno>
+            <idno type="asbw" n="00594"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -463,8 +463,8 @@
       <listBibl>
          <bibl xml:id="pmb42009">
             <title>Sein Sohn</title>
-            <author ref="pmbperson__2425">Dörmann, Felix</author>
-            <date when="1896-10-16">16.10.1896</date>
+            <author ref="pmbperson__2425" role="hat-geschaffen">Dörmann, Felix</author>
+            <date>16.10.1896  – 16.10.1896</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42009/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42009</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42009</idno>
@@ -473,7 +473,7 @@
          </bibl>
          <bibl xml:id="pmb29917">
             <title>Liebelei. Schauspiel in drei Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1895-10-09">9.10.1895</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.27</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1823758</idno>
@@ -488,7 +488,7 @@
          </bibl>
          <bibl xml:id="pmb29899">
             <title>Freiwild. Schauspiel in 3 Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1896-01-01">1896</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.21</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1454877</idno>
@@ -508,6 +508,8 @@
             <placeName type="legacy-name">Baden bei Wien?</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/16058/</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/2782067/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,00543 16,23264</geo>
             </location>
@@ -538,6 +540,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -559,6 +563,8 @@
          </place>
          <place xml:id="pmb77">
             <placeName>Raimund-Theater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,192222 16,339722</geo>
             </location>
@@ -569,10 +575,15 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb77</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/77</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb77</idno>
+            <note type="apis_dates">
+               <date when="1893-11-27">27.11.1893</date>
+            </note>
          </place>
          <place xml:id="pmb40">
             <placeName>Theater in der Josefstadt</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Theater_in_der_Josefstadt</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,209583 16,351111</geo>
             </location>
@@ -587,11 +598,16 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb40</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40</idno>
+            <note type="apis_dates">
+               <date when="1788-01-01">1788</date>
+            </note>
          </place>
          <place xml:id="pmb58">
             <placeName>VIII., Josefstadt</placeName>
             <placeName type="alternative-name">Josefstadt (Wien-Josefstadt)</placeName>
             <placeName type="legacy-name-merge">Josefstadt</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,21126 16,34706</geo>
             </location>
@@ -610,6 +626,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>

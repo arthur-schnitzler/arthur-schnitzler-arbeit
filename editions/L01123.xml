@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01123</idno>
+            <idno type="asbw" n="01123"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -291,7 +291,8 @@
             <note type="bibliografische_angabe">Neue Freie Presse, Nr. 13053, 25. 12. 1900, S. 34–41</note>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19001225&amp;seite=34&amp;zoom=33</note>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Leutnant_Gustl</idno>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
             <date when="1900-12-25">25.12.1900</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.39</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1821658</idno>
@@ -311,6 +312,8 @@
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000958</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3194097</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/3194099/</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1134</desc>
             <location type="coords">
                <geo>45,33771 14,30515</geo>
             </location>
@@ -329,16 +332,14 @@
          </place>
          <place xml:id="pmb59">
             <placeName>IX., Alsergrund</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,22387 16,35641</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb618">Kaiserjubiläum-Stadttheater</placeName>
-               <geo>48,224472 16,350361</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2782729/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb59</idno>
@@ -347,6 +348,8 @@
          </place>
          <place xml:id="pmb397">
             <placeName>Frankgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,215516628628 16,356475515829</geo>
             </location>

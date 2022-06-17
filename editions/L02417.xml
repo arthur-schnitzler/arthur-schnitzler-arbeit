@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02417</idno>
+            <idno type="asbw" n="02417"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -299,8 +299,8 @@
          <bibl xml:id="pmb33247">
             <title>Der Zauberberg. Roman</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Der_Zauberberg</idno>
-            <author ref="pmbperson__12176">Mann, Thomas</author>
-            <date notBefore="1924-01-01" when="1924-07-01" notAfter="1924-12-31">1924</date>
+            <author ref="pmbperson__12176" role="hat-geschaffen">Mann, Thomas</author>
+            <date notBefore="1924-01-01" when="1924-07-01">1924</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33247</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33247</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33247.html</idno>
@@ -310,8 +310,8 @@
             <title>Komödie der Verführung. In drei Akten</title>
             <note type="uri_worklink">https://www.schnitzler-edition.net/genetisch?openWorkInfo=10049#werkinfo-10049</note>
             <title type="arbeitstitel">Der Verführer</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date notBefore="1924-01-01" when="1924-07-01" notAfter="1924-12-31">1924</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date notBefore="1924-01-01" when="1924-07-01">1924</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.23</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/38146</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30205</idno>
@@ -324,6 +324,8 @@
       <listPlace>
          <place xml:id="pmb42768">
             <placeName>Sestri Levante</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1128</desc>
             <location type="coords">
                <geo>44,27317 9,39683</geo>
             </location>
@@ -349,6 +351,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -371,6 +375,8 @@
          <place xml:id="pmb635">
             <placeName>Residenztheater München</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Residenztheater_(M%C3%BCnchen)</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,139944 11,578786</geo>
             </location>
@@ -381,12 +387,17 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb635</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/635</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb635</idno>
+            <note type="apis_dates">
+               <date notBefore="1753-01-01" when="1753-07-02">1753</date>
+            </note>
          </place>
       </listPlace>
       <listOrg>
          <org xml:id="pmb29639">
             <orgName>S. Fischer Verlag</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/S._Fischer_Verlag</idno>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -421,6 +432,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29639</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29639</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29639</idno>
+            <note type="apis_dates">
+               <date notBefore="1886-01-01" when="1886-07-02">1886</date>
+            </note>
          </org>
       </listOrg>
    </back>

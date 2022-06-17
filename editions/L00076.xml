@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00076</idno>
+            <idno type="asbw" n="00076"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -275,7 +275,7 @@
          <bibl xml:id="pmb31965">
             <title>Die drei Elixire</title>
             <note type="bibliografische_angabe">Moderner Musen-Almanach auf das Jahr 1894,</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1893-01-01">1893</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31965</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31965</idno>
@@ -285,8 +285,8 @@
          </bibl>
          <bibl xml:id="pmb36166">
             <title>Freie Bühne für den Entwickelungskampf der Zeit</title>
-            <author ref="pmbperson__11061">Bölsche, Wilhelm</author>
-            <date when="1892-01-01">1892</date>
+            <author ref="pmbperson__11061" role="hat-herausgegeben">Bölsche, Wilhelm</author>
+            <date>1892  – 1893</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36166/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36166</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36166</idno>
@@ -307,6 +307,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -334,6 +336,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -350,6 +354,8 @@
          <place xml:id="pmb542">
             <placeName>Bösendorferstraße</placeName>
             <placeName type="alternative-name">Giselastraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,201213 16,371141</geo>
             </location>

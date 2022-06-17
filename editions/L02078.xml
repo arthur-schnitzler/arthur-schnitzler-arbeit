@@ -35,7 +35,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02078</idno>
+            <idno type="asbw" n="02078"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -306,6 +306,8 @@
       <listPlace>
          <place xml:id="pmb52256">
             <placeName>Restaurant Hahnensee</placeName>
+            <desc type="entity_type">Gastgewerbegebäude (K.GGW)</desc>
+            <desc type="entity_type_id">17</desc>
             <location type="coords">
                <geo>46,46813067431456 9,828982142182769</geo>
             </location>
@@ -320,6 +322,8 @@
             <placeName>Sankt Moritz</placeName>
             <placeName type="alternative-name">St. Moritz</placeName>
             <placeName type="alternative-name">Saint Moritz</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>46,49937 9,84327</geo>
             </location>
@@ -352,6 +356,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -373,12 +379,18 @@
          </place>
          <place xml:id="pmb68">
             <placeName>XVIII., Währing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,23333 16,31667</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb243">Sommerhaidenweg</placeName>
+               <geo>48,248935842869 16,296768550115</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb68</idno>
@@ -387,6 +399,8 @@
          </place>
          <place xml:id="pmb150">
             <placeName>Sternwartestraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,23099349198 16,340117830625</geo>
             </location>
@@ -402,6 +416,8 @@
          <place xml:id="pmb52028">
             <placeName>Hahnensee</placeName>
             <placeName type="legacy-uri-merge">https://www.schweizersee.ch/hahnensee/</placeName>
+            <desc type="entity_type">See (N.SEE)</desc>
+            <desc type="entity_type_id">44</desc>
             <location type="coords">
                <geo>46,466667 9,833333</geo>
             </location>
@@ -415,6 +431,8 @@
          <place xml:id="pmb1061">
             <placeName>Engadin</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Engadin</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#T.VAL</desc>
+            <desc type="entity_type_id">1532</desc>
             <location type="coords">
                <geo>46,601337 9,965973</geo>
             </location>

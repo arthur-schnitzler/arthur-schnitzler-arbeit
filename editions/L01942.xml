@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01942</idno>
+            <idno type="asbw" n="01942"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -599,9 +599,9 @@
          <bibl xml:id="pmb39783">
             <title>Schlaflied für Mirjam</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Schlaflied_für_Mirjam</idno>
-            <author ref="pmbperson__10863">Beer-Hofmann, Richard</author>
-            <author ref="pmbperson__21368">Metzl, Wladimir</author>
-            <date when="1898-11-15">15.11.1898</date>
+            <author ref="pmbperson__10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
+            <author ref="pmbperson__21368" role="hat-vertont">Metzl, Wladimir</author>
+            <date>15.11.1898  – 15.11.1898</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/39783/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39783</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb39783</idno>
@@ -609,8 +609,8 @@
          </bibl>
          <bibl xml:id="pmb40910">
             <title>Die Welt in der man sich langweilt</title>
-            <author ref="pmbperson__3991">Pailleron, Édouard</author>
-            <date when="1881-01-01">1881</date>
+            <author ref="pmbperson__3991" role="hat-geschaffen">Pailleron, Édouard</author>
+            <date>1881  – 1881</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40910/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40910</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40910</idno>
@@ -618,7 +618,7 @@
          </bibl>
          <bibl xml:id="pmb30207">
             <title>Das weite Land. Tragikomödie in fünf Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1910-10-20">1910-10-20</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.06</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1171735</idno>
@@ -635,7 +635,7 @@
          <bibl xml:id="pmb29937">
             <title>Der junge Medardus. Dramatische Historie in einem Vorspiel und fünf Aufzügen</title>
             <note type="bibliografische_angabe">Der junge Medardus. Dramatische Historie in einem Vorspiel und fünf Aufzügen. Berlin: S. Fischer [26.10.]1910</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1910-10-26">1910-10-26</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.11</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1198956</idno>
@@ -652,6 +652,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -677,6 +679,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -698,6 +702,8 @@
          </place>
          <place xml:id="pmb405">
             <placeName>Steinfeld</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>47,716312 13,617008</geo>
             </location>
@@ -714,6 +720,8 @@
             <placeName>Ungarn</placeName>
             <placeName type="alternative-name">Republic of Hungary</placeName>
             <placeName type="legacy-name-merge">Hungary</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,0 20,0</geo>
             </location>
@@ -732,6 +740,8 @@
          <place xml:id="pmb40440">
             <placeName>Hotel Post</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Hotel_Post_(Bad_Ischl)</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,712295 13,622853</geo>
             </location>
@@ -742,6 +752,9 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40440/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40440</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40440</idno>
+            <note type="apis_dates">
+               <date notBefore="1827-01-01" when="1827-07-02">1827</date>
+            </note>
          </place>
       </listPlace>
    </back>

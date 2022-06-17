@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00954</idno>
+            <idno type="asbw" n="00954"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -289,7 +289,7 @@
             <title>Der Tod Georgs</title>
             <title type="alternative-name">Der Götterliebling</title>
             <note type="uri_worklink">https://archive.org/details/dertodgeorgs00beergoog</note>
-            <author ref="pmbperson__10863">Beer-Hofmann, Richard</author>
+            <author ref="pmbperson__10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
             <date when="1900-01-01">1900</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31535</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31535</idno>
@@ -303,6 +303,8 @@
          <place xml:id="pmb34824">
             <placeName>Seeboden</placeName>
             <placeName type="alternative-name">Seeboden am Millstätter See</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.ADM3</desc>
+            <desc type="entity_type_id">1124</desc>
             <location type="coords">
                <geo>46,83649 13,52346</geo>
             </location>
@@ -312,6 +314,8 @@
          </place>
          <place xml:id="pmb987">
             <placeName>Toblach</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>46,72493 12,22109</geo>
             </location>
@@ -324,6 +328,8 @@
          <place xml:id="pmb36284">
             <placeName>Südbahnhotel</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Grand_Hotel_Toblach</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>46,723101 12,225656</geo>
             </location>
@@ -334,6 +340,9 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36284/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36284</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36284</idno>
+            <note type="apis_dates">
+               <date notBefore="1878-01-01" when="1878-07-02">1878</date>
+            </note>
          </place>
          <place xml:id="pmb21799">
             <placeName>Schloß Schönbrunn</placeName>
@@ -344,6 +353,8 @@
             <placeName type="legacy-uri-merge">Sch%C3%B6nbrunn</placeName>
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q131330</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/6354998</placeName>
+            <desc type="entity_type">Schloss (K.SLS)</desc>
+            <desc type="entity_type_id">41</desc>
             <location type="coords">
                <geo>48,18479 16,31227</geo>
             </location>
@@ -368,6 +379,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>

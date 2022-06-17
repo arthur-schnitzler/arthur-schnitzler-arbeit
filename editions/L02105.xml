@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02105</idno>
+            <idno type="asbw" n="02105"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -279,8 +279,7 @@
                <forename>Otto</forename>
                <surname>Brahm</surname>
             </persName>
-            <persName type="namensvariante">Abrahamson</persName>
-            <persName type="geburtsname_nachname">Abraham</persName>
+            <persName type="geburtsname_nachname">Abrahamson</persName>
             <birth>
                <date when="1856-02-05">05.02.1856</date>
                <settlement ref="pmb506">
@@ -314,6 +313,8 @@
          <place xml:id="pmb245">
             <placeName>Hotel Esplanade</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Hotel_Esplanade_(Berlin)</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>52,51 13,374444</geo>
             </location>
@@ -324,10 +325,15 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb245</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/245</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb245</idno>
+            <note type="apis_dates">
+               <date from="1907-01-01" to="1907-12-31">1907  – 1944</date>
+            </note>
          </place>
          <place xml:id="pmb1090">
             <placeName>Hotel Adlon</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Hotel_Adlon</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>52,515833 13,380556</geo>
             </location>
@@ -341,6 +347,9 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1090</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1090</idno>
+            <note type="apis_dates">
+               <date notBefore="1907-01-01" when="1907-07-02">1907</date>
+            </note>
          </place>
          <place xml:id="pmb50">
             <placeName>Wien</placeName>
@@ -355,6 +364,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -382,6 +393,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>

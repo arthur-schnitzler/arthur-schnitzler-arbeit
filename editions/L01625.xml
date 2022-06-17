@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01625</idno>
+            <idno type="asbw" n="01625"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -309,7 +309,6 @@
             </persName>
             <persName type="geburtsname_vorname">Siegmund</persName>
             <persName type="geburtsname_nachname">Salzmann</persName>
-            <persName type="namensvariante">Salten Felix</persName>
             <persName type="legacy-name-merge">Salzmann, Siegmund</persName>
             <birth>
                <date when="1869-09-06">06.09.1869</date>
@@ -902,7 +901,7 @@
       <listBibl>
          <bibl xml:id="pmb30615">
             <title>Das Wort. Tragikomödie in fünf Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1966-01-01">1966</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.07</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q27441034</idno>
@@ -916,7 +915,7 @@
          <bibl xml:id="pmb29931">
             <title>Komtesse Mizzi oder Der Familientag</title>
             <note type="bibliografische_angabe">Neue Freie Presse, 19. 4. 1908</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1908-04-19">1908-04-19</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.25</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-komtesse-mizzi</idno>
@@ -932,8 +931,8 @@
             <title>Fink und Fliederbusch. Komödie in drei Akten</title>
             <title type="arbeitstitel">Journalisten</title>
             <title type="arbeitstitel">Der Unsichtbare und die zwei Schatten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date notBefore="1917-01-01" when="1917-07-02" notAfter="1917-12-31">1917</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date notBefore="1917-01-01" when="1917-07-02">1917</date>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1417362</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/38140</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30881</idno>
@@ -957,6 +956,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -980,6 +981,8 @@
             <placeName>St. Gilgen</placeName>
             <placeName type="legacy-name-merge">Sankt Gilgen</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/24915/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,76667 13,36667</geo>
             </location>
@@ -996,6 +999,8 @@
          <place xml:id="pmb959">
             <placeName>Marienlyst</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Schloss_Marienlyst</placeName>
+            <desc type="entity_type">Schloss (K.SLS)</desc>
+            <desc type="entity_type_id">41</desc>
             <location type="coords">
                <geo>56,042028 12,601917</geo>
             </location>
@@ -1021,6 +1026,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -1036,6 +1043,8 @@
          </place>
          <place xml:id="pmb44252">
             <placeName>Gilleleje</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>56,12196 12,31056</geo>
             </location>
@@ -1056,6 +1065,8 @@
          </place>
          <place xml:id="pmb36300">
             <placeName>Kopenhagen</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>55,67594 12,56553</geo>
             </location>
@@ -1074,6 +1085,8 @@
          </place>
          <place xml:id="pmb44254">
             <placeName>Görbersdorf</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>50,85524 13,19364</geo>
             </location>
@@ -1089,6 +1102,8 @@
          </place>
          <place xml:id="pmb197">
             <placeName>Weimar</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,97361 11,33806</geo>
             </location>
@@ -1101,6 +1116,8 @@
          <place xml:id="pmb2351">
             <placeName>Ilmenau</placeName>
             <placeName type="legacy-name">Illmenau (Baden)</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,6912 10,9199</geo>
             </location>
@@ -1120,6 +1137,8 @@
          <place xml:id="pmb40920">
             <placeName>Kickelhahn</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Kickelhahn</placeName>
+            <desc type="entity_type">Berg (N.BRG)</desc>
+            <desc type="entity_type_id">28</desc>
             <location type="coords">
                <geo>50,665556 10,881389</geo>
             </location>
@@ -1130,6 +1149,8 @@
          <place xml:id="pmb40921">
             <placeName>Thüringer Wald</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Thüringer_Wald</placeName>
+            <desc type="entity_type">Gebirge (N.GBR)</desc>
+            <desc type="entity_type_id">31</desc>
             <location type="coords">
                <geo>50,659444 10,746111</geo>
             </location>
@@ -1144,6 +1165,8 @@
          <place xml:id="pmb40923">
             <placeName>Schmücke</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Schmücke_(Höhenzug)</placeName>
+            <desc type="entity_type">Gebirge (N.GBR)</desc>
+            <desc type="entity_type_id">31</desc>
             <location type="coords">
                <geo>51,243611 11,275833</geo>
             </location>
@@ -1153,6 +1176,8 @@
          </place>
          <place xml:id="pmb40933">
             <placeName>Oberhof</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,705556 10,725</geo>
             </location>
@@ -1168,6 +1193,8 @@
          <place xml:id="pmb44240">
             <placeName>Eisenach</placeName>
             <placeName type="alternative-name">Wartburgstadt</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>50,9807 10,31522</geo>
             </location>
@@ -1184,6 +1211,8 @@
          <place xml:id="pmb44172">
             <placeName>Nürnberg</placeName>
             <placeName type="alternative-name">Nürenberg</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>49,45421 11,07752</geo>
             </location>
@@ -1208,6 +1237,8 @@
             <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4054504-0</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/23656/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,64224 15,8241</geo>
             </location>
@@ -1219,6 +1250,8 @@
          <place xml:id="pmb429">
             <placeName>Salzkammergut</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Salzkammergut</placeName>
+            <desc type="entity_type">Region</desc>
+            <desc type="entity_type_id">47</desc>
             <location type="coords">
                <geo>47,75 13,5</geo>
             </location>
@@ -1230,6 +1263,8 @@
          <place xml:id="pmb413">
             <placeName>Südbahnhotel</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Südbahnhotel</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,647222 15,83</geo>
             </location>
@@ -1241,10 +1276,15 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb413</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/413</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb413</idno>
+            <note type="apis_dates">
+               <date notBefore="1882-01-01" when="1882-07-02">1882</date>
+            </note>
          </place>
          <place xml:id="pmb186">
             <placeName>Lueg am Wolfgangsee</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Lueg_(Gemeinde_Sankt_Gilgen)</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>47,754041 13,372211</geo>
             </location>

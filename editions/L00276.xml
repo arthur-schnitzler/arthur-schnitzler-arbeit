@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L00276</idno>
+            <idno type="asbw" n="00276"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -525,7 +525,7 @@
                <forename>Carl</forename>
                <surname>Karlweis</surname>
             </persName>
-            <persName type="pseudonym">Karlweis C.</persName>
+            <persName type="pseudonym">C. Karlweis</persName>
             <persName type="geburtsname_vorname">Carl</persName>
             <persName type="geburtsname_nachname">Weiß</persName>
             <birth>
@@ -715,8 +715,8 @@
             <title>Das Märchen. Schauspiel in drei Aufzügen</title>
             <note type="bibliografische_angabe">Arthur Schnitzler: Das Märchen. Schauspiel in drei Aufzügen. Dresden, Leipzig: E. Pierson’s Verlag 1894.</note>
             <note type="uri_worklink">https://babel.hathitrust.org/cgi/pt?id=coo.31924026341598&amp;view=1up&amp;seq=5</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1891-01-01">1891</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1891  – 1891</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.04</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1169917</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/38151</idno>
@@ -730,7 +730,7 @@
          <bibl xml:id="pmb29819">
             <title>Spaziergang</title>
             <note type="bibliografische_angabe">Deutsche Zeitung, Jg. 23, Nr. 7883, 6. 12. 1893, Morgen-Ausgabe, S. 1–2</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1893-12-06">06.12.1893</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29819</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29819</idno>
@@ -741,7 +741,7 @@
          <bibl xml:id="pmb41471">
             <title>Deutsche Zeitung</title>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=dzg</note>
-            <date when="1871-01-01">1871</date>
+            <date>1871  – 1907</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41471/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41471</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41471</idno>
@@ -750,7 +750,7 @@
          <bibl xml:id="pmb32344">
             <title>Heunt is Sunntag!</title>
             <note type="bibliografische_angabe">Deutsche Zeitung, Jg. 23, Nr. 7887, 10. 12. 1893, Sonntags-Ausgabe, S. 1–2</note>
-            <author ref="pmbperson__25879">Taube, Theodor</author>
+            <author ref="pmbperson__25879" role="hat-geschaffen">Taube, Theodor</author>
             <date when="1893-12-10">10.12.1893</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32344</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32344</idno>
@@ -772,6 +772,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -793,6 +795,8 @@
          </place>
          <place xml:id="pmb76">
             <placeName>Salesianergasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,199226239476 16,380633449365</geo>
             </location>
@@ -807,6 +811,8 @@
          </place>
          <place xml:id="pmb198">
             <placeName>Pelikangasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,216323686182 16,348107467953</geo>
             </location>
@@ -823,6 +829,8 @@
       <listOrg>
          <org xml:id="pmb29424">
             <orgName>Deutsche Zeitung</orgName>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

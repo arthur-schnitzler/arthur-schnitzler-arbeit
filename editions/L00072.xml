@@ -32,7 +32,7 @@
                <name>Martin Anton Müller</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00072</idno>
+            <idno type="asbw" n="00072"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -321,15 +321,8 @@
             </persName>
             <persName type="geburtsname_vorname">Rudolph Lothar</persName>
             <persName type="geburtsname_nachname">Spitzer</persName>
-            <persName type="namensvariante">Lothar Rudolph</persName>
             <birth>
                <date when="1865-02-23">23.2.1865</date>
-               <settlement ref="pmb43471">
-                  <placeName type="pref">Budapest</placeName>
-                  <location>
-                     <geo>47,49835 19,04045</geo>
-                  </location>
-               </settlement>
                <settlement ref="pmb43471">
                   <placeName type="pref">Budapest</placeName>
                   <location>
@@ -339,12 +332,6 @@
             </birth>
             <death>
                <date when="1943-10-02">2.10.1943</date>
-               <settlement ref="pmb43471">
-                  <placeName type="pref">Budapest</placeName>
-                  <location>
-                     <geo>47,49835 19,04045</geo>
-                  </location>
-               </settlement>
                <settlement ref="pmb43471">
                   <placeName type="pref">Budapest</placeName>
                   <location>
@@ -379,12 +366,6 @@
             </birth>
             <death>
                <date when="1949-05-06">06.05.1949</date>
-               <settlement ref="pmb926">
-                  <placeName type="pref">Nizza</placeName>
-                  <location>
-                     <geo>43,70313 7,26608</geo>
-                  </location>
-               </settlement>
                <settlement ref="pmb926">
                   <placeName type="pref">Nizza</placeName>
                   <location>
@@ -566,8 +547,8 @@
       <listBibl>
          <bibl xml:id="pmb31957">
             <title>Die Sklavin. Schauspiel in vier Aufzügen</title>
-            <author ref="pmbperson__11391">Fulda, Ludwig</author>
-            <date notBefore="1891-01-01" when="1891-07-02" notAfter="1891-12-31">1891</date>
+            <author ref="pmbperson__11391" role="hat-geschaffen">Fulda, Ludwig</author>
+            <date notBefore="1891-01-01" when="1891-07-02">1891</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31957</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31957</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31957</idno>
@@ -578,10 +559,10 @@
             <title>Grisélidis. Oper in drei Akten und einem Prolog</title>
             <title type="legacy-name-merge">Griseldis</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Gris%C3%A9lidis</idno>
-            <author ref="pmbperson__28536">Silvestre, Paul-Armand</author>
-            <author ref="pmbperson__4308">Morand, Eugène</author>
-            <author ref="pmbperson__2467">Massenet, Jules</author>
-            <date notBefore="1891-01-01" when="1891-07-02" notAfter="1891-12-31">1891</date>
+            <author ref="pmbperson__28536" role="hat-geschaffen">Silvestre, Paul-Armand</author>
+            <author ref="pmbperson__4308" role="hat-geschaffen">Morand, Eugène</author>
+            <author ref="pmbperson__2467" role="hat-vertont">Massenet, Jules</author>
+            <date notBefore="1891-01-01" when="1891-07-02">1891</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31959</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31961</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31959</idno>
@@ -593,7 +574,7 @@
          <error type="bibl">31961</error>
          <bibl xml:id="pmb31963">
             <title>Derby</title>
-            <author ref="pmbperson__12674">Schlesinger, Sigmund</author>
+            <author ref="pmbperson__12674" role="hat-geschaffen">Schlesinger, Sigmund</author>
             <date when="1889-01-01">1889</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31963</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31963</idno>
@@ -615,6 +596,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -638,6 +621,8 @@
       <listOrg>
          <org xml:id="pmb29715">
             <orgName>Wiener Literatur-Zeitung</orgName>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02593</idno>
+            <idno type="asbw" n="02593"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -362,16 +362,16 @@
          <bibl xml:id="pmb65638">
             <title>Revolutionsbryllup. Skuespil i tre Akter</title>
             <title type="namensvariante">Revolutionshochzeit</title>
-            <date notBefore="1906-01-01" when="1906-07-02" notAfter="1906-12-31">1906</date>
+            <date notBefore="1906-01-01" when="1906-07-02">1906</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65638/</idno>
             <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
          </bibl>
          <bibl xml:id="pmb65368">
             <title>Revolutionshochzeit. Schauspiel in drei Aufzügen</title>
             <title type="uri_gnd">https://d-nb.info/575119780</title>
-            <author ref="pmbperson__12251">Michaëlis, Sophus</author>
-            <author ref="pmbperson__11666">Herzfeld, Marie</author>
-            <date notBefore="1909-01-01" when="1909-07-02" notAfter="1909-12-31">1909</date>
+            <author ref="pmbperson__12251" role="hat-geschaffen">Michaëlis, Sophus</author>
+            <author ref="pmbperson__11666" role="hat-ubersetzt">Herzfeld, Marie</author>
+            <date from="1909-01-01" to="1909-12-31">1909  – 1909</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65368/</idno>
             <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
          </bibl>
@@ -390,6 +390,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -411,6 +413,8 @@
          </place>
          <place xml:id="pmb65358">
             <placeName>Lichtenauergasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,2145054 16,3898949</geo>
             </location>
@@ -432,6 +436,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -448,6 +454,8 @@
          <place xml:id="pmb166">
             <placeName>Frankreich</placeName>
             <placeName type="alternative-name">France</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>46,0 2,0</geo>
             </location>
@@ -475,6 +483,8 @@
             <placeName type="alternative-name">Russian Socialist Federative Soviet Republic</placeName>
             <placeName type="legacy-name-merge">Russia</placeName>
             <placeName type="legacy-name-merge">Rußland</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>60,0 100,0</geo>
             </location>
@@ -494,6 +504,8 @@
             <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
             <placeName type="alternative-name">Pariž</placeName>
             <placeName type="alternative-name">Parisius</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,85341 2,3488</geo>
             </location>
@@ -506,6 +518,8 @@
          <place xml:id="pmb869">
             <placeName>Moskau</placeName>
             <placeName type="alternative-name">Pravitelʹstvo Moskvy</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1103</desc>
             <location type="coords">
                <geo>55,76167 37,60667</geo>
             </location>
@@ -536,6 +550,8 @@
             <placeName type="alternative-name">Peterburg</placeName>
             <placeName type="alternative-name">Saint Petersburg</placeName>
             <placeName type="alternative-name">Petrograd</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>59,93863 30,31413</geo>
             </location>
@@ -560,6 +576,8 @@
          <org xml:id="pmb65371">
             <orgName>Erich-Reiss-Verlag</orgName>
             <orgName type="alternative-name">Reiss-Verlag (Berlin)</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb168">Berlin</placeName>
                <geo>52,52437 13,41053</geo>
@@ -571,10 +589,15 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65371/</idno>
             <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/2066009-1</idno>
+            <note type="apis_dates">
+               <date notBefore="1908-01-01" when="1908-07-01">1908</date>
+            </note>
          </org>
          <org xml:id="pmb29397">
             <orgName>Société des Auteurs et Compositeurs Dramatiques</orgName>
             <idno type="URL" subtype="wikipedia">https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_des_auteurs_et_compositeurs_dramatiques</idno>
+            <desc type="entity_type">Autorenverband</desc>
+            <desc type="entity_type_id">1015</desc>
             <location type="located_in_place">
                <placeName ref="pmb182">Paris</placeName>
                <geo>48,85341 2,3488</geo>
@@ -586,11 +609,16 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29397</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29397</idno>
+            <note type="apis_dates">
+               <date notBefore="1777-01-01" when="1777-07-02">1777</date>
+            </note>
          </org>
          <org xml:id="pmb57787">
             <orgName>Verein dramatischer und musikalischer Autoren</orgName>
             <orgName type="loschen">X</orgName>
             <orgName type="namensvariante">Союз драматических и музыкальных писателей</orgName>
+            <desc type="entity_type">Interessensvertretung</desc>
+            <desc type="entity_type_id">999</desc>
             <location type="located_in_place">
                <placeName ref="pmb433">Sankt Petersburg</placeName>
                <geo>59,93863 30,31413</geo>
@@ -608,6 +636,9 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57787/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/57808/</idno>
+            <note type="apis_dates">
+               <date from="1904-01-01" to="1904-12-31">1904  – 1918</date>
+            </note>
          </org>
       </listOrg>
    </back>

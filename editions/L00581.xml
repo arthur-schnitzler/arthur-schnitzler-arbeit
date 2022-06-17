@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00581</idno>
+            <idno type="asbw" n="00581"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -310,8 +310,8 @@
       <listBibl>
          <bibl xml:id="pmb42691">
             <title>Unter dem Doppel-Adler</title>
-            <author ref="pmbperson__42688">Wagner, Joseph Franz</author>
-            <date notBefore="1893-01-01" when="1893-07-02" notAfter="1893-12-31">1893</date>
+            <author ref="pmbperson__42688" role="hat-geschaffen">Wagner, Joseph Franz</author>
+            <date notBefore="1893-01-01" when="1893-07-02">1893</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42691/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42691</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42691</idno>
@@ -323,6 +323,8 @@
             <placeName>Leipzig</placeName>
             <placeName type="alternative-name">Gross-Leipzig</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4035206-7</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>51,33962 12,37129</geo>
             </location>
@@ -336,16 +338,14 @@
          </place>
          <place xml:id="pmb59">
             <placeName>IX., Alsergrund</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,22387 16,35641</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb618">Kaiserjubiläum-Stadttheater</placeName>
-               <geo>48,224472 16,350361</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2782729/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb59</idno>
@@ -365,6 +365,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -386,6 +388,8 @@
          </place>
          <place xml:id="pmb397">
             <placeName>Frankgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,215516628628 16,356475515829</geo>
             </location>
@@ -401,6 +405,8 @@
          <place xml:id="pmb42678">
             <placeName>Zoo</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Zoo_Leipzig</placeName>
+            <desc type="entity_type">Zoo (K.ZOO)</desc>
+            <desc type="entity_type_id">52</desc>
             <location type="coords">
                <geo>51,348889 12,369167</geo>
             </location>
@@ -418,6 +424,8 @@
             <placeName type="legacy-name">Baden bei Wien?</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/16058/</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/2782067/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,00543 16,23264</geo>
             </location>

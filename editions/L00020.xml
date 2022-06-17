@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00020</idno>
+            <idno type="asbw" n="00020"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -304,8 +304,7 @@
                <forename>Otto</forename>
                <surname>Brahm</surname>
             </persName>
-            <persName type="namensvariante">Abrahamson</persName>
-            <persName type="geburtsname_nachname">Abraham</persName>
+            <persName type="geburtsname_nachname">Abrahamson</persName>
             <birth>
                <date when="1856-02-05">05.02.1856</date>
                <settlement ref="pmb506">
@@ -404,7 +403,7 @@
          <bibl xml:id="pmb31965">
             <title>Die drei Elixire</title>
             <note type="bibliografische_angabe">Moderner Musen-Almanach auf das Jahr 1894,</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1893-01-01">1893</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31965</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31965</idno>
@@ -415,7 +414,7 @@
          <bibl xml:id="pmb36344">
             <title>Frankfurter Zeitung</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurter_Zeitung</idno>
-            <date notBefore="1856-01-01" when="1856-07-01" notAfter="1856-12-31">1856</date>
+            <date from="1856-01-01" to="1856-12-31">1856  – 1943</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36344/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36344</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36344</idno>
@@ -423,9 +422,9 @@
          </bibl>
          <bibl xml:id="pmb36149">
             <title>Freie Bühne für modernes Leben</title>
-            <author ref="pmbperson__10986">Brahm, Otto</author>
-            <author ref="pmbperson__11061">Bölsche, Wilhelm</author>
-            <date when="1890-01-01">1890</date>
+            <author ref="pmbperson__10986" role="hat-herausgegeben">Brahm, Otto</author>
+            <author ref="pmbperson__11061" role="hat-herausgegeben">Bölsche, Wilhelm</author>
+            <date>1890  – 1891</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36149/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36149</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36149</idno>
@@ -433,8 +432,8 @@
          </bibl>
          <bibl xml:id="pmb42702">
             <title>Dies Irae. Erinnerungen eines französischen Offiziers an die Tage von Sedan</title>
-            <author ref="pmbperson__14281">Bleibtreu, Karl</author>
-            <date notBefore="1882-01-01" when="1882-07-02" notAfter="1882-12-31">1882</date>
+            <author ref="pmbperson__14281" role="hat-geschaffen">Bleibtreu, Karl</author>
+            <date from="1882-01-01" to="1882-12-31">1882  – 1882</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42702/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42702</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42702</idno>
@@ -456,6 +455,8 @@
             <placeName type="alternative-name">Frankfurt, Main</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4018118-2</placeName>
             <placeName type="alternative-name">Frankfurt/Main</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,11552 8,68417</geo>
             </location>
@@ -488,6 +489,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -514,6 +517,8 @@
             <placeName type="alternative-name">West Germany</placeName>
             <placeName type="alternative-name">Federal Republic of Germany</placeName>
             <placeName type="legacy-name-merge">Germany</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>51,5 10,5</geo>
             </location>
@@ -534,6 +539,8 @@
          </place>
          <place xml:id="pmb862">
             <placeName>Brüssel</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,85045 4,34878</geo>
             </location>
@@ -548,6 +555,8 @@
          <org xml:id="pmb29442">
             <orgName>Frankfurter Zeitung</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurter_Zeitung</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -563,26 +572,17 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
             </location>
-            <location type="located_in_place">
-               <placeName ref="pmb42671">rue Feydeau</placeName>
-               <geo>48,87 2,3408</geo>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42671/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42671</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42671</idno>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb40415">rue Vivienne</placeName>
-               <geo>48,869409 2,340402</geo>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40415/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40415</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40415</idno>
-            </location>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29442</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29442</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29442</idno>
+            <note type="apis_dates">
+               <date>1856  – 1943</date>
+            </note>
          </org>
          <org xml:id="pmb34980">
             <orgName>L’Écho de Paris</orgName>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb182">Paris</placeName>
                <geo>48,85341 2,3488</geo>
@@ -595,9 +595,14 @@
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34980/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34980</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34980</idno>
+            <note type="apis_dates">
+               <date>1884  – 1944</date>
+            </note>
          </org>
          <org xml:id="pmb34982">
             <orgName>Gil Blas</orgName>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb182">Paris</placeName>
                <geo>48,85341 2,3488</geo>
@@ -610,9 +615,14 @@
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34982/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34982</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34982</idno>
+            <note type="apis_dates">
+               <date>19.11.1879  – 4.8.1914</date>
+            </note>
          </org>
          <org xml:id="pmb29465">
             <orgName>Carl Krabbe</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb872">Stuttgart</placeName>
                <geo>48,78232 9,17702</geo>

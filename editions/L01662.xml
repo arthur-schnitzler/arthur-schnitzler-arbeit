@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01662</idno>
+            <idno type="asbw" n="01662"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -459,7 +459,7 @@
       <listBibl>
          <bibl xml:id="pmb29917">
             <title>Liebelei. Schauspiel in drei Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1895-10-09">9.10.1895</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.27</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1823758</idno>
@@ -476,8 +476,8 @@
             <title>Das Märchen. Schauspiel in drei Aufzügen</title>
             <note type="bibliografische_angabe">Arthur Schnitzler: Das Märchen. Schauspiel in drei Aufzügen. Dresden, Leipzig: E. Pierson’s Verlag 1894.</note>
             <note type="uri_worklink">https://babel.hathitrust.org/cgi/pt?id=coo.31924026341598&amp;view=1up&amp;seq=5</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1891-01-01">1891</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1891  – 1891</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.04</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1169917</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/38151</idno>
@@ -491,8 +491,8 @@
          <bibl xml:id="pmb30019">
             <title>Das Friedensfest</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Das_Friedensfest</idno>
-            <author ref="pmbperson__11617">Hauptmann, Gerhart</author>
-            <date notBefore="1890-01-01" when="1890-07-02" notAfter="1890-12-31">1890</date>
+            <author ref="pmbperson__11617" role="hat-geschaffen">Hauptmann, Gerhart</author>
+            <date notBefore="1890-01-01" when="1890-07-02">1890</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30019</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30019</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30019</idno>
@@ -514,6 +514,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -536,6 +538,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -550,6 +554,8 @@
          </place>
          <place xml:id="pmb12">
             <placeName>Kammerspiele Berlin</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>52,524444 13,382222</geo>
             </location>
@@ -565,6 +571,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb12</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/12</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb12</idno>
+            <note type="apis_dates">
+               <date notBefore="1906-01-01" when="1906-07-02">1906</date>
+            </note>
          </place>
          <place xml:id="pmb34438">
             <placeName>Russland</placeName>
@@ -577,6 +586,8 @@
             <placeName type="alternative-name">Russian Socialist Federative Soviet Republic</placeName>
             <placeName type="legacy-name-merge">Russia</placeName>
             <placeName type="legacy-name-merge">Rußland</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>60,0 100,0</geo>
             </location>
@@ -596,6 +607,8 @@
             <placeName type="alternative-name">West Germany</placeName>
             <placeName type="alternative-name">Federal Republic of Germany</placeName>
             <placeName type="legacy-name-merge">Germany</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>51,5 10,5</geo>
             </location>
@@ -617,6 +630,8 @@
          <place xml:id="pmb682">
             <placeName>Dubrovnik</placeName>
             <placeName type="none">Ragusa</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>42,64807 18,09216</geo>
             </location>

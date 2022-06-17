@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02676</idno>
+            <idno type="asbw" n="02676"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -331,20 +331,13 @@
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_18921</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/22815</idno>
          </person>
-         <person xml:id="pmb88423">
-            <persName>
-               <forename>Hildegard</forename>
-               <surname>de St. Quentin</surname>
-            </persName>
-            <sex value="female"/>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88423/</idno>
-         </person>
+         <error type="person">88423</error>
       </listPerson>
       <listBibl>
          <bibl xml:id="pmb77509">
             <title>Die Hochzeit von Valeni</title>
-            <author ref="pmbperson__3442">Brociner, Marco</author>
-            <author ref="pmbperson__11402">Ganghofer, Ludwig</author>
+            <author ref="pmbperson__3442" role="hat-geschaffen">Brociner, Marco</author>
+            <author ref="pmbperson__11402" role="hat-geschaffen">Ganghofer, Ludwig</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/77509/</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb77509.html</idno>
             <note type="work_kind">Drama</note>
@@ -353,8 +346,8 @@
             <title>Das Märchen. Schauspiel in drei Aufzügen</title>
             <note type="bibliografische_angabe">Arthur Schnitzler: Das Märchen. Schauspiel in drei Aufzügen. Dresden, Leipzig: E. Pierson’s Verlag 1894.</note>
             <note type="uri_worklink">https://babel.hathitrust.org/cgi/pt?id=coo.31924026341598&amp;view=1up&amp;seq=5</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1891-01-01">1891</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1891  – 1891</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.04</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1169917</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/38151</idno>
@@ -374,6 +367,8 @@
             <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
             <placeName type="alternative-name">Pariž</placeName>
             <placeName type="alternative-name">Parisius</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,85341 2,3488</geo>
             </location>
@@ -396,6 +391,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -417,6 +414,8 @@
          </place>
          <place xml:id="pmb862">
             <placeName>Brüssel</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,85045 4,34878</geo>
             </location>

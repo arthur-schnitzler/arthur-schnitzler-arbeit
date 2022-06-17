@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02373</idno>
+            <idno type="asbw" n="02373"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -317,12 +317,11 @@
          </person>
          <person xml:id="pmb3124">
             <persName>
-               <forename>François-Marie</forename>
                <surname>Voltaire</surname>
             </persName>
             <persName type="geburtsname_vorname">François-Marie</persName>
             <persName type="geburtsname_nachname">Arouet</persName>
-            <persName type="namensvariante">Arouet Francois-Marie</persName>
+            <persName type="pseudonym">Voltaire</persName>
             <persName type="legacy-name-merge">Voltaire, Francois-Marie</persName>
             <birth>
                <date when="1694-11-21">21.11.1694</date>
@@ -332,21 +331,9 @@
                      <geo>48,85341 2,3488</geo>
                   </location>
                </settlement>
-               <settlement ref="pmb182">
-                  <placeName type="pref">Paris</placeName>
-                  <location>
-                     <geo>48,85341 2,3488</geo>
-                  </location>
-               </settlement>
             </birth>
             <death>
                <date when="1778-05-30">30.05.1778</date>
-               <settlement ref="pmb182">
-                  <placeName type="pref">Paris</placeName>
-                  <location>
-                     <geo>48,85341 2,3488</geo>
-                  </location>
-               </settlement>
                <settlement ref="pmb182">
                   <placeName type="pref">Paris</placeName>
                   <location>
@@ -463,12 +450,11 @@
          </person>
          <person xml:id="pmb3272">
             <persName>
-               <forename>Jean-Baptiste</forename>
                <surname>Molière</surname>
             </persName>
             <persName type="geburtsname_vorname">Jean-Baptiste</persName>
             <persName type="geburtsname_nachname">Poquelin</persName>
-            <persName type="namensvariante">Molière</persName>
+            <persName type="pseudonym">Molière</persName>
             <persName type="legacy-name-merge">Poquelin, Jean Baptiste</persName>
             <birth>
                <date when="1622-01-14">14.01.1622</date>
@@ -478,21 +464,9 @@
                      <geo>48,85341 2,3488</geo>
                   </location>
                </settlement>
-               <settlement ref="pmb182">
-                  <placeName type="pref">Paris</placeName>
-                  <location>
-                     <geo>48,85341 2,3488</geo>
-                  </location>
-               </settlement>
             </birth>
             <death>
                <date when="1673-02-17">17.02.1673</date>
-               <settlement ref="pmb182">
-                  <placeName type="pref">Paris</placeName>
-                  <location>
-                     <geo>48,85341 2,3488</geo>
-                  </location>
-               </settlement>
                <settlement ref="pmb182">
                   <placeName type="pref">Paris</placeName>
                   <location>
@@ -717,8 +691,8 @@
       <listBibl>
          <bibl xml:id="pmb32093">
             <title>Wolfgang Goethe</title>
-            <author ref="pmbperson__10992">Brandes, Georg</author>
-            <date notBefore="1915-01-01" when="1915-07-02" notAfter="1915-12-31">1915</date>
+            <author ref="pmbperson__10992" role="hat-geschaffen">Brandes, Georg</author>
+            <date notBefore="1915-01-01" when="1915-07-02">1915</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32093</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32093</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb32093</idno>
@@ -726,16 +700,16 @@
          </bibl>
          <bibl xml:id="pmb33237">
             <title>Voltaire und sein Jahrhundert</title>
-            <author ref="pmbperson__10992">Brandes, Georg</author>
-            <date notBefore="1916-01-01" when="1916-07-01" notAfter="1916-12-31">1916</date>
+            <author ref="pmbperson__10992" role="hat-geschaffen">Brandes, Georg</author>
+            <date from="1916-01-01" to="1916-12-31">1916  – 1917</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33237</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33237</idno>
             <note type="work_kind">Geschichtswerk</note>
          </bibl>
          <bibl xml:id="pmb33376">
             <title>Gaius Julius Cæsar</title>
-            <author ref="pmbperson__10992">Brandes, Georg</author>
-            <date notBefore="1918-01-01" when="1918-07-02" notAfter="1918-12-31">1918</date>
+            <author ref="pmbperson__10992" role="hat-geschaffen">Brandes, Georg</author>
+            <date notBefore="1918-01-01" when="1918-07-02">1918</date>
             <idno type="URL" subtype="archive">https://archive.org/details/cajusjuliuscsar00brangoog/page/n8</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33376</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33376</idno>
@@ -743,23 +717,23 @@
          </bibl>
          <bibl xml:id="pmb33384">
             <title>Michelangelo Buonarotti</title>
-            <author ref="pmbperson__10992">Brandes, Georg</author>
-            <date notBefore="1921-01-01" when="1921-07-02" notAfter="1921-12-31">1921</date>
+            <author ref="pmbperson__10992" role="hat-geschaffen">Brandes, Georg</author>
+            <date notBefore="1921-01-01" when="1921-07-02">1921</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33384</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33384</idno>
             <note type="work_kind">Geschichtswerk</note>
          </bibl>
          <bibl xml:id="pmb33390">
             <title>Homer</title>
-            <author ref="pmbperson__10992">Brandes, Georg</author>
-            <date notBefore="1921-01-01" when="1921-07-02" notAfter="1921-12-31">1921</date>
+            <author ref="pmbperson__10992" role="hat-geschaffen">Brandes, Georg</author>
+            <date notBefore="1921-01-01" when="1921-07-02">1921</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33390</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33390</idno>
             <note type="work_kind">Geschichtswerk</note>
          </bibl>
          <bibl xml:id="pmb33392">
             <title>Hellas</title>
-            <author ref="pmbperson__10992">Brandes, Georg</author>
+            <author ref="pmbperson__10992" role="hat-geschaffen">Brandes, Georg</author>
             <date when="1925-01-01">1925</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33392</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33392</idno>
@@ -767,8 +741,8 @@
          </bibl>
          <bibl xml:id="pmb33386">
             <title>Tartuffe</title>
-            <author ref="pmbperson__3272">Molière, Jean-Baptiste</author>
-            <date notBefore="1664-01-01" when="1664-07-01" notAfter="1664-12-31">1664</date>
+            <author ref="pmbperson__3272" role="hat-geschaffen">Molière</author>
+            <date notBefore="1664-01-01" when="1664-07-01">1664</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33386</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33386</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33386.html</idno>
@@ -776,16 +750,16 @@
          </bibl>
          <bibl xml:id="pmb59230">
             <title>?? [nicht ermitteltes dänisches Interview]</title>
-            <author ref="pmbperson__59231">?? [dänischer Journalist, der Schnitzler interviewt]</author>
+            <author ref="pmbperson__59231" role="hat-geschaffen">?? [dänischer Journalist, der Schnitzler interviewt]</author>
             <date when="1921-09-23">Herbst 1921</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59230/</idno>
             <note type="work_kind">Interview</note>
             <note type="references">Georg Brandes an Schnitzler,  5.2.1922: Ich las hier einmal im Herbst in einer Zeitung ein Interview eines mir unbekannten  dänischen Journalisten mit Ihnen, worin Sie sehr freundliche Worte über mich sagten, ich glaube die freundlichsten, die in jenem Blatte je über mich gestanden haben.</note>
          </bibl>
          <bibl xml:id="pmb33388">
-            <title>Arthur Schnitzler. En Samtale med en beremt Wiener</title>
+            <title>Arthur Schnitzler. En Samtale med en beremt Wiener [1921]</title>
             <note type="bibliografische_angabe">København, 10. 4. 1921</note>
-            <author ref="pmbperson__13714">Bangert, Julius</author>
+            <author ref="pmbperson__13714" role="hat-geschaffen">Bangert, Julius</author>
             <date when="1921-04-10">10.04.1921</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33388</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33388</idno>
@@ -794,7 +768,7 @@
          <bibl xml:id="pmb29855">
             <title>Reigen. Zehn Dialoge</title>
             <note type="uri_worklink">https://www.digital.wienbibliothek.at/wbrobv/content/pageview/2587756</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1900-01-01">1900</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.32</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/ "Q1414190"</idno>
@@ -811,6 +785,8 @@
       <listPlace>
          <place xml:id="pmb36300">
             <placeName>Kopenhagen</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>55,67594 12,56553</geo>
             </location>
@@ -831,6 +807,8 @@
             <placeName>Dagmar Teatret</placeName>
             <placeName type="uri_wikipedia">https://no.wikipedia.org/wiki/Dagmarteatret</placeName>
             <placeName type="legacy-name-merge">Dagmarteatret</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>55,676753 12,566466</geo>
             </location>
@@ -841,6 +819,9 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1144</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1144</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/58654/</idno>
+            <note type="apis_dates">
+               <date from="1883-01-01" to="1883-12-31">1883  – 1937</date>
+            </note>
          </place>
          <place xml:id="pmb34438">
             <placeName>Russland</placeName>
@@ -853,6 +834,8 @@
             <placeName type="alternative-name">Russian Socialist Federative Soviet Republic</placeName>
             <placeName type="legacy-name-merge">Russia</placeName>
             <placeName type="legacy-name-merge">Rußland</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>60,0 100,0</geo>
             </location>
@@ -868,6 +851,8 @@
          <place xml:id="pmb166">
             <placeName>Frankreich</placeName>
             <placeName type="alternative-name">France</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>46,0 2,0</geo>
             </location>
@@ -897,6 +882,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -920,6 +907,8 @@
       <listOrg>
          <org xml:id="pmb29543">
             <orgName>Københavns Universitet</orgName>
+            <desc type="entity_type">Hochschule &gt;&gt; Universität</desc>
+            <desc type="entity_type_id">1032</desc>
             <location type="located_in_place">
                <placeName ref="pmb36300">Kopenhagen</placeName>
                <geo>55,67594 12,56553</geo>
@@ -938,6 +927,8 @@
          <org xml:id="pmb29482">
             <orgName>Studentersamfundet</orgName>
             <idno type="URL" subtype="wikipedia">https://da.wikipedia.org/wiki/Studentersamfundet</idno>
+            <desc type="entity_type">Verein &gt;&gt; Studierenvereinigung</desc>
+            <desc type="entity_type_id">1024</desc>
             <location type="located_in_place">
                <placeName ref="pmb36300">Kopenhagen</placeName>
                <geo>55,67594 12,56553</geo>
@@ -952,9 +943,14 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29482</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29482</idno>
+            <note type="apis_dates">
+               <date notBefore="1882-01-01" when="1882-07-02">1882</date>
+            </note>
          </org>
          <org xml:id="pmb29666">
             <orgName>Philipp Reclam jun.</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb872">Stuttgart</placeName>
                <geo>48,78232 9,17702</geo>
@@ -969,6 +965,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29666</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29666</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29666</idno>
+            <note type="apis_dates">
+               <date notBefore="1828-01-01" when="1828-07-01">1828</date>
+            </note>
          </org>
       </listOrg>
    </back>

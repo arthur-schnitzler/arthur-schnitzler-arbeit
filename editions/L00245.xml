@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00245</idno>
+            <idno type="asbw" n="00245"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -610,7 +610,6 @@
             </persName>
             <persName type="geburtsname_vorname">Siegmund</persName>
             <persName type="geburtsname_nachname">Salzmann</persName>
-            <persName type="namensvariante">Salten Felix</persName>
             <persName type="legacy-name-merge">Salzmann, Siegmund</persName>
             <birth>
                <date when="1869-09-06">06.09.1869</date>
@@ -737,7 +736,7 @@
             <title>Aus Ischl, 14. Juli, schreibt man uns: …</title>
             <note type="bibliografische_angabe">Neue Freie Presse, Nr. 10381, 18. 7. 1893, S. 6</note>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=18930718&amp;seite=6&amp;zoom=33</note>
-            <date when="1893-07-18">18.07.1893</date>
+            <date>18.07.1893  – 18.07.1893</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=18930718&amp;seite=6&amp;zoom=33</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32027</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32027</idno>
@@ -747,14 +746,14 @@
          <bibl xml:id="pmb33470">
             <title>[Man schreibt uns aus Ischl]</title>
             <note type="bibliografische_angabe">Berliner Börsen-Courier, Nr. 343, 25.7.1893, Morgen-Ausgabe, S. 4</note>
-            <date when="1893-07-25">25.07.1893</date>
+            <date>25.07.1893  – 25.07.1893</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33470</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33470</idno>
             <note type="work_kind">Rezension</note>
          </bibl>
          <bibl xml:id="pmb30437">
             <title>Das Kind</title>
-            <author ref="pmbperson__10863">Beer-Hofmann, Richard</author>
+            <author ref="pmbperson__10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
             <date when="1893-01-01">1893</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30437</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30437</idno>
@@ -764,8 +763,8 @@
          </bibl>
          <bibl xml:id="pmb30267">
             <title>Zwei Freunde Burckhards</title>
-            <author ref="pmbperson__11707">Hirschfeld, Robert</author>
-            <date when="1893-07-24">24.07.1893</date>
+            <author ref="pmbperson__11707" role="hat-unter-pseudonym-geschrieben">Hirschfeld, Robert</author>
+            <date>24.07.1893  – 24.07.1893</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=wsz&amp;datum=18930724&amp;seite=1&amp;zoom=33&amp;query=%22wengraf%22&amp;provider=P02&amp;ref=anno-search</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30267</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30267</idno>
@@ -776,8 +775,8 @@
             <title>Ischler Brief</title>
             <note type="bibliografische_angabe">Wiener Allgemeine Zeitung, 18. 7. 1893</note>
             <title type="pseudonym">Stefan</title>
-            <author ref="pmbperson__12796">Skrein, Stefan</author>
-            <date when="1893-07-18">18.07.1893</date>
+            <author ref="pmbperson__12796" role="hat-unter-pseudonym-geschrieben">Skrein, Stefan</author>
+            <date>18.07.1893  – 18.07.1893</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33442</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33442</idno>
             <note type="work_kind">Rezension</note>
@@ -787,6 +786,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -807,6 +808,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -825,6 +828,8 @@
          <org xml:id="pmb29406">
             <orgName>Berliner Börsen-Courier</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berliner_Börsen-Courier</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb168">Berlin</placeName>
                <geo>52,52437 13,41053</geo>

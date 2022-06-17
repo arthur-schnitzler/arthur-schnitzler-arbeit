@@ -35,7 +35,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02180</idno>
+            <idno type="asbw" n="02180"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -397,8 +397,8 @@
          <bibl xml:id="pmb52342">
             <title>Alter Mann</title>
             <note type="uri_worklink">https://rkd.nl/nl/explore/images/247716</note>
-            <author ref="pmbperson__52341">Dijck, Abraham</author>
-            <date notBefore="1650-01-01" when="1650-07-02" notAfter="1650-12-31">1650</date>
+            <author ref="pmbperson__52341" role="hat-geschaffen">Dijck, Abraham</author>
+            <date from="1650-01-01" to="1650-12-31">1650  – 1680</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52342/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb52342</idno>
             <note type="work_kind">Gemälde</note>
@@ -407,6 +407,8 @@
       <listPlace>
          <place xml:id="pmb995">
             <placeName>Antwerpen</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>51,2663 4,37077</geo>
             </location>
@@ -432,6 +434,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -453,12 +457,18 @@
          </place>
          <place xml:id="pmb68">
             <placeName>XVIII., Währing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,23333 16,31667</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb243">Sommerhaidenweg</placeName>
+               <geo>48,248935842869 16,296768550115</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb68</idno>
@@ -467,6 +477,8 @@
          </place>
          <place xml:id="pmb383">
             <placeName>Hasenauerstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,233816866614 16,337927920952</geo>
             </location>
@@ -486,6 +498,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
             <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
             <placeName type="alternative-name">Republic of Austria</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,33333 13,33333</geo>
             </location>
@@ -503,6 +517,8 @@
             <placeName>Algiers</placeName>
             <placeName type="alternative-name">Algier</placeName>
             <placeName type="legacy-name-merge">Algir</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>36,73225 3,08746</geo>
             </location>
@@ -523,6 +539,8 @@
          <org xml:id="pmb52339">
             <orgName>Königliches Museum der Schönen Künste</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Königliches_Museum_der_Schönen_Künste_(Antwerpen)</idno>
+            <desc type="entity_type">Museum</desc>
+            <desc type="entity_type_id">1009</desc>
             <location type="located_in_place">
                <placeName ref="pmb995">Antwerpen</placeName>
                <geo>51,2663 4,37077</geo>
@@ -537,6 +555,9 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/52339/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb52339</idno>
+            <note type="apis_dates">
+               <date notBefore="1890-01-01" when="1890-07-02">1890</date>
+            </note>
          </org>
       </listOrg>
    </back>

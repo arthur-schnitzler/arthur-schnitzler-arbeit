@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01366</idno>
+            <idno type="asbw" n="01366"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -309,6 +309,8 @@
          <place xml:id="pmb850">
             <placeName>Bahnhof</placeName>
             <placeName type="namensvariante">Ferrovia</placeName>
+            <desc type="entity_type">Bahnhofsgebäude (K.BHF)</desc>
+            <desc type="entity_type_id">32</desc>
             <location type="coords">
                <geo>45,44143 12,32024</geo>
             </location>
@@ -322,12 +324,18 @@
          </place>
          <place xml:id="pmb68">
             <placeName>XVIII., Währing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,23333 16,31667</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb243">Sommerhaidenweg</placeName>
+               <geo>48,248935842869 16,296768550115</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb68</idno>
@@ -337,6 +345,8 @@
          <place xml:id="pmb462">
             <placeName>Venedig</placeName>
             <placeName type="legacy-name-merge">Venice</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>45,43713 12,33265</geo>
             </location>
@@ -363,6 +373,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -385,6 +397,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -399,6 +413,8 @@
          </place>
          <place xml:id="pmb113">
             <placeName>Türkenschanzpark</placeName>
+            <desc type="entity_type">Park (K.PRK)</desc>
+            <desc type="entity_type_id">19</desc>
             <location type="coords">
                <geo>48,235119783861 16,333568462613</geo>
             </location>
@@ -418,6 +434,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
             <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
             <placeName type="alternative-name">Republic of Austria</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,33333 13,33333</geo>
             </location>
@@ -435,6 +453,8 @@
             <placeName>Rodaun</placeName>
             <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11742/</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>48,132793312328 16,256152195922</geo>
             </location>

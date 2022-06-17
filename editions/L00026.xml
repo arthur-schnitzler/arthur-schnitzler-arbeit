@@ -34,7 +34,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00026</idno>
+            <idno type="asbw" n="00026"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -452,9 +452,9 @@
          <person xml:id="pmb26388">
             <persName>
                <forename>Boris</forename>
-               <surname>Fan-Jung</surname>
+               <surname>Van-Jung</surname>
             </persName>
-            <persName type="namensvariante">Van-Jung</persName>
+            <persName type="namensvariante">Fan-Jung</persName>
             <persName type="legacy-name-merge">no surename provided, Boris</persName>
             <birth>
                <date when="1872-10-15">15.10.1872</date>
@@ -477,7 +477,6 @@
             <sex value="male"/>
             <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13879</idno>
-            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_20923</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14414</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/26388</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb26388</idno>
@@ -651,7 +650,7 @@
          <bibl xml:id="pmb41466">
             <title>Allgemeine Kunst-Chronik</title>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=okc</note>
-            <date when="1881-01-01">1881</date>
+            <date>1881  – 1896</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41466/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41466</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41466</idno>
@@ -660,7 +659,7 @@
          <bibl xml:id="pmb31947">
             <title>Die Mozart-Centenarfeier in Salzburg</title>
             <note type="bibliografische_angabe">Allgemeine Kunst-Chronik, Bd. 15, Nr. 16, 1. 8. 1891, S. 432–433</note>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-unter-pseudonym-geschrieben">Hofmannsthal, Hugo von</author>
             <date when="1891-08-01">01.08.1891</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=okc&amp;datum=18910801&amp;seite=6&amp;zoom=33</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31947</idno>
@@ -671,7 +670,7 @@
          <bibl xml:id="pmb30141">
             <title>Gestern. Dramatische Studie in einem Akt in Versen</title>
             <note type="bibliografische_angabe">Moderne Rundschau, Bd. 4, H. 2, 15. 10. 1891; H. 3, 1. 11. 1891</note>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-unter-pseudonym-geschrieben">Hofmannsthal, Hugo von</author>
             <date when="1891-10-15">15.10.1891</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30141</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30141</idno>
@@ -681,7 +680,7 @@
          <bibl xml:id="pmb33668">
             <title>Maurice Barrès</title>
             <note type="bibliografische_angabe">Moderne Rundschau, Bd. 4, H. 1, 1. 10. 1891, S. 15–18</note>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-unter-pseudonym-geschrieben">Hofmannsthal, Hugo von</author>
             <date when="1891-10-01">01.10.1891</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33668</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33668</idno>
@@ -689,9 +688,13 @@
          </bibl>
          <bibl xml:id="pmb35942">
             <title>Moderne Rundschau</title>
-            <author ref="pmbperson__2563">Kafka, Eduard Michael</author>
-            <author ref="pmbperson__18870">Joachim, Jacques</author>
-            <date when="1891-04-01">1.4.1891</date>
+            <note type="uri_worklink">https://babel.hathitrust.org/cgi/pt?id=njp.32101064246596&amp;view=1up&amp;seq=17&amp;skin=2021</note>
+            <author ref="pmbperson__10815" role="ist-beitragerin-zu">Bahr, Hermann</author>
+            <author ref="pmbperson__2121" role="ist-beitragerin-zu">Schnitzler, Arthur</author>
+            <author ref="pmbperson__11740" role="ist-beitragerin-zu">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__2563" role="hat-herausgegeben">Kafka, Eduard Michael</author>
+            <author ref="pmbperson__18870" role="hat-herausgegeben">Joachim, Jaques</author>
+            <date>1.4.1891  – 31.12.1891</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/35942/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35942</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb35942</idno>
@@ -699,8 +702,8 @@
          </bibl>
          <bibl xml:id="pmb32272">
             <title>Age of Innocence</title>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
-            <date notBefore="1930-01-01" when="1930-07-02" notAfter="1930-12-31">1930</date>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
+            <date notBefore="1930-01-01" when="1930-07-02">1930</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32272</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32272</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb32272</idno>
@@ -709,7 +712,7 @@
          <bibl xml:id="pmb33670">
             <title>Englisches Leben</title>
             <note type="bibliografische_angabe">Moderne Rundschau, Bd. 4, H. 5, 1. 12. 1891, S. 174–177</note>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-unter-pseudonym-geschrieben">Hofmannsthal, Hugo von</author>
             <date when="1891-12-01">01.12.1891</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33670</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33670</idno>
@@ -730,6 +733,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -753,6 +758,8 @@
             <placeName>Salzburg</placeName>
             <placeName type="alternative-name">Iuvavum</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4076982-3</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,80067 13,04532</geo>
             </location>
@@ -770,6 +777,8 @@
             <placeName type="fruherer_ortsname">Markt Aussee</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/22650/</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873491/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,60998 13,78243</geo>
             </location>
@@ -786,6 +795,8 @@
          <place xml:id="pmb254">
             <placeName>England</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/England</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>52,483333 -1,566667</geo>
             </location>
@@ -803,6 +814,8 @@
          <org xml:id="pmb29639">
             <orgName>S. Fischer Verlag</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/S._Fischer_Verlag</idno>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -837,9 +850,14 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29639</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29639</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29639</idno>
+            <note type="apis_dates">
+               <date notBefore="1886-01-01" when="1886-07-02">1886</date>
+            </note>
          </org>
          <org xml:id="pmb29608">
             <orgName>Mozart Zentenarfeier 14.–17. 7. 1891</orgName>
+            <desc type="entity_type">Veranstaltung</desc>
+            <desc type="entity_type_id">1004</desc>
             <location type="located_in_place">
                <placeName ref="pmb30">Salzburg</placeName>
                <geo>47,80067 13,04532</geo>
@@ -853,6 +871,8 @@
          </org>
          <org xml:id="pmb29781">
             <orgName>Freie Bühne (Verein für modernes Leben)</orgName>
+            <desc type="entity_type">Verein &gt;&gt; Literarische Vereinigung</desc>
+            <desc type="entity_type_id">997</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01901</idno>
+            <idno type="asbw" n="01901"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -392,8 +392,7 @@
                <forename>Otto</forename>
                <surname>Brahm</surname>
             </persName>
-            <persName type="namensvariante">Abrahamson</persName>
-            <persName type="geburtsname_nachname">Abraham</persName>
+            <persName type="geburtsname_nachname">Abrahamson</persName>
             <birth>
                <date when="1856-02-05">05.02.1856</date>
                <settlement ref="pmb506">
@@ -526,7 +525,7 @@
          <bibl xml:id="pmb29937">
             <title>Der junge Medardus. Dramatische Historie in einem Vorspiel und fünf Aufzügen</title>
             <note type="bibliografische_angabe">Der junge Medardus. Dramatische Historie in einem Vorspiel und fünf Aufzügen. Berlin: S. Fischer [26.10.]1910</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1910-10-26">1910-10-26</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.11</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1198956</idno>
@@ -541,7 +540,7 @@
          <bibl xml:id="pmb29931">
             <title>Komtesse Mizzi oder Der Familientag</title>
             <note type="bibliografische_angabe">Neue Freie Presse, 19. 4. 1908</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1908-04-19">1908-04-19</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.25</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-komtesse-mizzi</idno>
@@ -555,8 +554,8 @@
          </bibl>
          <bibl xml:id="pmb29933">
             <title>Das Konzert. Lustspiel in drei Akten</title>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
-            <date notBefore="1909-01-01" when="1909-07-02" notAfter="1909-12-31">1909</date>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
+            <date notBefore="1909-01-01" when="1909-07-02">1909</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29933</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29933</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29933</idno>
@@ -578,6 +577,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -600,6 +601,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -620,6 +623,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -636,6 +641,8 @@
          <place xml:id="pmb140">
             <placeName>Halle an der Saale</placeName>
             <placeName type="legacy-name-merge">Halle</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>51,48158 11,97947</geo>
             </location>
@@ -658,16 +665,10 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4127793-4</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000355</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3220837</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb45258">München</placeName>
-               <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb54315">Brienner Straße</placeName>
-               <geo>48,14512778708449 11,568353382899355</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb314">Bayern</placeName>
@@ -693,6 +694,8 @@
             <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4054504-0</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/23656/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,64224 15,8241</geo>
             </location>

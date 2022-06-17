@@ -32,7 +32,7 @@
                <name>Martin Anton Müller</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00171</idno>
+            <idno type="asbw" n="00171"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -315,7 +315,7 @@
          </person>
          <person xml:id="pmb2450">
             <persName>
-               <forename>Friedrich M.</forename>
+               <forename>Friedrich Michael</forename>
                <surname>Fels</surname>
             </persName>
             <persName type="geburtsname_nachname">Mayer</persName>
@@ -377,8 +377,8 @@
          <bibl xml:id="pmb30117">
             <title>Sterben. Novelle</title>
             <note type="bibliografische_angabe">Neue Deutsche Rundschau, Jg. 5, H. 10–12, Oktober–Dezember 1894</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1894-10-01">1.10.1894</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1.10.1894  – 1.12.1894</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.43</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q2345387</idno>
             <idno type="URL" subtype="babel">https://babel.hathitrust.org/cgi/pt/search?id=coo.31924069263006;view=1up;seq=9;q1=sterben;start=1;sz=10;page=search;orient=0;index=1</idno>
@@ -403,6 +403,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -424,6 +426,8 @@
          </place>
          <place xml:id="pmb566">
             <placeName>Siebenbrunnengasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,185364845603 16,354289637856</geo>
             </location>
@@ -440,6 +444,8 @@
       <listOrg>
          <org xml:id="pmb29424">
             <orgName>Deutsche Zeitung</orgName>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

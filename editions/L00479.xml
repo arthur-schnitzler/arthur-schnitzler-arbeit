@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00479</idno>
+            <idno type="asbw" n="00479"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -361,7 +361,6 @@
             </persName>
             <persName type="geburtsname_vorname">Siegmund</persName>
             <persName type="geburtsname_nachname">Salzmann</persName>
-            <persName type="namensvariante">Salten Felix</persName>
             <persName type="legacy-name-merge">Salzmann, Siegmund</persName>
             <birth>
                <date when="1869-09-06">06.09.1869</date>
@@ -547,7 +546,7 @@
       <listBibl>
          <bibl xml:id="pmb30661">
             <title>Die Meistersinger von Nürnberg</title>
-            <author ref="pmbperson__13024">Wagner, Richard</author>
+            <author ref="pmbperson__13024" role="hat-geschaffen">Wagner, Richard</author>
             <date when="1868-01-01">1868</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30661</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30661</idno>
@@ -557,7 +556,7 @@
          </bibl>
          <bibl xml:id="pmb29897">
             <title>Tristan und Isolde</title>
-            <author ref="pmbperson__13024">Wagner, Richard</author>
+            <author ref="pmbperson__13024" role="hat-geschaffen">Wagner, Richard</author>
             <date when="1865-01-01">1865</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29897</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29897</idno>
@@ -567,7 +566,7 @@
          </bibl>
          <bibl xml:id="pmb33933">
             <title>Die Geschwister</title>
-            <author ref="pmbperson__11461">Goethe, Johann Wolfgang von</author>
+            <author ref="pmbperson__11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
             <date when="1776-11-21">21.11.1776</date>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33933/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33933</idno>
@@ -577,8 +576,8 @@
          </bibl>
          <bibl xml:id="pmb31099">
             <title>Clavigo</title>
-            <author ref="pmbperson__11461">Goethe, Johann Wolfgang von</author>
-            <date notBefore="1774-01-01" when="1774-07-02" notAfter="1774-12-31">1774</date>
+            <author ref="pmbperson__11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
+            <date notBefore="1774-01-01" when="1774-07-02">1774</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31099</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31099</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31099</idno>
@@ -598,16 +597,10 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4127793-4</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000355</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3220837</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb45258">München</placeName>
-               <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb54315">Brienner Straße</placeName>
-               <geo>48,14512778708449 11,568353382899355</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb314">Bayern</placeName>
@@ -626,6 +619,8 @@
          <place xml:id="pmb49823">
             <placeName>Hodonín</placeName>
             <placeName type="alternative-name">Göding</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>48,84893 17,13244</geo>
             </location>
@@ -649,6 +644,8 @@
             <placeName>Salzburg</placeName>
             <placeName type="alternative-name">Iuvavum</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4076982-3</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,80067 13,04532</geo>
             </location>
@@ -663,6 +660,8 @@
          </place>
          <place xml:id="pmb314">
             <placeName>Bayern</placeName>
+            <desc type="entity_type">Teil eines Landes (A.LNDX)</desc>
+            <desc type="entity_type_id">13</desc>
             <location type="coords">
                <geo>49,0 11,5</geo>
             </location>
@@ -679,6 +678,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
             <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
             <placeName type="alternative-name">Republic of Austria</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,33333 13,33333</geo>
             </location>
@@ -694,6 +695,8 @@
          </place>
          <place xml:id="pmb1181">
             <placeName>Bad Reichenhall</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,730685 12,882423</geo>
             </location>
@@ -703,6 +706,8 @@
          </place>
          <place xml:id="pmb33929">
             <placeName>Lofer</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1128</desc>
             <location type="coords">
                <geo>47,58475 12,69333</geo>
             </location>
@@ -720,6 +725,8 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4027096-8</placeName>
             <placeName type="alternative-name">Stadt Innsbruck</placeName>
             <placeName type="legacy-name-merge">bei Innsbruck</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,28433 11,37706</geo>
             </location>
@@ -740,6 +747,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -755,6 +764,8 @@
          <place xml:id="pmb497">
             <placeName>Glaspalast</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Glaspalast_(M%C3%BCnchen)</placeName>
+            <desc type="entity_type">Gebäude (K.GBD)</desc>
+            <desc type="entity_type_id">24</desc>
             <location type="coords">
                <geo>48,142331 11,564675</geo>
             </location>
@@ -765,10 +776,15 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb497</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/497</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb497</idno>
+            <note type="apis_dates">
+               <date from="1854-01-01" to="1854-12-31">1854  – 1931</date>
+            </note>
          </place>
          <place xml:id="pmb98">
             <placeName>Internationalen Kunst-Ausstellung des Vereins bildender Künstler Münchens »Secession«</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Münchener_Secession</placeName>
+            <desc type="entity_type">Gallerie (K.GLR)</desc>
+            <desc type="entity_type_id">6</desc>
             <location type="coords">
                <geo>48,143664 11,584749</geo>
             </location>
@@ -780,9 +796,14 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb98</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/98</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb98</idno>
+            <note type="apis_dates">
+               <date>11.8.1895  – 1895</date>
+            </note>
          </place>
          <place xml:id="pmb44324">
             <placeName>Sedan</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1410</desc>
             <location type="coords">
                <geo>49,70187 4,94028</geo>
             </location>
@@ -809,6 +830,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -831,6 +854,8 @@
          <place xml:id="pmb20655">
             <placeName>Neuhausen-Nymphenburg</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Neuhausen-Nymphenburg</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,156944 11,516667</geo>
             </location>

@@ -32,7 +32,7 @@
                <name>Martin Anton Müller</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00139</idno>
+            <idno type="asbw" n="00139"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -368,7 +368,6 @@
             </persName>
             <persName type="geburtsname_vorname">Siegmund</persName>
             <persName type="geburtsname_nachname">Salzmann</persName>
-            <persName type="namensvariante">Salten Felix</persName>
             <persName type="legacy-name-merge">Salzmann, Siegmund</persName>
             <birth>
                <date when="1869-09-06">06.09.1869</date>
@@ -402,8 +401,8 @@
          <bibl xml:id="pmb33243">
             <title>Tagebuch</title>
             <note type="uri_worklink">https://schnitzler-tagebuch.acdh.oeaw.ac.at</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1981-01-01">1981</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1981  – 2000</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
@@ -411,8 +410,8 @@
          </bibl>
          <bibl xml:id="pmb32272">
             <title>Age of Innocence</title>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
-            <date notBefore="1930-01-01" when="1930-07-02" notAfter="1930-12-31">1930</date>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
+            <date notBefore="1930-01-01" when="1930-07-02">1930</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32272</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32272</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb32272</idno>
@@ -420,8 +419,8 @@
          </bibl>
          <bibl xml:id="pmb36166">
             <title>Freie Bühne für den Entwickelungskampf der Zeit</title>
-            <author ref="pmbperson__11061">Bölsche, Wilhelm</author>
-            <date when="1892-01-01">1892</date>
+            <author ref="pmbperson__11061" role="hat-herausgegeben">Bölsche, Wilhelm</author>
+            <date>1892  – 1893</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36166/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36166</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36166</idno>
@@ -442,6 +441,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -465,6 +466,8 @@
             <placeName>Café Pfob</placeName>
             <placeName type="fruherer_ortsname">Café Heydner</placeName>
             <placeName type="fruherer_ortsname">Café Schrangl</placeName>
+            <desc type="entity_type">Kaffeehaus (K.KAF)</desc>
+            <desc type="entity_type_id">20</desc>
             <location type="coords">
                <geo>48,208619 16,370291</geo>
             </location>

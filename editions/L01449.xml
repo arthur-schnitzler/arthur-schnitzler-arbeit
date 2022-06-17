@@ -32,7 +32,7 @@
                <name>Martin Anton Müller</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01449</idno>
+            <idno type="asbw" n="01449"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -588,8 +588,8 @@
       <listBibl>
          <bibl xml:id="pmb31981">
             <title>Die Jagd nach Liebe</title>
-            <author ref="pmbperson__12170">Mann, Heinrich</author>
-            <date notBefore="1903-01-01" when="1903-07-02" notAfter="1903-12-31">1903</date>
+            <author ref="pmbperson__12170" role="hat-geschaffen">Mann, Heinrich</author>
+            <date notBefore="1903-01-01" when="1903-07-02">1903</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31981</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31981</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31981</idno>
@@ -600,8 +600,8 @@
          <bibl xml:id="pmb31983">
             <title>Die Göttinnen oder Die drei Romane der Herzogin von Assy</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Die_Göttinnen_oder_Die_drei_Romane_der_Herzogin_von_Assy</idno>
-            <author ref="pmbperson__12170">Mann, Heinrich</author>
-            <date notBefore="1902-01-01" when="1902-07-02" notAfter="1902-12-31">1902</date>
+            <author ref="pmbperson__12170" role="hat-geschaffen">Mann, Heinrich</author>
+            <date notBefore="1902-01-01" when="1902-07-02">1902</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31983</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31983</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31983</idno>
@@ -613,12 +613,18 @@
       <listPlace>
          <place xml:id="pmb68">
             <placeName>XVIII., Währing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,23333 16,31667</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb243">Sommerhaidenweg</placeName>
+               <geo>48,248935842869 16,296768550115</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb68</idno>
@@ -627,6 +633,8 @@
          </place>
          <place xml:id="pmb432">
             <placeName>Thüringen</placeName>
+            <desc type="entity_type">Teil eines Landes (A.LNDX)</desc>
+            <desc type="entity_type_id">13</desc>
             <location type="coords">
                <geo>50,91667 11,0</geo>
             </location>
@@ -640,6 +648,8 @@
             <placeName>Rodaun</placeName>
             <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11742/</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>48,132793312328 16,256152195922</geo>
             </location>
@@ -656,6 +666,8 @@
          <place xml:id="pmb1006">
             <placeName>Badgasse</placeName>
             <placeName type="namensvariante">Ketzergasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,130176324727 16,278871077438</geo>
             </location>
@@ -681,6 +693,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -704,6 +718,8 @@
             <placeName>Hotel de l’Europe</placeName>
             <placeName type="legacy-name-merge">Hotel Europe</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A001209</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>45,432304 12,336899</geo>
             </location>
@@ -719,6 +735,8 @@
             <placeName>Salzburg</placeName>
             <placeName type="alternative-name">Iuvavum</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4076982-3</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,80067 13,04532</geo>
             </location>
@@ -734,6 +752,8 @@
          <place xml:id="pmb585">
             <placeName>Hotel Hammerand</placeName>
             <placeName type="uri_wien-geschichte-wiki">https://www.geschichtewiki.wien.gv.at/Hotel_Hammerand</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>48,2123639 16,3534843</geo>
             </location>
@@ -755,6 +775,8 @@
          </place>
          <place xml:id="pmb271">
             <placeName>Hütteldorf</placeName>
+            <desc type="entity_type">eingemeindeter Ort (A.VOO)</desc>
+            <desc type="entity_type_id">40</desc>
             <location type="coords">
                <geo>48,201667 16,258056</geo>
             </location>
@@ -769,6 +791,8 @@
          </place>
          <place xml:id="pmb170">
             <placeName>Neuwaldegg</placeName>
+            <desc type="entity_type">eingemeindeter Ort (A.VOO)</desc>
+            <desc type="entity_type_id">40</desc>
             <location type="coords">
                <geo>48,233119188484 16,28610371233</geo>
             </location>

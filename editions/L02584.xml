@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02584</idno>
+            <idno type="asbw" n="02584"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -217,6 +217,7 @@
             <persName type="geburtsname_nachname">Ruhemann</persName>
             <persName type="ehename">Bloch</persName>
             <persName type="ehename">Zavřel</persName>
+            <persName type="geburtsname_vorname">Charlotte</persName>
             <birth>
                <date when="1886-11-05">1886-11-05</date>
                <settlement ref="pmb168">
@@ -244,9 +245,10 @@
       <listBibl>
          <bibl xml:id="pmb63583">
             <title>Briefe an Auguste Hauschner</title>
-            <author ref="pmbperson__63579">Bloch-Zavřel, Lotte</author>
-            <author ref="pmbperson__37872">Beradt, Martin</author>
-            <date notBefore="1929-01-01" when="1929-07-02" notAfter="1929-12-31">1929</date>
+            <author ref="pmbperson__63579" role="hat-herausgegeben">Bloch-Zavřel, Lotte</author>
+            <author ref="pmbperson__2121" role="ist-beitragerin-zu">Schnitzler, Arthur</author>
+            <author ref="pmbperson__37872" role="hat-herausgegeben">Beradt, Martin</author>
+            <date notBefore="1929-01-01" when="1929-07-02">1929</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63583/</idno>
             <note type="work_kind">Brief &gt;&gt; Briefe &gt;&gt; Briefausgabe</note>
          </bibl>
@@ -260,6 +262,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -286,6 +290,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -314,6 +320,8 @@
             <placeName type="alternative-name">Charlottenburg (Potsdam)</placeName>
             <placeName type="legacy-name-merge">Charlottenburg (Berlin)</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4065382-1</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>52,516667 13,3</geo>
             </location>

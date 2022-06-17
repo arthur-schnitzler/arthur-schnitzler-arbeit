@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01880</idno>
+            <idno type="asbw" n="01880"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -336,7 +336,7 @@
                <forename>Gustav</forename>
                <surname>Meyrink</surname>
             </persName>
-            <persName type="namensvariante">Meyer</persName>
+            <persName type="geburtsname_nachname">Meyer</persName>
             <birth>
                <date when="1868-01-19">19.01.1868</date>
                <settlement ref="pmb50">
@@ -400,7 +400,7 @@
       <listBibl>
          <bibl xml:id="pmb33458">
             <title>Die Lage in Ungarn (Siebenbürgen und Serbien ausgenommen) im Jahre 1790</title>
-            <author ref="pmbperson__11230">Ehrenstein, Albert</author>
+            <author ref="pmbperson__11230" role="hat-geschaffen">Ehrenstein, Albert</author>
             <date when="1910-01-01">1910</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33458</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33458</idno>
@@ -408,15 +408,15 @@
          </bibl>
          <bibl xml:id="pmb33454">
             <title>Tod des Zehir eddin Muhammed Baber</title>
-            <author ref="pmbperson__11230">Ehrenstein, Albert</author>
-            <date notBefore="1912-01-01" when="1912-07-01" notAfter="1912-12-31">1912</date>
+            <author ref="pmbperson__11230" role="hat-geschaffen">Ehrenstein, Albert</author>
+            <date notBefore="1912-01-01" when="1912-07-01">1912</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33454</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33454</idno>
             <note type="work_kind">Erzählung</note>
          </bibl>
          <bibl xml:id="pmb33482">
             <title>Apaturien</title>
-            <author ref="pmbperson__11230">Ehrenstein, Albert</author>
+            <author ref="pmbperson__11230" role="hat-geschaffen">Ehrenstein, Albert</author>
             <date when="1912-01-01">1912</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33482</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33482</idno>
@@ -437,6 +437,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -458,6 +460,8 @@
          </place>
          <place xml:id="pmb300">
             <placeName>Ottakringerstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,214134550754 16,321028123618</geo>
             </location>
@@ -473,6 +477,8 @@
          <place xml:id="pmb462">
             <placeName>Venedig</placeName>
             <placeName type="legacy-name-merge">Venice</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>45,43713 12,33265</geo>
             </location>
@@ -488,6 +494,8 @@
          </place>
          <place xml:id="pmb1212">
             <placeName>Neulinggasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,19911 16,38981</geo>
             </location>
@@ -504,6 +512,8 @@
          <org xml:id="pmb29351">
             <orgName>Neue Freie Presse</orgName>
             <idno type="URL" subtype="">http://anno.onb.ac.at/info/nfp_info.htm</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -534,9 +544,14 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29351</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29351</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29351</idno>
+            <note type="apis_dates">
+               <date>1864-09-01  – 1939-02-01</date>
+            </note>
          </org>
          <org xml:id="pmb29552">
             <orgName>Hyperion</orgName>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb45258">München</placeName>
                <geo>48,13743 11,57549</geo>
@@ -548,9 +563,14 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29552</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29552</idno>
+            <note type="apis_dates">
+               <date from="1908-01-01" to="1908-12-31">1908  – 1910</date>
+            </note>
          </org>
          <org xml:id="pmb29568">
             <orgName>Der Spiegel. Münchner Halbmonatsschrift</orgName>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb45258">München</placeName>
                <geo>48,13743 11,57549</geo>
@@ -566,6 +586,8 @@
          <org xml:id="pmb29212">
             <orgName>Neue Rundschau, Neue Deutsche Rundschau, Freie Bühne</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Die_neue_Rundschau</idno>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb168">Berlin</placeName>
                <geo>52,52437 13,41053</geo>
@@ -578,6 +600,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29212</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29212</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29212</idno>
+            <note type="apis_dates">
+               <date when="1890-01-01">1890</date>
+            </note>
          </org>
       </listOrg>
    </back>

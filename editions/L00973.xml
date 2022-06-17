@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00973</idno>
+            <idno type="asbw" n="00973"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -347,8 +347,8 @@
          <bibl xml:id="pmb43046">
             <title>Der Tod Georgs. Fragment</title>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=zet&amp;datum=18991104&amp;seite=15&amp;zoom=33</note>
-            <author ref="pmbperson__10863">Beer-Hofmann, Richard</author>
-            <date when="1899-11-04">4.11.1899</date>
+            <author ref="pmbperson__10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
+            <date>4.11.1899  – 25.11.1899</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43046/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43046</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43046</idno>
@@ -358,7 +358,7 @@
             <title>Der Tod Georgs</title>
             <title type="alternative-name">Der Götterliebling</title>
             <note type="uri_worklink">https://archive.org/details/dertodgeorgs00beergoog</note>
-            <author ref="pmbperson__10863">Beer-Hofmann, Richard</author>
+            <author ref="pmbperson__10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
             <date when="1900-01-01">1900</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31535</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31535</idno>
@@ -371,6 +371,8 @@
       <listPlace>
          <place xml:id="pmb946">
             <placeName>Vahrn</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>46,73901 11,63749</geo>
             </location>
@@ -394,16 +396,10 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4127793-4</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000355</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3220837</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb45258">München</placeName>
-               <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb54315">Brienner Straße</placeName>
-               <geo>48,14512778708449 11,568353382899355</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb314">Bayern</placeName>
@@ -422,6 +418,8 @@
          <place xml:id="pmb43040">
             <placeName>Brixen</placeName>
             <placeName type="alternative-name">Brixen in Südtirol</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1128</desc>
             <location type="coords">
                <geo>46,71503 11,65598</geo>
             </location>
@@ -437,6 +435,8 @@
          </place>
          <place xml:id="pmb40264">
             <placeName>Franzensfeste</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.ADM3</desc>
+            <desc type="entity_type_id">1124</desc>
             <location type="coords">
                <geo>46,78333 11,6</geo>
             </location>
@@ -455,6 +455,8 @@
          <place xml:id="pmb414">
             <placeName>Hotel und Pension Rudolfshöhe (Leopold Petter)</placeName>
             <placeName type="legacy-name-merge">Rudolfshöhe</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,706537 13,609575</geo>
             </location>
@@ -488,6 +490,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -511,6 +515,8 @@
       <listOrg>
          <org xml:id="pmb29209">
             <orgName>Die Zeit. Wiener Wochenschrift</orgName>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

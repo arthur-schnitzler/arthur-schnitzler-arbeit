@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01465</idno>
+            <idno type="asbw" n="01465"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -298,6 +298,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -318,13 +320,11 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
          </place>
          <place xml:id="pmb665">
-            <placeName>St. Veit</placeName>
+            <placeName>Sankt Veit</placeName>
+            <desc type="entity_type">eingemeindeter Ort (A.VOO)</desc>
+            <desc type="entity_type_id">40</desc>
             <location type="coords">
                <geo>48,18805 16,26638</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb50">Wien</placeName>
-               <geo>48,2066 16,37341</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb63">XIII., Hietzing</placeName>
@@ -334,6 +334,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb665</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/665</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb665</idno>
+            <note type="apis_dates">
+               <date from="1850-01-01" to="1850-12-31">1850  – 1870</date>
+            </note>
          </place>
       </listPlace>
    </back>

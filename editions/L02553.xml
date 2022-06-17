@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02553</idno>
+            <idno type="asbw" n="02553"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -483,8 +483,8 @@
             <title>Der Schleier der Pierrette</title>
             <title type="legacy-name-merge">Der Schleier der Pierrette</title>
             <title type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A020760</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <author ref="pmbperson__11165">Dohnányi, Ernst von</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__11165" role="hat-vertont">Dohnányi, Ernst von</author>
             <date when="1910-01-22">1910-01-22</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.14</idno>
             <idno type="URL" subtype="literature">http://www.literature.at/viewer.alo?objid=12118&amp;page=1&amp;viewmode=fullscreen</idno>
@@ -499,6 +499,8 @@
          <place xml:id="pmb866">
             <placeName>Dresden</placeName>
             <placeName type="alternative-name">Landeshauptstadt Dresden</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>51,0833 13,7666</geo>
             </location>
@@ -523,6 +525,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -545,6 +549,8 @@
          <place xml:id="pmb69">
             <placeName>XIX., Döbling</placeName>
             <placeName type="legacy-name-merge">Döbling</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,25 16,33306</geo>
             </location>
@@ -561,6 +567,8 @@
          </place>
          <place xml:id="pmb383">
             <placeName>Hasenauerstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,233816866614 16,337927920952</geo>
             </location>
@@ -576,6 +584,8 @@
          <place xml:id="pmb53107">
             <placeName>Hotel Bellevue</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Calberlasche_Zuckersiederei</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>51,0549041 13,736206</geo>
             </location>
@@ -585,12 +595,17 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53107/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb53107</idno>
+            <note type="apis_dates">
+               <date from="1853-01-01" to="1853-12-31">1853  – 1945</date>
+            </note>
          </place>
          <place xml:id="pmb43570">
             <placeName>Dänemark</placeName>
             <placeName type="legacy-name-merge">Denmark</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/2623032/</placeName>
             <placeName type="alternative-name">Kingdom of Denmark</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1411</desc>
             <location type="coords">
                <geo>56,0 10,0</geo>
             </location>

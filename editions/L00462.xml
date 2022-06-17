@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00462</idno>
+            <idno type="asbw" n="00462"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -581,7 +581,7 @@
       <listBibl>
          <bibl xml:id="pmb30447">
             <title>Hänsel und Grethel</title>
-            <author ref="pmbperson__11784">Humperdinck, Engelbert</author>
+            <author ref="pmbperson__11784" role="hat-geschaffen">Humperdinck, Engelbert</author>
             <date when="1893-01-01">1893</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30447</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30447</idno>
@@ -591,10 +591,10 @@
          </bibl>
          <bibl xml:id="pmb33914">
             <title>Der arme Jonathan</title>
-            <author ref="pmbperson__4947">Millöcker, Carl</author>
-            <author ref="pmbperson__2739">Wittmann, Hugo</author>
-            <author ref="pmbperson__2150">Bauer, Julius</author>
-            <date when="1890-01-04">4.1.1890</date>
+            <author ref="pmbperson__4947" role="hat-geschaffen">Millöcker, Carl</author>
+            <author ref="pmbperson__2739" role="hat-geschaffen">Wittmann, Hugo</author>
+            <author ref="pmbperson__2150" role="hat-geschaffen">Bauer, Julius</author>
+            <date>4.1.1890  – 4.1.1890</date>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33914/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33914</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33914</idno>
@@ -603,7 +603,7 @@
          </bibl>
          <bibl xml:id="pmb33918">
             <title>Dimitrij</title>
-            <author ref="pmbperson__4816">Dvořák, Antonín</author>
+            <author ref="pmbperson__4816" role="hat-geschaffen">Dvořák, Antonín</author>
             <date when="1894-03-24">24.3.1894</date>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33918/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33918</idno>
@@ -612,8 +612,8 @@
          </bibl>
          <bibl xml:id="pmb33925">
             <title>Ein Attaché</title>
-            <author ref="pmbperson__33922">Förster, August</author>
-            <author ref="pmbperson__12222">Meilhac, Henri</author>
+            <author ref="pmbperson__33922" role="hat-geschaffen">Förster, August</author>
+            <author ref="pmbperson__12222" role="hat-geschaffen">Meilhac, Henri</author>
             <date when="1874-01-01">1874</date>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33925/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33925</idno>
@@ -628,6 +628,8 @@
             <placeName type="none">Marianske Lázne</placeName>
             <placeName type="alternative-name">Mariánské Lázně</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4037541-9</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>49,96115 12,72872</geo>
             </location>
@@ -640,6 +642,8 @@
          <place xml:id="pmb49823">
             <placeName>Hodonín</placeName>
             <placeName type="alternative-name">Göding</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>48,84893 17,13244</geo>
             </location>
@@ -666,6 +670,8 @@
             <placeName type="legacy-name-merge">Prag-Smichow</placeName>
             <placeName type="legacy-name-merge">Bohnitz bei Prag</placeName>
             <placeName type="legacy-name-merge">Prag-Dejwitz</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,08333 14,46667</geo>
             </location>
@@ -688,6 +694,8 @@
             <placeName type="none">Karlovy Vary</placeName>
             <placeName type="legacy-name">Edlitz</placeName>
             <placeName type="legacy-name-merge">bei Karlsbad</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,23271 12,87117</geo>
             </location>
@@ -710,6 +718,8 @@
          <place xml:id="pmb414">
             <placeName>Hotel und Pension Rudolfshöhe (Leopold Petter)</placeName>
             <placeName type="legacy-name-merge">Rudolfshöhe</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,706537 13,609575</geo>
             </location>
@@ -733,15 +743,22 @@
          <place xml:id="pmb33913">
             <placeName>Alter Jüdischer Friedhof</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Alter_Jüdischer_Friedhof_(Prag)</placeName>
+            <desc type="entity_type">Friedhof (K.FRH)</desc>
+            <desc type="entity_type_id">51</desc>
             <location type="coords">
                <geo>50,089722 14,417222</geo>
             </location>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33913/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33913</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33913</idno>
+            <note type="apis_dates">
+               <date from="1478-01-01" to="1478-12-31">1478  – 1890</date>
+            </note>
          </place>
          <place xml:id="pmb33910">
             <placeName>Hradčany</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>50,089444 14,397222</geo>
             </location>
@@ -757,6 +774,8 @@
             <placeName>Polen</placeName>
             <placeName type="alternative-name">Republic of Poland</placeName>
             <placeName type="legacy-name-merge">Poland</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>52,0 20,0</geo>
             </location>
@@ -778,6 +797,8 @@
          <place xml:id="pmb628">
             <placeName>Böhmen</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Böhmen</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>50,0651 14,3797</geo>
             </location>
@@ -793,6 +814,8 @@
          <place xml:id="pmb390">
             <placeName>Franzensbad</placeName>
             <placeName type="none">Františkovy Lázně</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,12033 12,35174</geo>
             </location>
@@ -806,6 +829,8 @@
       <listOrg>
          <org xml:id="pmb33911">
             <orgName>Čecho-slavische ethnographische Ausstellung</orgName>
+            <desc type="entity_type">Ausstellung</desc>
+            <desc type="entity_type_id">1127</desc>
             <location type="located_in_place">
                <placeName ref="pmb652">Prag</placeName>
                <geo>50,08333 14,46667</geo>
@@ -826,6 +851,9 @@
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33911/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33911</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33911</idno>
+            <note type="apis_dates">
+               <date>1895  – 1895</date>
+            </note>
          </org>
       </listOrg>
    </back>

@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02123</idno>
+            <idno type="asbw" n="02123"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -347,7 +347,6 @@
             <persName type="geburtsname_vorname">Richard</persName>
             <persName type="geburtsname_nachname">Engländer</persName>
             <persName type="pseudonym">Peter Altenberg</persName>
-            <persName type="legacy-name-merge">Engländer, Richard</persName>
             <birth>
                <date when="1859-03-09">09.03.1859</date>
                <settlement ref="pmb50">
@@ -413,8 +412,8 @@
             <title>Sanatorium für Nervenkranke (aber nicht die, in denen ich mich befand!)</title>
             <note type="bibliografische_angabe">Simplicissimus, Jg. 16, H. 41,  8.2.1912, S. 724</note>
             <note type="uri_worklink">http://www.simplicissimus.info/index.php?id=7&amp;tx_lombkswjournaldb_pi2%5Bpersonid%5D=50&amp;tx_lombkswjournaldb_pi2%5Belement%5D=1912&amp;tx_lombkswjournaldb_pi2%5Btype%5D=date&amp;tx_lombkswjournaldb_pi2%5Baction%5D=nameFilter&amp;tx_lombkswjournaldb_pi2%5Bcontroller%5D=</note>
-            <author ref="pmbperson__2147">Altenberg, Peter</author>
-            <date when="1912-02-08">1912-02-08</date>
+            <author ref="pmbperson__2147" role="hat-geschaffen">Altenberg, Peter</author>
+            <date>1912-02-08  – 1912-02-08</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50243/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50243</idno>
             <note type="work_kind">Prosadichtung</note>
@@ -423,7 +422,7 @@
             <title>Simplicissimus</title>
             <note type="uri_worklink">http://www.simplicissimus.info/index.php?id=5</note>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Simplicissimus</idno>
-            <date when="1896-04-04">1896-04-04</date>
+            <date>1896-04-04  – 1944-09-13</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50245/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50245</idno>
             <note type="work_kind">Publikationsorgan &gt;&gt; Zeitschrift</note>
@@ -443,6 +442,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -467,6 +468,8 @@
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Otto-Wagner-Spital</placeName>
             <placeName type="namensvariante">Steinhof</placeName>
             <placeName type="fruherer_ortsname">Niederösterreichische Landes-Heil- und Pflegeanstalt für Nerven- und Geisteskranke »Am Steinhof«</placeName>
+            <desc type="entity_type">Krankenhaus (K.KKH)</desc>
+            <desc type="entity_type_id">23</desc>
             <location type="coords">
                <geo>48,20875 16,27962</geo>
             </location>
@@ -481,10 +484,15 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb153</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/153</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb153</idno>
+            <note type="apis_dates">
+               <date when="1907-10-08">1907-10-08</date>
+            </note>
          </place>
          <place xml:id="pmb19055">
             <placeName>Sulz im Wienerwald</placeName>
             <placeName type="legacy-name-merge">Sulz (Niederösterreich)</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>48,1008317 16,1374028</geo>
             </location>
@@ -496,6 +504,8 @@
          </place>
          <place xml:id="pmb730">
             <placeName>Seidlgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,206786325191 16,389660949005</geo>
             </location>
@@ -513,6 +523,8 @@
          <org xml:id="pmb29639">
             <orgName>S. Fischer Verlag</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/S._Fischer_Verlag</idno>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -547,6 +559,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29639</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29639</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29639</idno>
+            <note type="apis_dates">
+               <date notBefore="1886-01-01" when="1886-07-02">1886</date>
+            </note>
          </org>
       </listOrg>
    </back>

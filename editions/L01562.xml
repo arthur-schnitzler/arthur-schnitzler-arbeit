@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01562</idno>
+            <idno type="asbw" n="01562"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -294,8 +294,7 @@
                <forename>Otto</forename>
                <surname>Brahm</surname>
             </persName>
-            <persName type="namensvariante">Abrahamson</persName>
-            <persName type="geburtsname_nachname">Abraham</persName>
+            <persName type="geburtsname_nachname">Abrahamson</persName>
             <birth>
                <date when="1856-02-05">05.02.1856</date>
                <settlement ref="pmb506">
@@ -329,7 +328,7 @@
          <bibl xml:id="pmb29907">
             <title>Der Klub der Erlöser</title>
             <note type="bibliografische_angabe">Die neue Rundschau, Jg. 17, H. 3, März 1906</note>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
             <date when="1906-03-01">01.03.1906</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29907</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29907</idno>
@@ -340,8 +339,8 @@
          <bibl xml:id="pmb30001">
             <title>Der arme Narr</title>
             <note type="bibliografische_angabe">Österreichische Rundschau, 28. 9. 1905</note>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
             <date when="1905-09-28">28.09.1905</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30001</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30001</idno>
@@ -352,7 +351,7 @@
          <bibl xml:id="pmb30003">
             <title>Zwischenspiel. (Komödie in drei Akten von Arthur Schnitzler. Zum erstenmal aufgeführt im Burgtheater am 12. Oktober 1905)</title>
             <note type="bibliografische_angabe">Österreichische Volks-Zeitung, 13. 10. 1905</note>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
             <date when="1905-10-13">13.10.1905</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30003</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30003</idno>
@@ -374,6 +373,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -396,6 +397,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -418,6 +421,8 @@
             <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4054504-0</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/23656/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,64224 15,8241</geo>
             </location>
@@ -430,6 +435,8 @@
       <listOrg>
          <org xml:id="pmb29421">
             <orgName>Österreichische Volks-Zeitung</orgName>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

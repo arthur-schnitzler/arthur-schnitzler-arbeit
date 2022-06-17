@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01448</idno>
+            <idno type="asbw" n="01448"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -358,8 +358,8 @@
          <bibl xml:id="pmb31983">
             <title>Die Göttinnen oder Die drei Romane der Herzogin von Assy</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Die_Göttinnen_oder_Die_drei_Romane_der_Herzogin_von_Assy</idno>
-            <author ref="pmbperson__12170">Mann, Heinrich</author>
-            <date notBefore="1902-01-01" when="1902-07-02" notAfter="1902-12-31">1902</date>
+            <author ref="pmbperson__12170" role="hat-geschaffen">Mann, Heinrich</author>
+            <date notBefore="1902-01-01" when="1902-07-02">1902</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31983</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31983</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31983</idno>
@@ -370,7 +370,8 @@
          <bibl xml:id="pmb40042">
             <title>Die Zukunft</title>
             <note type="uri_worklink">https://de.wikisource.org/wiki/Die_Zukunft_(Harden)</note>
-            <date when="1892-01-01">1892</date>
+            <author ref="pmbperson__11581" role="ist-beitragerin-zu">Harden, Maximilian</author>
+            <date>1892  – 1922</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40042/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40042</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40042</idno>
@@ -378,7 +379,7 @@
          </bibl>
          <bibl xml:id="pmb30633">
             <title>Elektra. Tragödie in einem Aufzug</title>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             <date when="1903-01-01">1903</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30633</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30633</idno>
@@ -390,8 +391,8 @@
             <title>Elektra</title>
             <note type="uri_worklink">https://archive.org/details/diezukunft02hardgoog/page/n358/mode/2up</note>
             <note type="bibliografische_angabe">Die Zukunft, Jg. 12, H. 48, 27.8.1904, 349–358</note>
-            <author ref="pmbperson__11581">Harden, Maximilian</author>
-            <date when="1904-08-27">27.8.1904</date>
+            <author ref="pmbperson__11581" role="hat-anonym-veroffentlicht">Harden, Maximilian</author>
+            <date>27.8.1904  – 27.8.1904</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43894/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43894</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43894</idno>
@@ -399,8 +400,8 @@
          </bibl>
          <bibl xml:id="pmb31981">
             <title>Die Jagd nach Liebe</title>
-            <author ref="pmbperson__12170">Mann, Heinrich</author>
-            <date notBefore="1903-01-01" when="1903-07-02" notAfter="1903-12-31">1903</date>
+            <author ref="pmbperson__12170" role="hat-geschaffen">Mann, Heinrich</author>
+            <date notBefore="1903-01-01" when="1903-07-02">1903</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31981</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31981</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31981</idno>
@@ -413,6 +414,8 @@
          <place xml:id="pmb850">
             <placeName>Bahnhof</placeName>
             <placeName type="namensvariante">Ferrovia</placeName>
+            <desc type="entity_type">Bahnhofsgebäude (K.BHF)</desc>
+            <desc type="entity_type_id">32</desc>
             <location type="coords">
                <geo>45,44143 12,32024</geo>
             </location>
@@ -426,12 +429,18 @@
          </place>
          <place xml:id="pmb68">
             <placeName>XVIII., Währing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,23333 16,31667</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb243">Sommerhaidenweg</placeName>
+               <geo>48,248935842869 16,296768550115</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb68</idno>
@@ -441,6 +450,8 @@
          <place xml:id="pmb462">
             <placeName>Venedig</placeName>
             <placeName type="legacy-name-merge">Venice</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>45,43713 12,33265</geo>
             </location>
@@ -467,6 +478,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -489,6 +502,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -508,6 +523,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
             <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
             <placeName type="alternative-name">Republic of Austria</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,33333 13,33333</geo>
             </location>

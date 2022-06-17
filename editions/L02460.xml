@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02460</idno>
+            <idno type="asbw" n="02460"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -266,8 +266,8 @@
          <bibl xml:id="pmb30751">
             <title>Die Frau des Richters. Novelle</title>
             <note type="bibliografische_angabe">Vossische Zeitung, 7.–15. 8. 1925</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1925-08-07">7.8.1925</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>7.8.1925  – 15.8.1925</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.22</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1212589</idno>
             <idno type="URL" subtype="literature">http://www.literature.at/viewer.alo?objid=12119&amp;page=1&amp;viewmode=fullscreen</idno>
@@ -292,6 +292,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -313,12 +315,18 @@
          </place>
          <place xml:id="pmb68">
             <placeName>XVIII., Währing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,23333 16,31667</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb243">Sommerhaidenweg</placeName>
+               <geo>48,248935842869 16,296768550115</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb68</idno>
@@ -327,6 +335,8 @@
          </place>
          <place xml:id="pmb150">
             <placeName>Sternwartestraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,23099349198 16,340117830625</geo>
             </location>
@@ -342,6 +352,8 @@
          <place xml:id="pmb69">
             <placeName>XIX., Döbling</placeName>
             <placeName type="legacy-name-merge">Döbling</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,25 16,33306</geo>
             </location>
@@ -358,6 +370,8 @@
          </place>
          <place xml:id="pmb1092">
             <placeName>Sieveringer Straße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,24803 16,32993</geo>
             </location>

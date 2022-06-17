@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02541</idno>
+            <idno type="asbw" n="02541"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -352,8 +352,9 @@
       <listBibl>
          <bibl xml:id="pmb29935">
             <title>Anatol</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1892-10-29">1892-10-29</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
+            <date>1892-10-29  – 1892-10-29</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.03</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q487409</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-anatol</idno>
@@ -375,6 +376,8 @@
             <placeName type="legacy-uri-merge">http://sws.geonames.org/6252001/</placeName>
             <placeName type="legacy-name-merge">USA</placeName>
             <placeName type="alternative-name">America</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1411</desc>
             <location type="coords">
                <geo>39,76 -98,5</geo>
             </location>
@@ -406,6 +409,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -437,6 +442,8 @@
             <placeName type="legacy-name-merge">New York, NY</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4042011-5</placeName>
             <placeName type="alternative-name">Big Apple</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>40,71427 -74,00597</geo>
             </location>
@@ -453,6 +460,8 @@
          <place xml:id="pmb50094">
             <placeName>Mayflower Hotel</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/15_Central_Park_West</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>40,769444 -73,981111</geo>
             </location>
@@ -466,9 +475,14 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50094/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50094</idno>
+            <note type="apis_dates">
+               <date notBefore="1926-01-01" when="1926-07-02">1926</date>
+            </note>
          </place>
          <place xml:id="pmb50097">
             <placeName>Central Park West</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>40,769444 -73,981111</geo>
             </location>
@@ -478,6 +492,8 @@
          <place xml:id="pmb1026">
             <placeName>Lyceum Theatre</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Lyceum_Theatre_(Broadway)</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>40,75773 -73,98466</geo>
             </location>
@@ -487,6 +503,9 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/1026</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb1026</idno>
+            <note type="apis_dates">
+               <date when="1903-11-02">1903-11-02</date>
+            </note>
          </place>
       </listPlace>
    </back>

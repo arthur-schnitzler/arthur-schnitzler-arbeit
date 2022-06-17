@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01433</idno>
+            <idno type="asbw" n="01433"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -267,12 +267,18 @@
       <listPlace>
          <place xml:id="pmb68">
             <placeName>XVIII., Währing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,23333 16,31667</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb243">Sommerhaidenweg</placeName>
+               <geo>48,248935842869 16,296768550115</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb68</idno>
@@ -284,6 +290,8 @@
             <placeName type="fruherer_ortsname">Markt Aussee</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/22650/</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873491/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,60998 13,78243</geo>
             </location>
@@ -310,6 +318,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -332,6 +342,8 @@
          <place xml:id="pmb47674">
             <placeName>Villa Frühling</placeName>
             <placeName type="namensvariante">Kleine Großauer Villa</placeName>
+            <desc type="entity_type">Gebäude (K.GBD)</desc>
+            <desc type="entity_type_id">24</desc>
             <location type="located_in_place">
                <placeName ref="pmb415">Bad Aussee</placeName>
                <geo>47,60998 13,78243</geo>
@@ -342,6 +354,8 @@
          <place xml:id="pmb413">
             <placeName>Südbahnhotel</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Südbahnhotel</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,647222 15,83</geo>
             </location>
@@ -353,9 +367,14 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb413</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/413</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb413</idno>
+            <note type="apis_dates">
+               <date notBefore="1882-01-01" when="1882-07-02">1882</date>
+            </note>
          </place>
          <place xml:id="pmb655">
             <placeName>Hotel Kaiserkrone</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,71356 13,61926</geo>
             </location>
@@ -371,6 +390,8 @@
             <placeName>Salzburg</placeName>
             <placeName type="alternative-name">Iuvavum</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4076982-3</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,80067 13,04532</geo>
             </location>

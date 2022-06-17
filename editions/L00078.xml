@@ -33,7 +33,7 @@
                <name>Martin Anton Müller</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00078</idno>
+            <idno type="asbw" n="00078"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -321,7 +321,6 @@
             </persName>
             <persName type="geburtsname_vorname">Siegmund</persName>
             <persName type="geburtsname_nachname">Salzmann</persName>
-            <persName type="namensvariante">Salten Felix</persName>
             <persName type="legacy-name-merge">Salzmann, Siegmund</persName>
             <birth>
                <date when="1869-09-06">06.09.1869</date>
@@ -550,7 +549,7 @@
       <listBibl>
          <bibl xml:id="pmb30177">
             <title>Camelias</title>
-            <author ref="pmbperson__10863">Beer-Hofmann, Richard</author>
+            <author ref="pmbperson__10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
             <date when="1893-01-01">1893</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30177</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30177</idno>
@@ -561,8 +560,8 @@
          <bibl xml:id="pmb41603">
             <title>Maximilian Harden</title>
             <note type="bibliografische_angabe">Wiener Allgemeine Zeitung, 30.4.1892, S. 7-8</note>
-            <author ref="pmbperson__10863">Beer-Hofmann, Richard</author>
-            <date when="1892-04-30">30.4.1892</date>
+            <author ref="pmbperson__10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
+            <date>30.4.1892  – 30.4.1892</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41603/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41603</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41603</idno>
@@ -571,7 +570,7 @@
          <bibl xml:id="pmb39950">
             <title>Wiener Allgemeine Zeitung</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wiener_Allgemeine_Zeitung</idno>
-            <date when="1880-03-01">1.3.1880</date>
+            <date>1.3.1880  – 11.2.1934</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/39950/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39950</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb39950</idno>
@@ -580,7 +579,7 @@
          <bibl xml:id="pmb36344">
             <title>Frankfurter Zeitung</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurter_Zeitung</idno>
-            <date notBefore="1856-01-01" when="1856-07-01" notAfter="1856-12-31">1856</date>
+            <date from="1856-01-01" to="1856-12-31">1856  – 1943</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36344/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36344</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36344</idno>
@@ -588,8 +587,8 @@
          </bibl>
          <bibl xml:id="pmb41596">
             <title>Gekrönte Worte</title>
-            <author ref="pmbperson__11581">Harden, Maximilian</author>
-            <date when="1892-03-01">1.3.1892</date>
+            <author ref="pmbperson__11581" role="hat-geschaffen">Harden, Maximilian</author>
+            <date>1.3.1892  – 1.3.1892</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41596/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41596</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41596</idno>
@@ -603,6 +602,8 @@
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000958</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3194097</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/3194099/</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1134</desc>
             <location type="coords">
                <geo>45,33771 14,30515</geo>
             </location>
@@ -632,6 +633,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -653,6 +656,8 @@
          </place>
          <place xml:id="pmb756">
             <placeName>Pension Quisisana</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>45,333852 14,301821</geo>
             </location>
@@ -663,10 +668,15 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb756</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/756</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb756</idno>
+            <note type="apis_dates">
+               <date notBefore="1883-01-01" when="1883-07-02">1883</date>
+            </note>
          </place>
          <place xml:id="pmb462">
             <placeName>Venedig</placeName>
             <placeName type="legacy-name-merge">Venice</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>45,43713 12,33265</geo>
             </location>
@@ -684,6 +694,8 @@
       <listOrg>
          <org xml:id="pmb29781">
             <orgName>Freie Bühne (Verein für modernes Leben)</orgName>
+            <desc type="entity_type">Verein &gt;&gt; Literarische Vereinigung</desc>
+            <desc type="entity_type_id">997</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

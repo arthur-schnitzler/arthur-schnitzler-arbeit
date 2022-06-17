@@ -32,7 +32,7 @@
                <name>Martin Anton Müller</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00368</idno>
+            <idno type="asbw" n="00368"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -460,8 +460,8 @@
       <listBibl>
          <bibl xml:id="pmb39541">
             <title>Die Regeln des Duells</title>
-            <author ref="pmbperson__39539">Bolgár, Franz von</author>
-            <date when="1880-01-01">1880</date>
+            <author ref="pmbperson__39539" role="hat-geschaffen">Bolgár, Franz von</author>
+            <date>1880  – 1880</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/39541/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39541</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb39541</idno>
@@ -471,8 +471,8 @@
             <title>Ein Märchen</title>
             <note type="bibliografische_angabe">Die Zukunft, Jg. 8, 25. 8. 1894, S. 368–371</note>
             <note type="uri_worklink">https://archive.org/details/diezukunft24hardgoog/page/367/mode/2up?q=marholm&amp;view=theater</note>
-            <author ref="pmbperson__12183">Marholm, Laura</author>
-            <date when="1894-08-25">25.8.1894</date>
+            <author ref="pmbperson__12183" role="hat-geschaffen">Marholm, Laura</author>
+            <date>25.8.1894  – 25.8.1894</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40039/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40039</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40039</idno>
@@ -481,7 +481,8 @@
          <bibl xml:id="pmb40042">
             <title>Die Zukunft</title>
             <note type="uri_worklink">https://de.wikisource.org/wiki/Die_Zukunft_(Harden)</note>
-            <date when="1892-01-01">1892</date>
+            <author ref="pmbperson__11581" role="ist-beitragerin-zu">Harden, Maximilian</author>
+            <date>1892  – 1922</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40042/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40042</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40042</idno>
@@ -491,16 +492,14 @@
       <listPlace>
          <place xml:id="pmb59">
             <placeName>IX., Alsergrund</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,22387 16,35641</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb618">Kaiserjubiläum-Stadttheater</placeName>
-               <geo>48,224472 16,350361</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2782729/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb59</idno>
@@ -510,6 +509,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -535,6 +536,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -556,6 +559,8 @@
          </place>
          <place xml:id="pmb766">
             <placeName>Eglmoosgasse</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>47,713083 13,61758</geo>
             </location>
@@ -569,6 +574,8 @@
          </place>
          <place xml:id="pmb717">
             <placeName>Opernring</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,202859933076 16,366977055984</geo>
             </location>
@@ -590,6 +597,8 @@
          <org xml:id="pmb40227">
             <orgName>Schenker &amp; Co.</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Schenker_AG</idno>
+            <desc type="entity_type">Spedition</desc>
+            <desc type="entity_type_id">1359</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -608,6 +617,9 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40227/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40227</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40227</idno>
+            <note type="apis_dates">
+               <date when="1872-07-16">16.7.1872</date>
+            </note>
          </org>
       </listOrg>
    </back>

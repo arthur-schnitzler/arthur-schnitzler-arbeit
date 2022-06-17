@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01792</idno>
+            <idno type="asbw" n="01792"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -380,7 +380,7 @@
       <listBibl>
          <bibl xml:id="pmb33452">
             <title>Tubutsch</title>
-            <author ref="pmbperson__11230">Ehrenstein, Albert</author>
+            <author ref="pmbperson__11230" role="hat-geschaffen">Ehrenstein, Albert</author>
             <date when="1911-01-01">1911</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33452</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33452</idno>
@@ -388,8 +388,8 @@
          </bibl>
          <bibl xml:id="pmb33504">
             <title>Seltene Gäste</title>
-            <author ref="pmbperson__11230">Ehrenstein, Albert</author>
-            <date notBefore="1991-01-01" when="1991-07-02" notAfter="1991-12-31">1991</date>
+            <author ref="pmbperson__11230" role="hat-geschaffen">Ehrenstein, Albert</author>
+            <date from="1991-01-01" to="1991-12-31">1991  – 1991</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33504</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33504</idno>
             <note type="work_kind">Erzählung</note>
@@ -409,6 +409,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -430,6 +432,8 @@
          </place>
          <place xml:id="pmb300">
             <placeName>Ottakringerstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,214134550754 16,321028123618</geo>
             </location>

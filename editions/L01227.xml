@@ -34,7 +34,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01227</idno>
+            <idno type="asbw" n="01227"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -347,7 +347,7 @@
          <bibl xml:id="pmb32332">
             <title>Entgegen</title>
             <note type="bibliografische_angabe">Neues Wiener Tagblatt, 1. 7. 1902</note>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
             <date when="1902-07-01">01.07.1902</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=nwg&amp;datum=19020701&amp;seite=1&amp;zoom=33</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32332</idno>
@@ -359,6 +359,8 @@
       <listPlace>
          <place xml:id="pmb591">
             <placeName>Matrei am Brenner</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,12852 11,45222</geo>
             </location>
@@ -369,6 +371,8 @@
          </place>
          <place xml:id="pmb63">
             <placeName>XIII., Hietzing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,17547 16,29101</geo>
             </location>
@@ -394,6 +398,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -415,6 +421,8 @@
          </place>
          <place xml:id="pmb220">
             <placeName>Veitlissengasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,186622327678 16,259712159437</geo>
             </location>
@@ -434,11 +442,13 @@
          <place xml:id="pmb165">
             <placeName>Ober Sankt Veit</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Ober_Sankt_Veit</placeName>
+            <desc type="entity_type">eingemeindeter Ort (A.VOO)</desc>
+            <desc type="entity_type_id">40</desc>
             <location type="coords">
                <geo>48,188056 16,266389</geo>
             </location>
             <location type="located_in_place">
-               <placeName ref="pmb665">St. Veit</placeName>
+               <placeName ref="pmb665">Sankt Veit</placeName>
                <geo>48,18805 16,26638</geo>
             </location>
             <location type="located_in_place">
@@ -459,6 +469,8 @@
             <orgName type="loschen">http://anno.onb.ac.at/info/nwg_info.htm</orgName>
             <orgName type="legacy-name-merge">Neues Wiener Tagblatt</orgName>
             <idno type="URL" subtype="pmb">http://https://pmb.acdh.oeaw.ac.at/apis/api2/entity/37476/</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -484,6 +496,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29414</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29414</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29414</idno>
+            <note type="apis_dates">
+               <date from="1867-01-01" to="1867-12-31">1867  – 1945</date>
+            </note>
          </org>
       </listOrg>
    </back>

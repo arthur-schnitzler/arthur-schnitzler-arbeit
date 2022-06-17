@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01475</idno>
+            <idno type="asbw" n="01475"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -440,7 +440,7 @@
       <listBibl>
          <bibl xml:id="pmb29997">
             <title>Arthur Schnitzler</title>
-            <author ref="pmbperson__11551">Gurschner, Gustav</author>
+            <author ref="pmbperson__11551" role="hat-geschaffen">Gurschner, Gustav</author>
             <date when="1905-01-01">1905</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29997</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29997</idno>
@@ -449,7 +449,7 @@
          </bibl>
          <bibl xml:id="pmb29897">
             <title>Tristan und Isolde</title>
-            <author ref="pmbperson__13024">Wagner, Richard</author>
+            <author ref="pmbperson__13024" role="hat-geschaffen">Wagner, Richard</author>
             <date when="1865-01-01">1865</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29897</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29897</idno>
@@ -460,7 +460,7 @@
          <bibl xml:id="pmb29873">
             <title>Der Puppenspieler</title>
             <note type="bibliografische_angabe">Neue Freie Presse, 31. 5. 1903</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1903-05-31">31.05.1903</date>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-der-puppenspieler</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/38152</idno>
@@ -486,6 +486,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -508,6 +510,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -528,6 +532,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -543,6 +549,8 @@
          </place>
          <place xml:id="pmb3">
             <placeName>Deutsches Theater Berlin</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>52,524444 13,382222</geo>
             </location>

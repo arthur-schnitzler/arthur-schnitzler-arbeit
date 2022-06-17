@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02076</idno>
+            <idno type="asbw" n="02076"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -383,9 +383,9 @@
          <bibl xml:id="pmb30907">
             <title>Ariadne auf Naxos. Oper in einem Aufzug</title>
             <title type="legacy-name-merge">Ariadne auf Naxos</title>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
-            <author ref="pmbperson__12870">Strauss, Richard</author>
-            <date notBefore="1912-01-01" when="1912-07-01" notAfter="1912-12-31">1912</date>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__12870" role="hat-vertont">Strauss, Richard</author>
+            <date notBefore="1912-01-01" when="1912-07-01">1912</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30907</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30909</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30907</idno>
@@ -397,8 +397,8 @@
          <bibl xml:id="pmb44507">
             <title>Die Gedichte und kleinen Dramen</title>
             <note type="uri_worklink">https://commons.wikimedia.org/w/index.php?title=File:Die_Gedichte_und_kleinen_Dramen_von_Hugo_von_Hofmannsthal.pdf&amp;page=3</note>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
-            <date notBefore="1912-01-01" when="1912-07-01" notAfter="1912-12-31">1912</date>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
+            <date notBefore="1912-01-01" when="1912-07-01">1912</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44507/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb44507</idno>
             <note type="work_kind">Werkausgabe</note>
@@ -409,6 +409,8 @@
             <placeName>Rodaun</placeName>
             <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11742/</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>48,132793312328 16,256152195922</geo>
             </location>
@@ -435,6 +437,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -456,6 +460,8 @@
          </place>
          <place xml:id="pmb44493">
             <placeName>Tutzing</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA4</desc>
+            <desc type="entity_type_id">1483</desc>
             <location type="coords">
                <geo>47,90938 11,2803</geo>
             </location>
@@ -476,6 +482,8 @@
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/27181/</placeName>
             <placeName type="loschen">http://sws.geonames.org/7871703/</placeName>
             <placeName type="loschen">http://sws.geonames.org/2782043/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,96533 16,21359</geo>
             </location>
@@ -493,6 +501,8 @@
          <place xml:id="pmb75">
             <placeName>Hinterbrühl</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Hinterbrühl</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,08611 16,24809</geo>
             </location>
@@ -507,6 +517,8 @@
          </place>
          <place xml:id="pmb44495">
             <placeName>Villa Friedmann</placeName>
+            <desc type="entity_type">Gebäude (K.GBD)</desc>
+            <desc type="entity_type_id">24</desc>
             <location type="coords">
                <geo>48,0873 16,25314</geo>
             </location>

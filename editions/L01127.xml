@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01127</idno>
+            <idno type="asbw" n="01127"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -329,11 +329,10 @@
          </person>
          <person xml:id="pmb4006">
             <persName>
-               <forename>Fjodor M.</forename>
+               <forename>Fjodor Mihajlovič</forename>
                <surname>Dostojevskij</surname>
             </persName>
             <persName type="legacy-name-merge">Dostojewski, Fjodor M.</persName>
-            <persName type="namensvariante">Fëdor Mihajlovič Dostoevskij</persName>
             <persName type="uri_wikipedia">https://de.wikipedia.org/wiki/Fjodor_Michailowitsch_Dostojewski</persName>
             <birth>
                <date when="1821-11-11">11.11.1821</date>
@@ -403,8 +402,8 @@
             <title type="arbeitstitel">Die Egoisten</title>
             <title type="arbeitstitel">Einsame Wege</title>
             <title type="arbeitstitel">Wege ins Dunkle</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date notBefore="1904-01-01" when="1904-07-01" notAfter="1904-12-31">1904</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date notBefore="1904-01-01" when="1904-07-01">1904</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.08</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1198519</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-der-einsame-weg</idno>
@@ -421,7 +420,8 @@
             <note type="bibliografische_angabe">Neue Freie Presse, Nr. 13053, 25. 12. 1900, S. 34–41</note>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19001225&amp;seite=34&amp;zoom=33</note>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Leutnant_Gustl</idno>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
             <date when="1900-12-25">25.12.1900</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.39</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1821658</idno>
@@ -435,7 +435,7 @@
          </bibl>
          <bibl xml:id="pmb33317">
             <title>Die Sanfte</title>
-            <author ref="pmbperson__4006">Dostojevskij, Fjodor M.</author>
+            <author ref="pmbperson__4006" role="hat-geschaffen">Dostojevskij, Fjodor Mihajlovič</author>
             <date when="1876-01-01">1876</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33317</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33317</idno>
@@ -444,7 +444,7 @@
          <bibl xml:id="pmb32676">
             <title>Les lauriers sont coupés</title>
             <note type="bibliografische_angabe">La révue indépendante, Mai, Juni, Juli, August 1887</note>
-            <author ref="pmbperson__4974">Dujardin, Édouard</author>
+            <author ref="pmbperson__4974" role="hat-geschaffen">Dujardin, Édouard</author>
             <date when="1887-01-01">1887</date>
             <idno type="URL" subtype="gallica">https://gallica.bnf.fr/ark:/12148/bpt6k16488z/f293.image</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32676</idno>
@@ -468,6 +468,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -490,6 +492,8 @@
          <place xml:id="pmb306">
             <placeName>Hotel Guarnero</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Hotel_Kvarner</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>45,334861 14,307778</geo>
             </location>
@@ -500,10 +504,15 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb306</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/306</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb306</idno>
+            <note type="apis_dates">
+               <date notBefore="1884-01-01" when="1884-07-01">1884</date>
+            </note>
          </place>
          <place xml:id="pmb430">
             <placeName>Wörthersee</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000807</placeName>
+            <desc type="entity_type">See (N.SEE)</desc>
+            <desc type="entity_type_id">44</desc>
             <location type="coords">
                <geo>46,62917 14,12306</geo>
             </location>
@@ -519,6 +528,8 @@
          </place>
          <place xml:id="pmb1110">
             <placeName>Villa Arnstein</placeName>
+            <desc type="entity_type">Wohngebäude (K.WHS)</desc>
+            <desc type="entity_type_id">36</desc>
             <location type="coords">
                <geo>47,0277 14,4641</geo>
             </location>
@@ -533,6 +544,8 @@
             <placeName>Salzburg</placeName>
             <placeName type="alternative-name">Iuvavum</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4076982-3</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,80067 13,04532</geo>
             </location>

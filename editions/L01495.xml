@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01495</idno>
+            <idno type="asbw" n="01495"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -566,12 +566,18 @@
       <listPlace>
          <place xml:id="pmb68">
             <placeName>XVIII., Währing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,23333 16,31667</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb243">Sommerhaidenweg</placeName>
+               <geo>48,248935842869 16,296768550115</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb68</idno>
@@ -582,6 +588,8 @@
             <placeName>Rodaun</placeName>
             <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11742/</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>48,132793312328 16,256152195922</geo>
             </location>
@@ -608,6 +616,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -630,6 +640,8 @@
          <place xml:id="pmb40101">
             <placeName>Liesingerstraße</placeName>
             <placeName type="uri_wien-geschichte-wiki">https://www.geschichtewiki.wien.gv.at/Liesinger_Straße_(23,_Rodaun)</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,1332 16,25864</geo>
             </location>
@@ -644,10 +656,15 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40101/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40101</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40101</idno>
+            <note type="apis_dates">
+               <date when="1957-07-02" notAfter="1957-12-31">1957</date>
+            </note>
          </place>
          <place xml:id="pmb41016">
             <placeName>Mittelmeer</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Mittelmeer</placeName>
+            <desc type="entity_type">Meer (N.MER)</desc>
+            <desc type="entity_type_id">65</desc>
             <location type="coords">
                <geo>35,0 18,0</geo>
             </location>
@@ -659,6 +676,8 @@
             <placeName>Hamburg</placeName>
             <placeName type="loschen">Hamburgisches Staatsgebiet</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4023118-5</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>53,57532 10,01534</geo>
             </location>
@@ -672,6 +691,8 @@
          </place>
          <place xml:id="pmb38495">
             <placeName>Dover</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1108</desc>
             <location type="coords">
                <geo>39,15817 -75,52437</geo>
             </location>
@@ -691,6 +712,8 @@
             <placeName>Lissabon</placeName>
             <placeName type="uri_geonames">http://www.geonames.org/2267057/lisbon.html</placeName>
             <placeName type="legacy-name-merge">Lisabon</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>38,71667 -9,13333</geo>
             </location>
@@ -708,6 +731,8 @@
          <place xml:id="pmb48004">
             <placeName>Funchal</placeName>
             <placeName type="legacy-name-merge">Funchal, Madeira</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>32,66568 -16,92547</geo>
             </location>
@@ -726,6 +751,8 @@
          <place xml:id="pmb16330">
             <placeName>Teneriffa</placeName>
             <placeName type="uri_geonames">http://www.geonames.org/2510529/tenerife.html</placeName>
+            <desc type="entity_type">Insel (N.INS)</desc>
+            <desc type="entity_type_id">57</desc>
             <location type="coords">
                <geo>28,32977 -16,5097</geo>
             </location>
@@ -739,6 +766,8 @@
          </place>
          <place xml:id="pmb951">
             <placeName>Tanger</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>35,59 -5,9</geo>
             </location>
@@ -750,6 +779,8 @@
          </place>
          <place xml:id="pmb51646">
             <placeName>Gibraltar</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.PCLD</desc>
+            <desc type="entity_type_id">1533</desc>
             <location type="coords">
                <geo>36,13333 -5,35</geo>
             </location>
@@ -759,6 +790,8 @@
          </place>
          <place xml:id="pmb51697">
             <placeName>Oran</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>35,69906 -0,63588</geo>
             </location>
@@ -774,6 +807,8 @@
             <placeName>Algiers</placeName>
             <placeName type="alternative-name">Algier</placeName>
             <placeName type="legacy-name-merge">Algir</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>36,73225 3,08746</geo>
             </location>
@@ -791,6 +826,8 @@
          </place>
          <place xml:id="pmb48771">
             <placeName>Tunis</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>36,81897 10,16579</geo>
             </location>
@@ -806,6 +843,8 @@
          </place>
          <place xml:id="pmb901">
             <placeName>Palermo</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>38,13205 13,33561</geo>
             </location>
@@ -817,6 +856,8 @@
          </place>
          <place xml:id="pmb45264">
             <placeName>Monreale</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1410</desc>
             <location type="coords">
                <geo>38,08125 13,28947</geo>
             </location>
@@ -836,6 +877,8 @@
          </place>
          <place xml:id="pmb595">
             <placeName>Neapel</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>40,85216 14,26811</geo>
             </location>
@@ -848,6 +891,8 @@
          <place xml:id="pmb51642">
             <placeName>Vesuv</placeName>
             <placeName type="alternative-name">Vesuvius</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#T.VLC</desc>
+            <desc type="entity_type_id">1606</desc>
             <location type="coords">
                <geo>40,82293 14,42874</geo>
             </location>
@@ -862,6 +907,8 @@
          <place xml:id="pmb1283">
             <placeName>Pompei</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Pompeji</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>40,750556 14,489722</geo>
             </location>
@@ -876,6 +923,8 @@
          <place xml:id="pmb994">
             <placeName>Genua</placeName>
             <placeName type="legacy-name-merge">Genoa</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>44,40478 8,94439</geo>
             </location>
@@ -889,6 +938,8 @@
          </place>
          <place xml:id="pmb51666">
             <placeName>Villefranche-sur-Mer</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>43,70392 7,31088</geo>
             </location>
@@ -902,6 +953,8 @@
          </place>
          <place xml:id="pmb926">
             <placeName>Nizza</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>43,70313 7,26608</geo>
             </location>
@@ -914,6 +967,8 @@
          <place xml:id="pmb5862">
             <placeName>Monte Carlo</placeName>
             <placeName type="uri_geonames">http://www.geonames.org/2992741/monte-carlo.html</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>43,73976 7,42732</geo>
             </location>
@@ -925,6 +980,8 @@
          <place xml:id="pmb847">
             <placeName>Ajaccio</placeName>
             <placeName type="legacy-name">Ajaccio (Korsika)</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>41,91886 8,73812</geo>
             </location>
@@ -945,6 +1002,8 @@
          <place xml:id="pmb6588">
             <placeName>Barcelona</placeName>
             <placeName type="uri_geonames">http://www.geonames.org/3128760/barcelona.html</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>41,38879 2,15899</geo>
             </location>
@@ -959,6 +1018,8 @@
          </place>
          <place xml:id="pmb44129">
             <placeName>Messina</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1419</desc>
             <location type="coords">
                <geo>38,19394 15,55256</geo>
             </location>
@@ -976,6 +1037,8 @@
             <placeName>Istanbul</placeName>
             <placeName type="legacy-name-merge">Konstantinopel</placeName>
             <placeName type="alternative-name">Istanbul Province</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>41,01384 28,94966</geo>
             </location>
@@ -997,6 +1060,8 @@
          </place>
          <place xml:id="pmb44099">
             <placeName>Izmir</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>38,41273 27,13838</geo>
             </location>
@@ -1013,6 +1078,8 @@
          <place xml:id="pmb49145">
             <placeName>Piraeus</placeName>
             <placeName type="alternative-name">Piräus</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1410</desc>
             <location type="coords">
                <geo>37,94203 23,64619</geo>
             </location>
@@ -1028,6 +1095,8 @@
          </place>
          <place xml:id="pmb505">
             <placeName>Athen</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>37,97945 23,71622</geo>
             </location>
@@ -1040,6 +1109,8 @@
          <place xml:id="pmb48769">
             <placeName>Syrakus</placeName>
             <placeName type="alternative-name">Syracuse</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1419</desc>
             <location type="coords">
                <geo>37,07542 15,28664</geo>
             </location>
@@ -1060,6 +1131,8 @@
          <place xml:id="pmb41212">
             <placeName>Korfu</placeName>
             <placeName type="alternative-name">Corcyra (Insel)</placeName>
+            <desc type="entity_type">Insel (N.INS)</desc>
+            <desc type="entity_type_id">57</desc>
             <location type="coords">
                <geo>39,598055 19,852222</geo>
             </location>
@@ -1078,6 +1151,8 @@
          <place xml:id="pmb49149">
             <placeName>Kotor</placeName>
             <placeName type="legacy-name-merge">Cattaro</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>42,42067 18,76825</geo>
             </location>
@@ -1096,6 +1171,8 @@
          <place xml:id="pmb682">
             <placeName>Dubrovnik</placeName>
             <placeName type="none">Ragusa</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>42,64807 18,09216</geo>
             </location>
@@ -1109,6 +1186,8 @@
             <placeName>Split</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Split</placeName>
             <placeName type="legacy-name-merge">Spalato</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>43,5 16,433333</geo>
             </location>
@@ -1125,6 +1204,8 @@
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000958</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3194097</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/3194099/</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1134</desc>
             <location type="coords">
                <geo>45,33771 14,30515</geo>
             </location>
@@ -1144,6 +1225,8 @@
          <place xml:id="pmb44246">
             <placeName>Rijeka</placeName>
             <placeName type="namensvariante">Fiume</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>45,32673 14,44241</geo>
             </location>
@@ -1160,6 +1243,8 @@
          </place>
          <place xml:id="pmb873">
             <placeName>Triest</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>45,66667 13,76667</geo>
             </location>
@@ -1173,6 +1258,8 @@
             <placeName>Schloss Miramare</placeName>
             <placeName type="alternative-name">Schloss Miramar</placeName>
             <placeName type="alternative-name">Miramare Castle</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#S.CSTL</desc>
+            <desc type="entity_type_id">1581</desc>
             <location type="coords">
                <geo>45,70258 13,71261</geo>
             </location>
@@ -1191,6 +1278,8 @@
          <place xml:id="pmb462">
             <placeName>Venedig</placeName>
             <placeName type="legacy-name-merge">Venice</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>45,43713 12,33265</geo>
             </location>
@@ -1216,6 +1305,8 @@
             <placeName type="legacy-name-merge">New York, NY</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4042011-5</placeName>
             <placeName type="alternative-name">Big Apple</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>40,71427 -74,00597</geo>
             </location>
@@ -1232,6 +1323,8 @@
          <place xml:id="pmb51675">
             <placeName>Ponta Delgada</placeName>
             <placeName type="alternative-name">Ponta Delgada (Azores)</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>37,73952 -25,66874</geo>
             </location>
@@ -1246,6 +1339,8 @@
          <place xml:id="pmb51673">
             <placeName>Santa Cruz</placeName>
             <placeName type="alternative-name">Santa Cruz (Madeira)</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>32,68806 -16,79388</geo>
             </location>
@@ -1259,6 +1354,8 @@
          </place>
          <place xml:id="pmb51657">
             <placeName>Cagliari</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>39,23054 9,11917</geo>
             </location>
@@ -1272,6 +1369,8 @@
          </place>
          <place xml:id="pmb51695">
             <placeName>Porto</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>41,14961 -8,61099</geo>
             </location>
@@ -1285,6 +1384,8 @@
          </place>
          <place xml:id="pmb51699">
             <placeName>Saint Thomas</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.ADM1</desc>
+            <desc type="entity_type_id">1484</desc>
             <location type="coords">
                <geo>17,9 -76,43333</geo>
             </location>
@@ -1298,6 +1399,8 @@
          </place>
          <place xml:id="pmb51706">
             <placeName>Saint-Pierre</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>14,74309 -61,17541</geo>
             </location>
@@ -1312,6 +1415,8 @@
          <place xml:id="pmb51682">
             <placeName>Fort-de-France</placeName>
             <placeName type="alternative-name">Fort Royal</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>14,60365 -61,07418</geo>
             </location>
@@ -1326,6 +1431,8 @@
          <place xml:id="pmb39662">
             <placeName>San Juan</placeName>
             <placeName type="legacy-name">San Juan, Puerto Rico</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1103</desc>
             <location type="coords">
                <geo>18,46633 -66,10572</geo>
             </location>
@@ -1339,6 +1446,8 @@
          </place>
          <place xml:id="pmb51668">
             <placeName>Santiago de Cuba</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>20,02083 -75,82667</geo>
             </location>
@@ -1353,6 +1462,8 @@
          <place xml:id="pmb39944">
             <placeName>Havana</placeName>
             <placeName type="alternative-name">Havanna</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1103</desc>
             <location type="coords">
                <geo>23,13302 -82,38304</geo>
             </location>
@@ -1366,6 +1477,8 @@
          </place>
          <place xml:id="pmb51639">
             <placeName>Nassau</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>25,05823 -77,34306</geo>
             </location>
@@ -1379,6 +1492,8 @@
          </place>
          <place xml:id="pmb51654">
             <placeName>Bridgetown</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>13,10732 -59,62021</geo>
             </location>
@@ -1393,6 +1508,8 @@
          <place xml:id="pmb51701">
             <placeName>Port of Spain</placeName>
             <placeName type="alternative-name">Port-of-Spain</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>10,66668 -61,51889</geo>
             </location>
@@ -1406,6 +1523,8 @@
          </place>
          <place xml:id="pmb51685">
             <placeName>Punta Brea</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#T.CAPE</desc>
+            <desc type="entity_type_id">1608</desc>
             <location type="coords">
                <geo>17,93191 -66,91962</geo>
             </location>
@@ -1423,6 +1542,8 @@
          </place>
          <place xml:id="pmb51690">
             <placeName>La Guaira</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>10,60156 -66,93293</geo>
             </location>
@@ -1436,6 +1557,8 @@
          </place>
          <place xml:id="pmb51704">
             <placeName>Puerto Cabello</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1419</desc>
             <location type="coords">
                <geo>10,47306 -68,0125</geo>
             </location>
@@ -1450,6 +1573,8 @@
          <place xml:id="pmb51660">
             <placeName>Curaçao</placeName>
             <placeName type="alternative-name">Country of Curaçao</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.PCLIX</desc>
+            <desc type="entity_type_id">1607</desc>
             <location type="coords">
                <geo>12,16667 -68,96667</geo>
             </location>
@@ -1459,6 +1584,8 @@
          </place>
          <place xml:id="pmb51671">
             <placeName>Kingston</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>17,99702 -76,79358</geo>
             </location>
@@ -1473,6 +1600,8 @@
          <place xml:id="pmb46765">
             <placeName>Bermuda</placeName>
             <placeName type="alternative-name">Bermudas</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.PCLD</desc>
+            <desc type="entity_type_id">1533</desc>
             <location type="coords">
                <geo>32,33022 -64,74003</geo>
             </location>
@@ -1484,6 +1613,8 @@
             <placeName>Malta</placeName>
             <placeName type="alternative-name">Malta Island</placeName>
             <placeName type="alternative-name">Republic of Malta</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1411</desc>
             <location type="coords">
                <geo>35,91667 14,43333</geo>
             </location>
@@ -1497,6 +1628,8 @@
             <placeName>Alexandria</placeName>
             <placeName type="uri_geonames">http://www.geonames.org/361058/alexandria.html</placeName>
             <placeName type="legacy-name-merge">Alexandria?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>31,20176 29,91582</geo>
             </location>
@@ -1515,6 +1648,8 @@
             <placeName>Kairo</placeName>
             <placeName type="legacy-name">Fustat (Alt-Kairo)</placeName>
             <placeName type="legacy-name-merge">Cairo</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>30,06263 31,24967</geo>
             </location>
@@ -1534,6 +1669,8 @@
          </place>
          <place xml:id="pmb46759">
             <placeName>Beirut</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>33,89332 35,50157</geo>
             </location>
@@ -1550,6 +1687,8 @@
          <place xml:id="pmb51663">
             <placeName>Damascus</placeName>
             <placeName type="alternative-name">Damaskus</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>33,5102 36,29128</geo>
             </location>
@@ -1565,6 +1704,8 @@
          </place>
          <place xml:id="pmb51648">
             <placeName>Baalbek</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>34,00583 36,21806</geo>
             </location>
@@ -1582,6 +1723,8 @@
             <placeName type="alternative-name">Yafo</placeName>
             <placeName type="alternative-name">Yaffo</placeName>
             <placeName type="alternative-name">Yafah</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLX</desc>
+            <desc type="entity_type_id">1519</desc>
             <location type="coords">
                <geo>32,05043 34,75224</geo>
             </location>
@@ -1600,6 +1743,8 @@
          <place xml:id="pmb5297">
             <placeName>Jerusalem</placeName>
             <placeName type="uri_geonames">http://www.geonames.org/281184/jerusalem.html</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>31,76904 35,21633</geo>
             </location>
@@ -1614,6 +1759,8 @@
          </place>
          <place xml:id="pmb51677">
             <placeName>Nafplion</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1419</desc>
             <location type="coords">
                <geo>37,56863 22,80691</geo>
             </location>
@@ -1628,6 +1775,8 @@
          <place xml:id="pmb49147">
             <placeName>Elefsina</placeName>
             <placeName type="legacy-name-merge">Eleusis</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1410</desc>
             <location type="coords">
                <geo>38,04135 23,54295</geo>
             </location>
@@ -1646,6 +1795,8 @@
          <place xml:id="pmb51679">
             <placeName>Mycenae</placeName>
             <placeName type="alternative-name">Mykene</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#S.ANS</desc>
+            <desc type="entity_type_id">1572</desc>
             <location type="coords">
                <geo>37,73081 22,75638</geo>
             </location>
@@ -1659,6 +1810,8 @@
          </place>
          <place xml:id="pmb919">
             <placeName>Capri</placeName>
+            <desc type="entity_type">Insel (N.INS)</desc>
+            <desc type="entity_type_id">57</desc>
             <location type="coords">
                <geo>40,55073 14,24263</geo>
             </location>
@@ -1672,6 +1825,8 @@
             <placeName>Rom</placeName>
             <placeName type="legacy-name-merge">bei Rom</placeName>
             <placeName type="legacy-name-merge">Roma</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>41,89193 12,51133</geo>
             </location>
@@ -1689,6 +1844,8 @@
          </place>
          <place xml:id="pmb50493">
             <placeName>Schottenring</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,215136 16,365095</geo>
             </location>
@@ -1703,6 +1860,8 @@
       <listOrg>
          <org xml:id="pmb51616">
             <orgName>Internationales Reise-Bureau Schenker</orgName>
+            <desc type="entity_type">Reiseunternehmen</desc>
+            <desc type="entity_type_id">1604</desc>
             <location type="located_in_place">
                <placeName ref="pmb50493">Schottenring</placeName>
                <geo>48,215136 16,365095</geo>
@@ -1730,6 +1889,8 @@
          <org xml:id="pmb51619">
             <orgName>Hamburg-Amerika-Linie</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Hamburg-Amerikanische_Packetfahrt-Actien-Gesellschaft</idno>
+            <desc type="entity_type">Reederei</desc>
+            <desc type="entity_type_id">1605</desc>
             <location type="located_in_place">
                <placeName ref="pmb506">Hamburg</placeName>
                <geo>53,57532 10,01534</geo>
@@ -1743,6 +1904,9 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51619/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb51619</idno>
+            <note type="apis_dates">
+               <date when="1847-05-27">1847-05-27</date>
+            </note>
          </org>
       </listOrg>
    </back>

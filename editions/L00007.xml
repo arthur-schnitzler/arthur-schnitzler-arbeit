@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00007</idno>
+            <idno type="asbw" n="00007"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -255,9 +255,9 @@
       <listBibl>
          <bibl xml:id="pmb36149">
             <title>Freie Bühne für modernes Leben</title>
-            <author ref="pmbperson__10986">Brahm, Otto</author>
-            <author ref="pmbperson__11061">Bölsche, Wilhelm</author>
-            <date when="1890-01-01">1890</date>
+            <author ref="pmbperson__10986" role="hat-herausgegeben">Brahm, Otto</author>
+            <author ref="pmbperson__11061" role="hat-herausgegeben">Bölsche, Wilhelm</author>
+            <date>1890  – 1891</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36149/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36149</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36149</idno>
@@ -267,7 +267,7 @@
             <title>Morgenandacht</title>
             <note type="uri_worklink">https://archive.org/details/bub_gb_3N7NAAAAMAAJ/page/n199</note>
             <note type="bibliografische_angabe">Die Gesellschaft, Jg. 7, Bd. 1, H. 2, Februar 1891</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1891-02-01">1.2.1891</date>
             <idno type="URL" subtype="archive">https://archive.org/details/bub_gb_3N7NAAAAMAAJ/page/n199</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30151</idno>
@@ -287,6 +287,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -313,6 +315,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>

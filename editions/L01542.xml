@@ -32,7 +32,7 @@
                <name>Martin Anton Müller</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01542</idno>
+            <idno type="asbw" n="01542"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -452,13 +452,12 @@
                <surname>Vengerova</surname>
             </persName>
             <persName type="legacy-name-merge">Wengerowa, Zinaida</persName>
-            <persName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A002377</persName>
             <persName type="legacy-uri-merge">http://d-nb.info/gnd/119141035</persName>
-            <persName type="ehename">Minskiy</persName>
-            <persName type="namensvariante">Vengerowa</persName>
+            <persName type="verwitwet">Minskij</persName>
+            <persName type="namensvariante">Wengerowa</persName>
             <persName type="rufname">Zina</persName>
             <birth>
-               <date when="1867-04-06">06.04.1867</date>
+               <date when="1867-04-18">18.04.1867</date>
                <settlement ref="pmb61127">
                   <placeName type="pref">Suomenlinna</placeName>
                   <location>
@@ -743,7 +742,7 @@
       <listBibl>
          <bibl xml:id="pmb29999">
             <title>Die Andere</title>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
             <date when="1905-01-01">1905</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29999</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29999</idno>
@@ -758,8 +757,8 @@
             <title type="arbeitstitel">Cäcilie Adams</title>
             <title type="arbeitstitel">„Nicht mehr zu dir zu gehn …“</title>
             <title type="arbeitstitel">Adagio</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1905-10-12">1905-10-12</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1905-10-12  – 1905-10-12</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.35</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q245055</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/38158</idno>
@@ -775,7 +774,7 @@
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Der_Ruf_des_Lebens</idno>
             <note type="uri_worklink">http://www.literature.at/viewer.alo?objid=12117&amp;page=1&amp;viewmode=fullscreen</note>
             <title type="arbeitstitel">Vatermörderin</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1906-02-20">1906-02-20</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.12</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1196563</idno>
@@ -791,6 +790,8 @@
       <listPlace>
          <place xml:id="pmb985">
             <placeName>Fulpmes</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,15202 11,34922</geo>
             </location>
@@ -813,6 +814,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -834,6 +837,8 @@
          </place>
          <place xml:id="pmb751">
             <placeName>Grand Hotel Stubai</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,15563 11,35177</geo>
             </location>
@@ -851,6 +856,8 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4027096-8</placeName>
             <placeName type="alternative-name">Stadt Innsbruck</placeName>
             <placeName type="legacy-name-merge">bei Innsbruck</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,28433 11,37706</geo>
             </location>
@@ -870,6 +877,8 @@
          </place>
          <place xml:id="pmb423">
             <placeName>Tirol</placeName>
+            <desc type="entity_type">Teil eines Landes (A.LNDX)</desc>
+            <desc type="entity_type_id">13</desc>
             <location type="coords">
                <geo>47,25 11,33333</geo>
             </location>
@@ -885,6 +894,8 @@
          </place>
          <place xml:id="pmb651">
             <placeName>Kärnten</placeName>
+            <desc type="entity_type">Teil eines Landes (A.LNDX)</desc>
+            <desc type="entity_type_id">13</desc>
             <location type="coords">
                <geo>46,75 13,83333</geo>
             </location>
@@ -900,6 +911,8 @@
          </place>
          <place xml:id="pmb724">
             <placeName>Pustertal</placeName>
+            <desc type="entity_type">Region</desc>
+            <desc type="entity_type_id">47</desc>
             <location type="coords">
                <geo>46,75 12,33333</geo>
             </location>
@@ -915,6 +928,8 @@
             <placeName type="loschen">http://sws.geonames.org/3181912/</placeName>
             <placeName type="loschen">St. Justina bei Bozen</placeName>
             <placeName type="alternative-name">Bolzano</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1134</desc>
             <location type="coords">
                <geo>46,49067 11,33982</geo>
             </location>
@@ -936,6 +951,8 @@
          </place>
          <place xml:id="pmb39975">
             <placeName>Lago di Garda</placeName>
+            <desc type="entity_type">See (N.SEE)</desc>
+            <desc type="entity_type_id">44</desc>
             <location type="coords">
                <geo>45,6316 10,660517</geo>
             </location>
@@ -950,6 +967,8 @@
          <place xml:id="pmb259">
             <placeName>Lido</placeName>
             <placeName type="loschen">x</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>45,38333 12,35</geo>
             </location>
@@ -966,6 +985,8 @@
             <placeName>Rodaun</placeName>
             <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11742/</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>48,132793312328 16,256152195922</geo>
             </location>
@@ -983,6 +1004,8 @@
       <listOrg>
          <org xml:id="pmb29461">
             <orgName>J. Eisenstein &amp; Co.</orgName>
+            <desc type="entity_type">Buchhandlung</desc>
+            <desc type="entity_type_id">1020</desc>
             <location type="located_in_place">
                <placeName ref="pmb59">IX., Alsergrund</placeName>
                <geo>48,22387 16,35641</geo>

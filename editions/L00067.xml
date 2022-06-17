@@ -32,7 +32,7 @@
                <name>Martin Anton Müller</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00067</idno>
+            <idno type="asbw" n="00067"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -345,12 +345,6 @@
                      <geo>43,70313 7,26608</geo>
                   </location>
                </settlement>
-               <settlement ref="pmb926">
-                  <placeName type="pref">Nizza</placeName>
-                  <location>
-                     <geo>43,70313 7,26608</geo>
-                  </location>
-               </settlement>
             </death>
             <sex value="male"/>
             <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
@@ -401,8 +395,8 @@
          <bibl xml:id="pmb31837">
             <title>Die Blinden</title>
             <title type="namensvariante">Les Aveugles</title>
-            <author ref="pmbperson__12156">Maeterlinck, Maurice</author>
-            <date notBefore="1891-01-01" when="1891-07-02" notAfter="1891-12-31">1891</date>
+            <author ref="pmbperson__12156" role="hat-geschaffen">Maeterlinck, Maurice</author>
+            <date notBefore="1891-01-01" when="1891-07-02">1891</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31837</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31837</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31837</idno>
@@ -410,7 +404,7 @@
          </bibl>
          <bibl xml:id="pmb31951">
             <title>Der Garten der Bérenice</title>
-            <author ref="pmbperson__3892">Barrès, Maurice</author>
+            <author ref="pmbperson__3892" role="hat-geschaffen">Barrès, Maurice</author>
             <date when="1891-01-01">1891</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31951</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31951</idno>
@@ -419,7 +413,7 @@
          </bibl>
          <bibl xml:id="pmb31953">
             <title>Die sieben Prinzessinnen</title>
-            <author ref="pmbperson__12156">Maeterlinck, Maurice</author>
+            <author ref="pmbperson__12156" role="hat-geschaffen">Maeterlinck, Maurice</author>
             <date when="1891-01-01">1891</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31953</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31953</idno>
@@ -428,7 +422,7 @@
          </bibl>
          <bibl xml:id="pmb31945">
             <title>Die Überwindung des Naturalismus</title>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
             <date when="1891-01-01">1891</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31945</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31945</idno>
@@ -439,7 +433,7 @@
          <bibl xml:id="pmb32616">
             <title>Maurice Maeterlinck</title>
             <note type="bibliografische_angabe">Das Magazin für die Litteratur des In- und Auslandes, Jg. 60, Nr. 2, 10. 1. 1891</note>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
             <date when="1891-01-10">10.01.1891</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32616</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32616</idno>
@@ -450,7 +444,7 @@
             <title>Magazin für die Literatur des Auslandes</title>
             <note type="uri_worklink">https://de.wikisource.org/wiki/Magazin_für_die_Literatur_des_Auslandes</note>
             <title type="namensvariante">Das Magazin für Litteratur</title>
-            <date notBefore="1832-01-01" when="1832-07-01" notAfter="1832-12-31">1832</date>
+            <date from="1832-01-01" to="1832-12-31">1832  – 1915</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40968/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40968</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40968</idno>
@@ -471,6 +465,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -494,6 +490,8 @@
       <listOrg>
          <org xml:id="pmb29771">
             <orgName>E. Pierson’s Verlag</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb866">Dresden</placeName>
                <geo>51,0833 13,7666</geo>

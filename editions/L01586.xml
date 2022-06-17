@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01586</idno>
+            <idno type="asbw" n="01586"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -323,7 +323,7 @@
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Der_Ruf_des_Lebens</idno>
             <note type="uri_worklink">http://www.literature.at/viewer.alo?objid=12117&amp;page=1&amp;viewmode=fullscreen</note>
             <title type="arbeitstitel">Vatermörderin</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1906-02-20">1906-02-20</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.12</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1196563</idno>
@@ -340,8 +340,8 @@
             <note type="bibliografische_angabe">Die Zukunft, Bd. 54, H. 9, 3. 3. 1906</note>
             <note type="uri_worklink">https://archive.org/details/diezukunft46hardgoog/page/n363</note>
             <title type="pseudonym">M. H.</title>
-            <author ref="pmbperson__11581">Harden, Maximilian</author>
-            <date when="1906-03-03">03.03.1906</date>
+            <author ref="pmbperson__11581" role="hat-unter-pseudonym-geschrieben">Harden, Maximilian</author>
+            <date>03.03.1906  – 03.03.1906</date>
             <idno type="URL" subtype="archive">https://archive.org/stream/diezukunft46hardgoog#page/n363/mode/2up</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32518</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32518</idno>
@@ -350,7 +350,7 @@
          </bibl>
          <bibl xml:id="pmb31189">
             <title>Oedipus und die Sphinx. Tragödie in drei Aufzügen</title>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             <date when="1906-01-01">1906</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31189</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31189</idno>
@@ -360,7 +360,8 @@
          <bibl xml:id="pmb40042">
             <title>Die Zukunft</title>
             <note type="uri_worklink">https://de.wikisource.org/wiki/Die_Zukunft_(Harden)</note>
-            <date when="1892-01-01">1892</date>
+            <author ref="pmbperson__11581" role="ist-beitragerin-zu">Harden, Maximilian</author>
+            <date>1892  – 1922</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40042/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40042</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40042</idno>
@@ -369,8 +370,8 @@
          <bibl xml:id="pmb33043">
             <title>Und Pippa tanzt!</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Und_Pippa_tanzt!</idno>
-            <author ref="pmbperson__11617">Hauptmann, Gerhart</author>
-            <date notBefore="1906-01-01" when="1906-07-02" notAfter="1906-12-31">1906</date>
+            <author ref="pmbperson__11617" role="hat-geschaffen">Hauptmann, Gerhart</author>
+            <date notBefore="1906-01-01" when="1906-07-02">1906</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33043</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33043</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33043.html</idno>
@@ -378,8 +379,8 @@
          </bibl>
          <bibl xml:id="pmb41344">
             <title>Leidenschaft. Trauerspiel in fünf Aufzügen</title>
-            <author ref="pmbperson__11273">Eulenberg, Herbert</author>
-            <date when="1901-01-01">1901</date>
+            <author ref="pmbperson__11273" role="hat-geschaffen">Eulenberg, Herbert</author>
+            <date>1901  – 1901</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41344/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41344</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41344</idno>
@@ -402,6 +403,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>

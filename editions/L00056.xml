@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L00056</idno>
+            <idno type="asbw" n="00056"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -332,12 +332,6 @@
                      <geo>43,70313 7,26608</geo>
                   </location>
                </settlement>
-               <settlement ref="pmb926">
-                  <placeName type="pref">Nizza</placeName>
-                  <location>
-                     <geo>43,70313 7,26608</geo>
-                  </location>
-               </settlement>
             </death>
             <sex value="male"/>
             <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
@@ -387,8 +381,8 @@
          <bibl xml:id="pmb30189">
             <title>Der Eindringling</title>
             <title type="namensvariante">L’intruse</title>
-            <author ref="pmbperson__12156">Maeterlinck, Maurice</author>
-            <date notBefore="1891-01-01" when="1891-07-02" notAfter="1891-12-31">1891</date>
+            <author ref="pmbperson__12156" role="hat-geschaffen">Maeterlinck, Maurice</author>
+            <date notBefore="1891-01-01" when="1891-07-02">1891</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30189</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30189</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30189</idno>
@@ -396,8 +390,8 @@
          </bibl>
          <bibl xml:id="pmb31259">
             <title>Prinzessin Maleine</title>
-            <author ref="pmbperson__12156">Maeterlinck, Maurice</author>
-            <date notBefore="1889-01-01" when="1889-07-02" notAfter="1889-12-31">1889</date>
+            <author ref="pmbperson__12156" role="hat-geschaffen">Maeterlinck, Maurice</author>
+            <date notBefore="1889-01-01" when="1889-07-02">1889</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31259</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31259</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31259</idno>
@@ -418,6 +412,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>

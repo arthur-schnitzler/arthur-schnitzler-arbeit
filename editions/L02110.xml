@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02110</idno>
+            <idno type="asbw" n="02110"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -370,8 +370,8 @@
       <listBibl>
          <bibl xml:id="pmb40211">
             <title>Das Märchen vom Wolf</title>
-            <author ref="pmbperson__21558">Molnár, Ferenc</author>
-            <date when="1912-01-01">1912</date>
+            <author ref="pmbperson__21558" role="hat-geschaffen">Molnár, Ferenc</author>
+            <date>1912  – 1912</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40211/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40211</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40211</idno>
@@ -380,7 +380,7 @@
          </bibl>
          <bibl xml:id="pmb30129">
             <title>Jedermann. Das Spiel vom Sterben des reichen Mannes</title>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             <date when="1911-01-01">1911</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30129</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30129</idno>
@@ -402,6 +402,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -423,6 +425,8 @@
          </place>
          <place xml:id="pmb150">
             <placeName>Sternwartestraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,23099349198 16,340117830625</geo>
             </location>
@@ -439,6 +443,8 @@
             <placeName>Volkstheater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Volkstheater_(Wien)</placeName>
             <placeName type="namensvariante">Deutsches Volkstheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,205142 16,3566</geo>
             </location>

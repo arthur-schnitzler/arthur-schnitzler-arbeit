@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01692</idno>
+            <idno type="asbw" n="01692"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -399,8 +399,8 @@
       <listBibl>
          <bibl xml:id="pmb50960">
             <title>Almanach der Wiener Werkstätte</title>
-            <author ref="pmbperson__12225">Mell, Max</author>
-            <date notBefore="1911-01-01" when="1911-07-02" notAfter="1911-12-31">1911</date>
+            <author ref="pmbperson__12225" role="hat-herausgegeben">Mell, Max</author>
+            <date from="1911-01-01" to="1911-12-31">1911  – 1911</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50960/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50960</idno>
             <note type="work_kind">Publikationsorgan &gt;&gt; Jahrbuch</note>
@@ -420,6 +420,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -441,6 +443,8 @@
          </place>
          <place xml:id="pmb57">
             <placeName>VII., Neubau</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,2 16,35</geo>
             </location>
@@ -454,6 +458,8 @@
          </place>
          <place xml:id="pmb50568">
             <placeName>Neustiftgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,20541 16,35096</geo>
             </location>
@@ -468,6 +474,8 @@
             <placeName>Ungarn</placeName>
             <placeName type="alternative-name">Republic of Hungary</placeName>
             <placeName type="legacy-name-merge">Hungary</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,0 20,0</geo>
             </location>
@@ -485,6 +493,8 @@
          </place>
          <place xml:id="pmb1238">
             <placeName>Wittelsbachstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,20635 16,39925</geo>
             </location>
@@ -502,6 +512,8 @@
             <orgName>Wiener Werkstätte</orgName>
             <orgName type="alternative-name">Wiener Werkstätten</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wiener_Werkstätte</idno>
+            <desc type="entity_type">Produktionsgemeinschaft</desc>
+            <desc type="entity_type_id">1353</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -526,6 +538,9 @@
             <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/2051752-X</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40016</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40016</idno>
+            <note type="apis_dates">
+               <date>1903  – 1932</date>
+            </note>
          </org>
       </listOrg>
    </back>

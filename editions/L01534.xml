@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01534</idno>
+            <idno type="asbw" n="01534"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -421,12 +421,6 @@
                      <geo>47,80266 7,67618</geo>
                   </location>
                </settlement>
-               <settlement ref="pmb39498">
-                  <placeName type="pref">Badenweiler</placeName>
-                  <location>
-                     <geo>47,80266 7,67618</geo>
-                  </location>
-               </settlement>
             </death>
             <sex value="male"/>
             <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
@@ -494,7 +488,7 @@
       <listBibl>
          <bibl xml:id="pmb29999">
             <title>Die Andere</title>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
             <date when="1905-01-01">1905</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29999</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29999</idno>
@@ -507,6 +501,8 @@
          <place xml:id="pmb483">
             <placeName>Reichenau an der Rax</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/8461/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,7 15,83333</geo>
             </location>
@@ -533,6 +529,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>

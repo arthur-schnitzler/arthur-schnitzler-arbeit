@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00579</idno>
+            <idno type="asbw" n="00579"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -537,7 +537,7 @@
       <listBibl>
          <bibl xml:id="pmb29899">
             <title>Freiwild. Schauspiel in 3 Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1896-01-01">1896</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.21</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1454877</idno>
@@ -551,7 +551,7 @@
          </bibl>
          <bibl xml:id="pmb34220">
             <title>Geschichte der beiden Liebespaare</title>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             <date when="1978-01-01">1978</date>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34220/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34220</idno>
@@ -562,6 +562,8 @@
       <listPlace>
          <place xml:id="pmb958">
             <placeName>Skodsborg</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>55,8225 12,57324</geo>
             </location>
@@ -577,6 +579,8 @@
          </place>
          <place xml:id="pmb36140">
             <placeName>Ven</placeName>
+            <desc type="entity_type">Insel (N.INS)</desc>
+            <desc type="entity_type_id">57</desc>
             <location type="coords">
                <geo>55,90806 12,69778</geo>
             </location>
@@ -595,6 +599,8 @@
          <place xml:id="pmb44599">
             <placeName>Ostsee</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Ostsee</placeName>
+            <desc type="entity_type">Meer (N.MER)</desc>
+            <desc type="entity_type_id">65</desc>
             <location type="coords">
                <geo>59,0 21,0</geo>
             </location>
@@ -604,6 +610,8 @@
          <place xml:id="pmb41072">
             <placeName>Nordkap</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Nordkap</placeName>
+            <desc type="entity_type">Kap (N.KAP)</desc>
+            <desc type="entity_type_id">77</desc>
             <location type="coords">
                <geo>71,1725 25,784444</geo>
             </location>
@@ -613,6 +621,8 @@
          </place>
          <place xml:id="pmb40290">
             <placeName>Trondheim</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1134</desc>
             <location type="coords">
                <geo>63,43049 10,39506</geo>
             </location>
@@ -626,12 +636,10 @@
          </place>
          <place xml:id="pmb40700">
             <placeName>Göteborg</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1108</desc>
             <location type="coords">
                <geo>57,70716 11,96679</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb40698">Gothenburg Municipality</placeName>
-               <geo>57,72288 11,94577</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb44335">Schweden</placeName>
@@ -650,6 +658,8 @@
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/7601/</placeName>
             <placeName type="legacy-name-merge">Oslo–Christiania</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11801/</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1103</desc>
             <location type="coords">
                <geo>59,91273 10,74609</geo>
             </location>
@@ -663,6 +673,8 @@
          </place>
          <place xml:id="pmb36300">
             <placeName>Kopenhagen</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>55,67594 12,56553</geo>
             </location>
@@ -681,6 +693,8 @@
          </place>
          <place xml:id="pmb1091">
             <placeName>Badehotel</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>55,826747 12,574733</geo>
             </location>
@@ -699,6 +713,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -725,6 +741,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>

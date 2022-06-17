@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01657</idno>
+            <idno type="asbw" n="01657"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -479,7 +479,7 @@
       <listBibl>
          <bibl xml:id="pmb29917">
             <title>Liebelei. Schauspiel in drei Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1895-10-09">9.10.1895</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.27</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1823758</idno>
@@ -496,8 +496,8 @@
             <title>Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
             <title type="arbeitstitel">Shawl</title>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=601&amp;teil=0111&amp;seite=00000001&amp;zoom=2</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1900-12-01">1900-12-01</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1900-12-01  – 1900-12-01</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.13</idno>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=601&amp;teil=0303&amp;seite=00000215&amp;zoom=2</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29857</idno>
@@ -509,7 +509,7 @@
          <bibl xml:id="pmb30015">
             <title>Grillparzer</title>
             <note type="bibliografische_angabe">Die Schaubühne, Jg. 3, H. 7, 14. 2. 1907</note>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
             <date when="1907-02-14">14.02.1907</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30015</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30015</idno>
@@ -521,9 +521,9 @@
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Die_Weltbühne</idno>
             <title type="namensvariante">Die Weltbühne</title>
             <title type="namensvariante">Die neue Weltbühne</title>
-            <author ref="pmbperson__11813">Jacobsohn, Siegfried</author>
-            <author ref="pmbperson__43666">Schlamm, William Siegmund</author>
-            <date when="1905-09-07">7.9.1905</date>
+            <author ref="pmbperson__11813" role="hat-herausgegeben">Jacobsohn, Siegfried</author>
+            <author ref="pmbperson__43666" role="hat-herausgegeben">Schlamm, William Siegmund</author>
+            <date>7.9.1905  – 1993</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41564/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41564</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41564</idno>
@@ -531,8 +531,8 @@
          </bibl>
          <bibl xml:id="pmb30715">
             <title>Wien</title>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
-            <date notBefore="1907-01-01" when="1907-07-02" notAfter="1907-12-31">1907</date>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
+            <date notBefore="1907-01-01" when="1907-07-02">1907</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30715</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30715</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30715</idno>
@@ -542,7 +542,7 @@
          <bibl xml:id="pmb31701">
             <title>Laiengedanken über die Wahlen in Österreich</title>
             <note type="bibliografische_angabe">Neue Freie Presse, 2. 2. 1907</note>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
             <date when="1907-02-02">02.02.1907</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31701</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31701</idno>
@@ -564,6 +564,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -591,6 +593,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -609,6 +613,8 @@
          <org xml:id="pmb29348">
             <orgName>Die Schaubühne / Die Weltbühne</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Die_Weltbühne</idno>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb168">Berlin</placeName>
                <geo>52,52437 13,41053</geo>
@@ -625,6 +631,8 @@
          <org xml:id="pmb29351">
             <orgName>Neue Freie Presse</orgName>
             <idno type="URL" subtype="">http://anno.onb.ac.at/info/nfp_info.htm</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -655,6 +663,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29351</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29351</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29351</idno>
+            <note type="apis_dates">
+               <date>1864-09-01  – 1939-02-01</date>
+            </note>
          </org>
       </listOrg>
    </back>

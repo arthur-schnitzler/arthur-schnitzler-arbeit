@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01587</idno>
+            <idno type="asbw" n="01587"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -519,7 +519,6 @@
             <persName type="geburtsname_nachname">Zaremba</persName>
             <persName type="namensvariante">Pallatschek</persName>
             <persName type="ehename">da Minotto</persName>
-            <persName type="namensvariante">Zaremba Agnes Martha Karoline</persName>
             <persName type="legacy-name-merge">Sorma, Agnes</persName>
             <birth>
                <date when="1862-05-17">17.05.1862</date>
@@ -588,7 +587,7 @@
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Der_Ruf_des_Lebens</idno>
             <note type="uri_worklink">http://www.literature.at/viewer.alo?objid=12117&amp;page=1&amp;viewmode=fullscreen</note>
             <title type="arbeitstitel">Vatermörderin</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1906-02-20">1906-02-20</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.12</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1196563</idno>
@@ -605,8 +604,8 @@
             <note type="bibliografische_angabe">Die Zukunft, Bd. 54, H. 9, 3. 3. 1906</note>
             <note type="uri_worklink">https://archive.org/details/diezukunft46hardgoog/page/n363</note>
             <title type="pseudonym">M. H.</title>
-            <author ref="pmbperson__11581">Harden, Maximilian</author>
-            <date when="1906-03-03">03.03.1906</date>
+            <author ref="pmbperson__11581" role="hat-unter-pseudonym-geschrieben">Harden, Maximilian</author>
+            <date>03.03.1906  – 03.03.1906</date>
             <idno type="URL" subtype="archive">https://archive.org/stream/diezukunft46hardgoog#page/n363/mode/2up</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32518</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32518</idno>
@@ -615,7 +614,7 @@
          </bibl>
          <bibl xml:id="pmb31189">
             <title>Oedipus und die Sphinx. Tragödie in drei Aufzügen</title>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             <date when="1906-01-01">1906</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31189</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31189</idno>
@@ -637,6 +636,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -659,6 +660,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -673,6 +676,8 @@
          </place>
          <place xml:id="pmb63">
             <placeName>XIII., Hietzing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,17547 16,29101</geo>
             </location>
@@ -693,6 +698,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -708,6 +715,8 @@
          </place>
          <place xml:id="pmb176">
             <placeName>Dornbacher Park</placeName>
+            <desc type="entity_type">Park (K.PRK)</desc>
+            <desc type="entity_type_id">19</desc>
             <location type="coords">
                <geo>48,241960480337 16,276509500872</geo>
             </location>

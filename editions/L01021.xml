@@ -34,7 +34,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01021</idno>
+            <idno type="asbw" n="01021"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -587,12 +587,6 @@
                      <geo>43,70313 7,26608</geo>
                   </location>
                </settlement>
-               <settlement ref="pmb926">
-                  <placeName type="pref">Nizza</placeName>
-                  <location>
-                     <geo>43,70313 7,26608</geo>
-                  </location>
-               </settlement>
             </death>
             <sex value="male"/>
             <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
@@ -607,8 +601,8 @@
       <listBibl>
          <bibl xml:id="pmb40611">
             <title>Paracelsus und Dr. Schnitzler</title>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
-            <date when="1993-01-01">1993</date>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
+            <date>1993  – 1993</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40611/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40611</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40611</idno>
@@ -618,8 +612,8 @@
             <title>Vorspiel zur Antigone des Sophokles</title>
             <note type="uri_worklink">https://babel.hathitrust.org/cgi/pt?id=uc1.b2935471&amp;view=1up&amp;seq=246</note>
             <note type="bibliografische_angabe">Die Insel, Jg. 1, H. 8, Mai 1900, S. 230–241</note>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
-            <date when="1900-03-26">26.3.1900</date>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
+            <date>26.3.1900  – 26.3.1900</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40595/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40595</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40595</idno>
@@ -628,7 +622,7 @@
          <bibl xml:id="pmb31593">
             <title>Antigone</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Antigone_(Sophokles)</idno>
-            <author ref="pmbperson__2693">Sophokles</author>
+            <author ref="pmbperson__2693" role="hat-geschaffen">Sophokles</author>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31593</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31593</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31593</idno>
@@ -644,6 +638,8 @@
             <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
             <placeName type="alternative-name">Pariž</placeName>
             <placeName type="alternative-name">Parisius</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,85341 2,3488</geo>
             </location>
@@ -666,6 +662,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -687,6 +685,8 @@
          </place>
          <place xml:id="pmb34022">
             <placeName>Boulevard Haussmann</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,874433 2,322216</geo>
             </location>
@@ -705,6 +705,8 @@
             <placeName type="alternative-name">West Germany</placeName>
             <placeName type="alternative-name">Federal Republic of Germany</placeName>
             <placeName type="legacy-name-merge">Germany</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>51,5 10,5</geo>
             </location>
@@ -726,6 +728,8 @@
          <place xml:id="pmb611">
             <placeName>Bois de Boulogne</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Bois_de_Boulogne</placeName>
+            <desc type="entity_type">Park (K.PRK)</desc>
+            <desc type="entity_type_id">19</desc>
             <location type="coords">
                <geo>48,866667 2,250278</geo>
             </location>
@@ -741,6 +745,8 @@
          </place>
          <place xml:id="pmb44131">
             <placeName>Meudon</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>48,81381 2,235</geo>
             </location>
@@ -756,6 +762,8 @@
          </place>
          <place xml:id="pmb123">
             <placeName>Villenes-sur-Seine</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,94137 1,99137</geo>
             </location>
@@ -771,6 +779,8 @@
          <place xml:id="pmb263">
             <placeName>Florenz</placeName>
             <placeName type="alternative-name">Florence</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>43,77925 11,24626</geo>
             </location>
@@ -794,6 +804,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>

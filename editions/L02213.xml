@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02213</idno>
+            <idno type="asbw" n="02213"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -286,7 +286,7 @@
       <listBibl>
          <bibl xml:id="pmb33628">
             <title>Gesellschaft [Eine Gaunerkomödie]</title>
-            <author ref="pmbperson__12438">Adam, Robert</author>
+            <author ref="pmbperson__12438" role="hat-geschaffen">Adam, Robert</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33628</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33628</idno>
             <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
@@ -306,6 +306,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -327,6 +329,8 @@
          </place>
          <place xml:id="pmb44400">
             <placeName>Zistersdorf</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.ADM3</desc>
+            <desc type="entity_type_id">1434</desc>
             <location type="coords">
                <geo>48,53585 16,75613</geo>
             </location>
@@ -342,6 +346,8 @@
          </place>
          <place xml:id="pmb150">
             <placeName>Sternwartestraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,23099349198 16,340117830625</geo>
             </location>
@@ -358,6 +364,8 @@
             <placeName>Niederösterreich</placeName>
             <placeName type="alternative-name">Nideristaraich</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/2770542/</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>48,33333 15,75</geo>
             </location>
@@ -374,6 +382,8 @@
          <place xml:id="pmb633">
             <placeName>Kammerspiele Wien</placeName>
             <placeName type="namensvariante">Residenzbühne</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,211111 16,375833</geo>
             </location>
@@ -384,9 +394,14 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb633</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/633</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb633</idno>
+            <note type="apis_dates">
+               <date notBefore="1910-01-01" when="1910-07-02">1910</date>
+            </note>
          </place>
          <place xml:id="pmb34399">
             <placeName>Neue Wiener Bühne</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,2195962 16,3589845</geo>
             </location>
@@ -397,6 +412,9 @@
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34399/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34399</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34399</idno>
+            <note type="apis_dates">
+               <date when="1908-01-01">1908</date>
+            </note>
          </place>
       </listPlace>
    </back>

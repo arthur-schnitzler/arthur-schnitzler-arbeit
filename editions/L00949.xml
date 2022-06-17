@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00949</idno>
+            <idno type="asbw" n="00949"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -424,7 +424,6 @@
             </persName>
             <persName type="geburtsname_vorname">Siegmund</persName>
             <persName type="geburtsname_nachname">Salzmann</persName>
-            <persName type="namensvariante">Salten Felix</persName>
             <persName type="legacy-name-merge">Salzmann, Siegmund</persName>
             <birth>
                <date when="1869-09-06">06.09.1869</date>
@@ -458,8 +457,8 @@
          <bibl xml:id="pmb32432">
             <title>Das Bergwerk zu Falun</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Das_Bergwerk_zu_Falun</idno>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
-            <date notBefore="1900-01-01" when="1900-07-02" notAfter="1900-12-31">1900</date>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
+            <date from="1900-01-01" to="1900-12-31">1900  – 1933</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32432</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32432</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb32432</idno>
@@ -473,6 +472,8 @@
             <placeName type="none">Marianske Lázne</placeName>
             <placeName type="alternative-name">Mariánské Lázně</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4037541-9</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>49,96115 12,72872</geo>
             </location>
@@ -495,6 +496,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -519,6 +522,8 @@
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000556</placeName>
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q262951</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/2782724</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.ADM3</desc>
+            <desc type="entity_type_id">1124</desc>
             <location type="coords">
                <geo>47,6698 13,78453</geo>
             </location>
@@ -533,6 +538,8 @@
          </place>
          <place xml:id="pmb106">
             <placeName>Seewirt</placeName>
+            <desc type="entity_type">Lokal (K.LKL)</desc>
+            <desc type="entity_type_id">22</desc>
             <location type="coords">
                <geo>47,6417 13,77189</geo>
             </location>
@@ -546,6 +553,8 @@
          </place>
          <place xml:id="pmb5907">
             <placeName>Passau</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,573333 13,456944</geo>
             </location>
@@ -561,6 +570,8 @@
          <place xml:id="pmb44172">
             <placeName>Nürnberg</placeName>
             <placeName type="alternative-name">Nürenberg</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>49,45421 11,07752</geo>
             </location>
@@ -577,6 +588,8 @@
          </place>
          <place xml:id="pmb856">
             <placeName>Rothenburg ob der Tauber</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>49,37885 10,18711</geo>
             </location>
@@ -597,16 +610,10 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4127793-4</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000355</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3220837</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb45258">München</placeName>
-               <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb54315">Brienner Straße</placeName>
-               <geo>48,14512778708449 11,568353382899355</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb314">Bayern</placeName>
@@ -626,6 +633,8 @@
             <placeName>Salzburg</placeName>
             <placeName type="alternative-name">Iuvavum</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4076982-3</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,80067 13,04532</geo>
             </location>

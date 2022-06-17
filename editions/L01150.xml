@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01150</idno>
+            <idno type="asbw" n="01150"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -503,8 +503,8 @@
             <title type="arbeitstitel">Die Egoisten</title>
             <title type="arbeitstitel">Einsame Wege</title>
             <title type="arbeitstitel">Wege ins Dunkle</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date notBefore="1904-01-01" when="1904-07-01" notAfter="1904-12-31">1904</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date notBefore="1904-01-01" when="1904-07-01">1904</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.08</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1198519</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-der-einsame-weg</idno>
@@ -521,8 +521,8 @@
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Professor_Bernhardi</idno>
             <title type="arbeitstitel">Ärztestück</title>
             <title type="arbeitstitel">Junggesellenstück</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date notBefore="1912-01-01" when="1912-07-01" notAfter="1912-12-31">1912</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date notBefore="1912-01-01" when="1912-07-01">1912</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.31</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q872683</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-professor-bernhardi</idno>
@@ -537,8 +537,8 @@
          <bibl xml:id="pmb30233">
             <title>Der Graf von Charolais. Ein Trauerspiel</title>
             <title type="arbeitstitel">Die unseelige Mitgift</title>
-            <author ref="pmbperson__10863">Beer-Hofmann, Richard</author>
-            <date when="1904-12-23">1904-12-23</date>
+            <author ref="pmbperson__10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
+            <date>1904-12-23  – 1904-12-23</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30233</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30233</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30233</idno>
@@ -550,6 +550,8 @@
       <listPlace>
          <place xml:id="pmb946">
             <placeName>Vahrn</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>46,73901 11,63749</geo>
             </location>
@@ -564,6 +566,8 @@
          </place>
          <place xml:id="pmb44278">
             <placeName>Pörtschach</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>47,02251 14,47783</geo>
             </location>
@@ -583,6 +587,8 @@
          </place>
          <place xml:id="pmb1110">
             <placeName>Villa Arnstein</placeName>
+            <desc type="entity_type">Wohngebäude (K.WHS)</desc>
+            <desc type="entity_type_id">36</desc>
             <location type="coords">
                <geo>47,0277 14,4641</geo>
             </location>
@@ -596,6 +602,8 @@
          <place xml:id="pmb430">
             <placeName>Wörthersee</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000807</placeName>
+            <desc type="entity_type">See (N.SEE)</desc>
+            <desc type="entity_type_id">44</desc>
             <location type="coords">
                <geo>46,62917 14,12306</geo>
             </location>
@@ -612,6 +620,8 @@
          <place xml:id="pmb1216">
             <placeName>Seiser Alm</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Seiser_Alm</placeName>
+            <desc type="entity_type">Berg (N.BRG)</desc>
+            <desc type="entity_type_id">28</desc>
             <location type="coords">
                <geo>46,541111 11,644722</geo>
             </location>
@@ -621,6 +631,8 @@
          </place>
          <place xml:id="pmb39870">
             <placeName>Tiers</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.ADM3</desc>
+            <desc type="entity_type_id">1124</desc>
             <location type="coords">
                <geo>46,46832 11,52768</geo>
             </location>
@@ -638,6 +650,8 @@
          </place>
          <place xml:id="pmb39975">
             <placeName>Lago di Garda</placeName>
+            <desc type="entity_type">See (N.SEE)</desc>
+            <desc type="entity_type_id">44</desc>
             <location type="coords">
                <geo>45,6316 10,660517</geo>
             </location>
@@ -652,6 +666,8 @@
          <place xml:id="pmb40294">
             <placeName>Torbole sul Garda</placeName>
             <placeName type="alternative-name">Turbel</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1128</desc>
             <location type="coords">
                <geo>45,86951 10,87561</geo>
             </location>
@@ -680,6 +696,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -702,6 +720,8 @@
          <place xml:id="pmb40371">
             <placeName>Karersee</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Karersee</placeName>
+            <desc type="entity_type">See (N.SEE)</desc>
+            <desc type="entity_type_id">44</desc>
             <location type="coords">
                <geo>46,409167 11,575</geo>
             </location>

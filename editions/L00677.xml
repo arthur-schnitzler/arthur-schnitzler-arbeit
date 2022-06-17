@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00677</idno>
+            <idno type="asbw" n="00677"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -274,8 +274,7 @@
                <forename>Otto</forename>
                <surname>Brahm</surname>
             </persName>
-            <persName type="namensvariante">Abrahamson</persName>
-            <persName type="geburtsname_nachname">Abraham</persName>
+            <persName type="geburtsname_nachname">Abrahamson</persName>
             <birth>
                <date when="1856-02-05">05.02.1856</date>
                <settlement ref="pmb506">
@@ -351,6 +350,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -377,6 +378,8 @@
             <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
             <placeName type="alternative-name">Pariž</placeName>
             <placeName type="alternative-name">Parisius</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,85341 2,3488</geo>
             </location>
@@ -390,22 +393,29 @@
             <placeName>London</placeName>
             <placeName type="alternative-name">Landan</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4074335-4</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1103</desc>
             <location type="coords">
                <geo>51,50853 -0,12574</geo>
             </location>
-            <idno type="URL" subtype="geonames">http://sws.geonames.org/2643743/</idno>
+            <location type="located_in_place">
+               <placeName ref="pmb34523">Vereinigtes Königreich</placeName>
+               <geo>54,75844 -2,69531</geo>
+            </location>
+            <idno type="URL" subtype="geonames">https://sws.geonames.org/2643743/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb224</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/224</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb224</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62748/</idno>
+            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4074335-4</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64147/</idno>
          </place>
          <place xml:id="pmb499">
             <placeName>Dornbach</placeName>
+            <desc type="entity_type">eingemeindeter Ort (A.VOO)</desc>
+            <desc type="entity_type_id">40</desc>
             <location type="coords">
                <geo>48,230916826952 16,299116267833</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb50">Wien</placeName>
-               <geo>48,2066 16,37341</geo>
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:Dornbach_(Vorort)</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb499</idno>
@@ -414,6 +424,8 @@
          </place>
          <place xml:id="pmb170">
             <placeName>Neuwaldegg</placeName>
+            <desc type="entity_type">eingemeindeter Ort (A.VOO)</desc>
+            <desc type="entity_type_id">40</desc>
             <location type="coords">
                <geo>48,233119188484 16,28610371233</geo>
             </location>

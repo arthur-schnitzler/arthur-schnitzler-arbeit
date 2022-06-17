@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01185</idno>
+            <idno type="asbw" n="01185"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -389,7 +389,6 @@
                <forename>Josef</forename>
                <surname>Kainz</surname>
             </persName>
-            <persName type="namensvariante">Kohn (?)</persName>
             <birth>
                <date when="1858-01-02">02.01.1858</date>
                <settlement ref="pmb43475">
@@ -452,7 +451,7 @@
          <bibl xml:id="pmb29863">
             <title>Lebendige Stunden. Vier Einakter</title>
             <note type="uri_worklink">https://archive.org/details/3490676/page/n4</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1901-12-23">1901-12-23</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.26</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q30337144</idno>
@@ -466,7 +465,7 @@
          </bibl>
          <bibl xml:id="pmb29877">
             <title>Die letzten Masken</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1901-01-01">1901</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.17</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/31483</idno>
@@ -479,7 +478,7 @@
          </bibl>
          <bibl xml:id="pmb29869">
             <title>Literatur</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1901-01-01">1901</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.28</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/30265</idno>
@@ -492,7 +491,7 @@
          </bibl>
          <bibl xml:id="pmb29865">
             <title>Die Frau mit dem Dolche</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1901-01-01">1901</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.15</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/38141</idno>
@@ -508,7 +507,7 @@
             <title type="legacy-name-merge">Lebendige Stunden</title>
             <title type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33854/</title>
             <note type="bibliografische_angabe">Neue Deutsche Rundschau, Jg. 12,  H. 12, Dezember 1901</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1901-12-01">01.12.1901</date>
             <idno type="URL" subtype="books">https://books.google.at/books?id=Ab42AAAAMAAJ&amp;redir_esc=y</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29957</idno>
@@ -522,7 +521,8 @@
             <note type="bibliografische_angabe">Neue Freie Presse, Nr. 13053, 25. 12. 1900, S. 34–41</note>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19001225&amp;seite=34&amp;zoom=33</note>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Leutnant_Gustl</idno>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
             <date when="1900-12-25">25.12.1900</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.39</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1821658</idno>
@@ -549,6 +549,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -572,6 +574,8 @@
             <placeName>Hamburg</placeName>
             <placeName type="loschen">Hamburgisches Staatsgebiet</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4023118-5</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>53,57532 10,01534</geo>
             </location>
@@ -586,6 +590,8 @@
          <place xml:id="pmb645">
             <placeName>Deutsches Schauspielhaus</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Deutsches_Schauspielhaus</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>53,554306 10,008861</geo>
             </location>
@@ -600,6 +606,8 @@
          <place xml:id="pmb4">
             <placeName>Bösendorfer-Saal</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Bösendorfer-Saal</placeName>
+            <desc type="entity_type">Veranstaltungsgebäude (K.VSB)</desc>
+            <desc type="entity_type_id">5</desc>
             <location type="coords">
                <geo>48,209167 16,366111</geo>
             </location>
@@ -611,6 +619,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb4</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/4</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb4</idno>
+            <note type="apis_dates">
+               <date from="1872-01-01" to="1872-12-31">1872  – 1913-05-02</date>
+            </note>
          </place>
       </listPlace>
    </back>

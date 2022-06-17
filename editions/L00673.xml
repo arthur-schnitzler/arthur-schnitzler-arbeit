@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00673</idno>
+            <idno type="asbw" n="00673"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -342,7 +342,7 @@
       <listBibl>
          <bibl xml:id="pmb34253">
             <title>Orpheus und Eurydike</title>
-            <author ref="pmbperson__11450">Gluck, Christoph Willibald</author>
+            <author ref="pmbperson__11450" role="hat-geschaffen">Gluck, Christoph Willibald</author>
             <date when="1762-10-05">5.10.1762</date>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34253/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34253</idno>
@@ -354,7 +354,7 @@
             <title>Der Tod Georgs</title>
             <title type="alternative-name">Der Götterliebling</title>
             <note type="uri_worklink">https://archive.org/details/dertodgeorgs00beergoog</note>
-            <author ref="pmbperson__10863">Beer-Hofmann, Richard</author>
+            <author ref="pmbperson__10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
             <date when="1900-01-01">1900</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31535</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31535</idno>
@@ -365,7 +365,7 @@
          </bibl>
          <bibl xml:id="pmb30474">
             <title>Agnes Jordan. Schauspiel in fünf Akten</title>
-            <author ref="pmbperson__11701">Hirschfeld, Georg</author>
+            <author ref="pmbperson__11701" role="hat-geschaffen">Hirschfeld, Georg</author>
             <date when="1897-01-01">1897</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30474</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30474</idno>
@@ -388,6 +388,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -414,6 +416,8 @@
             <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
             <placeName type="alternative-name">Pariž</placeName>
             <placeName type="alternative-name">Parisius</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,85341 2,3488</geo>
             </location>
@@ -425,6 +429,8 @@
          </place>
          <place xml:id="pmb44394">
             <placeName>Weidlingbach</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1412</desc>
             <location type="coords">
                <geo>48,26667 16,25</geo>
             </location>
@@ -442,6 +448,8 @@
          </place>
          <place xml:id="pmb939">
             <placeName>Heiligenkreuz</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,04261 16,15292</geo>
             </location>
@@ -454,6 +462,8 @@
          <place xml:id="pmb166">
             <placeName>Frankreich</placeName>
             <placeName type="alternative-name">France</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>46,0 2,0</geo>
             </location>
@@ -473,6 +483,8 @@
          <place xml:id="pmb118">
             <placeName>Carl-Theater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Carltheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,215 16,384444</geo>
             </location>
@@ -485,6 +497,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb118</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/118</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb118</idno>
+            <note type="apis_dates">
+               <date>10.12.1847  – 29.5.1929</date>
+            </note>
          </place>
       </listPlace>
    </back>

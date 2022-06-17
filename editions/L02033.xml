@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02033</idno>
+            <idno type="asbw" n="02033"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -520,8 +520,8 @@
       <listBibl>
          <bibl xml:id="pmb29915">
             <title>Hedda Gabler</title>
-            <author ref="pmbperson__11798">Ibsen, Henrik</author>
-            <date notBefore="1891-01-01" when="1891-07-02" notAfter="1891-12-31">1891</date>
+            <author ref="pmbperson__11798" role="hat-geschaffen">Ibsen, Henrik</author>
+            <date notBefore="1891-01-01" when="1891-07-02">1891</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29915</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29915</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29915</idno>
@@ -530,8 +530,8 @@
          </bibl>
          <bibl xml:id="pmb36400">
             <title>Das Leben der Bohème</title>
-            <author ref="pmbperson__13763">Barrière, Théodore</author>
-            <author ref="pmbperson__8987">Murger, Henri</author>
+            <author ref="pmbperson__13763" role="hat-geschaffen">Barrière, Théodore</author>
+            <author ref="pmbperson__8987" role="hat-geschaffen">Murger, Henri</author>
             <date when="1849-01-01">1849</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36400/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36400</idno>
@@ -540,8 +540,8 @@
          </bibl>
          <bibl xml:id="pmb31395">
             <title>Nora oder ein Puppenheim</title>
-            <author ref="pmbperson__11798">Ibsen, Henrik</author>
-            <date notBefore="1879-01-01" when="1879-07-02" notAfter="1879-12-31">1879</date>
+            <author ref="pmbperson__11798" role="hat-geschaffen">Ibsen, Henrik</author>
+            <date notBefore="1879-01-01" when="1879-07-02">1879</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31395</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31395</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31395</idno>
@@ -555,6 +555,8 @@
             <placeName type="legacy-name-merge">Denmark</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/2623032/</placeName>
             <placeName type="alternative-name">Kingdom of Denmark</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1411</desc>
             <location type="coords">
                <geo>56,0 10,0</geo>
             </location>
@@ -575,6 +577,8 @@
          </place>
          <place xml:id="pmb36300">
             <placeName>Kopenhagen</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>55,67594 12,56553</geo>
             </location>
@@ -594,6 +598,8 @@
          <place xml:id="pmb166">
             <placeName>Frankreich</placeName>
             <placeName type="alternative-name">France</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>46,0 2,0</geo>
             </location>
@@ -623,6 +629,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -645,6 +653,8 @@
          <place xml:id="pmb118">
             <placeName>Carl-Theater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Carltheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,215 16,384444</geo>
             </location>
@@ -657,6 +667,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb118</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/118</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb118</idno>
+            <note type="apis_dates">
+               <date>10.12.1847  – 29.5.1929</date>
+            </note>
          </place>
          <place xml:id="pmb40306">
             <placeName>Italien</placeName>
@@ -667,6 +680,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q38</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3175395</placeName>
             <placeName type="legacy-name-merge">Italy</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>42,83333 12,83333</geo>
             </location>
@@ -682,6 +697,8 @@
          </place>
          <place xml:id="pmb576">
             <placeName>Schottland</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>56,0 -4,0</geo>
             </location>
@@ -698,6 +715,8 @@
          <place xml:id="pmb1130">
             <placeName>University of St. Andrews</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/University_of_St_Andrews</placeName>
+            <desc type="entity_type">Universität (K.UNI)</desc>
+            <desc type="entity_type_id">15</desc>
             <location type="coords">
                <geo>56,341214 -2,793011</geo>
             </location>
@@ -710,6 +729,8 @@
          </place>
          <place xml:id="pmb44234">
             <placeName>Edinburgh</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>55,95206 -3,19648</geo>
             </location>
@@ -728,6 +749,8 @@
          <org xml:id="pmb29351">
             <orgName>Neue Freie Presse</orgName>
             <idno type="URL" subtype="">http://anno.onb.ac.at/info/nfp_info.htm</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -758,6 +781,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29351</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29351</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29351</idno>
+            <note type="apis_dates">
+               <date>1864-09-01  – 1939-02-01</date>
+            </note>
          </org>
       </listOrg>
    </back>

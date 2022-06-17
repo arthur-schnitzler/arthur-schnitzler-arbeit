@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00291</idno>
+            <idno type="asbw" n="00291"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -411,8 +411,8 @@
       <listBibl>
          <bibl xml:id="pmb30009">
             <title>Hamlet</title>
-            <author ref="pmbperson__2412">Shakespeare, William</author>
-            <date notBefore="1600-01-01" when="1600-07-01" notAfter="1600-12-31">1600</date>
+            <author ref="pmbperson__2412" role="hat-geschaffen">Shakespeare, William</author>
+            <date notBefore="1600-01-01" when="1600-07-01">1600</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30009</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30009</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30009</idno>
@@ -421,8 +421,8 @@
          </bibl>
          <bibl xml:id="pmb34138">
             <title>Der ungläubige Thomas</title>
-            <author ref="pmbperson__34135">Jacoby, Wilhelm</author>
-            <author ref="pmbperson__8511">Laufs, Carl</author>
+            <author ref="pmbperson__34135" role="hat-geschaffen">Jacoby, Wilhelm</author>
+            <author ref="pmbperson__8511" role="hat-geschaffen">Laufs, Carl</author>
             <date when="1893-01-01">1893</date>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34138/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34138</idno>
@@ -433,9 +433,9 @@
             <title>Madame Sans-Gêne</title>
             <title type="legacy-name-merge">Madame Sans-Gêne</title>
             <title type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A020281</title>
-            <author ref="pmbperson__2797">Moreau, Émile</author>
-            <author ref="pmbperson__12624">Sardou, Victorien</author>
-            <date notBefore="1893-01-01" when="1893-07-02" notAfter="1893-12-31">1893</date>
+            <author ref="pmbperson__2797" role="hat-geschaffen">Moreau, Émile</author>
+            <author ref="pmbperson__12624" role="hat-geschaffen">Sardou, Victorien</author>
+            <date notBefore="1893-01-01" when="1893-07-02">1893</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30379</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30379</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30379</idno>
@@ -457,6 +457,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -479,6 +481,8 @@
          <place xml:id="pmb118">
             <placeName>Carl-Theater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Carltheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,215 16,384444</geo>
             </location>
@@ -491,9 +495,14 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb118</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/118</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb118</idno>
+            <note type="apis_dates">
+               <date>10.12.1847  – 29.5.1929</date>
+            </note>
          </place>
          <place xml:id="pmb77">
             <placeName>Raimund-Theater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,192222 16,339722</geo>
             </location>
@@ -504,11 +513,16 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb77</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/77</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb77</idno>
+            <note type="apis_dates">
+               <date when="1893-11-27">27.11.1893</date>
+            </note>
          </place>
          <place xml:id="pmb20">
             <placeName>Volkstheater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Volkstheater_(Wien)</placeName>
             <placeName type="namensvariante">Deutsches Volkstheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,205142 16,3566</geo>
             </location>
@@ -526,6 +540,8 @@
          <org xml:id="pmb29639">
             <orgName>S. Fischer Verlag</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/S._Fischer_Verlag</idno>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -560,6 +576,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29639</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29639</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29639</idno>
+            <note type="apis_dates">
+               <date notBefore="1886-01-01" when="1886-07-02">1886</date>
+            </note>
          </org>
       </listOrg>
    </back>

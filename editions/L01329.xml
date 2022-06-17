@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01329</idno>
+            <idno type="asbw" n="01329"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -308,7 +308,7 @@
          <bibl xml:id="pmb29855">
             <title>Reigen. Zehn Dialoge</title>
             <note type="uri_worklink">https://www.digital.wienbibliothek.at/wbrobv/content/pageview/2587756</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1900-01-01">1900</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.32</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/ "Q1414190"</idno>
@@ -324,8 +324,8 @@
          <bibl xml:id="pmb29843">
             <title>Der grüne Kakadu. Groteske in einem Akt</title>
             <note type="bibliografische_angabe">Neue Deutsche Rundschau, Jg. 10, H. 3, März 1899</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1899-03-01">1.3.1899</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1.3.1899  – 1.3.1899</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.10</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q2675124</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-der-gruene-kakadu</idno>
@@ -349,16 +349,10 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4127793-4</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000355</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3220837</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb45258">München</placeName>
-               <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb54315">Brienner Straße</placeName>
-               <geo>48,14512778708449 11,568353382899355</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb314">Bayern</placeName>
@@ -387,6 +381,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -409,6 +405,8 @@
          <place xml:id="pmb50087">
             <placeName>Türkenstraße</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Türkenstraße_(München)</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,150271 11,57595</geo>
             </location>
@@ -421,6 +419,8 @@
          </place>
          <place xml:id="pmb1166">
             <placeName>Arcisstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,15637 11,57354</geo>
             </location>
@@ -433,6 +433,8 @@
          </place>
          <place xml:id="pmb397">
             <placeName>Frankgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,215516628628 16,356475515829</geo>
             </location>
@@ -448,6 +450,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -463,6 +467,8 @@
          <place xml:id="pmb254">
             <placeName>England</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/England</placeName>
+            <desc type="entity_type">Land (A.LND)</desc>
+            <desc type="entity_type_id">38</desc>
             <location type="coords">
                <geo>52,483333 -1,566667</geo>
             </location>
@@ -478,7 +484,9 @@
       </listPlace>
       <listOrg>
          <org xml:id="pmb29779">
-            <orgName>Die 11 Scharfrichter</orgName>
+            <orgName>Die elf Scharfrichter</orgName>
+            <desc type="entity_type">Kabarett</desc>
+            <desc type="entity_type_id">1042</desc>
             <location type="located_in_place">
                <placeName ref="pmb45258">München</placeName>
                <geo>48,13743 11,57549</geo>

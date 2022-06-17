@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02291</idno>
+            <idno type="asbw" n="02291"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -282,12 +282,11 @@
          </person>
          <person xml:id="pmb3272">
             <persName>
-               <forename>Jean-Baptiste</forename>
                <surname>Molière</surname>
             </persName>
             <persName type="geburtsname_vorname">Jean-Baptiste</persName>
             <persName type="geburtsname_nachname">Poquelin</persName>
-            <persName type="namensvariante">Molière</persName>
+            <persName type="pseudonym">Molière</persName>
             <persName type="legacy-name-merge">Poquelin, Jean Baptiste</persName>
             <birth>
                <date when="1622-01-14">14.01.1622</date>
@@ -297,21 +296,9 @@
                      <geo>48,85341 2,3488</geo>
                   </location>
                </settlement>
-               <settlement ref="pmb182">
-                  <placeName type="pref">Paris</placeName>
-                  <location>
-                     <geo>48,85341 2,3488</geo>
-                  </location>
-               </settlement>
             </birth>
             <death>
                <date when="1673-02-17">17.02.1673</date>
-               <settlement ref="pmb182">
-                  <placeName type="pref">Paris</placeName>
-                  <location>
-                     <geo>48,85341 2,3488</geo>
-                  </location>
-               </settlement>
                <settlement ref="pmb182">
                   <placeName type="pref">Paris</placeName>
                   <location>
@@ -335,7 +322,7 @@
       <listBibl>
          <bibl xml:id="pmb33604">
             <title>Yppl. Idylle in fünf Akten</title>
-            <author ref="pmbperson__12438">Adam, Robert</author>
+            <author ref="pmbperson__12438" role="hat-geschaffen">Adam, Robert</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33604</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33604</idno>
             <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb33604.html</idno>
@@ -343,7 +330,7 @@
          </bibl>
          <bibl xml:id="pmb33656">
             <title>Robert</title>
-            <author ref="pmbperson__12438">Adam, Robert</author>
+            <author ref="pmbperson__12438" role="hat-geschaffen">Adam, Robert</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33656</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33656</idno>
             <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
@@ -363,6 +350,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -384,6 +373,8 @@
          </place>
          <place xml:id="pmb1248">
             <placeName>Andorf</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,3713 13,57412</geo>
             </location>

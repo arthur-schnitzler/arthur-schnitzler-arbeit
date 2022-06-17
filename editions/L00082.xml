@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00082</idno>
+            <idno type="asbw" n="00082"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -335,12 +335,6 @@
                      <geo>43,70313 7,26608</geo>
                   </location>
                </settlement>
-               <settlement ref="pmb926">
-                  <placeName type="pref">Nizza</placeName>
-                  <location>
-                     <geo>43,70313 7,26608</geo>
-                  </location>
-               </settlement>
             </death>
             <sex value="male"/>
             <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
@@ -388,8 +382,8 @@
             <title>Das Märchen. Schauspiel in drei Aufzügen</title>
             <note type="bibliografische_angabe">Arthur Schnitzler: Das Märchen. Schauspiel in drei Aufzügen. Dresden, Leipzig: E. Pierson’s Verlag 1894.</note>
             <note type="uri_worklink">https://babel.hathitrust.org/cgi/pt?id=coo.31924026341598&amp;view=1up&amp;seq=5</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1891-01-01">1891</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1891  – 1891</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.04</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1169917</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/38151</idno>
@@ -402,8 +396,9 @@
          </bibl>
          <bibl xml:id="pmb29935">
             <title>Anatol</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1892-10-29">1892-10-29</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
+            <date>1892-10-29  – 1892-10-29</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.03</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q487409</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-anatol</idno>
@@ -430,6 +425,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -453,6 +450,8 @@
       <listOrg>
          <org xml:id="pmb29619">
             <orgName>Adolf Bonz &amp; Comp.</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb872">Stuttgart</placeName>
                <geo>48,78232 9,17702</geo>

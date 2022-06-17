@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02603</idno>
+            <idno type="asbw" n="02603"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -476,7 +476,6 @@
             </persName>
             <persName type="geburtsname_vorname">Siegmund</persName>
             <persName type="geburtsname_nachname">Salzmann</persName>
-            <persName type="namensvariante">Salten Felix</persName>
             <persName type="legacy-name-merge">Salzmann, Siegmund</persName>
             <birth>
                <date when="1869-09-06">06.09.1869</date>
@@ -609,8 +608,8 @@
             <title>Frau Beate und ihr Sohn. Novelle</title>
             <note type="bibliografische_angabe">Die neue Rundschau, Jg. 24, H. 2, Februar 1913 – H. 4. April 1913</note>
             <note type="uri_worklink">https://babel.hathitrust.org/cgi/pt?id=inu.30000093470296&amp;view=1up&amp;seq=314&amp;skin=2021&amp;q1=beate</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1913-02-01">1.2.1913</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1.2.1913  – 1.4.1913</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.35</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1451452</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32133</idno>
@@ -634,6 +633,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -655,6 +656,8 @@
          </place>
          <place xml:id="pmb58988">
             <placeName>Svendborg</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1419</desc>
             <location type="coords">
                <geo>55,05982 10,60677</geo>
             </location>
@@ -669,6 +672,8 @@
          </place>
          <place xml:id="pmb65738">
             <placeName>Thurø</placeName>
+            <desc type="entity_type">Insel (N.INS)</desc>
+            <desc type="entity_type_id">57</desc>
             <location type="coords">
                <geo>55,04767 10,69703</geo>
             </location>
@@ -682,6 +687,8 @@
          </place>
          <place xml:id="pmb65741">
             <placeName>Sortedam Dossering</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>55,6936 12,5717</geo>
             </location>
@@ -693,6 +700,8 @@
          </place>
          <place xml:id="pmb36300">
             <placeName>Kopenhagen</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>55,67594 12,56553</geo>
             </location>
@@ -711,6 +720,8 @@
          </place>
          <place xml:id="pmb150">
             <placeName>Sternwartestraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,23099349198 16,340117830625</geo>
             </location>
@@ -728,6 +739,8 @@
             <placeName type="legacy-name-merge">Denmark</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/2623032/</placeName>
             <placeName type="alternative-name">Kingdom of Denmark</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1411</desc>
             <location type="coords">
                <geo>56,0 10,0</geo>
             </location>
@@ -750,6 +763,8 @@
       <listOrg>
          <org xml:id="pmb29545">
             <orgName>K. u. k. Zensurstelle</orgName>
+            <desc type="entity_type">Amt</desc>
+            <desc type="entity_type_id">984</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

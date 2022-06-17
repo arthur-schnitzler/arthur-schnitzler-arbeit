@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02433</idno>
+            <idno type="asbw" n="02433"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -344,8 +344,8 @@
       <listBibl>
          <bibl xml:id="pmb37723">
             <title>Das heutige Europa</title>
-            <author ref="pmbperson__10992">Brandes, Georg</author>
-            <date when="1925-01-01">1925</date>
+            <author ref="pmbperson__10992" role="hat-geschaffen">Brandes, Georg</author>
+            <date>1925  – 1925</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/37723/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/37723</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb37723</idno>
@@ -355,8 +355,8 @@
             <title>Georg Brandes in Berlin</title>
             <title type="pseudonym">A. F. Cohn</title>
             <note type="bibliografische_angabe">Berliner Tageblatt, Jg. 54, Nr. 153, Abend-Ausgabe, S. 4</note>
-            <author ref="pmbperson__37739">Cohn, Alfons Fedor</author>
-            <date when="1925-03-31">31.3.1925</date>
+            <author ref="pmbperson__37739" role="hat-unter-pseudonym-geschrieben">Cohn, Alfons Fedor</author>
+            <date>31.3.1925  – 31.3.1925</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/37740/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/37740</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb37740</idno>
@@ -365,7 +365,7 @@
          <bibl xml:id="pmb41531">
             <title>Berliner Tageblatt</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berliner_Tageblatt</idno>
-            <date when="1872-01-01">1872</date>
+            <date>1872  – 1939</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/41531/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41531</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41531</idno>
@@ -375,6 +375,8 @@
       <listPlace>
          <place xml:id="pmb36300">
             <placeName>Kopenhagen</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>55,67594 12,56553</geo>
             </location>
@@ -404,6 +406,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -431,6 +435,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -446,6 +452,8 @@
          </place>
          <place xml:id="pmb37725">
             <placeName>Blüthner-Saal</placeName>
+            <desc type="entity_type">Veranstaltungsgebäude (K.VSB)</desc>
+            <desc type="entity_type_id">5</desc>
             <location type="coords">
                <geo>52,504815 13,360062</geo>
             </location>
@@ -456,11 +464,16 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/37725/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/37725</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb37725</idno>
+            <note type="apis_dates">
+               <date>1908  – 1939</date>
+            </note>
          </place>
          <place xml:id="pmb1156">
             <placeName>Straße des 17. Juni</placeName>
             <placeName type="fruherer_ortsname">Berliner Straße, Charlottenburger Chaussee</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Stra%C3%9Fe_des_17._Juni</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>52,51241 13,32384</geo>
             </location>

@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02607</idno>
+            <idno type="asbw" n="02607"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -333,8 +333,8 @@
          <bibl xml:id="pmb79030">
             <title>Der Junggesell. Humoreske</title>
             <note type="bibliografische_angabe">Der Junggesell. Humoreske. Berlin 1893.</note>
-            <author ref="pmbperson__64866">Niemann, August</author>
-            <date notBefore="1893-01-01" when="1893-07-02" notAfter="1893-12-31">1893</date>
+            <author ref="pmbperson__64866" role="hat-geschaffen">Niemann, August</author>
+            <date from="1893-01-01" to="1893-12-31">1893  – 1893</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/79030/</idno>
             <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb79030.html</idno>
          </bibl>
@@ -342,8 +342,8 @@
             <title>Heirathen oder nicht?</title>
             <title type="uri_anno">https://anno.onb.ac.at/cgi-content/anno?aid=pel&amp;datum=18940623&amp;seite=3</title>
             <note type="bibliografische_angabe">Adolf Silberstein: Heirathen oder nicht? In: Pester Lloyd, Nr. 151, 23. 6. 1894, S. [3–4]</note>
-            <author ref="pmbperson__88276">Silberstein, Adolf</author>
-            <date when="1894-06-23">1894-06-23</date>
+            <author ref="pmbperson__88276" role="hat-geschaffen">Silberstein, Adolf</author>
+            <date>1894-06-23  – 1894-06-23</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88273/</idno>
             <note type="work_kind">Rezension</note>
          </bibl>
@@ -357,6 +357,8 @@
          <place xml:id="pmb87780">
             <placeName>Place de la Bourse</placeName>
             <placeName type="uri_wikipedia">https://fr.wikipedia.org/wiki/Place_de_la_Bourse_(Paris)</placeName>
+            <desc type="entity_type">Platz (K.PLT)</desc>
+            <desc type="entity_type_id">21</desc>
             <location type="coords">
                <geo>48,8657 2,3414</geo>
             </location>
@@ -368,16 +370,14 @@
          </place>
          <place xml:id="pmb59">
             <placeName>IX., Alsergrund</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,22387 16,35641</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb618">Kaiserjubiläum-Stadttheater</placeName>
-               <geo>48,224472 16,350361</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2782729/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb59</idno>
@@ -391,6 +391,8 @@
             <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
             <placeName type="alternative-name">Pariž</placeName>
             <placeName type="alternative-name">Parisius</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,85341 2,3488</geo>
             </location>
@@ -413,6 +415,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -439,6 +443,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
             <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
             <placeName type="alternative-name">Republic of Austria</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,33333 13,33333</geo>
             </location>
@@ -454,6 +460,8 @@
          </place>
          <place xml:id="pmb397">
             <placeName>Frankgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,215516628628 16,356475515829</geo>
             </location>
@@ -474,6 +482,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -491,6 +501,8 @@
       <listOrg>
          <org xml:id="pmb87782">
             <orgName>Philosophisch-historischer Verlag Dr. R. Salinger</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb168">Berlin</placeName>
                <geo>52,52437 13,41053</geo>
@@ -501,6 +513,9 @@
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87782/</idno>
+            <note type="apis_dates">
+               <date from="1891-01-01" to="1891-12-31">1891  – 1899</date>
+            </note>
          </org>
       </listOrg>
    </back>

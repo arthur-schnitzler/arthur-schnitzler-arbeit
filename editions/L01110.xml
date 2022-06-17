@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01110</idno>
+            <idno type="asbw" n="01110"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -397,8 +397,8 @@
       <listBibl>
          <bibl xml:id="pmb29955">
             <title>Rosmersholm</title>
-            <author ref="pmbperson__11798">Ibsen, Henrik</author>
-            <date notBefore="1886-01-01" when="1886-07-02" notAfter="1886-12-31">1886</date>
+            <author ref="pmbperson__11798" role="hat-geschaffen">Ibsen, Henrik</author>
+            <date notBefore="1886-01-01" when="1886-07-02">1886</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29955</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29955</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29955</idno>
@@ -407,8 +407,8 @@
          </bibl>
          <bibl xml:id="pmb29953">
             <title>Maria Magdalena</title>
-            <author ref="pmbperson__2404">Hebbel, Friedrich</author>
-            <date notBefore="1844-01-01" when="1844-07-01" notAfter="1844-12-31">1844</date>
+            <author ref="pmbperson__2404" role="hat-geschaffen">Hebbel, Friedrich</author>
+            <date notBefore="1844-01-01" when="1844-07-01">1844</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29953</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29953</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29953</idno>
@@ -430,6 +430,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -452,6 +454,8 @@
          <place xml:id="pmb2">
             <placeName>Konservatorium der Gesellschaft der Musikfreunde</placeName>
             <placeName type="uri_wien-geschichte-wiki">https://www.geschichtewiki.wien.gv.at/Universität_für_Musik_und_darstellende_Kunst_Wien</placeName>
+            <desc type="entity_type">Konservatorium (K.KON)</desc>
+            <desc type="entity_type_id">3</desc>
             <location type="coords">
                <geo>48,210333 16,37084</geo>
             </location>
@@ -463,6 +467,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2</idno>
+            <note type="apis_dates">
+               <date when="1909-07-02" notAfter="1909-12-31">1909</date>
+            </note>
          </place>
       </listPlace>
    </back>

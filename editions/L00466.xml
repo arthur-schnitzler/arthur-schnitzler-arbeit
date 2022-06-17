@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00466</idno>
+            <idno type="asbw" n="00466"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -246,7 +246,9 @@
                <forename>Carla</forename>
                <surname>Ernst</surname>
             </persName>
-            <persName type="geburtsname_vorname_nachname">Kohn Karoline</persName>
+            <persName type="geburtsname_vorname">Karoline</persName>
+            <persName type="geburtsname_nachname">Kohn</persName>
+            <persName type="legacy-name-merge">Ernst, Karla</persName>
             <birth>
                <date when="1867-05-15">15.05.1867</date>
                <settlement ref="pmb50">
@@ -268,7 +270,9 @@
             <sex value="female"/>
             <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14801</idno>
+            <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb27856</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/15999</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/27856</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb15999</idno>
          </person>
          <person xml:id="pmb27859">
@@ -279,6 +283,7 @@
             <persName type="rufname">Käthe</persName>
             <persName type="ehename">Sobotka</persName>
             <persName type="legacy-name-merge">Kohn, Katharina</persName>
+            <persName type="legacy-name-merge">Ernst</persName>
             <birth>
                <date when="1863-12-18">18.12.1863</date>
                <settlement ref="pmb50">
@@ -298,9 +303,10 @@
                </settlement>
             </death>
             <sex value="female"/>
+            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14798</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb27859</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/15992</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/27859</idno>
-            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14797</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb27859</idno>
          </person>
       </listPerson>
@@ -308,8 +314,8 @@
          <bibl xml:id="pmb33243">
             <title>Tagebuch</title>
             <note type="uri_worklink">https://schnitzler-tagebuch.acdh.oeaw.ac.at</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1981-01-01">1981</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1981  – 2000</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
@@ -320,6 +326,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -334,6 +342,8 @@
          </place>
          <place xml:id="pmb766">
             <placeName>Eglmoosgasse</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>47,713083 13,61758</geo>
             </location>
@@ -347,6 +357,8 @@
          </place>
          <place xml:id="pmb895">
             <placeName>Strobl</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71667 13,48333</geo>
             </location>

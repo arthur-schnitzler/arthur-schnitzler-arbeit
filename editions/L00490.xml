@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00490</idno>
+            <idno type="asbw" n="00490"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -320,9 +320,9 @@
       <listBibl>
          <bibl xml:id="pmb40662">
             <title>Mourir</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <author ref="pmbperson__40665">Vallette, Gaspard</author>
-            <date when="1896-04-12">1896-04-12</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__40665" role="hat-ubersetzt">Vallette, Gaspard</author>
+            <date>1896-04-12  – 1896-04-12</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40662/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40662</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40662</idno>
@@ -331,8 +331,8 @@
          <bibl xml:id="pmb30117">
             <title>Sterben. Novelle</title>
             <note type="bibliografische_angabe">Neue Deutsche Rundschau, Jg. 5, H. 10–12, Oktober–Dezember 1894</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1894-10-01">1.10.1894</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1.10.1894  – 1.12.1894</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.43</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q2345387</idno>
             <idno type="URL" subtype="babel">https://babel.hathitrust.org/cgi/pt/search?id=coo.31924069263006;view=1up;seq=9;q1=sterben;start=1;sz=10;page=search;orient=0;index=1</idno>
@@ -346,16 +346,14 @@
       <listPlace>
          <place xml:id="pmb59">
             <placeName>IX., Alsergrund</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,22387 16,35641</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb618">Kaiserjubiläum-Stadttheater</placeName>
-               <geo>48,224472 16,350361</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2782729/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb59</idno>
@@ -375,6 +373,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -398,6 +398,8 @@
             <placeName>Gardone Riviera</placeName>
             <placeName type="legacy-name">Gardone</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/3176312/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>45,62499 10,56527</geo>
             </location>
@@ -413,6 +415,8 @@
          </place>
          <place xml:id="pmb39975">
             <placeName>Lago di Garda</placeName>
+            <desc type="entity_type">See (N.SEE)</desc>
+            <desc type="entity_type_id">44</desc>
             <location type="coords">
                <geo>45,6316 10,660517</geo>
             </location>
@@ -433,6 +437,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q38</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3175395</placeName>
             <placeName type="legacy-name-merge">Italy</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>42,83333 12,83333</geo>
             </location>
@@ -448,6 +454,8 @@
          </place>
          <place xml:id="pmb465">
             <placeName>Riva del Garda</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>45,88576 10,84118</geo>
             </location>
@@ -464,6 +472,8 @@
             <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
             <placeName type="alternative-name">Pariž</placeName>
             <placeName type="alternative-name">Parisius</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,85341 2,3488</geo>
             </location>
@@ -478,20 +488,19 @@
          <org xml:id="pmb36247">
             <orgName>Burgtheater</orgName>
             <orgName type="alternative-name">Burgtheater GmbH</orgName>
+            <desc type="entity_type">Theater</desc>
+            <desc type="entity_type_id">1012</desc>
             <location type="located_in_place">
-               <placeName ref="pmb50">Wien</placeName>
-               <geo>48,2066 16,37341</geo>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+               <placeName ref="pmb51">I., Innere Stadt</placeName>
+               <geo>48,20769 16,37049</geo>
+               <idno type="URL" subtype="geonames">http://sws.geonames.org/2775259/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36789/</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb51</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51010/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2775259/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb51</idno>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb14">Burgtheater</placeName>
@@ -510,10 +519,15 @@
             <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/38633-9</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36247</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36247</idno>
+            <note type="apis_dates">
+               <date notBefore="1852-01-01" when="1852-07-01">1852</date>
+            </note>
          </org>
          <org xml:id="pmb40684">
             <orgName>La Semaine Littéraire</orgName>
             <idno type="URL" subtype="wikipedia">https://fr.wikipedia.org/wiki/La_Semaine_littéraire</idno>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb562">Genf</placeName>
                <geo>46,20222 6,14569</geo>
@@ -530,9 +544,14 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40684/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40684</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40684</idno>
+            <note type="apis_dates">
+               <date>1893  – 1927</date>
+            </note>
          </org>
          <org xml:id="pmb40681">
             <orgName>Éditions Perrin</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb182">Paris</placeName>
                <geo>48,85341 2,3488</geo>
@@ -545,6 +564,9 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40681/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40681</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40681</idno>
+            <note type="apis_dates">
+               <date when="1827-01-01">1827</date>
+            </note>
          </org>
       </listOrg>
    </back>

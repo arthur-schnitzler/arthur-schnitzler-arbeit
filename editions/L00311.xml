@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00311</idno>
+            <idno type="asbw" n="00311"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -311,8 +311,8 @@
       <listBibl>
          <bibl xml:id="pmb34992">
             <title>Kraft</title>
-            <author ref="pmbperson__3386">Mauthner, Fritz</author>
-            <date notBefore="1894-01-01" when="1894-07-02" notAfter="1894-12-31">1894</date>
+            <author ref="pmbperson__3386" role="hat-geschaffen">Mauthner, Fritz</author>
+            <date from="1894-01-01" to="1894-12-31">1894  – 1894</date>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34992/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34992</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34992</idno>
@@ -321,7 +321,7 @@
          <bibl xml:id="pmb30453">
             <title>Blumen</title>
             <note type="bibliografische_angabe">Neue Revue, Jg. 5, H. 33, 1. 8. 1894</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1894-08-01">01.08.1894</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.04</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q886176</idno>
@@ -348,6 +348,8 @@
             <placeName type="alternative-name">Frankfurt, Main</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4018118-2</placeName>
             <placeName type="alternative-name">Frankfurt/Main</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,11552 8,68417</geo>
             </location>
@@ -380,6 +382,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -404,6 +408,8 @@
          <org xml:id="pmb29442">
             <orgName>Frankfurter Zeitung</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurter_Zeitung</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -419,23 +425,12 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
             </location>
-            <location type="located_in_place">
-               <placeName ref="pmb42671">rue Feydeau</placeName>
-               <geo>48,87 2,3408</geo>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42671/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42671</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42671</idno>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb40415">rue Vivienne</placeName>
-               <geo>48,869409 2,340402</geo>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40415/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40415</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40415</idno>
-            </location>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29442</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29442</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29442</idno>
+            <note type="apis_dates">
+               <date>1856  – 1943</date>
+            </note>
          </org>
       </listOrg>
    </back>

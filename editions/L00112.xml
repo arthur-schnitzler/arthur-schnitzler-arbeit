@@ -32,7 +32,7 @@
                <name>Martin Anton Müller</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00112</idno>
+            <idno type="asbw" n="00112"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -626,8 +626,8 @@
          <bibl xml:id="pmb30257">
             <title>Der Sohn. Aus den Papieren eines Arztes</title>
             <note type="bibliografische_angabe">Freie Bühne, Jg. 3, H. 1, Januar 1892, S. 89–94</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1892-01-01">1.1.1892</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1.1.1892  – 1.1.1892</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.15</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q52159945</idno>
             <idno type="URL" subtype="babel">https://babel.hathitrust.org/cgi/pt?id=coo.31924069262966;view=image;page=root;size=100;seq=95;num=89</idno>
@@ -639,8 +639,9 @@
          </bibl>
          <bibl xml:id="pmb29935">
             <title>Anatol</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1892-10-29">1892-10-29</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
+            <date>1892-10-29  – 1892-10-29</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.03</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q487409</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-anatol</idno>
@@ -667,6 +668,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -694,6 +697,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -714,6 +719,8 @@
             <placeName type="legacy-name-merge">Prag-Smichow</placeName>
             <placeName type="legacy-name-merge">Bohnitz bei Prag</placeName>
             <placeName type="legacy-name-merge">Prag-Dejwitz</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,08333 14,46667</geo>
             </location>
@@ -737,6 +744,8 @@
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/6502/</placeName>
             <placeName type="legacy-name-merge">Chicago, Il.</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/17967/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>41,85003 -87,65005</geo>
             </location>
@@ -749,6 +758,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -765,6 +776,8 @@
       <listOrg>
          <org xml:id="pmb29716">
             <orgName>Bibliographisches Bureau</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb168">Berlin</placeName>
                <geo>52,52437 13,41053</geo>
@@ -787,6 +800,8 @@
          </org>
          <org xml:id="pmb29318">
             <orgName>Weltausstellung 1893</orgName>
+            <desc type="entity_type">Veranstaltung</desc>
+            <desc type="entity_type_id">1004</desc>
             <location type="located_in_place">
                <placeName ref="pmb880">Chicago</placeName>
                <geo>41,85003 -87,65005</geo>

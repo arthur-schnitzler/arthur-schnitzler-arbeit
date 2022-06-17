@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00441</idno>
+            <idno type="asbw" n="00441"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -291,7 +291,7 @@
          <bibl xml:id="pmb32252">
             <title>Moderner Musen-Almanach auf das Jahr 1894</title>
             <note type="bibliografische_angabe">Moderner Musen-Almanach auf das Jahr 1894. München: Dr. E. Albert 1894 (Ein Jahrbuch deutscher Kunst, 2. Jg.)</note>
-            <author ref="pmbperson__10928">Bierbaum, Otto Julius</author>
+            <author ref="pmbperson__10928" role="hat-herausgegeben">Bierbaum, Otto Julius</author>
             <date when="1893-01-01">1893</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32252</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32252</idno>
@@ -301,7 +301,7 @@
          <bibl xml:id="pmb33524">
             <title>Der Dichter des Weibmysteriums</title>
             <note type="bibliografische_angabe">Die Zukunft, 2. 11. 1895</note>
-            <author ref="pmbperson__12183">Marholm, Laura</author>
+            <author ref="pmbperson__12183" role="hat-geschaffen">Marholm, Laura</author>
             <date when="1895-11-02">02.11.1895</date>
             <idno type="URL" subtype="archive">https://archive.org/details/diezukunft01hardgoog/page/n232</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33524</idno>
@@ -311,7 +311,7 @@
          <bibl xml:id="pmb33526">
             <title>Weiße Fläche</title>
             <note type="bibliografische_angabe">Frankfurter Zeitung, 18. 8. 1895</note>
-            <author ref="pmbperson__12183">Marholm, Laura</author>
+            <author ref="pmbperson__12183" role="hat-geschaffen">Marholm, Laura</author>
             <date when="1895-08-18">18.08.1895</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33526</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33526</idno>
@@ -320,9 +320,9 @@
          <bibl xml:id="pmb36374">
             <title>Neue Freie Presse</title>
             <title type="uri_anno">http://anno.onb.ac.at/cgi-content/anno?aid=nfp</title>
-            <author ref="pmbperson__10875">Benedikt, Moriz</author>
-            <author ref="pmbperson__10872">Benedikt, Ernst</author>
-            <date notBefore="1864-01-01" when="1864-07-01" notAfter="1864-12-31">1864</date>
+            <author ref="pmbperson__10875" role="hat-herausgegeben">Benedikt, Moriz</author>
+            <author ref="pmbperson__10872" role="hat-herausgegeben">Benedikt, Ernst</author>
+            <date from="1864-01-01" to="1864-12-31">1864  – 1939</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36374/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36374</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36374</idno>
@@ -330,8 +330,8 @@
          </bibl>
          <bibl xml:id="pmb33522">
             <title>Wir Frauen und unsere Dichter</title>
-            <author ref="pmbperson__12183">Marholm, Laura</author>
-            <date notBefore="1895-01-01" when="1895-07-02" notAfter="1895-12-31">1895</date>
+            <author ref="pmbperson__12183" role="hat-geschaffen">Marholm, Laura</author>
+            <date notBefore="1895-01-01" when="1895-07-02">1895</date>
             <idno type="URL" subtype="archive">https://archive.org/details/wirfrauenundunse00marhuoft/page/n3</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33522</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33522</idno>
@@ -340,7 +340,8 @@
          <bibl xml:id="pmb40042">
             <title>Die Zukunft</title>
             <note type="uri_worklink">https://de.wikisource.org/wiki/Die_Zukunft_(Harden)</note>
-            <date when="1892-01-01">1892</date>
+            <author ref="pmbperson__11581" role="ist-beitragerin-zu">Harden, Maximilian</author>
+            <date>1892  – 1922</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40042/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40042</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40042</idno>
@@ -350,6 +351,8 @@
       <listPlace>
          <place xml:id="pmb936">
             <placeName>Schliersee</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,73621 11,85936</geo>
             </location>
@@ -372,6 +375,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -394,6 +399,8 @@
          <place xml:id="pmb1201">
             <placeName>Oberbayern</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Oberbayern</placeName>
+            <desc type="entity_type">Teil eines Landes (A.LNDX)</desc>
+            <desc type="entity_type_id">13</desc>
             <location type="coords">
                <geo>48,1237 11,8021</geo>
             </location>

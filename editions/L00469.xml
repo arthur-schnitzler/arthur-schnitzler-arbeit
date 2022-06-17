@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00469</idno>
+            <idno type="asbw" n="00469"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -241,7 +241,6 @@
             </persName>
             <persName type="geburtsname_vorname">Siegmund</persName>
             <persName type="geburtsname_nachname">Salzmann</persName>
-            <persName type="namensvariante">Salten Felix</persName>
             <persName type="legacy-name-merge">Salzmann, Siegmund</persName>
             <birth>
                <date when="1869-09-06">06.09.1869</date>
@@ -275,8 +274,8 @@
          <bibl xml:id="pmb33243">
             <title>Tagebuch</title>
             <note type="uri_worklink">https://schnitzler-tagebuch.acdh.oeaw.ac.at</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1981-01-01">1981</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1981  – 2000</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
@@ -286,9 +285,9 @@
             <title>Zwei glückliche Tage</title>
             <title type="legacy-name-merge">Zwei glückliche Tage</title>
             <title type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31869</title>
-            <author ref="pmbperson__24702">Schönthan-Pernwald, Franz von</author>
-            <author ref="pmbperson__11845">Kadelburg, Gustav</author>
-            <date notBefore="1892-01-01" when="1892-07-01" notAfter="1892-12-31">1892</date>
+            <author ref="pmbperson__24702" role="hat-geschaffen">Schönthan-Pernwald, Franz von</author>
+            <author ref="pmbperson__11845" role="hat-geschaffen">Kadelburg, Gustav</author>
+            <date notBefore="1892-01-01" when="1892-07-01">1892</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31857</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31857</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31857</idno>
@@ -300,6 +299,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -325,6 +326,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>

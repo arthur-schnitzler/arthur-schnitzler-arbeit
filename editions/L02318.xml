@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02318</idno>
+            <idno type="asbw" n="02318"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -242,7 +242,6 @@
             <persName type="geburtsname_vorname">Richard</persName>
             <persName type="geburtsname_nachname">Engländer</persName>
             <persName type="pseudonym">Peter Altenberg</persName>
-            <persName type="legacy-name-merge">Engländer, Richard</persName>
             <birth>
                <date when="1859-03-09">09.03.1859</date>
                <settlement ref="pmb50">
@@ -275,8 +274,8 @@
       <listBibl>
          <bibl xml:id="pmb30965">
             <title>Wie ich es sehe</title>
-            <author ref="pmbperson__2147">Altenberg, Peter</author>
-            <date notBefore="1896-01-01" when="1896-07-01" notAfter="1896-12-31">1896</date>
+            <author ref="pmbperson__2147" role="hat-geschaffen">Altenberg, Peter</author>
+            <date notBefore="1896-01-01" when="1896-07-01">1896</date>
             <idno type="URL" subtype="refubium">https://refubium.fu-berlin.de/handle/fub188/20512</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30965</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30965</idno>
@@ -287,7 +286,7 @@
          </bibl>
          <bibl xml:id="pmb33684">
             <title>Vita ipsa</title>
-            <author ref="pmbperson__2147">Altenberg, Peter</author>
+            <author ref="pmbperson__2147" role="hat-geschaffen">Altenberg, Peter</author>
             <date when="1918-01-01">1918</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=7</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33684</idno>
@@ -297,8 +296,8 @@
          </bibl>
          <bibl xml:id="pmb33686">
             <title>Märchen des Lebens</title>
-            <author ref="pmbperson__2147">Altenberg, Peter</author>
-            <date notBefore="1908-01-01" when="1908-07-01" notAfter="1908-12-31">1908</date>
+            <author ref="pmbperson__2147" role="hat-geschaffen">Altenberg, Peter</author>
+            <date notBefore="1908-01-01" when="1908-07-01">1908</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=4</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33686</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33686</idno>
@@ -321,6 +320,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>

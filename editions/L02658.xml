@@ -300,14 +300,14 @@
       <listBibl>
          <bibl xml:id="pmb88941">
             <title>?? [Rezension des Gastspiels von Anna Hochenburger, 7.1.1891]</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-anonym-veroffentlicht">Schnitzler, Arthur</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88941/</idno>
             <note type="work_kind">Rezension</note>
          </bibl>
          <bibl xml:id="pmb31213">
             <title>Romeo und Julia</title>
-            <author ref="pmbperson__2412">Shakespeare, William</author>
-            <date notBefore="1594-01-01" when="1594-07-02" notAfter="1594-12-31">1594</date>
+            <author ref="pmbperson__2412" role="hat-geschaffen">Shakespeare, William</author>
+            <date notBefore="1594-01-01" when="1594-07-02">1594</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31213</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31213</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31213</idno>
@@ -329,6 +329,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -356,6 +358,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -374,20 +378,19 @@
          <org xml:id="pmb36247">
             <orgName>Burgtheater</orgName>
             <orgName type="alternative-name">Burgtheater GmbH</orgName>
+            <desc type="entity_type">Theater</desc>
+            <desc type="entity_type_id">1012</desc>
             <location type="located_in_place">
-               <placeName ref="pmb50">Wien</placeName>
-               <geo>48,2066 16,37341</geo>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+               <placeName ref="pmb51">I., Innere Stadt</placeName>
+               <geo>48,20769 16,37049</geo>
+               <idno type="URL" subtype="geonames">http://sws.geonames.org/2775259/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36789/</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb51</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51010/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2775259/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb51</idno>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb14">Burgtheater</placeName>
@@ -406,10 +409,15 @@
             <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/38633-9</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36247</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36247</idno>
+            <note type="apis_dates">
+               <date notBefore="1852-01-01" when="1852-07-01">1852</date>
+            </note>
          </org>
          <org xml:id="pmb29698">
             <orgName>An der schönen blauen Donau</orgName>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno-plus?aid=asd</idno>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb52510">Berggasse</placeName>
                <geo>48,218776849348906 16,36345511169916</geo>
@@ -429,6 +437,8 @@
          <org xml:id="pmb29442">
             <orgName>Frankfurter Zeitung</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurter_Zeitung</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -447,6 +457,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29442</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29442</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29442</idno>
+            <note type="apis_dates">
+               <date>1856  – 1943</date>
+            </note>
          </org>
       </listOrg>
    </back>

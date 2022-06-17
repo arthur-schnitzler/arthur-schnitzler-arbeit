@@ -35,7 +35,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00506</idno>
+            <idno type="asbw" n="00506"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -223,7 +223,7 @@
       <listPerson>
          <person xml:id="pmb2450">
             <persName>
-               <forename>Friedrich M.</forename>
+               <forename>Friedrich Michael</forename>
                <surname>Fels</surname>
             </persName>
             <persName type="geburtsname_nachname">Mayer</persName>
@@ -338,8 +338,8 @@
             <title>[Burgtheater.] Liebelei</title>
             <note type="bibliografische_angabe">Neue Freie Presse, Nr. 11181, 10.10.1895, S. 7</note>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=18951010&amp;query=text:%22liebelei%22&amp;ref=anno-search&amp;seite=7</note>
-            <author ref="pmbperson__12816">Speidel, Ludwig</author>
-            <date when="1895-10-10">10.10.1895</date>
+            <author ref="pmbperson__12816" role="hat-anonym-veroffentlicht">Speidel, Ludwig</author>
+            <date>10.10.1895  – 10.10.1895</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42512/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42512</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42512</idno>
@@ -347,8 +347,8 @@
          </bibl>
          <bibl xml:id="pmb42545">
             <title>Uriel Acosta Trauerspiel in fünf Aufzügen</title>
-            <author ref="pmbperson__11555">Gutzkow, Karl</author>
-            <date notBefore="1846-01-01" when="1846-07-02" notAfter="1846-12-31">1846</date>
+            <author ref="pmbperson__11555" role="hat-geschaffen">Gutzkow, Karl</author>
+            <date from="1846-01-01" to="1846-12-31">1846  – 1846</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42545/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42545</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42545</idno>
@@ -361,6 +361,8 @@
             <placeName type="alternative-name">Turicum</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4068038-1</placeName>
             <placeName type="alternative-name">Duregum</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,37174 8,54226</geo>
             </location>
@@ -378,16 +380,14 @@
          </place>
          <place xml:id="pmb59">
             <placeName>IX., Alsergrund</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,22387 16,35641</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb618">Kaiserjubiläum-Stadttheater</placeName>
-               <geo>48,224472 16,350361</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2782729/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb59</idno>
@@ -407,6 +407,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -428,6 +430,8 @@
          </place>
          <place xml:id="pmb397">
             <placeName>Frankgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,215516628628 16,356475515829</geo>
             </location>
@@ -447,6 +451,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
             <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
             <placeName type="alternative-name">Republic of Austria</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,33333 13,33333</geo>
             </location>
@@ -462,6 +468,8 @@
          </place>
          <place xml:id="pmb43437">
             <placeName>Café Metropol</placeName>
+            <desc type="entity_type">Kaffeehaus (K.KAF)</desc>
+            <desc type="entity_type_id">20</desc>
             <location type="coords">
                <geo>47,36814 8,541785</geo>
             </location>
@@ -472,9 +480,14 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43437/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43437</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43437</idno>
+            <note type="apis_dates">
+               <date notBefore="1894-01-01" when="1894-07-02">1894</date>
+            </note>
          </place>
          <place xml:id="pmb43440">
             <placeName>Irrgarten (Irrgänge)</placeName>
+            <desc type="entity_type">Vergnügungspark (K.VGN)</desc>
+            <desc type="entity_type_id">56</desc>
             <location type="coords">
                <geo>47,368121 8,54177</geo>
             </location>
@@ -485,6 +498,9 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43440/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43440</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43440</idno>
+            <note type="apis_dates">
+               <date notBefore="1894-01-01" when="1894-07-02">1894</date>
+            </note>
          </place>
       </listPlace>
    </back>

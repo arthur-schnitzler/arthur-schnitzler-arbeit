@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00726</idno>
+            <idno type="asbw" n="00726"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -485,8 +485,8 @@
       <listBibl>
          <bibl xml:id="pmb33418">
             <title>En route</title>
-            <author ref="pmbperson__5449">Huysmans, Joris-Karl</author>
-            <date notBefore="1895-01-01" when="1895-07-02" notAfter="1895-12-31">1895</date>
+            <author ref="pmbperson__5449" role="hat-geschaffen">Huysmans, Joris-Karl</author>
+            <date notBefore="1895-01-01" when="1895-07-02">1895</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33418</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33418</idno>
             <note type="work_kind">Roman</note>
@@ -494,9 +494,9 @@
          <bibl xml:id="pmb42786">
             <title>Der Stellvertreter. Schwank in 3 Acten</title>
             <title type="namensvariante">Le remplaçant</title>
-            <author ref="pmbperson__14723">Busnach, William</author>
-            <author ref="pmbperson__6892">Duval, Georges</author>
-            <date notBefore="1897-01-01" when="1897-07-02" notAfter="1897-12-31">1897</date>
+            <author ref="pmbperson__14723" role="hat-geschaffen">Busnach, William</author>
+            <author ref="pmbperson__6892" role="hat-geschaffen">Duval, Georges</author>
+            <date from="1897-01-01" to="1897-12-31">1897  – 1897</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42786/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42786</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42786</idno>
@@ -507,16 +507,14 @@
       <listPlace>
          <place xml:id="pmb59">
             <placeName>IX., Alsergrund</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,22387 16,35641</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb618">Kaiserjubiläum-Stadttheater</placeName>
-               <geo>48,224472 16,350361</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2782729/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb59</idno>
@@ -530,6 +528,8 @@
             <placeName type="alternative-name">Wien,Innere Stadt</placeName>
             <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
             <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,20769 16,37049</geo>
             </location>
@@ -545,7 +545,7 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36789/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb51</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51010/</idno>
             <idno type="URL" subtype="geonames">https://sws.geonames.org/2775259/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb51</idno>
@@ -563,6 +563,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -584,6 +586,8 @@
          </place>
          <place xml:id="pmb338">
             <placeName>Wollzeile</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,20852 16,37592</geo>
             </location>
@@ -599,6 +603,8 @@
          <place xml:id="pmb228">
             <placeName>Baden-Baden</placeName>
             <placeName type="legacy-name-merge">bei Baden-Baden</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,7606 8,23975</geo>
             </location>
@@ -617,6 +623,8 @@
          </place>
          <place xml:id="pmb42783">
             <placeName>Sanatorium Frey-Dengler</placeName>
+            <desc type="entity_type">Sanatorium (K.SAN)</desc>
+            <desc type="entity_type_id">27</desc>
             <location type="coords">
                <geo>48,764265 8,234352</geo>
             </location>
@@ -627,10 +635,15 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42783/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42783</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42783</idno>
+            <note type="apis_dates">
+               <date notBefore="1890-01-01" when="1890-07-02">1890</date>
+            </note>
          </place>
          <place xml:id="pmb118">
             <placeName>Carl-Theater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Carltheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,215 16,384444</geo>
             </location>
@@ -643,6 +656,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb118</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/118</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb118</idno>
+            <note type="apis_dates">
+               <date>10.12.1847  – 29.5.1929</date>
+            </note>
          </place>
       </listPlace>
    </back>

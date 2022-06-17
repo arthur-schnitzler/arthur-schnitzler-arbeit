@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01571</idno>
+            <idno type="asbw" n="01571"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -392,7 +392,7 @@
       <listBibl>
          <bibl xml:id="pmb43898">
             <title>Der Jäger</title>
-            <author ref="pmbperson__12254">Michel, Robert</author>
+            <author ref="pmbperson__12254" role="hat-geschaffen">Michel, Robert</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43898/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43898</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43898</idno>
@@ -405,6 +405,8 @@
             <placeName>Kaltenleutgeben</placeName>
             <placeName type="legacy-name-merge">Kaltenleutgeben, Niederöst.</placeName>
             <placeName type="legacy-name-merge">Kaltenleutgeben, Niederösterreich</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1410</desc>
             <location type="coords">
                <geo>48,11646 16,19956</geo>
             </location>
@@ -424,12 +426,18 @@
          </place>
          <place xml:id="pmb68">
             <placeName>XVIII., Währing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,23333 16,31667</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
+            </location>
+            <location type="located_in_place">
+               <placeName ref="pmb243">Sommerhaidenweg</placeName>
+               <geo>48,248935842869 16,296768550115</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2762091/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb68</idno>
@@ -449,6 +457,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -471,6 +481,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -489,6 +501,8 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4027096-8</placeName>
             <placeName type="alternative-name">Stadt Innsbruck</placeName>
             <placeName type="legacy-name-merge">bei Innsbruck</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,28433 11,37706</geo>
             </location>

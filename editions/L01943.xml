@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01943</idno>
+            <idno type="asbw" n="01943"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -363,7 +363,7 @@
          <bibl xml:id="pmb29855">
             <title>Reigen. Zehn Dialoge</title>
             <note type="uri_worklink">https://www.digital.wienbibliothek.at/wbrobv/content/pageview/2587756</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1900-01-01">1900</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.32</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/ "Q1414190"</idno>
@@ -378,8 +378,8 @@
          </bibl>
          <bibl xml:id="pmb30963">
             <title>Die Mutter. In drei Acten</title>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
-            <date when="1891-02-08">8.2.1891</date>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
+            <date>8.2.1891  – 8.2.1891</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30963</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30963</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30963</idno>
@@ -389,8 +389,8 @@
          <bibl xml:id="pmb30435">
             <title>Der Garten der Erkenntnis</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Der_Garten_der_Erkenntnis</idno>
-            <author ref="pmbperson__10765">Andrian-Werburg, Leopold von</author>
-            <date notBefore="1895-01-01" when="1895-07-02" notAfter="1895-12-31">1895</date>
+            <author ref="pmbperson__10765" role="hat-unter-pseudonym-geschrieben">Andrian-Werburg, Leopold von</author>
+            <date notBefore="1895-01-01" when="1895-07-02">1895</date>
             <idno type="URL" subtype="archive">https://archive.org/details/dergartendererke00andr</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30435</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30435</idno>
@@ -413,6 +413,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -434,6 +436,8 @@
          </place>
          <place xml:id="pmb44248">
             <placeName>Forte dei Marmi</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1410</desc>
             <location type="coords">
                <geo>43,96388 10,17478</geo>
             </location>
@@ -449,6 +453,8 @@
          </place>
          <place xml:id="pmb1170">
             <placeName>Casa Vignolo</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>43,95501 10,1731</geo>
             </location>
@@ -461,6 +467,8 @@
          </place>
          <place xml:id="pmb1168">
             <placeName>Josephsplatz</placeName>
+            <desc type="entity_type">Platz (K.PLT)</desc>
+            <desc type="entity_type_id">21</desc>
             <location type="coords">
                <geo>48,1559704 11,566442</geo>
             </location>

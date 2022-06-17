@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L02047</idno>
+            <idno type="asbw" n="02047"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -361,9 +361,9 @@
          <bibl xml:id="pmb29943">
             <title>Bayreuth</title>
             <title type="legacy-name-merge">Bayreuth</title>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
-            <author ref="pmbperson__10818">Bahr-Mildenburg, Anna</author>
-            <date notBefore="1911-01-01" when="1911-07-02" notAfter="1911-12-31">1911</date>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
+            <author ref="pmbperson__10818" role="hat-geschaffen">Bahr-Mildenburg, Anna</author>
+            <date notBefore="1911-01-01" when="1911-07-02">1911</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29889</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29943</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29889</idno>
@@ -375,6 +375,8 @@
       <listPlace>
          <place xml:id="pmb63">
             <placeName>XIII., Hietzing</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,17547 16,29101</geo>
             </location>
@@ -389,6 +391,8 @@
          </place>
          <place xml:id="pmb802">
             <placeName>Töpfelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,190672621906 16,309077836769</geo>
             </location>
@@ -414,6 +418,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -436,11 +442,13 @@
          <place xml:id="pmb165">
             <placeName>Ober Sankt Veit</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Ober_Sankt_Veit</placeName>
+            <desc type="entity_type">eingemeindeter Ort (A.VOO)</desc>
+            <desc type="entity_type_id">40</desc>
             <location type="coords">
                <geo>48,188056 16,266389</geo>
             </location>
             <location type="located_in_place">
-               <placeName ref="pmb665">St. Veit</placeName>
+               <placeName ref="pmb665">Sankt Veit</placeName>
                <geo>48,18805 16,26638</geo>
             </location>
             <location type="located_in_place">
@@ -454,6 +462,8 @@
          </place>
          <place xml:id="pmb220">
             <placeName>Veitlissengasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,186622327678 16,259712159437</geo>
             </location>
@@ -472,6 +482,8 @@
          </place>
          <place xml:id="pmb113">
             <placeName>Türkenschanzpark</placeName>
+            <desc type="entity_type">Park (K.PRK)</desc>
+            <desc type="entity_type_id">19</desc>
             <location type="coords">
                <geo>48,235119783861 16,333568462613</geo>
             </location>

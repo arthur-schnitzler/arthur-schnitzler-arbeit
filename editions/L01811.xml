@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01811</idno>
+            <idno type="asbw" n="01811"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -428,6 +428,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -450,6 +452,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -465,6 +469,8 @@
          <place xml:id="pmb4">
             <placeName>Bösendorfer-Saal</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Bösendorfer-Saal</placeName>
+            <desc type="entity_type">Veranstaltungsgebäude (K.VSB)</desc>
+            <desc type="entity_type_id">5</desc>
             <location type="coords">
                <geo>48,209167 16,366111</geo>
             </location>
@@ -476,10 +482,15 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb4</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/4</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb4</idno>
+            <note type="apis_dates">
+               <date from="1872-01-01" to="1872-12-31">1872  – 1913-05-02</date>
+            </note>
          </place>
          <place xml:id="pmb96">
             <placeName>Meissl &amp; Schadn</placeName>
             <placeName type="uri_wien-geschichte-wiki">https://www.geschichtewiki.wien.gv.at/Meissl_%26_Schadn</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>48,202204 16,374869</geo>
             </location>
@@ -501,6 +512,8 @@
             <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4054504-0</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/23656/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,64224 15,8241</geo>
             </location>
@@ -513,6 +526,8 @@
       <listOrg>
          <org xml:id="pmb47586">
             <orgName>Verein für Kunst und Kultur</orgName>
+            <desc type="entity_type">Verein &gt;&gt; Verein für Kunstpflege</desc>
+            <desc type="entity_type_id">1038</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00075</idno>
+            <idno type="asbw" n="00075"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -353,8 +353,8 @@
             <title>Fédora</title>
             <title type="namensvariante">Feodora</title>
             <idno type="URL" subtype="wikipedia">https://en.wikipedia.org/wiki/F%C3%A9dora</idno>
-            <author ref="pmbperson__12624">Sardou, Victorien</author>
-            <date notBefore="1882-01-01" when="1882-07-02" notAfter="1882-12-31">1882</date>
+            <author ref="pmbperson__12624" role="hat-geschaffen">Sardou, Victorien</author>
+            <date notBefore="1882-01-01" when="1882-07-02">1882</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30433</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30433</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30433</idno>
@@ -364,8 +364,8 @@
          </bibl>
          <bibl xml:id="pmb32358">
             <title>Fernande</title>
-            <author ref="pmbperson__12624">Sardou, Victorien</author>
-            <date notBefore="1844-01-01" when="1844-07-01" notAfter="1844-12-31">1844</date>
+            <author ref="pmbperson__12624" role="hat-geschaffen">Sardou, Victorien</author>
+            <date notBefore="1844-01-01" when="1844-07-01">1844</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32358</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32358</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb32358</idno>
@@ -373,8 +373,8 @@
          </bibl>
          <bibl xml:id="pmb31395">
             <title>Nora oder ein Puppenheim</title>
-            <author ref="pmbperson__11798">Ibsen, Henrik</author>
-            <date notBefore="1879-01-01" when="1879-07-02" notAfter="1879-12-31">1879</date>
+            <author ref="pmbperson__11798" role="hat-geschaffen">Ibsen, Henrik</author>
+            <date notBefore="1879-01-01" when="1879-07-02">1879</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31395</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31395</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31395</idno>
@@ -383,7 +383,7 @@
          </bibl>
          <bibl xml:id="pmb30641">
             <title>Die Kameliendame. Drama in  fünf Akten</title>
-            <author ref="pmbperson__15512">Dumas, Alexandre fils</author>
+            <author ref="pmbperson__15512" role="hat-geschaffen">Dumas, Alexandre fils</author>
             <date when="1852-01-01">1852</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30641</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30641</idno>
@@ -405,6 +405,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -426,6 +428,8 @@
          </place>
          <place xml:id="pmb501">
             <placeName>Kärntnerring</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,201874800905 16,371985203093</geo>
             </location>

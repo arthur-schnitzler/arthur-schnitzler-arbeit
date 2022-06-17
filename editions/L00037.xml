@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00037</idno>
+            <idno type="asbw" n="00037"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -394,7 +394,7 @@
          <bibl xml:id="pmb31965">
             <title>Die drei Elixire</title>
             <note type="bibliografische_angabe">Moderner Musen-Almanach auf das Jahr 1894,</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1893-01-01">1893</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31965</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31965</idno>
@@ -404,8 +404,9 @@
          </bibl>
          <bibl xml:id="pmb29935">
             <title>Anatol</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1892-10-29">1892-10-29</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
+            <date>1892-10-29  – 1892-10-29</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.03</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q487409</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-anatol</idno>
@@ -421,8 +422,8 @@
             <title>Das Märchen. Schauspiel in drei Aufzügen</title>
             <note type="bibliografische_angabe">Arthur Schnitzler: Das Märchen. Schauspiel in drei Aufzügen. Dresden, Leipzig: E. Pierson’s Verlag 1894.</note>
             <note type="uri_worklink">https://babel.hathitrust.org/cgi/pt?id=coo.31924026341598&amp;view=1up&amp;seq=5</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1891-01-01">1891</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1891  – 1891</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.04</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1169917</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/38151</idno>
@@ -441,6 +442,8 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4008456-5</placeName>
             <placeName type="alternative-name">Eburodunum</placeName>
             <placeName type="namensvariante">Brno</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>49,19522 16,60796</geo>
             </location>
@@ -467,6 +470,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -489,6 +494,8 @@
          <place xml:id="pmb42968">
             <placeName>Stadttheater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Brünner_Stadttheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>49,201364 16,608143</geo>
             </location>
@@ -499,10 +506,15 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42968/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42968</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42968</idno>
+            <note type="apis_dates">
+               <date notBefore="1882-01-01" when="1882-07-02">1882</date>
+            </note>
          </place>
          <place xml:id="pmb788">
             <placeName>Hybešova</placeName>
             <placeName type="alternative-name">Straßengasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>49,189282 16,602271</geo>
             </location>
@@ -516,6 +528,8 @@
          </place>
          <place xml:id="pmb789">
             <placeName>Buchfeldgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,210652801032 16,353347167402</geo>
             </location>
@@ -530,6 +544,8 @@
          </place>
          <place xml:id="pmb34305">
             <placeName>Liechtensteinstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,08347 16,263789</geo>
             </location>
@@ -545,6 +561,8 @@
       <listOrg>
          <org xml:id="pmb29417">
             <orgName>Moderne Dichtung/Moderne Rundschau</orgName>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb41352">Výstaviště</placeName>
                <geo>49,188675 16,586983</geo>
@@ -598,6 +616,8 @@
          </org>
          <org xml:id="pmb42965">
             <orgName>Holzwarth &amp;  Ortony</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb58">VIII., Josefstadt</placeName>
                <geo>48,21126 16,34706</geo>

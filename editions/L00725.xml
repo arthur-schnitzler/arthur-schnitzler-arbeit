@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L00725</idno>
+            <idno type="asbw" n="00725"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -396,8 +396,8 @@
       <listBibl>
          <bibl xml:id="pmb29829">
             <title>Das Tschaperl</title>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
-            <date notBefore="1896-01-01" when="1896-07-01" notAfter="1896-12-31">1896</date>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
+            <date notBefore="1896-01-01" when="1896-07-01">1896</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=50</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29829</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29829</idno>
@@ -408,7 +408,7 @@
          <bibl xml:id="pmb30219">
             <title>Das Vermächtnis. Schauspiel in drei Akten</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Das_Vermächtnis_(Schnitzler)</idno>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1898-01-01">1898</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.05</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1170678</idno>
@@ -434,6 +434,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -455,6 +457,8 @@
          </place>
          <place xml:id="pmb296">
             <placeName>Günthergasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,216599877109 16,358330000258</geo>
             </location>
@@ -475,6 +479,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -490,6 +496,8 @@
          </place>
          <place xml:id="pmb397">
             <placeName>Frankgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,215516628628 16,356475515829</geo>
             </location>
@@ -506,6 +514,8 @@
       <listOrg>
          <org xml:id="pmb29209">
             <orgName>Die Zeit. Wiener Wochenschrift</orgName>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

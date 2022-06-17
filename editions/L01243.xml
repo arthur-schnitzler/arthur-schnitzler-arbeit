@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01243</idno>
+            <idno type="asbw" n="01243"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -333,8 +333,7 @@
                <forename>Otto</forename>
                <surname>Brahm</surname>
             </persName>
-            <persName type="namensvariante">Abrahamson</persName>
-            <persName type="geburtsname_nachname">Abraham</persName>
+            <persName type="geburtsname_nachname">Abrahamson</persName>
             <birth>
                <date when="1856-02-05">05.02.1856</date>
                <settlement ref="pmb506">
@@ -400,7 +399,7 @@
          <bibl xml:id="pmb31639">
             <title>Der Tod des Tizian</title>
             <note type="bibliografische_angabe">Blätter für die Kunst, Jg. 1, Oktober 1892</note>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             <date>1892.10</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31639</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31639</idno>
@@ -412,8 +411,8 @@
             <title>Der Schleier der Beatrice. Schauspiel in fünf Akten</title>
             <title type="arbeitstitel">Shawl</title>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=601&amp;teil=0111&amp;seite=00000001&amp;zoom=2</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1900-12-01">1900-12-01</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1900-12-01  – 1900-12-01</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.13</idno>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno-buch?apm=0&amp;aid=601&amp;teil=0303&amp;seite=00000215&amp;zoom=2</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29857</idno>
@@ -425,8 +424,8 @@
          <bibl xml:id="pmb40622">
             <title>Monna Vanna</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Monna_Vanna_(Schauspiel)</idno>
-            <author ref="pmbperson__12156">Maeterlinck, Maurice</author>
-            <date when="1902-05-07">7.5.1902</date>
+            <author ref="pmbperson__12156" role="hat-geschaffen">Maeterlinck, Maurice</author>
+            <date>7.5.1902  – 7.5.1902</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/40622/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40622</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40622</idno>
@@ -437,16 +436,14 @@
       <listPlace>
          <place xml:id="pmb59">
             <placeName>IX., Alsergrund</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,22387 16,35641</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb618">Kaiserjubiläum-Stadttheater</placeName>
-               <geo>48,224472 16,350361</geo>
             </location>
             <idno type="URL" subtype="geonames">http://sws.geonames.org/2782729/</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb59</idno>
@@ -457,6 +454,8 @@
             <placeName>Rom</placeName>
             <placeName type="legacy-name-merge">bei Rom</placeName>
             <placeName type="legacy-name-merge">Roma</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>41,89193 12,51133</geo>
             </location>
@@ -485,6 +484,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -506,6 +507,8 @@
          </place>
          <place xml:id="pmb623">
             <placeName>Hôtel Hassler</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>41,90627 12,4829</geo>
             </location>
@@ -526,6 +529,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q38</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3175395</placeName>
             <placeName type="legacy-name-merge">Italy</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>42,83333 12,83333</geo>
             </location>
@@ -542,6 +547,8 @@
          <place xml:id="pmb735">
             <placeName>Agnetendorf</placeName>
             <placeName type="none">Jagniątków</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,816944 15,609444</geo>
             </location>
@@ -559,6 +566,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -574,6 +583,8 @@
          </place>
          <place xml:id="pmb3">
             <placeName>Deutsches Theater Berlin</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>52,524444 13,382222</geo>
             </location>

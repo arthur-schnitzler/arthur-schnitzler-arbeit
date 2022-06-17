@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01367</idno>
+            <idno type="asbw" n="01367"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -328,12 +328,6 @@
                      <geo>43,70313 7,26608</geo>
                   </location>
                </settlement>
-               <settlement ref="pmb926">
-                  <placeName type="pref">Nizza</placeName>
-                  <location>
-                     <geo>43,70313 7,26608</geo>
-                  </location>
-               </settlement>
             </death>
             <sex value="male"/>
             <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
@@ -349,8 +343,7 @@
                <forename>Otto</forename>
                <surname>Brahm</surname>
             </persName>
-            <persName type="namensvariante">Abrahamson</persName>
-            <persName type="geburtsname_nachname">Abraham</persName>
+            <persName type="geburtsname_nachname">Abrahamson</persName>
             <birth>
                <date when="1856-02-05">05.02.1856</date>
                <settlement ref="pmb506">
@@ -425,8 +418,8 @@
             <title type="arbeitstitel">Die Egoisten</title>
             <title type="arbeitstitel">Einsame Wege</title>
             <title type="arbeitstitel">Wege ins Dunkle</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date notBefore="1904-01-01" when="1904-07-01" notAfter="1904-12-31">1904</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date notBefore="1904-01-01" when="1904-07-01">1904</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.08</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1198519</idno>
             <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-der-einsame-weg</idno>
@@ -441,7 +434,7 @@
          <bibl xml:id="pmb32406">
             <title>À propos de Solness le Constructeur [Le Tragique quotidien]</title>
             <note type="bibliografische_angabe">Le Figaro, 2. 4. 1894</note>
-            <author ref="pmbperson__12156">Maeterlinck, Maurice</author>
+            <author ref="pmbperson__12156" role="hat-geschaffen">Maeterlinck, Maurice</author>
             <date when="1894-04-02">02.04.1894</date>
             <idno type="URL" subtype="">http://gallica.bnf.fr/ark:/12148/bpt6k282861s/f1.item.zoom</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32406</idno>
@@ -452,7 +445,7 @@
          <bibl xml:id="pmb29895">
             <title>Dialog vom Tragischen</title>
             <note type="bibliografische_angabe">Neue Deutsche Rundschau, Jg. 14, H. 7, Juli 1903</note>
-            <author ref="pmbperson__10815">Bahr, Hermann</author>
+            <author ref="pmbperson__10815" role="hat-geschaffen">Bahr, Hermann</author>
             <date when="1903-07-01">01.07.1903</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29895</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29895</idno>
@@ -463,6 +456,8 @@
       <listPlace>
          <place xml:id="pmb218">
             <placeName>Marbach am Bodensee</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,6667 8,9</geo>
             </location>
@@ -484,6 +479,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -505,6 +502,8 @@
          </place>
          <place xml:id="pmb906">
             <placeName>Taormina</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>37,85358 15,28851</geo>
             </location>
@@ -518,6 +517,8 @@
             <placeName>Kairo</placeName>
             <placeName type="legacy-name">Fustat (Alt-Kairo)</placeName>
             <placeName type="legacy-name-merge">Cairo</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>30,06263 31,24967</geo>
             </location>
@@ -543,6 +544,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -560,6 +563,8 @@
       <listOrg>
          <org xml:id="pmb29706">
             <orgName>Le Figaro</orgName>
+            <desc type="entity_type">Zeitungsredaktion</desc>
+            <desc type="entity_type_id">1039</desc>
             <location type="located_in_place">
                <placeName ref="pmb182">Paris</placeName>
                <geo>48,85341 2,3488</geo>

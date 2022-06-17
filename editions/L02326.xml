@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02326</idno>
+            <idno type="asbw" n="02326"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -389,8 +389,8 @@
       <listBibl>
          <bibl xml:id="pmb31681">
             <title>Palestrina. Musikalische Legende in drei Akten</title>
-            <author ref="pmbperson__2674">Pfitzner, Hans</author>
-            <date notBefore="1912-01-01" when="1912-07-01" notAfter="1912-12-31">1912</date>
+            <author ref="pmbperson__2674" role="hat-geschaffen">Pfitzner, Hans</author>
+            <date notBefore="1912-01-01" when="1912-07-01">1912</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31681</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31681</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31681</idno>
@@ -400,9 +400,9 @@
          <bibl xml:id="pmb39853">
             <title>Die Frau ohne Schatten. Erzählung</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Die_Frau_ohne_Schatten_(Erzählung)</idno>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
-            <author ref="pmbperson__12870">Strauss, Richard</author>
-            <date notBefore="1919-01-01" when="1919-07-02" notAfter="1919-12-31">1919</date>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__12870" role="hat-vertont">Strauss, Richard</author>
+            <date from="1919-01-01" to="1919-12-31">1919  – 1919</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/39853/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39853</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb39853</idno>
@@ -416,6 +416,8 @@
             <placeName type="fruherer_ortsname">Markt Aussee</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/22650/</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873491/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,60998 13,78243</geo>
             </location>
@@ -442,6 +444,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -463,6 +467,8 @@
          </place>
          <place xml:id="pmb40632">
             <placeName>Ferleiten</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1123</desc>
             <location type="coords">
                <geo>47,16667 12,81667</geo>
             </location>
@@ -482,6 +488,8 @@
             <placeName>Salzburg</placeName>
             <placeName type="alternative-name">Iuvavum</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4076982-3</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,80067 13,04532</geo>
             </location>
@@ -497,6 +505,8 @@
          <place xml:id="pmb180">
             <placeName>Mirabell</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Schloss_Mirabell</placeName>
+            <desc type="entity_type">Schloss (K.SLS)</desc>
+            <desc type="entity_type_id">41</desc>
             <location type="coords">
                <geo>47,805528 13,042019</geo>
             </location>
@@ -511,6 +521,8 @@
          <place xml:id="pmb31">
             <placeName>Hellbrunn</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Hellbrunn</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>47,762222 13,060833</geo>
             </location>
@@ -527,6 +539,8 @@
             <placeName>Salzburg-Leopoldskron</placeName>
             <placeName type="alternative-name">Leopoldskron</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Leopoldskron</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>47,786389 13,030556</geo>
             </location>
@@ -539,6 +553,8 @@
             <placeName type="none">Operntheater</placeName>
             <placeName type="none">Staatsoper</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Wiener_Staatsoper</placeName>
+            <desc type="entity_type">Oper (K.OPR)</desc>
+            <desc type="entity_type_id">10</desc>
             <location type="coords">
                <geo>48,203 16,3691</geo>
             </location>

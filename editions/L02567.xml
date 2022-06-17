@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02567</idno>
+            <idno type="asbw" n="02567"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -425,8 +425,8 @@
       <listBibl>
          <bibl xml:id="pmb30945">
             <title>Im Spiel der Sommerlüfte. In drei Aufzügen</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1929-12-21">1929-12-21</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1929-12-21  – 1929-12-21</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.22</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/33637</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30945</idno>
@@ -440,8 +440,8 @@
          <bibl xml:id="pmb30247">
             <title>Faust</title>
             <note type="uri_worklink">http://faustedition.net</note>
-            <author ref="pmbperson__11461">Goethe, Johann Wolfgang von</author>
-            <date when="1790-01-01">1790</date>
+            <author ref="pmbperson__11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
+            <date>1790  – 1832</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30247</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30247</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30247</idno>
@@ -463,6 +463,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -484,6 +486,8 @@
          </place>
          <place xml:id="pmb54">
             <placeName>IV., Wieden</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,19198 16,36714</geo>
             </location>
@@ -497,6 +501,8 @@
          </place>
          <place xml:id="pmb52498">
             <placeName>Schönburgstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,18614 16,37042</geo>
             </location>
@@ -508,6 +514,8 @@
          </place>
          <place xml:id="pmb595">
             <placeName>Neapel</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>40,85216 14,26811</geo>
             </location>
@@ -520,6 +528,8 @@
          <place xml:id="pmb55891">
             <placeName>Newa</placeName>
             <placeName type="alternative-name">Neva River</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#H.STM</desc>
+            <desc type="entity_type_id">1577</desc>
             <location type="coords">
                <geo>59,94444 30,31</geo>
             </location>
@@ -537,6 +547,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
             <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
             <placeName type="alternative-name">Republic of Austria</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,33333 13,33333</geo>
             </location>

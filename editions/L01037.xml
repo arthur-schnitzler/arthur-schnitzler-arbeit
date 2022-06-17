@@ -32,7 +32,7 @@
                <name>Kurt Ifkovits</name>
                <name>Martin Anton Müller</name>
             </respStmt>
-            <idno type="asbw">L01037</idno>
+            <idno type="asbw" n="01037"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -304,7 +304,7 @@
          <bibl xml:id="pmb29855">
             <title>Reigen. Zehn Dialoge</title>
             <note type="uri_worklink">https://www.digital.wienbibliothek.at/wbrobv/content/pageview/2587756</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1900-01-01">1900</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.32</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/ "Q1414190"</idno>
@@ -332,6 +332,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -354,6 +356,8 @@
          <place xml:id="pmb683">
             <placeName>Steyrerhof</placeName>
             <placeName type="uri_wien-geschichte-wiki">https://www.geschichtewiki.wien.gv.at/Steyrerhof</placeName>
+            <desc type="entity_type">Gebäude (K.GBD)</desc>
+            <desc type="entity_type_id">24</desc>
             <location type="coords">
                <geo>48,21117 16,37606</geo>
             </location>
@@ -367,6 +371,8 @@
          </place>
          <place xml:id="pmb444">
             <placeName>Jordangasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,21147277354 16,370659963308</geo>
             </location>
@@ -388,6 +394,8 @@
             <orgName type="loschen">http://anno.onb.ac.at/info/nwg_info.htm</orgName>
             <orgName type="legacy-name-merge">Neues Wiener Tagblatt</orgName>
             <idno type="URL" subtype="pmb">http://https://pmb.acdh.oeaw.ac.at/apis/api2/entity/37476/</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -413,6 +421,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29414</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29414</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29414</idno>
+            <note type="apis_dates">
+               <date from="1867-01-01" to="1867-12-31">1867  – 1945</date>
+            </note>
          </org>
       </listOrg>
    </back>

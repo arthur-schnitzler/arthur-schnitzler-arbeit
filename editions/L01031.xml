@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01031</idno>
+            <idno type="asbw" n="01031"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -517,8 +517,8 @@
          <bibl xml:id="pmb33243">
             <title>Tagebuch</title>
             <note type="uri_worklink">https://schnitzler-tagebuch.acdh.oeaw.ac.at</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1981-01-01">1981</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1981  – 2000</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
@@ -528,8 +528,8 @@
             <title>Frau Bertha Garlan. Roman</title>
             <note type="bibliografische_angabe">Neue Deutsche Rundschau, Jg. 12, H. 1. (Januar) – H. 3 (März 1901)</note>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frau_Bertha_Garlan</idno>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1901-01-15">15.1.1901</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>15.1.1901  – 15.3.1901</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.36</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1451457</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30486</idno>
@@ -540,7 +540,7 @@
          </bibl>
          <bibl xml:id="pmb33808">
             <title>Ein Erfolg</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1900-01-01">1900</date>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33808/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33808</idno>
@@ -550,8 +550,8 @@
          </bibl>
          <bibl xml:id="pmb30945">
             <title>Im Spiel der Sommerlüfte. In drei Aufzügen</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1929-12-21">1929-12-21</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1929-12-21  – 1929-12-21</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.22</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/33637</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30945</idno>
@@ -577,6 +577,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -603,6 +605,8 @@
             <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
             <placeName type="alternative-name">Pariž</placeName>
             <placeName type="alternative-name">Parisius</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,85341 2,3488</geo>
             </location>
@@ -615,6 +619,8 @@
          <place xml:id="pmb682">
             <placeName>Dubrovnik</placeName>
             <placeName type="none">Ragusa</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>42,64807 18,09216</geo>
             </location>
@@ -630,6 +636,8 @@
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000958</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3194097</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/3194099/</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1134</desc>
             <location type="coords">
                <geo>45,33771 14,30515</geo>
             </location>
@@ -648,6 +656,8 @@
          </place>
          <place xml:id="pmb265">
             <placeName>Dalmatien</placeName>
+            <desc type="entity_type">Region</desc>
+            <desc type="entity_type_id">47</desc>
             <location type="coords">
                <geo>43,812761 16,218756</geo>
             </location>

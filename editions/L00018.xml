@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00018</idno>
+            <idno type="asbw" n="00018"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -400,8 +400,8 @@
             <title>Aus der Kaffeehausecke</title>
             <title type="legacy-name-merge">Aus der Kaffeehausecke</title>
             <title type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33732/</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date notBefore="1977-01-01" when="1977-07-02" notAfter="1977-12-31">1977</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date notBefore="1977-01-01" when="1977-07-02">1977</date>
             <idno type="URL" subtype="">http://gutenberg.spiegel.de/buch/-5379/1</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33688</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33688</idno>
@@ -422,6 +422,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -447,6 +449,8 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4008456-5</placeName>
             <placeName type="alternative-name">Eburodunum</placeName>
             <placeName type="namensvariante">Brno</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>49,19522 16,60796</geo>
             </location>
@@ -462,6 +466,8 @@
          </place>
          <place xml:id="pmb40154">
             <placeName>Hotel Neuhauser</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>49,19294 16,61001</geo>
             </location>
@@ -476,6 +482,8 @@
          <place xml:id="pmb40823">
             <placeName>Mähren</placeName>
             <placeName type="alternative-name">Moravia</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#L.RGN</desc>
+            <desc type="entity_type_id">1284</desc>
             <location type="coords">
                <geo>49,5 17,0</geo>
             </location>

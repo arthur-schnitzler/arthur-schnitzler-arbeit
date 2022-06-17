@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02134</idno>
+            <idno type="asbw" n="02134"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -941,13 +941,16 @@
                <surname>Putlitz</surname>
             </persName>
             <birth>
-               <date notBefore="1861-01-01" when="1861-07-02" notAfter="1861-12-31">1861</date>
-               <settlement ref="pmb28809">
+               <date when="1861-05-07">1861-05-07</date>
+               <settlement ref="pmb65658">
                   <placeName type="pref">Retzin</placeName>
+                  <location>
+                     <geo>53,11414 11,99481</geo>
+                  </location>
                </settlement>
             </birth>
             <death>
-               <date when="1922-07-02" notAfter="1922-12-31">1922</date>
+               <date when="1922-03-09">1922-03-09</date>
                <settlement ref="pmb872">
                   <placeName type="pref">Stuttgart</placeName>
                   <location>
@@ -1200,8 +1203,8 @@
       <listBibl>
          <bibl xml:id="pmb33542">
             <title>Ignoramibus</title>
-            <author ref="pmbperson__11763">Holz, Arno</author>
-            <date notBefore="1913-01-01" when="1913-07-02" notAfter="1913-12-31">1913</date>
+            <author ref="pmbperson__11763" role="hat-geschaffen">Holz, Arno</author>
+            <date notBefore="1913-01-01" when="1913-07-02">1913</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33542</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33542</idno>
             <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
@@ -1216,6 +1219,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -1242,6 +1247,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -1263,6 +1270,8 @@
          </place>
          <place xml:id="pmb1222">
             <placeName>Blasewitz</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>51,05 13,7969</geo>
             </location>
@@ -1276,6 +1285,8 @@
          </place>
          <place xml:id="pmb910">
             <placeName>Gießen</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>50,58727 8,67554</geo>
             </location>
@@ -1287,6 +1298,8 @@
          </place>
          <place xml:id="pmb1225">
             <placeName>University of Illinois</placeName>
+            <desc type="entity_type">Universität (K.UNI)</desc>
+            <desc type="entity_type_id">15</desc>
             <location type="coords">
                <geo>40,102494 -88,227322</geo>
             </location>
@@ -1309,16 +1322,10 @@
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4127793-4</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000355</placeName>
             <placeName type="legacy-uri-merge">https://www.geonames.org/3220837</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+            <desc type="entity_type_id">1415</desc>
             <location type="coords">
                <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb45258">München</placeName>
-               <geo>48,13743 11,57549</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb54315">Brienner Straße</placeName>
-               <geo>48,14512778708449 11,568353382899355</geo>
             </location>
             <location type="located_in_place">
                <placeName ref="pmb314">Bayern</placeName>
@@ -1336,6 +1343,8 @@
          </place>
          <place xml:id="pmb1223">
             <placeName>Bern</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>46,9489 7,4638</geo>
             </location>
@@ -1352,6 +1361,8 @@
          </place>
          <place xml:id="pmb907">
             <placeName>Kiel</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>54,32133 10,13489</geo>
             </location>
@@ -1369,6 +1380,8 @@
          <org xml:id="pmb29649">
             <orgName>Der Kunstwart</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Der_Kunstwart</idno>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb866">Dresden</placeName>
                <geo>51,0833 13,7666</geo>
@@ -1392,6 +1405,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29649</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29649</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29649</idno>
+            <note type="apis_dates">
+               <date from="1887-01-01" to="1887-12-31">1887  – 1937</date>
+            </note>
          </org>
       </listOrg>
    </back>

@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01245</idno>
+            <idno type="asbw" n="01245"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -311,8 +311,8 @@
          <bibl xml:id="pmb33498">
             <title>Liebelei. Erstes Bild</title>
             <note type="bibliografische_angabe">Arthur Schnitzler: Liebelei. Erstes Bild. In: Widmungen zur Feier des siebzigsten Geburtstages Ferdinand von Saar’s. Hrsg. v. Richard Specht. Buchschmuck v. A. F. Seligmann. Wien: Wiener Verlag 1903 (vordatiert von 14.11.1902), S. 175–196.</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1902-11-14">1902-11-14</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1902-11-14  – 1902-11-14</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33498</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33498</idno>
             <note type="work_kind">Dramenfragment</note>
@@ -320,9 +320,12 @@
          <bibl xml:id="pmb50519">
             <title>Widmungen zur Feier des siebzigsten Geburtstages Ferdinand von Saar’s.</title>
             <title type="legacy-name-merge">Widmungen zur Feier des siebzigsten Geburtstages Ferdinand von Saar’s</title>
-            <author ref="pmbperson__2456">Specht, Richard</author>
-            <author ref="pmbperson__2456">Specht, Richard</author>
-            <date when="1902-11-14">1902-11-14</date>
+            <author ref="pmbperson__2456" role="hat-herausgegeben">Specht, Richard</author>
+            <author ref="pmbperson__2456" role="hat-herausgegeben">Specht, Richard</author>
+            <author ref="pmbperson__12769" role="hat-illustriert">Seligmann, Adalbert Franz</author>
+            <author ref="pmbperson__12740" role="ist-beitragerin-zu">Schwarzkopf, Gustav</author>
+            <author ref="pmbperson__2121" role="ist-beitragerin-zu">Schnitzler, Arthur</author>
+            <date>1902-11-14  – 1902-11-14</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33500</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50519/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33500</idno>
@@ -344,6 +347,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -366,6 +371,8 @@
          <place xml:id="pmb69">
             <placeName>XIX., Döbling</placeName>
             <placeName type="legacy-name-merge">Döbling</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,25 16,33306</geo>
             </location>
@@ -384,6 +391,8 @@
       <listOrg>
          <org xml:id="pmb29636">
             <orgName>Wiener Verlag</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

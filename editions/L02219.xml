@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02219</idno>
+            <idno type="asbw" n="02219"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -286,7 +286,7 @@
       <listBibl>
          <bibl xml:id="pmb33606">
             <title>Der Fremde</title>
-            <author ref="pmbperson__12438">Adam, Robert</author>
+            <author ref="pmbperson__12438" role="hat-geschaffen">Adam, Robert</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33606</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33606</idno>
             <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb33606.html</idno>
@@ -307,6 +307,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -328,6 +330,8 @@
          </place>
          <place xml:id="pmb44400">
             <placeName>Zistersdorf</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.ADM3</desc>
+            <desc type="entity_type_id">1434</desc>
             <location type="coords">
                <geo>48,53585 16,75613</geo>
             </location>
@@ -343,6 +347,8 @@
          </place>
          <place xml:id="pmb62">
             <placeName>XII., Meidling</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,17192 16,32586</geo>
             </location>
@@ -357,6 +363,8 @@
          </place>
          <place xml:id="pmb71">
             <placeName>XXI., Floridsdorf</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>48,25 16,39972</geo>
             </location>
@@ -370,6 +378,8 @@
          </place>
          <place xml:id="pmb1239">
             <placeName>Meidlinger Hauptstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,178825 16,329918</geo>
             </location>
@@ -386,6 +396,8 @@
          <org xml:id="pmb29639">
             <orgName>S. Fischer Verlag</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/S._Fischer_Verlag</idno>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb146">Frankfurt am Main</placeName>
                <geo>50,11552 8,68417</geo>
@@ -420,9 +432,14 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29639</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29639</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29639</idno>
+            <note type="apis_dates">
+               <date notBefore="1886-01-01" when="1886-07-02">1886</date>
+            </note>
          </org>
          <org xml:id="pmb29602">
             <orgName>Bezirksgericht Wien Floridsdorf</orgName>
+            <desc type="entity_type">Gericht</desc>
+            <desc type="entity_type_id">1037</desc>
             <location type="located_in_place">
                <placeName ref="pmb71">XXI., Floridsdorf</placeName>
                <geo>48,25 16,39972</geo>

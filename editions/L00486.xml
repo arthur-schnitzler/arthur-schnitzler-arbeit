@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00486</idno>
+            <idno type="asbw" n="00486"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -471,7 +471,6 @@
             </persName>
             <persName type="geburtsname_vorname">Siegmund</persName>
             <persName type="geburtsname_nachname">Salzmann</persName>
-            <persName type="namensvariante">Salten Felix</persName>
             <persName type="legacy-name-merge">Salzmann, Siegmund</persName>
             <birth>
                <date when="1869-09-06">06.09.1869</date>
@@ -538,7 +537,7 @@
       <listBibl>
          <bibl xml:id="pmb29917">
             <title>Liebelei. Schauspiel in drei Akten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1895-10-09">9.10.1895</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.27</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1823758</idno>
@@ -553,8 +552,8 @@
          </bibl>
          <bibl xml:id="pmb34308">
             <title>Italienische Reise</title>
-            <author ref="pmbperson__11461">Goethe, Johann Wolfgang von</author>
-            <date when="1816-01-01">1816</date>
+            <author ref="pmbperson__11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
+            <date>1816  – 1817</date>
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34308/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34308</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34308</idno>
@@ -580,6 +579,8 @@
       <listPlace>
          <place xml:id="pmb759">
             <placeName>Schönberg im Stubaital</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,18333 11,41667</geo>
             </location>
@@ -602,6 +603,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -623,6 +626,8 @@
          </place>
          <place xml:id="pmb36300">
             <placeName>Kopenhagen</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>55,67594 12,56553</geo>
             </location>
@@ -641,6 +646,8 @@
          </place>
          <place xml:id="pmb465">
             <placeName>Riva del Garda</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>45,88576 10,84118</geo>
             </location>
@@ -653,6 +660,8 @@
          <place xml:id="pmb39611">
             <placeName>Salò</placeName>
             <placeName type="legacy-name">Saló</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1128</desc>
             <location type="coords">
                <geo>45,60685 10,5205</geo>
             </location>
@@ -666,6 +675,8 @@
          </place>
          <place xml:id="pmb39975">
             <placeName>Lago di Garda</placeName>
+            <desc type="entity_type">See (N.SEE)</desc>
+            <desc type="entity_type_id">44</desc>
             <location type="coords">
                <geo>45,6316 10,660517</geo>
             </location>
@@ -679,6 +690,8 @@
          </place>
          <place xml:id="pmb44153">
             <placeName>Verona</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA2</desc>
+            <desc type="entity_type_id">1419</desc>
             <location type="coords">
                <geo>45,4299 10,98444</geo>
             </location>
@@ -696,6 +709,8 @@
          </place>
          <place xml:id="pmb43323">
             <placeName>Gasthaus Jagerhof</placeName>
+            <desc type="entity_type">Gastgewerbegebäude (K.GGW)</desc>
+            <desc type="entity_type_id">17</desc>
             <location type="coords">
                <geo>47,18732 11,40657</geo>
             </location>
@@ -709,6 +724,8 @@
          </place>
          <place xml:id="pmb608">
             <placeName>Brenner</placeName>
+            <desc type="entity_type">Pass (N.PAS)</desc>
+            <desc type="entity_type_id">68</desc>
             <location type="coords">
                <geo>47,00528 11,50836</geo>
             </location>
@@ -722,6 +739,8 @@
          <org xml:id="pmb40458">
             <orgName>Bibliographisches Institut</orgName>
             <orgName type="alternative-name">Leipzig, Bibliographisches Institut</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb864">Leipzig</placeName>
                <geo>51,33962 12,37129</geo>

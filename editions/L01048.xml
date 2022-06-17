@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01048</idno>
+            <idno type="asbw" n="01048"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -215,7 +215,7 @@
                <forename>Julius</forename>
                <surname>Rodenberg</surname>
             </persName>
-            <persName type="namensvariante">Levy</persName>
+            <persName type="geburtsname_nachname">Levy</persName>
             <birth>
                <date when="1831-06-26">26.06.1831</date>
                <settlement ref="pmb62099">
@@ -266,8 +266,8 @@
             <title>Frau Bertha Garlan. Roman</title>
             <note type="bibliografische_angabe">Neue Deutsche Rundschau, Jg. 12, H. 1. (Januar) – H. 3 (März 1901)</note>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frau_Bertha_Garlan</idno>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1901-01-15">15.1.1901</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>15.1.1901  – 15.3.1901</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.36</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1451457</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30486</idno>
@@ -291,6 +291,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -318,6 +320,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -333,6 +337,8 @@
          </place>
          <place xml:id="pmb397">
             <placeName>Frankgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,215516628628 16,356475515829</geo>
             </location>
@@ -349,6 +355,8 @@
       <listOrg>
          <org xml:id="pmb34931">
             <orgName>Deutsche Rundschau</orgName>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb34933">Margaretenstraße</placeName>
                <geo>52,494434 13,283567</geo>
@@ -368,6 +376,9 @@
             <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/34931/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34931</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb34931</idno>
+            <note type="apis_dates">
+               <date>1874  – 1964</date>
+            </note>
          </org>
       </listOrg>
    </back>

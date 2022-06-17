@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01422</idno>
+            <idno type="asbw" n="01422"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -523,7 +523,7 @@
       <listBibl>
          <bibl xml:id="pmb31091">
             <title>Das gerettete Venedig. Trauerspiel in fünf Aufzügen</title>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             <date when="1905-01-01">1905</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31091</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31091</idno>
@@ -537,7 +537,7 @@
             <title type="legacy-uri-merge">https://asaf.com/S.04.02.06</title>
             <title type="legacy-uri-merge">https://www.wikidata.org/wiki/Q1171482</title>
             <note type="bibliografische_angabe">Neue Freie Presse, 23. 4. 1905, S. 31–34</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1905-04-23">23.04.1905</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19050423&amp;seite=31&amp;zoom=33</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30655</idno>
@@ -550,8 +550,8 @@
             <title>Der Weg ins Freie. Roman</title>
             <note type="bibliografische_angabe">Die neue Rundschau, Jg. 19, H. 1–6, Januar–Juni 1908</note>
             <title type="arbeitstitel">Die Entrüsteten</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1908-01-01">1.1.1908</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1.1.1908  – 1.6.1908</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.18</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q700479</idno>
             <idno type="URL" subtype="archive">https://archive.org/details/neuerundschau11908franuoft/page/30</idno>
@@ -568,8 +568,8 @@
             <title type="arbeitstitel">Cäcilie Adams</title>
             <title type="arbeitstitel">„Nicht mehr zu dir zu gehn …“</title>
             <title type="arbeitstitel">Adagio</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1905-10-12">1905-10-12</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1905-10-12  – 1905-10-12</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.35</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q245055</idno>
             <idno type="URL" subtype="theadok">https://theadok.at/work/38158</idno>
@@ -583,7 +583,8 @@
          <bibl xml:id="pmb30287">
             <title>Ritterlichkeit</title>
             <title type="arbeitstitel">Verführung</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <author ref="pmbperson__89007" role="hat-herausgegeben">Schlein, Rena R.</author>
             <date when="1977-01-01">1977</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.33</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30287</idno>
@@ -595,7 +596,7 @@
          <bibl xml:id="pmb29937">
             <title>Der junge Medardus. Dramatische Historie in einem Vorspiel und fünf Aufzügen</title>
             <note type="bibliografische_angabe">Der junge Medardus. Dramatische Historie in einem Vorspiel und fünf Aufzügen. Berlin: S. Fischer [26.10.]1910</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1910-10-26">1910-10-26</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.11</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1198956</idno>
@@ -622,6 +623,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -643,6 +646,8 @@
          </place>
          <place xml:id="pmb573">
             <placeName>Bad Fusch</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,2003 12,85589</geo>
             </location>
@@ -658,6 +663,8 @@
          <place xml:id="pmb483">
             <placeName>Reichenau an der Rax</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/8461/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,7 15,83333</geo>
             </location>
@@ -673,6 +680,8 @@
          </place>
          <place xml:id="pmb40881">
             <placeName>Nasswald</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1123</desc>
             <location type="coords">
                <geo>47,73333 15,66667</geo>
             </location>
@@ -692,6 +701,8 @@
             <placeName>Rax</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Rax</placeName>
             <placeName type="legacy-name-merge">Raxalpe</placeName>
+            <desc type="entity_type">Berg (N.BRG)</desc>
+            <desc type="entity_type_id">28</desc>
             <location type="coords">
                <geo>47,68897 15,68948</geo>
             </location>
@@ -708,6 +719,8 @@
          <place xml:id="pmb40876">
             <placeName>Wienerwald</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Wienerwald</placeName>
+            <desc type="entity_type">Ausflugsziel</desc>
+            <desc type="entity_type_id">62</desc>
             <location type="coords">
                <geo>48,087222 15,911944</geo>
             </location>
@@ -731,6 +744,8 @@
             <placeName>Rodaun</placeName>
             <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11742/</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>48,132793312328 16,256152195922</geo>
             </location>
@@ -747,6 +762,8 @@
          <place xml:id="pmb7728">
             <placeName>Mauer</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Mauer_(Wien)</placeName>
+            <desc type="entity_type">eingemeindeter Ort (A.VOO)</desc>
+            <desc type="entity_type_id">40</desc>
             <location type="coords">
                <geo>48,150556 16,268889</geo>
             </location>
@@ -756,6 +773,8 @@
          </place>
          <place xml:id="pmb555">
             <placeName>Kalksburg</placeName>
+            <desc type="entity_type">eingemeindeter Ort (A.VOO)</desc>
+            <desc type="entity_type_id">40</desc>
             <location type="coords">
                <geo>48,142780596146 16,245159724901</geo>
             </location>
@@ -772,6 +791,8 @@
             <placeName>Kalksburger Straße</placeName>
             <placeName type="namensvariante">Klausenstraße</placeName>
             <placeName type="uri_wien-geschichte-wiki">https://www.geschichtewiki.wien.gv.at/Kalksburger_Straße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,147941 16,256941</geo>
             </location>
@@ -785,6 +806,8 @@
          </place>
          <place xml:id="pmb40936">
             <placeName>Der rothe Stadl</placeName>
+            <desc type="entity_type">Lokal (K.LKL)</desc>
+            <desc type="entity_type_id">22</desc>
             <location type="coords">
                <geo>48,13711 16,208611</geo>
             </location>
@@ -798,6 +821,8 @@
          </place>
          <place xml:id="pmb942">
             <placeName>Mauerbach</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,24514 16,16793</geo>
             </location>
@@ -809,6 +834,8 @@
          </place>
          <place xml:id="pmb906">
             <placeName>Taormina</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>37,85358 15,28851</geo>
             </location>
@@ -820,6 +847,8 @@
          </place>
          <place xml:id="pmb539">
             <placeName>Sophienalpe</placeName>
+            <desc type="entity_type">Berg (N.BRG)</desc>
+            <desc type="entity_type_id">28</desc>
             <location type="coords">
                <geo>48,246719 16,23036</geo>
             </location>
@@ -835,6 +864,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -852,6 +883,8 @@
             <placeName type="fruherer_ortsname">Markt Aussee</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/22650/</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873491/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,60998 13,78243</geo>
             </location>

@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L00849</idno>
+            <idno type="asbw" n="00849"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -442,7 +442,7 @@
          <bibl xml:id="pmb30219">
             <title>Das Vermächtnis. Schauspiel in drei Akten</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Das_Vermächtnis_(Schnitzler)</idno>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1898-01-01">1898</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.05</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1170678</idno>
@@ -455,8 +455,8 @@
          </bibl>
          <bibl xml:id="pmb32562">
             <title>Der grüne Kakadu – Paracelsus – Die Gefährtin. Drei Einakter</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <date when="1899-03-01">1.3.1899</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1.3.1899  – 1.3.1899</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32562</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32562</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb32562</idno>
@@ -464,7 +464,7 @@
          </bibl>
          <bibl xml:id="pmb32512">
             <title>Der Abenteurer und die Sängerin oder Die Geschenke des Lebens</title>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             <date when="1899-03-18">18.3.1899</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32512</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32512</idno>
@@ -477,6 +477,8 @@
          <place xml:id="pmb462">
             <placeName>Venedig</placeName>
             <placeName type="legacy-name-merge">Venice</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>45,43713 12,33265</geo>
             </location>
@@ -503,6 +505,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -526,6 +530,8 @@
             <placeName>Hotel de l’Europe</placeName>
             <placeName type="legacy-name-merge">Hotel Europe</placeName>
             <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A001209</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>45,432304 12,336899</geo>
             </location>
@@ -539,6 +545,8 @@
          </place>
          <place xml:id="pmb34052">
             <placeName>Canal Grande</placeName>
+            <desc type="entity_type">Fluss (N.FLS)</desc>
+            <desc type="entity_type_id">50</desc>
             <location type="coords">
                <geo>45,436312 12,33118</geo>
             </location>
@@ -552,6 +560,8 @@
          </place>
          <place xml:id="pmb34061">
             <placeName>Neuenburgersee</placeName>
+            <desc type="entity_type">See (N.SEE)</desc>
+            <desc type="entity_type_id">44</desc>
             <location type="coords">
                <geo>46,905556 6,858889</geo>
             </location>
@@ -565,6 +575,8 @@
          </place>
          <place xml:id="pmb896">
             <placeName>Bologna</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>44,49381 11,33875</geo>
             </location>
@@ -581,6 +593,8 @@
          <place xml:id="pmb263">
             <placeName>Florenz</placeName>
             <placeName type="alternative-name">Florence</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>43,77925 11,24626</geo>
             </location>
@@ -604,6 +618,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>

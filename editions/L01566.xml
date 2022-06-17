@@ -34,7 +34,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01566</idno>
+            <idno type="asbw" n="01566"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -289,8 +289,9 @@
       <listBibl>
          <bibl xml:id="pmb48434">
             <title>Franz Stelzhamer und die oberösterreichische Dialektdichtung</title>
-            <author ref="pmbperson__11036">Burckhard, Max Eugen</author>
-            <date notBefore="1906-01-01" when="1906-07-02" notAfter="1906-12-31">1906</date>
+            <author ref="pmbperson__11036" role="hat-geschaffen">Burckhard, Max Eugen</author>
+            <author ref="pmbperson__48437" role="hat-illustriert">Forstner, Leopold</author>
+            <date from="1906-01-01" to="1906-12-31">1906  – 1906</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/48434/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb48434</idno>
             <note type="work_kind">Fachliteratur</note>
@@ -306,9 +307,10 @@
          </bibl>
          <bibl xml:id="pmb48464">
             <title>Charakterbilder aus Oberösterreich</title>
-            <author ref="pmbperson__3622">Stelzhamer, Franz</author>
-            <author ref="pmbperson__11036">Burckhard, Max Eugen</author>
-            <date when="1905-11-13">1905-11-13</date>
+            <author ref="pmbperson__3622" role="hat-geschaffen">Stelzhamer, Franz</author>
+            <author ref="pmbperson__11617" role="hat-ein-vorwortnachwort-verfasst-zu">Hauptmann, Gerhart</author>
+            <author ref="pmbperson__11036" role="hat-herausgegeben">Burckhard, Max Eugen</author>
+            <date>1905-11-13  – 1905-11-13</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/48464/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb48464</idno>
             <note type="work_kind">Textsammlung</note>
@@ -328,6 +330,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -351,6 +355,8 @@
             <placeName>Leipzig</placeName>
             <placeName type="alternative-name">Gross-Leipzig</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4035206-7</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>51,33962 12,37129</geo>
             </location>
@@ -366,6 +372,8 @@
       <listOrg>
          <org xml:id="pmb29636">
             <orgName>Wiener Verlag</orgName>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>

@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02651</idno>
+            <idno type="asbw" n="02651"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -456,6 +456,7 @@
             </persName>
             <persName type="geburtsname_vorname">Hildegard</persName>
             <persName type="pseudonym">Hildegard de St. Quentin</persName>
+            <persName type="legacy-name-merge">M., Hild.</persName>
             <birth>
                <date when="1876-08-30">1876-08-30</date>
                <settlement ref="pmb50">
@@ -477,6 +478,8 @@
             <sex value="female"/>
             <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
             <occupation ref="pmb1918">Telefonist/Telefonistin</occupation>
+            <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_17760</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20802</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65913/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88423/</idno>
          </person>
@@ -485,8 +488,8 @@
          <bibl xml:id="pmb30247">
             <title>Faust</title>
             <note type="uri_worklink">http://faustedition.net</note>
-            <author ref="pmbperson__11461">Goethe, Johann Wolfgang von</author>
-            <date when="1790-01-01">1790</date>
+            <author ref="pmbperson__11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
+            <date>1790  – 1832</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30247</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30247</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30247</idno>
@@ -497,7 +500,7 @@
             <title>An der schönen blauen Donau</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/An_der_Schönen_Blauen_Donau</idno>
             <title type="uri_anno">https://anno.onb.ac.at/cgi-content/anno-plus?aid=asd&amp;size=45</title>
-            <date when="1886-01-01">1886</date>
+            <date>1886  – 1896</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/35860/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35860</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb35860</idno>
@@ -508,8 +511,8 @@
             <title type="unter_diesem_namen_oder_kurzel_veroffentlicht">Hildegard de St. Quentin</title>
             <title type="uri_anno">https://anno.onb.ac.at/cgi-content/anno-plus?aid=asd&amp;datum=1890&amp;page=487&amp;size=45</title>
             <note type="bibliografische_angabe">An der schönen blauen Donau, Jg. 5, H. 20, 1.10.1890, S. 461–463</note>
-            <author ref="pmbperson__65913">Mitis, Hilda von</author>
-            <date notBefore="1890-01-01" when="1890-07-02" notAfter="1890-12-31">1890</date>
+            <author ref="pmbperson__65913" role="hat-unter-pseudonym-geschrieben">Mitis, Hilda von</author>
+            <date notBefore="1890-01-01" when="1890-07-02">1890</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88924/</idno>
             <note type="work_kind">Erzählung</note>
          </bibl>
@@ -528,6 +531,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -551,6 +556,8 @@
             <placeName>Salzburg</placeName>
             <placeName type="alternative-name">Iuvavum</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4076982-3</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,80067 13,04532</geo>
             </location>
@@ -565,6 +572,8 @@
          </place>
          <place xml:id="pmb53101">
             <placeName>Seidengasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,2002 16,3397</geo>
             </location>
@@ -577,6 +586,8 @@
          </place>
          <place xml:id="pmb52510">
             <placeName>Berggasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,218776849348906 16,36345511169916</geo>
             </location>
@@ -591,6 +602,8 @@
       <listOrg>
          <org xml:id="pmb53104">
             <orgName>Josef Eberle  Stein-, Buch und Musikaliendruckerei</orgName>
+            <desc type="entity_type">Druckerei</desc>
+            <desc type="entity_type_id">1036</desc>
             <location type="located_in_place">
                <placeName ref="pmb53101">Seidengasse</placeName>
                <geo>48,2002 16,3397</geo>
@@ -610,6 +623,8 @@
          <org xml:id="pmb29698">
             <orgName>An der schönen blauen Donau</orgName>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno-plus?aid=asd</idno>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <location type="located_in_place">
                <placeName ref="pmb52510">Berggasse</placeName>
                <geo>48,218776849348906 16,36345511169916</geo>
@@ -628,6 +643,8 @@
          </org>
          <org xml:id="pmb29805">
             <orgName>Konservatorium der Gesellschaft der Musikfreunde</orgName>
+            <desc type="entity_type">Bildungseinrichtung</desc>
+            <desc type="entity_type_id">982</desc>
             <location type="located_in_place">
                <placeName ref="pmb51">I., Innere Stadt</placeName>
                <geo>48,20769 16,37049</geo>
@@ -635,7 +652,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36789/</idno>
                <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb51</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51010/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2775259/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb51</idno>

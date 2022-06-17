@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw">L02587</idno>
+            <idno type="asbw" n="02587"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -246,7 +246,7 @@
          <bibl xml:id="pmb30225">
             <title>Der Weg ins Freie</title>
             <note type="bibliografische_angabe">Die Hilfe, Jg. 15, Nr. 3, 17. 1. 1909</note>
-            <author ref="pmbperson__2524">Hauschner, Auguste</author>
+            <author ref="pmbperson__2524" role="hat-geschaffen">Hauschner, Auguste</author>
             <date when="1909-01-17">17.01.1909</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30225</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30225</idno>
@@ -262,6 +262,8 @@
             <placeName type="alternative-name">Barlīn</placeName>
             <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
             <placeName type="alternative-name">Berolino</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+            <desc type="entity_type_id">1418</desc>
             <location type="coords">
                <geo>52,52437 13,41053</geo>
             </location>
@@ -288,6 +290,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -311,8 +315,13 @@
       <listOrg>
          <org xml:id="pmb29493">
             <orgName>Die Hilfe. Zeitschrift für Politik, Wirtschaft und geistige Bewegung</orgName>
+            <desc type="entity_type">Zeitschriftenredaktion</desc>
+            <desc type="entity_type_id">973</desc>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29493</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29493</idno>
+            <note type="apis_dates">
+               <date from="1894-01-01" to="1894-12-31">1894  – 1944</date>
+            </note>
          </org>
       </listOrg>
    </back>

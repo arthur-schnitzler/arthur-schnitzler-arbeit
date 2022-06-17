@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02260</idno>
+            <idno type="asbw" n="02260"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -356,7 +356,7 @@
       <listBibl>
          <bibl xml:id="pmb33580">
             <title>Neidhard</title>
-            <author ref="pmbperson__12438">Adam, Robert</author>
+            <author ref="pmbperson__12438" role="hat-geschaffen">Adam, Robert</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33580</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33580</idno>
             <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33580.html</idno>
@@ -365,8 +365,8 @@
          <bibl xml:id="pmb30247">
             <title>Faust</title>
             <note type="uri_worklink">http://faustedition.net</note>
-            <author ref="pmbperson__11461">Goethe, Johann Wolfgang von</author>
-            <date when="1790-01-01">1790</date>
+            <author ref="pmbperson__11461" role="hat-geschaffen">Goethe, Johann Wolfgang von</author>
+            <date>1790  – 1832</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30247</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30247</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30247</idno>
@@ -388,6 +388,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -409,6 +411,8 @@
          </place>
          <place xml:id="pmb14">
             <placeName>Burgtheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,210333 16,361139</geo>
             </location>
@@ -423,6 +427,8 @@
          </place>
          <place xml:id="pmb1261">
             <placeName>Babylon</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>32,542 44,421</geo>
             </location>
@@ -437,6 +443,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
             <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
             <placeName type="alternative-name">Republic of Austria</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,33333 13,33333</geo>
             </location>
@@ -454,6 +462,8 @@
       <listOrg>
          <org xml:id="pmb44112">
             <orgName>Königliche Hof- und Nationaltheater München</orgName>
+            <desc type="entity_type">Theaterunternehmen</desc>
+            <desc type="entity_type_id">1047</desc>
             <location type="located_in_place">
                <placeName ref="pmb9">Königlich Bayerische Hoftheater</placeName>
                <geo>48,139944 11,578786</geo>
@@ -472,6 +482,9 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44112/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb44112</idno>
+            <note type="apis_dates">
+               <date from="1818-01-01" to="1818-12-31">1818  – 3.10.1943</date>
+            </note>
          </org>
       </listOrg>
    </back>

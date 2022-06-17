@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02568</idno>
+            <idno type="asbw" n="02568"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -292,7 +292,7 @@
       <listBibl>
          <bibl xml:id="pmb30053">
             <title>Buch der Sprüche und Bedenken</title>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1927-01-01">1927</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.03.02</idno>
             <idno type="URL" subtype="literature">http://www.literature.at/viewer.alo?objid=12112</idno>
@@ -305,8 +305,8 @@
          <bibl xml:id="pmb55898">
             <title>Morgenröte. Gedanken über die moralischen Vorurteile</title>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Morgenröte._Gedanken_über_die_moralischen_Vorurteile</idno>
-            <author ref="pmbperson__12358">Nietzsche, Friedrich</author>
-            <date when="1881-07-01">1881-07-01</date>
+            <author ref="pmbperson__12358" role="hat-geschaffen">Nietzsche, Friedrich</author>
+            <date>1881-07-01  – 1881-07-01</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/55898/</idno>
             <note type="work_kind">Aphorismensammlung</note>
          </bibl>
@@ -325,6 +325,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -346,6 +348,8 @@
          </place>
          <place xml:id="pmb52498">
             <placeName>Schönburgstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,18614 16,37042</geo>
             </location>

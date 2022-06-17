@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01435</idno>
+            <idno type="asbw" n="01435"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -501,8 +501,8 @@
          <bibl xml:id="pmb30233">
             <title>Der Graf von Charolais. Ein Trauerspiel</title>
             <title type="arbeitstitel">Die unseelige Mitgift</title>
-            <author ref="pmbperson__10863">Beer-Hofmann, Richard</author>
-            <date when="1904-12-23">1904-12-23</date>
+            <author ref="pmbperson__10863" role="hat-geschaffen">Beer-Hofmann, Richard</author>
+            <date>1904-12-23  – 1904-12-23</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30233</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30233</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30233</idno>
@@ -515,6 +515,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -532,6 +534,8 @@
             <placeName type="fruherer_ortsname">Markt Aussee</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/22650/</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873491/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,60998 13,78243</geo>
             </location>
@@ -547,6 +551,8 @@
          </place>
          <place xml:id="pmb655">
             <placeName>Hotel Kaiserkrone</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,71356 13,61926</geo>
             </location>
@@ -561,6 +567,8 @@
          <place xml:id="pmb47674">
             <placeName>Villa Frühling</placeName>
             <placeName type="namensvariante">Kleine Großauer Villa</placeName>
+            <desc type="entity_type">Gebäude (K.GBD)</desc>
+            <desc type="entity_type_id">24</desc>
             <location type="located_in_place">
                <placeName ref="pmb415">Bad Aussee</placeName>
                <geo>47,60998 13,78243</geo>
@@ -571,6 +579,8 @@
          <place xml:id="pmb47678">
             <placeName>Kaiservilla</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Kaiservilla</placeName>
+            <desc type="entity_type">Gebäude (K.GBD)</desc>
+            <desc type="entity_type_id">24</desc>
             <location type="coords">
                <geo>47,715 13,620278</geo>
             </location>
@@ -583,6 +593,8 @@
          </place>
          <place xml:id="pmb42535">
             <placeName>Schwechat</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1128</desc>
             <location type="coords">
                <geo>48,13333 16,46667</geo>
             </location>
@@ -597,6 +609,8 @@
          <place xml:id="pmb186">
             <placeName>Lueg am Wolfgangsee</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Lueg_(Gemeinde_Sankt_Gilgen)</placeName>
+            <desc type="entity_type">Bezirk (A.BZK)</desc>
+            <desc type="entity_type_id">25</desc>
             <location type="coords">
                <geo>47,754041 13,372211</geo>
             </location>
@@ -612,6 +626,8 @@
             <placeName>Salzburg</placeName>
             <placeName type="alternative-name">Iuvavum</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4076982-3</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,80067 13,04532</geo>
             </location>
@@ -626,6 +642,8 @@
          </place>
          <place xml:id="pmb45036">
             <placeName>Bade-Hotel Elisabeth</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,617894 13,774783</geo>
             </location>
@@ -635,9 +653,14 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/45036/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb45036</idno>
+            <note type="apis_dates">
+               <date notBefore="1868-01-01" when="1868-07-01">1868</date>
+            </note>
          </place>
          <place xml:id="pmb824">
             <placeName>Hotel und Pension Lueg</placeName>
+            <desc type="entity_type">Hotel (K.HTL)</desc>
+            <desc type="entity_type_id">12</desc>
             <location type="coords">
                <geo>47,753992 13,372111</geo>
             </location>
@@ -653,6 +676,8 @@
             <placeName>St. Gilgen</placeName>
             <placeName type="legacy-name-merge">Sankt Gilgen</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/24915/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,76667 13,36667</geo>
             </location>
@@ -670,6 +695,8 @@
       <listOrg>
          <org xml:id="pmb47692">
             <orgName>Anton Drehers Brauereien</orgName>
+            <desc type="entity_type">Brauerei</desc>
+            <desc type="entity_type_id">1033</desc>
             <location type="located_in_place">
                <placeName ref="pmb42535">Schwechat</placeName>
                <geo>48,13333 16,46667</geo>
@@ -679,6 +706,9 @@
             </location>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/47692/</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb47692</idno>
+            <note type="apis_dates">
+               <date from="1837-01-01" to="1837-12-31">1837  – 1913</date>
+            </note>
          </org>
       </listOrg>
    </back>

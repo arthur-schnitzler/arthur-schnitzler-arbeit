@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02461</idno>
+            <idno type="asbw" n="02461"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -339,7 +339,7 @@
       <listBibl>
          <bibl xml:id="pmb31253">
             <title>Briefwechsel mit Hugo von Hofmannsthal</title>
-            <author ref="pmbperson__12870">Strauss, Richard</author>
+            <author ref="pmbperson__12870" role="hat-geschaffen">Strauss, Richard</author>
             <date when="1926-01-01">1926</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31253</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31253</idno>
@@ -351,7 +351,7 @@
             <title>Schiller</title>
             <note type="bibliografische_angabe">Neue Freie Presse, Nr. , 25. 12. 1925, S. 29–33</note>
             <note type="uri_worklink">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19251225&amp;seite=31</note>
-            <author ref="pmbperson__11740">Hofmannsthal, Hugo von</author>
+            <author ref="pmbperson__11740" role="hat-geschaffen">Hofmannsthal, Hugo von</author>
             <date when="1925-12-25">25.12.1925</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19251225&amp;seite=31&amp;zoom=33</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33718</idno>
@@ -361,9 +361,9 @@
          <bibl xml:id="pmb36374">
             <title>Neue Freie Presse</title>
             <title type="uri_anno">http://anno.onb.ac.at/cgi-content/anno?aid=nfp</title>
-            <author ref="pmbperson__10875">Benedikt, Moriz</author>
-            <author ref="pmbperson__10872">Benedikt, Ernst</author>
-            <date notBefore="1864-01-01" when="1864-07-01" notAfter="1864-12-31">1864</date>
+            <author ref="pmbperson__10875" role="hat-herausgegeben">Benedikt, Moriz</author>
+            <author ref="pmbperson__10872" role="hat-herausgegeben">Benedikt, Ernst</author>
+            <date from="1864-01-01" to="1864-12-31">1864  – 1939</date>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36374/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36374</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36374</idno>
@@ -384,6 +384,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -409,6 +411,8 @@
             <orgName>Paul Zsolnay Verlag</orgName>
             <orgName type="legacy-name-merge">Paul Zsolnay</orgName>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/A080449</idno>
+            <desc type="entity_type">Verlag</desc>
+            <desc type="entity_type_id">975</desc>
             <location type="located_in_place">
                <placeName ref="pmb54">IV., Wieden</placeName>
                <geo>48,19198 16,36714</geo>
@@ -438,6 +442,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb36907</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36907</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36907</idno>
+            <note type="apis_dates">
+               <date notBefore="1924-01-01" when="1924-07-01">1924</date>
+            </note>
          </org>
       </listOrg>
    </back>

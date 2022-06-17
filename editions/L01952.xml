@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01952</idno>
+            <idno type="asbw" n="01952"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -381,8 +381,7 @@
                <forename>Otto</forename>
                <surname>Brahm</surname>
             </persName>
-            <persName type="namensvariante">Abrahamson</persName>
-            <persName type="geburtsname_nachname">Abraham</persName>
+            <persName type="geburtsname_nachname">Abrahamson</persName>
             <birth>
                <date when="1856-02-05">05.02.1856</date>
                <settlement ref="pmb506">
@@ -446,7 +445,6 @@
                <forename>Josef</forename>
                <surname>Kainz</surname>
             </persName>
-            <persName type="namensvariante">Kohn (?)</persName>
             <birth>
                <date when="1858-01-02">02.01.1858</date>
                <settlement ref="pmb43475">
@@ -565,7 +563,7 @@
          <bibl xml:id="pmb29937">
             <title>Der junge Medardus. Dramatische Historie in einem Vorspiel und fünf Aufzügen</title>
             <note type="bibliografische_angabe">Der junge Medardus. Dramatische Historie in einem Vorspiel und fünf Aufzügen. Berlin: S. Fischer [26.10.]1910</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
             <date when="1910-10-26">1910-10-26</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.11</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1198956</idno>
@@ -592,6 +590,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -613,6 +613,8 @@
          </place>
          <place xml:id="pmb150">
             <placeName>Sternwartestraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,23099349198 16,340117830625</geo>
             </location>
@@ -628,6 +630,8 @@
          <place xml:id="pmb133">
             <placeName>Edmund-Weiß-Gasse</placeName>
             <placeName type="fruherer_ortsname">Spöttelgasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,219883621255 16,25565018043</geo>
             </location>
@@ -650,6 +654,8 @@
             <placeName type="alternative-name">Semmering- Kurort Semmering</placeName>
             <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4054504-0</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/23656/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,64224 15,8241</geo>
             </location>
@@ -661,6 +667,8 @@
          <place xml:id="pmb40895">
             <placeName>Sonnwendstein</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Sonnwendstein</placeName>
+            <desc type="entity_type">Berg (N.BRG)</desc>
+            <desc type="entity_type_id">28</desc>
             <location type="coords">
                <geo>47,629444 15,86</geo>
             </location>
@@ -670,6 +678,8 @@
          </place>
          <place xml:id="pmb40896">
             <placeName>Otterthal</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.ADM3</desc>
+            <desc type="entity_type_id">1124</desc>
             <location type="coords">
                <geo>47,6249 15,94328</geo>
             </location>
@@ -687,6 +697,8 @@
          </place>
          <place xml:id="pmb40892">
             <placeName>Kirchberg am Wechsel</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA3</desc>
+            <desc type="entity_type_id">1128</desc>
             <location type="coords">
                <geo>47,60738 15,99103</geo>
             </location>
@@ -701,6 +713,8 @@
          <place xml:id="pmb44001">
             <placeName>Aspang-Markt</placeName>
             <placeName type="legacy-name">Aspang</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.ADM3</desc>
+            <desc type="entity_type_id">1434</desc>
             <location type="coords">
                <geo>47,55187 16,09421</geo>
             </location>
@@ -716,6 +730,8 @@
          </place>
          <place xml:id="pmb44160">
             <placeName>Mönichkirchen</placeName>
+            <desc type="entity_type">https://www.geonames.org/ontology#A.ADM3</desc>
+            <desc type="entity_type_id">1434</desc>
             <location type="coords">
                <geo>47,51255 16,04871</geo>
             </location>
@@ -736,6 +752,8 @@
             <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
             <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
             <placeName type="alternative-name">Republic of Austria</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+            <desc type="entity_type_id">1107</desc>
             <location type="coords">
                <geo>47,33333 13,33333</geo>
             </location>
@@ -753,6 +771,8 @@
             <placeName>St. Gilgen</placeName>
             <placeName type="legacy-name-merge">Sankt Gilgen</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/24915/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,76667 13,36667</geo>
             </location>
@@ -769,6 +789,8 @@
          <place xml:id="pmb213">
             <placeName>Bad Ischl</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873133/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,71109 13,61893</geo>
             </location>
@@ -785,6 +807,8 @@
             <placeName>Rodaun</placeName>
             <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11742/</placeName>
+            <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
+            <desc type="entity_type_id">18</desc>
             <location type="coords">
                <geo>48,132793312328 16,256152195922</geo>
             </location>
@@ -802,6 +826,8 @@
             <placeName>Welsberg-Taisten</placeName>
             <placeName type="legacy-name-merge">Welsberg</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/15446/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>46,75774 12,10556</geo>
             </location>
@@ -812,6 +838,8 @@
          </place>
          <place xml:id="pmb40483">
             <placeName>Glion</placeName>
+            <desc type="entity_type">http://www.geonames.org/ontology#P.PPL</desc>
+            <desc type="entity_type_id">1123</desc>
             <location type="coords">
                <geo>46,4336 6,92619</geo>
             </location>

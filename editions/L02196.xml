@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02196</idno>
+            <idno type="asbw" n="02196"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -388,6 +388,8 @@
             <placeName type="fruherer_ortsname">Markt Aussee</placeName>
             <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/22650/</placeName>
             <placeName type="legacy-uri-merge">http://sws.geonames.org/7873491/</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>47,60998 13,78243</geo>
             </location>
@@ -414,6 +416,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -435,6 +439,8 @@
          </place>
          <place xml:id="pmb795">
             <placeName>Elisabethstraße</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,202505409168 16,365996258067</geo>
             </location>
@@ -452,6 +458,8 @@
          <org xml:id="pmb43466">
             <orgName>Internationales Komitee vom Roten Kreuz</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Internationale_Rotkreuz-_und_Rothalbmond-Bewegung</idno>
+            <desc type="entity_type">Hilfsorganisation</desc>
+            <desc type="entity_type_id">1417</desc>
             <location type="located_in_place">
                <placeName ref="pmb562">Genf</placeName>
                <geo>46,20222 6,14569</geo>
@@ -468,10 +476,15 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43466/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43466</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb43466</idno>
+            <note type="apis_dates">
+               <date notBefore="1863-01-01" when="1863-07-02">1863</date>
+            </note>
          </org>
          <org xml:id="pmb36931">
             <orgName>Wiener freiwillige Rettungsgesellschaft</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wiener_Freiwillige_Rettungsgesellschaft</idno>
+            <desc type="entity_type">Hilfsorganisation</desc>
+            <desc type="entity_type_id">1417</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -490,10 +503,15 @@
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36931/</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36931</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36931</idno>
+            <note type="apis_dates">
+               <date from="1881-01-01" to="1881-12-31">1881  – 1938</date>
+            </note>
          </org>
          <org xml:id="pmb29351">
             <orgName>Neue Freie Presse</orgName>
             <idno type="URL" subtype="">http://anno.onb.ac.at/info/nfp_info.htm</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb50">Wien</placeName>
                <geo>48,2066 16,37341</geo>
@@ -524,6 +542,9 @@
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29351</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29351</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29351</idno>
+            <note type="apis_dates">
+               <date>1864-09-01  – 1939-02-01</date>
+            </note>
          </org>
       </listOrg>
    </back>

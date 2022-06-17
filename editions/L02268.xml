@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L02268</idno>
+            <idno type="asbw" n="02268"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -309,9 +309,8 @@
          <bibl xml:id="pmb30201">
             <title>Doktor Gräsler, Badearzt</title>
             <note type="bibliografische_angabe">Berliner Tageblatt, 10. 2. – 18. 3. 1917</note>
-            <author ref="pmbperson__2121">Schnitzler, Arthur</author>
-            <author ref="pmbperson__27446">Zeisler, Paul</author>
-            <date when="1917-02-10">1917.02.10</date>
+            <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            <date>1917-02-10  – 1917-03-18</date>
             <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.31</idno>
             <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1235062</idno>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30201</idno>
@@ -322,15 +321,15 @@
          </bibl>
          <bibl xml:id="pmb33608">
             <title>Das Ende des Judas</title>
-            <author ref="pmbperson__12438">Adam, Robert</author>
+            <author ref="pmbperson__12438" role="hat-geschaffen">Adam, Robert</author>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33608</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33608</idno>
             <note type="work_kind">Drama</note>
          </bibl>
          <bibl xml:id="pmb31515">
             <title>Don Quijote</title>
-            <author ref="pmbperson__2980">Cervantes Saavedra, Miguel de</author>
-            <date notBefore="1605-01-01" when="1605-07-02" notAfter="1605-12-31">1605</date>
+            <author ref="pmbperson__2980" role="hat-geschaffen">Cervantes Saavedra, Miguel de</author>
+            <date notBefore="1605-01-01" when="1605-07-02">1605</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb31515</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31515</idno>
             <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb31515</idno>
@@ -351,6 +350,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>

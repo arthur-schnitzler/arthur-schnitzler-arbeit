@@ -33,7 +33,7 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw">L01807</idno>
+            <idno type="asbw" n="01807"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -257,7 +257,7 @@
          <bibl xml:id="pmb33510">
             <title>Scala Santa</title>
             <note type="bibliografische_angabe">Pester Lloyd, 11. 10. 1908</note>
-            <author ref="pmbperson__11036">Burckhard, Max Eugen</author>
+            <author ref="pmbperson__11036" role="hat-geschaffen">Burckhard, Max Eugen</author>
             <date when="1908-10-11">11.10.1908</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=pel&amp;datum=19081011&amp;seite=1&amp;zoom=33</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33510</idno>
@@ -268,7 +268,7 @@
          <bibl xml:id="pmb33512">
             <title>Der Hund</title>
             <note type="bibliografische_angabe">Pester Lloyd, 9. 8. 1908</note>
-            <author ref="pmbperson__11036">Burckhard, Max Eugen</author>
+            <author ref="pmbperson__11036" role="hat-geschaffen">Burckhard, Max Eugen</author>
             <date when="1908-08-09">09.08.1908</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=pel&amp;datum=19080809&amp;seite=1&amp;zoom=33</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33512</idno>
@@ -278,7 +278,7 @@
          <bibl xml:id="pmb33514">
             <title>Ich und mein Bruder</title>
             <note type="bibliografische_angabe">Pester Lloyd, 3. 5. 1908</note>
-            <author ref="pmbperson__11036">Burckhard, Max Eugen</author>
+            <author ref="pmbperson__11036" role="hat-geschaffen">Burckhard, Max Eugen</author>
             <date when="1908-05-03">03.05.1908</date>
             <idno type="URL" subtype="">http://anno.onb.ac.at/cgi-content/anno?aid=pel&amp;datum=19080503&amp;seite=1&amp;zoom=33</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33514</idno>
@@ -287,7 +287,7 @@
          </bibl>
          <bibl xml:id="pmb30743">
             <title>Die verflixten Frauenzimmer</title>
-            <author ref="pmbperson__11036">Burckhard, Max Eugen</author>
+            <author ref="pmbperson__11036" role="hat-geschaffen">Burckhard, Max Eugen</author>
             <date when="1908-11-28">28.11.1908</date>
             <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30743</idno>
             <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30743</idno>
@@ -311,6 +311,8 @@
             <placeName type="legacy-name-merge">Vindobona</placeName>
             <placeName type="alternative-name">Vienna</placeName>
             <placeName type="legacy-name-merge">Wien?</placeName>
+            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+            <desc type="entity_type_id">14</desc>
             <location type="coords">
                <geo>48,2066 16,37341</geo>
             </location>
@@ -332,6 +334,8 @@
          </place>
          <place xml:id="pmb436">
             <placeName>Porzellangasse</placeName>
+            <desc type="entity_type">Straße (K.STR)</desc>
+            <desc type="entity_type_id">26</desc>
             <location type="coords">
                <geo>48,222287836145 16,362457240723</geo>
             </location>
@@ -348,6 +352,8 @@
             <placeName>Volkstheater</placeName>
             <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Volkstheater_(Wien)</placeName>
             <placeName type="namensvariante">Deutsches Volkstheater</placeName>
+            <desc type="entity_type">Theater (K.THE)</desc>
+            <desc type="entity_type_id">4</desc>
             <location type="coords">
                <geo>48,205142 16,3566</geo>
             </location>
@@ -366,6 +372,8 @@
             <orgName>Pester Lloyd</orgName>
             <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Pester_Lloyd</idno>
             <idno type="URL" subtype="">http://anno.onb.ac.at/info/pel_info.htm</idno>
+            <desc type="entity_type">Tageszeitungsredaktion</desc>
+            <desc type="entity_type_id">972</desc>
             <location type="located_in_place">
                <placeName ref="pmb43471">Budapest</placeName>
                <geo>47,49835 19,04045</geo>
