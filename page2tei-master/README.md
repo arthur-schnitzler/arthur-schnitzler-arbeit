@@ -6,7 +6,7 @@
     - Derzeit manuell, langfristiges Ziel: GitHub-Action
     - ohne weiteres Unterverzeichnis speichern, also drei Objekte: metadata.xml, mets.xml und page-folder
 
-## II
+## II -> page2tei-1
 
 - Transformation der mets-Datei mit page2tei-0.xsl (Ausgabedatei: ${currentFileURL})
 
@@ -20,10 +20,12 @@
 
 - Transformation der mets-Datei mit replace_seite-esc-lb-continued.xsl (Ausgabedatei: ${currentFileURL})
 
+## III -> page2tei-2
+
 - Transformation der mets-Datei mit split-files.xsl (Ausgabedatei: ${pd}/editions/Untitled.xml)
     - Muss manuell an Jahrgang, involvierte Personen etc. angepasst werden
 
-## III
+## IV - page2tei-3
 
 - Transformation der neuen XML-Dateien mit strip-letter.xsl (Ausgabedatei: ${currentFileURL})
 
@@ -32,6 +34,8 @@
 - Transformation der neuen XML-Dateien mit p-correction2.xsl (Ausgabedatei: ${currentFileURL})
 
 - Transformation der neuen XML-Dateien mit de-escape.xsl (Ausgabedatei: ${currentFileURL})
+
+## V - back-element-hinzufügen
 
 - Transformation der neuen xml-Dateien mit back-element-hinzufügen-Transformation
 
