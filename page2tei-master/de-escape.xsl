@@ -4,12 +4,9 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0" version="3.0">
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
-
-    <xsl:template match="//tei:seite[contains(., '&lt;letter&gt;')]">
-        <xsl:element name="seite" xmlns="">
-            <xsl:text>&lt;letter&gt;</xsl:text>
-            <xsl:copy-of select="* | @*"/>
-        </xsl:element>
+    
+    <xsl:template match="//text()">
+        <xsl:value-of select="translate(., '¬', '')" disable-output-escaping="yes"/>
     </xsl:template>
-
+    
 </xsl:stylesheet>

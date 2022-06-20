@@ -5,9 +5,9 @@
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
     
-    <xsl:template match="//tei:seite[contains(., '&lt;/letter&gt;')]">
-        <xsl:element name="seite" xmlns="">
-            <xsl:copy-of select="* | @*"/>
+    <xsl:template match="//tei:div">
+        <xsl:element name="div" namespace="http://www.tei-c.org/ns/1.0">
+            <xsl:copy-of select="node()"/>
             <xsl:text>&lt;/letter&gt;</xsl:text>
         </xsl:element>
     </xsl:template>

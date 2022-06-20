@@ -586,7 +586,8 @@
     <xsl:text>
       </xsl:text>
     <xsl:if test="contains(@custom, 'type:paragraph')">
-      <xsl:text>&lt;p&gt;</xsl:text>
+      <!--<xsl:text>&lt;p&gt;</xsl:text>-->
+      <paragraph-start/>
     </xsl:if>
     <!--<lb facs="#facs_{$numCurr}_{@id}" n="N{format-number($pos, '000')}"/>-->
     <xsl:apply-templates select="$prepared/text()[not(preceding-sibling::local:m)]"/>
@@ -594,9 +595,9 @@
         $prepared/local:m[@pos = 's']
         [count(preceding-sibling::local:m[@pos = 's']) = count(preceding-sibling::local:m[@pos = 'e'])]"/>
     <!--[not(preceding-sibling::local:m[1][@pos='s'])]" />-->
-    <xsl:if test="following-sibling::p:TextLine[1]/contains(@custom, 'type:paragraph')">
+    <!--<xsl:if test="following-sibling::p:TextLine[1]/contains(@custom, 'type:paragraph') and not(ancestor-or-self::p:TextLine/@custom/contains(.,'salute'))">
       <xsl:text>&lt;/p&gt;</xsl:text>
-    </xsl:if>
+    </xsl:if>-->
   </xsl:template>
 
   <xd:doc>
@@ -781,20 +782,23 @@
       </xsl:when>
 
       <xsl:when test="@type = 'paragraph-begin'">
-        <xsl:text>&lt;p&gt;</xsl:text>
+        <!--<xsl:text>&lt;p&gt;</xsl:text>-->
+        <paragraph-start/>
       </xsl:when>
 
       <xsl:when test="@type = 'paragraph-start'">
-        <xsl:text>&lt;p&gt;</xsl:text>
+        <!--<xsl:text>&lt;p&gt;</xsl:text>-->
+        <paragraph-start/>
       </xsl:when>
 
-      <xsl:when test="@type = 'paragraph-end'">
-        <xsl:text>&lt;&#47;p&gt;</xsl:text>
-      </xsl:when>
+      <!--<xsl:when test="@type = 'paragraph-end'">
+        <!-\-<xsl:text>&lt;&#47;p&gt;</xsl:text>-\->
+        <paragraph-end/>
+      </xsl:when>-->
 
-      <xsl:when test="@type = 'paragraph-inbetween'">
+      <!--<xsl:when test="@type = 'paragraph-inbetween'">
         <xsl:text>&lt;p&gt;&lt;&#47;p&gt;</xsl:text>
-      </xsl:when>
+      </xsl:when>-->
       
       <xsl:when test="@type = 'letter-begin'">
         <xsl:text>&lt;letter&gt;</xsl:text>

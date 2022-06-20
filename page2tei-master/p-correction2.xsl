@@ -5,15 +5,14 @@
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
 
-    <!-- remove all opening letter tags (i. e. strings) if they are not directly before a pb tag -->
-    
-    <xsl:template match="//*/text()[contains(., '&lt;letter&gt;')]">
+    <xsl:template match="//tei:paragraph-start">
         <xsl:choose>
-            <xsl:when test=". = //tei:pb/ancestor::*[1]/text()">
-                <xsl:copy-of select="."/>
+            <xsl:when test=".[preceding::tei:paragraph-start]">
+                <xsl:text>&lt;/p&gt;</xsl:text>
+                <xsl:text>&lt;p&gt;</xsl:text>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="replace(., '&lt;letter&gt;', '')"/>
+                <xsl:text>&lt;p&gt;</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
