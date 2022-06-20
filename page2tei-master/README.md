@@ -15,6 +15,8 @@
 
 - Transformation der mets-Datei mit letter-tags-3.xsl
 
+- Transformation der mets-Datei mit letter-tags-4.xsl
+
 - Transformation der mets-Datei mit replace_seite-esc-lb-continued.xsl
 
 - Transformation der mets-Datei mit split-files.xsl
@@ -22,7 +24,9 @@
 
 ## III
 
-- Transformation der neuen XML-Dateien mit strip-letter_correct-p.xsl
+- Transformation der neuen XML-Dateien mit strip-letter.xsl
+
+- Transformation der neuen XML-Dateien mit p-correction1.xsl
 
 - Transformation der neuen XML-Dateien mit p-correction2.xsl
 
