@@ -3646,7 +3646,7 @@
       match="row[parent::table[not(@rend = 'group')] and ancestor::table[@rend = 'group']]">
       <xsl:apply-templates/>
       <xsl:choose>
-         <xsl:when test="position() = last"/>
+         <xsl:when test="position() = last()"/>
          <xsl:otherwise>
             <xsl:text>\\ </xsl:text>
          </xsl:otherwise>
