@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02659"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L02659"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -83,10 +85,10 @@
                            <desc type="karte" subtype="postkarte"/>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="blaue_tinte" style="deutsche-kurrent"
-                              corresp="#pmb11485"/>
-                           <handNote medium="blaue_tinte" style="lateinische-kurrent"
-                              corresp="#pmb11485">
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
+                           <handNote medium="blaue_tinte"
+                                     style="lateinische-kurrent"
+                                     corresp="#pmb11485">
                               <p>Adresse</p>
                            </handNote>
                         </handDesc>
@@ -157,7 +159,7 @@
          <change who="LU" when="2022-06-29">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
-   <text type="card">
+   <text>
       <body>
          <div type="address">
             <address>
@@ -185,27 +187,19 @@
                <salute rend="inline">Lieber Arthur! </salute>Herzlichſten Dank für Deine
                Liebenswürdigkeit! Das <rs type="work" ref="#pmb88941" subtype="implied">Referat</rs>
                ſchreib’ ſo groß wie Du willſt, 30, 40, 50 Zeilen; nur – nochmals – darf Niemand
-               erfahren, daß Du es geſchrieben. Wenn du <anchor type="commentary"
-                  xml:id="K_L02659-2"/>
+               erfahren, daß Du es geſchrieben. Wenn du <anchor type="commentary" xml:id="K_L02659-2"/>
                <date when="1891-01-08">heut</date>
                <space unit="chars" quantity="1"/>
                <time>Abend</time>
                <note type="commentary" xml:id="K_L02659-2h">
                   <rs type="person" ref="#pmb11485">Goldmann</rs> datierte die Postkarte auf den
-                     <date>7. 1. 1891</date>, während der Poststempel den <date when="1891-01-08"
-                     >8. 1. 1891</date> ausweist, was sich auch durch die erwähnte Theateraufführung
-                  belegen lässt. Erklärbar wäre das damit, dass die Karte zwar tatsächlich am <date
-                     when="1891-01-07">7.</date> verfasst wurde, aber zu einer so späten Uhrzeit,
-                  dass klar war, dass nicht mehr die Theateraufführungen des <date when="1891-01-07"
-                     >gleichen Tages</date>, sondern nur die vom <date when="1891-01-08"
-                     >Folgetag</date> gemeint sein konnten.</note> Zeit haſt, würde ich mich ſehr
+                     <date>7. 1. 1891</date>, während der Poststempel den <date when="1891-01-08">8. 1. 1891</date> ausweist, was sich auch durch die erwähnte Theateraufführung
+                  belegen lässt. Erklärbar wäre das damit, dass die Karte zwar tatsächlich am <date when="1891-01-07">7.</date> verfasst wurde, aber zu einer so späten Uhrzeit,
+                  dass klar war, dass nicht mehr die Theateraufführungen des <date when="1891-01-07">gleichen Tages</date>, sondern nur die vom <date when="1891-01-08">Folgetag</date> gemeint sein konnten.</note> Zeit haſt, würde ich mich ſehr
                freuen, Dich im »<anchor type="commentary" xml:id="K_L02659-3"/>
                <rs type="org" ref="#pmb36996">Theater an der Wien</rs>
-               <note type="commentary" xml:id="K_L02659-3h">Tatsächlich sahen sich beide am <ref
-                     target="1891-01-08" type="schnitzlerDiary" subtype="date-only"/> die Operette
-                     <rs type="work" ref="#pmb81387">Boccaccio</rs> von <rs type="person"
-                     ref="#pmb10147">Franz von Suppè</rs> an.</note>« Loge N<hi rend="superscript"
-                  >o</hi> 6, 1. Stock, zu ſehen <add place="above">Karte brauchſt Du keine.</add>
+               <note type="commentary" xml:id="K_L02659-3h">Tatsächlich sahen sich beide am <ref target="1891-01-08" type="schnitzlerDiary" subtype="date-only"/> die Operette
+                     <rs type="work" ref="#pmb81387">Boccaccio</rs> von <rs type="person" ref="#pmb10147">Franz von Suppè</rs> an.</note>« Loge N<hi rend="superscript">o</hi> 6, 1. Stock, zu ſehen <add place="above">Karte brauchſt Du keine.</add>
                   (<hi rend="latintype">
                   <rs type="work" ref="#pmb81387">Boccaccio</rs>
                </hi>). Schreib’ mir, ob Du kommen kannſt.</p>
@@ -213,222 +207,201 @@
             </closer>
          </div>
       </body>
-   </text>
-   <back>
-      <listPerson>
-         <person xml:id="pmb11485">
-            <persName>
-               <forename>Paul</forename>
-               <surname>Goldmann</surname>
-            </persName>
-            <birth>
-               <date when="1865-01-31">31.01.1865</date>
-               <settlement ref="pmb677">
-                  <placeName type="pref">Breslau</placeName>
-                  <location>
-                     <geo>51,10773 17,03533</geo>
-                  </location>
-               </settlement>
-            </birth>
-            <death>
-               <date when="1935-09-25">25.09.1935</date>
-               <settlement ref="pmb50">
-                  <placeName type="pref">Wien</placeName>
-                  <location>
-                     <geo>48,2066 16,37341</geo>
-                  </location>
-               </settlement>
-            </death>
-            <sex value="male"/>
-            <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-            <occupation ref="pmb99">Journalist/Journalistin</occupation>
-            <idno type="URL" subtype="schnitzler-tagebuch"
-               >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-            <idno type="URL" subtype="bahrschnitzler"
-               >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
-            <idno type="URL" subtype="schnitzler-briefe"
-               >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-            <idno type="URL" subtype="schnitzler-lektueren"
-               >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
-         </person>
-         <person xml:id="pmb2121">
-            <persName>
-               <forename>Arthur</forename>
-               <surname>Schnitzler</surname>
-            </persName>
-            <birth>
-               <date when="1862-05-15">15.05.1862</date>
-               <settlement ref="pmb50">
-                  <placeName type="pref">Wien</placeName>
-                  <location>
-                     <geo>48,2066 16,37341</geo>
-                  </location>
-               </settlement>
-            </birth>
-            <death>
-               <date when="1931-10-21">21.10.1931</date>
-               <settlement ref="pmb50">
-                  <placeName type="pref">Wien</placeName>
-                  <location>
-                     <geo>48,2066 16,37341</geo>
-                  </location>
-               </settlement>
-            </death>
-            <sex value="male"/>
-            <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-            <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-            <idno type="URL" subtype="bahrschnitzler"
-               >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
-            <idno type="URL" subtype="schnitzler-briefe"
-               >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-            <idno type="URL" subtype="schnitzler-tagebuch"
-               >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
-         </person>
-         <person xml:id="pmb10147">
-            <persName>
-               <forename>Franz von</forename>
-               <surname>Suppè</surname>
-            </persName>
-            <birth>
-               <date when="1819-04-18">18.04.1819</date>
-               <settlement ref="pmb4231">
-                  <placeName type="pref">Split</placeName>
-                  <location>
-                     <geo>43,5 16,433333</geo>
-                  </location>
-               </settlement>
-            </birth>
-            <death>
-               <date when="1895-05-21">21.05.1895</date>
-               <settlement ref="pmb50">
-                  <placeName type="pref">Wien</placeName>
-                  <location>
-                     <geo>48,2066 16,37341</geo>
-                  </location>
-               </settlement>
-            </death>
-            <sex value="male"/>
-            <occupation ref="pmb129">Komponist/Komponistin</occupation>
-            <idno type="URL" subtype="schnitzler-tagebuch"
-               >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_20575</idno>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118757873</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10147</idno>
-         </person>
-      </listPerson>
-      <listBibl>
-         <bibl xml:id="pmb88941">
-            <title>?? [Rezension des Gastspiels von Anna Hochenburger, 7.1.1891]</title>
-            <author ref="pmbperson__2121" role="hat-anonym-veroffentlicht">Schnitzler,
+      <back>
+         <listPerson>
+            <person xml:id="pmb11485">
+               <persName>
+                  <forename>Paul</forename>
+                  <surname>Goldmann</surname>
+               </persName>
+               <birth>
+                  <date when="1865-01-31">31.01.1865</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
+                     <location>
+                        <geo>51,10773 17,03533</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1935-09-25">25.09.1935</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <forename>Arthur</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15.05.1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21.10.1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+            </person>
+            <person xml:id="pmb10147">
+               <persName>
+                  <forename>Franz von</forename>
+                  <surname>Suppè</surname>
+               </persName>
+               <birth>
+                  <date when="1819-04-18">18.04.1819</date>
+                  <settlement ref="pmb4231">
+                     <placeName type="pref">Split</placeName>
+                     <location>
+                        <geo>43,5 16,433333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1895-05-21">21.05.1895</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb129">Komponist/Komponistin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_20575</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118757873</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10147</idno>
+            </person>
+         </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb88941">
+               <title>?? [Rezension des Gastspiels von Anna Hochenburger, 7.1.1891]</title>
+               <author ref="pmbperson__2121" role="hat-anonym-veroffentlicht">Schnitzler,
                Arthur</author>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88941/</idno>
-            <note type="work_kind">Rezension</note>
-         </bibl>
-         <bibl xml:id="pmb81387">
-            <title>Boccaccio. Komische Operette in 3 Acten</title>
-            <idno type="URL" subtype="wikipedia"
-               >https://de.wikipedia.org/wiki/Boccaccio_(Supp%C3%A8)</idno>
-            <author ref="pmbperson__10147" role="hat-geschaffen">Suppè, Franz von</author>
-            <author ref="pmbperson__26666" role="hat-geschaffen">Walzel, Camillo</author>
-            <author ref="pmbperson__11420" role="hat-geschaffen">Genée, Richard</author>
-            <date when="1879-02-01">1879-02-01</date>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/81387/</idno>
-            <idno type="URL" subtype="schnitzler-tagebuch"
-               >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb81387.html</idno>
-            <note type="work_kind">Musikstück &gt;&gt; Operette</note>
-         </bibl>
-      </listBibl>
-      <listPlace>
-         <place xml:id="pmb50">
-            <placeName>Wien</placeName>
-            <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-            <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
-            <placeName type="alternative-name">Bécs</placeName>
-            <placeName type="alternative-name">Land Wien</placeName>
-            <placeName type="alternative-name">Vídeň</placeName>
-            <placeName type="alternative-name">Wenia</placeName>
-            <placeName type="alternative-name">Beč</placeName>
-            <placeName type="alternative-name">Vindobona (Wien)</placeName>
-            <placeName type="legacy-name-merge">Vindobona</placeName>
-            <placeName type="alternative-name">Vienna</placeName>
-            <placeName type="legacy-name-merge">Wien?</placeName>
-            <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
-            <desc type="entity_type_id">14</desc>
-            <location type="coords">
-               <geo>48,2066 16,37341</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb41240">Österreich</placeName>
-               <geo>47,33333 13,33333</geo>
-            </location>
-            <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-            <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
-            <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
-            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-            <idno type="URL" subtype="bahrschnitzler"
-               >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-            <idno type="URL" subtype="schnitzler-briefe"
-               >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-         </place>
-         <place xml:id="pmb542">
-            <placeName>Bösendorferstraße</placeName>
-            <placeName type="alternative-name">Giselastraße</placeName>
-            <desc type="entity_type">Straße (K.STR)</desc>
-            <desc type="entity_type_id">26</desc>
-            <location type="coords">
-               <geo>48,201213 16,371141</geo>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb51">I., Innere Stadt</placeName>
-               <geo>48,20769 16,37049</geo>
-            </location>
-            <idno type="URL" subtype="pmb"
-               >https://pmb.acdh.oeaw.ac.at/entities:Giselastra%C3%9Fe_(1)</idno>
-            <idno type="URL" subtype="bahrschnitzler"
-               >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb542</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/542</idno>
-            <idno type="URL" subtype="schnitzler-briefe"
-               >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb542</idno>
-         </place>
-      </listPlace>
-      <listOrg>
-         <org xml:id="pmb36996">
-            <orgName>Theater an der Wien</orgName>
-            <desc type="entity_type">Theater</desc>
-            <desc type="entity_type_id">1012</desc>
-            <location type="located_in_place">
-               <placeName ref="pmb56">VI., Mariahilf</placeName>
-               <geo>48,19522 16,35032</geo>
-               <idno type="URL" subtype="geonames">http://sws.geonames.org/2771932/</idno>
-               <idno type="URL" subtype="bahrschnitzler"
-                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb56</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb56</idno>
-            </location>
-            <location type="located_in_place">
-               <placeName ref="pmb37">Theater an der Wien</placeName>
-               <geo>48,19941 16,3642</geo>
-               <idno type="URL" subtype="bahrschnitzler"
-                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb37</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/37</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb37</idno>
-            </location>
-            <idno type="URL" subtype="pmb"
-               >https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36996/</idno>
-            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36996</idno>
-            <idno type="URL" subtype="schnitzler-briefe"
-               >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36996</idno>
-         </org>
-      </listOrg>
-   </back>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88941/</idno>
+               <note type="work_kind">Rezension</note>
+            </bibl>
+            <bibl xml:id="pmb81387">
+               <title>Boccaccio. Komische Operette in 3 Acten</title>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Boccaccio_(Supp%C3%A8)</idno>
+               <author ref="pmbperson__10147" role="hat-geschaffen">Suppè, Franz von</author>
+               <author ref="pmbperson__26666" role="hat-geschaffen">Walzel, Camillo</author>
+               <author ref="pmbperson__11420" role="hat-geschaffen">Genée, Richard</author>
+               <date when="1879-02-01">1879-02-01</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/81387/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb81387.html</idno>
+               <note type="work_kind">Musikstück &gt;&gt; Operette</note>
+            </bibl>
+         </listBibl>
+         <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="alternative-name">Vindobona (Wien)</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Wien?</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>48,2066 16,37341</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
+               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
+               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+            </place>
+            <place xml:id="pmb542">
+               <placeName>Bösendorferstraße</placeName>
+               <placeName type="alternative-name">Giselastraße</placeName>
+               <desc type="entity_type">Straße (K.STR)</desc>
+               <desc type="entity_type_id">26</desc>
+               <location type="coords">
+                  <geo>48,201213 16,371141</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:Giselastra%C3%9Fe_(1)</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb542</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/542</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb542</idno>
+            </place>
+         </listPlace>
+         <listOrg>
+            <org xml:id="pmb36996">
+               <orgName>Theater an der Wien</orgName>
+               <desc type="entity_type">Theater</desc>
+               <desc type="entity_type_id">1012</desc>
+               <location type="located_in_place">
+                  <placeName ref="pmb56">VI., Mariahilf</placeName>
+                  <geo>48,19522 16,35032</geo>
+                  <idno type="URL" subtype="geonames">http://sws.geonames.org/2771932/</idno>
+                  <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb56</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb56</idno>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb37">Theater an der Wien</placeName>
+                  <geo>48,19941 16,3642</geo>
+                  <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb37</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/37</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb37</idno>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36996/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36996</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36996</idno>
+            </org>
+         </listOrg>
+      </back>
+   </text>
 </TEI>
