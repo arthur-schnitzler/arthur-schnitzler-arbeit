@@ -666,7 +666,7 @@
    <xs:element name="text">
       <xs:complexType>
          <xs:sequence>
-            <xs:element ref="tei:body"/>
+            <xs:element ref="tei:body" maxOccurs="1" minOccurs="1"/>
             <xs:element ref="tei:back" maxOccurs="1" minOccurs="1"/>
          </xs:sequence>
          <xs:attribute name="type" use="optional">
