@@ -151,7 +151,7 @@
                     <!--<facsimile>
                         <graphic url=""/>
                      </facsimile>-->
-                    <text type="letter">
+                    <text>
                         <body>
                             <xsl:element name="div" namespace="http://www.tei-c.org/ns/1.0">
                                 <xsl:attribute name="type">
