@@ -4,8 +4,8 @@
     version="3.0">
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
-    <xsl:template match="tei:TEI">
-        <xsl:element name="TEI" namespace="http://www.tei-c.org/ns/1.0">
+    <xsl:template match="tei:text">
+        <xsl:element name="text" namespace="http://www.tei-c.org/ns/1.0">
             <xsl:copy-of select="@*" copy-namespaces="false"/>
             <xsl:copy-of select="*" copy-namespaces="false"/>
             <xsl:element name="back" namespace="http://www.tei-c.org/ns/1.0">
