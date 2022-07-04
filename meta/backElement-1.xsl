@@ -11,10 +11,10 @@
             <xsl:element name="back" namespace="http://www.tei-c.org/ns/1.0">
                 <xsl:element name="listPerson" namespace="http://www.tei-c.org/ns/1.0">
                     <xsl:choose>
-                        <xsl:when test="descendant::tei:rs/@ref[contains(., '#')][1]">
+                        <xsl:when test="ancestor::tei:TEI/descendant::tei:rs/@ref[contains(., '#')][1]">
                             <!-- rs mit Raute -->
                             <xsl:for-each
-                                select="distinct-values(descendant::*[(@type = 'person' or name() = 'persName' or name() = 'author') and not(ancestor::tei:back)]/@ref/tokenize(., '#'))">
+                                select="distinct-values(ancestor::tei:TEI/descendant::*[(@type = 'person' or name() = 'persName' or name() = 'author') and not(ancestor::tei:back)]/@ref/tokenize(., '#'))">
                                 <xsl:if test="normalize-space(.) != ''">
                                     <xsl:element name="person"
                                         namespace="http://www.tei-c.org/ns/1.0">
@@ -25,7 +25,7 @@
                                 </xsl:if>
                             </xsl:for-each>
                             <xsl:for-each
-                                select="distinct-values(descendant::tei:handShift/@scribe)">
+                                select="distinct-values(ancestor::tei:TEI/descendant::tei:handShift/@scribe)">
                                 <xsl:element name="person" namespace="http://www.tei-c.org/ns/1.0">
                                     <xsl:attribute name="xml:id">
                                         <xsl:value-of select="replace(., '#', '')"/>
@@ -33,7 +33,7 @@
                                 </xsl:element>
                             </xsl:for-each>
                             <xsl:for-each
-                                select="distinct-values(descendant::tei:handNote/@corresp)">
+                                select="distinct-values(ancestor::tei:TEI/descendant::tei:handNote/@corresp)">
                                 <xsl:if test="not(. = 'schreibkraft')">
                                     <xsl:element name="person"
                                         namespace="http://www.tei-c.org/ns/1.0">
@@ -43,6 +43,7 @@
                                     </xsl:element>
                                 </xsl:if>
                             </xsl:for-each>
+                            
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:for-each
