@@ -1657,6 +1657,7 @@
          <xs:element ref="tei:title" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:publisher" maxOccurs="unbounded" minOccurs="0"/>
          <xs:element ref="tei:pubPlace" maxOccurs="unbounded" minOccurs="0"/>
+         <xs:element ref="tei:hi" maxOccurs="unbounded" minOccurs="0"/>
       </xs:all>
       <xs:attribute ref="xml:id" use="optional"/>
       <xs:assert test="(tei:title/@level) or not(tei:title)"/>
