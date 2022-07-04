@@ -1554,11 +1554,11 @@
 
 %% Symbole
 
-\newcommand{\symaddr}{\includegraphics[height=6pt]{images/symbol/noun_637366}}
-\newcommand{\symweiteredrucke}{\includegraphics[height=6pt]{images/symbol/noun_634729}}
-\newcommand{\symdruckvorlage}{\includegraphics[height=6pt]{images/symbol/noun_637409}}
-\newcommand{\symstandort}{\includegraphics[height=6pt]{images/symbol/noun_634216}}
-\newcommand{\symhead}{\includegraphics[height=6pt]{images/symbol/noun_1162030_cc}}
+\newcommand{\symaddr}{\includegraphics[height=6pt]{symbol/noun_637366}}
+\newcommand{\symweiteredrucke}{\includegraphics[height=6pt]{symbol/noun_634729}}
+\newcommand{\symdruckvorlage}{\includegraphics[height=6pt]{symbol/noun_637409}}
+\newcommand{\symstandort}{\includegraphics[height=6pt]{symbol/noun_634216}}
+\newcommand{\symhead}{\includegraphics[height=6pt]{symbol/noun_1162030_cc}}
 
 
 
