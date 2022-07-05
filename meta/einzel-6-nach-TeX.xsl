@@ -1130,7 +1130,7 @@
 \usepackage{fontspec}
 \usepackage{moresize}
 \usepackage[english, french, greek, ngerman]{babel}
-\usepackage{ipa}  %für das Seitenwechselzeichens
+%\usepackage{ipa}  für das Seitenwechselzeichens
 \usepackage[babel]{microtype}
 \usepackage[dash, dot]{dashundergaps}
 \usepackage{soul}
@@ -1437,7 +1437,7 @@
 
 \newcommand{\Theight}{\dimexpr\fontcharht\font`W}
 \newcommand{\pbposition}{\depth}
-\newcommand{\pb}{\nobreak\hspace{0pt}\raisebox{-0.1em}{\raisebox{\pbposition}{\textnormal{\secstress}}}\nobreak\hspace{0pt}}
+\newcommand{\pb}{\nobreak\hspace{0pt}\raisebox{-0.1em}{\raisebox{\pbposition}{\textnormal{|}}}\nobreak\hspace{0pt}}
 
 % EINFÜGUNGEN IM TEXT MARKIEREN
 
@@ -1554,11 +1554,18 @@
 
 %% Symbole
 
-\newcommand{\symaddr}{\includegraphics[height=6pt]{symbol/noun_637366}}
-\newcommand{\symweiteredrucke}{\includegraphics[height=6pt]{symbol/noun_634729}}
-\newcommand{\symdruckvorlage}{\includegraphics[height=6pt]{symbol/noun_637409}}
-\newcommand{\symstandort}{\includegraphics[height=6pt]{symbol/noun_634216}}
-\newcommand{\symhead}{\includegraphics[height=6pt]{symbol/noun_1162030_cc}}
+%\newcommand{\symaddr}{\includegraphics[height=6pt]{symbol/noun_637366.png}}
+%\newcommand{\symweiteredrucke}{\includegraphics[height=6pt]{symbol/noun_634729.png}}
+%\newcommand{\symdruckvorlage}{\includegraphics[height=6pt]{symbol/noun_637409.png}}
+%\newcommand{\symstandort}{\includegraphics[height=6pt]{symbol/noun_634216.png}}
+%\newcommand{\symhead}{\includegraphics[height=6pt]{symbol/noun_1162030_cc.png}}
+
+
+\newcommand{\symaddr}{A}
+\newcommand{\symweiteredrucke}{D}
+\newcommand{\symdruckvorlage}{V}
+\newcommand{\symstandort}{O}
+\newcommand{\symhead}{H}
 
 
 
