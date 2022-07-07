@@ -83,7 +83,7 @@
    <xs:element name="ab"/>
    <xs:element name="ref">
       <xs:complexType mixed="true">
-         <xs:attribute name="type" use="optional">
+         <xs:attribute name="type" use="required">
             <xs:simpleType>
                <xs:restriction base="xs:string">
                   <xs:enumeration value="schnitzlerDiary"/>
