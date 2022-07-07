@@ -2813,9 +2813,6 @@
          </xsl:choose>
          <xsl:choose>
             <xsl:when test="position() = last()">
-               <xsl:if test="not(ends-with(self::*, '.'))">
-                  <xsl:text>.</xsl:text>
-               </xsl:if>
             </xsl:when>
             <xsl:otherwise>
                <xsl:text>, </xsl:text>
@@ -5991,7 +5988,7 @@
             <xsl:text>}</xsl:text>
             <xsl:if test="key('place-lookup', $first, $places)/desc">
                <xsl:text>, \emph{</xsl:text>
-               <xsl:value-of select="key('place-lookup', $first, $places)/desc"/>
+               <xsl:value-of select="replace(key('place-lookup', $first, $places)/desc[1]/text(),'#','')"/>
                <xsl:text>}</xsl:text>
             </xsl:if>
          </xsl:otherwise>
