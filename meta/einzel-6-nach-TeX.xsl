@@ -9,7 +9,27 @@
    <xsl:param name="persons"
       select="//back/listPerson"/>
    <xsl:param name="works"
-      select="//back//listBibl"/>
+      as="node()">
+      <xsl:choose>
+         <xsl:when test="descendant::back/listBibl">
+            <xsl:copy-of select="descendant::back/listBibl"/>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:element name="listBibl">
+               <xsl:element name="bibl">
+                  <xsl:attribute name="id">
+                     <xsl:text>leer</xsl:text>
+                  </xsl:attribute>
+               </xsl:element>
+               <xsl:element name="bibl">
+                  <xsl:attribute name="id">
+                     <xsl:text>leer</xsl:text>
+                  </xsl:attribute>
+               </xsl:element>
+            </xsl:element>
+         </xsl:otherwise>
+      </xsl:choose>
+   </xsl:param>
    <xsl:param name="orgs"
       select="//back/listOrg"/>
    <xsl:param name="places"
