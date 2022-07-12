@@ -6288,6 +6288,9 @@
          </xsl:choose>
       </xsl:variable>
       <xsl:choose>
+         <xsl:when test="@target=''">
+            <xsl:text>{XXXX ref}</xsl:text>
+         </xsl:when>
          <xsl:when test="@subtype = 'date-only'">
             <xsl:value-of
                select="document(resolve-uri($target-path, document-uri(/)))//tei:correspDesc/tei:correspAction[@type = 'sent']/tei:date/text()"
@@ -6309,6 +6312,7 @@
                </xsl:when>
             </xsl:choose>
             <xsl:choose>
+               
                <xsl:when test="document($target-path)//tei:titleStmt/tei:title[@level = 'a']">
                   <xsl:value-of
                      select="document($target-path)//tei:titleStmt/tei:title[@level = 'a']"
