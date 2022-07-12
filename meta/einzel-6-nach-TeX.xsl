@@ -1444,13 +1444,13 @@
 \renewcaptionname{ngerman}{\contentsname}{Inhalt}           %Table of contents
 
 
-\newcommand{\introOben}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\downp\normalsize}}}}
-\newcommand{\introUnten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\downp\normalsize}}}}
-\newcommand{\introMitteVorne}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\downp\normalsize}}}}
-\newcommand{\introMitteHinten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\downp\normalsize}}}}
-\newcommand{\substVorne}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\upp\normalsize}}}}
+\newcommand{\introOben}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small{v}\normalsize}}}}
+\newcommand{\introUnten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small{v}\normalsize}}}}
+\newcommand{\introMitteVorne}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small{v}\normalsize}}}}
+\newcommand{\introMitteHinten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small{v}\normalsize}}}}
+\newcommand{\substVorne}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\rotatebox[origin=c]{180}{v}\normalsize}}}}
 \newcommand{\substDazwischen}{}
-\newcommand{\substHinten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\downp\normalsize}}}}
+\newcommand{\substHinten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small{v}\normalsize}}}}
 
 
 % MARGINALSPALTE
@@ -1906,7 +1906,7 @@
       <xsl:if test="not(starts-with(@id, 'E'))">
          <xsl:text>\rehead{</xsl:text>
          <xsl:value-of
-            select="concat(key('person-lookup', (@bw), $persons)/forename, ' ', key('person-lookup', (@bw), $persons)/persName/surname)"/>
+            select="concat(key('person-lookup', (@bw), $persons)/persName/forename, ' ', key('person-lookup', (@bw), $persons)/persName/surname)"/>
          <xsl:text>}</xsl:text>
       </xsl:if>
       <xsl:apply-templates select="image"/>
@@ -2335,11 +2335,11 @@
                   <xsl:value-of select="foo:handNote(handNote)"/>
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:variable name="corespi-name"
-                     select="key('person-lookup', (handNote/@corresp), $persons)/persName"
+                  <xsl:variable name="coorespi-name"
+                     select="key('person-lookup', (handNote/@corresp), $persons)[1]/persName[1]"
                      as="node()?"/>
                   <xsl:value-of
-                     select="concat($corespi-name/forename, ' ', $corespi-name/surname)"/>
+                     select="concat($coorespi-name/forename, ' ', $coorespi-name/surname)"/>
                   <xsl:text>: </xsl:text>
                   <xsl:value-of select="foo:handNote(handNote)"/>
                </xsl:otherwise>
@@ -2350,7 +2350,7 @@
             <xsl:for-each select="distinct-values(handNote/@corresp)">
                <xsl:variable name="corespi" select="."/>
                <xsl:variable name="corespi-name"
-                  select="key('person-lookup', ($corespi), $persons)/persName[1]" as="node()?"/>
+                  select="key('person-lookup', ($corespi[1]), $persons)[1]/persName[1]" as="node()?"/>
                <xsl:text>Handschrift </xsl:text>
                <xsl:value-of
                   select="concat($corespi-name/forename, ' ', $corespi-name/surname)"/>

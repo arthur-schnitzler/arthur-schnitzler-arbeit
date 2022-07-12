@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02725"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L02725"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, [31.&#160;12.&#160;1893]</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, [31. 12. 1893]</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -83,10 +85,12 @@
                            <desc type="karte" subtype="postkarte"/>
                         </objectDesc>
                         <handDesc hands="1">
-                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"
-                              corresp="#pmb11485"/>
-                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"
-                              corresp="#pmb11485">
+                           <handNote medium="schwarze_tinte"
+                                     style="deutsche-kurrent"
+                                     corresp="#pmb11485"/>
+                           <handNote medium="schwarze_tinte"
+                                     style="lateinische-kurrent"
+                                     corresp="#pmb11485">
                               <p>Adresse</p>
                            </handNote>
                         </handDesc>
@@ -95,22 +99,24 @@
                               <desc>
                                  <stamp n="1">
                                     <placeName ref="#pmb87780">Par<supplied>is</supplied> Pl. de la
-                                          Bour<supplied>se</supplied></placeName>
-                                    <date when="1893-12"><gap reason="illegible" unit="chars"
-                                          quantity="3"/><foreign xml:lang="fra"
-                                          >Dec</foreign><supplied>.</supplied>&#160;93</date>
-                                    <time>4<gap reason="illegible" unit="chars" quantity="2"
-                                       /></time>
+                                          Bour<supplied>se</supplied>
+                                    </placeName>
+                                    <date when="1893-12">
+                                       <gap reason="illegible" unit="chars" quantity="3"/>
+                                       <foreign xml:lang="fra">Dec</foreign>
+                                       <supplied>.</supplied> 93</date>
+                                    <time>4<gap reason="illegible" unit="chars" quantity="2"/>
+                                    </time>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="postal">
                               <desc>
                                  <stamp n="2">
-                                    <placeName ref="#pmb50">Wien&#160;9/3</placeName>
-                                    <date when="1893-12-31">31.&#160;23.&#160;93</date>
+                                    <placeName ref="#pmb50">Wien 9/3</placeName>
+                                    <date when="1893-12-31">31. 23. 93</date>
                                     <time>8.V</time>
-                                    <addSpan>72&#160;Bestellt</addSpan>
+                                    <addSpan>72 Bestellt</addSpan>
                                  </stamp>
                               </desc>
                            </incident>
@@ -129,7 +135,7 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <placeName ref="#pmb182">Paris</placeName>
-               <date when="1893-12-31" n="2">[31.&#160;12.&#160;1893]</date>
+               <date when="1893-12-31" n="2">[31. 12. 1893]</date>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -152,19 +158,28 @@
       <body>
          <div type="address">
             <address>
-               <addrLine><pb facs="HS.NZ85.1.3163_0084"/><hi rend="latintype">
+               <addrLine>
+                  <pb facs="HS.NZ85.1.3163_0084"/>
+                  <hi rend="latintype">
                      <rs type="place" ref="#pmb41240">Autriche</rs>
                   </hi>.</addrLine>
-               <addrLine><hi rend="latintype">Herrn Dr. Arthur Schnitzler</hi></addrLine>
-               <addrLine><hi rend="latintype">
-                     <rs type="place" ref="#pmb397">IX. Frankgaße&#160;1</rs>
-                  </hi></addrLine>
-               <addrLine><hi rend="latintype">
-                     <rs type="place" ref="#pmb50">Wien</rs>. </hi></addrLine>
+               <addrLine>
+                  <hi rend="latintype">Herrn Dr. Arthur Schnitzler</hi>
+               </addrLine>
+               <addrLine>
+                  <hi rend="latintype">
+                     <rs type="place" ref="#pmb397">IX. Frankgaße 1</rs>
+                  </hi>
+               </addrLine>
+               <addrLine>
+                  <hi rend="latintype">
+                     <rs type="place" ref="#pmb50">Wien</rs>. </hi>
+               </addrLine>
             </address>
          </div>
          <div type="writingSession" n="1">
-            <p><pb facs="HS.NZ85.1.3163_0085"/>1.) Leſen. <rs type="work" ref="">
+            <p>
+               <pb facs="HS.NZ85.1.3163_0085"/>1.) Leſen. <rs type="work" ref="">
                   <hi rend="latintype">
                      <rs type="person" ref="">Albrecht Dürer</rs>s</hi> Briefe</rs>
                <rs type="work" ref="">und Tagebücher</rs> (<hi rend="latintype">
@@ -175,6 +190,183 @@
             <p>P. G. </p>
          </div>
       </body>
-      <back> </back>
+      <back>
+         <listPerson>
+            <person xml:id="pmb11485">
+               <persName>
+                  <forename>Paul</forename>
+                  <surname>Goldmann</surname>
+               </persName>
+               <birth>
+                  <date when="1865-01-31">31.01.1865</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
+                     <location>
+                        <geo>51,10773 17,03533</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1935-09-25">25.09.1935</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <forename>Arthur</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15.05.1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21.10.1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+            </person>
+         </listPerson>
+         <listPlace>
+            <place xml:id="pmb87780">
+               <placeName>Place de la Bourse</placeName>
+               <placeName type="uri_wikipedia">https://fr.wikipedia.org/wiki/Place_de_la_Bourse_(Paris)</placeName>
+               <desc type="entity_type">Platz (K.PLT)</desc>
+               <desc type="entity_type_id">21</desc>
+               <location type="coords">
+                  <geo>48,8657 2,3414</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb182">Paris</placeName>
+                  <geo>48,85341 2,3488</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87780/</idno>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="alternative-name">Vindobona (Wien)</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Wien?</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>48,2066 16,37341</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
+               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
+               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+            </place>
+            <place xml:id="pmb182">
+               <placeName>Paris</placeName>
+               <placeName type="alternative-name">P'ariz</placeName>
+               <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4044660-8</placeName>
+               <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
+               <placeName type="alternative-name">Pariž</placeName>
+               <placeName type="alternative-name">Parisius</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>48,85341 2,3488</geo>
+               </location>
+               <idno type="URL" subtype="geonames">http://sws.geonames.org/2988507/</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+            </place>
+            <place xml:id="pmb41240">
+               <placeName>Österreich</placeName>
+               <placeName type="alternative-name">Republik Österreich</placeName>
+               <placeName type="legacy-uri-merge">http://sws.geonames.org/2782113/</placeName>
+               <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
+               <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
+               <placeName type="alternative-name">Republic of Austria</placeName>
+               <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+               <desc type="entity_type_id">1107</desc>
+               <location type="coords">
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb687">Österreich-Ungarn</placeName>
+                  <geo>48,4054 16,4887</geo>
+               </location>
+               <idno type="URL" subtype="geonames">http://sws.geonames.org/2782113/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43319/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2782113/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41240</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41240</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb41240</idno>
+            </place>
+            <place xml:id="pmb397">
+               <placeName>Frankgasse</placeName>
+               <desc type="entity_type">Straße (K.STR)</desc>
+               <desc type="entity_type_id">26</desc>
+               <location type="coords">
+                  <geo>48,215516628628 16,356475515829</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:Frankgasse</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb397</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/397</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb397</idno>
+            </place>
+         </listPlace>
+      </back>
    </text>
 </TEI>
