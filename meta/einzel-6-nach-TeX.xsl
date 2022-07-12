@@ -9,27 +9,7 @@
    <xsl:param name="persons"
       select="//back/listPerson"/>
    <xsl:param name="works"
-      as="node()">
-      <xsl:choose>
-         <xsl:when test="descendant::back/listBibl">
-            <xsl:copy-of select="descendant::back/listBibl"/>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:element name="listBibl">
-               <xsl:element name="bibl">
-                  <xsl:attribute name="id">
-                     <xsl:text>leer</xsl:text>
-                  </xsl:attribute>
-               </xsl:element>
-               <xsl:element name="bibl">
-                  <xsl:attribute name="id">
-                     <xsl:text>leer</xsl:text>
-                  </xsl:attribute>
-               </xsl:element>
-            </xsl:element>
-         </xsl:otherwise>
-      </xsl:choose>
-   </xsl:param>
+      as="node()" select="descendant::back/listBibl"/>
    <xsl:param name="orgs"
       select="//back/listOrg"/>
    <xsl:param name="places"
@@ -5774,7 +5754,7 @@
             <xsl:text>\textcolor{red}{WERKINDEX FEHLER}</xsl:text>
          </xsl:when>
          <xsl:otherwise>
-            <xsl:variable name="entry" select="key('work-lookup', $first, $works)" as="node()?"/>
+            <xsl:variable name="entry" select="key('work-lookup', replace($first,'#','') , $works)" as="node()?"/>
             <xsl:variable name="author"
                select="$entry/author[@role = 'author' or @role = 'abbreviated-name']"/>
             <xsl:choose>
