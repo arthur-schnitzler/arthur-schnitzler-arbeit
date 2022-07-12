@@ -1444,13 +1444,13 @@
 \renewcaptionname{ngerman}{\contentsname}{Inhalt}           %Table of contents
 
 
-\newcommand{\introOben}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\downp\normalsize}}}}
-\newcommand{\introUnten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\downp\normalsize}}}}
-\newcommand{\introMitteVorne}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\downp\normalsize}}}}
-\newcommand{\introMitteHinten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\downp\normalsize}}}}
-\newcommand{\substVorne}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\upp\normalsize}}}}
+\newcommand{\introOben}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small{v}\normalsize}}}}
+\newcommand{\introUnten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small{v}\normalsize}}}}
+\newcommand{\introMitteVorne}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small{v}\normalsize}}}}
+\newcommand{\introMitteHinten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small{v}\normalsize}}}}
+\newcommand{\substVorne}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\rotatebox[origin=c]{180}{v}\normalsize}}}}
 \newcommand{\substDazwischen}{}
-\newcommand{\substHinten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small\downp\normalsize}}}}
+\newcommand{\substHinten}{\textnormal{\raisebox{\Theight}{\raisebox{-\height}{\small{v}\normalsize}}}}
 
 
 % MARGINALSPALTE
@@ -1906,7 +1906,7 @@
       <xsl:if test="not(starts-with(@id, 'E'))">
          <xsl:text>\rehead{</xsl:text>
          <xsl:value-of
-            select="concat(key('person-lookup', (@bw), $persons)/forename, ' ', key('person-lookup', (@bw), $persons)/persName/surname)"/>
+            select="concat(key('person-lookup', (@bw), $persons)/persName/forename, ' ', key('person-lookup', (@bw), $persons)/persName/surname)"/>
          <xsl:text>}</xsl:text>
       </xsl:if>
       <xsl:apply-templates select="image"/>
