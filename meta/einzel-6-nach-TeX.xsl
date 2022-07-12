@@ -9,7 +9,7 @@
    <xsl:param name="persons"
       select="//back/listPerson"/>
    <xsl:param name="works"
-      select="//back//listBibl"/>
+      as="node()" select="descendant::back/listBibl"/>
    <xsl:param name="orgs"
       select="//back/listOrg"/>
    <xsl:param name="places"
@@ -5754,7 +5754,7 @@
             <xsl:text>\textcolor{red}{WERKINDEX FEHLER}</xsl:text>
          </xsl:when>
          <xsl:otherwise>
-            <xsl:variable name="entry" select="key('work-lookup', $first, $works)" as="node()?"/>
+            <xsl:variable name="entry" select="key('work-lookup', replace($first,'#','') , $works)" as="node()?"/>
             <xsl:variable name="author"
                select="$entry/author[@role = 'author' or @role = 'abbreviated-name']"/>
             <xsl:choose>
