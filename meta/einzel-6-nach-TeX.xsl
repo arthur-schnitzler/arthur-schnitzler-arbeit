@@ -5,6 +5,7 @@
    <xsl:output method="text"/>
    <xsl:strip-space elements="*"/>
    <!-- subst root persName address body div sourceDesc physDesc witList msIdentifier fileDesc teiHeader correspDesc correspAction date witnessdate -->
+   
    <!-- Globale Parameter -->
    <xsl:param name="persons"
       select="//back/listPerson"/>
@@ -1179,6 +1180,8 @@
 \usepackage{tikz}
 \usepackage{ulem}
 \usetikzlibrary{calc,decorations.pathmorphing}
+\setmainfont{EB Garamond} % Schriftwechsel, für griechische Zeichen
+
 
 \PassOptionsToPackage{gray}{xcolor}
 \definecolor{gray}{gray}{0.6}
@@ -1313,6 +1316,8 @@
 	
 %\newfontfamily\greekfont{GaramondPremrPro}
 %\newcommand\griechisch[1]{\greekfont{}#1{}\normalfont}
+\newcommand\griechisch[1]{#1}
+
 
 %\newfontfamily\sansseriffont[HyphenChar=None, RawFeature={-liga}, Scale=1.03]{TheSans-Regular}
 %\newfontfamily\sansseriffont{uarial}
@@ -4730,7 +4735,8 @@
       <xsl:text>\end{minipage}}</xsl:text>
    </xsl:template>
    <xsl:template match="div[@type = 'image']">
-      <xsl:apply-templates select="figure"/>
+      <xsl:text>\pstart{[}Abbildung{]}\pend</xsl:text>
+      <!--<xsl:apply-templates select="figure"/>-->
    </xsl:template>
    <xsl:template match="address">
       <xsl:apply-templates/>
@@ -5510,7 +5516,14 @@
                   <xsl:text>XXXX</xsl:text>
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:value-of select="$eintrag"/>
+                  <xsl:analyze-string select="$eintrag" regex="&amp;">
+                     <xsl:matching-substring>
+                        <xsl:text>{\kaufmannsund}</xsl:text>
+                     </xsl:matching-substring>
+                     <xsl:non-matching-substring>
+                        <xsl:value-of select="."/>
+                     </xsl:non-matching-substring>
+                  </xsl:analyze-string>
                </xsl:otherwise>
             </xsl:choose>
             <xsl:text>}</xsl:text>
@@ -6145,7 +6158,7 @@
       </xsl:text>
    </xsl:template>
    <xsl:template match="graphic">
-      <xsl:text>\includegraphics</xsl:text>
+      <!--<xsl:text>\includegraphics</xsl:text>
       <xsl:choose>
          <xsl:when test="@width">
             <xsl:text>[width=</xsl:text>
@@ -6164,7 +6177,7 @@
       </xsl:choose>
       <xsl:text>{</xsl:text>
       <xsl:value-of select="replace(@url, '../resources/img', 'images')"/>
-      <xsl:text>}</xsl:text>
+      <xsl:text>}</xsl:text>-->
    </xsl:template>
    <xsl:template match="list">
       <xsl:text>\begin{itemize}[noitemsep, leftmargin=*]</xsl:text>
