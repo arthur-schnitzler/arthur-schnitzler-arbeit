@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L02725"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02725"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, [31. 12. 1893]</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, [28./29.?] 12. 1893</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -85,12 +83,10 @@
                            <desc type="karte" subtype="postkarte"/>
                         </objectDesc>
                         <handDesc hands="1">
-                           <handNote medium="schwarze_tinte"
-                                     style="deutsche-kurrent"
-                                     corresp="#pmb11485"/>
-                           <handNote medium="schwarze_tinte"
-                                     style="lateinische-kurrent"
-                                     corresp="#pmb11485">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"
+                              corresp="#pmb11485"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"
+                              corresp="#pmb11485">
                               <p>Adresse</p>
                            </handNote>
                         </handDesc>
@@ -114,7 +110,7 @@
                               <desc>
                                  <stamp n="2">
                                     <placeName ref="#pmb50">Wien 9/3</placeName>
-                                    <date when="1893-12-31">31. 23. 93</date>
+                                    <date when="1893-12-31">31. 12. 93</date>
                                     <time>8.V</time>
                                     <addSpan>72 Bestellt</addSpan>
                                  </stamp>
@@ -135,11 +131,12 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <placeName ref="#pmb182">Paris</placeName>
-               <date when="1893-12-31" n="2">[31. 12. 1893]</date>
+               <date when="1893-12-28" n="1">[28./29.?] 12. 1893</date>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
+               <date when="1893-12-31">31. 12. 1893</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -179,15 +176,24 @@
          </div>
          <div type="writingSession" n="1">
             <p>
-               <pb facs="HS.NZ85.1.3163_0085"/>1.) Leſen. <rs type="work" ref="">
+               <pb facs="HS.NZ85.1.3163_0085"/>1.) Leſen: <rs type="work" ref="#pmb88084">
                   <hi rend="latintype">
-                     <rs type="person" ref="">Albrecht Dürer</rs>s</hi> Briefe</rs>
-               <rs type="work" ref="">und Tagebücher</rs> (<hi rend="latintype">
-                  <rs type="org" ref="">Braumueller</rs>, <rs type="place" ref="">Wien</rs>
-               </hi>, 1872). </p>
-            <p>2.) Mir ſchreiben. </p>
-            <p>3.) Fröhliches Neujahr Dir und den Freunden. </p>
-            <p>P. G. </p>
+                     <rs type="person" ref="#pmb11209">Albrecht Dürer</rs>s</hi> Briefe und
+                  Tagebücher</rs> (<hi rend="latintype">
+                  <rs type="org" ref="#pmb36942">Braumueller</rs>, <rs type="place" ref="#pmb50"
+                     >Wien</rs>
+               </hi>, <date when="1872">1872</date>).</p>
+            <p>2.) Mir ſchreiben.</p>
+            <p>3.) Fröhliches <anchor type="commentary" xml:id="K_L02725-1"/>Neujahr<note
+                  type="commentary" xml:id="K_L02725-1h">Der Empfangsstempel vom <date
+                     when="1893-12-31">31. 12. 1893</date> ermöglicht eine ungefähre Datierung der
+                  Postkarte. Wenn davon ausgegangen wird, dass die Postkarte etwa zwei Tage nach <rs
+                     type="place" ref="#pmb50">Wien</rs> unterwegs war, kann sie auf den <date
+                     when="1893-12-28">28.</date> oder <date when="1893-12-29">29. 12. 1893</date>
+                  datiert werden.</note> Dir und den Freunden.</p>
+            <closer>
+               <signed>P. G.</signed>
+            </closer>
          </div>
       </body>
       <back>
@@ -218,12 +224,16 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -252,16 +262,68 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+            </person>
+            <person xml:id="pmb11209">
+               <persName>
+                  <forename>Albrecht</forename>
+                  <surname>Dürer</surname>
+               </persName>
+               <birth>
+                  <date when="1471-05-21">21.05.1471</date>
+                  <settlement ref="pmb44172">
+                     <placeName type="pref">Nürnberg</placeName>
+                     <location>
+                        <geo>49,45421 11,07752</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1528-04-06">06.04.1528</date>
+                  <settlement ref="pmb44172">
+                     <placeName type="pref">Nürnberg</placeName>
+                     <location>
+                        <geo>49,45421 11,07752</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb110">Bildender Künstler/Bildende Künstlerin &gt;&gt;
+                  Maler/Malerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14536</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/11852786X</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11209</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11209</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11209</idno>
             </person>
          </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb88084">
+               <title>Dürers Briefe, Tagebücher und Reime</title>
+               <note type="uri_worklink">https://doi.org/10.11588/diglit.28721#0001</note>
+               <note type="bibliografische_angabe">Albrecht Dürer: Dürers Briefe, Tagebücher und Reime. Hg. u. übers. v. Moritz Thausing. Wien:  Braumüller 1872 (Quellenschriften für Kunstgeschichte und Kunsttechnik des Mittelalters und der Renaissance 3)</note>
+               <author ref="pmbperson__11209" role="hat-geschaffen">Dürer, Albrecht</author>
+               <author ref="pmbperson__88086" role="hat-herausgegeben">Thausing, Moritz</author>
+               <author ref="pmbperson__88086" role="hat-ubersetzt">Thausing, Moritz</author>
+               <date from="1872-01-01" to="1872-12-31">1872 – 1872</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88084/</idno>
+               <note type="work_kind">Buchausgabe</note>
+            </bibl>
+         </listBibl>
          <listPlace>
             <place xml:id="pmb87780">
                <placeName>Place de la Bourse</placeName>
-               <placeName type="uri_wikipedia">https://fr.wikipedia.org/wiki/Place_de_la_Bourse_(Paris)</placeName>
+               <placeName type="uri_wikipedia"
+                  >https://fr.wikipedia.org/wiki/Place_de_la_Bourse_(Paris)</placeName>
                <desc type="entity_type">Platz (K.PLT)</desc>
                <desc type="entity_type_id">21</desc>
                <location type="coords">
@@ -275,7 +337,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
@@ -299,14 +362,17 @@
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
             </place>
             <place xml:id="pmb182">
                <placeName>Paris</placeName>
@@ -321,18 +387,22 @@
                   <geo>48,85341 2,3488</geo>
                </location>
                <idno type="URL" subtype="geonames">http://sws.geonames.org/2988507/</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
             </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
                <placeName type="legacy-uri-merge">http://sws.geonames.org/2782113/</placeName>
                <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
-               <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
+               <placeName type="legacy-uri-merge"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
                <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
                <desc type="entity_type_id">1107</desc>
@@ -344,11 +414,14 @@
                   <geo>48,4054 16,4887</geo>
                </location>
                <idno type="URL" subtype="geonames">http://sws.geonames.org/2782113/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43319/</idno>
+               <idno type="URL" subtype="pmb"
+                  >https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43319/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2782113/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41240</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41240</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb41240</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41240</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb41240</idno>
             </place>
             <place xml:id="pmb397">
                <placeName>Frankgasse</placeName>
@@ -362,11 +435,50 @@
                   <geo>48,22387 16,35641</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:Frankgasse</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb397</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb397</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/397</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb397</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb397</idno>
             </place>
          </listPlace>
+         <listOrg>
+            <org xml:id="pmb36942">
+               <orgName>Verlag Wilhelm Braumüller</orgName>
+               <orgName type="namensvariante">Verlag Wilhelm Braumüller – Josef Deibler</orgName>
+               <desc type="entity_type">Verlag</desc>
+               <desc type="entity_type_id">975</desc>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,2066 16,37341</geo>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
+                  <idno type="URL" subtype=""
+                     >http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
+                  <idno type="URL" subtype=""
+                     >http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
+                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
+                  <idno type="URL" subtype="bahrschnitzler"
+                     >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
+                  <idno type="URL" subtype="schnitzler-briefe"
+                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
+                  <idno type="URL" subtype="kraus"
+                     >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               </location>
+               <idno type="URL" subtype="pmb"
+                  >https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36942/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36942</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/institutionen/pmb36942</idno>
+               <note type="apis_dates">
+                  <date notBefore="1783-01-01" when="1783-07-02">1783</date>
+               </note>
+            </org>
+         </listOrg>
       </back>
    </text>
 </TEI>
