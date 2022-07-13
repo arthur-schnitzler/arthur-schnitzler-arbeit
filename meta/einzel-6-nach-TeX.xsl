@@ -4711,7 +4711,14 @@
                   <xsl:text>XXXX</xsl:text>
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:value-of select="$eintrag"/>
+                  <xsl:analyze-string select="$eintrag" regex="&amp;">
+                     <xsl:matching-substring>
+                        <xsl:text>{\kaufmannsund}</xsl:text>
+                     </xsl:matching-substring>
+                     <xsl:non-matching-substring>
+                        <xsl:value-of select="."/>
+                     </xsl:non-matching-substring>
+                  </xsl:analyze-string>
                </xsl:otherwise>
             </xsl:choose>
             <xsl:text>}</xsl:text>
@@ -4744,7 +4751,14 @@
                   <xsl:text>XXXX</xsl:text>
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:value-of select="$eintrag"/>
+                  <xsl:analyze-string select="$eintrag" regex="&amp;">
+                     <xsl:matching-substring>
+                        <xsl:text>{\kaufmannsund}</xsl:text>
+                     </xsl:matching-substring>
+                     <xsl:non-matching-substring>
+                        <xsl:value-of select="."/>
+                     </xsl:non-matching-substring>
+                  </xsl:analyze-string>
                </xsl:otherwise>
             </xsl:choose>
             <xsl:text>}</xsl:text>
@@ -4852,7 +4866,7 @@
          select="ancestor::TEI/teiHeader/revisionDesc/@status = 'approved' or ancestor::TEI/teiHeader/revisionDesc/@status = 'candidate' or ancestor::TEI/teiHeader/revisionDesc/change[contains(text(), 'Index check')]"/>-->
       <!-- In diesen Fällen befindet sich das rs im Text: -->
       <xsl:variable name="im-text" as="xs:boolean"
-         select="ancestor::body and not(ancestor::note) and not(ancestor::caption) and not(parent::bibl) and not(ancestor::TEI[starts-with(@id, 'E')]) and not(ancestor::div[@type = 'biographical'])"/>
+         select="ancestor::body and not(ancestor::note) and not(ancestor::footNote) and not(ancestor::caption) and not(parent::bibl) and not(ancestor::TEI[starts-with(@id, 'E')]) and not(ancestor::div[@type = 'biographical'])"/>
       <!-- In diesen Fällen werden orgs und titel kursiv geschrieben: -->
       <xsl:variable name="kommentar-herausgeber" as="xs:boolean"
          select="(ancestor::note[@type = 'commentary'] or ancestor::note[@type = 'textConst'] or ancestor::TEI[starts-with(@id, 'E')] or ancestor::bibl or ancestor::div[@type = 'biographical']) and not(ancestor::quote)"/>
