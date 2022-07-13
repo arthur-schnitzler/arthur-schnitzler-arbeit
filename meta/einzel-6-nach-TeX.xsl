@@ -1181,9 +1181,11 @@
 \usepackage{ulem}
 \usetikzlibrary{calc,decorations.pathmorphing}
 \setmainfont[Path=../fonts/,
-  Extension=.otf,
+  Extension=.ttf,
   UprightFont=*-Regular,
-  ItalicFont=*-Italic]{EBGaramond12}
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+  ItalicFont=*-Italic]{EBGaramond.ttf}
 
 
 \PassOptionsToPackage{gray}{xcolor}
