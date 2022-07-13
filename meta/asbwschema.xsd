@@ -425,9 +425,10 @@
       </xs:sequence>
    </xs:complexType>
    <xs:complexType name="listBibl_in_back">
-      <xs:sequence>
+      <xs:sequence minOccurs="0">
          <xs:element maxOccurs="unbounded" ref="tei:bibl" minOccurs="1"/>
       </xs:sequence>
+      <xs:assert test="child::*/name()='bibl'"/>
    </xs:complexType>
 
    <xs:element name="listBibl">

@@ -125,51 +125,55 @@
       </encodingDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2022-06-22">Angelegt</change>
+         <change who="MAM" when="2022-07-13">Durchsicht</change>
+         <change who="MAM" when="2022-07-13">Index check</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
-         <div type="address">
-            <address>
-               <addrLine>
-                  <rs type="place" ref="#pmb34187">
-                     <hi rend="pre-print">75, Rue de Richelieu.</hi>
-                  </rs>
-               </addrLine>
-            </address>
-         </div>
          <div type="writingSession" n="1">
+            <opener>
+               <p rend="right">
+                  <pb facs="HS.NZ85.1.3163_0011"/>
+                  <hi rend="pre-print">
+                     <rs type="place" ref="#pmb34187">75, Rue de Richelieu</rs>.</hi>
+               </p>
+            </opener>
             <p>
                <seg rend="left">
-                  <pb facs="HS.NZ85.1.3163_0011"/>
                   <hi rend="latintype">
                      <rs type="place" ref="#pmb182">Paris</rs>
                   </hi>, <date when="1892-07-19">19. Juli</date>.</seg>
                <seg rend="right">Mein lieber Arthur!</seg>
             </p>
-            <p>Soeben antwortet mir mein <rs type="person" subtype="implied" ref="#pmb4986">Onkel</rs> daß er ſich mit ſeinem <rs type="person" subtype="implied" ref="#pmb89393">Verleger</rs> zerſtritten, weil er ihn betrogen (der <rs type="person" subtype="implied" ref="#pmb89393">Verleger</rs> meinen <rs type="person" subtype="implied" ref="#pmb4986">Onkel</rs> nämlich) und daß er
-               ſonſt keine Beziehungen zu Verlegern habe. Ich verſuche jetzt noch einen andern Weg
-               über den ich Dir ſeiner Zeit berichten werde. Ich ſchick <pb facs="HS.NZ85.1.3163_0012"/>Dir nur dieſe eiligen Zeilen, damit Du nicht glaubſt,
-               ich ſei in der Sache <del rend="strikethrough">unthath</del> unthätig. – <hi rend="latintype">
+            <p>Soeben antwortet mir mein <rs type="person" subtype="implied" ref="#pmb4986">Onkel</rs>, daß er ſich mit ſeinem <rs type="person" subtype="implied" ref="#pmb89393">Verleger</rs> zerſtritten, weil er ihn betrogen (der <rs type="person" subtype="implied" ref="#pmb89393">Verleger</rs> meinen <rs type="person" subtype="implied" ref="#pmb4986">Onkel</rs> nämlich) und daß er
+               ſonſt keine <anchor type="commentary" xml:id="K_L02700-1"/>Beziehungen zu
+                  Verlegern<note type="commentary" xml:id="K_L02700-1h">
+                  <rs type="person" ref="#pmb2121">Schnitzler</rs> war auf der Suche nach einem Verlag für <rs type="work" ref="#pmb29935">Anatol</rs>, nachdem ihm die meisten Verlage absagten
+                  ohne das Manuskript eingesehen zu haben. Aus <rs type="person" ref="#pmb11485">Goldmann</rs>s Vermittlungen wurde nichts, das Buch erschien im Herbst mit
+                  Kostenbeteiligung <rs type="person" ref="#pmb2121">Schnitzler</rs>s im <rs type="org" ref="#pmb29716">Bibliographischen Bureau</rs>.</note> habe. Ich
+               verſuche jetzt noch einen andern Weg über den ich Dir ſeinerzeit berichten werde. Ich
+               ſchick <pb facs="HS.NZ85.1.3163_0012"/>Dir nur dieſe eiligen Zeilen, damit Du nicht
+               glaubſt, ich ſei in der Sache <del rend="strikethrough">unthath</del> unthätig. – <hi rend="latintype">
                   <rs type="person" ref="#pmb11673">Herzl</rs>
                </hi> läßt Dich erſuchen, Du möchteſt ihm noch etwas von Deinen Sachen ſchicken (<hi rend="latintype">
                   <rs type="place" ref="#pmb87814">8. Rue</rs>
                </hi>
                <space unit="chars" quantity="1"/>
-               <anchor type="textConst" xml:id="T_L02700-1"/>
                <subst>
                   <del rend="strikethrough">
                      <rs type="place" ref="#pmb87814">Monc</rs>
                   </del>
                   <add place="inline">
+                     <anchor type="textConst" xml:id="T_L02700-1"/>
                      <rs type="place" ref="#pmb87814">Monceau</rs>
+                     <note type="textConst" xml:id="T_L02700-1h">Zur Verdeutlichung des undeutlich
+                        geschriebenen »o« wurde von Goldmann »<quote>
+                           <rs type="place" subtype="implied" ref="#pmb87814">Monceau</rs>
+                        </quote>« ein zweites Mal direkt darunter geschrieben.</note>
                   </add>
-               </subst>
-               <note type="textConst" xml:id="T_L02700-1h">Zur Verdeutlichung des Wortes »<quote>
-                     <rs type="place" subtype="implied" ref="#pmb87814">Monceau</rs>
-                  </quote>« setzte Goldmann es ein zweites Mal direkt darunter.</note>). Auch meine
-               Adreſſe iſt nicht mehr <hi rend="latintype">
-                  <rs type="place" ref="#pmb40415">R. Viviene</rs>
+               </subst>). Auch meine Adreſſe iſt nicht mehr <hi rend="latintype">
+                  <rs type="place" ref="#pmb40415">R. Vivienne</rs>
                </hi>, ſondern <rs type="place" subtype="implied" ref="#pmb34187">die oben
                   gedruckte</rs>. </p>
             <closer>Grüß’ Dich Gott! <lb/>Dein <lb/>
@@ -340,6 +344,25 @@
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb11673</idno>
             </person>
          </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb29935">
+               <title>Anatol</title>
+               <note type="bibliografische_angabe">Arthur Schnitzler: Anatol. Berlin: Bibliographisches Bureau 1892, vordatiert auf 1893</note>
+               <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
+               <date>1892-10-29  – 1892-10-29</date>
+               <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.03</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q487409</idno>
+               <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-anatol</idno>
+               <idno type="URL" subtype="theadok">https://theadok.at/work/32630</idno>
+               <idno type="URL" subtype="deutschestextarchiv">http://www.deutschestextarchiv.de/book/view/schnitzler_anatol_1893</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29935</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29935</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29935</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29935.html</idno>
+               <note type="work_kind">Drama &gt;&gt; Einakterzyklus</note>
+            </bibl>
+         </listBibl>
          <listPlace>
             <place xml:id="pmb182">
                <placeName>Paris</placeName>
@@ -439,6 +462,34 @@
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40415</idno>
             </place>
          </listPlace>
+         <listOrg>
+            <org xml:id="pmb29716">
+               <orgName>Bibliographisches Bureau</orgName>
+               <desc type="entity_type">Verlag</desc>
+               <desc type="entity_type_id">975</desc>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+                  <idno type="URL" subtype="geonames">http://sws.geonames.org/2950159/</idno>
+                  <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb168</idno>
+                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
+                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb822">Alexanderstraße</placeName>
+                  <geo>52,52383 13,41293</geo>
+                  <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb822</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/822</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb822</idno>
+                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb822</idno>
+               </location>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29716</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29716</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29716</idno>
+            </org>
+         </listOrg>
       </back>
    </text>
 </TEI>
