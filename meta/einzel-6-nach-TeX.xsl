@@ -1180,7 +1180,10 @@
 \usepackage{tikz}
 \usepackage{ulem}
 \usetikzlibrary{calc,decorations.pathmorphing}
-\setmainfont{EB Garamond} % Schriftwechsel, für griechische Zeichen
+\setmainfont[Path=../fonts/,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic]{EBGaramond12}
 
 
 \PassOptionsToPackage{gray}{xcolor}
@@ -5308,7 +5311,7 @@
    </xsl:template>
    <xsl:template match="foreign[starts-with(@lang, 'fr') or starts-with(@xml:lang, 'fr')]">
       <xsl:text>\begin{otherlanguage}{french}</xsl:text>
-      <xsl:apply-templates/>
+      <xsl:apply-templates/>  
       <xsl:text>\end{otherlanguage}</xsl:text>
    </xsl:template>
    <xsl:template match="foreign[starts-with(@lang, 'ru') or starts-with(@xml:lang, 'ru')]">
