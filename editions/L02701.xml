@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L02701"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02701"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -127,66 +125,86 @@
       </encodingDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2022-06-22">Angelegt</change>
+         <change who="MAM" when="2022-07-13">Durchsicht</change>
+         <change who="MAM" when="2022-07-13">Index check</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <div type="writingSession" n="1">
-            <p rend="left">
-               <pb facs="HS.NZ85.1.3163_0013-1"/>
-               <rs type="org" ref="#pmb89403">
-                  <hi rend="pre-print">CASINO</hi>
-               </rs>
-            </p>
-            <p rend="left">
-               <rs type="org" ref="#pmb89403">
-                  <hi rend="pre-print">DE</hi>
-               </rs>
-            </p>
-            <p>
-               <seg rend="left">
+            <opener>
+               <p rend="left">
+                  <pb facs="HS.NZ85.1.3163_0013-1"/>
                   <rs type="org" ref="#pmb89403">
-                     <hi rend="pre-print">BIARRITZ</hi>
+                     <hi rend="pre-print">
+                        <hi rend="capitals">Casino</hi>
+                     </hi>
                   </rs>
-               </seg>
-               <seg rend="right">
-                  <date when="1892-08-05">5. Auguſt</date>
-               </seg>
-            </p>
-            <p>
+               </p>
+               <p rend="left">
+                  <rs type="org" ref="#pmb89403">
+                     <hi rend="pre-print">
+                        <hi rend="capitals">de</hi>
+                     </hi>
+                  </rs>
+               </p>
+               <p>
+                  <seg rend="left">
+                     <rs type="org" ref="#pmb89403">
+                        <hi rend="pre-print">
+                           <hi rend="capitals">Biarritz</hi>
+                        </hi>
+                     </rs>
+                  </seg>
+                  <seg rend="right">
+                     <date when="1892-08-05">5. Auguſt</date>. </seg>
+               </p>
                <salute rend="center">Mein lieber Arthur!</salute>
-            </p>
+            </opener>
             <p>Im Abreiſefieber mußte ich Deinen letzten lieben Brief unbeantwortet laſſen. Erſt
                   <date when="1892-08-05">heut</date> finde ich die nöthige Zeit und Ruhe zu einer
                Zeile Antwort. Da ſitze ich in halber Schlaftrunkenheit und reibe mir die Augen. Das
-               blaue, blaue Meer blinkt zum Fenſter hinein und rauſcht mir in die Ohren (<rs type="place" ref="#pmb12376">Atlantiſche<subst>
+               blaue, blaue Meer blinkt zum Fenſter hinein und rauſcht mir in die Ohren (<rs
+                  type="place" ref="#pmb12376">Atlantiſche<subst>
                      <del rend="strikethrough">s </del>
                      <add place="inline">r</add>
                   </subst>
-                  <pb facs="HS.NZ85.1.3163_0014-0"/>Ocean</rs>, mein lieber Arthur, <hi rend="latintype">
+                  <space unit="chars" quantity="1"/>
+                  <pb facs="HS.NZ85.1.3163_0014-0"/>Ocean</rs>, mein lieber Arthur, <hi
+                  rend="latintype">
                   <rs type="place" ref="#pmb53337">Golf von Gascogne</rs>
-               </hi>.) Und ich frage mich: wie <del rend="strikethrough">ta</del> komme ich hierher
+               </hi>.) Und ich frage mich: wie <del rend="strikethrough">ka</del> komme ich hierher
                in den blauen, blauen Süden, <del rend="strikethrough">und</del> an die Grenzmarke
-               von <rs type="place" ref="#pmb166">Frankreich</rs>, und <rs type="place" ref="#pmb388">Spanien</rs>
-               <del rend="strikethrough">(Sü</del> (Südweſt-Grenze, mein lieber Arthur) – ich, der
-               ich <date when="1892-08-04">geſtern</date> noch im <hi rend="latintype">Café <rs type="place" ref="#pmb49">Pfob</rs>
+               von <rs type="place" ref="#pmb166">Frankreich</rs> und <rs type="place" ref="#pmb388"
+                  >Spanien</rs>
+               <space unit="chars" quantity="1"/>
+               <del rend="strikethrough">(Su</del> (Südweſtgrenze, mein lieber Arthur) – ich, der
+               ich <anchor type="commentary" xml:id="K_L02701-44"/>geſtern<note type="commentary"
+                  xml:id="K_L02701-44h">im übertragenen Sinn von »es kommt mir vor, als wäre es
+                  gestern gewesen« gemeint</note> noch im <hi rend="latintype">Café <rs type="place"
+                     ref="#pmb49">Pfob</rs>
                </hi> ſaß und die bekannte <anchor type="commentary" xml:id="K_L02701-1"/>
-               <hi rend="latintype">Café</hi>haus-Ecke<note type="commentary" xml:id="K_L02701-1h">Vgl. Schnitzlers <rs type="work" ref="#pmb33688">Aus der Kaffeehausecke</rs> und
-                     <rs type="work" ref="#pmb33830">Gespräch, welches in der Kaffeehausecke nach
-                     Vorlesung der »Elixiere« geführt wird</rs>. Dass Goldmann ebenso den Begriff
-                     »<quote>Caféhaus-Ecke</quote>« benutzte, deutet darauf hin, dass er im
-                  Freundeskreis ein stehender war.</note> mit Aphorismen austapezierte. Und da
-               willſt Du noch Lachen über <anchor type="commentary" xml:id="K_L02701-5"/>»die
-                  Fäden«<note type="commentary" xml:id="K_L02701-5h">Möglicherweise zitierte
-                  Goldmann hier Schnitzler. Grund für diese Vermutung ist, dass Schnitzler im <rs type="work" ref="#pmb33243">Tagebuch</rs> immer wieder von
-                     »<quote>Fäden</quote>« schreibt, die ihn mit der Welt und die Welt an sich
+               <hi rend="latintype">Café</hi>haus-Ecke<note type="commentary" xml:id="K_L02701-1h"
+                  >Vgl. <rs type="person" ref="#pmb2121">Schnitzler</rs>s Texte <rs type="work"
+                     ref="#pmb33688">Aus der Kaffeehausecke</rs> und <rs type="work" ref="#pmb33830"
+                     >Gespräch, welches in der Kaffeehausecke nach Vorlesung der »Elixiere« geführt
+                     wird</rs>. Dass <rs type="person" ref="#pmb11485">Goldmann</rs> ebenso den
+                  Begriff »<quote>Caféhaus-Ecke</quote>« benutzte, deutet darauf, dass der Begriff
+                  allgemein im Freundeskreis verwendet wurde.</note> mit Aphorismen austapezierte.
+               Und da willſt Du noch Lachen über <anchor type="commentary" xml:id="K_L02701-5"/>»die
+                  Fäden«<note type="commentary" xml:id="K_L02701-5h">Möglicherweise schließt hier
+                     <rs type="person" ref="#pmb11485">Goldmann</rs> an bestimmte Aussagen von <rs
+                     type="person" ref="#pmb2121">Schnitzler</rs> an. In seinem <rs type="work"
+                     ref="#pmb33243">Tagebuch</rs> schreibt dieser mehrfach von
+                     »<quote>Fäden</quote>«, die ihn mit der Welt und die Welt an sich
                   verknüpfen.</note>?</p>
             <p>Das iſt wunderbar, all’ das. Aber Du <pb facs="HS.NZ85.1.3163_0014-1"/>weißt, daß das
                Wunderbare nicht das Glückliche iſt. Und meine Reiſe, die objectiv wunderſchön iſt,
                iſt es ſubjectiv um ſo weniger. Schlaftrunken laſſe ich mich durch die Welt
                ſchleppen. Und mitten in der himmliſchen Herrlichkeit des Südens ſchwirrt mir der
                Fledermausſchwarm meiner Sorgen unaufhörlich um das Haupt, Tag und Nacht, Tag und
-               Nacht. Das Glück? Überall, wo ich hinkomme: »Eine Empfehlung, <pb facs="HS.NZ85.1.3163_0013-0"/>und es iſt geſtern dageweſen«. Ich habe nur ein
+               Nacht. Das Glück? Überall, wo ich hinkomme: »Eine Empfehlung, <pb
+                  facs="HS.NZ85.1.3163_0013-0"/>und es iſt geſtern dageweſen«. Ich habe nur ein
                nervöſes Bedürfniß nach <anchor type="commentary" xml:id="K_L02701-2"/>
                <hi rend="latintype">Locomotion</hi>
                <note type="commentary" xml:id="K_L02701-2h">Fortbewegung</note> in mir, halte es
@@ -197,29 +215,32 @@
                </hi> (Nord<rs type="place" ref="#pmb388">ſpanien</rs>, mein lieber Arthur), dann
                nach den <rs type="place" ref="#pmb89410">Pyrenäen</rs>, dann wieder heim. Überall
                unterwegs bin natürlich <pb facs="HS.NZ85.1.3163_0015-1"/>bitterlich allein. Kein
-               Menſch zu finden in dieſem verdammten Lande. Mit dem deutſchen Accent ſchreucht man
-               die Leute von ſich fort, <del rend="strikethrough">als</del> und man ſitzt im <anchor type="commentary" xml:id="K_L02701-3"/>
+               Menſch zu finden in dieſem verdammten Lande. Mit dem deutſchen Accent ſcheucht man
+               die Leute von ſich fort, <del rend="strikethrough">als</del> und man ſitzt im <anchor
+                  type="commentary" xml:id="K_L02701-3"/>
                <hi rend="latintype">Coupé</hi>
-               <note type="commentary" xml:id="K_L02701-3h">Zugabteil</note> und im
-                  <unclear>M</unclear>authshaus ſo gemieden, als wäre man der Scharfrichter der zu
-               einer Hinrichtung fährt<c rendition="#dots" n="4"/>
+               <note type="commentary" xml:id="K_L02701-3h">Zugabteil</note> und im <anchor
+                  type="textConst" xml:id="T_L02701-3"/>W<unclear>ir</unclear>thshaus<note
+                  type="textConst" xml:id="T_L02701-3h">ein deutlicher u-Strich macht den Vokal der
+                  ersten Silbe zu einem »u«, doch dürfte ein Schreibirrtum vorliegen</note> ſo gemieden, als wäre man der Scharfrichter der zu einer Hinrichtung
+                  fährt<c rendition="#dots" n="4"/>
             </p>
-            <p>Mein <rs type="person" subtype="implied" ref="#pmb4986">Onkel</rs> iſt in <hi rend="latintype">
+            <p>Mein <rs type="person" subtype="implied" ref="#pmb4986">Onkel</rs> iſt in <hi
+                  rend="latintype">
                   <rs type="place" ref="#pmb30">Salzburg</rs>
-               </hi>
-               <space unit="chars" quantity="1"/>
-               <hi rend="latintype">
-                  <rs type="place" ref="#pmb88636">(Faberhaus</rs>
-               </hi>). <pb facs="HS.NZ85.1.3163_0016-0"/> Wenn Du ihn einmal über den Sonntag
+               </hi> (<hi rend="latintype">
+                  <rs type="place" ref="#pmb88636">Faberhaus</rs>
+               </hi>). <pb facs="HS.NZ85.1.3163_0016-0"/>Wenn Du ihn einmal über den Sonntag
                beſuchen könnteſt, möcht’ er ſich rieſig mit Dir freuen. Bitte, ſahr’ doch einmal
-               hinüber. Ich weiß Euch zwei Gerne zuſammen, die Ihr mir die theuerſten <rs type="person" subtype="implied" ref="#pmb4986">Freunde</rs> ſind. Du kannſt all’
+               hinüber. Ich weiß Euch zwei gerne zuſammen, die Ihr mir die theuerſten <rs
+                  type="person" subtype="implied" ref="#pmb4986">Freunde</rs> ſind. Du kannſt all’
                Deine literariſchen Angelegenheiten mit ihm beſprechen, und beſſeren ſachverſtändigen
-               Rath kannſts Du Dir <pb facs="HS.NZ85.1.3163_0016-1"/>nicht wünſchen. Mußt Dich aber
+               Rath kannſts Du Dir <pb facs="HS.NZ85.1.3163_0016-1"/>nicht wünſchen. Mußt’ Dich aber
                vorher anmelden, damit er nicht etwa auf Ausflug iſt<c rendition="#dots" n="4"/>
             </p>
-            <p>Dich im <date when="1892-09">September</date> wiederſehen? Schönſte aller Ausſichten!
-               Aber glaubſt Du, ich <anchor type="commentary" xml:id="K_L02701-4"/>glaub’s?<note type="commentary" xml:id="K_L02701-4h">Goldmann lag hatte mit seiner Vermutung
-                  wohl recht. Es ist kein Treffen zwischen Goldmann und Schnitzler im <date when="1892-09">September 1892</date> bekannt.</note>
+            <p>Dich im <anchor type="commentary" xml:id="K_L02701-4"/><date when="1892-09">September</date> wiederſehen<note
+               type="commentary" xml:id="K_L02701-4h">Dazu kam es nicht.</note>? Schönſte aller Ausſichten!
+               Aber glaubſt Du, ich glaub’s?
                <space unit="chars" quantity="1"/>
                <c rendition="#dots" n="4"/>
             </p>
@@ -227,7 +248,9 @@
                   <rs type="place" ref="#pmb49256">Pau</rs>
                </hi>, <hi rend="latintype">
                   <rs type="place" ref="#pmb89410">Pyrénées</rs>
-               </hi>, <hi rend="latintype">Poste restante</hi>, wo ich <date when="1892-08-10">Mittwoch</date> einzutreffen gedenke. Erhältſt Du <pb facs="HS.NZ85.1.3163_0015-0"/>meinen Brief zu ſpät, ſo ſchreib mir, bitte, nach
+               </hi>, <hi rend="latintype">Poste restante</hi>, wo ich <date when="1892-08-10"
+                  >Mittwoch</date> einzutreffen gedenke. Erhältſt Du <pb
+                  facs="HS.NZ85.1.3163_0015-0"/>meinen Brief zu ſpät, ſo ſchreib’ mir, bitte, nach
                   <hi rend="latintype">
                   <rs type="place" ref="#pmb47045">Cauterets</rs>
                </hi>, <hi rend="latintype">
@@ -239,10 +262,10 @@
                <hi rend="latintype">
                   <rs type="place" ref="#pmb89410">Pyrénées</rs>
                </hi>, <hi rend="latintype">Post restante</hi>.</p>
-            <p>Und, was wird aus <hi rend="latintype">
+            <p>Und was wird aus <hi rend="latintype">
                   <rs type="person" ref="#pmb10863">Richard</rs>
-               </hi>? Keine Seite von ihm ſeit dreiviertel Jahren!</p>
-            <closer>Ich umarme <lb/>Dich herzlichſt! <lb/>Dein <lb/>treuer <lb/>
+               </hi>? Keine Zeile von ihm ſeit dreiviertel Jahren!</p>
+            <closer>Ich umarme Dich herzlichſt! <lb/>Dein <lb/>treuer <lb/>
                <signed>Paul Goldmann.</signed>
             </closer>
          </div>
@@ -275,12 +298,16 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -309,10 +336,13 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
             </person>
             <person xml:id="pmb4986">
                <persName>
@@ -341,11 +371,15 @@
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
                <occupation ref="pmb100">Kritiker/Kritikerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116724919</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_17801</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb4986</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_17801</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb4986</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/4986</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb4986</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb4986.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb4986</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb4986.html</idno>
             </person>
             <person xml:id="pmb10863">
                <persName>
@@ -372,42 +406,52 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13551</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13551</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118654756</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb10863</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb10863</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10863</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10863</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10863</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10863.html</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33688">
                <title>Aus der Kaffeehausecke</title>
                <title type="legacy-name-merge">Aus der Kaffeehausecke</title>
-               <title type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33732/</title>
+               <title type="legacy-uri-merge"
+                  >http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33732/</title>
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
                <date notBefore="1977-01-01" when="1977-07-02">1977</date>
                <idno type="URL" subtype="">http://gutenberg.spiegel.de/buch/-5379/1</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33688</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33688</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33688</idno>
                <note type="work_kind">Novelle</note>
             </bibl>
             <bibl xml:id="pmb33830">
-               <title>Gespräch, welches in der Kaffeehausecke nach Vorlesung der »Elixiere« geführt wird</title>
+               <title>Gespräch, welches in der Kaffeehausecke nach Vorlesung der »Elixiere« geführt
+                  wird</title>
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/33830/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33830</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33830.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33830.html</idno>
                <note type="work_kind">Erzählung</note>
             </bibl>
             <bibl xml:id="pmb33243">
                <title>Tagebuch</title>
                <note type="uri_worklink">https://schnitzler-tagebuch.acdh.oeaw.ac.at</note>
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date>1981  – 2000</date>
+               <date>1981 – 2000</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
                <note type="work_kind">Tagebuch</note>
             </bibl>
          </listBibl>
@@ -434,7 +478,8 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
@@ -458,20 +503,24 @@
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
             </place>
             <place xml:id="pmb12376">
                <placeName>Atlantischer Ozean</placeName>
                <placeName type="legacy-name-merge">bei Scapa Flow</placeName>
                <placeName type="legacy-name-merge">[Atlantiküberfahrt]</placeName>
-               <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Atlantischer_Ozean</placeName>
+               <placeName type="uri_wikipedia"
+                  >https://de.wikipedia.org/wiki/Atlantischer_Ozean</placeName>
                <placeName type="legacy-name-merge">[Lissabon – New York]</placeName>
                <placeName type="legacy-name-merge">Atlantic Ocean</placeName>
                <placeName type="legacy-name-merge">[Überfahrt nach Mexiko]</placeName>
@@ -513,7 +562,8 @@
                   <geo>46,0 2,0</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53337/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb53337</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb53337</idno>
             </place>
             <place xml:id="pmb166">
                <placeName>Frankreich</placeName>
@@ -530,11 +580,14 @@
                <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q142</idno>
                <idno type="URL" subtype="geonames">https://www.geonames.org/3017382</idno>
                <idno type="URL" subtype="geonames">http://sws.geonames.org/3017382/</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb166</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43352/</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb166</idno>
+               <idno type="URL" subtype="pmb"
+                  >https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43352/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/3017382/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/166</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb166</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb166</idno>
             </place>
             <place xml:id="pmb388">
                <placeName>Spanien</placeName>
@@ -548,12 +601,15 @@
                </location>
                <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q29</idno>
                <idno type="URL" subtype="geonames">https://www.geonames.org/2510769</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb388</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43691/</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb388</idno>
+               <idno type="URL" subtype="pmb"
+                  >https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43691/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/388</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/37856</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43691</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb388</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb388</idno>
             </place>
             <place xml:id="pmb49">
                <placeName>Café Pfob</placeName>
@@ -568,9 +624,11 @@
                   <placeName ref="pmb51">I., Innere Stadt</placeName>
                   <geo>48,20769 16,37049</geo>
                </location>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb49</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb49</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/49</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb49</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb49</idno>
             </place>
             <place xml:id="pmb40165">
                <placeName>San Sebastian</placeName>
@@ -587,7 +645,8 @@
                </location>
                <idno type="URL" subtype="geonames">http://sws.geonames.org/3110044/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40165</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40165</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40165</idno>
             </place>
             <place xml:id="pmb89410">
                <placeName>Pyrenees</placeName>
@@ -626,10 +685,13 @@
                   <geo>47,41667 13,25</geo>
                </location>
                <idno type="URL" subtype="geonames">http://sws.geonames.org/2766818/</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb30</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb30</idno>
             </place>
             <place xml:id="pmb88636">
                <placeName>Faberhäuser</placeName>
@@ -690,7 +752,8 @@
                <location type="located_in_place">
                   <placeName ref="pmb62045">Biarritz</placeName>
                   <geo>43,48055 -1,55684</geo>
-                  <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/9650/</idno>
+                  <idno type="URL" subtype=""
+                     >http://pmb.acdh.oeaw.ac.at/apis/api2/entity/9650/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/9650</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/62045/</idno>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/3032797/</idno>
