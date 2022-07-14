@@ -4765,7 +4765,9 @@
          </xsl:when>
       </xsl:choose>
       <xsl:if test="$rest != ''">
+         <xsl:if test="$first!='#pmb2121'">
          <xsl:text>{\newline}</xsl:text>
+         </xsl:if>
          <xsl:value-of
             select="foo:marginpar-EndnoteRoutine($typ, $verweis, tokenize($rest, ' ')[1], substring-after($rest, ' '))"
          />
