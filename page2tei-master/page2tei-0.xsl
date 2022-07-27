@@ -741,6 +741,23 @@
         </rs>
       </xsl:when>
 
+      <xsl:when test="@type = 'signed'">
+        <signed>
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </signed>
+      </xsl:when>
+
+      <xsl:when test="@type = 'time'">
+        <time>
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </time>
+      </xsl:when>
+
+
       <xsl:when test="@type = 'pre-print'">
         <hi rend="pre-print">
           <xsl:call-template name="elem">
@@ -799,11 +816,11 @@
       <!--<xsl:when test="@type = 'paragraph-inbetween'">
         <xsl:text>&lt;p&gt;&lt;&#47;p&gt;</xsl:text>
       </xsl:when>-->
-      
+
       <xsl:when test="@type = 'letter-begin'">
         <xsl:text>&lt;letter&gt;</xsl:text>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'letter-end'">
         <xsl:text>&lt;&#47;letter&gt;</xsl:text>
       </xsl:when>
@@ -827,7 +844,7 @@
           </xsl:call-template>
         </date>
       </xsl:when>
-      
+
       <xsl:when test="@type = 'person'">
         <xsl:variable name="elName" select="
             if ($rs) then
