@@ -710,11 +710,35 @@
       </xsl:when>
 
       <xsl:when test="@type = 'Address'">
+        <address>
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </address>
+      </xsl:when>
+
+      <xsl:when test="@type = 'addrLine'">
         <addrLine>
           <xsl:call-template name="elem">
             <xsl:with-param name="elem" select="$elem"/>
           </xsl:call-template>
         </addrLine>
+      </xsl:when>
+
+      <xsl:when test="@type = 'opener'">
+        <opener>
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </opener>
+      </xsl:when>
+
+      <xsl:when test="@type = 'closer'">
+        <closer>
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </closer>
       </xsl:when>
 
       <xsl:when test="@type = 'comment'">
