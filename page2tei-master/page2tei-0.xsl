@@ -717,6 +717,14 @@
         </address>
       </xsl:when>
 
+      <xsl:when test="@type = 'foreign'">
+        <foreign xml:lang="">
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </foreign>
+      </xsl:when>
+
       <xsl:when test="@type = 'addrLine'">
         <addrLine>
           <xsl:call-template name="elem">
