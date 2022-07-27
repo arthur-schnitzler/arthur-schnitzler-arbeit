@@ -741,6 +741,14 @@
         </closer>
       </xsl:when>
 
+      <xsl:when test="@type = 'postscript'">
+        <postscript>
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </postscript>
+      </xsl:when>
+
       <xsl:when test="@type = 'comment'">
         <xsl:variable name="comment"
           select="@o/substring-before(substring-after(., 'comment:'), ';')"/>
