@@ -1021,6 +1021,7 @@
       <xs:assert
          test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and (@type = 'schnitzlerDiary' or @type = 'toLetter')] or not(tei:ref)"
       />
+      <xs:assert test="not(descendant::tei:note)"/>
    </xs:complexType>
 
    <xs:complexType name="backNote_type-org">
