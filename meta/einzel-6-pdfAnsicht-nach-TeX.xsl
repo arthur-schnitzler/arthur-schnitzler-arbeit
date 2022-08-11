@@ -239,7 +239,7 @@
             <xsl:text>}</xsl:text>
          </xsl:when>
          <xsl:otherwise>
-            <xsl:text>\textcolor{red}{\textsuperscript{XXXX indx}}</xsl:text>
+            <xsl:text>\textcolor{red}{\textsuperscript{XXXX1 indx}}</xsl:text>
          </xsl:otherwise>
       </xsl:choose>
       <xsl:if test="not($kZusatz = '')">
@@ -466,34 +466,114 @@
       </xsl:if>  -->
    <xsl:function name="foo:werk-metadaten-in-index">
       <xsl:param name="typ" as="xs:string?"/>
-      <xsl:param name="erscheinungsdatum" as="xs:string?"/>
-      <xsl:param name="auffuehrung" as="xs:string?"/>
+      <xsl:param name="datum" as="xs:string?"/>
+      <xsl:param name="role" as="xs:string?"/>
+      <xsl:variable name="role-ausgeschrieben" as="xs:string?">
+         <xsl:choose>
+            <xsl:when test="$role = 'hat-geschaffen'"/>
+            <xsl:when test="$role = 'hat-unter-einem-kurzel-veroffentlicht'"/>
+            <xsl:when test="$role = 'hat-anonym-veroffentlicht'"/>
+            <xsl:when test="$role = 'hat-unter-pseudonym-geschrieben'"/>
+            <xsl:when test="$role = 'hat-ubersetzt'">
+               <xsl:text>Übersetzung</xsl:text>
+            </xsl:when>
+            <xsl:when test="$role = 'hat-illustriert'">
+               <xsl:text>Illustration</xsl:text>
+            </xsl:when>
+            <xsl:when test="$role = 'hat-vertont'">
+               <xsl:text>Vertonung</xsl:text>
+            </xsl:when>
+            <xsl:when test="$role = 'hat-herausgegeben'">
+               <xsl:text>Hrsg.</xsl:text>
+            </xsl:when>
+            <xsl:when
+               test="$role = 'hat-ein-vorwortnachwort-verfasst-zu' or $role = 'ist-beitragerin-zu'">
+               <xsl:text>Beitrag</xsl:text>
+            </xsl:when>
+         </xsl:choose>
+      </xsl:variable>
+      <xsl:variable name="vorhanden-typ" as="xs:boolean">
+         <xsl:choose>
+            <xsl:when test="not(fn:normalize-space($typ) = '')">
+               <xsl:value-of select="true()"/>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="false()"/>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:variable>
+      <xsl:variable name="vorhanden-datum" as="xs:boolean">
+         <xsl:choose>
+            <xsl:when test="not(fn:normalize-space($datum) = '')">
+               <xsl:value-of select="true()"/>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="false()"/>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:variable>
+      <xsl:variable name="vorhanden-role-ausgeschrieben" as="xs:boolean">
+         <xsl:choose>
+            <xsl:when test="not(fn:normalize-space($role-ausgeschrieben) = '')">
+               <xsl:value-of select="true()"/>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="false()"/>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:variable>
+      <xsl:if test="$vorhanden-typ or $vorhanden-role-ausgeschrieben or $vorhanden-datum">
+         <xsl:text> {[}</xsl:text>
+      </xsl:if>
       <xsl:choose>
-         <xsl:when test="$erscheinungsdatum != '' or $typ != ''">
-            <!--<xsl:when test="$erscheinungsdatum!='' or $typ!='' or $auffuehrung!=''">-->
-            <xsl:text> {[}</xsl:text>
+         <xsl:when test="$vorhanden-typ and $vorhanden-role-ausgeschrieben and $vorhanden-datum">
+            <xsl:value-of select="normalize-space($role-ausgeschrieben)"/>
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="normalize-space($typ)"/>
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="$datum"/>
+         </xsl:when>
+         <xsl:when test="$vorhanden-typ and $vorhanden-role-ausgeschrieben">
+            <xsl:value-of select="normalize-space($role-ausgeschrieben)"/>
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="normalize-space($typ)"/>
+         </xsl:when>
+         <xsl:when test="$vorhanden-typ and $vorhanden-datum">
+            <xsl:value-of select="normalize-space($typ)"/>
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="$datum"/>
+         </xsl:when>
+         <xsl:when test="$vorhanden-role-ausgeschrieben and $vorhanden-datum">
+            <xsl:value-of select="normalize-space($role-ausgeschrieben)"/>
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="$datum"/>
+         </xsl:when>
+         <xsl:when test="$vorhanden-role-ausgeschrieben">
+            <xsl:value-of select="normalize-space($role-ausgeschrieben)"/>
+         </xsl:when>
+         <xsl:when test="$vorhanden-datum">
+            <xsl:value-of select="$datum"/>
          </xsl:when>
       </xsl:choose>
-      <xsl:if test="$typ != ''">
-         <xsl:value-of select="normalize-space($typ)"/>
+      <xsl:if test="$vorhanden-typ or $vorhanden-role-ausgeschrieben or $vorhanden-datum">
+         <xsl:text>{]}</xsl:text>
       </xsl:if>
-      <xsl:if test="$erscheinungsdatum != ''">
-         <xsl:if test="$typ != ''">
-            <xsl:text>, </xsl:text>
-         </xsl:if>
-         <xsl:value-of select="normalize-space(foo:date-translate($erscheinungsdatum))"/>
-      </xsl:if>
-      <!--<xsl:if test="$auffuehrung!=''">
-      <xsl:if test="$typ!='' or $erscheinungsdatum!=''">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-      <xsl:value-of select="normalize-space(foo:date-translate($auffuehrung))"/>
-   </xsl:if>-->
+   </xsl:function>
+   <xsl:function name="foo:indexstring-ohne-raute-und-pmb" as="xs:string">
+      <xsl:param name="first" as="xs:string"/>
       <xsl:choose>
-         <xsl:when test="$erscheinungsdatum != '' or $typ != ''">
-            <!--<xsl:when test="$erscheinungsdatum!='' or $typ!='' or $auffuehrung!=''">-->
-            <xsl:text>{]}</xsl:text>
+         <xsl:when test="contains($first, '#pmb')">
+            <xsl:value-of select="replace($first, '#pmb', '')"/>
          </xsl:when>
+         <xsl:when test="contains($first, 'pmb')">
+            <xsl:value-of select="replace($first, 'pmb', '')"/>
+         </xsl:when>
+         <xsl:when test="contains($first, '#')">
+            <xsl:value-of select="replace($first, '#', '')"/>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:value-of select="$first"/>
+         </xsl:otherwise>
       </xsl:choose>
    </xsl:function>
    <xsl:function name="foo:werk-in-index">
@@ -505,136 +585,64 @@
          <xsl:when test="$first = '' or empty($first)">
             <xsl:text>\textcolor{red}{\textsuperscript{\textbf{KEY}}}</xsl:text>
          </xsl:when>
-         <xsl:when test="not(starts-with($first, '#pmb'))">
+         <xsl:when test="not(starts-with($first, '#'))">
             <xsl:text>\textcolor{red}{FEHLER2}</xsl:text>
          </xsl:when>
          <xsl:when test="empty($work-entry)">
             <xsl:text>\textcolor{red}{XXXX}</xsl:text>
          </xsl:when>
-         <xsl:when test="$work-entry/author[@role = 'author']">
+         <xsl:when test="$work-entry[contains(note[@type = 'work_kind'], 'Publikationsorgan')]">
+            <!-- Zeitschriften bekommen keinen Autor- oder Hrsg. Name -->
+            <xsl:text>\pwindex{</xsl:text>
+         </xsl:when>
+         <xsl:when test="$work-entry/author[$author-zaehler]">
+            <xsl:text>\pwindex{</xsl:text>
             <xsl:variable name="author-ref"
-               select="substring-after($work-entry/author[@role = 'author'][$author-zaehler]/idno[@type = 'pmb'], '#')"/>
-            <xsl:value-of select="foo:person-in-index($author-ref, $endung, false())"/>
+               select="replace($work-entry/author[$author-zaehler]/@ref, 'person__','')"/>
+            <xsl:value-of select="foo:person-fuer-index(concat('#',$author-ref))"/>
             <xsl:text>!</xsl:text>
          </xsl:when>
-         <xsl:when test="$work-entry/author[@role = 'abbreviated-name']">
-            <xsl:variable name="author-ref"
-               select="substring-after($work-entry/author[@role = 'abbreviated-name'][$author-zaehler]/idno[@type = 'pmb'], '#')"/>
-            <xsl:value-of select="foo:person-in-index($author-ref, $endung, false())"/>
-            <xsl:text>!</xsl:text>
+         <xsl:when test="not($work-entry/author)">
+            <xsl:text>\pwindex{</xsl:text>
+            <xsl:text>?? Werk@Nicht ermittelte Verfasserinnen und Verfasser!</xsl:text>
          </xsl:when>
          <xsl:otherwise>
             <xsl:text>\pwindex{</xsl:text>
          </xsl:otherwise>
       </xsl:choose>
-      <!-- Sonderbehandlung für Bahrs Tagebuch-Kolumne -->
+      <xsl:apply-templates select="foo:werk-kuerzen($work-entry/title[1])"/>
+      <xsl:if test="not(empty($work-entry/date) or $work-entry/date = '')">
+         <xsl:value-of select="normalize-space(foo:date-translate($work-entry/date))"/>
+      </xsl:if>
       <xsl:choose>
-         <xsl:when
-            test="$work-entry/author/@ref = '#pmb10815' and starts-with($work-entry/title, 'Tagebuch') and not(normalize-space($work-entry/title) = 'Tagebuch')">
-            <xsl:text>Tagebuch@\strich\emph{Tagebuch}!</xsl:text>
-            <xsl:choose>
-               <xsl:when test="starts-with($work-entry/title, 'Tagebuch. ')">
-                  <xsl:value-of select="tokenize($work-entry/Bibliografie, ' ')[last()]"/>
-                  <xsl:choose>
-                     <xsl:when
-                        test="string-length(tokenize($work-entry/Bibliografie, ' ')[last() - 1]) = 2">
-                        <xsl:text>0</xsl:text>
-                     </xsl:when>
-                  </xsl:choose>
-                  <xsl:value-of select="tokenize($work-entry/Bibliografie, ' ')[last() - 1]"/>
-                  <xsl:choose>
-                     <xsl:when
-                        test="string-length(tokenize($work-entry/Bibliografie, ' ')[last() - 2]) = 2">
-                        <xsl:text>0</xsl:text>
-                     </xsl:when>
-                  </xsl:choose>
-                  <xsl:value-of select="tokenize($work-entry/Bibliografie, ' ')[last() - 2]"/>
-                  <xsl:value-of select="$work-entry/title"/>
-               </xsl:when>
-               <xsl:otherwise>
-                  <xsl:text>0</xsl:text>
-                  <xsl:value-of select="$work-entry/title"/>
-               </xsl:otherwise>
-            </xsl:choose>
+         <xsl:when test="$work-entry[contains(note[@type = 'work_kind'], 'Tageszeitung')]">
             <xsl:text>@\emph{</xsl:text>
-            <xsl:choose>
-               <xsl:when test="starts-with($work-entry/title, 'Tagebuch. ')">
-                  <xsl:value-of select="substring-after($work-entry/title, 'Tagebuch. ')"/>
-               </xsl:when>
-               <xsl:otherwise>
-                  <xsl:choose>
-                     <xsl:when test="starts-with($work-entry/title, 'Tagebuch ')">
-                        <xsl:value-of select="substring-after($work-entry/title, 'Tagebuch ')"/>
-                     </xsl:when>
-                     <xsl:otherwise>
-                        <xsl:text>XXXX </xsl:text>
-                     </xsl:otherwise>
-                  </xsl:choose>
-               </xsl:otherwise>
-            </xsl:choose>
-            <xsl:text>}</xsl:text>
-            <xsl:value-of
-               select="foo:werk-metadaten-in-index($work-entry/Typ, $work-entry/Erscheinungsdatum, '')"
-            />
          </xsl:when>
-         <!--<xsl:when test="not(normalize-space($work-entry/Zyklus) = '')">
-            <xsl:value-of select="foo:werk-kuerzen($zyklus-entry/Titel)"/>
-            <xsl:value-of select="($zyklus-entry/Erscheinungsdatum)"/>
-            <xsl:value-of select="($zyklus-entry/Typ)"/>
+         <xsl:when test="$work-entry/author and not($author-zaehler = 0)">
             <xsl:text>@\strich\emph{</xsl:text>
-            <xsl:apply-templates select="normalize-space(foo:sonderzeichen-ersetzen($zyklus-entry/Titel))"/>
-            <xsl:text>}</xsl:text>
-            <xsl:value-of select="foo:werk-metadaten-in-index($zyklus-entry/Typ, $zyklus-entry/Erscheinungsdatum, $zyklus-entry/Aufführung)"/>
-            <xsl:text>!</xsl:text>
-            <xsl:value-of select="substring-after($work-entry/Zyklus, ',')"/>
-            <xsl:apply-templates select="foo:werk-kuerzen($work-entry/title)"/>
-            <xsl:text>@\strich\emph{</xsl:text>
-            <xsl:choose>
-               <xsl:when test="$work-entry/Autor = 'A002003' and contains($work-entry/title, 'O. V.:')">
-                  <xsl:apply-templates select="normalize-space(substring(foo:sonderzeichen-ersetzen($work-entry/title), 9))"/>
-               </xsl:when>
-               <xsl:otherwise>
-                  <xsl:apply-templates select="normalize-space(foo:sonderzeichen-ersetzen($work-entry/title))"/>
-               </xsl:otherwise>
-            </xsl:choose>
-            <xsl:text>}</xsl:text>
-            <xsl:value-of select="foo:werk-metadaten-in-index($work-entry/Typ, $work-entry/Erscheinungsdatum, $work-entry/Aufführung)"/>
-         </xsl:when>-->
+         </xsl:when>
          <xsl:otherwise>
-            <xsl:apply-templates select="foo:werk-kuerzen($work-entry/title[1])"/>
-            <!--<xsl:value-of select="($work-entry/Bibliografie)"/>-->
-            <xsl:if
-               test="not(empty($work-entry/Erscheinungsdatum) or $work-entry/Erscheinungsdatum = '')">
-               <xsl:value-of
-                  select="normalize-space(foo:date-translate($work-entry/Erscheinungsdatum))"/>
-            </xsl:if>
-            <xsl:value-of select="($work-entry/Typ)"/>
-            <xsl:choose>
-               <xsl:when test="$work-entry/author and not($author-zaehler = 0)">
-                  <xsl:text>@\strich\emph{</xsl:text>
-               </xsl:when>
-               <xsl:otherwise>
-                  <xsl:text>@\emph{</xsl:text>
-               </xsl:otherwise>
-            </xsl:choose>
-            <xsl:choose>
-               <xsl:when
-                  test="$work-entry/author/@xml:id = 'A002003' and contains($work-entry/title[1], 'O. V.:')">
-                  <xsl:apply-templates
-                     select="normalize-space(substring(foo:sonderzeichen-ersetzen($work-entry/title[1]), 9))"
-                  />
-               </xsl:when>
-               <xsl:otherwise>
-                  <xsl:apply-templates
-                     select="normalize-space(foo:sonderzeichen-ersetzen($work-entry/title[1]))"/>
-               </xsl:otherwise>
-            </xsl:choose>
-            <xsl:text>}</xsl:text>
-            <xsl:value-of
-               select="foo:werk-metadaten-in-index($work-entry/Typ, $work-entry/Erscheinungsdatum, $work-entry/Aufführung)"
-            />
+            <xsl:text>@\emph{</xsl:text>
          </xsl:otherwise>
       </xsl:choose>
+      <xsl:choose>
+         <xsl:when
+            test="$work-entry/author/@xml:id = 'A002003' and contains($work-entry/title[1], 'O. V.:')">
+            <xsl:apply-templates
+               select="normalize-space(substring(foo:sonderzeichen-ersetzen($work-entry/title[1]), 9))"
+            />
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:apply-templates
+               select="normalize-space(foo:sonderzeichen-ersetzen($work-entry/title[1]))"/>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:text>}</xsl:text>
+      <xsl:if test="not($work-entry[contains(note[@type = 'work_kind'], 'Publikationsorgan')])">
+         <xsl:value-of
+            select="foo:werk-metadaten-in-index($work-entry/Typ, normalize-space(foo:date-translate($work-entry/date[1])), $work-entry/author[$author-zaehler]/@role)"
+         />
+      </xsl:if>
       <xsl:value-of select="$endung"/>
    </xsl:function>
    <xsl:function name="foo:org-in-index">
@@ -750,7 +758,7 @@
                            </xsl:when>
                         </xsl:choose>
                         <xsl:value-of
-                           select="foo:index-sortiert(normalize-space($org-entry/orgName), 'up')"/>
+                           select="foo:index-sortiert(normalize-space($org-entry/orgName[1]), 'up')"/>
                         <xsl:if test="$typ != '' and not($ort = 'Wien' and $typ = 'Tageszeitung')">
                            <!--<xsl:text>, \emph{</xsl:text>
                            <xsl:value-of select="normalize-space($org-entry/Typ)"/>
@@ -1119,8 +1127,12 @@
 
             
 
-            <xsl:text>\input{../tex-inputs/latex-korrekturansicht-vorspann}
+            <xsl:text>\input{../tex-inputs/latex-pdf-vorspann}
 </xsl:text>
+            <xsl:text>\begin{center}
+            \textcolor{red}{ENTWURF. ENTZIFFERUNG NOCH NICHT KORREKTURGELESEN}
+                      \end{center}
+            </xsl:text>
             
             <xsl:text>
                \section[</xsl:text>
@@ -1145,12 +1157,13 @@
             select="concat(key('person-lookup', (@bw), $persons)/persName/forename, ' ', key('person-lookup', (@bw), $persons)/persName/surname)"/>
          <xsl:text>}</xsl:text>
       </xsl:if>
+      <xsl:text>\begin{ledgroupsized}[t]{13cm}</xsl:text>   
       <xsl:apply-templates select="image"/>
       <xsl:apply-templates select="text"/>
       <xsl:text>\mylabel{</xsl:text>
       <xsl:value-of select="concat($dokument-id, 'h')"/>
       <xsl:text>}</xsl:text>
-      <!-- <xsl:text>\leavevmode{}</xsl:text>-->
+         <xsl:text>\end{ledgroupsized}</xsl:text>
       <xsl:choose>
          <xsl:when
             test="descendant::revisionDesc[@status = 'proposed'] and count(descendant::revisionDesc/change[contains(text(), 'Index check')]) = 0">
@@ -1164,7 +1177,34 @@
          </xsl:otherwise>
       </xsl:choose>
       </root>
-      <xsl:text>\input{../tex-inputs/latex-korrekturansicht-abspann}
+      <xsl:text>\newcommand{\dateiname}{</xsl:text>
+      <xsl:value-of select="@id"/>
+      <xsl:value-of select="@xml:id"/>
+      <xsl:text>}</xsl:text>
+      <xsl:text>\newcommand{\titel}{</xsl:text>
+      <xsl:value-of select="normalize-space(teiHeader[1]/fileDesc[1]/titleStmt[1]/title[@level='a'][1])"/>
+      <xsl:text>}</xsl:text>
+      <xsl:text>\newcommand{\editorInnen}{</xsl:text>
+      <xsl:for-each select="teiHeader[1]/fileDesc[1]/editionStmt[1]/respStmt[1]/name">
+         <xsl:value-of select="tokenize(.,', ')[2]"/>
+         <xsl:text> </xsl:text>
+         <xsl:value-of select="tokenize(.,', ')[1]"/>
+         <xsl:choose>
+            <xsl:when test="(position() = last() -1) and not(contains(., 'Ifko'))"><!-- no "und" for this collaboration -->
+               <xsl:text> und </xsl:text>
+            </xsl:when>
+            <xsl:when test="position() = last()"/>
+            <xsl:otherwise>
+               <xsl:text>, </xsl:text>
+            </xsl:otherwise>
+         </xsl:choose>
+         
+         <xsl:if test="position() != last()">
+            
+         </xsl:if>
+      </xsl:for-each>
+      <xsl:text>}</xsl:text>
+      <xsl:text>\input{../tex-inputs/latex-pdf-abspann}
       </xsl:text>
    </xsl:template>
    <xsl:template match="teiHeader">
@@ -4807,7 +4847,7 @@
       <xsl:param name="first" as="xs:string"/>
       <xsl:param name="endung" as="xs:string"/>
       <xsl:variable name="work-entry-authors"
-         select="key('work-lookup', $first, $works)/author[@role = 'author' or @role = 'abbreviated-name']"/>
+         select="key('work-lookup', $first, $works)/author[@role = 'author' or @role = 'abbreviated-name' or @role='hat-geschaffen']"/>
       <xsl:variable name="work-entry-authors-count" select="count($work-entry-authors)"/>
       <xsl:choose>
          <xsl:when test="not(key('work-lookup', $first, $works))">
@@ -4833,14 +4873,7 @@
             <xsl:text>\textcolor{red}{\textsuperscript{\textbf{KEY}}}</xsl:text>
          </xsl:when>
          <xsl:when test="$typ = 'person'">
-            <xsl:choose>
-               <xsl:when test="$first = '#pmb2121'">
-                  <!-- Einträge  Schnitzler raus -->
-               </xsl:when>
-               <xsl:otherwise>
-                  <xsl:value-of select="foo:person-in-index($first, $endung, true())"/>
-               </xsl:otherwise>
-            </xsl:choose>
+            <xsl:value-of select="foo:person-in-index($first, $endung, true())"/>
          </xsl:when>
          <xsl:when test="$typ = 'work'">
             <xsl:value-of select="foo:werk-indexName-Routine-autoren($first, $endung)"/>
@@ -4863,7 +4896,7 @@
       <xsl:variable name="rest" select="substring-after(@ref, concat($first, ' '))" as="xs:string"/>
       <xsl:variable name="index-test-bestanden" as="xs:boolean"
          select="count(ancestor::TEI/teiHeader/revisionDesc/change[contains(text(), 'Index check')]) &gt; 0"/>
-     <xsl:variable name="candidate" as="xs:boolean" select="false()"/>
+     <xsl:variable name="candidate" as="xs:boolean" select="true()"/>
       <!--<xsl:variable name="candidate" as="xs:boolean"
          select="ancestor::TEI/teiHeader/revisionDesc/@status = 'approved' or ancestor::TEI/teiHeader/revisionDesc/@status = 'candidate' or ancestor::TEI/teiHeader/revisionDesc/change[contains(text(), 'Index check')]"/>-->
       <!-- In diesen Fällen befindet sich das rs im Text: -->
@@ -4993,7 +5026,7 @@
          <xsl:otherwise>
             <xsl:variable name="entry" select="key('work-lookup', replace($first,'#','') , $works)" as="node()?"/>
             <xsl:variable name="author"
-               select="$entry/author[@role = 'author' or @role = 'abbreviated-name']"/>
+               select="$entry/author[@role = 'author' or @role = 'abbreviated-name'  or @role='hat-geschaffen']"/>
             <xsl:choose>
                <xsl:when test="not($entry) or $entry = ''">
                   <xsl:text>\pwindex{XXXX Abgedrucktes Werk, Nummer nicht vorhanden|pwt}</xsl:text>
@@ -5015,7 +5048,7 @@
                      </xsl:when>
                      <xsl:otherwise>
                         <xsl:for-each
-                           select="$entry/author[@role = 'author' or @role = 'abbreviated-name']">
+                           select="$entry/author[@role = 'author' or @role = 'abbreviated-name' or @role='hat-geschaffen']">
                            <xsl:value-of select="foo:werk-in-index($first, '|pwt', position())"/>
                            <xsl:choose>
                               <xsl:when test="$vorne">
@@ -5048,8 +5081,8 @@
          <xsl:text>$\rightarrow$</xsl:text>
       </xsl:if>
       <xsl:if
-         test="$entry/author[@role = 'author' or @role = 'abbreviated-name']/surname/text() != ''">
-         <xsl:for-each select="$entry/author[@role = 'author' or @role = 'abbreviated-name']">
+         test="$entry/author[@role = 'author' or @role = 'abbreviated-name'  or @role='hat-geschaffen']/surname/text() != ''">
+         <xsl:for-each select="$entry/author[@role = 'author' or @role = 'abbreviated-name'  or @role='hat-geschaffen']">
             <xsl:choose>
                <xsl:when test="persName/forename = '' and persName/surname = ''">
                   <xsl:text>\textcolor{red}{KEIN NAME}</xsl:text>
@@ -5223,11 +5256,11 @@
             <xsl:text>\textbf{</xsl:text>
             <xsl:value-of select="normalize-space(foo:sonderzeichen-ersetzen($ort))"/>
             <xsl:text>}</xsl:text>
-            <xsl:if test="key('place-lookup', $first, $places)/desc">
+            <!--<xsl:if test="key('place-lookup', $first, $places)/desc">
                <xsl:text>, \emph{</xsl:text>
                <xsl:value-of select="replace(key('place-lookup', $first, $places)/desc[1]/text(),'#','')"/>
                <xsl:text>}</xsl:text>
-            </xsl:if>
+            </xsl:if>-->
          </xsl:otherwise>
       </xsl:choose>
    </xsl:function>
