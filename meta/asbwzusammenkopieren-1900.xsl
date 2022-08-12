@@ -14,8 +14,11 @@
     <xsl:template match="node()" mode="rootcopy">
         <xsl:copy>
             <xsl:variable name="folderURI" select="resolve-uri('.',base-uri())"/>
-            <xsl:for-each select="collection(concat($folderURI, '/editions/?select=L0*.xml;recurse=yes'))/node()">
-               <!-- <xsl:value-of select="./*[1]/name()"/>-->
+            <!--<xsl:for-each select="collection(concat($folderURI, '/b_editions/?select=L0*.xml;recurse=yes'))/node()">
+                <xsl:apply-templates mode="copy" select="."/>
+            </xsl:for-each>-->
+            <xsl:for-each select="collection(concat($folderURI, '/b_editions/?select=L0*.xml;recurse=yes'))/node()">
+                <xsl:value-of select="./*[1]/name()"/>
                 <xsl:text>.</xsl:text>
                 <xsl:value-of select=".//teiHeader[1]/name()"/>
                 <xsl:value-of select=".//tei:teiHeader[1]/name()"/>

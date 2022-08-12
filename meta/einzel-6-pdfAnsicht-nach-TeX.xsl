@@ -1127,13 +1127,14 @@
 
             
 
-            <xsl:text>\input{../tex-inputs/latex-pdf-vorspann}
+            <xsl:text>\input{../tex-inputs/latex-leseansicht-vorspann}
 </xsl:text>
+            <xsl:if test="not(descendant::revisionDesc/@status = 'approved')">
             <xsl:text>\begin{center}
-            \textcolor{red}{ENTWURF. ENTZIFFERUNG NOCH NICHT KORREKTURGELESEN}
+            \textcolor{red}{ENTWURF, NICHT FERTIG KORRIGIERT}
                       \end{center}
             </xsl:text>
-            
+            </xsl:if>
             <xsl:text>
                \section[</xsl:text>
             <xsl:value-of
@@ -1198,13 +1199,19 @@
                <xsl:text>, </xsl:text>
             </xsl:otherwise>
          </xsl:choose>
-         
          <xsl:if test="position() != last()">
-            
          </xsl:if>
       </xsl:for-each>
       <xsl:text>}</xsl:text>
-      <xsl:text>\input{../tex-inputs/latex-pdf-abspann}
+      <xsl:if test="(descendant::anchor/@type='commentary') or (descendant::anchor/@type='textConst') or (descendant::hi[@rend='underline']/@n &gt; 2)">
+         <xsl:text>
+            \footnotesize
+\begin{ledgroupsized}[t]{11.5cm}
+\doendnotes{C}
+\end{ledgroupsized}
+         </xsl:text>
+      </xsl:if>
+      <xsl:text>\input{../tex-inputs/latex-leseansicht-abspann}
       </xsl:text>
    </xsl:template>
    <xsl:template match="teiHeader">
@@ -3129,7 +3136,9 @@
          </xsl:when>
       </xsl:choose>
       <xsl:apply-templates/>
-      <xsl:text>\endnumbering</xsl:text>
+      <xsl:text>
+         
+         \endnumbering</xsl:text>
       <xsl:if
          test="starts-with(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, 'A0')">
          <xsl:value-of
