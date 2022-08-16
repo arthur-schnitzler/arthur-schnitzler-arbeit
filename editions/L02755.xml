@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02755"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L02755"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, 6.&#160;11.&#160;[1895]</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 13. 11. [1895]</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -80,11 +82,24 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <desc type="brief"/>
+                           <desc type="_blaetter" n="1"/>
+                           <desc type="_seiten" n="4"/>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Jahr »<quote>
+                                 <date when="1895">
+                                    95</date>
+                              </quote>« vermerkt</desc>
+                           </incident>
+                           <incident type="receiver">
+                              <desc>mit rotem Buntstift drei Unterstreichungen</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -98,7 +113,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1895-11-06" n="1">6.&#160;11.&#160;[1895]</date>
+               <date when="1895-11-13" n="1">13. 11. [1895]</date>
                <placeName ref="#pmb182">Paris</placeName>
             </correspAction>
             <correspAction type="received">
@@ -121,43 +136,73 @@
    <text>
       <body>
          <div type="writingSession" n="1">
-            <pb facs="HS.NZ85.1.3165_0112-1"/>
+            <pb facs="HS.NZ85.1.3165_0114-1"/>
             <dateline>
                <opener>
-                  <hi rend="latintype">Paris</hi>, <date>6. November</date>.</opener>
-               <date>6. November</date>.</dateline>
+                  <hi rend="latintype">
+                     <rs type="place" ref="">Paris</rs>
+                  </hi>, <date>13. November</date>.</opener>
+               <date>13. November</date>.</dateline>
             <opener>
                <salute>Mein lieber Freund,</salute>
             </opener>
-            <p>Seit 14 Tagen warte ich auf jeden neuen Tag, in der Hoffnung, er werde mir eine <del
-                  rend="strikethrough">
-                  <unclear>en</unclear>
-               </del> freie Stunde bringen, um Dir ant worten zu können, aber die freie Stunde will
-               nicht kommen. Endloſe <rs type="org" ref="">Kammer</rs>- Debatten, Miniſterſturz,
-               Kriſis, neues <rs type="org" ref="">Cabinet</rs>, Streike von <hi rend="latintype">
-                  <rs type="place" ref="">Carmaux</rs>
-               </hi>, Prozeß <hi rend="latintype">
-                  <rs type="person" ref="">de Nayve</rs>
-               </hi>, dazwiſchen Theater und ſonſt allerhand – es bleibt gerade Zeit zum Eſſen und
-               zum Schlafen, und auch dieſe nicht immer. Ich <del rend="strikethrough">hätte</del>
-               <pb facs="HS.NZ85.1.3165_0113-0"/> hätte Dir ſoviel zu ſagen, möchte Dir für Deine
-               letzten ſo lieben Briefe danken, – aber dieſe Arbeits- <unclear>W</unclear>oge iſt
-               ſtärker, als mein guter Wille, und ich kann nichts machen, als warten, bis ſie
-               vorüber iſt. Dieſer Tage hoffe ich endlich Dir ausführlicher ſchreiben zu können.
-               Einſtweilen ſollen dieſe wenigen Zeilen mich nur bei Dir entſchuldigen. Wenn ich nach
-               der <rs type="place" ref="">Kammer</rs> gehe, kaufe ich mir hier und da ein <rs
-                  type="place" ref="">Wien</rs>er Blatt auf dem <foreign xml:lang="">
-                  <hi rend="latintype">Boulevard</hi>
-               </foreign> und ſehe mit Freude, daß die »<rs type="work" ref="">Liebelei</rs>« <del
-                  rend="strikethrough">ſ<unclear>ei</unclear>
-               </del> ihren <pb facs="HS.NZ85.1.3165_0113-1"/> Platz im Repertoire behält. <del
-                  rend="strikethrough">
-                  <gap/>X</del> Das iſt ſchön. <closer>Viele treue Grüße!</closer>
-               <closer>Dein</closer>
-               <closer>
-                  <salute>Paul Goldmann.</salute>
-               </closer>
+            <p>die Arbeit dauert fort, und den großen Brief kann ich noch immer nicht ſchreiben.
+               Alſo den kleinen. </p>
+            <p>1.) Die »<rs type="work" ref="">Kleine Komödie</rs>« iſt fertig überſetzt, dem <hi rend="latintype">
+                  <rs type="work" ref="">Directeur</rs>
+               </hi> der »<hi rend="latintype">
+                  <rs type="work" ref="">Liberté</rs>
+               </hi>«e überreicht u. von dieſem geſtern acceptirt worden. Sie dürfte nächſte Woche
+               zu erſcheinen beginnen. Außer <hi rend="latintype">
+                  <rs type="person" ref="">Sudermann</rs>
+               </hi> biſt Du ſeit Jahren der einzige deutſche Autor, von dem eine Arbeit im
+               Roman-Feuilleton eines großen <rs type="place" ref="">Pariſ</rs>er Tagesblattes
+               erſcheint. Ein neuer kleiner Erfolg, zu dem ich Dir gratulire. <pb facs="HS.NZ85.1.3165_0115-0"/>
             </p>
+            <p>2.) Wann erſcheint die »Liebelei« als Buch? Ich erbitte mehrere Exemplare, und eines
+               ſendeſt Du wohl mit einer freundlichen Widmung an <hi rend="latintype">
+                  <rs type="person" ref="">Pierre Lala</rs>
+               </hi>, <del rend="strikethrough">(19. <hi rend="latintype">Bvd</hi>
+               </del>
+               <del rend="strikethrough">(19</del> (<hi rend="latintype">
+                  <rs type="place" ref="">19. Boulevard</rs>
+               </hi>
+               <hi rend="latintype">
+                  <rs type="place" ref="">de Courcelles</rs>
+               </hi>), der mich dieſer Tage danach fragte u. uns hoffentlich im: »<hi rend="latintype">
+                  <rs type="work" ref="">Journal des</rs>
+               </hi>
+               <hi rend="latintype">
+                  <rs type="work" ref="">Débats</rs>
+               </hi>« einen Bericht darüber ſchreiben wird. </p>
+            <p>3.) Ich bitte Dich oder <hi rend="latintype">
+                  <rs type="person" ref="">Richard</rs>
+               </hi> um eine gute Einführung bei <hi rend="latintype">
+                  <rs type="person" ref="">Johann</rs>
+               </hi>
+               <hi rend="latintype">
+                  <rs type="person" ref="">Strauss</rs>
+               </hi>, der dieſer Tage nach <hi rend="latintype">
+                  <rs type="place" ref="">Paris</rs>
+               </hi> kommt. Hier wird ihn natürlich <hi rend="latintype">
+                  <rs type="person" ref="">Feldmann</rs>
+               </hi> in Beſchlag nehmen, und ich will <pb facs="HS.NZ85.1.3165_0115-1"/> mich von
+               dieſem Menſchen nicht glücklich machen, laſſen. Mußt mir aber die Empfehlung bald
+               ſchicken 4.) <hi rend="latintype">
+                  <rs type="person" ref="">Hofmannsthals</rs>
+               </hi> Erzählung in der »<rs type="work" ref="">Zeit</rs>« mißfällt mir ſehr. </p>
+            <p>5.) Wer iſt der Maler <hi rend="latintype">
+                  <rs type="person" ref="">Fanto</rs>
+               </hi>? Er iſt zu mir gekommen mit einer Empfehlung von <hi rend="latintype">
+                  <rs type="person" ref="">Bahr</rs>
+               </hi>, was bereits ſehr gegen ihn ſpricht. Auch mag ich ihn perſönlich nicht, es
+               ſteckt in ihm viel mit Wohlwollen unvermittelten Neid. Kann der Burſche was? </p>
+            <p>6.) Wüßte ich nur, <pb facs="HS.NZ85.1.3165_0114-0"/>
+               <del rend="strikethrough">wies</del> wie’s Dir geht! </p>
+            <p>8.) Grüß’ Dich Gott! </p>
+            <p>In Treue </p>
+            <p>Dein </p>
+            <p>Paul Goldmann</p>
          </div>
       </body>
       <back>
@@ -188,16 +233,12 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-               <idno type="URL" subtype="bahrschnitzler"
-                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-               <idno type="URL" subtype="schnitzler-lektueren"
-                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -226,13 +267,10 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="bahrschnitzler"
-                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -249,19 +287,15 @@
                   <geo>48,85341 2,3488</geo>
                </location>
                <idno type="URL" subtype="geonames">http://sws.geonames.org/2988507/</idno>
-               <idno type="URL" subtype="bahrschnitzler"
-                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
@@ -285,17 +319,14 @@
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler"
-                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
             </place>
          </listPlace>
       </back>
