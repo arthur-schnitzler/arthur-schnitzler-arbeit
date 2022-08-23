@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:tei="http://www.w3.org/2001/XMLSchema"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
     version="2.0"
     exclude-result-prefixes="tei">
     <xsl:output method="xml" omit-xml-declaration="yes"/>
