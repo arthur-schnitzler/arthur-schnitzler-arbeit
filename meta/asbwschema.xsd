@@ -40,10 +40,9 @@
    </xs:element>
 
    <xs:element name="footNote">
-      <xs:complexType mixed="true">
-         <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:complexType mixed="false">
+         <xs:choice minOccurs="1" maxOccurs="unbounded">
             <xs:element ref="tei:p" maxOccurs="unbounded" minOccurs="1"/>
-            <xs:element ref="tei:hi"/>
          </xs:choice>
          <xs:attribute ref="xml:id" use="required"/>
       </xs:complexType>
