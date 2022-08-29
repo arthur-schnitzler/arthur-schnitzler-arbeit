@@ -8,8 +8,10 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, 4. 6. 1893</title>
+            <title level="a">Paul Goldmann und Fedor Mamroth an Arthur Schnitzler,
+               4. 6. 1893</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
+            <author ref="#pmb4986">Mamroth, Fedor</author>
             <editor>
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
@@ -83,11 +85,11 @@
                      <physDesc>
                         <objectDesc>
                            <desc type="brief"/>
-                           <desc type="_blaetter" n="2"/>
-                           <desc type="_seiten" n="1"/>
+                           <desc type="_blaetter" n="1"/>
+                           <desc type="_seiten" n="2"/>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
                         </handDesc>
                      </physDesc>
                   </msDesc>
@@ -102,6 +104,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
+               <persName ref="#pmb4986">Mamroth, Fedor</persName>
                <date when="1893-06-04" n="2">4. 6. 1893</date>
                <placeName ref="#pmb146">Frankfurt am Main</placeName>
             </correspAction>
@@ -120,61 +123,71 @@
       </encodingDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2022-07-04">Angelegt</change>
+         <change who="MAM" when="2022-08-29">Durchsicht</change>
+         <change who="MAM" when="2022-08-29">Index check</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <div type="writingSession" n="1">
-            <p rend="left">
-               <pb facs="HS.NZ85.1.3163_0045-0"/>
-               <rs type="org" ref="#pmb29442">
-                  <hi rend="pre-print">
-                     <hi rend="bold">Frankfurter Zeitung</hi>
-                  </hi>
-               </rs>
-            </p>
-            <p rend="left">
-               <hi rend="pre-print">und</hi>
-            </p>
-            <p>
-               <seg rend="left">
+            <opener>
+               <p rend="left">
+                  <pb facs="HS.NZ85.1.3163_0045-0"/>
+                  <rs type="org" ref="#pmb29442">
+                     <hi rend="pre-print">
+                        <hi rend="bold">Frankfurter Zeitung</hi>
+                     </hi>
+                  </rs>
+               </p>
+               <p rend="left">
+                  <hi rend="pre-print">und</hi>
+               </p>
+               <p>
+                  <seg rend="left">
+                     <hi rend="pre-print">
+                        <rs type="org" subtype="implied" ref="#pmb29442">
+                           <hi rend="bold">Handelsblatt</hi>
+                        </rs>.</hi>
+                  </seg>
+                  <seg rend="right">
+                     <rs type="place" ref="#pmb146">
+                        <hi rend="pre-print">Frankfurt a. M.</hi>
+                     </rs>, <date when="1893-06-04">4. Juni <hi rend="pre-print">189</hi>3</date>.
+                  </seg>
+               </p>
+               <p rend="left">
                   <hi rend="pre-print">
                      <rs type="org" subtype="implied" ref="#pmb29442">
-                        <hi rend="bold">Handelsblatt</hi>
-                     </rs>.</hi>
-               </seg>
-               <seg rend="right">
-                  <rs type="place" ref="#pmb146">
-                     <hi rend="pre-print">Frankfurt a. M.</hi>
-                  </rs>, <date when="1893-06-04">4. Juni <hi rend="pre-print">189</hi>3</date>.
-               </seg>
-            </p>
-            <p rend="left">
-               <hi rend="pre-print">
-                  <rs type="org" subtype="implied" ref="#pmb29442">
-                     <hi rend="bold">Redaktion.</hi>
-                  </rs>*)</hi>
-            </p>
-            <p rend="left">
-               <hi rend="pre-print">
-                  <hi rend="bold">Telegramm-Adresse:</hi>
-               </hi>
-            </p>
-            <p rend="left">
-               <hi rend="pre-print">
-                  <hi rend="bold">
-                     <rs type="org" subtype="implied" ref="#pmb29442">Zeitung</rs>
-                     <space unit="chars" quantity="1"/>
-                     <rs type="place" ref="#pmb146">Frankfurt Main</rs>.</hi>
-               </hi>
-            </p>
-            <p>Adreſſen von <rs type="org"
-                   subtype="implied"
-                   ref="#pmb29639 #pmb89810 #pmb89394 #pmb29771 #pmb39772">
-                  <rs type="person"
-                      subtype="implied"
-                      ref="#pmb11324 #pmb89803 #pmb89393 #pmb2595 #pmb39775 #pmb89816">Verlegern</rs>
-               </rs>, an die wir Dir rathen, Dich zu wenden (zuerſt an <hi rend="latintype">
+                        <hi rend="bold">Redaktion.</hi>
+                     </rs>
+                     <footNote xml:id="FT2710-1">
+                        <p>
+                           <hi rend="pre-print">Für die <rs type="org" subtype="implied" ref="#pmb29442">Redaktion</rs> bestimmte Briefe und Sendungen wolle
+                              man <hi rend="spaced_out">nicht</hi> an die Person eines Redakteurs,
+                              sondern stets <hi rend="bold">an die <rs type="org" subtype="implied" ref="#pmb29442">Redaktion</rs> der <rs type="work" ref="#pmb36344">Frankfurter Zeitung</rs>
+                              </hi> adressiren.</hi>
+                        </p>
+                     </footNote>
+                  </hi>
+               </p>
+               <p rend="left">
+                  <hi rend="pre-print">
+                     <hi rend="bold">Telegramm-Adresse:</hi>
+                  </hi>
+               </p>
+               <p rend="left">
+                  <hi rend="pre-print">
+                     <hi rend="bold">
+                        <rs type="org" subtype="implied" ref="#pmb29442">Zeitung</rs>
+                        <space unit="chars" quantity="1"/>
+                        <rs type="place" ref="#pmb146">Frankfurt Main</rs>.</hi>
+                  </hi>
+               </p>
+            </opener>
+            <p>Adreſſen von Verlegern, an die <anchor type="commentary" xml:id="K_L02710-1"/>wir<note type="commentary" xml:id="K_L02710-1h">Das macht, in Fortführung der
+                  Überlegungeng, die im Brief vom Vortag (<ref type="toLetter" target="L02709"/>)
+                  dargelegt sind, auch <rs type="person" ref="#pmb4986">Fedor Mamroth</rs> zum
+                  Absender des Briefes.</note> Dir rathen, Dich zu wenden (zuerſt an <hi rend="latintype">
                   <rs type="org" subtype="implied" ref="#pmb29639">
                      <rs type="person" ref="#pmb11324">Fischer</rs>
                   </rs>
@@ -185,6 +198,7 @@
                      <rs type="person" ref="#pmb89803">Wilhelm Friedrich</rs>
                   </rs>
                </hi>
+               <space unit="chars" quantity="1"/>
                <hi rend="latintype">
                   <rs type="place" ref="#pmb864">Leipzig</rs>
                </hi>.</p>
@@ -253,6 +267,39 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
                <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+            </person>
+            <person xml:id="pmb4986">
+               <persName>
+                  <forename>Fedor</forename>
+                  <surname>Mamroth</surname>
+               </persName>
+               <birth>
+                  <date when="1851-02-21">21.02.1851</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
+                     <location>
+                        <geo>51,10773 17,03533</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1907-06-25">25.06.1907</date>
+                  <settlement ref="pmb146">
+                     <placeName type="pref">Frankfurt am Main</placeName>
+                     <location>
+                        <geo>50,11552 8,68417</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <occupation ref="pmb100">Kritiker/Kritikerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116724919</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_17801</idno>
+               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb4986</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/4986</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb4986</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb4986.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -432,6 +479,18 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/89816/</idno>
             </person>
          </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb36344">
+               <title>Frankfurter Zeitung</title>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurter_Zeitung</idno>
+               <date from="1856-01-01" to="1856-12-31">1856  – 1943</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36344/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36344</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36344</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/werke/pmb36344</idno>
+               <note type="work_kind">Publikationsorgan &gt;&gt; Tageszeitung</note>
+            </bibl>
+         </listBibl>
          <listPlace>
             <place xml:id="pmb146">
                <placeName>Frankfurt am Main</placeName>
@@ -468,6 +527,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb146</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
@@ -503,6 +563,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
             <place xml:id="pmb864">
                <placeName>Leipzig</placeName>
@@ -521,6 +582,7 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4035206-7</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb864</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb864</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb864.html</idno>
             </place>
             <place xml:id="pmb677">
                <placeName>Breslau</placeName>
@@ -591,6 +653,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
             </place>
             <place xml:id="pmb359">
                <placeName>Köthenerstraße</placeName>
@@ -643,6 +706,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb146</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
                </location>
                <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29442</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29442</idno>
@@ -672,6 +736,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb146</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb168">Berlin</placeName>
@@ -682,6 +747,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb659">Bülowstraße</placeName>
@@ -765,6 +831,7 @@
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4035206-7</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb864</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb864</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb864.html</idno>
                </location>
                <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29771</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29771</idno>
@@ -784,6 +851,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb89813">Altonaer Straße</placeName>
