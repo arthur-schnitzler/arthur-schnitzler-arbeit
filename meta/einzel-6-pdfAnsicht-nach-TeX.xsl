@@ -639,9 +639,18 @@
       </xsl:choose>
       <xsl:text>}</xsl:text>
       <xsl:if test="not($work-entry[contains(note[@type = 'work_kind'], 'Publikationsorgan')])">
-         <xsl:value-of
-            select="foo:werk-metadaten-in-index($work-entry/Typ, normalize-space(foo:date-translate($work-entry/date[1])), $work-entry/author[$author-zaehler]/@role)"
-         />
+         <xsl:choose>
+            <xsl:when test="not($work-entry/date)">
+               <xsl:value-of
+                  select="foo:werk-metadaten-in-index($work-entry/Typ, '', $work-entry/author[$author-zaehler]/@role)"
+               />
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of
+                  select="foo:werk-metadaten-in-index($work-entry/Typ, normalize-space(foo:date-translate($work-entry/date[1])), $work-entry/author[$author-zaehler]/@role)"
+               />
+            </xsl:otherwise>
+         </xsl:choose>
       </xsl:if>
       <xsl:value-of select="$endung"/>
    </xsl:function>
@@ -978,7 +987,18 @@
    </xsl:function>
    <xsl:function name="foo:date-translate">
       <xsl:param name="date-string" as="xs:string"/>
-      <xsl:value-of select="foo:date-repeat($date-string, string-length($date-string), 1)"/>
+      <xsl:variable name="date-doppelung" as="xs:string">
+         <xsl:choose>
+            <xsl:when test="normalize-space(tokenize($date-string, '–')[1]) = normalize-space(tokenize($date-string, '–')[2])">
+               <!-- solche Fälle ändern: <date>1892-10-29  – 1892-10-29</date> zu <date>1892-10-29</date> -->
+               <xsl:value-of select="normalize-space(tokenize($date-string, '–')[1])"/>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:value-of select="$date-string"/>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:variable>
+      <xsl:value-of select="foo:date-repeat($date-doppelung, string-length($date-doppelung), 1)"/>
    </xsl:function>
    <xsl:function name="foo:section-titel-token">
       <!-- Das gibt den Titel für das Inhaltsverzeichnis aus. Immer nach 55 Zeichen wird umgebrochen -->
