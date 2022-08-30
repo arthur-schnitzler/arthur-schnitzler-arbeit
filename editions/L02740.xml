@@ -8,6 +8,7 @@
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
             <title level="a">Paul Goldmann an Arthur Schnitzler, 9. 7. [1895]</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
+            <author ref="#pmb13897">Henri Becque</author>
             <editor>
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
@@ -114,6 +115,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
+               <persName ref="#pmb13897">Becque, Henri</persName>
                <date when="1895-07-09" n="2">9. 7. [1895]</date>
                <placeName ref="#pmb182">Paris</placeName>
             </correspAction>
@@ -197,23 +199,32 @@
                      </hi>
                   </foreign>
                </p>
-
                <salute rend="center">Mein lieber Freund,</salute>
             </opener>
             <p>Eben erhalte ich den beifolgenden Brief von <hi rend="latintype">
-                  <rs type="person" ref="">Henri Becque</rs>
-               </hi> über »<rs type="work" ref="">Sterben</rs>«. Nun wollen wir weiter ſehen.
-                  <closer>Herzlichſt</closer>
-               <closer>Dein</closer>
-               <closer>
-                  <signed>Paul Goldmann.</signed>
-               </closer>
-               <pb facs="HS.NZ85.1.3165_0056"/>
-            </p>
-            <p>XXXXt ches foumanne <hi rend="latintype">Li vicn </hi>e cre le domanà voi an. C'e le
-               annlonme A bont a seit ruusquable. Lanrfux un ayy dons rmans d'en mende bors à ani
-               ancc <hi rend="latintype">Beu </hi>à dons cun iaypXXXX</p>
-            <!-- siehe https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__1895-07-15.html -->
+                  <rs type="person" ref="#pmb13897">Henri Becque</rs>
+               </hi> über »<rs type="work" ref="#pmb30117">Sterben</rs>«. Nun wollen wir weiter
+               ſehen.</p>
+            <closer>Herzlichſt <lb/>Dein <lb/>
+               <signed>Paul Goldmann.</signed>
+            </closer>
+         </div>
+         <div type="writingSession" n="2">
+            <opener>
+               <salute rend="left">
+                  <pb facs="HS.NZ85.1.3165_0056"/>Mon cher Goldmann</salute>
+            </opener>
+            <p>Le XXXX de XXXX le <rs type="work" subtype="implied" ref="#pmb30117">roman</rs> de
+               votre ami. C’est XXXX XXXX XXXX <anchor type="commentary" xml:id="K_L02740-1"/>tout à
+               fait remarquable<note type="commentary" xml:id="K_L02740-1h">Dieses Lob findet sich
+                  auch im <rs type="work" ref="#pmb33243">Tagebuch</rs>eintrag vom <ref
+                     type="schnitzlerDiary" target="1895-07-15" subtype="date-only"/> wörtlich
+                  zitiert wieder.</note>. Pourquoi XXXX XXXX vous demandé d’un XXXX XXXX?</p>
+            <closer>XXXX à vous <lb/>
+               <signed>
+                  <rs type="person" ref="#pmb13897">Henry Becque</rs>
+               </signed>
+            </closer>
          </div>
       </body>
       <back>
@@ -254,6 +265,42 @@
                   >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
                <idno type="URL" subtype="schnitzler-lektueren"
                   >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+            </person>
+            <person xml:id="pmb13897">
+               <persName>
+                  <forename>Henri</forename>
+                  <surname>Becque</surname>
+               </persName>
+               <birth>
+                  <date when="1837-04-09">09.04.1837</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1899-05-12">12.05.1899</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13520</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb13897</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/13897</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb13897</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116106867</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb13897.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -335,6 +382,36 @@
                   >https://kraus.wienbibliothek.at/register/werke/pmb36344</idno>
                <note type="work_kind">Publikationsorgan &gt;&gt; Tageszeitung</note>
             </bibl>
+            <bibl xml:id="pmb30117">
+               <title>Sterben. Novelle</title>
+               <note type="bibliografische_angabe">Neue Deutsche Rundschau, Jg. 5, H. 10–12, Oktober–Dezember 1894</note>
+               <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <date>1.10.1894 – 1.12.1894</date>
+               <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.43</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q2345387</idno>
+               <idno type="URL" subtype="babel"
+                  >https://babel.hathitrust.org/cgi/pt/search?id=coo.31924069263006;view=1up;seq=9;q1=sterben;start=1;sz=10;page=search;orient=0;index=1</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30117</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30117</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30117</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30117.html</idno>
+               <note type="work_kind">Novelle</note>
+            </bibl>
+            <bibl xml:id="pmb33243">
+               <title>Tagebuch</title>
+               <note type="uri_worklink">https://schnitzler-tagebuch.acdh.oeaw.ac.at</note>
+               <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <date>1981 – 2000</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
+               <note type="work_kind">Tagebuch</note>
+            </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb182">
@@ -344,20 +421,28 @@
                <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
                <placeName type="alternative-name">Pariž</placeName>
                <placeName type="alternative-name">Parisius</placeName>
+               <placeName type="alternative-name">Île-de-France</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>
                <location type="coords">
                   <geo>48,85341 2,3488</geo>
                </location>
-               <idno type="URL" subtype="geonames">http://sws.geonames.org/2988507/</idno>
+               <location type="located_in_place">
+                  <placeName ref="pmb166">Frankreich</placeName>
+                  <geo>46,0 2,0</geo>
+               </location>
                <idno type="URL" subtype="bahrschnitzler"
                   >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
                <idno type="URL" subtype="schnitzler-briefe"
                   >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
                <idno type="URL" subtype="kraus"
                   >https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
@@ -397,6 +482,8 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus"
                   >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
             <place xml:id="pmb42671">
                <placeName>rue Feydeau</placeName>
@@ -441,6 +528,8 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
                   <idno type="URL" subtype="kraus"
                      >https://kraus.wienbibliothek.at/register/orte/pmb146</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch"
+                     >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
                </location>
                <idno type="URL" subtype="bahrschnitzler"
                   >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29442</idno>
