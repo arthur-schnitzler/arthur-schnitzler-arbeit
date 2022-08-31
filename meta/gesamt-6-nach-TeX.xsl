@@ -3994,7 +3994,7 @@
             test="parent::hi[@rend = 'superscript'] | parent::hi[parent::signed and @rend = 'overline'] | ancestor::addrLine">
             <xsl:apply-templates/>
          </xsl:when>
-         <xsl:when test="not(@n)">
+         <xsl:when test="not(@n) or @n=''">
             <xsl:text>\textcolor{red}{UNTERSTREICHUNG FEHLER:</xsl:text>
             <xsl:apply-templates/>
             <xsl:text>}</xsl:text>
@@ -5365,7 +5365,7 @@
       <xsl:text>}}</xsl:text>
    </xsl:template>
    <xsl:template match="ref[@type = 'toLetter']">
-      <xsl:variable name="target-path" as="xs:string">
+      <xsl:variable name="target-path" as="xs:string?">
          <xsl:choose>
             <xsl:when test="ends-with(@target, '.xml')">
                <xsl:value-of select="concat('../editions/', @target)"/>
@@ -5376,40 +5376,48 @@
          </xsl:choose>
       </xsl:variable>
       <xsl:choose>
-         <xsl:when test="@subtype = 'date-only'">
-            <xsl:value-of
-               select="document(resolve-uri($target-path, document-uri(/)))//tei:correspDesc/tei:correspAction[@type = 'sent']/tei:date/text()"
-            />
-         </xsl:when>
-         <xsl:otherwise>
+         <xsl:when test="doc-available(resolve-uri($target-path, document-uri(/)))">
             <xsl:choose>
-               <xsl:when test="@subtype = 'see'">
-                  <xsl:text>siehe </xsl:text>
-               </xsl:when>
-               <xsl:when test="@subtype = 'cf'">
-                  <xsl:text>vgl. </xsl:text>
-               </xsl:when>
-               <xsl:when test="@subtype = 'See'">
-                  <xsl:text>Siehe </xsl:text>
-               </xsl:when>
-               <xsl:when test="@subtype = 'Cf'">
-                  <xsl:text>Vgl. </xsl:text>
-               </xsl:when>
-            </xsl:choose>
-            <xsl:choose>
-               <xsl:when test="document(resolve-uri($target-path, document-uri(/)))//tei:titleStmt/tei:title[@level = 'a']">
+               <xsl:when test="@subtype = 'date-only'">
                   <xsl:value-of
-                     select="document(resolve-uri($target-path, document-uri(/)))//tei:titleStmt/tei:title[@level = 'a']"
-                     >
-                  </xsl:value-of>
+                     select="document(resolve-uri($target-path, document-uri(/)))//tei:correspDesc/tei:correspAction[@type = 'sent']/tei:date/text()"
+                  />
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:text>XXXX Auszeichnungsfehler</xsl:text>
+                  <xsl:choose>
+                     <xsl:when test="@subtype = 'see'">
+                        <xsl:text>siehe </xsl:text>
+                     </xsl:when>
+                     <xsl:when test="@subtype = 'cf'">
+                        <xsl:text>vgl. </xsl:text>
+                     </xsl:when>
+                     <xsl:when test="@subtype = 'See'">
+                        <xsl:text>Siehe </xsl:text>
+                     </xsl:when>
+                     <xsl:when test="@subtype = 'Cf'">
+                        <xsl:text>Vgl. </xsl:text>
+                     </xsl:when>
+                  </xsl:choose>
+                  <xsl:choose>
+                     <xsl:when test="document(resolve-uri($target-path, document-uri(/)))//tei:titleStmt/tei:title[@level = 'a']">
+                        <xsl:value-of
+                           select="document(resolve-uri($target-path, document-uri(/)))//tei:titleStmt/tei:title[@level = 'a']"
+                           >
+                        </xsl:value-of>
+                     </xsl:when>
+                     <xsl:otherwise>
+                        <xsl:text>XXXX Auszeichnungsfehler</xsl:text>
+                     </xsl:otherwise>
+                  </xsl:choose>
+                  
                </xsl:otherwise>
             </xsl:choose>
-            
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:text>XXXX Verweis </xsl:text><xsl:value-of select="@target"/>
          </xsl:otherwise>
       </xsl:choose>
+      
    </xsl:template>
    <!-- Das hier reicht die LateX-Befehler direkt durch, die mit <?latex ....> markiert sind -->
    <xsl:template match="processing-instruction()[name() = 'latex']">
