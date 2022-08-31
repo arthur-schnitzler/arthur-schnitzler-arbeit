@@ -1112,7 +1112,10 @@
       <xsl:value-of select="concat($dokument-id, 'h')"/>
       <xsl:text>}</xsl:text>
       <!-- <xsl:text>\leavevmode{}</xsl:text>-->
-      <xsl:choose>
+      <xsl:apply-templates select="teiHeader"/>
+      <!-- Hier auskommentiert das Anzeigen von Index-Einträgen
+         
+         <xsl:choose> 
          <xsl:when
             test="descendant::revisionDesc[@status = 'proposed'] and count(descendant::revisionDesc/change[contains(text(), 'Index check')]) = 0">
             <xsl:text>\begin{anhang}</xsl:text>
@@ -1121,11 +1124,10 @@
             <xsl:text>\doendnotes{B}</xsl:text>
             <xsl:text>\end{anhang}</xsl:text>
          </xsl:when>
-         <xsl:otherwise>  <xsl:apply-templates select="teiHeader"/>
-            <!--            <xsl:text>\doendnotes{B}</xsl:text>
--->
+         <xsl:otherwise>  
+            <xsl:apply-templates select="teiHeader"/>
          </xsl:otherwise>
-      </xsl:choose>
+      </xsl:choose>-->
    </xsl:template>
    <xsl:template match="teiHeader">
       <xsl:apply-templates/>
