@@ -5560,7 +5560,6 @@
                </xsl:when>
             </xsl:choose>
             <xsl:choose>
-               
                <xsl:when test="document($target-path)//tei:titleStmt/tei:title[@level = 'a']">
                   <xsl:value-of
                      select="document($target-path)//tei:titleStmt/tei:title[@level = 'a']"
