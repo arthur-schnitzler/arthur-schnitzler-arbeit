@@ -3029,7 +3029,7 @@
          <xsl:when test="descendant::note[@type = 'textConst']">
             <xsl:text>\toendnotes[C]{\smallbreak}</xsl:text>
          </xsl:when>
-         <xsl:when test="descendant::hi[@rend = 'underline' and (@n &gt; 2)]">
+         <xsl:when test="descendant::hi[@rend = 'underline' and number(@n) and (@n &gt; 2)]">
             <xsl:text>\toendnotes[C]{\smallbreak}</xsl:text>
          </xsl:when>
       </xsl:choose>
@@ -4703,6 +4703,8 @@
       </xsl:if>
    </xsl:function>
    <xsl:template match="persName | workName | orgName | placeName | rs">
+      <xsl:apply-templates/>
+      <!--
       <xsl:variable name="ref-ohne" select="replace(@ref,'#','')" as="xs:string?"/>
       <xsl:variable name="first" as="xs:string?" select="tokenize($ref-ohne, ' ')[1]"/>
       <xsl:variable name="rest"  as="xs:string?">
@@ -4717,15 +4719,15 @@
          select="count(ancestor::TEI/teiHeader/revisionDesc/change[contains(text(), 'Index check')]) &gt; 0"/>
       <xsl:variable name="candidate" as="xs:boolean"
          select="ancestor::TEI/teiHeader/revisionDesc/@status = 'approved' or ancestor::TEI/teiHeader/revisionDesc/@status = 'candidate' or ancestor::TEI/teiHeader/revisionDesc/change[contains(text(), 'Index check')]"/>
-      <!-- In diesen Fällen befindet sich das rs im Text: -->
+      <!-\- In diesen Fällen befindet sich das rs im Text: -\->
       <xsl:variable name="im-text" as="xs:boolean"
          select="ancestor::body and not(ancestor::note) and not(ancestor::caption) and not(parent::bibl) and not(ancestor::TEI[starts-with(@id, 'E')]) and not(ancestor::div[@type = 'biographical'])"/>
-      <!-- In diesen Fällen werden orgs und titel kursiv geschrieben: -->
+      <!-\- In diesen Fällen werden orgs und titel kursiv geschrieben: -\->
       <xsl:variable name="kommentar-herausgeber" as="xs:boolean"
          select="(ancestor::note[@type = 'commentary'] or ancestor::note[@type = 'textConst'] or ancestor::TEI[starts-with(@id, 'E')] or ancestor::tei:bibl or ancestor::div[@type = 'biographical']) and not(ancestor::quote)"/>
-      <!-- Ist's implizit vorkommend -->
+      <!-\- Ist's implizit vorkommend -\->
       <xsl:variable name="verweis" as="xs:boolean" select="@subtype = 'implied'"/>
-      <!-- Kursiv ja / nein -->
+      <!-\- Kursiv ja / nein -\->
       <xsl:variable name="emph"
          select="not(@subtype = 'implied') and $kommentar-herausgeber and (@type = 'work' or @type = 'org')"/>
       <xsl:variable name="cert" as="xs:boolean" select="(@cert = 'low') or (@cert = 'medium')"/>
@@ -4759,7 +4761,7 @@
       </xsl:variable>
       <xsl:choose>
          <xsl:when test="$first = '' or empty($first)">
-            <!-- Hier der Fall, dass die @ref-Nummer fehlt -->
+            <!-\- Hier der Fall, dass die @ref-Nummer fehlt -\->
             <xsl:apply-templates/>
             <xsl:text>\textcolor{red}{\textsuperscript{\textbf{KEY}}}</xsl:text>
          </xsl:when>
@@ -4781,7 +4783,7 @@
                  <xsl:if
                      test="$im-text and not($index-test-bestanden)">
                     <xsl:choose>
-                       <xsl:when test="$first = 'pmb2121' or $first = 'pmb50'"/><!-- Schnitzler und Wien raus -->
+                       <xsl:when test="$first = 'pmb2121' or $first = 'pmb50'"/><!-\- Schnitzler und Wien raus -\->
                        <xsl:otherwise>
                           <xsl:text>\edtext{</xsl:text>
                        </xsl:otherwise>
@@ -4790,8 +4792,8 @@
                   <xsl:if test="$emph">
                      <xsl:text>\emph{</xsl:text>
                   </xsl:if>
-                  <!-- Wenn der Index schon überprüft wurde, aber der Text noch nicht abgeschlossen, erscheinen
-              die indizierten Begriffe bunt-->
+                  <!-\- Wenn der Index schon überprüft wurde, aber der Text noch nicht abgeschlossen, erscheinen
+              die indizierten Begriffe bunt-\->
                   <xsl:choose>
                      <xsl:when test="@type = 'person'">
                         <xsl:text>\textcolor{blue}{</xsl:text>
@@ -4816,7 +4818,7 @@
                   <xsl:if
                      test="$im-text and not($index-test-bestanden)">
                      <xsl:choose>
-                        <xsl:when test="$first = 'pmb2121' or $first = 'pmb50'"/><!-- Schnitzler und Wien raus -->
+                        <xsl:when test="$first = 'pmb2121' or $first = 'pmb50'"/><!-\- Schnitzler und Wien raus -\->
                         <xsl:otherwise>
                            <xsl:text>}{</xsl:text>
                            <xsl:value-of select="foo:lemma(.)"/>
@@ -4830,7 +4832,7 @@
                </xsl:otherwise>
             </xsl:choose>
          </xsl:otherwise>
-      </xsl:choose>
+      </xsl:choose>-->
    </xsl:template>
    <!-- Hier wird, je nachdem ob es sich um vorne oder hinten im Text handelt, ein Indexmarker gesetzt, der zeigt,
    dass ein Werk über mehrere Seiten geht bzw. dieser geschlossen -->
