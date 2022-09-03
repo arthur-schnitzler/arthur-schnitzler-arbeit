@@ -45,4 +45,17 @@
         </xsl:attribute>
     </xsl:template>
     
+    <xsl:template match="tei:correspAction[@type='sent']/tei:date/@n">
+        <xsl:attribute name="n">
+        <xsl:choose>
+            <xsl:when test="string-length(.)=1">
+                <xsl:value-of select="concat('0',.)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+        </xsl:attribute>
+    </xsl:template>
+    
 </xsl:stylesheet>
