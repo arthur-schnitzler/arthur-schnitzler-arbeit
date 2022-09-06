@@ -4456,10 +4456,10 @@
       <xsl:text>}</xsl:text>
    </xsl:template>
    <!-- Großbuchstaben -->
-   <xsl:template match="hi[@rend = 'capitals' and not(descendant::note or descendant::footNote)]//text()">
+   <xsl:template match="hi[@rend = 'capitals' and not(descendant::note) and not(descendant::footNote)]//text()">
       <xsl:value-of select="upper-case(.)"/>
    </xsl:template>
-   <xsl:template match="hi[@rend = 'capitals' and (descendant::note or descendant::footNote)]//text()">
+   <xsl:template match="hi[(@rend = 'capitals' and descendant::note) or (@rend = 'capitals' and descendant::footNote)]//text()">
       <xsl:choose>
          <xsl:when
             test="ancestor-or-self::footNote[not(descendant::hi[@rend = 'capitals'])] | ancestor-or-self::note[not(descendant::hi[@rend = 'capitals'])]">
