@@ -148,9 +148,6 @@
                             <change who="LU" when="2022-08-16">Angelegt</change>
                         </revisionDesc>
                     </teiHeader>
-                    <!--<facsimile>
-                        <graphic url=""/>
-                     </facsimile>-->
                     <text>
                         <body>
                             <xsl:element name="div" namespace="http://www.tei-c.org/ns/1.0">
