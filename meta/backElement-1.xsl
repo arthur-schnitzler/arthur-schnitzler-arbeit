@@ -115,13 +115,6 @@
                                     </xsl:element>
                                 </xsl:if>
                             </xsl:for-each>
-                            <xsl:if test="ancestor::tei:TEI/tei:teiHeader/descendant::tei:title/@ref">
-                                <xsl:element name="bibl" namespace="http://www.tei-c.org/ns/1.0">
-                                    <xsl:attribute name="xml:id">
-                                        <xsl:value-of select="replace(ancestor::tei:TEI/tei:teiHeader/descendant::tei:title/@ref,'#','')"/>
-                                    </xsl:attribute>
-                                </xsl:element>
-                            </xsl:if>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:for-each
