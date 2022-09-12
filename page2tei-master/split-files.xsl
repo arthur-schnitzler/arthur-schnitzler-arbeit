@@ -104,14 +104,14 @@
                                                 <country>D</country>
                                                 <settlement>Marbach am Neckar</settlement>
                                                 <repository>Deutsches Literaturarchiv</repository>
-                                                <idno>A:Schnitzler, HS.NZ85.1.3165</idno>
+                                                <idno>A:Schnitzler, HS.NZ85.1.3166</idno>
                                             </msIdentifier>
                                             <physDesc>
                                                 <objectDesc>
                                                   <desc/>
                                                 </objectDesc>
                                                 <handDesc>
-                                                  <handNote medium="" style="deutsche-kurrent"/>
+                                                  <handNote medium="" style="lateinische-kurrent"/>
                                                 </handDesc>
                                             </physDesc>
                                         </msDesc>
@@ -126,7 +126,7 @@
                             <correspDesc>
                                 <correspAction type="sent">
                                     <persName ref="#11485">Goldmann, Paul</persName>
-                                    <date when="1895-" n="">XXXX</date>
+                                    <date when="1896-" n="">XXXX</date>
                                     <placeName ref="#182">Paris</placeName>
                                 </correspAction>
                                 <correspAction type="received">
