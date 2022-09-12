@@ -113,7 +113,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1894-11-18" n="1">18. 11. 1894</date>
+               <date when="1894-11-18" n="01">18. 11. 1894</date>
                <!-- Jahreszahl lässt sich durch die erwähnten Artikel der Zeit fixieren -->
                <placeName ref="#pmb182">Paris</placeName>
             </correspAction>
@@ -508,11 +508,12 @@
             </person>
             <person xml:id="pmb13897">
                <persName>
-                  <forename>Henri</forename>
+                  <forename>Henry</forename>
                   <surname>Becque</surname>
                </persName>
+               <persName type="geburtsname_vorname">Henri-François</persName>
                <birth>
-                  <date when="1837-04-09">09.04.1837</date>
+                  <date when="1837-04-09">1837-04-09</date>
                   <settlement ref="pmb182">
                      <placeName type="pref">Paris</placeName>
                      <location>
@@ -521,16 +522,17 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1899-05-12">12.05.1899</date>
-                  <settlement ref="pmb182">
-                     <placeName type="pref">Paris</placeName>
+                  <date when="1899-05-12">1899-05-12</date>
+                  <settlement ref="pmb36749">
+                     <placeName type="pref">Neuilly-sur-Seine</placeName>
                      <location>
-                        <geo>48,85341 2,3488</geo>
+                        <geo>48,8846 2,26965</geo>
                      </location>
                   </settlement>
                </death>
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb727">Schriftsteller/Schriftstellerin &gt;&gt; Dramatiker/Dramatikerin</occupation>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13520</idno>
                <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb13897</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/13897</idno>
@@ -543,8 +545,15 @@
                   <forename>Léon</forename>
                   <surname>Bourgeois</surname>
                </persName>
+               <persName type="uri_gnd">http://d-nb.info/gnd/124393780</persName>
                <birth>
                   <date when="1851-05-29">1851-05-29</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
                </birth>
                <death>
                   <date when="1925-09-29">1925-09-29</date>
@@ -557,6 +566,7 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb95">Politiker/Politikerin</occupation>
+               <occupation ref="pmb338">Minister/Ministerin</occupation>
                <occupation ref="pmb1540">Nobelpreisträger/Nobelpreisträgerin</occupation>
                <occupation ref="pmb1639">Jurist/Juristin</occupation>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88000/</idno>
@@ -903,7 +913,7 @@
                </persName>
                <persName type="rufname">Dilly</persName>
                <birth>
-                  <date when="1863-08-19">19.08.1863</date>
+                  <date when="1863-08-19">1863-08-19</date>
                   <settlement ref="pmb44303">
                      <placeName type="pref">Rotterdam</placeName>
                      <location>
@@ -912,7 +922,7 @@
                   </settlement>
                </birth>
                <death>
-                  <date when="1937-08-30">30.08.1937</date>
+                  <date when="1937-08-30">1937-08-30</date>
                   <settlement ref="pmb168">
                      <placeName type="pref">Berlin</placeName>
                      <location>
@@ -932,8 +942,9 @@
          <listBibl>
             <bibl xml:id="pmb29917">
                <title>Liebelei. Schauspiel in drei Akten</title>
+               <note type="uri_worklink">https://www.deutschestextarchiv.de/book/show/schnitzler_liebelei_1896</note>
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date when="1895-10-09">9.10.1895</date>
+               <date>1895-10-09  – 1895-10-09</date>
                <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.27</idno>
                <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1823758</idno>
                <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-liebelei</idno>
@@ -948,7 +959,7 @@
             <bibl xml:id="pmb32500">
                <title>La Parisienne</title>
                <title type="namensvariante">Die Pariserin</title>
-               <author ref="pmbperson__13897" role="hat-geschaffen">Becque, Henri</author>
+               <author ref="pmbperson__13897" role="hat-geschaffen">Becque, Henry</author>
                <date notBefore="1885-01-01" when="1885-07-02">1885</date>
                <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb32500</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32500</idno>
@@ -959,7 +970,7 @@
                <title>Sterben. Novelle</title>
                <note type="bibliografische_angabe">Neue Deutsche Rundschau, Jg. 5, H. 10–12, Oktober–Dezember 1894</note>
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date>1.10.1894  – 1.12.1894</date>
+               <date>1894-10-01  – 1894-12-01</date>
                <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.43</idno>
                <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q2345387</idno>
                <idno type="URL" subtype="babel">https://babel.hathitrust.org/cgi/pt/search?id=coo.31924069263006;view=1up;seq=9;q1=sterben;start=1;sz=10;page=search;orient=0;index=1</idno>
@@ -1058,17 +1069,24 @@
                <placeName type="legacy-uri-merge">http://sws.geonames.org/6455259/</placeName>
                <placeName type="alternative-name">Pariž</placeName>
                <placeName type="alternative-name">Parisius</placeName>
+               <placeName type="alternative-name">Île-de-France</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>
                <location type="coords">
                   <geo>48,85341 2,3488</geo>
                </location>
-               <idno type="URL" subtype="geonames">http://sws.geonames.org/2988507/</idno>
+               <location type="located_in_place">
+                  <placeName ref="pmb166">Frankreich</placeName>
+                  <geo>46,0 2,0</geo>
+               </location>
                <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
@@ -1104,6 +1122,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
             <place xml:id="pmb42671">
                <placeName>rue Feydeau</placeName>
@@ -1142,6 +1161,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41240</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41240</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb41240</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb41240.html</idno>
             </place>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
@@ -1166,6 +1186,7 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
             </place>
             <place xml:id="pmb30">
                <placeName>Salzburg</placeName>
@@ -1197,10 +1218,10 @@
                   <placeName ref="pmb59">IX., Alsergrund</placeName>
                   <geo>48,22387 16,35641</geo>
                </location>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:Frankgasse</idno>
                <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb397</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/397</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb397</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb397.html</idno>
             </place>
          </listPlace>
          <listOrg>
@@ -1224,6 +1245,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb146</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
                </location>
                <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29442</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29442</idno>
@@ -1247,12 +1269,14 @@
                <location type="located_in_place">
                   <placeName ref="pmb182">Paris</placeName>
                   <geo>48,85341 2,3488</geo>
-                  <idno type="URL" subtype="geonames">http://sws.geonames.org/2988507/</idno>
                   <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/87992/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/115269-5</idno>
@@ -1280,12 +1304,14 @@
                <location type="located_in_place">
                   <placeName ref="pmb182">Paris</placeName>
                   <geo>48,85341 2,3488</geo>
-                  <idno type="URL" subtype="geonames">http://sws.geonames.org/2988507/</idno>
                   <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
                </location>
                <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29290</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29290</idno>
@@ -1311,11 +1337,11 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb296">Günthergasse</placeName>
                   <geo>48,216599877109 16,358330000258</geo>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:G%C3%BCnthergasse</idno>
                   <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb296</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/296</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb296</idno>
@@ -1345,10 +1371,10 @@
                <location type="located_in_place">
                   <placeName ref="pmb14">Burgtheater</placeName>
                   <geo>48,210333 16,361139</geo>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:Burgtheater+%28Gebäude</idno>
                   <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb14</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb14</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb14.html</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb44649">Schlosstheater Schönbrunn</placeName>
@@ -1377,6 +1403,7 @@
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/56</idno>
                   <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb56</idno>
                   <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb56</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb56.html</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb77">Raimund-Theater</placeName>
