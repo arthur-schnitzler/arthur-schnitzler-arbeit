@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L02587"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02587"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Auguste Hauschner an Arthur Schnitzler, 16. 1. 1909</title>
+            <title level="a">Auguste Hauschner an Arthur Schnitzler, 16. 1. 1909</title>
             <author ref="#pmb2524">Hauschner, Auguste</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -92,7 +90,9 @@
                         <additions>
                            <incident type="receiver">
                               <desc>mit Bleistift Vermerk »<quote>
-                                    <hi rend="latintype">Hauschner</hi>
+                                    <hi rend="latintype">
+                                       <rs type="person" ref="#pmb2524">Hauschner</rs>
+                                    </hi>
                                  </quote>«</desc>
                            </incident>
                            <incident type="receiver">
@@ -113,7 +113,7 @@
             <correspAction type="sent">
                <persName ref="#pmb2524">Hauschner, Auguste</persName>
                <placeName ref="#pmb168">Berlin</placeName>
-               <date when="1909-01-16" n="01">16. 1. 1909</date>
+               <date when="1909-01-16" n="01">16. 1. 1909</date>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -125,9 +125,7 @@
                   Schnitzler, 9. 12. 1888</ref>
                <ref subtype="next_letter" type="withinCollection" target="L00002">Joachim an
                   Schnitzler, 31. 1. 1890</ref>
-               <ref subtype="previous_letter"
-                    type="withinCorrespondence"
-                    target="L02551">Mamroth an
+               <ref subtype="previous_letter" type="withinCorrespondence" target="L02551">Mamroth an
                   Schnitzler, 9. 12. 1888</ref>
                <ref subtype="next_letter" type="withinCorrespondence" target="L00020">Mamroth an
                   Schnitzler, 21. 6. 1891</ref>
@@ -141,10 +139,11 @@
                'https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__1891-05-15.html' </ab>
          </refsDecl>
       </encodingDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2022-03-07">Angelegt</change>
          <change who="LU" when="2022-03-15">Durchsicht</change>
          <change who="LU" when="2022-03-15">Index check</change>
+         <change who="LU" when="2022-09-12">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -157,18 +156,27 @@
             <opener>
                <dateline rend="right">
                   <pb facs="D20210927-107"/>
-                  <rs type="place" ref="#pmb168">Berlin</rs> d. <date>16. 1. 09</date>
+                  <rs type="place" ref="#pmb168">Berlin</rs> d. <date when="1909-01-16"
+                     >16. 1. 09</date>
                </dateline>
             </opener>
             <p>
-               <salute>Sehr geehrter Herr Doctor – </salute>die »<rs type="org" ref="#pmb29493">Hilfe</rs>« hat meinen <rs subtype="implied" type="work" ref="#pmb30225">Beitrag</rs> lange nicht gebracht, weil sie eigentlich so umfangreiche
-               Buchbesprechungen sonst nicht annimmt. Sie wünschten meine <rs subtype="implied" type="work" ref="#pmb30225">Arbeit</rs> zu lesen, <anchor type="commentary" xml:id="K_L02587-1"/>ich schicke sie daher<note type="commentary" xml:id="K_L02587-1h">Das 3. Heft des Jahres <date>1909</date>, in dem die
-                     <rs type="work" ref="#pmb30225">Rezension</rs> abgedruckt ist, ist mit <date>17. 1. 1909</date>
-                  datiert.</note>, obgleich, wie ich nun im Druck »sehe«, <del rend="strikethrough">dass</del> mir der Schluss misslungen ist. Was mir das innerste Wesen Ihrer
-               bedeutendsten Gestalten zu sein scheint, <pb facs="D20210927-108"/>der Trieb zur
-               Vereinsamung und die Fremdheit zum Menschthum, habe ich, durch ein Paar untreffende
-               Ausdrücke, zu schwer an ein einzelnes, im Grunde leichtlebiges, Individuum gehängt.
-               Trotzdem werden Sie vielleicht meine innere Bewegtheit aus meinen Worten lesen
+               <salute rend="inline">Sehr geehrter Herr Doctor – </salute>die »<rs type="org"
+                  ref="#pmb29493">Hilfe</rs>« hat meinen <rs subtype="implied" type="work"
+                  ref="#pmb30225">Beitrag</rs> lange nicht gebracht, weil sie eigentlich so
+               umfangreiche Buchbesprechungen sonst nicht annimmt. Sie wünschten meine <rs
+                  subtype="implied" type="work" ref="#pmb30225">Arbeit</rs> zu lesen, <anchor
+                  type="commentary" xml:id="K_L02587-1"/>ich schicke sie daher<note
+                  type="commentary" xml:id="K_L02587-1h">Das 3. <rs type="work" subtype="implied"
+                     ref="#pmb63597">Heft</rs> des Jahres <date when="1909">1909</date>, in dem die
+                     <rs type="work" ref="#pmb30225">Rezension</rs> abgedruckt ist, ist mit <date
+                     when="1909-01-17">17. 1. 1909</date> datiert.</note>, obgleich, wie ich nun im
+               Druck »sehe«, <del rend="strikethrough">dass</del> mir der Schluss misslungen ist.
+               Was mir das innerste Wesen Ihrer bedeutendsten Gestalten zu sein scheint, <pb
+                  facs="D20210927-108"/>der Trieb zur Vereinsamung und die Fremdheit zum Menschthum,
+               habe ich, durch ein Paar untreffende Ausdrücke, zu schwer an ein einzelnes, im Grunde
+               leichtlebiges, Individuum gehängt.</p>
+            <p>Trotzdem werden Sie vielleicht meine innere Bewegtheit aus meinen Worten lesen
                können.</p>
             <closer>Mit besondrer Hochschätzung<lb/>
                <signed>Auguste Hauschner</signed>
@@ -204,8 +212,10 @@
                <sex value="female"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116537175</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15984</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2524</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15984</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2524</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2524</idno>
             </person>
             <person xml:id="pmb2121">
@@ -235,10 +245,13 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
             </person>
          </listPerson>
          <listBibl>
@@ -247,9 +260,16 @@
                <note type="bibliografische_angabe">Die Hilfe, Jg. 15, Nr. 3, 17. 1. 1909</note>
                <author ref="pmbperson__2524" role="hat-geschaffen">Hauschner, Auguste</author>
                <date when="1909-01-17">17.01.1909</date>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30225</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30225</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30225</idno>
                <note type="work_kind">Rezension</note>
+            </bibl>
+            <bibl xml:id="pmb63597">
+               <title>Die Hilfe. Zeitschrift für Politik, Wirtschaft und geistige Bewegung</title>
+               <date notBefore="1894-01-01" when="1894-07-02">1894</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/63597/</idno>
+               <note type="work_kind">Publikationsorgan &gt;&gt; Zeitschrift</note>
             </bibl>
          </listBibl>
          <listPlace>
@@ -271,16 +291,21 @@
                   <geo>51,5 10,5</geo>
                </location>
                <idno type="URL" subtype="geonames">http://sws.geonames.org/2950159/</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb168</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb168</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
@@ -304,15 +329,19 @@
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
          </listPlace>
          <listOrg>
@@ -320,10 +349,11 @@
                <orgName>Die Hilfe. Zeitschrift für Politik, Wirtschaft und geistige Bewegung</orgName>
                <desc type="entity_type">Zeitschriftenredaktion</desc>
                <desc type="entity_type_id">973</desc>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29493</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29493</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29493</idno>
                <note type="apis_dates">
-                  <date from="1894-01-01" to="1894-12-31">1894  – 1944</date>
+                  <date from="1894-01-01" to="1894-12-31">1894 – 1944</date>
                </note>
             </org>
          </listOrg>
