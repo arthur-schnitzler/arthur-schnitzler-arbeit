@@ -356,8 +356,9 @@
                         Leerzeichen benötigen eine Sonderbehandlung und ebenso der Fall, dass
                         zwischen zwei Elementen ein Leerzeichen stehen soll. Wir codieren so, dass
                         wir das Leerzeichen zwischen zwei Elementen ebenfalls als Element setzen.
-                        Dadurch wissen wir, dass Zwischenräume zwischen Elementen, die &gt;&lt; oder  &gt;&#160;&lt; 
-                        oder &gt;&#160;&#160;&#160;&#160;&lt; aussehen, ignoriert werden können.</p>
+                        Dadurch wissen wir, dass Zwischenräume zwischen Elementen, die &gt;&lt; oder
+                        &gt;&#160;&lt; oder &gt;&#160;&#160;&#160;&#160;&lt; aussehen, ignoriert
+                        werden können.</p>
                     <div type="example">
                         <p>Beispiel: </p>
                         <p>
@@ -434,15 +435,15 @@
                     <div type="level3">
                         <head xml:id="h.m49xdzuyi1vy">ref</head>
                         <p>Dient für Verweise. Die wichtigsten beiden sind mit dem Attribut
-                            <code>@type="toLetter"</code> oder <code>@type="schnitzlerDiary"</code>
-                            unterschieden. Bei einem Briefverweis steht in <code>@target</code> der
-                            Dateiname (ohne ».xml«), beim Tagebuch ein ISO-Datum. Das Attribut
-                                <code>@subtype</code> erlaubt noch eine genauere Spezifizierung der
-                            Beziehung, etwa »vgl.«, »siehe« oder – am häufigsten – »date-only«. Im
-                            letzteren Fall wird in der Ausgabe das Datum entsprechend der Konvention
-                            DD. MM. YYYY gesetzt und ist es online als Link auswählbar. Für zwei
-                            weitere Arten der Verweise siehe <code>correspContext</code> weiter
-                            unten. </p>
+                                <code>@type="toLetter"</code> oder
+                                <code>@type="schnitzlerDiary"</code> unterschieden. Bei einem
+                            Briefverweis steht in <code>@target</code> der Dateiname (ohne ».xml«),
+                            beim Tagebuch ein ISO-Datum. Das Attribut <code>@subtype</code> erlaubt
+                            noch eine genauere Spezifizierung der Beziehung, etwa »vgl.«, »siehe«
+                            oder – am häufigsten – »date-only«. Im letzteren Fall wird in der
+                            Ausgabe das Datum entsprechend der Konvention DD. MM. YYYY gesetzt und
+                            ist es online als Link auswählbar. Für zwei weitere Arten der Verweise
+                            siehe <code>correspContext</code> weiter unten. </p>
                     </div>
                     <div type="level3">
                         <head xml:id="h.bczvlasvnqe6">supplied</head>
@@ -1018,7 +1019,11 @@
                                     <cell style="white-space: nowrap;">supplement</cell>
                                     <cell>Für Briefbeilagen. Diese werden ohne Verwendung von
                                         Abkürzungen ausgeschrieben: eigenhändiger Brief, 1 Blatt, 2
-                                        Seiten, schwarze Tinte. </cell>
+                                        Seiten, schwarze Tinte. Ist die Beilage ein
+                                        Korrespondenzstück von Dritten an Dritte, so wird der Autor
+                                        bzw. die Autorin nicht als solche im Header angeführt. Ist
+                                        das Korrespondenzstück an Schnitzler gerichtet, ist dies
+                                        sehr wohl der Fall.</cell>
                                 </row>
                                 <row>
                                     <cell>postal</cell>
@@ -1067,22 +1072,25 @@
                                 <item>Umschläge, die keine Briefmarke aufweisen, werden als »Ohne
                                     postalischen Übermittlungsvermerk« gekennzeichnet </item>
                                 <item>»Unbekannte Hand« (nicht »fremde Hand«) </item>
-                                <item>Eine Ungenauigkeit (wer bis hierher liest…) ist bewusst zugelassen: Bei mehreren
-                                Nummerierungen am Blatt wird die ersetzte Nummerierung als gestrichen wiedergegeben, auch wenn die Streichung
-                                genau genommen die Arbeit des zweiten Bearbeiters, der zweiten Bearbeiterin war. Das soll schnell vermitteln, 
-                                welches als die letzte Nummerierung zu gelten hat.</item>
+                                <item>Eine Ungenauigkeit (wer bis hierher liest…) ist bewusst
+                                    zugelassen: Bei mehreren Nummerierungen am Blatt wird die
+                                    ersetzte Nummerierung als gestrichen wiedergegeben, auch wenn
+                                    die Streichung genau genommen die Arbeit des zweiten
+                                    Bearbeiters, der zweiten Bearbeiterin war. Das soll schnell
+                                    vermitteln, welches als die letzte Nummerierung zu gelten
+                                    hat.</item>
                             </list>
                             <div type="level5">
                                 <head xml:id="h.vqzgn6gk9vdc"
                                     >incident[@type="postal"]/desc/stamp</head>
-                                <p>Poststempel werden jeweils als <code>incident</code> behandelt, wobei
-                                    derselbe Stempel, wenn er mehrfach verwendet wurde (etwa um
-                                    mehrere Briefmarken zu entwerten), nur als ein Stempel gewertet
-                                    wird und die Wiedergabe einen rekonstruierten, »idealen« Fall
-                                    darstellt. Nicht zuordenbare Zeichen und Kürzel werden
-                                    übergangen. </p>
-                                <p>Das Attribut <code>@n</code> zählt die Stempel innerhalb des Dokuments
-                                    chronologisch. Ein Aufgabestempel kommt vor einem
+                                <p>Poststempel werden jeweils als <code>incident</code> behandelt,
+                                    wobei derselbe Stempel, wenn er mehrfach verwendet wurde (etwa
+                                    um mehrere Briefmarken zu entwerten), nur als ein Stempel
+                                    gewertet wird und die Wiedergabe einen rekonstruierten,
+                                    »idealen« Fall darstellt. Nicht zuordenbare Zeichen und Kürzel
+                                    werden übergangen. </p>
+                                <p>Das Attribut <code>@n</code> zählt die Stempel innerhalb des
+                                    Dokuments chronologisch. Ein Aufgabestempel kommt vor einem
                                     Zustellstempel. </p>
                                 <p>Die meisten Stempel sind in Blockbuchstaben geschrieben, das wird
                                     nicht berücksichtigt. </p>
@@ -1106,10 +1114,10 @@
                                         when="1891-08-13"&gt;13.&lt;supplied&gt;8.&lt;/supplied&gt;9&lt;unclear&gt;1&lt;/unclear&gt;&lt;/date&gt;</code></p>
                                 <p>… heißt: Monat nicht lesbar, letzte Ziffer der Jahreszahl
                                     erahnbar. </p>
-                                <p>Im Ausnahmefall ist auch <quote>gap</quote> möglich. (Zu
-                                    den Abstandsregeln beim Datum siehe <code>date</code>, im Normalfall nach
-                                    Punkt ein bedingtes, fixes Leerzeichen: <code>&amp;#160;</code>)
-                                </p>
+                                <p>Im Ausnahmefall ist auch <quote>gap</quote> möglich. (Zu den
+                                    Abstandsregeln beim Datum siehe <code>date</code>, im Normalfall
+                                    nach Punkt ein bedingtes, fixes Leerzeichen:
+                                        <code>&amp;#160;</code>) </p>
                             </div>
                         </div>
                     </div>
@@ -1129,8 +1137,7 @@
                         weitere Vorgänge liegen: (»<code>transmitted</code>«,
                             »<code>forwarded</code>«, »<code>redirected</code>«). Diese sind dann
                         anzuwenden, wenn sich verschiedene Abweichungen ergeben sollten – etwa, dass
-                        eine Postkarte an einem anderen Tag datiert ist als der
-                        Aufgabestempel. </p>
+                        eine Postkarte an einem anderen Tag datiert ist als der Aufgabestempel. </p>
                     <div type="level3">
                         <head xml:id="h.3s282ddvha26">correspAction</head>
                         <p>Neben dem verpflichtenden Attribut <code>@type</code> gibt es drei
@@ -1166,12 +1173,12 @@
                                     einem Tag gleich die Antwort geschickt wird. Damit kann der
                                     erste Brief mit <code>@n="1"</code>, die Antwort mit
                                         <code>@n="2"</code> gereiht werden. Innerhalb des Projekts
-                                    ist die Kombination des ISO-Datums und <code>@n</code> 
+                                    ist die Kombination des ISO-Datums und <code>@n</code>
                                     eindeutig. Als weitere Sub-Regel wird angewandt, dass (wenn sich
                                     nicht durch Antworten eine andere Reihung ergibt) zuerst die
-                                    Briefe von Schnitzler eines Tages kommen, dann die Briefe an ihn,
-                                    wobei hier dann die alphabetische Reihenfolge des Nachnamens des
-                                    Empfängers/Senders berücksichtigt wird. </p>
+                                    Briefe von Schnitzler eines Tages kommen, dann die Briefe an
+                                    ihn, wobei hier dann die alphabetische Reihenfolge des
+                                    Nachnamens des Empfängers/Senders berücksichtigt wird. </p>
                                 <div type="example">
                                     <p>Beispiel: </p>
                                     <p><code>@n=1</code> Brief Bahrs an Schnitzler </p>
@@ -1185,26 +1192,23 @@
                     </div>
                     <div type="level3">
                         <head xml:id="h.9ta6zke4oj9c">correspContext/ref</head>
-                        <p>Innerhalb von <code>correspContext</code> finden sich drei Arten von <code>ref</code>-Elementen mit
-                            dem Attribut <code>@type</code> markiert. </p>
+                        <p>Innerhalb von <code>correspContext</code> finden sich drei Arten von
+                                <code>ref</code>-Elementen mit dem Attribut <code>@type</code>
+                            markiert. </p>
                         <list>
-                            <item>belongsToCorrespondence
-                            </item>
-                            <item>withinCollection
-                            </item>
-                            <item>withinCorrespondence
-                            </item>
+                            <item>belongsToCorrespondence </item>
+                            <item>withinCollection </item>
+                            <item>withinCorrespondence </item>
                         </list>
-                        <p>Die Angabe »belongsToCorrespondence« ermöglicht auch Briefe
-                            Dritter über das Attribut <code>@target</code> bestimmten
-                            Korrespondenzen zuzuordnen, etwa wenn Gertrud Rung für Georg Brandes
-                            einen Brief geschrieben hat, so dass dieser auch Brandes zugeordnet
-                            werden kann. Die Angaben »withinCollection« und
-                                »withinCorrespondence« sind mit dem
+                        <p>Die Angabe »belongsToCorrespondence« ermöglicht auch Briefe Dritter über
+                            das Attribut <code>@target</code> bestimmten Korrespondenzen zuzuordnen,
+                            etwa wenn Gertrud Rung für Georg Brandes einen Brief geschrieben hat, so
+                            dass dieser auch Brandes zugeordnet werden kann. Die Angaben
+                            »withinCollection« und »withinCorrespondence« sind mit dem
                                 <code>@subtype="next_letter"</code> und
-                            <code>@subtype="previous_letter"</code> dazu da, das Blättern innerhalb aller
-                            edierten Briefe (»withinCollection«) oder innerhalb einer
-                            Korrespondenz (»withinCorrespondence«) zu erlauben. </p>
+                                <code>@subtype="previous_letter"</code> dazu da, das Blättern
+                            innerhalb aller edierten Briefe (»withinCollection«) oder innerhalb
+                            einer Korrespondenz (»withinCorrespondence«) zu erlauben. </p>
                         <div type="example">
                             <p>Beispiel: </p>
                             <p><code>&lt;ref type="belongsToCorrespondence"
@@ -1248,8 +1252,8 @@
             </div>
             <div type="level1">
                 <head xml:id="h.dr8wt22vdlry">text</head>
-                <p>Das Attribut <code>@type</code> ist zwar vorhanden, aber durch die Angaben
-                    von <code>physDesc/objectDesc</code> weitgehend obsolet. Es spielt nur in den
+                <p>Das Attribut <code>@type</code> ist zwar vorhanden, aber durch die Angaben von
+                        <code>physDesc/objectDesc</code> weitgehend obsolet. Es spielt nur in den
                     wenigen Fällen eine Rolle, bei denen kein Archivzeuge überliefert ist. </p>
             </div>
             <div type="level1">
@@ -1294,12 +1298,12 @@
                         <head xml:id="h.zd84p3gvy35n">div[@type="writingSession" @n="1"]</head>
                         <p>Dies ist der wichtigste Bereich und eigentlich immer vorhanden.
                             Üblicherweise ist nur eine »Schreibsitzung« ausgewiesen. Das trifft
-                            nicht zu, wenn aus dem Inhalt klar hervorgeht, dass der Verfasser oder die
-                            Verfasserin zu einem späteren Zeitpunkt einen Neuansatz vorgenommen hat.
-                            Ebenso werden, wenn mehrere Personen an einem Objekt beteiligt sind und
-                            zwei getrennte Teile auszumachen sind, diese aufgeteilt. Die Grenze ist fließend, aber
-                            wenn zwei Schlussformeln (<code>closer</code>) vorhanden sind, dürften
-                            auch zwei <code>div</code>-Bereiche vorliegen. </p>
+                            nicht zu, wenn aus dem Inhalt klar hervorgeht, dass der Verfasser oder
+                            die Verfasserin zu einem späteren Zeitpunkt einen Neuansatz vorgenommen
+                            hat. Ebenso werden, wenn mehrere Personen an einem Objekt beteiligt sind
+                            und zwei getrennte Teile auszumachen sind, diese aufgeteilt. Die Grenze
+                            ist fließend, aber wenn zwei Schlussformeln (<code>closer</code>)
+                            vorhanden sind, dürften auch zwei <code>div</code>-Bereiche vorliegen. </p>
                         <p>Innerhalb eines solchen <code>div</code>s können sich folgende Teile
                             finden, wobei sie nicht verpflichtend sind, nur die Reihenfolge ist
                             weitgehend fixiert: </p>
