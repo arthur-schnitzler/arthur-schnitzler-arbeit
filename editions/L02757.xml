@@ -94,14 +94,14 @@
                                  </quote>« vermerkt</desc>
                            </incident>
                            <incident type="receiver">
-                              <desc>mit rotem Buntstift eine Unterstreichung sowie »<quote>
+                              <desc>mit rotem Buntstift eine Unterstreichung sowie den Schreibirrtum »<quote>
                                     <rs type="work" ref="#pmb29917">Liebelei</rs>
                                  </quote>« auf der zweiten Seite umrahmt und dazu »<quote>
                                     <hi rend="latintype">
-                                       <rs type="work" subtype="implied" ref="#pmb29917">Lbl</rs>
+                                       <rs type="work" subtype="implied" ref="#pmb31975">Kl. K.</rs>
                                     </hi>
-                                 </quote>« (Kürzel für <rs type="work" ref="#pmb29917"
-                                 >Liebelei</rs>) vermerkt</desc>
+                                 </quote>« (<rs type="work" ref="#pmb31975">Kleine Komödie</rs>)
+                                 vermerkt</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -135,6 +135,8 @@
       </encodingDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2022-08-16">Angelegt</change>
+         <change who="MAM" when="2022-09-15">Durchsicht</change>
+         <change who="MAM" when="2022-09-15">Index check</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -165,7 +167,8 @@
                <p rend="left">
                   <foreign xml:lang="fra">
                      <hi rend="pre-print">
-                        <rs type="work" ref="#pmb36344" subtype="implied">Journal</rs> politique, financier,</hi>
+                        <rs type="work" ref="#pmb36344" subtype="implied">Journal</rs> politique,
+                        financier,</hi>
                   </foreign>
                </p>
                <p rend="left">
@@ -208,11 +211,13 @@
             <p>Tolle Arbeit, liebſter Freund, ſolle Arbeit und wüſtes Leben. Ich komme zu nichts
                mehr. Aber in einigen Tagen ſchreibe ich Dir doch.</p>
             <p>Hier die Druckſachen. Die Bemerkungen dazu muß ich mir für ſpäter aufſparen. Denn
-               gleich geht die <rs type="org" ref="#pmb92784">Kammer</rs> an. <pb
-                  facs="HS.NZ85.1.3165_0121-0"/>Die <rs type="work" ref="#pmb93019"
-                  subtype="implied">Überſetzung</rs> der »<rs type="work" ref="#pmb29917"
-                  >Liebelei</rs>« ſinde ich vorzüglich. Schreib’, bitte, an Frau <hi
-                  rend="latintype">
+               gleich geht die <rs type="org" ref="#pmb92784">Kammer</rs> an.</p>
+            <p><pb facs="HS.NZ85.1.3165_0121-0"/>Die <rs type="work" ref="#pmb93019"
+                  subtype="implied">Überſetzung</rs> der »<anchor type="commentary"
+                  xml:id="K_L02757-33"/><rs type="work" ref="#pmb29917">Liebelei</rs><note
+                  type="commentary" xml:id="K_L02757-33h">Schreibirrtum: er meint <rs type="work"
+                     ref="#pmb31975">Die kleine Komödie</rs></note>« ſinde ich vorzüglich. Schreib’,
+               bitte, an Frau <hi rend="latintype">
                   <rs type="person" ref="#pmb93009">Aubry</rs>
                </hi> – deutſch – ein artiges Wort darüber; danke auch dem <rs type="person"
                   ref="#pmb13561" subtype="implied">Manne</rs>, daß er es in die »<hi
@@ -246,11 +251,11 @@
                </hi> verſchwinden; will mich gegen draußen abſperren, von wo mir jeder Luftzug die
                Kunde meiner <pb facs="HS.NZ85.1.3165_0120-0"/>verfehlten Exiſtenz bringt. Bin müde,
                zu kämpfen, und möchte leben, oh nur ein einziges Mal!</p>
-            <closer>Grüß’ Dich Gott! <lb/>Dein <lb/>treuer <lb/>
+            <closer>Grüß’ Dich Gott! <lb/>Dein treuer <lb/>
                <signed>Paul Goldmann</signed>
             </closer>
             <postscript>
-               <p>Viele Grüße an die liebe <rs type="person" ref="#pmb2378" subtype="implied"
+               <p>Viele Grüße an die liebe <rs type="person" ref="#pmb10762" subtype="implied"
                      >Frau</rs>, die wieder in <hi rend="latintype">
                      <rs type="place" ref="#pmb50">Wien</rs>
                   </hi> iſt.</p>
@@ -362,10 +367,11 @@
             </person>
             <person xml:id="pmb93009">
                <persName>
+                  <forename>[MMe. Georges]</forename>
                   <surname>Aubry</surname>
                </persName>
                <sex value="female"/>
-               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <occupation ref="pmb116">Übersetzer/Übersetzerin</occupation>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/93009/</idno>
             </person>
             <person xml:id="pmb13561">
@@ -373,11 +379,15 @@
                   <forename>Georges</forename>
                   <surname>Aubry</surname>
                </persName>
-               <sex value="female"/>
-               <occupation ref="pmb116">Übersetzer/Übersetzerin</occupation>
+               <death>
+                  <date when="1923-07-02" notAfter="1923-12-31">1923</date>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb173">Redakteur/Redakteurin</occupation>
                <idno type="URL" subtype="schnitzler-tagebuch"
                   >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13299</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/13561</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q92054394</idno>
             </person>
             <person xml:id="pmb12867">
                <persName>
@@ -576,10 +586,10 @@
             </bibl>
             <bibl xml:id="pmb93019">
                <title>La Petite comédie. Mœurs viennois</title>
-               <note type="bibliografische_angabe">Arthur Schnitzler: La Petite comédie. Mœurs viennois. Übers. v. Georges Aubry. In: La Liberté, Jg. 30, Nr. 11327, 19. 11. 1895 bis Nr. 11336, 28. 11. 1895 [acht Feuilletons]</note>
+               <note type="bibliografische_angabe">Arthur Schnitzler: La Petite comédie. Mœurs viennois. Übersetzt von MMe. Georges Aubry. In: La Liberté, Jg. 30, Nr. 11.327, 19. 11. 1895 bis Nr. 11.336, 28. 11. 1895. (acht Teile)</note>
                <note type="uri_worklink">https://gallica.bnf.fr/ark:/12148/bpt6k4790520f/f2.item</note>
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <author ref="pmbperson__13561" role="hat-ubersetzt">Aubry, Georges</author>
+               <author ref="pmbperson__93009" role="hat-ubersetzt">Aubry, [MMe. Georges]</author>
                <date>1895-11-19 – 1895-11-28</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/93019/</idno>
                <note type="work_kind">Novelle</note>
