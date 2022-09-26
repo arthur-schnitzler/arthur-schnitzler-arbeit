@@ -7,10 +7,6 @@
    <xs:import namespace="http://www.w3.org/XML/1998/namespace"
       schemaLocation="http://www.w3.org/2001/xml.xsd"/>
    <!-- Schema der XML-Dateien für https://schnitzler-briefe.acdh.oeaw.ac.at/ 
-   Dieses Schema wird für die Produktion verwendet und enthält geringfügige Abweichungen zu
-   den tatsächlich verwendeten Elementen. Beispielsweise fehlt das back-Element und
-   sind alle Bezugnahmen auf die PMB nur mit Raute »#«, nicht aber mit »#pmb« vorgesehen.
-   Azf die Möglichkeit hin, dass es jemandem hilfreich ist, publiziert.
    -->
    <xs:element name="TEI">
       <xs:complexType mixed="true">
@@ -85,8 +81,9 @@
          <xs:attribute name="type" use="required">
             <xs:simpleType>
                <xs:restriction base="xs:string">
-                  <xs:enumeration value="schnitzlerDiary"/>
-                  <xs:enumeration value="toLetter"/>
+                  <xs:enumeration value="schnitzler-tagebuch"/>
+                  <xs:enumeration value="schnitzler-briefe"/>
+                  <xs:enumeration value="schnitzler-lektueren"/>
                   <xs:enumeration value="withinCorrespondence"/>
                   <xs:enumeration value="withinCollection"/>
                   <xs:enumeration value="belongsToCorrespondence"/>
@@ -1021,7 +1018,7 @@
       </xs:attribute>
       <xs:attribute ref="xml:id" use="required"/>
       <xs:assert
-         test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and (@type = 'schnitzlerDiary' or @type = 'toLetter')] or not(tei:ref)"
+         test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type='schnitzler-lektueren')] or not(tei:ref)"
       />
       <xs:assert test="not(descendant::tei:note)"/>
    </xs:complexType>

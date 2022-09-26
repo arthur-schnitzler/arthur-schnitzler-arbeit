@@ -434,15 +434,15 @@
                     </div>
                     <div type="level3">
                         <head xml:id="h.m49xdzuyi1vy">ref</head>
-                        <p>Dient für Verweise. Die wichtigsten beiden sind mit dem Attribut
-                                <code>@type="toLetter"</code> oder
-                                <code>@type="schnitzlerDiary"</code> unterschieden. Bei einem
-                            Briefverweis steht in <code>@target</code> der Dateiname (ohne ».xml«),
-                            beim Tagebuch ein ISO-Datum. Das Attribut <code>@subtype</code> erlaubt
-                            noch eine genauere Spezifizierung der Beziehung, etwa »vgl.«, »siehe«
+                        <p>Dient für Verweise. Die wichtigsten Fälle werden in Folge beschrieben. Soweit sinnvoll, können
+                            mit dem Attribut <code>@subtype</code> genauere Spezifizierungen der Beziehung vorgenommen werden, etwa »vgl.«, »siehe«
                             oder – am häufigsten – »date-only«. Im letzteren Fall wird in der
                             Ausgabe das Datum entsprechend der Konvention DD. MM. YYYY gesetzt und
-                            ist es online als Link auswählbar. Für zwei weitere Arten der Verweise
+                            ist es online als Link auswählbar.</p>
+                        <p><code>@type="schnitzler-briefe"</code> enthält in <code>@target</code> die Briefnummer/den Dateinamen (ohne ».xml«).</p>
+                        <p><code>@type="schnitzler-tagebuch"</code> ist in <code>@target</code> mit einem ISO-Datum
+                            spezifiziert.</p>
+                        <p>Für zwei weitere Arten der Verweise
                             siehe <code>correspContext</code> weiter unten. </p>
                     </div>
                     <div type="level3">
