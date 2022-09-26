@@ -5518,6 +5518,26 @@
             format-date(@target,
             '[D1].&#8239;[M1].&#8239;[Y0001]')"/>
    </xsl:template>
+   <xsl:template match="ref[@type = 'schnitzler-lektueren']">
+      <xsl:if test="not(@subtype = 'date-only')">
+         <xsl:choose>
+            <xsl:when test="@subtype = 'see'">
+               <xsl:text>siehe </xsl:text>
+            </xsl:when>
+            <xsl:when test="@subtype = 'cf'">
+               <xsl:text>vgl. </xsl:text>
+            </xsl:when>
+            <xsl:when test="@subtype = 'See'">
+               <xsl:text>Siehe </xsl:text>
+            </xsl:when>
+            <xsl:when test="@subtype = 'Cf'">
+               <xsl:text>Vgl. </xsl:text>
+            </xsl:when>
+         </xsl:choose>
+         <xsl:text>A.&#8239;S.: \emph{Lektüren}, </xsl:text>
+      </xsl:if>
+      <xsl:value-of select="replace(@target, '.html','')"/>
+   </xsl:template>
    <xsl:template match="ref[@type = 'url']">
       <xsl:text>\uline{\url{</xsl:text>
       <xsl:value-of select="(@target)"/>
@@ -5574,6 +5594,7 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
+   
    <!-- Das hier reicht die LateX-Befehler direkt durch, die mit <?latex ....> markiert sind -->
    <xsl:template match="processing-instruction()[name() = 'latex']">
       <xsl:value-of select="concat('{', normalize-space(.), '}')"/>
