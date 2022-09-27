@@ -5152,7 +5152,7 @@
       <xsl:apply-templates/>
       <xsl:text>}</xsl:text>
    </xsl:template>
-   <xsl:template match="ref[@type = 'schnitzlerDiary']">
+   <xsl:template match="ref[@type = 'schnitzler-tagebuch']">
       <xsl:if test="not(@subtype = 'date-only')">
          <xsl:choose>
             <xsl:when test="@subtype = 'See'">
@@ -5190,7 +5190,7 @@
       <xsl:text>.&#160;</xsl:text>
       <xsl:value-of select="substring(@target, 1, 4)"/>
    </xsl:template>
-   <xsl:template match="ref[@type = 'toLetter']">
+   <xsl:template match="ref[@type = 'schnitzler-briefe']">
       <xsl:variable name="target-path" as="xs:string">
          <xsl:choose>
             <xsl:when test="ends-with(@target, '.xml')">

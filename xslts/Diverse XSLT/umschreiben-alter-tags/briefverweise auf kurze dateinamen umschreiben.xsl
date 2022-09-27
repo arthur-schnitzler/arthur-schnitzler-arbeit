@@ -6,10 +6,10 @@
     <xsl:param name="correspList" select="document('correspList.xml')"/>
     <xsl:key name="corresp-lookup" match="correspDesc" use="@date"/>
     
-    <xsl:template match="tei:ref[@type='toLetter']">
+    <xsl:template match="tei:ref[@type='schnitzler-briefe']">
         <xsl:element name="ref" namespace="http://www.tei-c.org/ns/1.0">
             <xsl:attribute name="type">
-                <xsl:text>toLetter</xsl:text>
+                <xsl:text>schnitzler-briefe</xsl:text>
             </xsl:attribute>
             <xsl:if test="@subtype"><xsl:attribute name="subtype">
                 <xsl:value-of select="@subtype"/>

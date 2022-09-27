@@ -2915,10 +2915,10 @@
          </xsl:otherwise>
       </xsl:choose>
       <xsl:choose>
-         <xsl:when test="ref[@type = 'schnitzlerDiary']">
+         <xsl:when test="ref[@type = 'schnitzler-tagebuch']">
             <xsl:text>\emph{Tagebuch}, </xsl:text>
             <xsl:value-of select="
-                  format-date(ref[@type = 'schnitzlerDiary']/@target,
+                  format-date(ref[@type = 'schnitzler-tagebuch']/@target,
                   '[D1].&#8239;[M1].&#8239;[Y0001]')"/>
             <xsl:text>: </xsl:text>
          </xsl:when>
@@ -5547,7 +5547,7 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
-   <xsl:template match="ref[@type = 'schnitzlerDiary']">
+   <xsl:template match="ref[@type = 'schnitzler-tagebuch']">
       <xsl:if test="not(@subtype = 'date-only')">
          <xsl:choose>
             <xsl:when test="@subtype = 'see'">
@@ -5569,12 +5569,32 @@
             format-date(@target,
             '[D1].&#8239;[M1].&#8239;[Y0001]')"/>
    </xsl:template>
+   <xsl:template match="ref[@type = 'schnitzler-lektueren']">
+      <xsl:if test="not(@subtype = 'date-only')">
+         <xsl:choose>
+            <xsl:when test="@subtype = 'see'">
+               <xsl:text>siehe </xsl:text>
+            </xsl:when>
+            <xsl:when test="@subtype = 'cf'">
+               <xsl:text>vgl. </xsl:text>
+            </xsl:when>
+            <xsl:when test="@subtype = 'See'">
+               <xsl:text>Siehe </xsl:text>
+            </xsl:when>
+            <xsl:when test="@subtype = 'Cf'">
+               <xsl:text>Vgl. </xsl:text>
+            </xsl:when>
+         </xsl:choose>
+         <xsl:text>A.&#8239;S.: \emph{Lektüren}, </xsl:text>
+      </xsl:if>
+      <xsl:value-of select="replace(@target, '.html','')"/>
+   </xsl:template>
    <xsl:template match="ref[@type = 'url']">
       <xsl:text>\uline{\url{</xsl:text>
       <xsl:value-of select="(@target)"/>
       <xsl:text>}}</xsl:text>
    </xsl:template>
-   <xsl:template match="ref[@type = 'toLetter']">
+   <xsl:template match="ref[@type = 'schnitzler-briefe']">
       <xsl:variable name="current-folder" select="substring-before(document-uri(/), '/meta')"/>
       <xsl:variable name="target-path" as="xs:string">
          <xsl:choose>

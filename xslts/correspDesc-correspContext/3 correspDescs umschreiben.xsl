@@ -173,7 +173,7 @@
     <xsl:template match="tei:ab[parent::tei:refsDecl]">
         <xsl:element name="ab" namespace="http://www.tei-c.org/ns/1.0">
             <xsl:text>References to Arthur Schnitzler’s diary online consist of the relevant dates only, 
-            e.g. @type="schnitzlerDiary" @target="1891-05-15". The complete URI is: 
+            e.g. @type="schnitzler-tagebuch" @target="1891-05-15". The complete URI is: 
             'https://schnitzler-tagebuch.acdh.oeaw.ac.at/v/editions/entry__1891-05-15'
         </xsl:text>
         </xsl:element>
