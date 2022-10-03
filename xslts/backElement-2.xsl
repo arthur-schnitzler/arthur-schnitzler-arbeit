@@ -5,6 +5,8 @@
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
     
+    <!-- weiter unten steht das template, das das Empfangsdatum bei Telegrammen reingibt -->
+    
     <xsl:template match="*" mode="copy-no-namespaces">
         <xsl:element name="{local-name()}">
             <xsl:copy-of select="@*"/>
@@ -20,8 +22,6 @@
     <xsl:template match="comment()| processing-instruction()" mode="copy-no-namespaces">
         <xsl:copy/>
     </xsl:template>
-    
-    
     
     <xsl:template match="tei:back/tei:listPerson[child::*]">
         <xsl:element name="listPerson" namespace="http://www.tei-c.org/ns/1.0">
@@ -155,4 +155,24 @@
         </xsl:for-each>
         </xsl:element>
     </xsl:template>
+    
+    <!-- ein Telegramm kommt am gleichen Tag an, also correspDesc ergänzen-->
+    
+    <xsl:template match="tei:correspAction[@type='received' and not(tei:date) and ancestor::tei:TEI/descendant::tei:objectDesc/tei:desc/@type='telegramm']">
+        <xsl:element name="correspAction">
+            <xsl:attribute name="type">
+                <xsl:text>received</xsl:text>
+            </xsl:attribute>
+            <xsl:copy-of select="tei:*"/>
+            <xsl:element name="date" namespace="http://www.tei-c.org/ns/1.0">
+                <xsl:attribute name="evidence">
+                    <xsl:text>conjecture</xsl:text>
+                </xsl:attribute>
+                <xsl:variable name="correspvorher" select="preceding-sibling::tei:correspAction[@type='sent'][1]/tei:date[1]" as="node()"/>
+                <xsl:copy-of select="$correspvorher/@*[not(name()='n')]"/>
+                <xsl:value-of select="$correspvorher"/>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
+    
 </xsl:stylesheet>
