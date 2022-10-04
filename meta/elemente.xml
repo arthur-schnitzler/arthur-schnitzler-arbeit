@@ -1134,10 +1134,13 @@
                             <code>correspAction</code> dargestellt, wobei das erste immer
                             <code>correspAction[@type="sent"]</code> und das letzte immer
                             <code>correspAction[@type="received"]</code> ist. Dazwischen können
-                        weitere Vorgänge liegen: (»<code>transmitted</code>«,
-                            »<code>forwarded</code>«, »<code>redirected</code>«). Diese sind dann
+                        weitere Vorgänge liegen, vor allem die offiziell empfohlenen: »<code>transmitted</code>« (Übermittlung, beispielsweise Aufgabe am Postamt),
+                            »<code>forwarded</code>« (Weiterleitung), »<code>redirected</code>« (neue Adressierung). Diese sind dann
                         anzuwenden, wenn sich verschiedene Abweichungen ergeben sollten – etwa, dass
-                        eine Postkarte an einem anderen Tag datiert ist als der Aufgabestempel. </p>
+                        eine Postkarte an einem anderen Tag datiert ist als der Aufgabestempel. Eine zusätzliche
+                    Spezifierung wurde mit »arrived« eingeführt, für Korrespondenzstücke, die zwar ihren Zielort
+                    erreichten, aber den Adressaten, die Adressatin nicht antrafen, weil die Person beispielsweise auf Reisen
+                    war.</p>
                     <div type="level3">
                         <head xml:id="h.3s282ddvha26">correspAction</head>
                         <p>Neben dem verpflichtenden Attribut <code>@type</code> gibt es drei
