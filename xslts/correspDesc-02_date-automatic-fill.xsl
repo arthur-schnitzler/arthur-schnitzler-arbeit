@@ -44,13 +44,13 @@
                             <xsl:text>conjecture</xsl:text>
                         </xsl:attribute>
                         <xsl:attribute name="notBefore">
-                            <xsl:value-of select="$sendedatum"/>
+                            <xsl:value-of select="$sendedatum + xs:dayTimeDuration('P1D')"/>
                         </xsl:attribute>
                         <xsl:attribute name="notAfter">
-                            <xsl:value-of select="$sendedatum + xs:dayTimeDuration('P4D')"/>
+                            <xsl:value-of select="$sendedatum + xs:dayTimeDuration('P5D')"/>
                         </xsl:attribute>
                         <xsl:text>[</xsl:text>
-                        <xsl:value-of select="foo:formatdate($sendedatum)"/><xsl:text> – </xsl:text><xsl:value-of select="foo:formatdate($sendedatum + xs:dayTimeDuration('P4D'))"/><xsl:text>?]</xsl:text>                                
+                        <xsl:value-of select="foo:formatdate($sendedatum + xs:dayTimeDuration('P1D'))"/><xsl:text> – </xsl:text><xsl:value-of select="foo:formatdate($sendedatum + xs:dayTimeDuration('P5D'))"/><xsl:text>?]</xsl:text>                                
                     </xsl:element>
                 </xsl:otherwise>
             </xsl:choose>
