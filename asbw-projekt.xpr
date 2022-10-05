@@ -7426,12 +7426,12 @@ ${caret}</String>
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>editions/L02610.xml</String>
+                                    <String>editions/L00013.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
                                         <String>back-element-hinzufuegen_facs-normalisieren</String>
-                                        <String>tex-korrekturansicht</String>
+                                        <String>correspDesc-automatic</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -7463,6 +7463,29 @@ ${caret}</String>
                                 </field>
                                 <field name="scenarioStorageLocations">
                                     <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>editions/L02610.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
+                                        <String>tex-korrekturansicht</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                         <Byte>2</Byte>
                                     </list>
                                 </field>
@@ -9291,46 +9314,6 @@ ${caret}</String>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>META/Diverse%20XSLT/correspList.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>correspContext eintragen</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>META/correspDesc-correspContext/correspList.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>correspContext eintragen</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>data/1900-08-05_01_AS_Beer-Hofmann.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -9624,7 +9607,7 @@ ${caret}</String>
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>correspContext eintragen</String>
+                                    <String>correspDesc-automatic</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -9642,7 +9625,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/META/correspDesc-correspContext/3%20correspDescs%20umschreiben.xsl</String>
+                                    <String>${pdu}/xslts/correspDesc-01_place-automatic-fill.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -9693,7 +9676,9 @@ ${caret}</String>
                                     <list/>
                                 </field>
                                 <field name="cascadingStylesheets">
-                                    <String-array/>
+                                    <String-array>
+                                        <String>${pdu}/xslts/correspDesc-02_date-automatic-fill.xsl</String>
+                                    </String-array>
                                 </field>
                                 <field name="xslTransformer">
                                     <String>Saxon-PE</String>
