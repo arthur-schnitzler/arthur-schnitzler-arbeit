@@ -7426,22 +7426,25 @@ ${caret}</String>
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>editions/L02618.xml</String>
+                                    <String>editions/L02620.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
                                         <String>back-element-hinzufuegen_facs-normalisieren</String>
                                         <String>tex-korrekturansicht</String>
+                                        <String>correspText und commentary neu nummerieren</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
                                         <String>XSL</String>
+                                        <String>XSL</String>
                                     </list>
                                 </field>
                                 <field name="scenarioStorageLocations">
                                     <list>
+                                        <Byte>2</Byte>
                                         <Byte>2</Byte>
                                         <Byte>2</Byte>
                                     </list>
@@ -7463,6 +7466,55 @@ ${caret}</String>
                                 </field>
                                 <field name="scenarioStorageLocations">
                                     <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>editions/L02618.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>correspDesc-automatic</String>
+                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
+                                        <String>tex-korrekturansicht</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>editions/L02753.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
+                                        <String>tex-korrekturansicht</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
                                         <Byte>2</Byte>
                                     </list>
                                 </field>
@@ -8105,29 +8157,6 @@ ${caret}</String>
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>editions/L02755.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
-                                        <String>tex-korrekturansicht</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>editions/L02753.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -9799,7 +9828,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/META/Diverse%20XSLT/kommentar-ids%20umschreiben.xsl</String>
+                                    <String>${pdu}/xslts/Diverse%20XSLT/umschreiben-alter-tags/kommentar-ids%20umschreiben.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
