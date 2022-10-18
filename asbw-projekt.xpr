@@ -7508,14 +7508,6 @@ The set parameters are taken into account for XSLT, DITA, Chemistry and ANT Tran
                                     <Boolean>false</Boolean>
                                 </field>
                             </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>4/tei/teip5.framework/TEI P5</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>false</Boolean>
-                                </field>
-                            </documentTypeEntry>
                         </documentTypeEntry-array>
                     </entry>
                     <entry>
@@ -7537,6 +7529,29 @@ The set parameters are taken into account for XSLT, DITA, Chemistry and ANT Tran
                     <entry>
                         <String>scenario.associations</String>
                         <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>editions/L02785.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
+                                        <String>tex-korrekturansicht</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>editions/L02786.xml</String>
@@ -7576,26 +7591,6 @@ The set parameters are taken into account for XSLT, DITA, Chemistry and ANT Tran
                                 <field name="scenarioStorageLocations">
                                     <list>
                                         <Byte>2</Byte>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>editions/L02785.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>tex-korrekturansicht</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
                                         <Byte>2</Byte>
                                     </list>
                                 </field>
