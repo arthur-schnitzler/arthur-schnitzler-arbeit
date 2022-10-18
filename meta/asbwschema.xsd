@@ -744,10 +744,10 @@
          </xs:attribute>
          <xs:assert test="
                if (@type = 'poem') then
-                  not(ancestor::tei:lg)
+                  child::tei:lg or child::tei:l
                else
                   if (@type = 'stanza') then
-                     not(descendant::tei:lg) and ancestor::tei:lg
+                     not(descendant::tei:lg)
                   else
                      false()"/>
       </xs:complexType>
