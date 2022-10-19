@@ -207,4 +207,34 @@
             </xsl:choose>
         </xsl:element>
     </xsl:template>
+    
+    
+    <!-- Das hier holt die Namensform des Ortsnamens der PMB -->
+    <xsl:template match="tei:correspAction/tei:placeName">
+        <xsl:element name="placeName" namespace="http://www.tei-c.org/ns/1.0" inherit-namespaces="true">
+            <xsl:copy-of select="@ref|@evidence|@cert"/>
+            <xsl:variable name="nummer" select="substring-after(@ref, 'pmb')"/>
+            <xsl:variable name="eintrag"
+                select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/entities/tei/place/', $nummer))"
+                as="xs:string"/>
+            <xsl:choose>
+                <xsl:when test="doc-available($eintrag)">
+                        <xsl:value-of select="document($eintrag)/place/placeName[1]"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:element name="error" namespace="http://www.tei-c.org/ns/1.0">
+                        <xsl:attribute name="type">
+                            <xsl:text>placeName-nicht-bezogen</xsl:text>
+                        </xsl:attribute>
+                        <xsl:value-of select="$nummer"/>
+                    </xsl:element>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+        </xsl:element>
+        
+        
+        
+        
+    </xsl:template>
 </xsl:stylesheet>
