@@ -103,4 +103,14 @@
     </xsl:function>
     
     
+    <xsl:template match="tei:correspAction/tei:date/@n">
+        <xsl:attribute name="n">
+            <xsl:if test="string-length(.)=1">
+                <xsl:text>0</xsl:text>
+            </xsl:if>
+            <xsl:value-of select="."/>
+        </xsl:attribute>
+        
+    </xsl:template>
+    
 </xsl:stylesheet>

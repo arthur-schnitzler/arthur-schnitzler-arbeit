@@ -8,7 +8,7 @@
         method="xml"
         encoding="utf-8"
         omit-xml-declaration="false"/>
-    <xsl:param name="correspPartner" select="document('listeDerBriefwechsel.xml')"/>
+    <xsl:param name="correspPartner" select="document('../../meta/listeDerBriefwechsel.xml')"/>
     <xsl:key name="corresp-lookup" match="correspondence" use="sub-person/@id"/>
     
     
