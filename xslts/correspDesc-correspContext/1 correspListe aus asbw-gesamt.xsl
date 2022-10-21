@@ -48,7 +48,7 @@ entstehen Duplikate! -->
                 </xsl:variable>
                 <xsl:variable name="partner" as="node()">
                     <xsl:choose>
-                        <xsl:when test="correspAction[@type='sent']/persName/@ref='#2121' or correspAction[@type='sent']/persName/@ref='#2173'">
+                        <xsl:when test="correspAction[@type='sent']/persName/@ref='#pmb2121' or correspAction[@type='sent']/persName/@ref='#pmb2173'">
                             <xsl:copy-of select="correspAction[@type='received']"/>
                         </xsl:when>
                         <xsl:otherwise>

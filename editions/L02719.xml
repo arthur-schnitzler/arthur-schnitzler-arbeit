@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -122,13 +122,24 @@
                <date evidence="conjecture" notBefore="1893-11-05" notAfter="1893-11-09">[5. 11. 1893
                   – 9. 11. 1893?]</date>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="#pmb11485">Goldmann, Paul</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00279">Schnitzler an Bahr, 3. 11. 1893</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00280">Schnitzler an Bahr, 7. 11. 1893</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    target="L02718">Goldmann an Schnitzler, [zwischen 29. 9. und
+                  2. 10. 1893]</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" target="L02720">Goldmann an Schnitzler, 28. 11. [1893]</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <encodingDesc>
          <refsDecl>
-            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only,
-               e.g. @type="schnitzler-tagebuch" @target="1891-05-15". The complete URI is:
-               'https://schnitzler-tagebuch.acdh.oeaw.ac.at/entry__1891-05-15.html’ </ab>
+            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only, 
+            e.g. @type="schnitzler-tagebuch" @target="1891-05-15". The complete URI is: 
+            'https://schnitzler-tagebuch.acdh.oeaw.ac.at/v/editions/entry__1891-05-15'
+        </ab>
          </refsDecl>
       </encodingDesc>
       <revisionDesc status="proposed">
