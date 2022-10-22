@@ -259,42 +259,30 @@
                         <xsl:element name="list" namespace="http://www.tei-c.org/ns/1.0">
                             <xsl:for-each
                                 select="descendant::rs[@type = 'work']/tokenize(@ref, ' ')">
-                                <xsl:sort select="number(.)"/>
-                                <xsl:choose>
-                                    <xsl:when test="contains(.,'#pmb')">
-                                        <xsl:if test="string-length(substring-after(., '#pmb')) &gt; 0">
-                                            <xsl:element namespace="http://www.tei-c.org/ns/1.0" name="item">
-                                                <xsl:attribute name="n">
-                                                    <xsl:value-of
-                                                        select="normalize-space(substring-after(., '#pmb'))"/>
-                                                </xsl:attribute>
-                                            </xsl:element>
-                                        </xsl:if>
-                                    </xsl:when>
-                                    <xsl:when test="contains(.,'pmb')">
-                                        <xsl:if test="string-length(substring-after(., 'pmb')) &gt; 0">
-                                            <xsl:element namespace="http://www.tei-c.org/ns/1.0" name="item">
-                                                <xsl:attribute name="n">
-                                                    <xsl:value-of
-                                                        select="normalize-space(substring-after(., 'pmb'))"/>
-                                                </xsl:attribute>
-                                            </xsl:element>
-                                        </xsl:if>
-                                    </xsl:when>
-                                    <xsl:when test="contains(.,'#')">
-                                        <xsl:if test="string-length(substring-after(., '#')) &gt; 0">
-                                            <xsl:element namespace="http://www.tei-c.org/ns/1.0" name="item">
-                                                <xsl:attribute name="n">
-                                                    <xsl:value-of
-                                                        select="normalize-space(substring-after(., '#'))"/>
-                                                </xsl:attribute>
-                                            </xsl:element>
-                                        </xsl:if>
-                                    </xsl:when>
-                                </xsl:choose>
+                                <xsl:variable name="werk-ref" as="xs:string">
+                                    <xsl:choose>
+                                        <xsl:when test="contains(., 'pmb')">
+                                            <xsl:value-of select="substring-after(., 'pmb')"/>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:value-of select="."/>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:variable>
+                                <xsl:element namespace="http://www.tei-c.org/ns/1.0" name="item">
+                                    <xsl:attribute name="n">
+                                        <xsl:value-of
+                                            select="$werk-ref"/>
+                                    </xsl:attribute>
+                                </xsl:element>
+                                <!-- hier noch autoren nachschlagen -->
+                                <xsl:variable name="eintrag"
+                                    select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/entities/tei/work/', $werk-ref))"
+                                    as="xs:string"/>
                                 
-                                
-                                
+                                    <xsl:if test="doc-available($eintrag)">
+                                            <xsl:copy-of select="document($eintrag)/descendant::author" copy-namespaces="no"/>
+                                    </xsl:if>
                             </xsl:for-each>
                             <xsl:for-each
                                 select="descendant::biblStruct//title[@ref]/tokenize(@ref, ' ')">
