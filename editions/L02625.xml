@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L02625"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02625"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -118,61 +116,63 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
-               <date evidence="conjecture" notBefore="1894-06-16" notAfter="1894-06-20">[16. 6. 1894 – 20. 6. 1894?]</date>
+               <date evidence="conjecture" notBefore="1894-06-16" notAfter="1894-06-20">[16. 6. 1894
+                  – 20. 6. 1894?]</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="#pmb11485">Goldmann, Paul</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00338">Schnitzler an Hofmannsthal, [15. 6. 1894?]</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00339">Hofmannsthal an Schnitzler, 16. 6. 1894</ref>
-               <ref subtype="previous_letter"
-                    type="withinCorrespondence"
-                    target="L02623">Goldmann an Schnitzler, 1. 6. [1894]</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L02627">Goldmann an Schnitzler, 19. 6. [1894]</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00338">Schnitzler an
+                  Hofmannsthal, [15. 6. 1894?]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00339">Hofmannsthal an
+                  Schnitzler, 16. 6. 1894</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" target="L02623">Goldmann
+                  an Schnitzler, 1. 6. [1894]</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" target="L02627">Goldmann an
+                  Schnitzler, 19. 6. [1894]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <encodingDesc>
          <refsDecl>
-            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only, 
-            e.g. @type="schnitzler-tagebuch" @target="1891-05-15". The complete URI is: 
-            'https://schnitzler-tagebuch.acdh.oeaw.ac.at/v/editions/entry__1891-05-15'
-        </ab>
+            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only,
+               e.g. @type="schnitzler-tagebuch" @target="1891-05-15". The complete URI is:
+               'https://schnitzler-tagebuch.acdh.oeaw.ac.at/v/editions/entry__1891-05-15' </ab>
          </refsDecl>
       </encodingDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2022-04-05">Angelegt</change>
          <change who="LU" when="2022-05-04">Durchsicht</change>
          <change who="LU" when="2022-05-04">Index check</change>
          <change who="MAM" when="2022-05-30">Durchsicht</change>
+         <change who="LU" when="2022-10-25">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <p>
-                  <seg rend="left">
-                     <pb facs="HS.NZ85.1.3164_0033-1"/>
-                     <hi rend="pre-print">
-                        <rs type="org" ref="#pmb29442">Frankfurter Zeitung</rs>.</hi>
-                  </seg>
-                  <seg rend="right">
-                     <hi rend="latintype">
-                        <rs ref="#pmb182" type="place">Paris</rs>
-                     </hi>, <date>15. Juni</date>.</seg>
+               <p rend="left">
+                  <pb facs="HS.NZ85.1.3164_0033-1"/>
+                  <hi rend="pre-print">
+                     <rs type="org" ref="#pmb29442">Frankfurter Zeitung</rs>.</hi>
                </p>
                <p>
                   <hi rend="pre-print">(<rs type="org" ref="#pmb29442">Gazette de
                      Francfort</rs>).</hi>
                </p>
                <p>
-                  <hi rend="pre-print">Fondateur <hi rend="bold">M. <rs type="person" ref="#pmb87771">L. Sonnemann</rs>
+                  <hi rend="pre-print">Fondateur <hi rend="bold">M. <rs type="person"
+                           ref="#pmb87771">L. Sonnemann</rs>
                      </hi>.</hi>
                </p>
                <p>
-                  <hi rend="pre-print">
-                     <foreign xml:lang="fra">Journal politique, financier,</foreign>
-                  </hi>
+                  <seg rend="left"><hi rend="pre-print">
+                        <foreign xml:lang="fra">Journal politique, financier,</foreign>
+                     </hi></seg>
+                  <seg rend="right">
+                     <hi rend="latintype">
+                        <rs ref="#pmb182" type="place">Paris</rs>
+                     </hi>, <date when="1894-06-15">15. Juni</date>.</seg>
                </p>
                <p>
                   <hi rend="pre-print">
@@ -199,14 +199,18 @@
                         <rs type="place" ref="#pmb42671">24. Rue Feydeau</rs>.</foreign>
                   </hi>
                </p>
-               <salute>Mein lieber Freund,</salute>
+               <salute rend="left">Mein lieber Freund,</salute>
             </opener>
             <p>Ich bin ſehr beſchäftigt. Darum nur wenige Zeilen.</p>
-            <p>1.) Wärmſten Dank für Deinen lieben Brief aus <anchor type="commentary" xml:id="K_L02625-1"/>
+            <p>1.) Wärmſten Dank für Deinen lieben Brief aus <anchor type="commentary"
+                  xml:id="K_L02625-1"/>
                <hi rend="latintype">
                   <rs type="place" ref="#pmb45258">Muenchen</rs>
                </hi>
-               <note type="commentary" xml:id="K_L02625-1h">Zwichen <ref target="1894-06-02" type="schnitzler-tagebuch" subtype="date-only"/> und <ref target="1894-06-08" type="schnitzler-tagebuch" subtype="date-only"/> hielt sich <rs type="person" ref="#pmb2121">Schnitzler</rs> in <rs type="place" ref="#pmb45258">München</rs>
+               <note type="commentary" xml:id="K_L02625-1h">Zwischen <ref target="1894-06-02"
+                     type="schnitzler-tagebuch" subtype="date-only"/> und <ref target="1894-06-08"
+                     type="schnitzler-tagebuch" subtype="date-only"/> hielt sich <rs type="person"
+                     ref="#pmb2121">Schnitzler</rs> in <rs type="place" ref="#pmb45258">München</rs>
                   auf.</note>. Er erklärt Manches und läßt Manches im Unklaren. All’ das iſt ſehr
                ſchwer brieflich abzumachen. Auch das, was mich erregt, läßt ſich kaum ſo
                niederſchreiben. Ich möchte mit Dir ſprechen, aber vielleicht iſt es am Beſten gar
@@ -214,12 +218,27 @@
                Lauf gehen.</p>
             <p>2.) Haſt Du die <anchor type="commentary" xml:id="K_L02625-5"/>»<hi rend="latintype">
                   <rs type="work" ref="#pmb88057">Revue Blanche</rs>
-               </hi>«<note type="commentary" xml:id="K_L02625-5h">Die wohl für den <rs type="work" ref="#pmb36349">Mercure de France</rs> gedachte (<ref target="L02621" type="schnitzler-briefe" subtype="see"/>) <rs type="work" subtype="implied" ref="#pmb88064">Besprechung</rs> von <rs type="person" ref="#pmb2121">Schnitzler</rs>s Schauspiel <rs type="work" ref="#pmb29823">Das Märchen</rs>
-                  erschien in der <rs type="work" ref="#pmb88057">Revue blanche</rs>, <bibl>
-                     <rs type="person" ref="#pmb2801">Henri Albert</rs>: <rs type="work" ref="#pmb88064">Les Lettres allemandes. Drames Nouveaux</rs>. In: <rs type="work" ref="#pmb88057">La Revue Blanche</rs>, Jg. 6, Nr. 32,
-                        <date>Juni 1984</date>, S. 556–560, hier S. 560</bibl>. Dem <rs type="work" ref="#pmb33243">Tagebuch</rs> ist zu entnehmen, dass <rs type="person" ref="#pmb2121">Schnitzler</rs> die <rs type="work" subtype="implied" ref="#pmb88064">Besprechung</rs> las, <ref target="1894-06-11" type="schnitzler-tagebuch" subtype="cf"/>.</note> erhalten.</p>
-            <p>3.) Können wir <anchor type="commentary" xml:id="K_L02625-7"/>im <date when="1894-08">Auguſt</date> zuſammenreiſen<note type="commentary" xml:id="K_L02625-7h">Vom <ref target="1894-08-23" type="schnitzler-tagebuch" subtype="date-only"/> bis zum <ref target="1894-09-03" type="schnitzler-tagebuch" subtype="date-only"/> verbrachten
-                     <rs type="person" ref="#pmb2121">Schnitzler</rs> und <rs type="person" ref="#pmb11485">Goldmann</rs> einige Zeit gemeinsam in <rs type="place" ref="#pmb213">Bad Ischl</rs> und <rs type="place" ref="#pmb415">Bad
+               </hi>«<note type="commentary" xml:id="K_L02625-5h">Die wohl für den <rs type="work"
+                     ref="#pmb36349">Mercure de France</rs> gedachte (<ref target="L02621"
+                     type="schnitzler-briefe" subtype="see"/>) <rs type="work" subtype="implied"
+                     ref="#pmb88064">Besprechung</rs> von <rs type="person" ref="#pmb2121"
+                     >Schnitzler</rs>s Schauspiel <rs type="work" ref="#pmb29823">Das Märchen</rs>
+                  erschien in der <rs type="work" ref="#pmb88057">Revue blanche</rs>: <bibl>
+                     <rs type="person" ref="#pmb2801">Henri Albert</rs>: <rs type="work"
+                        ref="#pmb88064">Les Lettres allemandes. Drames Nouveaux</rs>. In: <rs
+                        type="work" ref="#pmb88057">La Revue Blanche</rs>, Jg. 6, Nr. 32,
+                        <date>Juni 1984</date>, S. 556–560, hier S. 560</bibl>. Dem <rs type="work"
+                     ref="#pmb33243">Tagebuch</rs> ist zu entnehmen, dass <rs type="person"
+                     ref="#pmb2121">Schnitzler</rs> die <rs type="work" subtype="implied"
+                     ref="#pmb88064">Besprechung</rs> las (<ref target="1894-06-11"
+                     type="schnitzler-tagebuch" subtype="cf"/>).</note> erhalten.</p>
+            <p>3.) Können wir <anchor type="commentary" xml:id="K_L02625-7"/>im <date when="1894-08"
+                  >Auguſt</date> zuſammenreiſen<note type="commentary" xml:id="K_L02625-7h">Von <ref
+                     target="1894-08-23" type="schnitzler-tagebuch" subtype="date-only"/> bis <ref
+                     target="1894-09-03" type="schnitzler-tagebuch" subtype="date-only"/>
+                  verbrachten <rs type="person" ref="#pmb2121">Schnitzler</rs> und <rs type="person"
+                     ref="#pmb11485">Goldmann</rs> einige Zeit gemeinsam in <rs type="place"
+                     ref="#pmb213">Bad Ischl</rs> und <rs type="place" ref="#pmb415">Bad
                   Aussee</rs>.</note>? Bitte, antworte mir umgehend, denn ich muß jetzt bereits
                anfangen, eventuelle Vorkehrungen zu treffen.</p>
             <p>4.) Was weißt Du von <hi rend="latintype">
@@ -228,7 +247,8 @@
                   <rs type="work" subtype="implied" ref="#pmb65529">
                      <rs type="person" ref="#pmb65530">Altdorfer</rs>
                   </rs>
-               </hi> geſehen, von dem ich Dir <anchor type="commentary" xml:id="K_L02625-2"/>ſchrieb<note type="commentary" xml:id="K_L02625-2h">
+               </hi> geſehen, von dem ich Dir <anchor type="commentary" xml:id="K_L02625-2"
+                  />ſchrieb<note type="commentary" xml:id="K_L02625-2h">
                   <ref target="L02623" type="schnitzler-briefe" subtype="see"/>
                </note>? Wie gehts Dir <del rend="strikethrough">J</del> geſundheitlich?</p>
             <p>
@@ -237,22 +257,33 @@
                </hi>, den ich verſchiedentlich von Dir gegrüßt, läßt Dich verſchiedentlich wieder
                grüßen. Desgleichen <hi rend="latintype">
                   <rs type="person" ref="#pmb2801">Henri Albert</rs>
-               </hi>. Ich habe dieſer Tage den <anchor type="commentary" xml:id="K_L02625-3"/>Bürſten-Abzug<note type="commentary" xml:id="K_L02625-3h">Probeabzug</note> der
+               </hi>. Ich habe dieſer Tage den <anchor type="commentary" xml:id="K_L02625-3"
+                  />Bürſten-Abzug<note type="commentary" xml:id="K_L02625-3h">Probeabzug</note> der
                   <anchor type="commentary" xml:id="K_L02625-4"/>»<hi rend="latintype">
                   <rs type="work" ref="#pmb88052">Emplettes de Noël</rs>
                </hi>«<note type="commentary" xml:id="K_L02625-4h">
-                  <rs type="person" ref="#pmb2801">Henri Albert</rs>s <rs type="work" subtype="implied" ref="#pmb88052">Übersetzung</rs> von Schnitzlers <rs type="work" ref="#pmb29935">Anatol</rs>-Einakter <rs type="work" ref="#pmb30163">Weihnachts-Einkäufe</rs>
-               </note> geſehen, die <anchor type="commentary" xml:id="K_L02625-6"/>in der »<hi rend="latintype">
+                  <rs type="person" ref="#pmb2801">Henri Albert</rs>s <rs type="work"
+                     subtype="implied" ref="#pmb88052">Übersetzung</rs> von <rs type="person"
+                     ref="#pmb2121">Schnitzler</rs>s <rs type="work" ref="#pmb29935"
+                  >Anatol</rs>-Einakter <rs type="work" ref="#pmb30163">Weihnachts-Einkäufe</rs>
+               </note> geſehen, die <anchor type="commentary" xml:id="K_L02625-6"/>in der »<hi
+                  rend="latintype">
                   <rs type="work" ref="#pmb88050">Idée Libre</rs>
                </hi>« erſcheinen<note type="commentary" xml:id="K_L02625-6h">
                   <bibl>
-                     <rs type="person" ref="#pmb2121">Arthur Schnitzler</rs>: <rs type="work" ref="#pmb88052">Les Emplettes de Noël</rs>. Übersetzung <rs type="person" ref="#pmb2801">Henri Albert</rs>. In: <rs type="work" ref="#pmb88050">L'Idée
-                        libre. Revue mensuelle de Littérature et d'Art</rs>, Jg. 3,
-                     Nr. 5–6, <date>Mai–Juni 1984</date>, S. 215–225</bibl>. Am <ref target="1894-07-21" type="schnitzler-tagebuch" subtype="date-only"/> notiert
-                  Schnitzler in seinem <rs type="work" ref="#pmb33243">Tagebuch</rs>:
-                     »<quote>Schlecht übersetzt.</quote>«. <rs type="person" ref="#pmb2801">Albert</rs> gegenüber dürfte er aber ein anderes Urteil geäußert haben, denn
-                  dieser antwortet ihm in einem Brief am <date>6. 8. 1894</date>: »<quote>Dass Ihnen
-                     meine Uebersetzung so gut gefallen hat, hat mich hoch erfreut.</quote>« (<bibl>
+                     <rs type="person" ref="#pmb2121">Arthur Schnitzler</rs>: <rs type="work"
+                        ref="#pmb88052">Les Emplettes de Noël</rs>. Übers. v. <rs type="person"
+                        ref="#pmb2801">Henri Albert</rs>. In: <rs type="work" ref="#pmb88050">L'Idée
+                        libre. Revue mensuelle de Littérature et d'Art</rs>, Jg. 3, Nr. 5–6,
+                        <date>Mai–Juni 1984</date>, S. 215–225</bibl>. Am <ref target="1894-07-21"
+                     type="schnitzler-tagebuch" subtype="date-only"/> notierte <rs type="person"
+                     ref="#pmb2121">Schnitzler</rs> in seinem <rs type="work" ref="#pmb33243"
+                     >Tagebuch</rs>: »<quote>Schlecht übersetzt.</quote>« <rs type="person"
+                     ref="#pmb2801">Albert</rs> gegenüber dürfte er aber ein anderes Urteil geäußert
+                  haben, denn dieser antwortete ihm in einem Brief am <date when="1894-08-06"
+                     >6. 8. 1894</date>: »<quote>Dass Ihnen meine <rs type="work" subtype="implied"
+                        ref="#pmb88052">Uebersetzung</rs> so gut gefallen hat, hat mich hoch
+                     erfreut.</quote>« (<bibl>
                      <publisher>DLA</publisher>, HS.1985.1.2331,3</bibl>)</note> werden, da die
                andern auf Monat und Jahr hinaus keinen Platz haben.</p>
             <p>6.) <anchor type="commentary" xml:id="K_L02625-8"/>Lies »<hi rend="latintype">
@@ -261,7 +292,8 @@
                   <rs type="person" ref="#pmb65533">Quidde</rs>
                </hi>!<note type="commentary" xml:id="K_L02625-8h">Eine Lektüre der kleinen Studie
                   über den Cäsarenwahn durch <rs type="person" ref="#pmb2121">Schnitzler</rs>, die
-                  von den Zeitgenossinnen und Zeitgenossen als Schmähschrift gegen <rs type="person" ref="#pmb2566">Wilhelm II.</rs> gelesen wurde, ist bislang nicht belegt.</note>
+                  von den Zeitgenossinnen und Zeitgenossen als Schmähschrift gegen <rs type="person"
+                     ref="#pmb2566">Wilhelm II.</rs> gelesen wurde, ist bislang nicht belegt.</note>
             </p>
             <closer>7.) Viele treue Grüße! <lb/>Dein <lb/>
                <signed>Paul Goldmann</signed>
@@ -296,12 +328,16 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -330,10 +366,13 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
             </person>
             <person xml:id="pmb87771">
                <persName>
@@ -396,11 +435,14 @@
                <occupation ref="pmb116">Übersetzer/Übersetzerin</occupation>
                <occupation ref="pmb173">Redakteur/Redakteurin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118817477</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13130</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2801</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13130</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2801</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2801</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/13279</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2801</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2801</idno>
             </person>
             <person xml:id="pmb65530">
                <persName>
@@ -414,7 +456,8 @@
                   <date when="1538-02-12">1538-02-12</date>
                </death>
                <sex value="male"/>
-               <occupation ref="pmb110">Bildender Künstler/Bildende Künstlerin &gt;&gt; Maler/Malerin</occupation>
+               <occupation ref="pmb110">Bildender Künstler/Bildende Künstlerin &gt;&gt;
+                  Maler/Malerin</occupation>
                <occupation ref="pmb442">Kupferstecher/Kupferstecherin</occupation>
                <occupation ref="pmb627">Baumeister/Baumeisterin</occupation>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65530/</idno>
@@ -446,13 +489,18 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16165</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16165</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118550241</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11673</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11673</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11673</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11673</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11673.html</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb11673</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11673</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11673.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/personen/pmb11673</idno>
             </person>
             <person xml:id="pmb65533">
                <persName>
@@ -500,11 +548,15 @@
                <sex value="male"/>
                <occupation ref="pmb167">Regent/Regentin &gt;&gt; Kaiser/Kaiserin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118632892</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2566</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2566</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2566</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_21338</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2566</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb2566</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_21338</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2566</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/personen/pmb2566</idno>
             </person>
          </listPerson>
          <listBibl>
@@ -512,18 +564,21 @@
                <title>La Revue blanche</title>
                <title type="uri_gnd">https://d-nb.info/gnd/4166312-3</title>
                <note type="uri_worklink">https://gallica.bnf.fr/ark:/12148/cb344304470/date.item</note>
-               <date from="1889-01-01" to="1889-12-31">1889  – 1903</date>
+               <date from="1889-01-01" to="1889-12-31">1889 – 1903</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88057/</idno>
                <note type="work_kind">Publikationsorgan &gt;&gt; Zeitschrift</note>
             </bibl>
             <bibl xml:id="pmb36349">
                <title>Mercure de France</title>
-               <idno type="URL" subtype="wikipedia">https://fr.wikipedia.org/wiki/Mercure_de_France#Le_troisième_Mercure_de_France_(1890-1965)</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://fr.wikipedia.org/wiki/Mercure_de_France#Le_troisième_Mercure_de_France_(1890-1965)</idno>
                <note type="uri_worklink">https://gallica.bnf.fr/ark:/12148/cb34427363f/date.r=</note>
-               <date>1890  – 1965</date>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36349/</idno>
+               <date>1890 – 1965</date>
+               <idno type="URL" subtype="pmb"
+                  >https://pmb.acdh.oeaw.ac.at/apis/api2/entity/36349/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36349</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36349</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb36349</idno>
                <note type="work_kind">Publikationsorgan &gt;&gt; Zeitschrift</note>
             </bibl>
             <bibl xml:id="pmb88064">
@@ -531,7 +586,7 @@
                <note type="uri_worklink">https://gallica.bnf.fr/ark:/12148/bpt6k15527s/f577</note>
                <note type="bibliografische_angabe">Henri Albert: Les Lettres allemandes. Drames Nouveaux. In: La Revue Blanche, Jg. 6, Nr. 32, Juni 1894, S. 556–560, hier: S. 560</note>
                <author ref="pmbperson__2801" role="hat-geschaffen">Albert, Henri</author>
-               <date from="1894-06-01" to="1894-06-30">1894-06  – 1894-06</date>
+               <date from="1894-06-01" to="1894-06-30">1894-06 – 1894-06</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88064/</idno>
                <note type="work_kind">Rezension</note>
             </bibl>
@@ -540,30 +595,37 @@
                <note type="bibliografische_angabe">Arthur Schnitzler: Das Märchen. Schauspiel in drei Aufzügen. Dresden, Leipzig: E. Pierson’s Verlag 1894.</note>
                <note type="uri_worklink">https://babel.hathitrust.org/cgi/pt?id=coo.31924026341598&amp;view=1up&amp;seq=5</note>
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date>1893-12-01  – 1893-12-01</date>
+               <date>1893-12-01 – 1893-12-01</date>
                <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.04</idno>
                <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1169917</idno>
                <idno type="URL" subtype="theadok">https://theadok.at/work/38151</idno>
-               <idno type="URL" subtype="books">https://books.google.at/books?id=eUc8AQAAMAAJ&amp;q=arthur+schnitzler+das+märchen&amp;dq=arthur+schnitzler+das+märchen&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwjWwoD61YTgAhVLFCwKHfC-ApQQ6AEIKTAA</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29823</idno>
+               <idno type="URL" subtype="books"
+                  >https://books.google.at/books?id=eUc8AQAAMAAJ&amp;q=arthur+schnitzler+das+märchen&amp;dq=arthur+schnitzler+das+märchen&amp;hl=de&amp;sa=X&amp;ved=0ahUKEwjWwoD61YTgAhVLFCwKHfC-ApQQ6AEIKTAA</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29823</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29823</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29823</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29823.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29823</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29823.html</idno>
                <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
             </bibl>
             <bibl xml:id="pmb33243">
                <title>Tagebuch</title>
                <note type="uri_worklink">https://schnitzler-tagebuch.acdh.oeaw.ac.at</note>
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date>1981  – 2000</date>
+               <date>1981 – 2000</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
                <note type="work_kind">Tagebuch</note>
             </bibl>
             <bibl xml:id="pmb65529">
                <title>Laubwald mit dem heiligen Georg</title>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Laubwald_mit_dem_Heiligen_Georg</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Laubwald_mit_dem_Heiligen_Georg</idno>
                <note type="uri_worklink">https://www.sammlung.pinakothek.de/de/artwork/9pL3Qlz4eb</note>
                <title type="legacy-name-merge">Drachenkampf des hl. Georg</title>
                <author ref="pmbperson__65530" role="hat-geschaffen">Altdorfer, Albrecht</author>
@@ -578,7 +640,7 @@
                <note type="bibliografische_angabe">Arthur Schnitzler: Les Emplettes de Noël. Traduit de l’allemand par Henri Albert. In: L'Idée libre.  Revue mensuelle de Littérature et d'Art, Jg. 3, Nr. 5–6, Mai–Juni 1894, S. 215–225</note>
                <author ref="pmbperson__2801" role="hat-ubersetzt">Albert, Henri</author>
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date from="1894-05-01" to="1894-05-31">1894-05  – 1894-06</date>
+               <date from="1894-05-01" to="1894-05-31">1894-05 – 1894-06</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88052/</idno>
                <note type="work_kind">Drama &gt;&gt; Einakter</note>
             </bibl>
@@ -587,16 +649,20 @@
                <note type="bibliografische_angabe">Arthur Schnitzler: Anatol. Berlin: Bibliographisches Bureau 1892, vordatiert auf 1893</note>
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
                <author ref="pmbperson__28645" role="hat-illustriert">Coschell, Moritz</author>
-               <date>1892-10-29  – 1892-10-29</date>
+               <date>1892-10-29 – 1892-10-29</date>
                <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.03</idno>
                <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q487409</idno>
                <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-anatol</idno>
                <idno type="URL" subtype="theadok">https://theadok.at/work/32630</idno>
-               <idno type="URL" subtype="deutschestextarchiv">http://www.deutschestextarchiv.de/book/view/schnitzler_anatol_1893</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29935</idno>
+               <idno type="URL" subtype="deutschestextarchiv"
+                  >http://www.deutschestextarchiv.de/book/view/schnitzler_anatol_1893</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29935</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29935</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29935</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29935.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29935</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29935.html</idno>
                <note type="work_kind">Drama &gt;&gt; Einakterzyklus</note>
             </bibl>
             <bibl xml:id="pmb30163">
@@ -605,16 +671,19 @@
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
                <date when="1891-12-24">24.12.1891</date>
                <idno type="URL" subtype="theadok">https://theadok.at/work/30732</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30163</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30163</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30163</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30163</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30163.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30163</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30163.html</idno>
                <note type="work_kind">Drama &gt;&gt; Einakter</note>
             </bibl>
             <bibl xml:id="pmb88050">
                <title>L'Idée libre. Revue mensuelle de Littérature et d'Art</title>
                <note type="uri_worklink">https://gallica.bnf.fr/ark:/12148/cb32788237b/date.item</note>
-               <date from="1892-01-01" to="1892-12-31">1892  – 1895</date>
+               <date from="1892-01-01" to="1892-12-31">1892 – 1895</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88050/</idno>
                <note type="work_kind">Publikationsorgan &gt;&gt; Zeitschrift</note>
             </bibl>
@@ -644,18 +713,23 @@
                   <placeName ref="pmb166">Frankreich</placeName>
                   <geo>46,0 2,0</geo>
                </location>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb182</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
@@ -679,15 +753,19 @@
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
             <place xml:id="pmb42671">
                <placeName>rue Feydeau</placeName>
@@ -700,20 +778,24 @@
                   <placeName ref="pmb182">Paris</placeName>
                   <geo>48,85341 2,3488</geo>
                </location>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42671/</idno>
+               <idno type="URL" subtype="pmb"
+                  >https://pmb.acdh.oeaw.ac.at/apis/api2/entity/42671/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42671</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42671</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb42671</idno>
             </place>
             <place xml:id="pmb45258">
                <placeName>München</placeName>
                <placeName type="legacy-name-merge">München?</placeName>
-               <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2224/</placeName>
+               <placeName type="legacy-uri-merge"
+                  >http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2224/</placeName>
                <placeName type="legacy-uri-merge">http://sws.geonames.org/6559171/</placeName>
                <placeName type="legacy-name-merge">Munich</placeName>
                <placeName type="legacy-uri-merge">http://sws.geonames.org/2867714/</placeName>
                <placeName type="alternative-name">Monacho</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4127793-4</placeName>
-               <placeName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A000355</placeName>
+               <placeName type="legacy-uri-merge"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/A000355</placeName>
                <placeName type="legacy-uri-merge">https://www.geonames.org/3220837</placeName>
                <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
                <desc type="entity_type_id">1415</desc>
@@ -732,9 +814,12 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/38129</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/45258/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2867714/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb45258</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb45258</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb45258.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb45258</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb45258</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb45258.html</idno>
             </place>
             <place xml:id="pmb213">
                <placeName>Bad Ischl</placeName>
@@ -749,16 +834,21 @@
                   <geo>47,75 13,5</geo>
                </location>
                <idno type="URL" subtype="geonames">http://sws.geonames.org/2782052/</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb213</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb213</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/213</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb213</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb213</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb213.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb213</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb213</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb213.html</idno>
             </place>
             <place xml:id="pmb415">
                <placeName>Bad Aussee</placeName>
                <placeName type="fruherer_ortsname">Markt Aussee</placeName>
-               <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/22650/</placeName>
+               <placeName type="legacy-uri-merge"
+                  >http://pmb.acdh.oeaw.ac.at/apis/api2/entity/22650/</placeName>
                <placeName type="legacy-uri-merge">http://sws.geonames.org/7873491/</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>
@@ -771,16 +861,20 @@
                </location>
                <idno type="URL" subtype="geonames">http://sws.geonames.org/2782070/</idno>
                <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q251065</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb415</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb415</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/415</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb415</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb415.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb415</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb415.html</idno>
             </place>
          </listPlace>
          <listOrg>
             <org xml:id="pmb29442">
                <orgName>Frankfurter Zeitung</orgName>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Frankfurter_Zeitung</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Frankfurter_Zeitung</idno>
                <desc type="entity_type">Tageszeitungsredaktion</desc>
                <desc type="entity_type_id">972</desc>
                <location type="located_in_place">
@@ -788,24 +882,31 @@
                   <geo>50,11552 8,68417</geo>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/2925533/</idno>
                   <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q1794</idno>
-                  <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb146</idno>
+                  <idno type="URL" subtype="bahrschnitzler"
+                     >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb146</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/146</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46955/</idno>
                   <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4018118-2</idno>
-                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb146</idno>
+                  <idno type="URL" subtype="schnitzler-briefe"
+                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb146</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64181/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
-                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb146</idno>
-                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
+                  <idno type="URL" subtype="kraus"
+                     >https://kraus.wienbibliothek.at/register/orte/pmb146</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch"
+                     >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
                </location>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29442</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb29442</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29442</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29442</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/institutionen/pmb29442</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb29442</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/institutionen/pmb29442</idno>
                <note type="apis_dates">
-                  <date>1856  – 1943</date>
+                  <date>1856 – 1943</date>
                </note>
             </org>
          </listOrg>
