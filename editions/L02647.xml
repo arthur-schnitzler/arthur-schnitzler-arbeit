@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L02647"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02647"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -91,12 +89,16 @@
                         </handDesc>
                         <additions>
                            <incident type="receiver">
-                              <desc>mit rotem Buntstift unterhalb des Textes »<quote>Paul Goldman̅ <lb/>
-                                    <date>2<unclear>7</unclear>. 4. 90</date>. </quote>«</desc>
+                              <desc>mit rotem Buntstift unterhalb des Textes »<quote>Paul Goldma<c
+                                       rendition="#gemination-n"/>
+                                    <space unit="chars" quantity="1"/>
+                                    <lb/>
+                                    <date when="1890-04-27"
+                                    >2<unclear>7</unclear>. 4. 90</date>.</quote>« vermerkt</desc>
                            </incident>
                            <incident type="receiver">
-                              <desc>mit Bleistift das Datum »<quote>
-                                    <date>27/ 4 90</date>
+                              <desc>mit Bleistift seitlich auf der ersten Seite das Datum »<quote>
+                                    <date when="1890-04-27">27/ 4 90</date>
                                  </quote>« vermerkt</desc>
                            </incident>
                         </additions>
@@ -123,28 +125,30 @@
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="#pmb11485">Goldmann, Paul</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00002">Joachim an Schnitzler, 31. 1. 1890</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00003">Konstantin an Schnitzler, 22. 5. 1890</ref>
-               <ref subtype="previous_letter"
-                    type="withinCorrespondence"
-                    target="L02646">Goldmann an Schnitzler, 6. 12. 1889</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L02648">Goldmann an Schnitzler, 11. 8. 1890</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00002">Joachim an
+                  Schnitzler, 31. 1. 1890</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00003">Konstantin an
+                  Schnitzler, 22. 5. 1890</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" target="L02646">Goldmann
+                  an Schnitzler, 6. 12. 1889</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" target="L02648">Goldmann an
+                  Schnitzler, 11. 8. 1890</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <encodingDesc>
          <refsDecl>
-            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only, 
-            e.g. @type="schnitzler-tagebuch" @target="1891-05-15". The complete URI is: 
-            'https://schnitzler-tagebuch.acdh.oeaw.ac.at/v/editions/entry__1891-05-15'
-        </ab>
+            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only,
+               e.g. @type="schnitzler-tagebuch" @target="1891-05-15". The complete URI is:
+               'https://schnitzler-tagebuch.acdh.oeaw.ac.at/v/editions/entry__1891-05-15' </ab>
          </refsDecl>
       </encodingDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2022-04-21">Angelegt</change>
          <change who="LU" when="2022-05-11">Durchsicht</change>
          <change who="LU" when="2022-05-11">Index check</change>
          <change who="MAM" when="2022-05-31">Durchsicht</change>
+         <change who="LU" when="2022-10-27">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -152,12 +156,17 @@
          <div type="writingSession" n="1">
             <lg type="poem">
                <l>
-                  <pb facs="HS.NZ85.1.3162_0013-1"/>Weißt Du es noch, mein liebes
-                  Kind?</l>
+                  <pb facs="HS.NZ85.1.3162_0013-1"/>Weißt Du es noch, mein liebes Kind?</l>
                <l>– viel’ Jahre ſeitdem verfloſſen ſind –</l>
-               <l>Es war am <anchor type="commentary" xml:id="K_L02647-11"/>Sonntag<space unit="chars" quantity="1"/>Nachmittag<note type="commentary" xml:id="K_L02647-11h">Das Gedicht dürfte den Besuch bei <rs type="person" ref="#pmb2121">Schnitzler</rs> verarbeiten, da auch der betreffende Eintrag
-                     in <rs type="person" ref="#pmb2121">Schnitzler</rs>s <rs type="work" ref="#pmb33243">Tagebuch</rs> vom <ref target="1890-04-27" subtype="date-only" type="schnitzler-tagebuch"/> – einem Sonntag – Motive
-                     enthält, die im folgenden aufgegriffen werden: »<quote>Gewitter.― Nm. <rs type="person" ref="#pmb11485">Paul Goldmann</rs>,
+               <l>Es war am <anchor type="commentary" xml:id="K_L02647-11"/>Sonntag<space
+                     unit="chars" quantity="1"/>Nachmittag<note type="commentary"
+                     xml:id="K_L02647-11h">Das Gedicht dürfte den Besuch bei <rs type="person"
+                        ref="#pmb2121">Schnitzler</rs> verarbeiten, da auch der betreffende Eintrag
+                     in <rs type="person" ref="#pmb2121">Schnitzler</rs>s <rs type="work"
+                        ref="#pmb33243">Tagebuch</rs> vom <ref target="1890-04-27"
+                        subtype="date-only" type="schnitzler-tagebuch"/> – einem Sonntag – Motive
+                     enthält, die im Gedicht aufgegriffen werden: »<quote>Gewitter.― Nm. <rs
+                           type="person" ref="#pmb11485">Paul Goldmann</rs>,
                      Testament</quote>«.</note>
                </l>
                <l>Und ich auf Deinem Divan lag,</l>
@@ -181,18 +190,18 @@
                      </del>
                      <add place="inline">M</add>
                   </subst>it wenig Poſe und viel Bedacht</l>
-               <l>Am Tiſche dein Teſtament gemacht,</l>
+               <l>Am Tiſche Dein Teſtament gemacht,</l>
                <l>Es war ein Scherz, eine dumme Idee,</l>
                <l>Auf daß der langweilige Sonntag vergeh’ –</l>
                <l>Und doch es uns kalt über den Rücken kroch –</l>
                <l>Wir ſtanden im Banne des »vielleicht doch« –</l>
-               <l>Und überdies kam mit dumpfem Schlag</l>
+               <l>Und überdies kam mit dumpfem Sch<unclear>la</unclear>g</l>
                <l>Zurück das Gewitter von Vormittag –</l>
-               <l>Ein Donner am Sonntag – fern, <anchor type="commentary" xml:id="K_L02647-1"/>ſordinirt<note type="commentary" xml:id="K_L02647-1h">gedämpft</note> –</l>
+               <l>Ein Donner am Sonntag – fern, <anchor type="commentary" xml:id="K_L02647-1"
+                     />ſordinirt<note type="commentary" xml:id="K_L02647-1h">gedämpft</note> –</l>
                <l>Du weißt, was da für Stimmung gebiert.</l>
                <l>
-                  <pb facs="HS.NZ85.1.3162_0014-0"/>Kurz nur, als ich aufthat meinen
-                  Hut –</l>
+                  <pb facs="HS.NZ85.1.3162_0014-0"/>Kurz nur, als ich aufthat meinen Hut –</l>
                <l>Ich kann es Dir ſagen, mir war nicht gut,</l>
                <l>Und als ich einſam gewandelt nach Haus</l>
                <l>Stak mir in den Gliedern ein frierender Graus.</l>
@@ -204,7 +213,8 @@
                <l>Am ſelben Sonntag, zur ſelben Stund’</l>
                <l>Da lag ich da mit zuckendem Mund</l>
                <l>Und der letzte Eindruck, den ich vernahm,</l>
-               <l>Das war ein Donner, der freche Bann.</l>
+               <l>Das war ein Donner, der freche Bann<unclear>:</unclear>
+               </l>
                <l>Und wieder <subst>
                      <del rend="strikethrough">iſt es</del>
                      <add place="above">ſank</add>
@@ -215,12 +225,12 @@
                <l>Das Glühlicht ſcheint Dir in’s Geſicht,</l>
                <l>Ich ſtarre Dich an und Du weißt es nicht,</l>
                <l>
-                  <pb facs="HS.NZ85.1.3162_0014-1"/>Es packt Dich ein Schauder, Du
-                     <del rend="strikethrough">
+                  <pb facs="HS.NZ85.1.3162_0014-1"/>Es packt Dich ein Schauder, Du <del
+                     rend="strikethrough">
                      <unclear>a</unclear>ch</del> ahnſt nicht warum,</l>
                <l>Du möchtſeſt ſprechen und bleibſt doch ſtumm –</l>
                <l>Von fernher zieht der Donner heran –</l>
-               <l>Nein, nein, bleib nur ſtill, Du armer Mann,</l>
+               <l>Nein, nein, bleib nur ſtill<unclear>e</unclear>, Du armer Mann,</l>
                <l>Ich thue Dir nichts, ich bin nur da,</l>
                <l>Und jetzt, wo ich endlich Dich wiederſah,</l>
                <l>Jetzt kriech’ ich befriedigt zurück unter’n Stein –</l>
@@ -256,12 +266,19 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp51209</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0028183c</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q2059817</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -290,29 +307,39 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
+               <idno type="URL" subtype="kraus1933"
+                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q44331</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb33243">
                <title>Tagebuch</title>
-               <note type="uri_worklink">https://schnitzler-tagebuch.acdh.oeaw.ac.at</note>
+               <title type="werk_link">https://schnitzler-tagebuch.acdh.oeaw.ac.at</title>
                <author ref="pmbperson__2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date>1981  – 2000</date>
+               <date>1981 – 2000</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb33243</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
                <note type="work_kind">Tagebuch</note>
             </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
-               <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -332,18 +359,21 @@
                   <geo>47,33333 13,33333</geo>
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
-               <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/entity/Q1741</idno>
             </place>
          </listPlace>
       </back>
