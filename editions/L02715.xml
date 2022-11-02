@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L02715"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02715"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -103,9 +101,9 @@
                                     <placeName ref="#pmb50">Wien 1/1 1</placeName>
                                     <date when="1893-09-13">
                                        <supplied>1</supplied>3/9.  93</date>
-                                    <time>8–9½V<unclear>.</unclear>
+                                    <time>8–9½ V<unclear>.</unclear>
                                     </time>
-                                    <addSpan>Bestellt</addSpan>
+                                    <addSpan><supplied>B</supplied>estellt</addSpan>
                                  </stamp>
                               </desc>
                            </incident>
@@ -138,27 +136,29 @@
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="#pmb11485">Goldmann, Paul</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00261">Hofmannsthal an Schnitzler, [9. 9. 1893]</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00262">Schnitzler an Beer-Hofmann, 13. 9. 1893</ref>
-               <ref subtype="previous_letter"
-                    type="withinCorrespondence"
-                    target="L02714">Goldmann an Schnitzler, 4. 9. [1893]</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L02716">Goldmann an Schnitzler, 14. 9. [1893]</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00261">Hofmannsthal
+                  an Schnitzler, [9. 9. 1893]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00262">Schnitzler an
+                  Beer-Hofmann, 13. 9. 1893</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" target="L02714">Goldmann
+                  an Schnitzler, 4. 9. [1893]</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" target="L02716">Goldmann an
+                  Schnitzler, 14. 9. [1893]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <encodingDesc>
          <refsDecl>
-            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only, 
-            e.g. @type="schnitzler-tagebuch" @target="1891-05-15". The complete URI is: 
-            'https://schnitzler-tagebuch.acdh.oeaw.ac.at/v/editions/entry__1891-05-15'
-        </ab>
+            <ab>References to Arthur Schnitzler’s diary online consist of the relevant dates only,
+               e.g. @type="schnitzler-tagebuch" @target="1891-05-15". The complete URI is:
+               'https://schnitzler-tagebuch.acdh.oeaw.ac.at/v/editions/entry__1891-05-15' </ab>
          </refsDecl>
       </encodingDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2022-07-04">Angelegt</change>
          <change who="MAM" when="2022-08-31">Durchsicht</change>
          <change who="MAM" when="2022-08-31">Index check</change>
+         <change who="LU" when="2022-11-02">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -173,13 +173,14 @@
                   <hi rend="latintype">Herrn</hi>
                </addrLine>
                <addrLine>
-                  <hi rend="latintype">Dr. Arthur <anchor type="textConst" xml:id="T_L02715-1"/>Schnitzler<note type="textConst" xml:id="T_L02715-1h">zur Verdeutlichung aufgrund von
-                     Wasserflecken neuerlich der Nachname »<quote>Schnitzler</quote>« darüber
-                     geschrieben</note>
+                  <hi rend="latintype">Dr. Arthur <anchor type="textConst" xml:id="T_L02715-1"
+                        />Schnitzler<note type="textConst" xml:id="T_L02715-1h">zur Verdeutlichung
+                        aufgrund von Wasserflecken neuerlich der Nachname
+                        »<quote>Schnitzler</quote>« darüber geschrieben</note>
                   </hi>
                </addrLine>
                <addrLine>
-                  <hi rend="latintype">
+                  <hi rend="pre-print">in</hi><space unit="chars" quantity="1"/><hi rend="latintype">
                      <rs type="place" ref="#pmb50">Wien</rs>
                   </hi>
                </addrLine>
@@ -194,16 +195,18 @@
                   <pb facs="HS.NZ85.1.3163_0059"/>
                   <hi rend="latintype">
                      <rs type="place" ref="#pmb30">Salzburg</rs>
-                  </hi>, <date when="1893-09-12">12. September</date>
+                  </hi>, <date when="1893-09-12">12. September</date>.
                </p>
                <salute rend="center">Mein lieber Freund!</salute>
             </opener>
             <p>Ich bin in <hi rend="latintype">
                   <rs type="place" ref="#pmb30">Salzburg</rs>
-               </hi>, <rs type="place" ref="#pmb93043">Hotel Goldenes Horn</rs>, <anchor type="commentary" xml:id="K_L02715-2"/>
+               </hi>, <rs type="place" ref="#pmb93043">Hotel Goldenes Horn</rs>, <anchor
+                  type="commentary" xml:id="K_L02715-2"/>
                <rs type="place" subtype="implied" ref="#pmb89852">Getreidemarkt</rs>
                <note type="commentary" xml:id="K_L02715-2h">
-                  <rs type="place" ref="#pmb89852">Getreidegasse</rs>, <ref type="schnitzler-briefe" subtype="cf" target="L02716"/>
+                  <rs type="place" ref="#pmb89852">Getreidegasse</rs>, <ref type="schnitzler-briefe"
+                     subtype="cf" target="L02716"/>
                </note>, und erwarte Dich mit Ungeduld. Bin <date when="1893-09-11">geſtern</date>
                <space unit="chars" quantity="1"/>
                <time>Abend</time> angekommen und werde etwa acht Tage bleiben. Die Freude, Dich zu
@@ -242,12 +245,16 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb11485</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -276,10 +283,13 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -297,10 +307,13 @@
                   <geo>47,41667 13,25</geo>
                </location>
                <idno type="URL" subtype="geonames">http://sws.geonames.org/2766818/</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb30</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb30</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb30</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb30</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
@@ -329,15 +342,19 @@
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
             <place xml:id="pmb412">
                <placeName>Grillparzerstraße</placeName>
@@ -350,10 +367,13 @@
                   <placeName ref="pmb51">I., Innere Stadt</placeName>
                   <geo>48,20769 16,37049</geo>
                </location>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb412</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb412</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/412</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb412</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb412.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb412</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb412.html</idno>
             </place>
             <place xml:id="pmb93043">
                <placeName>Hotel Goldenes Horn</placeName>
