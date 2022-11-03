@@ -2987,7 +2987,7 @@
       </xsl:if>
       <xsl:text>\normalsize\beginnumbering</xsl:text>
       <!-- Hier werden Briefempfänger und Briefsender in den jeweiligen Index gesetzt -->
-      <xsl:choose>
+      <!--<xsl:choose>
          <xsl:when
             test="not(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@when)">
             <xsl:choose>
@@ -3021,7 +3021,7 @@
                select="foo:briefsender-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@when, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"
             />
          </xsl:otherwise>
-      </xsl:choose>
+      </xsl:choose>-->
       <!-- Das Folgende schreibt Titel in den Anhang zum Kommentar -->
       <!-- Zuerst mal Abstand, ob klein oder groß, je nachdem, ob Archivsignatur und Kommentar war -->
       <xsl:choose>
@@ -3165,7 +3165,7 @@
             select="foo:abgedruckte-workNameRoutine(substring(ancestor::TEI/teiHeader/fileDesc/titleStmt/title[@level = 'a']/@ref, 1, 7), false())"
          />
       </xsl:if>
-      <xsl:if test="ancestor::TEI/teiHeader/profileDesc/correspDesc">
+      <!--<xsl:if test="ancestor::TEI/teiHeader/profileDesc/correspDesc">
          <xsl:choose>
             <xsl:when
                test="not(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@when)">
@@ -3195,7 +3195,7 @@
                />
             </xsl:otherwise>
          </xsl:choose>
-      </xsl:if>
+      </xsl:if>-->
    </xsl:template>
    <!-- Das ist speziell für die Behandlung von Bildern, der eigentliche body für alles andere kommt danach -->
    <xsl:template match="image">
