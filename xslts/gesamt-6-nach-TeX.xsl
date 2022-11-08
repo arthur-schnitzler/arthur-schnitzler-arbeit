@@ -1470,29 +1470,29 @@
          <!-- Der Hauptautor, aber mit mehr Schriften -->
          <xsl:when
             test="count(distinct-values(handNote/@corresp)) = 1 and handNote[1]/@corresp = ancestor::TEI/teiHeader[1]/fileDesc[1]/titleStmt[1][not(child::author[2])]/author[1]/@ref">
-               <xsl:variable name="handDesc-v" select="current()"/>
-               <xsl:for-each select="distinct-values(handNote/@corresp)">
-                  <xsl:variable name="corespi" select="."/>
-                  <xsl:text>Handschrift: </xsl:text>
-                  <xsl:choose>
-                     <xsl:when test="count($handDesc-v/handNote[@corresp = $corespi]) = 1">
-                        <xsl:value-of select="foo:handNote($handDesc-v/handNote[@corresp = $corespi])"
-                        />
-                     </xsl:when>
-                     <xsl:otherwise>
-                        <xsl:for-each select="$handDesc-v/handNote[@corresp = $corespi]">
-                           <xsl:variable name="poschitzon" select="position()"/>
-                           <xsl:value-of select="$poschitzon"/>
-                           <xsl:text>)&#160;</xsl:text>
-                           <xsl:value-of select="foo:handNote(current())"/>
-                           <xsl:text>\hspace{1em}</xsl:text>
-                        </xsl:for-each>
-                     </xsl:otherwise>
-                  </xsl:choose>
-                  <xsl:if test="not(position() = last())">
-                     <xsl:text>\newline{}</xsl:text>
-                  </xsl:if>
-               </xsl:for-each>
+            <xsl:variable name="handDesc-v" select="current()"/>
+            <xsl:for-each select="distinct-values(handNote/@corresp)">
+               <xsl:variable name="corespi" select="."/>
+               <xsl:text>Handschrift: </xsl:text>
+               <xsl:choose>
+                  <xsl:when test="count($handDesc-v/handNote[@corresp = $corespi]) = 1">
+                     <xsl:value-of select="foo:handNote($handDesc-v/handNote[@corresp = $corespi])"
+                     />
+                  </xsl:when>
+                  <xsl:otherwise>
+                     <xsl:for-each select="$handDesc-v/handNote[@corresp = $corespi]">
+                        <xsl:variable name="poschitzon" select="position()"/>
+                        <xsl:value-of select="$poschitzon"/>
+                        <xsl:text>)&#160;</xsl:text>
+                        <xsl:value-of select="foo:handNote(current())"/>
+                        <xsl:text>\hspace{1em}</xsl:text>
+                     </xsl:for-each>
+                  </xsl:otherwise>
+               </xsl:choose>
+               <xsl:if test="not(position() = last())">
+                  <xsl:text>\newline{}</xsl:text>
+               </xsl:if>
+            </xsl:for-each>
             
             
          </xsl:when>
@@ -1505,11 +1505,11 @@
                   <xsl:value-of select="foo:handNote(handNote)"/>
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:variable name="corespi-name"
-                     select="key('person-lookup', (handNote/@corresp), $persons)/tei:persName"
+                  <xsl:variable name="coorespi-name"
+                     select="key('person-lookup', (handNote/@corresp), $persons)[1]/persName[1]"
                      as="node()?"/>
                   <xsl:value-of
-                     select="concat($corespi-name/tei:forename, ' ', $corespi-name/tei:surname)"/>
+                     select="concat($coorespi-name/forename, ' ', $coorespi-name/surname)"/>
                   <xsl:text>: </xsl:text>
                   <xsl:value-of select="foo:handNote(handNote)"/>
                </xsl:otherwise>
@@ -1520,10 +1520,10 @@
             <xsl:for-each select="distinct-values(handNote/@corresp)">
                <xsl:variable name="corespi" select="."/>
                <xsl:variable name="corespi-name"
-                  select="key('person-lookup', ($corespi), $persons)/tei:persName" as="node()?"/>
+                  select="key('person-lookup', ($corespi[1]), $persons)[1]/persName[1]" as="node()?"/>
                <xsl:text>Handschrift </xsl:text>
                <xsl:value-of
-                  select="concat($corespi-name/tei:forename, ' ', $corespi-name/tei:surname)"/>
+                  select="concat($corespi-name/forename, ' ', $corespi-name/surname)"/>
                <xsl:text>: </xsl:text>
                <xsl:choose>
                   <xsl:when test="count($handDesc-v/handNote[@corresp = $corespi]) = 1">
