@@ -5538,6 +5538,26 @@
       </xsl:if>
       <xsl:value-of select="replace(@target, '.html','')"/>
    </xsl:template>
+   <xsl:template match="ref[@type = 'schnitzler-bahr']">
+      <xsl:if test="not(@subtype = 'date-only')">
+         <xsl:choose>
+            <xsl:when test="@subtype = 'see'">
+               <xsl:text>siehe </xsl:text>
+            </xsl:when>
+            <xsl:when test="@subtype = 'cf'">
+               <xsl:text>vgl. </xsl:text>
+            </xsl:when>
+            <xsl:when test="@subtype = 'See'">
+               <xsl:text>Siehe </xsl:text>
+            </xsl:when>
+            <xsl:when test="@subtype = 'Cf'">
+               <xsl:text>Vgl. </xsl:text>
+            </xsl:when>
+         </xsl:choose>
+         <xsl:text>Bahr/Schnitzler, </xsl:text>
+      </xsl:if>
+      <xsl:value-of select="replace(@target, '.html','')"/>
+   </xsl:template>
    <xsl:template match="ref[@type = 'url']">
       <xsl:text>\uline{\url{</xsl:text>
       <xsl:value-of select="(@target)"/>

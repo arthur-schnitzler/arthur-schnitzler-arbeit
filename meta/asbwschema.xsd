@@ -82,6 +82,7 @@
                   <xs:enumeration value="schnitzler-tagebuch"/>
                   <xs:enumeration value="schnitzler-briefe"/>
                   <xs:enumeration value="schnitzler-lektueren"/>
+                  <xs:enumeration value="schnitzler-bahr"/>
                   <xs:enumeration value="withinCorrespondence"/>
                   <xs:enumeration value="withinCollection"/>
                   <xs:enumeration value="belongsToCorrespondence"/>
@@ -1035,7 +1036,7 @@
       </xs:attribute>
       <xs:attribute ref="xml:id" use="required"/>
       <xs:assert
-         test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren')] or not(tei:ref)"/>
+         test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren' or @type = 'schnitzler-bahr')] or not(tei:ref)"/>
       <xs:assert test="not(descendant::tei:note)"/>
    </xs:complexType>
    <xs:complexType name="backNote_type-org">
