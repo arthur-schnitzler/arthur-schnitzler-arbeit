@@ -636,8 +636,6 @@
          <xs:element ref="tei:ref" maxOccurs="unbounded" minOccurs="0"/>
       </xs:all>
    </xs:complexType>
-      
-   
    <xs:element name="desc">
       <xs:alternative type="back_desc_type" test="@type = 'entity_type' or @type = 'entity_type_id'"/>
       <xs:alternative type="incident_desc_type" test="not(@type)"/>
@@ -1036,7 +1034,8 @@
       </xs:attribute>
       <xs:attribute ref="xml:id" use="required"/>
       <xs:assert
-         test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren' or @type = 'schnitzler-bahr')] or not(tei:ref)"/>
+         test="tei:ref[(@subtype = 'see' or @subtype = 'cf' or @subtype = 'See' or @subtype = 'Cf' or @subtype = 'date-only' or not(@subtype)) and 
+         (@type = 'schnitzler-tagebuch' or @type = 'schnitzler-briefe' or @type = 'schnitzler-lektueren' or @type = 'schnitzler-bahr')] or not(tei:ref)"/>
       <xs:assert test="not(descendant::tei:note)"/>
    </xs:complexType>
    <xs:complexType name="backNote_type-org">
