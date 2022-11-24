@@ -11,6 +11,25 @@
         <xsl:element name="report">
 
             <xsl:text>&#xa;</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+            <xsl:text>In der zweiten Projektlaufzeit wurden Stand </xsl:text>
+            <xsl:value-of select="current-date()"/>
+            <xsl:text> </xsl:text>
+            <xsl:value-of
+                select="count($editions[number(substring-after(//tei:TEI/@xml:id, 'L0')) > 2579])"/>
+            <xsl:text> neue Dokumente mit insgesamt </xsl:text>
+            <xsl:value-of
+                select="sum($editions[number(substring-after(//tei:TEI/@xml:id, 'L0')) > 2579]//tei:revisionDesc/../../count(//tei:pb))"/>
+            <xsl:text> Seiten angelegt. Davon wurden bereits </xsl:text>
+            <xsl:value-of
+                select="count($editions[number(substring-after(//tei:TEI/@xml:id, 'L0')) > 2579]//tei:revisionDesc[@status = 'approved'])"/>
+            <xsl:text> Dokumente bzw. </xsl:text>
+            <xsl:value-of
+                select="sum($editions[number(substring-after(//tei:TEI/@xml:id, 'L0')) > 2579]//tei:revisionDesc[@status = 'approved']/../../count(//tei:pb))"/>
+            <xsl:text> Seiten fertiggestellt.</xsl:text>
+            <xsl:text>&#xa;</xsl:text>
+
+            <xsl:text>&#xa;</xsl:text>
             <xsl:text>Martin, diese Dokumente solltest du noch durchsehen:</xsl:text>
             <xsl:text>&#xa;</xsl:text>
 
@@ -59,16 +78,6 @@
                 </xsl:if>
             </xsl:for-each>
 
-            <xsl:text>&#xa;</xsl:text>
-            <xsl:text>In der zweiten Projektlaufzeit sind Stand </xsl:text>
-            <xsl:value-of select="current-dateTime()"/>
-            <xsl:text> bereits </xsl:text>
-            <xsl:value-of
-                select="count($editions[number(substring-after(//tei:TEI/@xml:id, 'L0')) > 2579]//tei:revisionDesc[@status = 'approved'])"/>
-            <xsl:text> Dokumente bzw. </xsl:text>
-            <xsl:value-of
-                select="sum($editions[number(substring-after(//tei:TEI/@xml:id, 'L0')) > 2579]//tei:revisionDesc[@status = 'approved']/../../count(//tei:pb))"/>
-            <xsl:text> Seiten fertiggestellt worden.</xsl:text>
             <xsl:text>&#xa;</xsl:text>
 
         </xsl:element>
