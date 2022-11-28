@@ -1223,14 +1223,6 @@
          </xsl:if>
       </xsl:for-each>
       <xsl:text>}</xsl:text>
-      <xsl:if test="(descendant::anchor/@type='commentary') or (descendant::anchor/@type='textConst') or (descendant::hi[@rend='underline']/@n &gt; 2)">
-         <xsl:text>
-            \footnotesize
-\begin{ledgroupsized}[t]{11.5cm}
-\doendnotes{C}
-\end{ledgroupsized}
-         </xsl:text>
-      </xsl:if>
       <xsl:text>\input{../tex-inputs/latex-leseansicht-abspann}
       </xsl:text>
    </xsl:template>
