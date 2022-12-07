@@ -4212,9 +4212,16 @@
    </xsl:template>
    <xsl:template match="gap[@unit = 'lines' and @reason = 'illegible']">
       <xsl:text>\textcolor{gray}{[</xsl:text>
-      <xsl:value-of select="@quantity"/>
-      <xsl:text> Zeilen unleserlich{]} </xsl:text>
-      <xsl:text>}</xsl:text>
+      <xsl:choose>
+         <xsl:when test="@quantity=1">
+            <xsl:text>unleserliche Zeile</xsl:text>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:value-of select="@quantity"/>
+            <xsl:text> Zeilen unleserlich</xsl:text>
+         </xsl:otherwise>
+      </xsl:choose>
+      <xsl:text>{]} }</xsl:text>
    </xsl:template>
    <xsl:template match="gap[@reason = 'outOfScope']">
       <xsl:text>{[}\ldots{]}</xsl:text>
