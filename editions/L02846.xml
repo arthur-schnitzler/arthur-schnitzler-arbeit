@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02846"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L02846"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -80,11 +82,20 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <desc type="brief"/>
+                           <desc type="_blaetter" n="2"/>
+                           <desc type="_seiten" n="6"/>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="lateinische-kurrent"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Datum »<quote>
+                                    <date when="1898-04-21">21/4 98</date>
+                                 </quote>« vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -98,12 +109,13 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1898-04-21" n="2">21. 4. [1898]</date>
+               <date when="1898-04-21" n="02">21. 4. [1898]</date>
                <placeName ref="#pmb118674">Indischer Ozean</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
+               <date evidence="conjecture" notBefore="1898-04-22" notAfter="1898-04-26">[22. 4. 1898 – 26. 4. 1898?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -129,34 +141,34 @@
    <text>
       <body>
          <div type="writingSession" n="1">
-            <pb facs="HS.NZ85.1.3168_0022-1"/>
-            <dateline>
-               <date>21. April</date>, <rs type="place" ref="">Indiſcher</rs>
-            </dateline>
-            <dateline>
-               <rs type="place" ref="">Ocean</rs>.</dateline>
-            <salute>Mein lieber Freund,</salute>
+            <opener>
+               <p rend="center">
+                  <pb facs="HS.NZ85.1.3168_0022-1"/>
+                  <hi rend="capitals">
+                     <rs type="org" ref="">Dampfer »Preussen«</rs>
+                  </hi>
+               </p>
+               <p rend="center">
+                  <date when="1898-04-21">21. April</date>, <rs type="place" ref="#pmb118674">Indiſcher Ocean</rs>.</p>
+               <salute rend="center">Mein lieber Freund,</salute>
+            </opener>
             <p>
                <date>Morgen</date> iſt Poſtanſchluß in <hi rend="latintype">
                   <rs type="place" ref="">Ceylon</rs>
                </hi>, und ich will Dir einen herzlichen Gruß ſenden. </p>
             <p>Die Reiſe iſt bisher wenig erfreulich. Ich leide abwechſelnd unter der Seekrankheit
-               und unter der nanenloſen Hitze. Das geht ſo ſeit dem <rs type="place" ref=""
-                  >Rothen</rs>
-               <rs type="place" ref="">Meer</rs>, alſo ſeit zehn Tagen <pb
-                  facs="HS.NZ85.1.3168_0023-0"/> und es wird täglich ſchlimmer, je mehr wir an den
+               und unter der nanenloſen Hitze. Das geht ſo ſeit dem <rs type="place" ref="">Rothen</rs>
+               <rs type="place" ref="">Meer</rs>, alſo ſeit zehn Tagen <pb facs="HS.NZ85.1.3168_0023-0"/> und es wird täglich ſchlimmer, je mehr wir an den
                   <hi rend="latintype">
                   <rs type="place" ref="">Aequator</rs>
                </hi> herankommen. <date>Heut</date> haben wir 36 Grad (Celsius), und dazu ncht ein
                Lüftchen Wind. In der Nacht gibt es keine Abkühlung, und die enge Cabine iſt ein
                entſetzlicher Aufenthalt. An Schlafen iſt kaum zu denken. Man dämmert ein paar
                Stunden hin zwiſchen Wachen <unclear>u.</unclear> Schlaf und
-               ſpr<unclear>i</unclear>ngt beim erſten Lichtſtrahl wieder auf die Beine, froh aus <pb
-                  facs="HS.NZ85.1.3168_0023-1"/> dem dumpfen Kerkerloch herauszukommen. Dazu habe
+               ſpr<unclear>i</unclear>ngt beim erſten Lichtſtrahl wieder auf die Beine, froh aus <pb facs="HS.NZ85.1.3168_0023-1"/> dem dumpfen Kerkerloch herauszukommen. Dazu habe
                ich einen <del rend="strikethrough">
                   <unclear>du</unclear>
-               </del> durch Seekrankheit u. heißes trinken unheilbar verdorbenen Magen. Und in <hi
-                  rend="latintype">
+               </del> durch Seekrankheit u. heißes trinken unheilbar verdorbenen Magen. Und in <hi rend="latintype">
                   <rs type="place" ref="">China</rs>
                </hi> ſollen wir in den heißen Sommer hineinkommen! Das kann gut werden. Das
                Schlimmſte aber iſt, daß mir das Arbeiten ſo ſchlecht von der Hand geht. Ich zwinge
@@ -165,8 +177,7 @@
                und conventionell Alles herauskommt. Ich reihe mühſam Eindrückchen an Eindrückchen,
                und ich fühle, daß das Ganze kein Bild gibt. Das iſt tief verſtimmend, und ich
                fürchte, meine Reiſe wird journaliſtiſch ein <hi rend="latintype">Fiasco</hi>. </p>
-            <p>Sehr fehlen mir auch Deine lieben Nachrichten. Ich bitte Dich, mir gleich <pb
-                  facs="HS.NZ85.1.3168_0024"/> nach <hi rend="latintype">
+            <p>Sehr fehlen mir auch Deine lieben Nachrichten. Ich bitte Dich, mir gleich <pb facs="HS.NZ85.1.3168_0024"/> nach <hi rend="latintype">
                   <rs type="place" ref="">Shanghai</rs>
                </hi>, <hi rend="latintype">
                   <rs type="org" ref="">Deutsches</rs>
@@ -178,12 +189,10 @@
             <p>Was wirſt Du dieſen Sommer unternehmen? <hi rend="latintype">
                   <rs type="place" ref="">Ischl</rs>
                </hi>? Der Gedanke an einen <hi rend="latintype">
-                  <rs type="place" ref="">Ischl</rs>er</hi> Tannen-Wald <del rend="strikethrough"
-                     >i<unclear>n</unclear>
+                  <rs type="place" ref="">Ischl</rs>er</hi> Tannen-Wald <del rend="strikethrough">i<unclear>n</unclear>
                </del> iſt <pb facs="HS.NZ85.1.3168_0025"/> wahrhaft ſchmerzlich an einem
                verſengenden <rs type="place" ref="">Indiſchen-Ocean</rs>-Tage, wo man nach Luft und
-               Kühlung ſchmachtet. Warum bin ich auch auf dieſes verfluchte <rs type="place" ref=""
-                  >Meer</rs> hinausgefahren! </p>
+               Kühlung ſchmachtet. Warum bin ich auch auf dieſes verfluchte <rs type="place" ref="">Meer</rs> hinausgefahren! </p>
             <p>Ich grüße Dich u. den lieben <hi rend="latintype">
                   <rs type="person" ref="">Richard</rs>
                </hi> von ganzem Herzen. </p>
@@ -194,8 +203,7 @@
                </closer>
             </p>
             <p>
-               <postscript>Herzlichen Gruß an Deine <rs type="person" ref=""
-                  >Freundin</rs>!</postscript>
+               <postscript>Herzlichen Gruß an Deine <rs type="person" ref="">Freundin</rs>!</postscript>
             </p>
          </div>
       </body>
@@ -227,21 +235,16 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-               <idno type="URL" subtype="schnitzler-lektueren"
-                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp51209</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0028183c</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2059817</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -270,20 +273,15 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933"
-                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -302,18 +300,14 @@
                   <placeName ref="pmb166">Frankreich</placeName>
                   <geo>46,0 2,0</geo>
                </location>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb182.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb182.html</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q90</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paris</idno>
             </place>
@@ -341,19 +335,15 @@
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
             </place>

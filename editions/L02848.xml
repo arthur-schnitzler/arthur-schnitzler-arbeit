@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02848"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L02848"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -80,11 +82,20 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <desc type="brief"/>
+                           <desc type="_blaetter" n="3"/>
+                           <desc type="_seiten" n="12"/>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="lateinische-kurrent"/>
+                           <handNote medium="blaue_tinte" style="lateinische-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Jahr »<quote>
+                                    <date when="1898">98</date>
+                                 </quote>« vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -98,12 +109,13 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1898-06-26" n="1">26. 6. [1898]</date>
+               <date when="1898-06-26" n="01">26. 6. [1898]</date>
                <placeName ref="#pmb37885">Shanghai</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
+               <date evidence="conjecture" notBefore="1898-06-27" notAfter="1898-07-01">[27. 6. 1898 – 1. 7. 1898?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -135,22 +147,21 @@
    <text>
       <body>
          <div type="writingSession" n="1">
-            <pb facs="HS.NZ85.1.3168_0028-1"/>
-            <dateline>
-               <hi rend="latintype">
-                  <rs type="place" ref="">Shanghai</rs>
-               </hi>, <date>26. Juni</date>.</dateline>
-            <salute>Mein lieber Freund,</salute>
+            <opener>
+               <dateline rend="right">
+                  <pb facs="HS.NZ85.1.3168_0028-1"/>
+                  <hi rend="latintype">
+                     <rs type="place" ref="#pmb37885">Shanghai</rs>
+                  </hi>, <date when="1898-06-26">26. Juni</date>.</dateline>
+               <salute rend="left">Mein lieber Freund,</salute>
+            </opener>
             <p>Ich danke Dir für Deinen lieben Brief (vom 17. Mai) und alle die Nachrichten, die er
                enthält. <hi rend="latintype">
                   <rs type="person" ref="">Richard</rs>s</hi> Verheirathung hat mich nicht wenig
-               überraſcht. Ich denke auch, er wird ſein Glück <del rend="strikethrough"
-                     >da<unclear>nn</unclear>
+               überraſcht. Ich denke auch, er wird ſein Glück <del rend="strikethrough">da<unclear>nn</unclear>
                </del> dabei finden, und das iſt ja der einzige Geſichtspunkt, unter dem wir die
                Sache zu beurtheilen haben. </p>
-            <p>Aus Deinen letzten Briefen, liebſter Freund, ſehe ich nicht ohne Sorge, wie <pb
-                  facs="HS.NZ85.1.3168_0029-0"/> unruhig und verdüſtert Deine Gemüths-<del
-                  rend="strikethrough">St<unclear>ü<add/>
+            <p>Aus Deinen letzten Briefen, liebſter Freund, ſehe ich nicht ohne Sorge, wie <pb facs="HS.NZ85.1.3168_0029-0"/> unruhig und verdüſtert Deine Gemüths-<del rend="strikethrough">St<unclear>ü<add/>
                   </unclear>
                   <add/>
                </del>
@@ -161,8 +172,7 @@
                Ich kann mir vorſtellen, wie läſtig die Symptome ſein mögen, die Du ſchilderſt.
                Bedeutlich ſind ſie in keiner Weiſe<del rend="strikethrough">.<add/>
                </del>
-               <add>,</add> das weiß ich aus einer beſſeren Quelle, als von Dir <pb
-                  facs="HS.NZ85.1.3168_0029-1"/> (<del rend="strikethrough">
+               <add>,</add> das weiß ich aus einer beſſeren Quelle, als von Dir <pb facs="HS.NZ85.1.3168_0029-1"/> (<del rend="strikethrough">
                   <unclear>ni</unclear>
                </del> nimm’ mir das nicht übel!). Ich finde Du biſt zu nach giebig gegen Deine Hypo
                chondrie. Krankheit! Aber um des Himmels Willen, wer iſt nicht krank? Die
@@ -171,12 +181,9 @@
                viel Macht <del rend="strikethrough">zu</del> über uns gewinnen. Ich verſichere Dich,
                daß man mit alledem fertig werden kann. Du müßteſt <pb facs="HS.NZ85.1.3168_0028-0"/>
                Deine Lebensweiſe ändern, müßteſt nicht zu viel allein ſein, und vor allen Dingen,
-               das kann ich Dir nicht oft genug ſagen, müßteſt Du aus Deinem <rs type="place" ref=""
-                  >Wien</rs>er Trübſals- Winkel hinaus in die helle und große Welt. Ich hoffe, die
+               das kann ich Dir nicht oft genug ſagen, müßteſt Du aus Deinem <rs type="place" ref="">Wien</rs>er Trübſals- Winkel hinaus in die helle und große Welt. Ich hoffe, die
                Sommer- Reiſe wird Dir gut thun; und der Sommer- Reiſe müßte eine Winter- Reiſe
-               folgen; und dann, hoffe ich, werde ich Dich wieder einmal ſehen <pb
-                  facs="HS.NZ85.1.3168_0030-1"/> und Dich recht tüchtig auslachen daß Du ſo <del
-                  rend="strikethrough">d</del> dumm biſt, Dein Leben Dir zu vergrämen, während Du
+               folgen; und dann, hoffe ich, werde ich Dich wieder einmal ſehen <pb facs="HS.NZ85.1.3168_0030-1"/> und Dich recht tüchtig auslachen daß Du ſo <del rend="strikethrough">d</del> dumm biſt, Dein Leben Dir zu vergrämen, während Du
                doch, den Thatſachen nach, der Froheſte und Ruhigſte von uns Allen ſein könnteſt und
                müßteſt....... </p>
             <p>Am <del rend="strikethrough">
@@ -184,28 +191,23 @@
                </del>
                <date>15. Mai</date> habe auch ich in Freundſchaft Deiner gedacht. Aber war es
                wirklich ſo ſchön vor einem Jahre? Ich glaube, Du hatteſt an <date>jenem</date>
-               <time>Abend</time> Kopfſchmerzen und warſt verſtimmt. Das haſt Du ſchon wieder <pb
-                  facs="HS.NZ85.1.3168_0031-0"/> vergeſſen, und ſo wirſt Du wahrſcheinlich auch in
+               <time>Abend</time> Kopfſchmerzen und warſt verſtimmt. Das haſt Du ſchon wieder <pb facs="HS.NZ85.1.3168_0031-0"/> vergeſſen, und ſo wirſt Du wahrſcheinlich auch in
                einem Jahre wieder vergeſſen haben, was Dich jetzt quält. </p>
             <p>Dein <rs type="work" ref="">Buch</rs> habe ich geleſen. Es ſind herrliche Seiten
                darin. Der »<rs type="work" ref="">Ehrentag</rs>« iſt mir das Liebſte daraus. Aber
-               wenn man ſchon einmal im Stande iſt, dieſe erſchütternde Figur des <foreign
-                  xml:lang="">
+               wenn man ſchon einmal im Stande iſt, dieſe erſchütternde Figur des <foreign xml:lang="">
                   <hi rend="latintype">raté</hi>
                </foreign> zu zeichnen, warum das Alles nur gleichſam als Epiſode hineinzwängen in
-               eine <rs type="work" ref="">Liebesgeſchichte</rs> zwiſchen einem Theater- <pb
-                  facs="HS.NZ85.1.3168_0031-1"/> Menſch und <del rend="strikethrough">
+               eine <rs type="work" ref="">Liebesgeſchichte</rs> zwiſchen einem Theater- <pb facs="HS.NZ85.1.3168_0031-1"/> Menſch und <del rend="strikethrough">
                   <gap/>X</del> einem düſteren <foreign xml:lang="">
                   <hi rend="latintype">Poseur</hi>
                </foreign> von <hi rend="latintype">
                   <rs type="work" ref="">August</rs>
-               </hi>? Warum hat nicht die Rohheit des Directors den »<rs type="work" ref=""
-                  >Ehrentag</rs>« angeſtiftet, ſtatt der Eiferſucht eines Liebhabers? Ich glaube,
+               </hi>? Warum hat nicht die Rohheit des Directors den »<rs type="work" ref="">Ehrentag</rs>« angeſtiftet, ſtatt der Eiferſucht eines Liebhabers? Ich glaube,
                das würde die <rs type="work" ref="">Geſchichte</rs> noch mehr vertieft und
                vermenſchlicht haben. Ich meine auch, Du ſollteſt Dich jetzt eine Zeit lang zwingen,
                   <hi rend="underline" n="">keine Liebesgeſchichten</hi>
-               <hi rend="underline" n="">mehr</hi> zu ſchreiben. Tief ergeifend iſt auch der <pb
-                  facs="HS.NZ85.1.3168_0030-0"/> »<rs type="work" ref="">Abſchied</rs>«. Nur die
+               <hi rend="underline" n="">mehr</hi> zu ſchreiben. Tief ergeifend iſt auch der <pb facs="HS.NZ85.1.3168_0030-0"/> »<rs type="work" ref="">Abſchied</rs>«. Nur die
                letzten zwanzig Zeilen ſtimmen mir nicht recht zum Ganzen<unclear>,</unclear> ich
                weiß nicht warum? Die »<rs type="work" ref="">Frau des Weiſen</rs>« mag ich nicht,
                die letzte <rs type="work" ref="">Geſchichte</rs> auch nicht ſehr, trotz der
@@ -217,20 +219,16 @@
                <rs type="work" ref="">ſo guter Novellen</rs> er ſchienen iſt. Du biſt ein
                beineidenswerther Menſch, daß Du zu ſolchen Leiſtungen fähig biſt. Aber nein, ich
                vergaß, Du haſt Ohrenklingen, Du biſt der Unglücklichſte der Unglücklichen! Mach’
-               Dich darauf gefaßt, daß meine theure <rs type="person" ref="">Tante</rs> in der <rs
-                  type="work" ref="">Frankfurter Ztg.</rs> auf Dein <rs type="work" ref="">Buch</rs>
+               Dich darauf gefaßt, daß meine theure <rs type="person" ref="">Tante</rs> in der <rs type="work" ref="">Frankfurter Ztg.</rs> auf Dein <rs type="work" ref="">Buch</rs>
                <rs type="work" ref="">ſchimpft</rs>. </p>
             <p>Welches iſt das <rs type="work" ref="">Stück</rs>, <pb facs="HS.NZ85.1.3168_0033-0"/>
                das im Herbſt das »<rs type="org" ref="">Deutſche Theater</rs>« heraus bringen ſoll?
                Sehr traurig oder ein wenig luſtig? Viel Handlung? Viel Perſonen? Viel Pſychologie?
                Bitte, ſchreib’ mir ein Wort darüber. Ich weiß gar nichts davon. </p>
-            <p>Ich ſehe viel Selt ſames, aber die Schönheit fehlt in dieſem <rs type="place" ref=""
-                  >Lande</rs>. Ich ſehne mich unendlich nach ein paar Wochen <rs type="place" ref=""
-                  >Italien</rs>, nach Paläſten und alten Bildern! <pb facs="HS.NZ85.1.3168_0033-1"/>
+            <p>Ich ſehe viel Selt ſames, aber die Schönheit fehlt in dieſem <rs type="place" ref="">Lande</rs>. Ich ſehne mich unendlich nach ein paar Wochen <rs type="place" ref="">Italien</rs>, nach Paläſten und alten Bildern! <pb facs="HS.NZ85.1.3168_0033-1"/>
                Die Reiſe zieht ſich ſehr in die Länge. Ich arbeite ſchwer, leide unſäglich unter
                meiner Impotenz<del rend="strikethrough">,</del> dieſer neuen Welt gegenüber, habe
-               Wochen lang Kopfſchmerzen, bin nervöſer als je und fühle mich<del
-                  rend="strikethrough">,</del> mehr noch als früher aus dem Geleiſe geworfen.
+               Wochen lang Kopfſchmerzen, bin nervöſer als je und fühle mich<del rend="strikethrough">,</del> mehr noch als früher aus dem Geleiſe geworfen.
                   <date>Heut</date>
                <time>Abend</time> fahre ich den <hi rend="latintype">
                   <rs type="place" ref="">Yang-tse</rs>
@@ -278,21 +276,16 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-               <idno type="URL" subtype="schnitzler-lektueren"
-                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp51209</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0028183c</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2059817</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -321,20 +314,15 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933"
-                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -353,18 +341,14 @@
                   <placeName ref="pmb166">Frankreich</placeName>
                   <geo>46,0 2,0</geo>
                </location>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb182.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb182.html</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q90</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paris</idno>
             </place>
@@ -392,19 +376,15 @@
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
             </place>

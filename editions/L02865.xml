@@ -6,7 +6,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, 13. 11. [1898]</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 13. 11. 1898</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -80,11 +80,36 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <desc type="karte" subtype="bildpostkarte"/>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="lateinische-kurrent"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="XXXX">XXXX</placeName>
+                                    <date when="XXXX">XXXX</date>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="2">
+                                    <placeName ref="#pmb50">Wien 9/3 72</placeName>
+                                    <date when="1899-01-02">2. 1. 1899</date>
+                                    <time>2. N</time>
+                                    <addSpan>Bestellt</addSpan>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Jahr »<quote>
+                                    <date when="1898">98</date>
+                                 </quote>« vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -98,12 +123,14 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1898-11-13" n="2">13. 11. [1898]</date>
+               <date when="1898-11-13" n="02">13. 11. 1898</date>
                <placeName ref="#pmb53977">Yokohama</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
+               <date evidence="conjecture" notBefore="1898-11-14" notAfter="1898-11-18"
+                  >[14. 11. 1898 – 18. 11. 1898?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -124,40 +151,51 @@
    </facsimile>
    <text>
       <body>
+         <div type="address">
+            <address>
+               <addrLine>
+                  <pb facs="HS.NZ85.1.3168_0072"/>
+                  <foreign xml:lang="en">
+                     <hi rend="latintype">
+                        <rs type="place" ref="#pmb41240">Austria</rs>
+                     </hi>
+                  </foreign>
+               </addrLine>
+               <addrLine>
+                  <foreign xml:lang="en">
+                     <hi rend="pre-print">
+                        <hi rend="capitals">To</hi>
+                     </hi>
+                  </foreign>
+               </addrLine>
+               <addrLine>
+                  <hi rend="latintype">Herrn Dr. Arthur Schnitzler</hi>
+               </addrLine>
+               <addrLine>
+                  <hi rend="latintype">
+                     <rs type="place" ref="#pmb50">Wien</rs>
+                  </hi>
+               </addrLine>
+               <addrLine>
+                  <rs type="place" ref="#pmb397">
+                     <hi rend="latintype">IX. Frankgaße</hi> 1</rs>.</addrLine>
+            </address>
+         </div>
          <div type="writingSession" n="1">
-            <pb facs="HS.NZ85.1.3168_0071"/>
-            <dateline>
-               <hi rend="latintype">
-                  <rs type="place" ref="">Yokohama</rs>
-               </hi>, <date>13. Nov</date>.</dateline>
+            <opener>
+               <dateline rend="right">
+                  <pb facs="HS.NZ85.1.3168_0071"/>
+                  <hi rend="latintype">
+                     <rs type="place" ref="#pmb53977">Yokohama</rs>
+                  </hi>, <date when="1898-11-13">13. Nov</date>.</dateline>
+            </opener>
             <p>Einen herzlichen Gruß aus <rs type="place" ref="">Japan</rs>! </p>
             <p>
                <closer>Dein treuer</closer>
                <closer>
                   <signed>Paul Goldmann</signed>
                </closer>
-               <pb facs="HS.NZ85.1.3168_0072"/>
             </p>
-            <p>
-               <foreign xml:lang="">
-                  <hi rend="latintype">
-                     <rs type="place" ref="">Austria<hi rend="latintype"/>
-                     </rs>
-                     <hi rend="latintype"/>
-                  </hi>
-                  <hi rend="latintype"/>
-                  <rs type="place" ref=""/>
-               </foreign>
-               <rs type="place" ref=""/>
-               <foreign xml:lang="">
-                  <hi rend="pre-print">TO</hi>
-               </foreign>
-               <hi rend="latintype">Herrn Dr. Arthur Schnitzler</hi>
-               <hi rend="latintype">
-                  <rs type="place" ref="">Wien</rs>
-               </hi>
-               <rs type="place" ref="">
-                  <hi rend="latintype">IX. Frankgaße</hi> 1</rs>. </p>
          </div>
       </body>
       <back>
@@ -248,36 +286,7 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb182">
-               <placeName>Paris</placeName>
-               <placeName type="alternative-name">P'ariz</placeName>
-               <placeName type="alternative-name">Pariž</placeName>
-               <placeName type="alternative-name">Parisius</placeName>
-               <placeName type="alternative-name">Île-de-France</placeName>
-               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
-               <desc type="entity_type_id">14</desc>
-               <location type="coords">
-                  <geo>48,85341 2,3488</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb166">Frankreich</placeName>
-                  <geo>46,0 2,0</geo>
-               </location>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb182.html</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb182</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q90</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paris</idno>
-            </place>
+            <error type="place"/>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
@@ -317,6 +326,61 @@
                   >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
+            </place>
+            <place xml:id="pmb53977">
+               <placeName>Yokohama</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLA</desc>
+               <desc type="entity_type_id">1415</desc>
+               <location type="coords">
+                  <geo>35,43333 139,65</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb318">Japan</placeName>
+                  <geo>35,68536 139,75309</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53977/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/1848354/</idno>
+            </place>
+            <place xml:id="pmb41240">
+               <placeName>Österreich</placeName>
+               <placeName type="alternative-name">Republik Österreich</placeName>
+               <placeName type="alternative-name">Republic of Austria</placeName>
+               <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
+               <desc type="entity_type_id">1107</desc>
+               <location type="coords">
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb687">Österreich-Ungarn</placeName>
+                  <geo>48,4054 16,4887</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2782113/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41240/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41240</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb41240</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb41240.html</idno>
+            </place>
+            <place xml:id="pmb397">
+               <placeName>Frankgasse</placeName>
+               <desc type="entity_type">Straße (K.STR)</desc>
+               <desc type="entity_type_id">26</desc>
+               <location type="coords">
+                  <geo>48,215516628628 16,356475515829</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb59">IX., Alsergrund</placeName>
+                  <geo>48,22387 16,35641</geo>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb397.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/397/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb397</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb397.html</idno>
             </place>
          </listPlace>
       </back>
