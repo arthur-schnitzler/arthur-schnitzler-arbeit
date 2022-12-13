@@ -3,7 +3,6 @@
 ## I -> Transkribus-Export
 
 - Export des Transkribus-Dokuments als PAGE nach "trans-out"
-    - Derzeit manuell, langfristiges Ziel: GitHub-Action
     - ohne weiteres Unterverzeichnis speichern, also drei Objekte: metadata.xml, mets.xml und page-folder
 
 ## II -> page2tei-1-Transformation (trans-out/mets.xml)
