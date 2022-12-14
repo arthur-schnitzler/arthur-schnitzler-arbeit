@@ -10,3 +10,5 @@ The GitHub Action exports METS from Transkribus and converts them to XML/TEI.
 * go to Actions, add the ID of the collection and the document to process
 
 Code originally from @csae8092, adaptions by @laurauntner
+
+The original page2tei-transformation is from @dariok with contributions from @tboenig, @peterstadler and @tillgrallert.
