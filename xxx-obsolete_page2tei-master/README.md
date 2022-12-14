@@ -38,11 +38,9 @@
 
 - Transformation der neuen xml-Dateien mit back-element-hinzufügen-Transformation
 
+## Code
 
-## Contributors (page2tei)
-- @tboenig
-- @peterstadler
-- @tillgrallert
+The original page2tei-transformation is from @dariok with contributions from @tboenig, @peterstadler and @tillgrallert.
 
 ## Adaptions (and everything else)
 - @laurauntner
