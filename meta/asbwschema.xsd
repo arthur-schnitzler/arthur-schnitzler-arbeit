@@ -89,6 +89,11 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
+         <xs:attribute name="source" use="required">
+            <xs:simpleType>
+               <xs:restriction base="xs:string"/>
+            </xs:simpleType>
+         </xs:attribute>
          <xs:attribute name="subtype" use="optional">
             <xs:simpleType>
                <xs:restriction base="xs:NCName">
