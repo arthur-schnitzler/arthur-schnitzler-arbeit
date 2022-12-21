@@ -11,8 +11,6 @@
         
         - es ergänzt den jeweiligen Aufenthaltsort Schnitzlers zu correspAction, wenn das für einen fixen Tag
         oder in einem Fenster von 5 Tagen nachdem der Brief geschickt wurde, möglich ist.
-        
-        Zusätzlich wird aus /indices/asbw-cmif noch correspContext geholt
     
     -->
     <!-- Variante 1: Datum vorhanden. Dann eigentlich nur relevant die Überprüfung, ob er in Wien
@@ -209,19 +207,18 @@
             </xsl:choose>
         </xsl:element>
     </xsl:template>
-    
-    
     <!-- Das hier holt die Namensform des Ortsnamens der PMB -->
     <xsl:template match="tei:correspAction/tei:placeName">
-        <xsl:element name="placeName" namespace="http://www.tei-c.org/ns/1.0" inherit-namespaces="true">
-            <xsl:copy-of select="@ref|@evidence|@cert"/>
+        <xsl:element name="placeName" namespace="http://www.tei-c.org/ns/1.0"
+            inherit-namespaces="true">
+            <xsl:copy-of select="@ref | @evidence | @cert"/>
             <xsl:variable name="nummer" select="substring-after(@ref, 'pmb')"/>
             <xsl:variable name="eintrag"
                 select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/entities/tei/place/', $nummer))"
                 as="xs:string"/>
             <xsl:choose>
                 <xsl:when test="doc-available($eintrag)">
-                        <xsl:value-of select="document($eintrag)/place/placeName[1]"/>
+                    <xsl:value-of select="document($eintrag)/place/placeName[1]"/>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:element name="error" namespace="http://www.tei-c.org/ns/1.0">
@@ -232,11 +229,10 @@
                     </xsl:element>
                 </xsl:otherwise>
             </xsl:choose>
-            
         </xsl:element>
-        
-        
-        
-        
     </xsl:template>
+    
+    
+    
+    
 </xsl:stylesheet>
