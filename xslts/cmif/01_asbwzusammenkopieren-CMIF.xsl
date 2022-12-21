@@ -20,14 +20,14 @@
                                 Müller</ref>
                         </publisher>
                         <idno type="url"
-                            >https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-cmif/main/2023_asbw-cmif.xml</idno>
+                            >https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-cmif/main/asbw-cmif.xml</idno>
                         <availability>
                             <licence target="https://creativecommons.org/licenses/by/null/"
                                 >CC0</licence>
                         </availability>
                         <xsl:element name="date">
                             <xsl:attribute name="when">
-                                <xsl:value-of select="fn:current-date()"/>
+                                <xsl:value-of select="fn:year-from-date(fn:current-date())"/>
                             </xsl:attribute>
                         </xsl:element>
                     </publicationStmt>
@@ -44,12 +44,18 @@
                 <xsl:element name="profileDesc" namespace="http://www.tei-c.org/ns/1.0">
                     <xsl:variable name="folderURI" select="resolve-uri('.', base-uri())"/>
                     <xsl:for-each
-                        select="collection(concat($folderURI, '/editions/?select=L0*.xml;recurse=yes'))[descendant::tei:correspAction]/node()">
+                        select="collection(concat($folderURI, '../../editions/?select=L0*.xml;recurse=yes'))[descendant::tei:correspAction]/node()">
                         
                         <xsl:if test="not(@xml:id='' or not(@xml:id) or empty(@xml:id))">
                         <xsl:element name="correspDesc" namespace="http://www.tei-c.org/ns/1.0">
-                            <xsl:attribute name="xml:id">
+                            <xsl:attribute name="key">
                                 <xsl:value-of select="@xml:id"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="ref">
+                                <xsl:value-of select="concat('https://schnitzler-briefe.acdh.oeaw.ac.at/', @xml:id, '.html')"/>                
+                            </xsl:attribute>
+                            <xsl:attribute name="source">
+                                <xsl:text>#asbw_0a380dfe-61d4-4b9e-8641-01eba8e50760</xsl:text>                
                             </xsl:attribute>
                             <xsl:copy-of select="descendant::tei:correspDesc/tei:correspAction" copy-namespaces="no"
                             />

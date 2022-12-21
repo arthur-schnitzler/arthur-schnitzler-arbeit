@@ -12,21 +12,6 @@
         </xsl:element>
     </xsl:template>
     <!-- Das gibt doppelte refs raus -->
-    <xsl:template match="tei:ref[@type = 'belongsToCorrespondence']">
-        <xsl:variable name="current-target" select="@target"/>
-        <xsl:choose>
-            <xsl:when test="preceding-sibling::tei:ref/@target = $current-target"/>
-            <xsl:otherwise>
-                <xsl:element name="ref" namespace="http://www.tei-c.org/ns/1.0">
-                    <xsl:attribute name="type">
-                        <xsl:text>belongsToCorrespondence</xsl:text>
-                    </xsl:attribute>
-                    <xsl:attribute name="target">
-                        <xsl:value-of select="@target"/>
-                    </xsl:attribute>
-                    <xsl:value-of select="."/>
-                </xsl:element>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
+    <xsl:template match="tei:ref[@type = 'belongsToCorrespondence' and @target = preceding-sibling::tei:ref/@target]"/>
+       
 </xsl:stylesheet>

@@ -42,21 +42,6 @@
             </xsl:choose>
         </xsl:attribute>
     </xsl:template>
-    <!-- Das schreibt die URL -->
-    <xsl:template match="tei:correspDesc">
-        <xsl:element name="correspDesc" namespace="http://www.tei-c.org/ns/1.0">
-            <xsl:attribute name="key">
-                <xsl:value-of select="@xml:id"/>
-            </xsl:attribute>
-            <xsl:attribute name="ref">
-                <xsl:value-of select="concat('https://schnitzler-briefe.acdh.oeaw.ac.at/', @xml:id, '.html')"/>                
-            </xsl:attribute>
-            <xsl:attribute name="source">
-                <xsl:text>#asbw_0a380dfe-61d4-4b9e-8641-01eba8e50760</xsl:text>                
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
     
     <xsl:template match="tei:correspContext"/>
     

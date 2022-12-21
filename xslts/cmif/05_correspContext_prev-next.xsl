@@ -19,7 +19,7 @@
                         <xsl:text>withinCollection</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="target">
-                        <xsl:value-of select="$prevCD/@xml:id"/>
+                        <xsl:value-of select="$prevCD/@key"/>
                     </xsl:attribute>
                     <xsl:for-each select="$prevCD/tei:correspAction[@type = 'sent']/tei:persName">
                         <xsl:value-of select="substring-before(., ',')"/>
@@ -50,7 +50,7 @@
                         <xsl:text>withinCollection</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="target">
-                        <xsl:value-of select="$nextCD/@xml:id"/>
+                        <xsl:value-of select="$nextCD/@key"/>
                     </xsl:attribute>
                     <xsl:for-each select="$nextCD/tei:correspAction[@type = 'sent']/tei:persName">
                         <xsl:value-of select="substring-before(., ',')"/>
@@ -87,7 +87,7 @@
                             <xsl:value-of select="."/>
                         </xsl:attribute>
                         <xsl:attribute name="target">
-                            <xsl:value-of select="$prevCD/@xml:id"/>
+                            <xsl:value-of select="$prevCD/@key"/>
                         </xsl:attribute>
                         <xsl:for-each
                             select="$prevCD/tei:correspAction[@type = 'sent']/tei:persName">
@@ -123,7 +123,7 @@
                             <xsl:value-of select="."/>
                         </xsl:attribute>
                         <xsl:attribute name="target">
-                            <xsl:value-of select="$nextCD/@xml:id"/>
+                            <xsl:value-of select="$nextCD/@key"/>
                         </xsl:attribute>
                         <xsl:for-each
                             select="$nextCD/tei:correspAction[@type = 'sent']/tei:persName">

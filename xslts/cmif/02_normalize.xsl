@@ -9,8 +9,8 @@
         encoding="utf-8"
         omit-xml-declaration="false"/>
     <xsl:mode on-no-match="shallow-copy"/>
-    <xsl:param name="correspPartner" select="document('../../meta/listeDerBriefwechsel.xml')"/>
-    <xsl:key name="corresp-lookup" match="correspondence" use="sub-person/@id"/>
+    <xsl:param name="correspPartner" select="document('../../indices/listcorrespondence.xml')"/>
+    <xsl:key name="corresp-lookup" match="tei:personGrp" use="tei:persName/@ref"/>
     
     
  <!-- Diese Datei fügt correspDesc zwei Attribute hinzu: ana mit einem Iso-Datum und person mit
@@ -57,9 +57,7 @@ entstehen Duplikate! -->
                     </xsl:choose>
                 </xsl:variable>
                 <xsl:element name="correspDesc" namespace="http://www.tei-c.org/ns/1.0">
-                    <xsl:attribute name="xml:id">
-                        <xsl:value-of select="@xml:id"/>
-                    </xsl:attribute>
+                    <xsl:copy-of select="@*"/>
                     <xsl:attribute name="ana">
                         <xsl:value-of select="$date-n"/>
                     </xsl:attribute>
@@ -73,27 +71,35 @@ entstehen Duplikate! -->
                     </xsl:for-each>
                     <xsl:element name="correspContext" namespace="http://www.tei-c.org/ns/1.0">
                         <xsl:for-each select="$partner/tei:persName">
-                            <xsl:if test="not(key('corresp-lookup', @ref, $correspPartner)/writer/@id = 'null')"><!-- Das filtert die paar Fälle, die wir (noch) nicht aufnehmen -->
-                            <xsl:element name="ref" namespace="http://www.tei-c.org/ns/1.0">
-                                <xsl:attribute name="type">
-                                    <xsl:text>belongsToCorrespondence</xsl:text>
-                                </xsl:attribute>
-                                    <xsl:choose>
-                                        <xsl:when test="string-length(key('corresp-lookup', @ref, $correspPartner)/writer) &gt; 1">
-                                            <xsl:attribute name="target">
-                                            <xsl:value-of select="key('corresp-lookup', @ref, $correspPartner)/writer/@id"/>
-                                            </xsl:attribute>
-                                            <xsl:value-of select="key('corresp-lookup', @ref, $correspPartner)/writer"/>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <xsl:attribute name="target">
-                                            <xsl:value-of select="@ref"/>
-                                            </xsl:attribute>
-                                            <xsl:value-of select="."/>
-                                        </xsl:otherwise>
-                                    </xsl:choose>
-                            </xsl:element>
-                            </xsl:if>
+                            <xsl:choose>
+                                <xsl:when test="key('corresp-lookup', @ref, $correspPartner)/@xml:id = 'correspondence_null'"/>
+                                    <!-- Das filtert die paar Fälle, die wir (noch) nicht aufnehmen -->
+                                <xsl:otherwise>
+                                    <xsl:element name="ref" namespace="http://www.tei-c.org/ns/1.0">
+                                        <xsl:attribute name="type">
+                                            <xsl:text>belongsToCorrespondence</xsl:text>
+                                        </xsl:attribute>
+                                        <xsl:choose>
+                                            <xsl:when test="string-length(key('corresp-lookup', @ref, $correspPartner)/tei:persName[@role='main']) &gt; 1">
+                                                <xsl:attribute name="target">
+                                                    <xsl:value-of select="key('corresp-lookup', @ref, $correspPartner)/@xml:id"/>
+                                                </xsl:attribute>
+                                                <xsl:value-of select="key('corresp-lookup', @ref, $correspPartner)/tei:persName[@role='main']"/>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:attribute name="target">
+                                                    <xsl:value-of select="@ref"/>
+                                                </xsl:attribute>
+                                                <xsl:value-of select="."/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </xsl:element>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                            
+                            
+                            
+                            
                         </xsl:for-each>
                     </xsl:element>
                 </xsl:element>

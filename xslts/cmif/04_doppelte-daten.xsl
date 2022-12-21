@@ -5,18 +5,15 @@
     <xsl:output indent="yes" method="xml" encoding="utf-8" omit-xml-declaration="false"/>
     <xsl:strip-space elements="*"/>
     <!-- Dieses XSLT überprüft, ob manche Daten plus Nummer doppelt sind -->
-    
-    
     <xsl:template match="tei:correspDesc">
         <xsl:element name="correspDesc" namespace="http://www.tei-c.org/ns/1.0">
-        <xsl:variable name="datum" select="@ana"/>
-            <xsl:if test="preceding-sibling::tei:correspDesc/@ana =$datum">
+            <xsl:variable name="datum" select="@ana"/>
+            <xsl:if test="preceding-sibling::tei:correspDesc/@ana = $datum">
                 <xsl:attribute name="doppelter-tag">
-                <xsl:value-of select="$datum"/>
+                    <xsl:value-of select="$datum"/>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:copy-of select="@*|*"/>
+            <xsl:copy-of select="@* | *"/>
         </xsl:element>
-            
     </xsl:template>
 </xsl:stylesheet>
