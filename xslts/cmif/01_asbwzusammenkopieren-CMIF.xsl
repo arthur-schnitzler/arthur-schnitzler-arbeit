@@ -20,7 +20,7 @@
                                 Müller</ref>
                         </publisher>
                         <idno type="url"
-                            >https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-cmif/main/asbw-cmif.xml</idno>
+                            >https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-cmif/main/schnitzler-briefe_cmif.xml</idno>
                         <availability>
                             <licence target="https://creativecommons.org/licenses/by/null/"
                                 >CC0</licence>

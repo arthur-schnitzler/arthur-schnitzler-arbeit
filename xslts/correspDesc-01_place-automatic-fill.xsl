@@ -10,7 +10,9 @@
     <!-- Dieses XSLT macht folgendes:
         
         - es ergänzt den jeweiligen Aufenthaltsort Schnitzlers zu correspAction, wenn das für einen fixen Tag
-        oder in einem Fenster von 5 Tagen nachdem der Brief geschickt wurde, möglich ist
+        oder in einem Fenster von 5 Tagen nachdem der Brief geschickt wurde, möglich ist.
+        
+        Zusätzlich wird aus /indices/asbw-cmif noch correspContext geholt
     
     -->
     <!-- Variante 1: Datum vorhanden. Dann eigentlich nur relevant die Überprüfung, ob er in Wien
