@@ -54,7 +54,7 @@
                                 <publisher>Austrian Centre for Digital Humanities and Cultural
                                     Heritage</publisher>
                                 <pubPlace>Vienna</pubPlace>
-                                <date when="2022">2022</date>
+                                <date when="2023">2023</date>
                                 <availability>
                                     <licence
                                         target="https://creativecommons.org/licenses/by/4.0/deed.de">

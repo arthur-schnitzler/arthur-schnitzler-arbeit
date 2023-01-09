@@ -6,7 +6,7 @@
     <xsl:output name="xml" method="xml" indent="yes" omit-xml-declaration="yes"/>
 
     <!-- directory of new files -->
-    <xsl:param name="dir">../editions</xsl:param>
+    <xsl:param name="dir">../../../editions</xsl:param>
 
     <!-- output xml file for each letter tag with file name according to number of xml files in output directory (+1) -->
     <xsl:param name="n" select="count(collection(concat($dir, '?select=*.xml')))"/>
@@ -54,7 +54,7 @@
                                 <publisher>Austrian Centre for Digital Humanities and Cultural
                                     Heritage</publisher>
                                 <pubPlace>Vienna</pubPlace>
-                                <date when="2022">2022</date>
+                                <date when="2023">2023</date>
                                 <availability>
                                     <licence
                                         target="https://creativecommons.org/licenses/by/4.0/deed.de">
