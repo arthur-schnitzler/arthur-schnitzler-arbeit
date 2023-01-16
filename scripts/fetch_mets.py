@@ -10,8 +10,6 @@ transkribus_client = ACDHTranskribusUtils(
     user=user, password=pw, transkribus_base_url="https://transkribus.eu/TrpServer/rest"
 )
 
-#mpr_docs = transkribus_client.document_to_mets(
-#mpr_docs = transkribus_client.collection_to_mets(col_id, file_path='./mets')
 mpr_docs = transkribus_client.collection_to_mets(
     col_id,
     file_path="./mets",
