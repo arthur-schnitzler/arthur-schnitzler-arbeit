@@ -33,17 +33,12 @@ jobs:
         apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
         pip install acdh-transkribus-utils
         wget https://sourceforge.net/projects/saxon/files/Saxon-HE/9.9/SaxonHE9-9-1-7J.zip/download && unzip download -d saxon && rm -rf download
-      #git clone --depth=1 --branch main --single-branch https://github.com/arthur-schnitzler/arthur-schnitzler-arbeit.git
-      #git clone --depth=1 --branch master --single-branch https://github.com/laurauntner/transkribus-transformations.git
-      #git clone --depth=1 --branch skurzinz-patch-1 --single-branch https://github.com/skurzinz/page2tei.git
     - name: Download METS Files
       run: |
         python ./scripts/fetch_mets.py
     - name: Transform to TEI
       run: |
         ant -DCOL_ID=${COL_ID} -f ./build_tei.xml
-      #run: ant -DDOC_ID=${DOC_ID} -f ./build_tei.xml
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Exported and Transformed ColId ${{ github.event.inputs.colId }}
-        #commit_message: Exported and transformed DocId ${{ github.event.inputs.docId }}
