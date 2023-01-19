@@ -35,8 +35,8 @@
                 <xsl:if test="number(substring-after(//tei:TEI/@xml:id, 'L0')) > 2579">
                     <xsl:choose>
                         <xsl:when
-                            test="descendant::tei:revisionDesc/tei:change[@who = 'MAM'][contains(., 'Durchsicht')][1]">a</xsl:when>
-                        <xsl:when test="descendant::tei:revisionDesc/tei:change[@who = 'MAM'][contains(., 'Angelegt')][1]">b</xsl:when>
+                            test="descendant::tei:revisionDesc[child::tei:change[@who = 'MAM' and contains(., 'Durchsicht')]]"></xsl:when>
+                        <xsl:when test="descendant::tei:revisionDesc[child::tei:change[@who = 'MAM' and contains(., 'Angelegt')]]"></xsl:when>
                         <xsl:otherwise>
                             <xsl:value-of select="tei:TEI/@xml:id"/>
                             <xsl:text>&#xa;</xsl:text>
