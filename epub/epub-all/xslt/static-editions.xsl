@@ -1,21 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xhtml="http://www.w3.org/1999/xhtml"
-    xmlns:foo="whatever" version="3.0" exclude-result-prefixes="tei xhtml">
-
-    <!-- XXXX meta.xsl -->
-
-    <!--    XXXX copy of brief-titel 
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:foo="whatever works"
+    version="2.0" exclude-result-prefixes="xsl tei xs">
+    <xsl:output encoding="UTF-8" media-type="text/html" method="xhtml" version="1.0" indent="no" omit-xml-declaration="yes"/>
     
-            copy of brief-text (wie in asbw-gesamt) 
-    
-            copy of brief-kommentar (wie in asbw-gesamt) -->
-
-    <xsl:output method="xhtml" omit-xml-declaration="yes" doctype-public="yes"/>
-
-    <xsl:import href="partials/html_navbar.xsl"/>
-    <xsl:import href="partials/html_head.xsl"/>
+    <xsl:import href="./partials/html_navbar.xsl"/>
+    <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="partials/html_footer.xsl"/>
     <xsl:import href="partials/html_title_navigation.xsl"/>
     <xsl:import href="partials/osd-container.xsl"/>
@@ -25,162 +19,196 @@
     <xsl:import href="partials/annotation-options.xsl"/>
     <xsl:import href="partials/edition-md.xsl"/>
 
-    <xsl:variable name="doc_title">
-        <xsl:value-of select="descendant::tei:titleStmt/tei:title[@level = 'a'][1]/text()"/>
-    </xsl:variable>
-
     <xsl:template match="/">
-        <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
-        <xsl:element name="html" namespace="http://www.w3.org/1999/xhtml">
-            <!-- head -->
-            <xsl:element name="head" namespace="http://www.w3.org/1999/xhtml">
-                <xsl:element name="title" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:text>Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren, </xsl:text>
-                    <xsl:value-of select="$doc_title"/>
-                </xsl:element>
-                <xsl:element name="meta" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:attribute name="name">
-                        <xsl:text>editor</xsl:text>
+        <xsl:variable name="doc_title">
+            <xsl:value-of select="descendant::tei:titleStmt/tei:title[@level='a'][1]/text()"/>
+        </xsl:variable>
+        <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+        <html>
+            <head>
+                <xsl:call-template name="html_head">
+                    <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
+                </xsl:call-template>           
+                <meta name="Date of publication" class="staticSearch_date">
+                    <xsl:choose>
+                        <xsl:when test="//tei:origin/tei:origDate/@notBefore">
+                            <xsl:attribute name="content">
+                                <xsl:value-of select="//tei:origin/tei:origDate/@notBefore"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:when test="//tei:origin/tei:origDate/@when-iso">
+                            <xsl:attribute name="content">
+                                <xsl:value-of select="//tei:origin/tei:origDate/@when-iso"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:attribute name="content">
+                                <xsl:value-of select="//tei:origin/tei:origDate"/>
+                            </xsl:attribute>
+                        </xsl:otherwise>
+                    </xsl:choose>                    
+                </meta>
+                <meta name="docImage" class="staticSearch_docImage">
+                    <xsl:attribute name="content">
+                        <!--<xsl:variable name="iiif-ext" select="'.jp2/full/,200/0/default.jpg'"/> -->
+                        <xsl:variable name="iiif-ext" select="'.jpg?format=iiif&amp;param=/full/,200/0/default.jpg'"/> 
+                        <xsl:variable name="iiif-domain" select="'https://iiif.acdh-dev.oeaw.ac.at/iiif/images/schnitzler-briefe/'"/>
+                        <xsl:variable name="facs_id" select="concat(@type, '_img_', generate-id())"/>
+                        <xsl:variable name="facs_item" select="descendant::tei:pb[1]/@facs"/>                        
+                        <xsl:value-of select="concat($iiif-domain, $facs_item, $iiif-ext)"/>
                     </xsl:attribute>
-                    <xsl:attribute name="content">Müller, Martin Anton</xsl:attribute>
-                </xsl:element>
-                <xsl:element name="meta" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:attribute name="name">
-                        <xsl:text>editor</xsl:text>
+                </meta>
+                <meta name="docTitle" class="staticSearch_docTitle">
+                    <xsl:attribute name="content">
+                        <xsl:value-of select="//tei:titleStmt/tei:title[@level='a']"/>
                     </xsl:attribute>
-                    <xsl:attribute name="content">Susen, Gerd-Hermann</xsl:attribute>
-                </xsl:element>
-                <xsl:element name="meta" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:attribute name="name">
-                        <xsl:text>editor</xsl:text>
-                    </xsl:attribute>
-                    <xsl:attribute name="content">Untner, Laura</xsl:attribute>
-                </xsl:element>
-                <xsl:element name="meta" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:attribute name="name">
-                        <xsl:text>affiliation</xsl:text>
-                    </xsl:attribute>
-                    <xsl:attribute name="content">Austrian Centre for Digital Humanities and
-                        Cultural Heritage at the Austrian Academy of Sciences</xsl:attribute>
-                </xsl:element>
-                <xsl:element name="meta" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:attribute name="name">
-                        <xsl:text>date</xsl:text>
-                    </xsl:attribute>
-                    <xsl:attribute name="content">2023</xsl:attribute>
-                </xsl:element>
-                <xsl:element name="meta" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:attribute name="name">
-                        <xsl:text>place</xsl:text>
-                    </xsl:attribute>
-                    <xsl:attribute name="content">Vienna</xsl:attribute>
-                </xsl:element>
-                <xsl:element name="meta" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:attribute name="name">
-                        <xsl:text>license</xsl:text>
-                    </xsl:attribute>
-                    <xsl:attribute name="content">CC BY 4.0</xsl:attribute>
-                </xsl:element>
-            </xsl:element>
-            <!-- body -->
-            <!-- XXXX from editions.xsl for static website -->
+                </meta>
+                <xsl:if test="descendant::tei:back/tei:listPlace/tei:place">
+                    <xsl:for-each select="descendant::tei:back/tei:listPlace/tei:place">
+                        <meta name="Places"
+                            class="staticSearch_feat"
+                            content="{if (./tei:settlement) then (./tei:settlement/tei:placeName) else (./tei:placeName)}">
+                        </meta>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="descendant::tei:back/tei:listPerson/tei:person">
+                    <xsl:for-each select="descendant::tei:back/tei:listPerson/tei:person">
+                        <meta name="Persons"
+                            class="staticSearch_feat"
+                            content="{concat(./tei:persName/tei:surname, ', ', ./tei:persName/tei:forename)}">
+                        </meta>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="descendant::tei:back/tei:listOrg/tei:org">
+                    <xsl:for-each select="descendant::tei:back/tei:listOrg/tei:org">
+                        <meta name="Organizations"
+                            class="staticSearch_feat"
+                            content="{./tei:orgName}">
+                        </meta>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="descendant::tei:back/tei:listBibl[not(parent::tei:person)]/tei:bibl">
+                    <xsl:for-each select="descendant::tei:back/tei:listBibl[not(parent::tei:person)]/tei:bibl">
+                        <meta name="Literature"
+                            class="staticSearch_feat"
+                            content="{./tei:title[1]}">
+                        </meta>
+                    </xsl:for-each>
+                </xsl:if>
+                <style>
+                    .transcript {
+                        padding: 1em 0;
+                    }
+                    /*.text-re::before {
+                        content: '';
+                        background-color: #ccc;
+                        right: .05em;
+                        width: 10px;
+                        height: 100%;
+                        position:absolute;
+                        border-top: 10px solid ccc;
+                    }*/
+                    .card-body {
+                        padding: 4em 1em;
+                    }
+                    .container-fluid {
+                        max-width: 100%;
+                    }
+                    .sticky-navbar {
+                        position: relative !important;
+                    }
+                </style>
+                <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/3.1.0/openseadragon.min.js"></script>-->
+                <script src="https://unpkg.com/de-micro-editor@0.2.2/dist/de-editor.min.js"></script>
+                <!--<script src="js/dist/de-editor.min.js"></script>-->
+            </head>
             <body class="page">
                 <div class="hfeed site" id="page">
                     <xsl:call-template name="nav_bar"/>
-
-                    <div class="container-fluid">
+                    
+                    <div class="container-fluid">  
                         <div class="card">
                             <div class="card-body" style="padding: .5em 0 0 0 !important;">
                                 <xsl:call-template name="header-nav"/>
-
+                                
                                 <!--   adding arche metadata for each edition   -->
                                 <xsl:call-template name="edition-md">
                                     <xsl:with-param name="doc_title" select="$doc_title"/>
                                 </xsl:call-template>
-
+                                
                                 <!--   adding annotation view and options   -->
                                 <xsl:call-template name="annotation-options"/>
-
+                                
                             </div>
-
+                            
                             <!--   add edition text and facsimile   -->
-                            <xsl:for-each select="descendant::tei:body//tei:div">
-                                <xsl:call-template name="view-type-img"/>
-
-                            </xsl:for-each>
-
-                        </div>
-                        <!-- .card -->
+                             <xsl:for-each select="descendant::tei:body//tei:div">                                             
+                                 <xsl:call-template name="view-type-img"/>
+    
+                             </xsl:for-each>
+                            
+                        </div><!-- .card -->
                         <xsl:for-each select="//tei:back">
                             <div class="tei-back">
-
+                                
                                 <xsl:apply-templates/>
-
+                                
                             </div>
                         </xsl:for-each>
-                    </div>
-                    <!-- .container-fluid -->
+                    </div><!-- .container-fluid -->
                     <xsl:call-template name="html_footer"/>
-                </div>
-                <!-- .site -->
-                <script type="text/javascript" src="js/run.js"/>
+                </div><!-- .site -->
+                <script type="text/javascript" src="js/run.js"></script>
             </body>
-        </xsl:element>
+        </html>
     </xsl:template>
-
+                    
+    <!--<xsl:template match="tei:lb">
+        <br/>        
+    </xsl:template>-->
     <xsl:template match="tei:lg">
         <span style="display:block;margin: 1em 0;">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
     <xsl:template match="tei:l">
-        <xsl:apply-templates/>
-        <br/>
+        <xsl:apply-templates/><br />
     </xsl:template>
     <xsl:template match="tei:unclear">
         <span class="abbr fade" alt="unclear">
             <xsl:apply-templates/>
-        </span>
+        </span> 
     </xsl:template>
     <xsl:template match="tei:space">
         <span class="space">
-            <xsl:value-of select="
-                    string-join((for $i in 1 to @quantity
-                    return
-                        '&#x00A0;'), '')"/>
+            <xsl:value-of select="string-join((for $i in 1 to @quantity return '&#x00A0;'),'')"/>
         </span>
     </xsl:template>
     <xsl:template match="tei:del">
-        <span class="del fade">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
+        <span class="del fade"><xsl:apply-templates/></span>      
+    </xsl:template> 
     <xsl:template match="tei:gap">
         <xsl:choose>
-            <xsl:when test="@reason = 'deleted'">
+            <xsl:when test="@reason='deleted'">
                 <span class="del gap">
                     <xsl:attribute name="alt">
                         <xsl:value-of select="data(@reason)"/>
                     </xsl:attribute>
-                    <xsl:text>[</xsl:text>
-                    <xsl:apply-templates/>
-                    <xsl:text>]</xsl:text>
-                </span>
+                    <xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>
+                </span>                
             </xsl:when>
-            <xsl:when test="@reason = 'illegible'">
+            <xsl:when test="@reason='illegible'">
                 <span class="gap">
                     <xsl:attribute name="alt">
                         <xsl:value-of select="data(@reason)"/>
                     </xsl:attribute>
-                    <xsl:text>[</xsl:text>
-                    <xsl:apply-templates/>
-                    <xsl:text>]</xsl:text>
+                    <xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>
                 </span>
             </xsl:when>
-        </xsl:choose>
+        </xsl:choose> 
     </xsl:template>
-
-    <xsl:template match="tei:rs[@type = 'person']">
+     
+    <xsl:template match="tei:rs[@type='person']">
         <xsl:choose>
             <xsl:when test="count(tokenize(@ref, ' ')) > 1">
                 <span class="persons">
@@ -202,7 +230,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="tei:rs[@type = 'work']">
+    <xsl:template match="tei:rs[@type='work']">
         <xsl:choose>
             <xsl:when test="count(tokenize(@ref, ' ')) > 1">
                 <span class="works">
@@ -224,8 +252,8 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-
-    <xsl:template match="tei:rs[@type = 'org']">
+    
+    <xsl:template match="tei:rs[@type='org']">
         <xsl:choose>
             <xsl:when test="count(tokenize(@ref, ' ')) > 1">
                 <span class="orgs">
@@ -247,7 +275,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template match="tei:rs[@type = 'place']">
+    <xsl:template match="tei:rs[@type='place']">
         <xsl:choose>
             <xsl:when test="count(tokenize(@ref, ' ')) > 1">
                 <span class="places">
@@ -269,115 +297,111 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-
+    
     <xsl:template match="tei:listPerson">
         <xsl:for-each select="./tei:person">
-            <div class="modal fade" id="{@xml:id}" data-bs-backdrop="static"
-                data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="{concat(./tei:persName/tei:surname, ', ', ./tei:persName/tei:forename)}"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                                <xsl:value-of
-                                    select="concat(./tei:persName/tei:surname, ', ', ./tei:persName/tei:forename)"
-                                />
-                            </h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"/>
-                        </div>
-                        <div class="modal-body">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <th> Birth </th>
-                                        <td>
-                                            <xsl:value-of select="./tei:birth/tei:date/@when-iso"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th> Death </th>
-                                        <td>
-                                            <xsl:value-of select="./tei:death/tei:date/@when-iso"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th> GND </th>
-                                        <td>
-                                            <a href="{./tei:idno[@type='GND']}" target="_blank">
-                                                <xsl:value-of select="./tei:idno[@type = 'GND']"/>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th> Read more </th>
-                                        <td>
-                                            <a href="{concat(@xml:id, '.html')}"> Detail Page </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                                >Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="modal fade" id="{@xml:id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="{concat(./tei:persName/tei:surname, ', ', ./tei:persName/tei:forename)}" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-centered">
+                     <div class="modal-content">
+                         <div class="modal-header">
+                             <h1 class="modal-title fs-5" id="staticBackdropLabel"><xsl:value-of select="concat(./tei:persName/tei:surname, ', ', ./tei:persName/tei:forename)"/></h1>
+                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                         </div>
+                         <div class="modal-body">
+                             <table>
+                                 <tbody>
+                                     <tr>
+                                         <th>
+                                             Birth
+                                         </th>
+                                         <td>
+                                             <xsl:value-of select="./tei:birth/tei:date/@when-iso"/>
+                                         </td>
+                                     </tr>
+                                     <tr>
+                                         <th>
+                                             Death
+                                         </th>
+                                         <td>
+                                             <xsl:value-of select="./tei:death/tei:date/@when-iso"/>
+                                         </td>
+                                     </tr>
+                                     <tr>
+                                         <th>
+                                             GND
+                                         </th>
+                                         <td>
+                                             <a href="{./tei:idno[@type='GND']}" target="_blank">
+                                                 <xsl:value-of select="./tei:idno[@type='GND']"/>
+                                             </a>
+                                         </td>
+                                     </tr>
+                                     <tr>
+                                         <th>
+                                             Read more
+                                         </th>
+                                         <td>
+                                             <a href="{concat(@xml:id, '.html')}">
+                                                 Detail Page
+                                             </a>
+                                         </td>
+                                     </tr>
+                                 </tbody>
+                             </table>
+                         </div>
+                         <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
         </xsl:for-each>
     </xsl:template>
     <xsl:template match="tei:listPlace">
         <xsl:for-each select="./tei:place">
-            <div class="modal fade" id="{@xml:id}" data-bs-backdrop="static"
-                data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="{if(./tei:settlement) then(./tei:settlement/tei:placeName) else (./tei:placeName)}"
-                aria-hidden="true">
+            <div class="modal fade" id="{@xml:id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="{if(./tei:settlement) then(./tei:settlement/tei:placeName) else (./tei:placeName)}" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                                <xsl:value-of select="
-                                        if (./tei:settlement) then
-                                            (./tei:settlement/tei:placeName)
-                                        else
-                                            (./tei:placeName)"/>
-                            </h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"/>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel"><xsl:value-of select="if(./tei:settlement) then(./tei:settlement/tei:placeName) else (./tei:placeName)"/></h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <table>
                                 <tbody>
                                     <tr>
-                                        <th> Country </th>
+                                        <th>
+                                            Country
+                                        </th>
                                         <td>
                                             <xsl:value-of select="./tei:country"/>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th> Geonames ID </th>
+                                        <th>
+                                            Geonames ID
+                                        </th>
                                         <td>
                                             <a href="{./tei:idno[@type='GEONAMES']}" target="_blank">
-                                                <xsl:value-of
-                                                  select="tokenize(./tei:idno[@type = 'GEONAMES'], '/')[4]"
-                                                />
+                                                <xsl:value-of select="tokenize(./tei:idno[@type='GEONAMES'], '/')[4]"/>
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th> Read more </th>
+                                        <th>
+                                            Read more
+                                        </th>
                                         <td>
-                                            <a href="{concat(@xml:id, '.html')}"> Detail Page </a>
+                                            <a href="{concat(@xml:id, '.html')}">
+                                                Detail Page
+                                            </a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                                >Close</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -386,43 +410,41 @@
     </xsl:template>
     <xsl:template match="tei:listOrg">
         <xsl:for-each select="./tei:org">
-            <div class="modal fade" id="{@xml:id}" data-bs-backdrop="static"
-                data-bs-keyboard="false" tabindex="-1" aria-labelledby="{./tei:orgName}"
-                aria-hidden="true">
+            <div class="modal fade" id="{@xml:id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="{./tei:orgName}" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                                <xsl:value-of select="./tei:orgName"/>
-                            </h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"/>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel"><xsl:value-of select="./tei:orgName"/></h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <table>
                                 <tbody>
                                     <tr>
-                                        <th> Wikidata ID </th>
+                                        <th>
+                                            Wikidata ID
+                                        </th>
                                         <td>
                                             <a href="{./tei:idno[@type='WIKIDATA']}" target="_blank">
-                                                <xsl:value-of
-                                                  select="tokenize(./tei:idno[@type = 'WIKIDATA'], '/')[last()]"
-                                                />
+                                                <xsl:value-of select="tokenize(./tei:idno[@type='WIKIDATA'], '/')[last()]"/>
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th> Read more </th>
+                                        <th>
+                                            Read more
+                                        </th>
                                         <td>
-                                            <a href="{concat(@xml:id, '.html')}"> Detail Page </a>
+                                            <a href="{concat(@xml:id, '.html')}">
+                                                Detail Page
+                                            </a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                                >Close</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -497,8 +519,8 @@
             </div>
         </xsl:for-each>
     </xsl:template>-->
-
-
+    
+    
     <!--<xsl:template match="tei:lb">
         <br/>
         <xsl:if test="ancestor::tei:p">
@@ -537,7 +559,7 @@
             </a>  
         </xsl:if>
     </xsl:template>-->
-
+    
     <!--<xsl:template match="tei:l">
         <br/>
         <xsl:if test="parent::tei:lg">
@@ -577,12 +599,10 @@
             <xsl:apply-templates/>
         </xsl:if>
     </xsl:template>-->
-    <xsl:template match="tei:c[@rendition = '#langesS'] | tei:c[@rendition = '#langesS2']"
-        mode="lemma-k">
+    <xsl:template match="tei:c[@rendition = '#langesS']|tei:c[@rendition = '#langesS2']" mode="lemma-k">
         <xsl:apply-templates/>
     </xsl:template>
-    <xsl:template match="tei:c[@rendition = '#langesS'] | tei:c[@rendition = '#langesS2']"
-        mode="lemma-t">
+    <xsl:template match="tei:c[@rendition = '#langesS']|tei:c[@rendition = '#langesS2']" mode="lemma-t">
         <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="tei:c[@rendition = '#langesS']">
@@ -673,12 +693,12 @@
     <xsl:template match="tei:c[@rendition = '#dots']" mode="lemma-t">
         <xsl:value-of select="foo:dots(@n)"/>
     </xsl:template>
-
+    
     <xsl:template match="tei:c[@rendition = '#dots']">
         <xsl:value-of select="foo:dots(@n)"/>
     </xsl:template>
-
-    <xsl:template match="tei:ref[not(@type = 'schnitzlerDiary') and not(@type = 'toLetter')]">
+    
+        <xsl:template match="tei:ref[not(@type = 'schnitzlerDiary') and not(@type = 'toLetter')]">
         <xsl:choose>
             <xsl:when test="@target[ends-with(., '.xml')]">
                 <xsl:element name="a">
@@ -1288,7 +1308,7 @@
             </xsl:otherwise>
         </xsl:choose>
         <xsl:if
-            test="(following-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten']) or (preceding-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten'])">
+            test="(following-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type='_blaetter' or @type='_seiten']) or (preceding-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type='_blaetter' or @type='_seiten'])">
             <xsl:text>, </xsl:text>
         </xsl:if>
     </xsl:template>
@@ -1348,7 +1368,7 @@
             </xsl:otherwise>
         </xsl:choose>
         <xsl:if
-            test="(following-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten']) or (preceding-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten'])">
+            test="(following-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type='_blaetter' or @type='_seiten']) or (preceding-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type='_blaetter' or @type='_seiten'])">
             <xsl:text>, </xsl:text>
         </xsl:if>
     </xsl:template>
@@ -1362,7 +1382,7 @@
             </xsl:otherwise>
         </xsl:choose>
         <xsl:if
-            test="(following-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten']) or (preceding-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten'])">
+            test="(following-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type='_blaetter' or @type='_seiten']) or (preceding-sibling::tei:desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type='_blaetter' or @type='_seiten'])">
             <xsl:text>, </xsl:text>
         </xsl:if>
     </xsl:template>
@@ -1435,206 +1455,189 @@
     <xsl:template match="tei:objectDesc/tei:desc[not(@type)]">
         <xsl:text>XXXX desc-Fehler</xsl:text>
     </xsl:template>
-
-    <xsl:template match="tei:date[@*]">
-        <!-- <abbr><xsl:attribute name="title"><xsl:value-of select="data(./@*)"/></xsl:attribute>-->
-        <xsl:apply-templates/>
-        <!--</abbr>-->
-    </xsl:template>
-    <xsl:template match="tei:term">
-        <span>
-            <xsl:apply-templates/>
+    
+     <xsl:template match="tei:date[@*]">
+    <!-- <abbr><xsl:attribute name="title"><xsl:value-of select="data(./@*)"/></xsl:attribute>-->
+    <xsl:apply-templates/>
+    <!--</abbr>-->
+  </xsl:template>
+  <xsl:template match="tei:term">
+    <span>
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+  <xsl:template match="tei:supplied">
+    <xsl:text>[</xsl:text>
+    <xsl:apply-templates/>
+    <xsl:text>]</xsl:text>
+  </xsl:template>
+  <xsl:template match="tei:hi">
+    <xsl:choose>
+      <xsl:when test="@rend = 'subscript'">
+        <span class="subscript">
+          <xsl:apply-templates/>
+        </span></xsl:when>
+      <xsl:when test="@rend = 'superscript'">
+        <span class="superscript">
+          <xsl:apply-templates/>
+        </span></xsl:when>
+      <xsl:when test="@rend = 'italics'">
+        <span class="italics">
+          <xsl:apply-templates/>
+        </span></xsl:when>
+      <xsl:when test="@rend = 'underline'">
+        <xsl:choose>
+          <xsl:when test="@n = '1'">
+            <span class="underline">
+              <xsl:apply-templates/>
+            </span></xsl:when>
+          <xsl:when test="@n = '2'">
+            <span class="doubleUnderline">
+              <xsl:apply-templates/>
+            </span></xsl:when>
+          <xsl:otherwise>
+            <span class="tripleUnderline">
+              <xsl:apply-templates/>
+            </span></xsl:otherwise>
+        </xsl:choose>
+      </xsl:when>
+      <xsl:when test="@rend = 'pre-print'"><span class="pre-print">
+          <xsl:apply-templates/>
+        </span></xsl:when>
+      <xsl:when test="@rend = 'bold'"><strong>
+          <xsl:apply-templates/>
+        </strong></xsl:when>
+      <xsl:when test="@rend = 'stamp'">
+        <span class="stamp">
+          <xsl:apply-templates/>
+        </span></xsl:when>
+      <xsl:when test="@rend = 'small_caps'">
+        <span class="small_caps">
+          <xsl:apply-templates/>
+        </span></xsl:when>
+      <xsl:when test="@rend = 'capitals'">
+        <span class="uppercase">
+          <xsl:apply-templates/>
         </span>
-    </xsl:template>
-    <xsl:template match="tei:supplied">
-        <xsl:text>[</xsl:text>
+      </xsl:when>
+      <xsl:when test="@rend = 'spaced_out'">
+        <span class="spaced_out">
+          <xsl:apply-templates/>
+        </span></xsl:when>
+      <xsl:when test="@rend = 'latintype'"><span class="latintype">
+          <xsl:apply-templates/>
+        </span></xsl:when>
+      <xsl:when test="@rend = 'antiqua'">
+        <span class="antiqua">
+          <xsl:apply-templates/>
+        </span></xsl:when>
+      <xsl:otherwise>
+        <span>
+          <xsl:attribute name="class">
+            <xsl:value-of select="@rend"/>
+          </xsl:attribute>
+          <xsl:apply-templates/>
+        </span></xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <!--    footnotes -->
+  <xsl:template match="tei:note">
+    <xsl:element name="a">
+      <xsl:attribute name="name">
+        <xsl:text>fna_</xsl:text>
+        <xsl:number level="any" format="1" count="tei:note"/>
+      </xsl:attribute>
+      <xsl:attribute name="href">
+        <xsl:text>#fn</xsl:text>
+        <xsl:number level="any" format="1" count="tei:note"/>
+      </xsl:attribute>
+      <xsl:attribute name="title">
+        <xsl:value-of select="normalize-space(.)"/>
+      </xsl:attribute>
+      <sup>
+        <xsl:number level="any" format="1" count="tei:note[./tei:p]"/>
+      </sup>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="tei:div">
+    <xsl:choose>
+      <xsl:when test="@type = 'regest'">
+        <div>
+          <xsl:attribute name="class">
+            <text>regest</text>
+          </xsl:attribute>
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      <!-- transcript -->
+      <xsl:when test="@type = 'transcript'">
+        <div>
+          <xsl:attribute name="class">
+            <text>transcript</text>
+          </xsl:attribute>
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      <!-- Anlagen/Beilagen  -->
+      <xsl:when test="@xml:id">
+        <xsl:element name="div">
+          <xsl:attribute name="id">
+            <xsl:value-of select="@xml:id"/>
+          </xsl:attribute>
+          <xsl:apply-templates/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:otherwise>
         <xsl:apply-templates/>
-        <xsl:text>]</xsl:text>
-    </xsl:template>
-    <xsl:template match="tei:hi">
-        <xsl:choose>
-            <xsl:when test="@rend = 'subscript'">
-                <span class="subscript">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:when>
-            <xsl:when test="@rend = 'superscript'">
-                <span class="superscript">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:when>
-            <xsl:when test="@rend = 'italics'">
-                <span class="italics">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:when>
-            <xsl:when test="@rend = 'underline'">
-                <xsl:choose>
-                    <xsl:when test="@n = '1'">
-                        <span class="underline">
-                            <xsl:apply-templates/>
-                        </span>
-                    </xsl:when>
-                    <xsl:when test="@n = '2'">
-                        <span class="doubleUnderline">
-                            <xsl:apply-templates/>
-                        </span>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <span class="tripleUnderline">
-                            <xsl:apply-templates/>
-                        </span>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:when>
-            <xsl:when test="@rend = 'pre-print'">
-                <span class="pre-print">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:when>
-            <xsl:when test="@rend = 'bold'">
-                <strong>
-                    <xsl:apply-templates/>
-                </strong>
-            </xsl:when>
-            <xsl:when test="@rend = 'stamp'">
-                <span class="stamp">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:when>
-            <xsl:when test="@rend = 'small_caps'">
-                <span class="small_caps">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:when>
-            <xsl:when test="@rend = 'capitals'">
-                <span class="uppercase">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:when>
-            <xsl:when test="@rend = 'spaced_out'">
-                <span class="spaced_out">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:when>
-            <xsl:when test="@rend = 'latintype'">
-                <span class="latintype">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:when>
-            <xsl:when test="@rend = 'antiqua'">
-                <span class="antiqua">
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:when>
-            <xsl:otherwise>
-                <span>
-                    <xsl:attribute name="class">
-                        <xsl:value-of select="@rend"/>
-                    </xsl:attribute>
-                    <xsl:apply-templates/>
-                </span>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <!--    footnotes -->
-    <xsl:template match="tei:note">
-        <xsl:element name="a">
-            <xsl:attribute name="name">
-                <xsl:text>fna_</xsl:text>
-                <xsl:number level="any" format="1" count="tei:note"/>
-            </xsl:attribute>
-            <xsl:attribute name="href">
-                <xsl:text>#fn</xsl:text>
-                <xsl:number level="any" format="1" count="tei:note"/>
-            </xsl:attribute>
-            <xsl:attribute name="title">
-                <xsl:value-of select="normalize-space(.)"/>
-            </xsl:attribute>
-            <sup>
-                <xsl:number level="any" format="1" count="tei:note[./tei:p]"/>
-            </sup>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:div">
-        <xsl:choose>
-            <xsl:when test="@type = 'regest'">
-                <div>
-                    <xsl:attribute name="class">
-                        <text>regest</text>
-                    </xsl:attribute>
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:when>
-            <!-- transcript -->
-            <xsl:when test="@type = 'transcript'">
-                <div>
-                    <xsl:attribute name="class">
-                        <text>transcript</text>
-                    </xsl:attribute>
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:when>
-            <!-- Anlagen/Beilagen  -->
-            <xsl:when test="@xml:id">
-                <xsl:element name="div">
-                    <xsl:attribute name="id">
-                        <xsl:value-of select="@xml:id"/>
-                    </xsl:attribute>
-                    <xsl:apply-templates/>
-                </xsl:element>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:apply-templates/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <!-- resp -->
-    <xsl:template match="tei:respStmt/tei:resp">
-        <xsl:apply-templates/>  </xsl:template>
-    <xsl:template match="tei:respStmt/tei:name">
-        <xsl:for-each select=".">
-            <li>
-                <xsl:apply-templates/>
-            </li>
-        </xsl:for-each>
-    </xsl:template>
-    <!-- reference strings   -->
-    <xsl:template match="tei:title[@ref]">
-        <xsl:element name="a">
-            <xsl:attribute name="class">reference</xsl:attribute>
-            <xsl:attribute name="data-type">listtitle.xml</xsl:attribute>
-            <xsl:attribute name="data-key">
-                <xsl:value-of select="substring-after(data(@ref), '#')"/>
-                <xsl:value-of select="@key"/>
-            </xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:origPlace[@ref]">
-        <xsl:element name="a">
-            <xsl:attribute name="class">reference</xsl:attribute>
-            <xsl:attribute name="data-type">listplace.xml</xsl:attribute>
-            <xsl:attribute name="data-key">
-                <xsl:value-of select="substring-after(data(@ref), '#')"/>
-                <xsl:value-of select="@key"/>
-            </xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:author[@ref]">
-        <xsl:element name="a">
-            <xsl:attribute name="class">reference</xsl:attribute>
-            <xsl:attribute name="data-type">listperson.xml</xsl:attribute>
-            <xsl:attribute name="data-key">
-                <xsl:value-of select="substring-after(data(@ref), '#')"/>
-                <xsl:value-of select="@key"/>
-            </xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
-    </xsl:template>
-    <!--<xsl:template match="tei:rs[@ref or @key]"><xsl:element name="a"><xsl:attribute name="class">reference</xsl:attribute><xsl:attribute name="data-type"><xsl:value-of select="concat('list', data(@type), '.xml')"/></xsl:attribute><xsl:attribute name="data-key"><xsl:value-of select="substring-after(data(@ref), '#')"/><xsl:value-of select="@key"/></xsl:attribute><xsl:apply-templates/></xsl:element></xsl:template>-->
-    <!--<xsl:template match="tei:rs[(@ref or @key) and not(descendant::tei:rs) and not(ancestor::tei:rs)]">
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <!-- resp -->
+  <xsl:template match="tei:respStmt/tei:resp">
+    <xsl:apply-templates/>  </xsl:template>
+  <xsl:template match="tei:respStmt/tei:name">
+    <xsl:for-each select=".">
+      <li>
+        <xsl:apply-templates/>
+      </li>
+    </xsl:for-each>
+  </xsl:template>
+  <!-- reference strings   -->
+  <xsl:template match="tei:title[@ref]">
+    <xsl:element name="a">
+      <xsl:attribute name="class">reference</xsl:attribute>
+      <xsl:attribute name="data-type">listtitle.xml</xsl:attribute>
+      <xsl:attribute name="data-key">
+        <xsl:value-of select="substring-after(data(@ref), '#')"/>
+        <xsl:value-of select="@key"/>
+      </xsl:attribute>
+      <xsl:value-of select="."/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="tei:origPlace[@ref]">
+    <xsl:element name="a">
+      <xsl:attribute name="class">reference</xsl:attribute>
+      <xsl:attribute name="data-type">listplace.xml</xsl:attribute>
+      <xsl:attribute name="data-key">
+        <xsl:value-of select="substring-after(data(@ref), '#')"/>
+        <xsl:value-of select="@key"/>
+      </xsl:attribute>
+      <xsl:value-of select="."/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="tei:author[@ref]">
+    <xsl:element name="a">
+      <xsl:attribute name="class">reference</xsl:attribute>
+      <xsl:attribute name="data-type">listperson.xml</xsl:attribute>
+      <xsl:attribute name="data-key">
+        <xsl:value-of select="substring-after(data(@ref), '#')"/>
+        <xsl:value-of select="@key"/>
+      </xsl:attribute>
+      <xsl:value-of select="."/>
+    </xsl:element>
+  </xsl:template>
+  <!--<xsl:template match="tei:rs[@ref or @key]"><xsl:element name="a"><xsl:attribute name="class">reference</xsl:attribute><xsl:attribute name="data-type"><xsl:value-of select="concat('list', data(@type), '.xml')"/></xsl:attribute><xsl:attribute name="data-key"><xsl:value-of select="substring-after(data(@ref), '#')"/><xsl:value-of select="@key"/></xsl:attribute><xsl:apply-templates/></xsl:element></xsl:template>-->
+  <!--<xsl:template match="tei:rs[(@ref or @key) and not(descendant::tei:rs) and not(ancestor::tei:rs)]">
     <xsl:element name="a">
       <xsl:attribute name="class">reference</xsl:attribute>
       <xsl:attribute name="data-type">
@@ -1654,7 +1657,7 @@
       <xsl:apply-templates/>
     </xsl:element>
   </xsl:template>-->
-    <!--<xsl:template match="tei:rs[(@ref or @key) and descendant::tei:rs and not(ancestor::tei:rs)]">
+  <!--<xsl:template match="tei:rs[(@ref or @key) and descendant::tei:rs and not(ancestor::tei:rs)]">
     <xsl:variable name="unteres-element">
       <xsl:for-each select="descendant::tei:rs">
         <xsl:variable name="type" select="@type"/>
@@ -1698,601 +1701,599 @@
       <xsl:apply-templates/>
     </xsl:element>
   </xsl:template>-->
-    <xsl:template match="tei:rs[(@ref or @key) and ancestor::tei:rs]">
+  <xsl:template match="tei:rs[(@ref or @key) and ancestor::tei:rs]">
+    <xsl:apply-templates/>
+  </xsl:template>
+  <xsl:template match="tei:persName[@key]">
+    <xsl:element name="a">
+      <xsl:attribute name="class">reference</xsl:attribute>
+      <xsl:attribute name="data-type">listperson.xml</xsl:attribute>
+      <xsl:attribute name="data-key">
+        <xsl:value-of select="@key"/>
+      </xsl:attribute>
+      <xsl:value-of select="."/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="tei:placeName[@key]">
+    <xsl:element name="a">
+      <xsl:attribute name="class">reference</xsl:attribute>
+      <xsl:attribute name="data-type">listplace.xml</xsl:attribute>
+      <xsl:attribute name="data-key">
+        <xsl:value-of select="@key"/>
+      </xsl:attribute>
+      <xsl:value-of select="."/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="tei:region[@key] | tei:country[@key]">
+    <xsl:element name="a">
+      <xsl:attribute name="class">reference</xsl:attribute>
+      <xsl:attribute name="data-type">listplace.xml</xsl:attribute>
+      <xsl:attribute name="data-key">
+        <xsl:value-of select="@key"/>
+      </xsl:attribute>
+      <xsl:value-of select="."/>
+    </xsl:element>
+  </xsl:template>
+  <!-- Tabellen -->
+  <xsl:template match="tei:table">
+    <xsl:element name="table">
+      <xsl:if test="@xml:id">
+        <xsl:attribute name="id">
+          <xsl:value-of select="data(@xml:id)"/>
+        </xsl:attribute>
+      </xsl:if>
+      <xsl:attribute name="class">
+        <xsl:text>table editionText</xsl:text>
+      </xsl:attribute>
+      <xsl:element name="tbody">
         <xsl:apply-templates/>
-    </xsl:template>
-    <xsl:template match="tei:persName[@key]">
-        <xsl:element name="a">
-            <xsl:attribute name="class">reference</xsl:attribute>
-            <xsl:attribute name="data-type">listperson.xml</xsl:attribute>
-            <xsl:attribute name="data-key">
-                <xsl:value-of select="@key"/>
-            </xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:placeName[@key]">
-        <xsl:element name="a">
-            <xsl:attribute name="class">reference</xsl:attribute>
-            <xsl:attribute name="data-type">listplace.xml</xsl:attribute>
-            <xsl:attribute name="data-key">
-                <xsl:value-of select="@key"/>
-            </xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:region[@key] | tei:country[@key]">
-        <xsl:element name="a">
-            <xsl:attribute name="class">reference</xsl:attribute>
-            <xsl:attribute name="data-type">listplace.xml</xsl:attribute>
-            <xsl:attribute name="data-key">
-                <xsl:value-of select="@key"/>
-            </xsl:attribute>
-            <xsl:value-of select="."/>
-        </xsl:element>
-    </xsl:template>
-    <!-- Tabellen -->
-    <xsl:template match="tei:table">
-        <xsl:element name="table">
-            <xsl:if test="@xml:id">
-                <xsl:attribute name="id">
-                    <xsl:value-of select="data(@xml:id)"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:attribute name="class">
-                <xsl:text>table editionText</xsl:text>
-            </xsl:attribute>
-            <xsl:element name="tbody">
-                <xsl:apply-templates/>
-            </xsl:element>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:row">
-        <xsl:element name="tr">
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:cell">
-        <xsl:element name="td">
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
-    <!-- Überschriften -->
-    <xsl:template match="tei:head">
-        <xsl:if test="@xml:id[starts-with(., 'org') or starts-with(., 'ue')]">
-            <a>
-                <xsl:attribute name="name">
-                    <xsl:value-of select="@xml:id"/>
-                </xsl:attribute>
-                <xsl:text> </xsl:text>
-            </a>
-        </xsl:if>
-        <a>
-            <xsl:attribute name="name">
-                <xsl:text>hd</xsl:text>
-                <xsl:number level="any"/>
-            </xsl:attribute>
-            <xsl:text> </xsl:text>
-        </a>
-        <h3>
-            <div>
-                <xsl:apply-templates/>
-            </div>
-        </h3>
-    </xsl:template>
-    <!--  Quotes / Zitate -->
-    <xsl:template match="tei:q">
-        <xsl:element name="i">
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:quote">
+      </xsl:element>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="tei:row">
+    <xsl:element name="tr">
+      <xsl:apply-templates/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="tei:cell">
+    <xsl:element name="td">
+      <xsl:apply-templates/>
+    </xsl:element>
+  </xsl:template>
+  <!-- Überschriften -->
+  <xsl:template match="tei:head">
+    <xsl:if test="@xml:id[starts-with(., 'org') or starts-with(., 'ue')]">
+      <a>
+        <xsl:attribute name="name">
+          <xsl:value-of select="@xml:id"/>
+        </xsl:attribute>
+        <xsl:text> </xsl:text>
+      </a>
+    </xsl:if>
+    <a>
+      <xsl:attribute name="name">
+        <xsl:text>hd</xsl:text>
+        <xsl:number level="any"/>
+      </xsl:attribute>
+      <xsl:text> </xsl:text>
+    </a>
+    <h3>
+      <div>
         <xsl:apply-templates/>
-    </xsl:template>
-    <!-- Zeilenumbürche   -->
-    <xsl:template match="tei:lb">
-        <br/>
-    </xsl:template>
-    <!-- Durchstreichungen -->
-    <xsl:template match="tei:origDate[@notBefore and @notAfter]">
-        <xsl:variable name="dates">
-            <xsl:value-of select="./@*" separator="-"/>
-        </xsl:variable>
-        <abbr title="{$dates}">
-            <xsl:value-of select="."/>
-        </abbr>
-    </xsl:template>
-    <xsl:template match="tei:extent">
-        <xsl:apply-templates select="./tei:measure"/>
-        <xsl:apply-templates select="./tei:dimensions"/>
-    </xsl:template>
-    <xsl:template match="tei:measure">
-        <xsl:variable name="x">
-            <xsl:value-of select="./@type"/>
-        </xsl:variable>
-        <xsl:variable name="y">
-            <xsl:value-of select="./@quantity"/>
-        </xsl:variable>
-        <abbr title="type: {$x}, quantity: {$y}">Measure</abbr>: <xsl:value-of select="./text()"/>
-        <br/>
-    </xsl:template>
-    <xsl:template match="tei:dimensions">
-        <xsl:variable name="x">
-            <xsl:value-of select="./@type"/>
-        </xsl:variable>
-        <xsl:variable name="y">
-            <xsl:value-of select="./@unit"/>
-        </xsl:variable>
-        <abbr title="type: {$x}">Dimensions:</abbr> h: <xsl:value-of select="./tei:height/text()"/>
-        <xsl:value-of select="$y"/>, w: <xsl:value-of select="./tei:width/text()"/>
-        <xsl:value-of select="$y"/>
-        <br/>
-    </xsl:template>
-    <xsl:template match="tei:layoutDesc">
-        <xsl:for-each select="tei:layout">
-            <div>
-                <xsl:value-of select="./@columns"/> Column(s) à <xsl:value-of
-                    select="./@ruledLines | ./@writtenLines"/> ruled/written lines:
-                <xsl:apply-templates/>
-            </div>
-        </xsl:for-each>
-    </xsl:template>
-    <xsl:template match="tei:locus">
-        <xsl:variable name="folio-from-id">
-            <xsl:value-of select="./@from"/>
-        </xsl:variable>
-        <xsl:variable name="folio-to-id">
-            <xsl:value-of select="./@to"/>
-        </xsl:variable>
-        <xsl:variable name="url-from-facs">
-            <xsl:value-of select="./ancestor::tei:TEI//tei:graphic[@n = $folio-from-id]/@url"/>
-        </xsl:variable>
-        <xsl:variable name="url-to-facs">
-            <xsl:value-of select="./ancestor::tei:TEI//tei:graphic[@n = $folio-to-id]/@url"/>
-        </xsl:variable>
-        <a href="{$url-from-facs}">
-            <xsl:value-of select="$folio-from-id"/>
-        </a>-<a href="{$url-to-facs}">
-            <xsl:value-of select="./@to"/>
-        </a>
-    </xsl:template>
-    <xsl:template match="tei:handDesc">
-        <xsl:for-each select="./tei:handNote">
-            <div>
-                <xsl:apply-templates/>
-            </div>
-        </xsl:for-each>
-    </xsl:template>
-    <xsl:template match="tei:title">
+      </div>
+    </h3>
+  </xsl:template>
+  <!--  Quotes / Zitate -->
+  <xsl:template match="tei:q">
+    <xsl:element name="i">
+      <xsl:apply-templates/>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="tei:quote">
+    <xsl:apply-templates/>
+  </xsl:template>
+  <!-- Zeilenumbürche   -->
+  <xsl:template match="tei:lb">
+    <br/>
+  </xsl:template>
+  <!-- Durchstreichungen -->
+  <xsl:template match="tei:origDate[@notBefore and @notAfter]">
+    <xsl:variable name="dates">
+      <xsl:value-of select="./@*" separator="-"/>
+    </xsl:variable>
+    <abbr title="{$dates}">
+      <xsl:value-of select="."/>
+    </abbr>
+  </xsl:template>
+  <xsl:template match="tei:extent">
+    <xsl:apply-templates select="./tei:measure"/>
+    <xsl:apply-templates select="./tei:dimensions"/>
+  </xsl:template>
+  <xsl:template match="tei:measure">
+    <xsl:variable name="x">
+      <xsl:value-of select="./@type"/>
+    </xsl:variable>
+    <xsl:variable name="y">
+      <xsl:value-of select="./@quantity"/>
+    </xsl:variable>
+    <abbr title="type: {$x}, quantity: {$y}">Measure</abbr>: <xsl:value-of select="./text()"/>
+    <br/>
+  </xsl:template>
+  <xsl:template match="tei:dimensions">
+    <xsl:variable name="x">
+      <xsl:value-of select="./@type"/>
+    </xsl:variable>
+    <xsl:variable name="y">
+      <xsl:value-of select="./@unit"/>
+    </xsl:variable>
+    <abbr title="type: {$x}">Dimensions:</abbr> h: <xsl:value-of select="./tei:height/text()"/>
+    <xsl:value-of select="$y"/>, w: <xsl:value-of select="./tei:width/text()"/>
+    <xsl:value-of select="$y"/>
+    <br/>
+  </xsl:template>
+  <xsl:template match="tei:layoutDesc">
+    <xsl:for-each select="tei:layout">
+      <div>
+        <xsl:value-of select="./@columns"/> Column(s) à <xsl:value-of
+          select="./@ruledLines | ./@writtenLines"/> ruled/written lines: <xsl:apply-templates/>
+      </div>
+    </xsl:for-each>
+  </xsl:template>
+  <xsl:template match="tei:locus">
+    <xsl:variable name="folio-from-id">
+      <xsl:value-of select="./@from"/>
+    </xsl:variable>
+    <xsl:variable name="folio-to-id">
+      <xsl:value-of select="./@to"/>
+    </xsl:variable>
+    <xsl:variable name="url-from-facs">
+      <xsl:value-of select="./ancestor::tei:TEI//tei:graphic[@n = $folio-from-id]/@url"/>
+    </xsl:variable>
+    <xsl:variable name="url-to-facs">
+      <xsl:value-of select="./ancestor::tei:TEI//tei:graphic[@n = $folio-to-id]/@url"/>
+    </xsl:variable>
+    <a href="{$url-from-facs}">
+      <xsl:value-of select="$folio-from-id"/>
+    </a>-<a href="{$url-to-facs}">
+      <xsl:value-of select="./@to"/>
+    </a>
+  </xsl:template>
+  <xsl:template match="tei:handDesc">
+    <xsl:for-each select="./tei:handNote">
+      <div>
         <xsl:apply-templates/>
-    </xsl:template>
-    <xsl:template match="tei:title[ancestor::tei:fileDesc[1]/tei:titleStmt[1] and @level = 'a']">
-        <div id="titleForNavigation">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:scriptDesc">
-        <xsl:for-each select="./tei:scriptNote">
-            <div> Type: <xsl:value-of select="./@script"/>
-                <xsl:apply-templates/>
-            </div>
-        </xsl:for-each>
-    </xsl:template>
-    <xsl:template match="tei:bindingDesc">
-        <xsl:for-each select="./tei:binding">
-            <div> Date: <xsl:value-of select="./@notBefore"/>-<xsl:value-of select="./@notAfter"/>
-                <xsl:apply-templates/>
-            </div>
-        </xsl:for-each>
-    </xsl:template>
-    <xsl:template match="tei:list">
-        <ul>
-            <xsl:apply-templates/>
-        </ul>
-    </xsl:template>
-    <xsl:template match="tei:item">
-        <li>
-            <xsl:apply-templates/>
-        </li>
-    </xsl:template>
-    <xsl:template match="descendant::tei:teiHeader/descendant::tei:sourceDesc/tei:listBibl">
-        <xsl:for-each select=".//tei:bibl">
-            <li>
-                <xsl:apply-templates/>
-            </li>
-        </xsl:for-each>
-    </xsl:template>
-    <xsl:template match="tei:ptr">
-        <xsl:variable name="x">
-            <xsl:value-of select="./@target"/>
-        </xsl:variable>
-        <a href="{$x}" class="fas fa-link"/>
-    </xsl:template>
-    <xsl:template match="tei:msPart">
-        <xsl:variable name="x">
-            <xsl:number count="." level="any"/>
-        </xsl:variable>
-        <div class="card-header" id="mspart_{$x}">
-            <div class="card-header">
-                <h4 align="center">
-                    <xsl:value-of select="./tei:msIdentifier"/>
-                    <xsl:value-of select="./tei:head"/>
-                </h4>
-            </div>
-            <div class="card-body">
-                <xsl:apply-templates select=".//tei:msContents"/>
-            </div>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:msContents">
-        <xsl:for-each select=".//tei:msItem">
-            <xsl:apply-templates select="."/>
-        </xsl:for-each>
-    </xsl:template>
-    <xsl:template match="tei:msItem">
-        <xsl:variable name="x">
-            <xsl:number level="any" count="tei:msItem"/>
-        </xsl:variable>
-        <h5 id="msitem_{$x}"> Manuscript Item Nr: <xsl:value-of select="$x"/>
-        </h5>
-        <table class="table table-condensed table-bordered">
-            <thead>
-                <tr>
-                    <th width="20%">Key</th>
-                    <th>Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>locus</th>
-                    <td>
-                        <xsl:apply-templates select="./tei:locus"/>
-                    </td>
-                </tr>
-                <xsl:if test="./tei:note">
-                    <tr>
-                        <th>notes</th>
-                        <td>
-                            <xsl:apply-templates select="./tei:note"/>
-                        </td>
-                    </tr>
-                </xsl:if>
-                <xsl:if test="./tei:author">
-                    <tr>
-                        <th>author</th>
-                        <td>
-                            <xsl:apply-templates select="./tei:author"/>
-                        </td>
-                    </tr>
-                </xsl:if>
-                <xsl:if test="./tei:title">
-                    <tr>
-                        <th>title</th>
-                        <td>
-                            <xsl:apply-templates select="./tei:title"/>
-                        </td>
-                    </tr>
-                </xsl:if>
-                <xsl:if test="./tei:incipit">
-                    <tr>
-                        <th>incipit</th>
-                        <td>
-                            <xsl:apply-templates select="./tei:incipit"/>
-                        </td>
-                    </tr>
-                </xsl:if>
-                <xsl:if test="./tei:explicit">
-                    <tr>
-                        <th>explicit</th>
-                        <td>
-                            <xsl:apply-templates select="./tei:explicit"/>
-                        </td>
-                    </tr>
-                </xsl:if>
-                <xsl:if test="./tei:finalRubric">
-                    <tr>
-                        <th>finalRubric</th>
-                        <td>
-                            <xsl:apply-templates select="./tei:finalRubric"/>
-                        </td>
-                    </tr>
-                </xsl:if>
-                <xsl:if test="./tei:bibl">
-                    <tr>
-                        <th>Bibliography</th>
-                        <td>
-                            <xsl:apply-templates select="./tei:bibl"/>
-                        </td>
-                    </tr>
-                </xsl:if>
-            </tbody>
-        </table>
-    </xsl:template>
-    <xsl:template match="tei:gi">
-        <code>
-            <xsl:apply-templates/>
-        </code>
-    </xsl:template>
-    <xsl:function name="foo:dots">
-        <xsl:param name="anzahl"/> . <xsl:if test="$anzahl &gt; 1">
-            <xsl:value-of select="foo:dots($anzahl - 1)"/>
-        </xsl:if>
-    </xsl:function>
-    <xsl:function name="foo:gaps">
-        <xsl:param name="anzahl"/>
-        <xsl:text>×</xsl:text>
-        <xsl:if test="$anzahl &gt; 1">
-            <xsl:value-of select="foo:gaps($anzahl - 1)"/>
-        </xsl:if>
-    </xsl:function>
-    <xsl:template match="tei:gap[@unit = 'chars' and @reason = 'illegible']">
-        <span class="illegible">
-            <xsl:value-of select="foo:gaps(@quantity)"/>
-        </span>
-    </xsl:template>
-    <xsl:template match="tei:gap[@unit = 'lines' and @reason = 'illegible']">
-        <div class="illegible">
-            <xsl:text> [</xsl:text>
-            <xsl:value-of select="@quantity"/>
-            <xsl:text> Zeilen unleserlich] </xsl:text>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:gap[@reason = 'outOfScope']">
-        <span class="outOfScope">[…]</span>
-    </xsl:template>
-    <xsl:template match="tei:p[child::tei:space[@dim] and not(child::*[2]) and empty(text())]">
-        <br/>
-    </xsl:template>
-    <xsl:template match="tei:p[parent::tei:quote]">
+      </div>
+    </xsl:for-each>
+  </xsl:template>
+  <xsl:template match="tei:title">
+    <xsl:apply-templates/>
+  </xsl:template>
+  <xsl:template match="tei:title[ancestor::tei:fileDesc[1]/tei:titleStmt[1] and @level = 'a']">
+    <div id="titleForNavigation">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:scriptDesc">
+    <xsl:for-each select="./tei:scriptNote">
+      <div> Type: <xsl:value-of select="./@script"/>
         <xsl:apply-templates/>
-        <xsl:if test="not(position() = last())">
-            <xsl:text> / </xsl:text>
-        </xsl:if>
-    </xsl:template>
-    <xsl:function name="foo:verticalSpace">
-        <xsl:param name="anzahl"/>
-        <br/>
-        <xsl:if test="$anzahl &gt; 1">
-            <xsl:value-of select="foo:verticalSpace($anzahl - 1)"/>
-        </xsl:if>
-    </xsl:function>
-    <xsl:template match="tei:space[@dim = 'vertical' and not(@unit)]">
-        <xsl:element name="div">
-            <xsl:attribute name="style">
-                <xsl:value-of select="concat('padding-bottom:', @quantity, 'em;')"/>
-            </xsl:attribute>
-        </xsl:element>
-    </xsl:template>
-
-    <xsl:template match="tei:space[@unit = 'chars' and not(@quantity = 1)]">
-        <xsl:variable name="weite" select="0.5 * @quantity"/>
-        <xsl:element name="span">
-            <xsl:attribute name="style">
-                <xsl:value-of select="concat('display:inline-block; width: ', $weite, 'em; ')"/>
-            </xsl:attribute>
-        </xsl:element>
-    </xsl:template>
-    <xsl:template match="tei:opener">
-        <div class="opener">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:add[@place and not(parent::tei:subst)]">
-        <span class="steuerzeichen">↓</span>
-        <span class="add">
-            <xsl:apply-templates/>
-        </span>
-        <span class="steuerzeichen">↓</span>
-    </xsl:template>
-    <!-- Streichung -->
-    <xsl:template match="tei:del[not(parent::tei:subst)]">
-        <span class="del">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="tei:del[parent::tei:subst]">
+      </div>
+    </xsl:for-each>
+  </xsl:template>
+  <xsl:template match="tei:bindingDesc">
+    <xsl:for-each select="./tei:binding">
+      <div> Date: <xsl:value-of select="./@notBefore"/>-<xsl:value-of select="./@notAfter"/>
         <xsl:apply-templates/>
-    </xsl:template>
-    <!-- Substi -->
-    <xsl:template match="tei:subst">
-        <span class="steuerzeichen">↑</span>
-        <span class="superscript">
-            <xsl:apply-templates select="tei:del"/>
-        </span>
-        <span class="subst-add">
-            <xsl:apply-templates select="tei:add"/>
-        </span>
-        <span class="steuerzeichen">↓</span>
-    </xsl:template>
-    <!-- Wechsel der Schreiber <handShift -->
-    <xsl:template match="tei:handShift[not(@scribe)]">
-        <xsl:choose>
-            <xsl:when test="@medium = 'typewriter'">
-                <xsl:text>[ms.:] </xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:text>[hs.:] </xsl:text>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <xsl:template match="tei:handShift[@scribe]">
-        <xsl:variable name="scribe">
-            <xsl:choose>
-                <xsl:when test="contains(@scribe, 'pmb')">
-                    <xsl:value-of select="replace(@scribe, 'pmb', '')"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="@scribe"/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-        <xsl:choose>
-            <xsl:when test="//tei:correspAction//tei:persName[replace(@ref, 'pmb', '') = $scribe]">
-                <xsl:text>[hs. </xsl:text>
-                <xsl:value-of
-                    select="foo:vorname-vor-nachname(//tei:correspAction//tei:persName[replace(@ref, 'pmb', '') = $scribe])"/>
-                <xsl:text>:] </xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:text>[Schreiberwechsel:] </xsl:text>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <xsl:function name="foo:vorname-vor-nachname">
-        <xsl:param name="autorname"/>
-        <xsl:choose>
-            <xsl:when test="contains($autorname, ', ')">
-                <xsl:value-of select="substring-after($autorname, ', ')"/>
-                <xsl:text> </xsl:text>
-                <xsl:text> </xsl:text>
-                <xsl:value-of select="substring-before($autorname, ', ')"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="$autorname"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:function>
-    <xsl:template match="tei:salute[parent::tei:opener]">
-        <p>
-            <div class="editionText salute">
-                <xsl:apply-templates/>
-            </div>
-        </p>
-    </xsl:template>
-    <xsl:template match="tei:signed">
-        <div class="signed editionText">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    <xsl:template
-        match="tei:p[ancestor::tei:body and not(ancestor::tei:note) and not(ancestor::tei:footNote) and not(ancestor::tei:caption) and not(parent::tei:bibl) and not(parent::tei:quote) and not(child::tei:space[@dim])] | tei:dateline | tei:closer">
-        <xsl:choose>
-            <xsl:when test="child::tei:seg">
-                <div class="editionText">
-                    <span class="seg-left">
-                        <xsl:apply-templates select="tei:seg[@rend = 'left']"/>
-                    </span>
-                    <xsl:text> </xsl:text>
-                    <span class="seg-right">
-                        <xsl:apply-templates select="tei:seg[@rend = 'right']"/>
-                    </span>
-                </div>
-            </xsl:when>
-            <xsl:when test="@rend = 'right'">
-                <div align="right" class="editionText">
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:when>
-            <xsl:when test="@rend = 'left'">
-                <div align="left" class="editionText">
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:when>
-            <xsl:when test="@rend = 'center'">
-                <div align="center" class="editionText">
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:when>
-            <xsl:when test="@rend = 'inline'">
-                <div class="inline editionText">
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:when>
-
-            <xsl:otherwise>
-                <div class="editionText">
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <xsl:template
-        match="tei:p[not(parent::tei:quote) and (ancestor::tei:note or ancestor::tei:footNote or ancestor::tei:caption or parent::tei:bibl)]">
-        <xsl:choose>
-            <xsl:when test="@rend = 'right'">
-                <div align="right">
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:when>
-            <xsl:when test="@rend = 'left'">
-                <div align="left">
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:when>
-            <xsl:when test="@rend = 'center'">
-                <div align="center">
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:when>
-            <xsl:when test="@rend = 'inline'">
-                <div style="inline">
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:when>
-            <xsl:otherwise>
-                <div>
-                    <xsl:apply-templates/>
-                </div>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-
-    <xsl:template match="tei:div[not(@type = 'address')]">
-        <div class="div">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:div[@type = 'address']">
-        <div class="address-div">
-            <xsl:apply-templates/>
-        </div>
-        <br/>
-    </xsl:template>
-    <xsl:template match="tei:address">
-        <div class="column">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:addrLine">
-        <div class="addrLine">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:damage">
-        <span class="damage-critical">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="tei:unclear">
-        <span class="unsicher">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="tei:lg[@type = 'poem' and not(descendant::lg[@type = 'stanza'])]">
-        <div class="poem editionText">
-            <ul>
-                <xsl:apply-templates/>
-            </ul>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:lg[@type = 'poem' and descendant::lg[@type = 'stanza']]">
-        <div class="poem editionText">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    <xsl:template match="tei:lg[@type = 'stanza']">
-        <ul>
-            <xsl:apply-templates/>
-        </ul>
-        <xsl:if test="not(position() = last())">
-            <br/>
+      </div>
+    </xsl:for-each>
+  </xsl:template>
+  <xsl:template match="tei:list">
+    <ul>
+      <xsl:apply-templates/>
+    </ul>
+  </xsl:template>
+  <xsl:template match="tei:item">
+    <li>
+      <xsl:apply-templates/>
+    </li>
+  </xsl:template>
+  <xsl:template match="descendant::tei:teiHeader/descendant::tei:sourceDesc/tei:listBibl">
+    <xsl:for-each select=".//tei:bibl">
+      <li>
+        <xsl:apply-templates/>
+      </li>
+    </xsl:for-each>
+  </xsl:template>
+  <xsl:template match="tei:ptr">
+    <xsl:variable name="x">
+      <xsl:value-of select="./@target"/>
+    </xsl:variable>
+    <a href="{$x}" class="fas fa-link"/>
+  </xsl:template>
+  <xsl:template match="tei:msPart">
+    <xsl:variable name="x">
+      <xsl:number count="." level="any"/>
+    </xsl:variable>
+    <div class="card-header" id="mspart_{$x}">
+      <div class="card-header">
+        <h4 align="center">
+          <xsl:value-of select="./tei:msIdentifier"/>
+          <xsl:value-of select="./tei:head"/>
+        </h4>
+      </div>
+      <div class="card-body">
+        <xsl:apply-templates select=".//tei:msContents"/>
+      </div>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:msContents">
+    <xsl:for-each select=".//tei:msItem">
+      <xsl:apply-templates select="."/>
+    </xsl:for-each>
+  </xsl:template>
+  <xsl:template match="tei:msItem">
+    <xsl:variable name="x">
+      <xsl:number level="any" count="tei:msItem"/>
+    </xsl:variable>
+    <h5 id="msitem_{$x}"> Manuscript Item Nr: <xsl:value-of select="$x"/>
+    </h5>
+    <table class="table table-condensed table-bordered">
+      <thead>
+        <tr>
+          <th width="20%">Key</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>locus</th>
+          <td>
+            <xsl:apply-templates select="./tei:locus"/>
+          </td>
+        </tr>
+        <xsl:if test="./tei:note">
+          <tr>
+            <th>notes</th>
+            <td>
+              <xsl:apply-templates select="./tei:note"/>
+            </td>
+          </tr>
         </xsl:if>
-    </xsl:template>
-    <xsl:template match="tei:l">
-        <li>
-            <xsl:apply-templates/>
-        </li>
-    </xsl:template>
-    <xsl:template match="tei:back"/>
-
+        <xsl:if test="./tei:author">
+          <tr>
+            <th>author</th>
+            <td>
+              <xsl:apply-templates select="./tei:author"/>
+            </td>
+          </tr>
+        </xsl:if>
+        <xsl:if test="./tei:title">
+          <tr>
+            <th>title</th>
+            <td>
+              <xsl:apply-templates select="./tei:title"/>
+            </td>
+          </tr>
+        </xsl:if>
+        <xsl:if test="./tei:incipit">
+          <tr>
+            <th>incipit</th>
+            <td>
+              <xsl:apply-templates select="./tei:incipit"/>
+            </td>
+          </tr>
+        </xsl:if>
+        <xsl:if test="./tei:explicit">
+          <tr>
+            <th>explicit</th>
+            <td>
+              <xsl:apply-templates select="./tei:explicit"/>
+            </td>
+          </tr>
+        </xsl:if>
+        <xsl:if test="./tei:finalRubric">
+          <tr>
+            <th>finalRubric</th>
+            <td>
+              <xsl:apply-templates select="./tei:finalRubric"/>
+            </td>
+          </tr>
+        </xsl:if>
+        <xsl:if test="./tei:bibl">
+          <tr>
+            <th>Bibliography</th>
+            <td>
+              <xsl:apply-templates select="./tei:bibl"/>
+            </td>
+          </tr>
+        </xsl:if>
+      </tbody>
+    </table>
+  </xsl:template>
+  <xsl:template match="tei:gi">
+    <code>
+      <xsl:apply-templates/>
+    </code>
+  </xsl:template>
+  <xsl:function name="foo:dots">
+    <xsl:param name="anzahl"/> . <xsl:if test="$anzahl &gt; 1">
+      <xsl:value-of select="foo:dots($anzahl - 1)"/>
+    </xsl:if>
+  </xsl:function>
+  <xsl:function name="foo:gaps">
+    <xsl:param name="anzahl"/>
+    <xsl:text>×</xsl:text>
+    <xsl:if test="$anzahl &gt; 1">
+      <xsl:value-of select="foo:gaps($anzahl - 1)"/>
+    </xsl:if>
+  </xsl:function>
+  <xsl:template match="tei:gap[@unit = 'chars' and @reason = 'illegible']">
+    <span class="illegible">
+      <xsl:value-of select="foo:gaps(@quantity)"/>
+    </span>
+  </xsl:template>
+  <xsl:template match="tei:gap[@unit = 'lines' and @reason = 'illegible']">
+    <div class="illegible">
+      <xsl:text> [</xsl:text>
+      <xsl:value-of select="@quantity"/>
+      <xsl:text> Zeilen unleserlich] </xsl:text>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:gap[@reason = 'outOfScope']">
+    <span class="outOfScope">[…]</span>
+  </xsl:template>
+  <xsl:template match="tei:p[child::tei:space[@dim] and not(child::*[2]) and empty(text())]">
+    <br/>
+  </xsl:template>
+  <xsl:template match="tei:p[parent::tei:quote]">
+    <xsl:apply-templates/>
+    <xsl:if test="not(position() = last())">
+      <xsl:text> / </xsl:text>
+    </xsl:if>
+  </xsl:template>
+  <xsl:function name="foo:verticalSpace">
+    <xsl:param name="anzahl"/>
+    <br/>
+    <xsl:if test="$anzahl &gt; 1">
+      <xsl:value-of select="foo:verticalSpace($anzahl - 1)"/>
+    </xsl:if>
+  </xsl:function>
+  <xsl:template match="tei:space[@dim = 'vertical' and not(@unit)]">
+    <xsl:element name="div">
+      <xsl:attribute name="style">
+        <xsl:value-of select="concat('padding-bottom:', @quantity, 'em;')"/>
+      </xsl:attribute>
+    </xsl:element>
+  </xsl:template>
+  
+  <xsl:template match="tei:space[@unit = 'chars' and not(@quantity = 1)]">
+    <xsl:variable name="weite" select="0.5 * @quantity"/>
+    <xsl:element name="span">
+      <xsl:attribute name="style">
+        <xsl:value-of select="concat('display:inline-block; width: ', $weite, 'em; ')"/>
+      </xsl:attribute>
+    </xsl:element>
+  </xsl:template>
+  <xsl:template match="tei:opener">
+    <div class="opener">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:add[@place and not(parent::tei:subst)]">
+    <span class="steuerzeichen">↓</span>
+    <span class="add">
+      <xsl:apply-templates/>
+    </span>
+    <span class="steuerzeichen">↓</span>
+  </xsl:template>
+  <!-- Streichung -->
+  <xsl:template match="tei:del[not(parent::tei:subst)]">
+    <span class="del">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+  <xsl:template match="tei:del[parent::tei:subst]">
+    <xsl:apply-templates/>
+  </xsl:template>
+  <!-- Substi -->
+  <xsl:template match="tei:subst">
+    <span class="steuerzeichen">↑</span>
+    <span class="superscript">
+      <xsl:apply-templates select="tei:del"/>
+    </span>
+    <span class="subst-add">
+      <xsl:apply-templates select="tei:add"/>
+    </span>
+    <span class="steuerzeichen">↓</span>
+  </xsl:template>
+  <!-- Wechsel der Schreiber <handShift -->
+  <xsl:template match="tei:handShift[not(@scribe)]">
+    <xsl:choose>
+      <xsl:when test="@medium = 'typewriter'">
+        <xsl:text>[ms.:] </xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>[hs.:] </xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template match="tei:handShift[@scribe]">
+    <xsl:variable name="scribe">
+      <xsl:choose>
+        <xsl:when test="contains(@scribe, 'pmb')">
+          <xsl:value-of select="replace(@scribe, 'pmb', '')"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="@scribe"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="//tei:correspAction//tei:persName[replace(@ref, 'pmb', '') = $scribe]">
+        <xsl:text>[hs. </xsl:text>
+        <xsl:value-of
+          select="foo:vorname-vor-nachname(//tei:correspAction//tei:persName[replace(@ref, 'pmb', '') = $scribe])"/>
+        <xsl:text>:] </xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>[Schreiberwechsel:] </xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:function name="foo:vorname-vor-nachname">
+    <xsl:param name="autorname"/>
+    <xsl:choose>
+      <xsl:when test="contains($autorname, ', ')">
+        <xsl:value-of select="substring-after($autorname, ', ')"/>
+        <xsl:text> </xsl:text>
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="substring-before($autorname, ', ')"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$autorname"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
+  <xsl:template match="tei:salute[parent::tei:opener]">
+    <p>
+      <div class="editionText salute">
+        <xsl:apply-templates/>
+      </div>
+    </p>
+  </xsl:template>
+  <xsl:template match="tei:signed">
+    <div class="signed editionText">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+  <xsl:template
+    match="tei:p[ancestor::tei:body and not(ancestor::tei:note) and not(ancestor::tei:footNote) and not(ancestor::tei:caption) and not(parent::tei:bibl) and not(parent::tei:quote) and not(child::tei:space[@dim])] | tei:dateline | tei:closer">
+    <xsl:choose>
+      <xsl:when test="child::tei:seg">
+        <div class="editionText">
+          <span class="seg-left">
+            <xsl:apply-templates select="tei:seg[@rend = 'left']"/>
+          </span>
+          <xsl:text> </xsl:text>
+          <span class="seg-right">
+            <xsl:apply-templates select="tei:seg[@rend = 'right']"/>
+          </span>
+        </div>
+      </xsl:when>
+      <xsl:when test="@rend = 'right'">
+        <div align="right" class="editionText">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      <xsl:when test="@rend = 'left'">
+        <div align="left" class="editionText">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      <xsl:when test="@rend = 'center'">
+        <div align="center" class="editionText">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      <xsl:when test="@rend = 'inline'">
+        <div class="inline editionText">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      
+      <xsl:otherwise>
+        <div class="editionText">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template
+    match="tei:p[not(parent::tei:quote) and (ancestor::tei:note or ancestor::tei:footNote or ancestor::tei:caption or parent::tei:bibl)]">
+    <xsl:choose>
+      <xsl:when test="@rend = 'right'">
+        <div align="right">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      <xsl:when test="@rend = 'left'">
+        <div align="left">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      <xsl:when test="@rend = 'center'">
+        <div align="center">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      <xsl:when test="@rend = 'inline'">
+        <div style="inline">
+          <xsl:apply-templates/>
+        </div>
+      </xsl:when>
+      <xsl:otherwise>
+        <div>
+          <xsl:apply-templates/>
+        </div>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  
+  <xsl:template match="tei:div[not(@type = 'address')]">
+    <div class="div">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:div[@type = 'address']">
+    <div class="address-div">
+      <xsl:apply-templates/>
+    </div>
+    <br/>
+  </xsl:template>
+  <xsl:template match="tei:address">
+    <div class="column">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:addrLine">
+    <div class="addrLine">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:damage">
+    <span class="damage-critical">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+  <xsl:template match="tei:unclear">
+    <span class="unsicher">
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+  <xsl:template match="tei:lg[@type = 'poem' and not(descendant::lg[@type = 'stanza'])]">
+    <div class="poem editionText">
+      <ul>
+        <xsl:apply-templates/>
+      </ul>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:lg[@type = 'poem' and descendant::lg[@type = 'stanza']]">
+    <div class="poem editionText">
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:lg[@type = 'stanza']">
+    <ul>
+      <xsl:apply-templates/>
+    </ul>
+    <xsl:if test="not(position() = last())">
+      <br/>
+    </xsl:if>
+  </xsl:template>
+  <xsl:template match="tei:l">
+    <li>
+      <xsl:apply-templates/>
+    </li>
+  </xsl:template>
+  <xsl:template match="tei:back"/>
 </xsl:stylesheet>

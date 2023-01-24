@@ -3,7 +3,7 @@
 Arbeitsverzeichnis für das Erstellen von E-Books von schnitzler-briefe
 
 Workflow: 
-1) TEI-Dokumente (editions) mit epub-all.xsl zu XHTML transformieren
+1) TEI-Dokumente (editions) mit epub-all.xsl zu XHTML transformieren (transformation not finished yet!)
 2) OEBPS/content.opf mit create-content.xsl transformieren
 3) OEBPS/texts/inhalt.xhtml mit create-inhalt.xsl transformieren
 4) OEBPS/texts/inhaltsverzeichnis.ncx mit create-inhaltsverzeichnis.xsl transformieren
