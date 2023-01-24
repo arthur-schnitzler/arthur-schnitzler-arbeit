@@ -6,19 +6,24 @@
         xmlns:opf="http://www.idpf.org/2007/opf"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-        <dc:identifier id="bookid">ID</dc:identifier>
+        <dc:identifier id="bookid">asbw</dc:identifier>
 
-        <dc:title>Titel</dc:title>
+        <dc:title>Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</dc:title>
 
-        <dc:creator>Autor_in</dc:creator>
+        <dc:creator>Martin Anton Müller</dc:creator>
+        <dc:creator>Gerd-Hermann Susen</dc:creator>
+        <dc:creator>Laura Untner</dc:creator>
 
-        <dc:publisher>Herausgeber_in</dc:publisher>
+        <dc:publisher>Martin Anton Müller</dc:publisher>
+        <dc:publisher>Gerd-Hermann Susen</dc:publisher>
+        <dc:publisher>Laura Untner</dc:publisher>
 
-        <dc:language>Sprache</dc:language>
+        <dc:language>Deutsch</dc:language>
 
-        <dc:date>1111-01-01</dc:date>
+        <dc:date>2023</dc:date>
 
-        <dc:subject>desc type</dc:subject>
+        <dc:subject>Arthur Schnitzlers Korrespondenzen mit anderen Autorinnen und
+            Autoren</dc:subject>
 
         <meta name="cover" content="coverimage"/>
 
@@ -33,6 +38,10 @@
 
         <item id="coverimage" href="images/cover.png" media-type="image/png"/>
 
+        <item id="inhalt" href="texts/inhalt.xhtml" media-type="application/xhtml+xml"/>
+        
+        <item id="rechte" href="texts/rechte.xhtml" media-type="application/xhtml+xml"/>
+
         <item id="L00001" href="texts/L00001.xhtml" media-type="application/xhtml+xml"/>
         <item id="L00002" href="texts/L00002.xhtml" media-type="application/xhtml+xml"/>
         <item id="L00003" href="texts/L00003.xhtml" media-type="application/xhtml+xml"/>
@@ -44,14 +53,13 @@
         <item id="L00009" href="texts/L00009.xhtml" media-type="application/xhtml+xml"/>
         <item id="L00010" href="texts/L00010.xhtml" media-type="application/xhtml+xml"/>
 
-        <item id="ende" href="texts/ende.xhtml" media-type="application/xhtml+xml"/>
-
         <item id="css" href="styles/stylesheet.css" media-type="text/css"/>
 
     </manifest>
 
     <spine toc="inhaltsverzeichnis">
         <itemref idref="cover"/>
+        <itemref idref="rechte"/>
         <itemref idref="L00001"/>
         <itemref idref="L00002"/>
         <itemref idref="L00003"/>
@@ -62,7 +70,6 @@
         <itemref idref="L00008"/>
         <itemref idref="L00009"/>
         <itemref idref="L00010"/>
-        <itemref idref="ende"/>
     </spine>
 
 </package>
