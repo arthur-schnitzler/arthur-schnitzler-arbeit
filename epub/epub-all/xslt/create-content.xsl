@@ -63,16 +63,17 @@
                     <xsl:text>application/xhtml+xml</xsl:text>
                 </xsl:attribute>
             </xsl:element>
-            <xsl:for-each select="collection(concat($folderURI, '/?select=L0*.xml;recurse=yes'))">
-                <!-- XXXX values anpassen, sobald xhtml-Modell steht -->
-                <xsl:sort select="//tei:correspAction[@type = 'sent']/tei:date/@when"
+            <xsl:for-each select="collection(concat($folderURI, '/?select=L0*.html;recurse=yes'))">
+                <xsl:sort select="//xhtml:meta[1]/@sortDate"
+                    order="ascending"/>
+                <xsl:sort select="//xhtml:meta[2]/@n"
                     order="ascending"/>
                 <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
                     <xsl:attribute name="id">
-                        <xsl:value-of select="tei:TEI/@xml:id"/>
+                        <xsl:value-of select="//xhtml:meta[3]/@id"/>
                     </xsl:attribute>
                     <xsl:attribute name="href">
-                        <xsl:value-of select="concat('texts/', tei:TEI/@xml:id, '.xhtml')"/>
+                        <xsl:value-of select="concat('texts/', //xhtml:meta[3]/@id, '.xhtml')"/>
                     </xsl:attribute>
                     <xsl:attribute name="media-type">
                         <xsl:text>application/xhtml+xml</xsl:text>
@@ -126,13 +127,14 @@
                     <xsl:text>inhalt</xsl:text>
                 </xsl:attribute>
             </xsl:element>
-            <xsl:for-each select="collection(concat($folderURI, '/?select=L0*.xml;recurse=yes'))">
-                <!-- XXXX values anpassen, sobald xhtml-Modell steht -->
-                <xsl:sort select="//tei:correspAction[@type = 'sent']/tei:date/@when"
+            <xsl:for-each select="collection(concat($folderURI, '/?select=L0*.html;recurse=yes'))">
+                <xsl:sort select="//xhtml:meta[1]/@sortDate"
+                    order="ascending"/>
+                <xsl:sort select="//xhtml:meta[2]/@n"
                     order="ascending"/>
                 <xsl:element name="itemref" namespace="http://www.idpf.org/2007/opf">
                     <xsl:attribute name="idref">
-                        <xsl:value-of select="tei:TEI/@xml:id"/>
+                        <xsl:value-of select="//xhtml:meta[3]/@id"/>
                     </xsl:attribute>
                 </xsl:element>
             </xsl:for-each>

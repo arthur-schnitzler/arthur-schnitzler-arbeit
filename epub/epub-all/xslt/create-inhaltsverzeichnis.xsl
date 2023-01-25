@@ -83,25 +83,24 @@
                 </xsl:element>
             </xsl:element>
             <xsl:copy-of select="ncx:navPoint[@id = 'toc']"/>
-            <xsl:for-each select="collection(concat($folderURI, '/?select=L0*.xml;recurse=yes'))">
-                <!-- XXXX values anpassen, sobald xhtml-Modell steht -->
-                <xsl:sort select="//tei:correspAction[@type = 'sent']/tei:date/@when"
-                    order="ascending"/>
+            <xsl:for-each select="collection(concat($folderURI, '/?select=L0*.html;recurse=yes'))">
+                <xsl:sort select="//xhtml:meta[1]/@sortDate" order="ascending"/>
+                <xsl:sort select="//xhtml:meta[2]/@n" order="ascending"/>
                 <xsl:element name="navPoint" namespace="http://www.daisy.org/z3986/2005/ncx/">
                     <xsl:attribute name="id">
-                        <xsl:value-of select="tei:TEI/@xml:id"/>
+                        <xsl:value-of select="//xhtml:meta[3]/@id"/>
                     </xsl:attribute>
                     <xsl:attribute name="playOrder">
                         <xsl:number value="position()+3" format="1"/>
                     </xsl:attribute>
                     <xsl:element name="navLabel" namespace="http://www.daisy.org/z3986/2005/ncx/">
                         <xsl:element name="text" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                            <xsl:copy-of select="//tei:title[@level = 'a']/text()"/>
+                            <xsl:copy-of select="//xhtml:title/text()"/>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="content" namespace="http://www.daisy.org/z3986/2005/ncx/">
                         <xsl:attribute name="src">
-                            <xsl:value-of select="concat(tei:TEI/@xml:id, '.xhtml')"/>
+                            <xsl:value-of select="concat(//xhtml:meta[3]/@id, '.xhtml')"/>
                         </xsl:attribute>
                     </xsl:element>
                 </xsl:element>

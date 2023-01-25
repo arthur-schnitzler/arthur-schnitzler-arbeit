@@ -20,17 +20,16 @@
                     <xsl:text>toc-list</xsl:text>
                 </xsl:attribute>
                 <xsl:element name="li" namespace="http://www.w3.org/1999/xhtml">
-                    <!-- XXXX value anpassen, sobald xhtml-Modell steht -->
                     <xsl:for-each
-                        select="collection(concat($folderURI, '/?select=L0*.xml;recurse=yes'))">
-                        <xsl:sort select="//tei:correspAction[@type = 'sent']/tei:date/@when"
-                            order="ascending"/>
+                        select="collection(concat($folderURI, '/?select=L0*.html;recurse=yes'))">
+                        <xsl:sort select="//xhtml:meta[1]/@sortDate" order="ascending"/>
+                        <xsl:sort select="//xhtml:meta[2]/@n" order="ascending"/>
                         <xsl:element name="a" namespace="http://www.w3.org/1999/xhtml">
                             <xsl:element name="span" namespace="http://www.w3.org/1999/xhtml">
                                 <xsl:attribute name="class">
                                     <xsl:text>title</xsl:text>
                                 </xsl:attribute>
-                                <xsl:value-of select="//tei:title[@level = 'a']/text()"/>
+                                <xsl:value-of select="//xhtml:title/text()"/>
                             </xsl:element>
                             <!-- XXXX Seitenzahl -->
                             <!--<xsl:element name="span" namespace="http://www.w3.org/1999/xhtml">
