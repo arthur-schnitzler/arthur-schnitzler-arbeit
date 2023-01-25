@@ -6,7 +6,7 @@ Workflow:
 
 1) run 
 ```
-sh fetch-data.py
+sh fetch_data.py
 ```
 
 and 
