@@ -4,7 +4,9 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:foo="whatever" version="3.0" exclude-result-prefixes="tei xhtml">
 
-    <!-- XXXX meta.xsl -->
+    <!-- this stylesheet seems to be obsolete now, please ignore me -->
+
+    <!-- XXXX meta.xsl ?? -->
 
     <!--    XXXX copy of brief-titel 
     
@@ -83,6 +85,7 @@
                 </xsl:element>
             </xsl:element>
             <!-- body -->
+            
             <!-- XXXX from editions.xsl for static website -->
             <body class="page">
                 <div class="hfeed site" id="page">
