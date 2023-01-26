@@ -1012,18 +1012,13 @@
    </xsl:function>
    <xsl:function name="foo:sectionInToc">
       <xsl:param name="titel" as="xs:string"/>
-      <xsl:param name="counter" as="xs:integer"/>
-      <xsl:param name="gesamt" as="xs:integer"/>
-      <xsl:variable name="titelminusdatum" as="xs:string"
-         select="substring-before(normalize-space($titel), tokenize(normalize-space($titel), ',')[last()])"/>
       <xsl:variable name="datum" as="xs:string"
          select="tokenize(normalize-space($titel), ', ')[last()]"/>
+      <xsl:variable name="titelminusdatum" as="xs:string"
+         select="normalize-space(substring-before(normalize-space($titel), $datum))"/>
       <xsl:value-of select="replace(replace($titelminusdatum, '\[', '{[}'), '\]', '{]}')"/>
-      <!--<xsl:value-of select="foo:section-titel-token($titelminusdatum,1,0)"/>-->
       <xsl:text> </xsl:text>
       <xsl:value-of select="foo:date-translate($datum)"/>
-      <!-- </xsl:otherwise>
-       </xsl:choose>-->
    </xsl:function>
    <!-- HAUPT -->
    <xsl:template match="root">
@@ -1125,10 +1120,12 @@
                <xsl:text>
                \section[</xsl:text>
                <xsl:value-of
-                  select="foo:sectionInToc(teiHeader/fileDesc/titleStmt/title[@level = 'a'], 0, count(contains(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')))"/>
+                  select="foo:sectionInToc(descendant::teiHeader/fileDesc/titleStmt/title[@level = 'a'])"/>
                <xsl:text>]{</xsl:text>
-               <xsl:value-of select="$dokument-id"/>
-               <xsl:text> </xsl:text>
+               <xsl:if test="$dokument-id != ''">
+                  <xsl:value-of select="$dokument-id"/>
+                  <xsl:text> </xsl:text>
+               </xsl:if>
                <xsl:value-of
                   select="substring-before(teiHeader/fileDesc/titleStmt/title[@level = 'a'], tokenize(teiHeader/fileDesc/titleStmt/title[@level = 'a'], ',')[last()])"/>
                <xsl:value-of
