@@ -1,12 +1,12 @@
-# epub schnitzler-briefe
+# epub of all schnitzler-briefe
 
-Arbeitsverzeichnis für das Erstellen von E-Books von schnitzler-briefe
+Working directory for the creation of an epub for all correspondences in schnitzler-briefe
 
 Workflow: 
 
-1) run 
+1) run in schnitzler briefe-static:
 ```
-sh fetch_data.py
+sh fetch-data.py
 ```
 
 and 
@@ -15,24 +15,22 @@ and
 ant
 ```
 
-in schnitzler-briefe-static
+2) copy generated html files to /OEBPS/texts
 
-2) copy generated xhtml files to OEBPS/texts
+3) rename the suffixes of the generated html files to .xhtml
 
-3) transform the copied xhtml files (but not inhalt.xhtml, inhaltsverzeichnix.ncx, rechte.xhtml and title.xhtml) with static-to-epub.xsl
+4) transform the copied xhtml files (but not inhalt.xhtml, inhaltsverzeichnix.ncx, rechte.xhtml and title.xhtml) with /xslt/static-to-epub.xsl
 
-4) transform OEBPS/content.opf with create-content.xsl
+5) transform /OEBPS/content.opf with /xslt/create-content.xsl
 
-5) transform OEBPS/texts/inhalt.xhtml with create-inhalt.xsl
+6) transform /OEBPS/texts/inhalt.xhtml with /xslt/create-inhalt.xsl
 
-6) transform OEBPS/texts/inhaltsverzeichnis.ncx with create-inhaltsverzeichnis.xsl
+7) transform /OEBPS/texts/inhaltsverzeichnis.ncx with /xslt/create-inhaltsverzeichnis.xsl
 
-7) run
+8) run in arthur-schnitzler-arbeit/epub/epub-all
 
 ```
 zip -rX out/schnitzler-briefe.epub mimetype META-INF/ OEBPS/ -x "*.DS_Store" -x "README.md" -x "out" -x "xslt"
 ```
 
-in arthur-schnitzler-arbeit/epub/epub-all
-
-8) validate the generated epub (in /out) with an epub-checker (https://www.pagina.gmbh/produkte/epub-checker/)
+9) validate the generated epub (in /out) with an epub-checker (i. e. https://www.pagina.gmbh/produkte/epub-checker/ or https://www.ebookit.com/tools/bp/Bo/eBookIt/epub-validator)

@@ -7,7 +7,7 @@
 
     <xsl:output method="xml" omit-xml-declaration="yes"/>
 
-    <xsl:mode on-no-match="shallow-copy"/>
+    <xsl:mode on-no-match="shallow-skip"/>
 
     <xsl:variable name="folderURI" select="resolve-uri('.', base-uri())"/>
 
@@ -15,7 +15,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="ncx:ncx">
+    <xsl:template match="/">
         <xsl:element name="ncx" namespace="http://www.daisy.org/z3986/2005/ncx/">
             <xsl:attribute name="version">
                 <xsl:text>2005-1</xsl:text>
@@ -23,89 +23,91 @@
             <xsl:attribute name="xml:lang">
                 <xsl:text>de</xsl:text>
             </xsl:attribute>
-        </xsl:element>
-        <xsl:copy-of select="ncx:head"/>
-        <xsl:copy-of select="ncx:docTitle"/>
-        <xsl:copy-of select="ncx:docAuthor"/>
-        <xsl:element name="navMap" namespace="http://www.daisy.org/z3986/2005/ncx/">
-            <xsl:element name="navPoint" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                <xsl:attribute name="id">
-                    <xsl:text>titel</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="playOrder">
-                    <xsl:text>1</xsl:text>
-                </xsl:attribute>
-                <xsl:element name="navLabel" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                    <xsl:element name="text" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                        <xsl:text>Titelblatt</xsl:text>
-                    </xsl:element>
-                </xsl:element>
-                <xsl:element name="content" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                    <xsl:attribute name="src">
-                        <xsl:text>titel.xhtml</xsl:text>
-                    </xsl:attribute>
-                </xsl:element>
-            </xsl:element>
-            <xsl:element name="navPoint" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                <xsl:attribute name="id">
-                    <xsl:text>rechte</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="playOrder">
-                    <xsl:text>2</xsl:text>
-                </xsl:attribute>
-                <xsl:element name="navLabel" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                    <xsl:element name="text" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                        <xsl:text>Rechtehinweis</xsl:text>
-                    </xsl:element>
-                </xsl:element>
-                <xsl:element name="content" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                    <xsl:attribute name="src">
-                        <xsl:text>rechte.xhtml</xsl:text>
-                    </xsl:attribute>
-                </xsl:element>
-            </xsl:element>
-            <xsl:element name="navPoint" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                <xsl:attribute name="id">
-                    <xsl:text>toc</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="playOrder">
-                    <xsl:text>3</xsl:text>
-                </xsl:attribute>
-                <xsl:element name="navLabel" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                    <xsl:element name="text" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                        <xsl:text>Inhaltsverzeichnis</xsl:text>
-                    </xsl:element>
-                </xsl:element>
-                <xsl:element name="content" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                    <xsl:attribute name="src">
-                        <xsl:text>inhalt.xhtml</xsl:text>
-                    </xsl:attribute>
-                </xsl:element>
-            </xsl:element>
-            <xsl:copy-of select="ncx:navPoint[@id = 'toc']"/>
-            <xsl:for-each select="collection(concat($folderURI, '/?select=L0*.html;recurse=yes'))">
-                <xsl:sort select="//xhtml:meta[1]/@sortDate" order="ascending"/>
-                <xsl:sort select="//xhtml:meta[2]/@n" order="ascending"/>
+            <xsl:copy-of select="ncx:head"/>
+            <xsl:copy-of select="ncx:docTitle"/>
+            <xsl:copy-of select="ncx:docAuthor"/>
+            <xsl:element name="navMap" namespace="http://www.daisy.org/z3986/2005/ncx/">
                 <xsl:element name="navPoint" namespace="http://www.daisy.org/z3986/2005/ncx/">
                     <xsl:attribute name="id">
-                        <xsl:value-of select="//xhtml:meta[3]/@id"/>
+                        <xsl:text>titel</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="playOrder">
-                        <xsl:number value="position()+3" format="1"/>
+                        <xsl:text>1</xsl:text>
                     </xsl:attribute>
                     <xsl:element name="navLabel" namespace="http://www.daisy.org/z3986/2005/ncx/">
                         <xsl:element name="text" namespace="http://www.daisy.org/z3986/2005/ncx/">
-                            <xsl:copy-of select="//xhtml:title/text()"/>
+                            <xsl:text>Titelblatt</xsl:text>
                         </xsl:element>
                     </xsl:element>
                     <xsl:element name="content" namespace="http://www.daisy.org/z3986/2005/ncx/">
                         <xsl:attribute name="src">
-                            <xsl:value-of select="concat(//xhtml:meta[3]/@id, '.xhtml')"/>
+                            <xsl:text>titel.xhtml</xsl:text>
                         </xsl:attribute>
                     </xsl:element>
                 </xsl:element>
-            </xsl:for-each>
-            
+                <xsl:element name="navPoint" namespace="http://www.daisy.org/z3986/2005/ncx/">
+                    <xsl:attribute name="id">
+                        <xsl:text>rechte</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="playOrder">
+                        <xsl:text>2</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="navLabel" namespace="http://www.daisy.org/z3986/2005/ncx/">
+                        <xsl:element name="text" namespace="http://www.daisy.org/z3986/2005/ncx/">
+                            <xsl:text>Rechtehinweis</xsl:text>
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:element name="content" namespace="http://www.daisy.org/z3986/2005/ncx/">
+                        <xsl:attribute name="src">
+                            <xsl:text>rechte.xhtml</xsl:text>
+                        </xsl:attribute>
+                    </xsl:element>
+                </xsl:element>
+                <xsl:element name="navPoint" namespace="http://www.daisy.org/z3986/2005/ncx/">
+                    <xsl:attribute name="id">
+                        <xsl:text>toc</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="playOrder">
+                        <xsl:text>3</xsl:text>
+                    </xsl:attribute>
+                    <xsl:element name="navLabel" namespace="http://www.daisy.org/z3986/2005/ncx/">
+                        <xsl:element name="text" namespace="http://www.daisy.org/z3986/2005/ncx/">
+                            <xsl:text>Inhaltsverzeichnis</xsl:text>
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:element name="content" namespace="http://www.daisy.org/z3986/2005/ncx/">
+                        <xsl:attribute name="src">
+                            <xsl:text>inhalt.xhtml</xsl:text>
+                        </xsl:attribute>
+                    </xsl:element>
+                </xsl:element>
+                <xsl:copy-of select="ncx:navPoint[@id = 'toc']"/>
+                <xsl:for-each
+                    select="collection(concat($folderURI, '/?select=L0*.xhtml;recurse=yes'))">
+                    <xsl:sort select="//xhtml:meta/@sortDate" order="ascending"/>
+                    <xsl:sort select="//xhtml:meta/@n" order="ascending"/>
+                    <xsl:element name="navPoint" namespace="http://www.daisy.org/z3986/2005/ncx/">
+                        <xsl:attribute name="id">
+                            <xsl:value-of select="//xhtml:meta/@id"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="playOrder">
+                            <xsl:number value="position() + 3" format="1"/>
+                        </xsl:attribute>
+                        <xsl:element name="navLabel"
+                            namespace="http://www.daisy.org/z3986/2005/ncx/">
+                            <xsl:element name="text"
+                                namespace="http://www.daisy.org/z3986/2005/ncx/">
+                                <xsl:copy-of select="//xhtml:title/text()"/>
+                            </xsl:element>
+                        </xsl:element>
+                        <xsl:element name="content" namespace="http://www.daisy.org/z3986/2005/ncx/">
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="concat(//xhtml:meta/@id, '.xhtml')"/>
+                            </xsl:attribute>
+                        </xsl:element>
+                    </xsl:element>
+                </xsl:for-each>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
 

@@ -6,9 +6,11 @@
 
     <xsl:output method="xml" omit-xml-declaration="yes"/>
 
+    <xsl:mode on-no-match="shallow-skip"/>
+
     <xsl:variable name="folderURI" select="resolve-uri('.', base-uri())"/>
 
-    <xsl:template match="opf:package">
+    <xsl:template match="/">
         <xsl:element name="package" namespace="http://www.idpf.org/2007/opf">
             <xsl:attribute name="version">
                 <xsl:text>2.0</xsl:text>
@@ -16,128 +18,126 @@
             <xsl:attribute name="unique-identifier">
                 <xsl:text>bookid</xsl:text>
             </xsl:attribute>
-        </xsl:element>
-        <xsl:copy-of select="opf:metadata"/>
-        <xsl:element name="manifest" namespace="http://www.idpf.org/2007/opf">
-            <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
-                <xsl:attribute name="id">
-                    <xsl:text>inhaltsverzeichnis</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="href">
-                    <xsl:text>texts/inhaltsverzeichnis.ncx</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="media-type">
-                    <xsl:text>application/x-dtbncx+xml</xsl:text>
-                </xsl:attribute>
-            </xsl:element>
-            <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
-                <xsl:attribute name="id">
-                    <xsl:text>titel</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="href">
-                    <xsl:text>texts/titel.xhtml</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="media-type">
-                    <xsl:text>application/xhtml+xml</xsl:text>
-                </xsl:attribute>
-            </xsl:element>
-            <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
-                <xsl:attribute name="id">
-                    <xsl:text>coverimage</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="href">
-                    <xsl:text>images/cover.png</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="media-type">
-                    <xsl:text>image/png</xsl:text>
-                </xsl:attribute>
-            </xsl:element>
-            <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
-                <xsl:attribute name="id">
-                    <xsl:text>inhalt</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="href">
-                    <xsl:text>texts/inhalt.xhtml</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="media-type">
-                    <xsl:text>application/xhtml+xml</xsl:text>
-                </xsl:attribute>
-            </xsl:element>
-            <xsl:for-each select="collection(concat($folderURI, '/?select=L0*.html;recurse=yes'))">
-                <xsl:sort select="//xhtml:meta[1]/@sortDate"
-                    order="ascending"/>
-                <xsl:sort select="//xhtml:meta[2]/@n"
-                    order="ascending"/>
+            <xsl:copy-of select="opf:metadata"/>
+            <xsl:element name="manifest" namespace="http://www.idpf.org/2007/opf">
                 <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
                     <xsl:attribute name="id">
-                        <xsl:value-of select="//xhtml:meta[3]/@id"/>
+                        <xsl:text>inhaltsverzeichnis</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="href">
-                        <xsl:value-of select="concat('texts/', //xhtml:meta[3]/@id, '.xhtml')"/>
+                        <xsl:text>texts/inhaltsverzeichnis.ncx</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="media-type">
+                        <xsl:text>application/x-dtbncx+xml</xsl:text>
+                    </xsl:attribute>
+                </xsl:element>
+                <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
+                    <xsl:attribute name="id">
+                        <xsl:text>titel</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="href">
+                        <xsl:text>texts/titel.xhtml</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="media-type">
                         <xsl:text>application/xhtml+xml</xsl:text>
                     </xsl:attribute>
                 </xsl:element>
-            </xsl:for-each>
-            <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
-                <xsl:attribute name="id">
-                    <xsl:text>rechte</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="href">
-                    <xsl:text>texts/rechte.xhtml</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="media-type">
-                    <xsl:text>application/xhtml+xml</xsl:text>
-                </xsl:attribute>
-            </xsl:element>
-            <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
-                <xsl:attribute name="id">
-                    <xsl:text>css</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="href">
-                    <xsl:text>styles/stylesheet.css</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="media-type">
-                    <xsl:text>text/css</xsl:text>
-                </xsl:attribute>
-            </xsl:element>
-        </xsl:element>
-        <xsl:element name="spine" namespace="http://www.idpf.org/2007/opf">
-            <xsl:attribute name="toc">
-                <xsl:text>inhaltsverzeichnis</xsl:text>
-            </xsl:attribute>
-            <xsl:element name="itemref" namespace="http://www.idpf.org/2007/opf">
-                <xsl:attribute name="idref">
-                    <xsl:text>coverimage</xsl:text>
-                </xsl:attribute>
-            </xsl:element>
-            <xsl:element name="itemref" namespace="http://www.idpf.org/2007/opf">
-                <xsl:attribute name="idref">
-                    <xsl:text>titel</xsl:text>
-                </xsl:attribute>
-            </xsl:element>
-            <xsl:element name="itemref" namespace="http://www.idpf.org/2007/opf">
-                <xsl:attribute name="idref">
-                    <xsl:text>rechte</xsl:text>
-                </xsl:attribute>
-            </xsl:element>
-            <xsl:element name="itemref" namespace="http://www.idpf.org/2007/opf">
-                <xsl:attribute name="idref">
-                    <xsl:text>inhalt</xsl:text>
-                </xsl:attribute>
-            </xsl:element>
-            <xsl:for-each select="collection(concat($folderURI, '/?select=L0*.html;recurse=yes'))">
-                <xsl:sort select="//xhtml:meta[1]/@sortDate"
-                    order="ascending"/>
-                <xsl:sort select="//xhtml:meta[2]/@n"
-                    order="ascending"/>
-                <xsl:element name="itemref" namespace="http://www.idpf.org/2007/opf">
-                    <xsl:attribute name="idref">
-                        <xsl:value-of select="//xhtml:meta[3]/@id"/>
+                <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
+                    <xsl:attribute name="id">
+                        <xsl:text>coverimage</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="href">
+                        <xsl:text>images/cover.png</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="media-type">
+                        <xsl:text>image/png</xsl:text>
                     </xsl:attribute>
                 </xsl:element>
-            </xsl:for-each>
+                <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
+                    <xsl:attribute name="id">
+                        <xsl:text>inhalt</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="href">
+                        <xsl:text>texts/inhalt.xhtml</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="media-type">
+                        <xsl:text>application/xhtml+xml</xsl:text>
+                    </xsl:attribute>
+                </xsl:element>
+                <xsl:for-each
+                    select="collection(concat($folderURI, '/texts/?select=L0*.xhtml;recurse=yes'))">
+                    <xsl:sort select="//xhtml:meta/@sortDate" order="ascending"/>
+                    <xsl:sort select="//xhtml:meta/@n" order="ascending"/>
+                    <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
+                        <xsl:attribute name="id">
+                            <xsl:value-of select="//xhtml:meta/@id"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="concat('texts/', //xhtml:meta/@id, '.xhtml')"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="media-type">
+                            <xsl:text>application/xhtml+xml</xsl:text>
+                        </xsl:attribute>
+                    </xsl:element>
+                </xsl:for-each>
+                <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
+                    <xsl:attribute name="id">
+                        <xsl:text>rechte</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="href">
+                        <xsl:text>texts/rechte.xhtml</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="media-type">
+                        <xsl:text>application/xhtml+xml</xsl:text>
+                    </xsl:attribute>
+                </xsl:element>
+                <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
+                    <xsl:attribute name="id">
+                        <xsl:text>css</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="href">
+                        <xsl:text>styles/stylesheet.css</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="media-type">
+                        <xsl:text>text/css</xsl:text>
+                    </xsl:attribute>
+                </xsl:element>
+            </xsl:element>
+            <xsl:element name="spine" namespace="http://www.idpf.org/2007/opf">
+                <xsl:attribute name="toc">
+                    <xsl:text>inhaltsverzeichnis</xsl:text>
+                </xsl:attribute>
+                <xsl:element name="itemref" namespace="http://www.idpf.org/2007/opf">
+                    <xsl:attribute name="idref">
+                        <xsl:text>coverimage</xsl:text>
+                    </xsl:attribute>
+                </xsl:element>
+                <xsl:element name="itemref" namespace="http://www.idpf.org/2007/opf">
+                    <xsl:attribute name="idref">
+                        <xsl:text>titel</xsl:text>
+                    </xsl:attribute>
+                </xsl:element>
+                <xsl:element name="itemref" namespace="http://www.idpf.org/2007/opf">
+                    <xsl:attribute name="idref">
+                        <xsl:text>rechte</xsl:text>
+                    </xsl:attribute>
+                </xsl:element>
+                <xsl:element name="itemref" namespace="http://www.idpf.org/2007/opf">
+                    <xsl:attribute name="idref">
+                        <xsl:text>inhalt</xsl:text>
+                    </xsl:attribute>
+                </xsl:element>
+                <xsl:for-each
+                    select="collection(concat($folderURI, '/texts/?select=L0*.xhtml;recurse=yes'))">
+                    <xsl:sort select="//xhtml:meta/@sortDate" order="ascending"/>
+                    <xsl:sort select="//xhtml:meta/@n" order="ascending"/>
+                    <xsl:element name="itemref" namespace="http://www.idpf.org/2007/opf">
+                        <xsl:attribute name="idref">
+                            <xsl:value-of select="//xhtml:meta/@id"/>
+                        </xsl:attribute>
+                    </xsl:element>
+                </xsl:for-each>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
 
