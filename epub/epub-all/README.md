@@ -1,6 +1,6 @@
 # epub of all schnitzler-briefe
 
-Working directory for the creation of an epub for all correspondences in schnitzler-briefe
+Working directory for the creation of an epub for all correspondences in schnitzler-briefe.
 
 Workflow: 
 
@@ -27,7 +27,7 @@ ant
 
 7) transform /OEBPS/texts/inhaltsverzeichnis.ncx with /xslt/create-inhaltsverzeichnis.xsl
 
-8) run in arthur-schnitzler-arbeit/epub/epub-all
+8) run in arthur-schnitzler-arbeit/epub/epub-all:
 
 ```
 zip -rX out/schnitzler-briefe.epub mimetype META-INF/ OEBPS/ -x "*.DS_Store" -x "README.md" -x "out" -x "xslt"
