@@ -2,7 +2,9 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions"
     xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xhtml="http://www.w3.org/1999/xhtml"
-    xmlns:opf="http://www.idpf.org/2007/opf" version="3.0" exclude-result-prefixes="tei xhtml opf">
+    xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/"
+     version="3.0"
+    exclude-result-prefixes="tei xhtml opf">
 
     <xsl:output method="xml" omit-xml-declaration="yes"/>
 
@@ -16,9 +18,48 @@
                 <xsl:text>2.0</xsl:text>
             </xsl:attribute>
             <xsl:attribute name="unique-identifier">
-                <xsl:text>bookid</xsl:text>
+                <xsl:text>asbw-epub</xsl:text>
             </xsl:attribute>
-            <xsl:copy-of select="opf:metadata"/>
+            <xsl:element name="metadata" namespace="http://www.idpf.org/2007/opf">
+                <xsl:element name="identifier" namespace="http://purl.org/dc/elements/1.1/">
+                    <xsl:attribute name="id">
+                        <xsl:text>asbw-epub</xsl:text>
+                    </xsl:attribute>
+                    <xsl:text>asbw-epub</xsl:text>
+                </xsl:element>
+                <xsl:element name="title" namespace="http://purl.org/dc/elements/1.1/">
+                    <xsl:text>Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</xsl:text>
+                </xsl:element>
+                <xsl:element name="creator" namespace="http://purl.org/dc/elements/1.1/">
+                    <xsl:text>Müller, Martin Anton</xsl:text>
+                </xsl:element>
+                <xsl:element name="creator" namespace="http://purl.org/dc/elements/1.1/">
+                    <xsl:text>Susen, Gerd-Hermann</xsl:text>
+                </xsl:element>
+                <xsl:element name="creator" namespace="http://purl.org/dc/elements/1.1/">
+                    <xsl:text>Untner, Laura</xsl:text>
+                </xsl:element>
+                <xsl:element name="publisher" namespace="http://purl.org/dc/elements/1.1/">
+                    <xsl:text>Austrian Centre for Digital Humanities and Cultural Heritage at the Austrian Academy of Sciences</xsl:text>
+                </xsl:element>
+                <xsl:element name="language" namespace="http://purl.org/dc/elements/1.1/">
+                    <xsl:text>German</xsl:text>
+                </xsl:element>
+                <xsl:element name="date" namespace="http://purl.org/dc/elements/1.1/">
+                    <xsl:text>2023</xsl:text>
+                </xsl:element>
+                <xsl:element name="subject" namespace="http://purl.org/dc/elements/1.1/">
+                    <xsl:text>Arthur Schnitzler’s literary correspondences</xsl:text>
+                </xsl:element>
+                <xsl:element name="meta" namespace="http://www.idpf.org/2007/opf">
+                    <xsl:attribute name="name">
+                        <xsl:text>cover</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="content">
+                        <xsl:text>images/cover.png</xsl:text>
+                    </xsl:attribute>
+                </xsl:element>
+            </xsl:element>
             <xsl:element name="manifest" namespace="http://www.idpf.org/2007/opf">
                 <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
                     <xsl:attribute name="id">

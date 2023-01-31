@@ -15,18 +15,27 @@
                     <xsl:copy-of select="//xhtml:title[parent::xhtml:head]/text()"/>
                 </xsl:element>
                 <xsl:element name="meta" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:attribute name="sortDate">
+                    <xsl:attribute name="name">
+                        <xsl:text>date</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="content">
                         <xsl:value-of select="//xhtml:meta[@name = 'Date of publication']/@content"
                         />
                     </xsl:attribute>
                 </xsl:element>
                 <xsl:element name="meta" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:attribute name="n">
+                    <xsl:attribute name="name">
+                        <xsl:text>n</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="content">
                         <xsl:value-of select="//xhtml:meta[@name = 'Date of publication']/@n"/>
                     </xsl:attribute>
                 </xsl:element>
                 <xsl:element name="meta" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:attribute name="id">
+                    <xsl:attribute name="name">
+                        <xsl:text>id</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="content">
                         <xsl:value-of
                             select="//xhtml:tr[child::xhtml:th[contains(., 'Download')]]//xhtml:li[1]/xhtml:a/substring-before(substring-after(@href, 'briefe/'), '?')"
                         />

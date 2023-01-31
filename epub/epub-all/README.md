@@ -21,16 +21,18 @@ ant
 
 4) transform the copied xhtml files (but not inhalt.xhtml, inhaltsverzeichnix.ncx, rechte.xhtml and title.xhtml) with /xslt/static-to-epub.xsl
 
-5) transform /OEBPS/content.opf with /xslt/create-content.xsl
+5) transform the copied xhtml files (but not inhalt.xhtml, inhaltsverzeichnix.ncx, rechte.xhtml and title.xhtml) with /xslt/editions-postprocessing.xsl
 
-6) transform /OEBPS/texts/inhalt.xhtml with /xslt/create-inhalt.xsl
+6) transform /OEBPS/content.opf with /xslt/create-content.xsl
 
-7) transform /OEBPS/texts/inhaltsverzeichnis.ncx with /xslt/create-inhaltsverzeichnis.xsl
+7) transform /OEBPS/texts/inhalt.xhtml with /xslt/create-inhalt.xsl
 
-8) run in arthur-schnitzler-arbeit/epub/epub-all:
+8) transform /OEBPS/texts/inhaltsverzeichnis.ncx with /xslt/create-inhaltsverzeichnis.xsl
+
+9) run in arthur-schnitzler-arbeit/epub/epub-all:
 
 ```
 zip -rX out/schnitzler-briefe.epub mimetype META-INF/ OEBPS/ -x "*.DS_Store" -x "README.md" -x "out" -x "xslt"
 ```
 
-9) validate the generated epub (in /out) with an epub-checker (i. e. https://www.pagina.gmbh/produkte/epub-checker/ or https://www.ebookit.com/tools/bp/Bo/eBookIt/epub-validator)
+10) validate the generated epub (in /out) with an epub-checker (i. e. https://www.pagina.gmbh/produkte/epub-checker/ or https://www.ebookit.com/tools/bp/Bo/eBookIt/epub-validator)

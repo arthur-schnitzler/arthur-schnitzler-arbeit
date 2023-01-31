@@ -13,7 +13,7 @@
     <xsl:template match="/">
         <xsl:element name="html" namespace="http://www.w3.org/1999/xhtml">
             <xsl:element name="head" namespace="http://www.w3.org/1999/xhtml">
-                <xsl:element name="title">
+                <xsl:element name="title" namespace="http://www.w3.org/1999/xhtml">
                     <xsl:text>Inhaltsverzeichnis</xsl:text>
                 </xsl:element>
             </xsl:element>
