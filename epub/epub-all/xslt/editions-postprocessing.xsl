@@ -23,8 +23,12 @@
         <xsl:apply-templates/>
     </xsl:template>
     
+    <xsl:template match="//xhtml:div/@class">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
     <xsl:template match="//@align">
-        <xsl:attribute name="id">
+        <xsl:attribute name="class">
             <xsl:value-of select="."/>
         </xsl:attribute>
     </xsl:template>

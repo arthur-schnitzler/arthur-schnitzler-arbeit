@@ -48,7 +48,7 @@
                     <xsl:element name="br" namespace="http://www.w3.org/1999/xhtml"/>
                 </xsl:element>
                 <xsl:element name="div" namespace="http://www.w3.org/1999/xhtml">
-                    <xsl:copy-of select="//xhtml:div[@class = 'div']"/>
+                    <xsl:copy-of select="//xhtml:div[@class = 'div'][1]"/>
                 </xsl:element>
             </xsl:element>
         </xsl:element>
