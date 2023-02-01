@@ -21,7 +21,7 @@ ant
 
 4) transform the copied xhtml files (but not inhalt.xhtml, inhaltsverzeichnix.ncx, rechte.xhtml and title.xhtml) with /xslt/static-to-epub.xsl
 
-5) transform the copied xhtml files (but not inhalt.xhtml, inhaltsverzeichnix.ncx, rechte.xhtml and title.xhtml) with /xslt/editions-postprocessing.xsl
+5) transform the copied (and just transformed) xhtml files (but not inhalt.xhtml, inhaltsverzeichnix.ncx, rechte.xhtml and title.xhtml) with /xslt/editions-postprocessing.xsl
 
 6) transform /OEBPS/content.opf with /xslt/create-content.xsl
 
