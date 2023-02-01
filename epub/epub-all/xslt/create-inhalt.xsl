@@ -25,8 +25,8 @@
                     <xsl:element name="li" namespace="http://www.w3.org/1999/xhtml">
                         <xsl:for-each
                             select="collection(concat($folderURI, '/?select=L0*.xhtml;recurse=yes'))">
-                            <xsl:sort select="//xhtml:meta/@sortDate" order="ascending"/>
-                            <xsl:sort select="//xhtml:meta/@n" order="ascending"/>
+                            <xsl:sort select="//xhtml:meta[@name='date']/@content" order="ascending"/>
+                            <xsl:sort select="//xhtml:meta[@name='n']/@content" order="ascending"/>
                             <xsl:element name="a" namespace="http://www.w3.org/1999/xhtml">
                                 <xsl:element name="span" namespace="http://www.w3.org/1999/xhtml">
                                     <xsl:attribute name="class">

@@ -127,11 +127,11 @@
                 <xsl:copy-of select="ncx:navPoint[@id = 'toc']"/>
                 <xsl:for-each
                     select="collection(concat($folderURI, '/?select=L0*.xhtml;recurse=yes'))">
-                    <xsl:sort select="//xhtml:meta/@sortDate" order="ascending"/>
-                    <xsl:sort select="//xhtml:meta/@n" order="ascending"/>
+                    <xsl:sort select="//xhtml:meta[@name='date']/@content" order="ascending"/>
+                    <xsl:sort select="//xhtml:meta[@name='n']/@content" order="ascending"/>
                     <xsl:element name="navPoint" namespace="http://www.daisy.org/z3986/2005/ncx/">
                         <xsl:attribute name="id">
-                            <xsl:value-of select="//xhtml:meta/@id"/>
+                            <xsl:value-of select="//xhtml:meta[@name='id']/@content"/>
                         </xsl:attribute>
                         <xsl:attribute name="playOrder">
                             <xsl:number value="position() + 3" format="1"/>
@@ -145,7 +145,7 @@
                         </xsl:element>
                         <xsl:element name="content" namespace="http://www.daisy.org/z3986/2005/ncx/">
                             <xsl:attribute name="src">
-                                <xsl:value-of select="concat(//xhtml:meta/@id, '.xhtml')"/>
+                                <xsl:value-of select="concat(//xhtml:meta[@name='id']/@content, '.xhtml')"/>
                             </xsl:attribute>
                         </xsl:element>
                     </xsl:element>
