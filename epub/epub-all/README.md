@@ -29,18 +29,24 @@ ant
 //tbody[tr[1]/count(td) != tr[2]/count(td)]
 ```
 
-7) validate the xhtml files just to be sure
+7) remove from the xhtml files:
 
-8) transform /OEBPS/content.opf with /xslt/create-content.xsl
+```
+xmlns:_="urn:acdh" xmlns:foo="whatever works"
+```
 
-9) transform /OEBPS/texts/inhalt.xhtml with /xslt/create-inhalt.xsl
+8) validate the xhtml files just to be sure
 
-10) transform /OEBPS/texts/inhaltsverzeichnis.ncx with /xslt/create-inhaltsverzeichnis.xsl
+9) transform /OEBPS/content.opf with /xslt/create-content.xsl
 
-11) run in arthur-schnitzler-arbeit/epub/epub-all:
+10) transform /OEBPS/texts/inhalt.xhtml with /xslt/create-inhalt.xsl
+
+11) transform /OEBPS/texts/inhaltsverzeichnis.ncx with /xslt/create-inhaltsverzeichnis.xsl
+
+12) run in arthur-schnitzler-arbeit/epub/epub-all:
 
 ```
 zip -rX out/schnitzler-briefe.epub mimetype META-INF/ OEBPS/ -x "*.DS_Store" -x "README.md" -x "out" -x "xslt"
 ```
 
-12) validate the generated epub (in /out) with an epub-checker (i. e. https://github.com/w3c/epubcheck, https://www.pagina.gmbh/produkte/epub-checker/ or https://www.ebookit.com/tools/bp/Bo/eBookIt/epub-validator)
+13) validate the generated epub (in /out) with an epub-checker (i. e. https://github.com/w3c/epubcheck, https://www.pagina.gmbh/produkte/epub-checker/ or https://www.ebookit.com/tools/bp/Bo/eBookIt/epub-validator)

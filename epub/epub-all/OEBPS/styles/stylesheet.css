@@ -29,12 +29,16 @@ div[class="center"] {
     text-align: center;
 }
 
-span[class="footnote"] {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: black;
-  text-align: left;
+.footnote { 
+ float: footnote;
+ background-color: white;
+ margin-bottom:2mm;
+}
+
+.footnote::footnote-call { 
+ background-color: white;
+}
+
+.footnote::footnote-marker { 
+ background-color: white;
 }

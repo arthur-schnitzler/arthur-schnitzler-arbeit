@@ -51,14 +51,14 @@
                 <xsl:element name="subject" namespace="http://purl.org/dc/elements/1.1/">
                     <xsl:text>Arthur Schnitzler’s literary correspondences</xsl:text>
                 </xsl:element>
-                <xsl:element name="meta" namespace="http://www.idpf.org/2007/opf">
+                <!--<xsl:element name="meta" namespace="http://www.idpf.org/2007/opf">
                     <xsl:attribute name="name">
                         <xsl:text>cover</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="content">
-                        <xsl:text>images/cover.png</xsl:text>
+                        <xsl:text>images/cover.svg</xsl:text>
                     </xsl:attribute>
-                </xsl:element>
+                </xsl:element>-->
             </xsl:element>
             <xsl:element name="manifest" namespace="http://www.idpf.org/2007/opf">
                 <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
@@ -83,17 +83,17 @@
                         <xsl:text>application/xhtml+xml</xsl:text>
                     </xsl:attribute>
                 </xsl:element>
-                <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
+                <!--<xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
                     <xsl:attribute name="id">
                         <xsl:text>coverimage</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="href">
-                        <xsl:text>images/cover.png</xsl:text>
+                        <xsl:text>images/cover.svg</xsl:text>
                     </xsl:attribute>
                     <xsl:attribute name="media-type">
-                        <xsl:text>image/png</xsl:text>
+                        <xsl:text>image/svg+xml</xsl:text>
                     </xsl:attribute>
-                </xsl:element>
+                </xsl:element>-->
                 <xsl:element name="item" namespace="http://www.idpf.org/2007/opf">
                     <xsl:attribute name="id">
                         <xsl:text>inhalt</xsl:text>
