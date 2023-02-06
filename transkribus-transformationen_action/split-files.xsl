@@ -111,7 +111,7 @@
                                                   <desc/>
                                                 </objectDesc>
                                                 <handDesc>
-                                                  <handNote medium="" style="lateinische-kurrent"/>
+                                                  <handNote medium="" style="deutsche-kurrent"/>
                                                 </handDesc>
                                             </physDesc>
                                         </msDesc>
