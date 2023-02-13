@@ -53,17 +53,9 @@
          <xs:sequence>
             <xs:element ref="tei:fileDesc"/>
             <xs:element ref="tei:profileDesc"/>
-            <xs:element ref="tei:encodingDesc"/>
             <xs:element ref="tei:revisionDesc"/>
          </xs:sequence>
          <xs:attribute name="type" type="xs:NCName"/>
-      </xs:complexType>
-   </xs:element>
-   <xs:element name="encodingDesc">
-      <xs:complexType>
-         <xs:sequence>
-            <xs:element ref="tei:refsDecl"/>
-         </xs:sequence>
       </xs:complexType>
    </xs:element>
    <xs:element name="refsDecl">
