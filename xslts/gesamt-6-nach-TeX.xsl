@@ -4478,7 +4478,7 @@
       <xsl:text>\end{otherlanguage}</xsl:text>
    </xsl:template>
    <xsl:template match="foreign[starts-with(@xml:lang, 'it') or starts-with(@lang, 'it')]">
-      <xsl:text>\begin{otherlanguage}{italienisch}</xsl:text>
+      <xsl:text>\begin{otherlanguage}{italian}</xsl:text>
       <xsl:apply-templates/>
       <xsl:text>\end{otherlanguage}</xsl:text>
    </xsl:template>
