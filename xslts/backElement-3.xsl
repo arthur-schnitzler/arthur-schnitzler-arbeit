@@ -99,7 +99,7 @@
         </xsl:attribute>
     </xsl:template>
     <xsl:template match="tei:back//tei:title/@type[. = 'main']"/>
-    <xsl:template match="tei:back//tei:bibl/tei:author/@ref">
+    <xsl:template match="tei:back//tei:bibl/tei:author/@ref|tei:back//tei:bibl/tei:author/@key">
         <xsl:attribute name="ref">
             <xsl:choose>
                 <xsl:when test="starts-with(., 'pmbperson__') or starts-with(., 'person__')">
