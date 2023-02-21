@@ -4482,10 +4482,10 @@
       <xsl:apply-templates/>
       <xsl:text>\end{otherlanguage}</xsl:text>
    </xsl:template>
-   <xsl:template match="foreign[starts-with(@xml:lang, 'ja') or starts-with(@lang, 'ja')]">
-      <xsl:text>\begin{otherlanguage}{japanese}</xsl:text>
+   <xsl:template match="foreign[starts-with(@lang, 'ja') or starts-with(@xml:lang, 'ja')]">
+      <xsl:text>\japanese{</xsl:text>
       <xsl:apply-templates/>
-      <xsl:text>\end{otherlanguage}</xsl:text>
+      <xsl:text>}</xsl:text>
    </xsl:template>
    <!-- Ab hier PERSONENINDEX, WERKINDEX UND ORTSINDEX -->
    <!-- Diese Funktion setzt die Fußnoten und Indexeinträge der Personen, wobei übergeben wird, ob man sich gerade im 
