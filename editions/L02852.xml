@@ -84,9 +84,16 @@
                         <objectDesc>
                            <desc type="karte" subtype="bildpostkarte"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"/>
-                        </handDesc>
+                        
+                           <handDesc hands="1">
+                              <handNote medium="schwarze_tinte" style="deutsche-kurrent"
+                                 corresp="#pmb11485"/>
+                              <handNote medium="schwarze_tinte" style="lateinische-kurrent"
+                                 corresp="#pmb11485">
+                                 <p>Adresse</p>
+                              </handNote>
+                           </handDesc>
+                        
                         <additions>
                            <incident type="postal">
                               <desc>
@@ -141,6 +148,8 @@
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2022-12-06">Angelegt</change>
+         <change who="MAM" when="2023-02-20">Index check</change>
+         <change who="MAM" when="2023-02-20">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -152,12 +161,11 @@
          <div type="address">
             <address>
                <addrLine>
-                  <hi rend="latintype">
+                  
                      <pb facs="HS.NZ85.1.3168_0041"/>
                      <foreign xml:lang="en">
                         <rs type="place" ref="#pmb41240">Austria</rs>
-                     </foreign>
-                  </hi>.</addrLine>
+                     </foreign>.</addrLine>
                <addrLine>
                   <foreign xml:lang="en">
                      <hi rend="pre-print">
@@ -165,16 +173,12 @@
                      </hi>
                   </foreign>
                </addrLine>
+               <addrLine>Herrn Dr. Arthur Schnitzler</addrLine>
                <addrLine>
-                  <hi rend="latintype">Herrn Dr. Arthur Schnitzler</hi>
-               </addrLine>
+                  
+                     <rs type="place" ref="#pmb50">Wien</rs>.</addrLine>
                <addrLine>
-                  <hi rend="latintype">
-                     <rs type="place" ref="#pmb50">Wien</rs>
-                  </hi>.</addrLine>
-               <addrLine>
-                  <rs type="place" ref="#pmb397">
-                     <hi rend="latintype">IX. Frankgaße</hi> 1</rs>.</addrLine>
+                  <rs type="place" ref="#pmb397">IX. Frankgaße 1</rs>.</addrLine>
             </address>
          </div>
          <div type="writingSession" n="1">
