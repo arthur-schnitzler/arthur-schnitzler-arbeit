@@ -3919,6 +3919,9 @@
          <xsl:when test="$language = 'dk'">
             <xsl:text>\selectlanguage{danish}</xsl:text>
          </xsl:when>
+         <xsl:when test="$language = 'jp'">
+            <xsl:text>\selectlanguage{japanese}</xsl:text>
+         </xsl:when>
       </xsl:choose>
       <xsl:apply-templates/>
       <xsl:if test="not($language = 'de') or @xml:lang = 'de-AT'">
@@ -4525,6 +4528,11 @@
    </xsl:template>
    <xsl:template match="foreign[starts-with(@xml:lang, 'it') or starts-with(@lang, 'it')]">
       <xsl:text>\begin{otherlanguage}{italian}</xsl:text>
+      <xsl:apply-templates/>
+      <xsl:text>\end{otherlanguage}</xsl:text>
+   </xsl:template>
+   <xsl:template match="foreign[starts-with(@xml:lang, 'ja') or starts-with(@lang, 'ja')]">
+      <xsl:text>\begin{otherlanguage}{japanese}</xsl:text>
       <xsl:apply-templates/>
       <xsl:text>\end{otherlanguage}</xsl:text>
    </xsl:template>
