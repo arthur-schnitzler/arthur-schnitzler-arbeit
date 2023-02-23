@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
-    exclude-result-prefixes="#all" version="2.0">
+    exclude-result-prefixes="#all" version="3.0">
 
     <xsl:output name="xml" method="xml" indent="yes" omit-xml-declaration="yes"/>
 
@@ -9,10 +9,18 @@
     <xsl:param name="dir">../editions</xsl:param>
 
     <!-- output xml file for each letter tag with file name according to number of xml files in output directory (+1) -->
-    <xsl:param name="n" select="count(collection(concat($dir, '?select=*.xml')))"/>
     <xsl:template match="/*">
+        <xsl:variable name="erste-neue-nummer" as="xs:string">
+            <xsl:for-each select="uri-collection(concat($dir, '/?select=L0*.xml;recurse=yes'))">
+                <xsl:sort select="."/>
+                <xsl:if test="position() = last()">
+                    <xsl:value-of
+                        select="number(substring-before(substring-after(., '/L'), '.xml')) + 1"/>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:variable>
         <xsl:for-each select="//tei:letter">
-            <xsl:result-document href="../splitted-files/L0{$n + position() +3}.xml">
+            <xsl:result-document href="../splitted-files/L0{$erste-neue-nummer}.xml">
                 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
