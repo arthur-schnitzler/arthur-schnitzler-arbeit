@@ -90,6 +90,9 @@
                            <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
                         </handDesc>
                         <additions>
+                           <incident type="supplement">
+                              <desc>eigenhändiger Brief, 1 Blatt, 1 Seite, schwarze Tinte</desc>
+                           </incident>
                            <incident type="receiver">
                               <desc>mit Bleistift das Jahr »<quote>
                                     <date when="1896">96</date>
@@ -331,16 +334,26 @@
                   <space dim="vertical" unit="line" quantity="1"/>
                </p>
                <dateline rend="right">
-                  <pb facs="HS.NZ85.1.3166_0129"/>Ce <date>19 Juin ’96</date>
+                  <pb facs="HS.NZ85.1.3166_0129"/>Le <anchor type="commentary" xml:id="K_L02778-44"/>
+                  <date>19 Juin ’96</date>
+                  <note type="commentary" xml:id="K_L02778-44h">Die Beilage ist
+                  diesem Brief ausschließlich auf Grundlage der Datierung auf den <date>16.&#160;6.&#160;1896</date>zugeordnet. Weder in diesem, noch in einem anderen
+                  Brief geht <rs type="person" ref="#pmb11485">Goldmann</rs> auf das Schreiben ein.</note>
                </dateline>
                <salute>Mon cher confrère </salute>
             </opener>
-            <p>Ci-joint <anchor type="commentary" xml:id="K_L02778_5"/>l’<rs type="work" ref="#pmb118258" subtype="implied">article</rs>
-               <note type="commentary" xml:id="K_L02778_5h">nicht identifiziert</note> dont je vous
+            <p><anchor type="commentary" xml:id="K_L02778-11"/>Ci-joint <anchor type="commentary" xml:id="K_L02778_5"/>l’<rs type="work" ref="#pmb142317" subtype="implied">article</rs>
+               <note type="commentary" xml:id="K_L02778_5h">eventuell die knappe Würdigung von <rs type="person" ref="#pmb2121">Schnitzler</rs>s bisherigem
+                  Schaffen anlässlich des Erscheinens von <rs type="work" ref="#pmb40662">Mourir</rs>, die ohne Angabe eines Verfassers (<rs type="person" ref="#pmb11657">Abel Hermant</rs>?) erschien: <bibl>
+                     <rs type="work" ref="#pmb142317">Lettres, Sciences et Arts</rs>. In: <rs type="work" ref="#pmb92648">Journal des débats</rs>, Jg. 108, Nr. 168, <date>16. 6. 1896</date>, S. 3</bibl>.</note> dont je vous
                ai parlé. Peut-être M. Schnitzler en aura déjà pris connaissance, si par exemple vos
-               confrères à <rs type="place" ref="#pmb50">Vienne</rs> ou à <rs type="place" ref="#pmb168">Berlin</rs> ont eu l’obligeance de le lui faire parvenir.</p>
+               confrères à <rs type="place" ref="#pmb50">Vienne</rs> ou à <rs type="place" ref="#pmb168">Berlin</rs> ont eu l’obligeance de le lui faire parvenir.<note type='commentary' xml:id="K_L02778-11h">französisch: »<quote>Anbei der <rs type="work" ref="#pmb142317" subtype="implied">article</rs>, den ich Ihnen gegenüber
+               erwähnt habe. Vielleicht ist er Herrn <rs type="person" ref="#pmb2121">Schnitzler</rs> schon zur Kenntnis gelangt, wenn beispielsweise Ihre
+                  Kollegen in <rs type="place" ref="#pmb50">Wien</rs> oder <rs type="place" ref="#pmb168">Berlin</rs> die Freundlichkeit besaßen, ihn ihm zukommen zu lassen.</quote>«</note></p>
             <closer>Mille amitiés<lb/> Votre dévoué<lb/>
-               <signed>AHermant.</signed>
+               <signed>
+                  <rs type="person" ref="#pmb11657">AHermant.</rs>
+               </signed>
             </closer>
          </div>
       </body>
@@ -596,6 +609,33 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Richard_Mandl</idno>
                <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001d88b</idno>
             </person>
+            <person xml:id="pmb11657">
+               <persName>
+                  <forename>Abel</forename>
+                  <surname>Hermant</surname>
+               </persName>
+               <birth>
+                  <date when="1862-02-03">03.02.1862</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1950-09-28">28.09.1950</date>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16111</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/121278859</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11657/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11657</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11657.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q318440</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Abel_Hermant</idno>
+            </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb36344">
@@ -653,11 +693,33 @@
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb31535.html</idno>
                <note type="work_kind">Erzählung</note>
             </bibl>
-            <bibl xml:id="pmb118258">
-               <title>?? [Französischer Artikel über Schnitzler, auf den Abel Hermant aufmerksam macht]</title>
-               <date>None</date>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/118258/</idno>
-               <note type="work_kind">Artikel</note>
+            <bibl xml:id="pmb142317">
+               <title>Lettres, Sciences et Arts [Mourir]</title>
+               <title type="werk_link">https://gallica.bnf.fr/ark:/12148/bpt6k4684101/f3.item.r=schnitzler.zoom</title>
+               <title type="werk_bibliografische-angabe">[O.V. =Abel Hermant?]: Lettres, Sciences et Arts. In: Journal des débats, Jg. 108, Nr. 168, 16.6.1896, S. 3</title>
+               <date when="1896-06-16">1896-06-16</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/142317/</idno>
+               <note type="work_kind">Rezension</note>
+            </bibl>
+            <bibl xml:id="pmb40662">
+               <title>Mourir. Roman</title>
+               <title type="werk_link">https://babel.hathitrust.org/cgi/pt?id=mdp.39015036650417&amp;view=1up&amp;seq=201&amp;q1=schnitzler</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <author ref="pmb40665" role="hat-ubersetzt">Vallette, Gaspard</author>
+               <date to="1895-06-01">1895-04-27  – 1895-06-01</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40662/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40662</idno>
+               <note type="work_kind">Roman</note>
+            </bibl>
+            <bibl xml:id="pmb92648">
+               <title>Journal des débats. Politiques et littéraires</title>
+               <title type="werk_link">https://gallica.bnf.fr/ark:/12148/cb39294634r/date#resultat-id-2</title>
+               <date from="1789-01-01" to="1944-07-01">1789  – 1944</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92648/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4204682-8</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2565164</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Journal_des_d%C3%A9bats</idno>
+               <note type="work_kind">Periodikum &gt;&gt; Tageszeitung</note>
             </bibl>
          </listBibl>
          <listPlace>
