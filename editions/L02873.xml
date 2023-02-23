@@ -113,9 +113,10 @@
             </correspAction>
          </correspDesc>
       </profileDesc>
-      
       <revisionDesc status="proposed">
          <change who="LU" when="2023-01-09">Angelegt</change>
+         <change who="MAM" when="2023-02-23">Index check</change>
+         <change who="MAM" when="2023-02-23">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -186,10 +187,14 @@
             <p>Dank für Deine Karte, die mich ſehr beruhigt hat. Ich bin recht froh, Dich in <anchor type="commentary" xml:id="K_L02873-1"/>
                <rs type="place" ref="#pmb168">Berlin</rs>
                <note type="commentary" xml:id="K_L02873-1h">
-                  <rs type="person" ref="#pmb2121">Schnitzler</rs> war von <ref type="schnitzler-tagebuch" target="1899-04-25" subtype="date-only"/> bis <ref type="schnitzler-tagebuch" target="1899-05-02" subtype="date-only"/> für die
-                  Premiere seines neuen <rs type="work" ref="#pmb32562">Einakterzyklus</rs>’ (<rs type="work" ref="#pmb29843">Der grüne Kakadu</rs>, <rs type="work" ref="#pmb30403">Paracelsus</rs>, <rs type="work" ref="#pmb29845">Die
-                     Gefährtin</rs>, <ref type="schnitzler-tagebuch" target="1899-04-29" subtype="date-only"/>, <rs type="place" ref="#pmb3">Deutsches Theater</rs>) in
-                     <rs type="place" ref="#pmb168">Berlin</rs>.</note> zu wiſſen. Mein Brief
+                  <rs type="person" ref="#pmb2121">Schnitzler</rs> war von <ref
+                     type="schnitzler-tagebuch" target="1899-04-25" subtype="date-only"/> bis <ref
+                        type="schnitzler-tagebuch" target="1899-05-02" subtype="date-only"/> für die
+                  Premiere von <rs type="work" ref="#pmb32562" subtype="implied">Der grüne Kakadu –
+                     Paracelsus – Die Gefährtin. Drei Einakter</rs> (am <ref
+                        type="schnitzler-tagebuch" target="1899-04-29" subtype="date-only"/>) am <rs
+                           type="place" ref="#pmb3">Deutschen Theater</rs> nach <rs type="place"
+                              ref="#pmb168">Berlin</rs> gereist.</note> zu wiſſen. Mein Brief
                erreicht Dich jedenfalls am <time>Morgen</time> nach einem neuen großen <rs type="work" subtype="implied" ref="#pmb32562">Erfolge</rs> und ſoll Dir auch
                gleich meinen Glückwunſch bringen.</p>
             <p>Nochmals, bitte: <anchor type="commentary" xml:id="K_L02873-4"/>
@@ -207,12 +212,11 @@
                ein <pb facs="HS.NZ85.1.3169_0015-1"/>paar Stunden Eiſenbahnfahrt mehr wirſt Du Dich
                doch gewiß nicht fürchten.</p>
             <p>Was mich anlangt, ſo dringe ich deshalb ſo ſehr darauf, Dich jetzt zu ſehen, weil ich
-               keine Ahnung habe, ob ich in dieſem Jahr<del rend="strikethrough">
-                  <unclear>e</unclear>
-               </del> überhaupt Urlaub bekomme. Die <rs type="org" subtype="implied" ref="#pmb29442">Redaktion</rs> hat eine Reihe von Reiſemiſſionen für mich in Ausſicht, und es iſt
+               keine Ahnung habe, ob ich in dieſem Jahr<unclear>e</unclear>
+                überhaupt Urlaub bekomme. Die <rs type="org" subtype="implied" ref="#pmb29442">Redaktion</rs> hat eine Reihe von Reiſemiſſionen für mich in Ausſicht, und es iſt
                nicht unmöglich, daß ſie den ganzen Sommer und Herbſt füllen. Laß’ Dich erbitten und
                komm’ her! Wenn ich nicht Zeit habe, wirſt Du bei meinem <rs type="person" subtype="implied" ref="#pmb23593">Schwager</rs>, meiner <rs type="person" subtype="implied" ref="#pmb34971">Schweſter</rs>, meinem <rs type="person" subtype="implied" ref="#pmb4986">Onkel</rs> ſein. Allein werden wir Dich ſchon
-               nicht laſſen. Auch ſo iſt wirſt du hier Den und Jenen kennen lernen, der Dich <del rend="strikethrough">h<gap quantity="4" reason="illegible" unit="chars"/>
+               nicht laſſen. Auch ſonſt wirſt du hier Den und Jenen kennen lernen, der Dich <del rend="strikethrough">h<gap quantity="4" reason="illegible" unit="chars"/>
                </del> intereſſiren wird. Bitte, bitte, komm’ hierher!</p>
             <closer>Viele treue Grüße! <lb/>Dein <signed>Paul Goldmann.</signed>
             </closer>
@@ -432,7 +436,7 @@
             </bibl>
             <bibl xml:id="pmb29843">
                <title>Der grüne Kakadu. Groteske in einem Akt</title>
-               <title type="werk_bibliografische-angabe">Neue Deutsche Rundschau, Jg. 10, H. 3, März 1899</title>
+               <title type="werk_bibliografische-angabe">Neue Deutsche Rundschau, Jg. 10, H. 3, März 1899, S. 282–308.</title>
                <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
                <date>1.3.1899</date>
                <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.10</idno>
@@ -516,6 +520,7 @@
                <placeName type="alternative-name">Barlīn</placeName>
                <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
                <placeName type="alternative-name">Berolino</placeName>
+               <placeName type="legacy-name-merge">B-n</placeName>
                <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
                <desc type="entity_type_id">1418</desc>
                <location type="coords">
@@ -531,7 +536,9 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
                <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92171.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
             </place>
