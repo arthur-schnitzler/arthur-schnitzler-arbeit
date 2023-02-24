@@ -978,10 +978,10 @@
       <xsl:param name="titel" as="xs:string"/>
       <xsl:param name="counter" as="xs:integer"/>
       <xsl:param name="gesamt" as="xs:integer"/>
-      <xsl:variable name="titelminusdatum" as="xs:string"
-         select="substring-before(normalize-space($titel), tokenize(normalize-space($titel), ',')[last()])"/>
       <xsl:variable name="datum" as="xs:string"
          select="tokenize(normalize-space($titel), ', ')[last()]"/>
+      <xsl:variable name="titelminusdatum" as="xs:string"
+         select="substring-before(normalize-space($titel), $datum)"/>
       <xsl:value-of select="replace(replace($titelminusdatum, '\[', '{[}'), '\]', '{]}')"/>
       <!--<xsl:value-of select="foo:section-titel-token($titelminusdatum,1,0)"/>-->
       <xsl:text> </xsl:text>
