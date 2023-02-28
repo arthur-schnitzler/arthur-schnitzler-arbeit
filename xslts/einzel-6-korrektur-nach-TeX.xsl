@@ -4660,7 +4660,7 @@
       <xsl:param name="first" as="xs:string"/>
       <xsl:param name="rest" as="xs:string"/>
       <xsl:if test="$verweis">
-         <xsl:text>→</xsl:text>
+         <xsl:text>{$\rightarrow$}</xsl:text>
       </xsl:if>
       <xsl:choose>
          <xsl:when test="not(starts-with($first, '#pmb'))">
