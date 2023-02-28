@@ -3981,6 +3981,12 @@
    <xsl:template match="c[@rendition = '#gemination-n']">
       <xsl:text>{\geminationn}</xsl:text>
    </xsl:template>
+   <xsl:template match="c[@rendition = '#gemination-m']" mode="lemma">
+      <xsl:text>mm</xsl:text>
+   </xsl:template>
+   <xsl:template match="c[@rendition = '#gemination-n']" mode="lemma">
+      <xsl:text>nn</xsl:text>
+   </xsl:template>
    <!-- Prozentzeichen % -->
    <xsl:template match="c[@rendition = '#prozent']">
       <xsl:text>{\%}</xsl:text>
