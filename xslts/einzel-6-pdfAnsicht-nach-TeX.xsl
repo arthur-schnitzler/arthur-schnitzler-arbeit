@@ -3193,7 +3193,7 @@
    <xsl:template match="lb[parent::item]">
       <xsl:text>{\newline}</xsl:text>
    </xsl:template>
-   <xsl:template match="footNote[ancestor::text/body]">
+   <xsl:template match="note[@type='footnote' and ancestor::text/body]">
       <xsl:text>\footnote{</xsl:text>
       <xsl:for-each select="p">
          <xsl:apply-templates select="."/>
@@ -3279,7 +3279,7 @@
       </xsl:if>
    </xsl:template>
    <xsl:template
-      match="p[ancestor::body and not(ancestor::TEI[starts-with(@id, 'E')]) and not(child::space[@dim] and not(child::*[2]) and empty(text())) and not(ancestor::div[@type = 'biographical']) and not(parent::footNote)] | closer | dateline">
+      match="p[ancestor::body and not(ancestor::TEI[starts-with(@id, 'E')]) and not(child::space[@dim] and not(child::*[2]) and empty(text())) and not(ancestor::div[@type = 'biographical']) and not(parent::note[@type='footnote'])] | closer | dateline">
       <!--     <xsl:if test="self::closer">\leftskip=1em{}</xsl:if>
 -->
       <xsl:if test="self::p[@rend = 'inline']">
@@ -3717,7 +3717,7 @@
    </xsl:template>
    <!-- anchors in Fussnoten, sehr seltener Fall-->
    <xsl:template
-      match="anchor[(@type = 'textConst' or @type = 'commentary') and ancestor::footNote]">
+      match="anchor[(@type = 'textConst' or @type = 'commentary') and ancestor::note[@type='footnote']]">
       <xsl:variable name="xmlid" select="concat(@id, 'h')"/>
       <xsl:text>\label{</xsl:text>
       <xsl:value-of select="@id"/>
@@ -3736,7 +3736,7 @@
    </xsl:template>
    <!-- Normaler anchor, Inhalt leer -->
    <xsl:template
-      match="anchor[(@type = 'textConst' or @type = 'commentary') and not(ancestor::footNote)]">
+      match="anchor[(@type = 'textConst' or @type = 'commentary') and not(ancestor::note[@type='footnote'])]">
       <xsl:variable name="typ-i-typ" select="@type"/>
       <xsl:variable name="lemmatext" as="xs:string">
          <xsl:for-each-group select="following-sibling::node()"
@@ -3753,13 +3753,13 @@
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template
-      match="note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::footNote)]"
+      match="note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::note[@type='footnote'])]"
       mode="lemma"/>
    <xsl:template match="space[@unit = 'chars' and @quantity = '1']" mode="lemma">
       <xsl:text> </xsl:text>
    </xsl:template>
    <xsl:template
-      match="note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::footNote)]">
+      match="note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::note[@type='footnote'])]">
       <xsl:text>}{</xsl:text>
       <!-- Der Teil hier bildet das Lemma und kürzt es -->
       <xsl:variable name="lemma-start" as="xs:string"
@@ -3833,7 +3833,7 @@
       <xsl:text>}</xsl:text>
    </xsl:template>
    <xsl:template
-      match="note[(@type = 'textConst' or @type = 'commentary') and (ancestor::footNote)]">
+      match="note[(@type = 'textConst' or @type = 'commentary') and (ancestor::note[@type='footnote'])]">
       <!--     <xsl:text>\toendnotes[C]{</xsl:text>
       <xsl:apply-templates/>
       <xsl:text>\par}</xsl:text>-->
@@ -4480,14 +4480,14 @@
    </xsl:template>
    <!-- Großbuchstaben -->
    <xsl:template
-      match="hi[@rend = 'capitals' and not(descendant::note or descendant::footNote)]//text()">
+      match="hi[@rend = 'capitals' and not(descendant::note)]//text()">
       <xsl:value-of select="upper-case(.)"/>
    </xsl:template>
    <xsl:template
-      match="hi[@rend = 'capitals' and (descendant::note or descendant::footNote)]//text()">
+      match="hi[@rend = 'capitals' and (descendant::note)]//text()">
       <xsl:choose>
          <xsl:when
-            test="ancestor-or-self::footNote[not(descendant::hi[@rend = 'capitals'])] | ancestor-or-self::note[not(descendant::hi[@rend = 'capitals'])]">
+            test="ancestor-or-self::note[@type='footnote' and not(descendant::hi[@rend = 'capitals'])] | ancestor-or-self::note[not(descendant::hi[@rend = 'capitals'])]">
             <xsl:value-of select="."/>
          </xsl:when>
          <xsl:otherwise>
@@ -4904,7 +4904,7 @@
          select="ancestor::TEI/teiHeader/revisionDesc/@status = 'approved' or ancestor::TEI/teiHeader/revisionDesc/@status = 'candidate' or ancestor::TEI/teiHeader/revisionDesc/change[contains(text(), 'Index check')]"/>-->
       <!-- In diesen Fällen befindet sich das rs im Text: -->
       <xsl:variable name="im-text" as="xs:boolean"
-         select="ancestor::body and not(ancestor::note) and not(ancestor::footNote) and not(ancestor::caption) and not(parent::bibl) and not(ancestor::TEI[starts-with(@id, 'E')]) and not(ancestor::div[@type = 'biographical'])"/>
+         select="ancestor::body and not(ancestor::note) and not(ancestor::caption) and not(parent::bibl) and not(ancestor::TEI[starts-with(@id, 'E')]) and not(ancestor::div[@type = 'biographical'])"/>
       <!-- In diesen Fällen werden orgs und titel kursiv geschrieben: -->
       <xsl:variable name="kommentar-herausgeber" as="xs:boolean"
          select="(ancestor::note[@type = 'commentary'] or ancestor::note[@type = 'textConst'] or ancestor::TEI[starts-with(@id, 'E')] or ancestor::bibl or ancestor::div[@type = 'biographical']) and not(ancestor::quote)"/>

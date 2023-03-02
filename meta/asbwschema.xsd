@@ -33,14 +33,6 @@
          <xs:attribute ref="xml:id" use="optional"/>
       </xs:complexType>
    </xs:element>
-   <xs:element name="footNote">
-      <xs:complexType mixed="false">
-         <xs:choice minOccurs="1" maxOccurs="unbounded">
-            <xs:element ref="tei:p" maxOccurs="unbounded" minOccurs="1"/>
-         </xs:choice>
-         <xs:attribute ref="xml:id" use="required"/>
-      </xs:complexType>
-   </xs:element>
    <xs:element name="facsimile">
       <xs:complexType>
          <xs:sequence>
@@ -800,7 +792,6 @@
             <xs:element ref="tei:subst" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:gap" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:signed" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
@@ -1082,7 +1073,6 @@
             <xs:element ref="tei:add" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:space" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:geogName" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:foreign" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
@@ -1241,7 +1231,6 @@
             <xs:element ref="tei:workName" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:bibl" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:seg" maxOccurs="2" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
       </xs:complexType>
    </xs:element>
@@ -1277,7 +1266,6 @@
             <xs:element ref="tei:workName" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:bibl" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:seg" maxOccurs="2" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:ref" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:desc" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
@@ -1308,7 +1296,6 @@
             <xs:element ref="tei:anchor" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="tei:note" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:rs" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:handShift" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:add" maxOccurs="unbounded" minOccurs="0"/>
@@ -1833,7 +1820,6 @@
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:add" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:del" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="tei:footNote" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
          <xs:attribute name="rend" use="required">
             <xs:simpleType>
