@@ -67,6 +67,8 @@
                                         select="child::tei:teiHeader[1]/tei:profileDesc[1]/tei:correspDesc[1]/tei:correspAction[@type = 'sent']/tei:date[1]/@*[name() = 'when' or name() = 'from' or name() = 'notBefore']"/>
                                     <xsl:sort
                                         select="child::tei:teiHeader[1]/tei:profileDesc[1]/tei:correspDesc[1]/tei:correspAction[@type = 'sent']/tei:date[1]/@n"/>
+                                    <xsl:if test="child::*[1]"><!-- Brachialmethode. Es kamen bei Bahr, Robert Adam und noch
+                                    ein paar anderen leere Elemente raus: <item corresp=""/>. Keine Ahnung, warum-->
                                     <xsl:element name="item" namespace="http://www.tei-c.org/ns/1.0">
                                         <xsl:attribute name="corresp">
                                             <xsl:value-of select="@xml:id"/>
@@ -80,6 +82,7 @@
                                             xpath-default-namespace="http://www.tei-c.org/ns/1.0"
                                             copy-namespaces="false"/>
                                     </xsl:element>
+                                    </xsl:if>
                                 </xsl:for-each>
                             </xsl:element>
                         </body>
