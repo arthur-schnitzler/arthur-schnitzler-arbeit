@@ -19,7 +19,7 @@
                 </xsl:if>
             </xsl:for-each>
         </xsl:variable>
-        <xsl:variable name="heute" select="format-date(current-date(),'[Y0001]-[M01]-[D01].')"/>
+        <xsl:variable name="heute" select="format-date(current-date(),'[Y0001]-[M01]-[D01]')"/>
         <xsl:for-each select="//tei:letter">
             <xsl:variable name="nummer" select="$letzte-nummer + position()" as="xs:integer"/>
             <xsl:result-document href="../splitted-files/L0{$nummer}.xml">
