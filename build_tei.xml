@@ -41,7 +41,7 @@
     </move>
     <delete dir="${tmpDir}"/>
     <mkdir dir="${tmpDir}"/>
-
+<!--
     <xslt style="./transkribus-transformationen_action/letter-tags-1.xsl" destdir="${tmpDir}"
         basedir="${tei.dir}">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
@@ -105,7 +105,7 @@
     </move>
     <delete dir="${tmpDir}"/>
     <mkdir dir="${tmpDir}"/>
-
+-->
     <xslt style="./transkribus-transformationen_action/replace_seite-esc-lb-continued.xsl"
         destdir="${tmpDir}" basedir="${tei.dir}">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
@@ -138,7 +138,7 @@
         <mapper type="glob" from="*.xml" to="*.xml"/>
     </xslt>
 
-    <xslt style="./transkribus-transformationen_action/strip-letter.xsl" destdir="${tmpDir}"
+    <!--<xslt style="./transkribus-transformationen_action/strip-letter.xsl" destdir="${tmpDir}"
         basedir="${splitted-files}">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="./saxon/saxon9he.jar"/>
@@ -153,7 +153,7 @@
         </fileset>
     </move>
     <delete dir="${tmpDir}"/>
-    <mkdir dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>-->
 
     <xslt style="./transkribus-transformationen_action/p-correction1.xsl" destdir="${tmpDir}"
         basedir="${splitted-files}">
