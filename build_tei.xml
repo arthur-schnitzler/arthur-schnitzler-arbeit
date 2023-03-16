@@ -41,71 +41,7 @@
     </move>
     <delete dir="${tmpDir}"/>
     <mkdir dir="${tmpDir}"/>
-<!--
-    <xslt style="./transkribus-transformationen_action/letter-tags-1.xsl" destdir="${tmpDir}"
-        basedir="${tei.dir}">
-        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="./saxon/saxon9he.jar"/>
-        <param name="col-id" expression="${collection.id}"/>
-        <fileset dir="${tei.dir}">
-            <include name="*.xml"/>
-        </fileset>
-        <mapper type="glob" from="*.xml" to="*.xml"/>
-    </xslt>
-    <move todir="${tei.dir}">
-        <fileset dir="${tmpDir}"/>
-    </move>
-    <delete dir="${tmpDir}"/>
-    <mkdir dir="${tmpDir}"/>
 
-    <xslt style="./transkribus-transformationen_action/letter-tags-2.xsl" destdir="${tmpDir}"
-        basedir="${tei.dir}">
-        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="./saxon/saxon9he.jar"/>
-        <param name="col-id" expression="${collection.id}"/>
-        <fileset dir="${tei.dir}">
-            <include name="*.xml"/>
-        </fileset>
-        <mapper type="glob" from="*.xml" to="*.xml"/>
-    </xslt>
-    <move todir="${tei.dir}">
-        <fileset dir="${tmpDir}"/>
-    </move>
-    <delete dir="${tmpDir}"/>
-    <mkdir dir="${tmpDir}"/>
-
-    <xslt style="./transkribus-transformationen_action/letter-tags-3.xsl" destdir="${tmpDir}"
-        basedir="${tei.dir}">
-        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="./saxon/saxon9he.jar"/>
-        <param name="col-id" expression="${collection.id}"/>
-        <fileset dir="${tei.dir}">
-            <include name="*.xml"/>
-        </fileset>
-        <mapper type="glob" from="*.xml" to="*.xml"/>
-    </xslt>
-    <move todir="${tei.dir}">
-        <fileset dir="${tmpDir}"/>
-    </move>
-    <delete dir="${tmpDir}"/>
-    <mkdir dir="${tmpDir}"/>
-
-    <xslt style="./transkribus-transformationen_action/letter-tags-4.xsl" destdir="${tmpDir}"
-        basedir="${tei.dir}">
-        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="./saxon/saxon9he.jar"/>
-        <param name="col-id" expression="${collection.id}"/>
-        <fileset dir="${tei.dir}">
-            <include name="*.xml"/>
-        </fileset>
-        <mapper type="glob" from="*.xml" to="*.xml"/>
-    </xslt>
-    <move todir="${tei.dir}">
-        <fileset dir="${tmpDir}"/>
-    </move>
-    <delete dir="${tmpDir}"/>
-    <mkdir dir="${tmpDir}"/>
--->
     <xslt style="./transkribus-transformationen_action/replace_seite-esc-lb-continued.xsl"
         destdir="${tmpDir}" basedir="${tei.dir}">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
@@ -230,7 +166,7 @@
     <delete dir="${tmpDir}"/>
     <mkdir dir="${tmpDir}"/>
 
-    <xslt style="./transkribus-transformationen_action/rautePMBstattRaute.xsl" destdir="${tmpDir}"
+   <!-- <xslt style="./transkribus-transformationen_action/rautePMBstattRaute.xsl" destdir="${tmpDir}"
         basedir="${splitted-files}">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="./saxon/saxon9he.jar"/>
@@ -301,7 +237,7 @@
     </xslt>
     <move todir="${splitted-files}">
         <fileset dir="${tmpDir}"/>
-    </move>
+    </move>-->
 
     <property name="editions" value="./editions"/>
     <move todir="${editions}">
