@@ -28,7 +28,7 @@
             </xsl:for-each>
         </xsl:variable>
         <xsl:variable name="heute" select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
-        <xsl:for-each-group select="tei:page[starts-with(@type, 'letter-begin')]" group-ending-with="tei:page[contains(@type, '-end')]">
+        <xsl:for-each-group select="tei:page" group-starting-with="*[starts-with(@type, 'letter-begin')]">
             <xsl:variable name="nummer" select="$letzte-nummer + position()" as="xs:integer"/>
             <xsl:result-document href="../splitted-files/Y0{$nummer}.xml">
                 
