@@ -200,7 +200,7 @@
     <delete dir="${tmpDir}"/>
     <mkdir dir="${tmpDir}"/>
 
-    <xslt style="./transkribus-transformationen_action/rautePMBstattRaute.xsl" destdir="${tmpDir}"
+   <!-- <xslt style="./transkribus-transformationen_action/rautePMBstattRaute.xsl" destdir="${tmpDir}"
         basedir="${splitted-files}">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="./saxon/saxon9he.jar"/>
@@ -213,7 +213,7 @@
         <fileset dir="${tmpDir}"/>
     </move>
     <delete dir="${tmpDir}"/>
-    <mkdir dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>-->
 
     <xslt style="./transkribus-transformationen_action/facs_transkribus-teil-weg.xsl"
         destdir="${tmpDir}" basedir="${splitted-files}">
