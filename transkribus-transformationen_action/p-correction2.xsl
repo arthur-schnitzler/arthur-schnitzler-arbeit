@@ -45,7 +45,7 @@
     <xsl:template match="tei:closer/text()">
         <xsl:value-of select="."/>
     </xsl:template>
-    <xsl:template match="tei:opener|tei:closer">
+    <xsl:template match="tei:opener|tei:closer|tei:paragraph-start">
         <xsl:apply-templates/>
     </xsl:template>
     
