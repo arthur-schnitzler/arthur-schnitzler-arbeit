@@ -304,10 +304,15 @@
           </xsl:attribute>
         </xsl:when>
       </xsl:choose>
-      <xsl:variable name="facs-id" select="key('facs-name', $type, $facs-doc)/text()" as="node()?"/>
-      <pb facs="{replace(replace($facs-id, '.jpg', ''), '.tif', '')}"/>
-      <xsl:apply-templates select="p:TextRegion | p:SeparatorRegion | p:GraphicRegion | p:TableRegion"
-        mode="text"/>
+<!--    <pb facs="{substring-before($type, '.jpg')}"/>-->
+<!--    <xsl:variable name="facs-id" select="key('facs-name', $pb-position, $facs-doc)" as="node()?"/>-->
+<!--    <xsl:variable name="img-num" select=""/>-->
+    <xsl:variable name="facs-id" select="key('facs-name', $type, $facs-doc)/text()" as="node()?"/>
+<!--    <pb facs="{substring-before($facs-id, '.jpg')}"/>-->
+<!--    <pb facs="{substring-before($type, '.jpg')}"/>-->
+    <pb facs="{replace(replace($facs-id, '.jpg', ''), '.tif', '')}"/>
+    <xsl:apply-templates select="p:TextRegion | p:SeparatorRegion | p:GraphicRegion | p:TableRegion"
+      mode="text"/>
     </xsl:element>
   </xsl:template>
 
@@ -383,9 +388,7 @@
       </xsl:when>
       <!-- the fallback option should be a semantically open element such as <ab> -->
       <xsl:otherwise>
-        <seite>
           <xsl:apply-templates select="p:TextLine"/>
-        </seite>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -880,13 +883,9 @@
         <xsl:text>&lt;p&gt;&lt;&#47;p&gt;</xsl:text>
       </xsl:when>-->
 
-      <!-- <xsl:when test="@type = 'letter-begin'">
+      <xsl:when test="@type = 'letter-begin'">
         <xsl:text>&lt;letter&gt;</xsl:text>
       </xsl:when>
-
-      <xsl:when test="@type = 'letter-end'">
-        <xsl:text>&lt;&#47;letter&gt;</xsl:text>
-      </xsl:when>-->
 
       <xsl:when test="@type = 'letter-end'">
         <xsl:text>&lt;&#47;letter&gt;</xsl:text>
