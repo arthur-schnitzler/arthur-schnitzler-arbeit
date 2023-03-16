@@ -74,7 +74,7 @@
         <mapper type="glob" from="*.xml" to="*.xml"/>
     </xslt>
 
-    <!--<xslt style="./transkribus-transformationen_action/strip-letter.xsl" destdir="${tmpDir}"
+    <xslt style="./transkribus-transformationen_action/strip-letter.xsl" destdir="${tmpDir}"
         basedir="${splitted-files}">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="./saxon/saxon9he.jar"/>
@@ -134,9 +134,9 @@
         <fileset dir="${tmpDir}"/>
     </move>
     <delete dir="${tmpDir}"/>
-    <mkdir dir="${tmpDir}"/>-->
+    <mkdir dir="${tmpDir}"/>
 
-   <!-- <xslt style="./transkribus-transformationen_action/rautePMBstattRaute.xsl" destdir="${tmpDir}"
+   <xslt style="./transkribus-transformationen_action/rautePMBstattRaute.xsl" destdir="${tmpDir}"
         basedir="${splitted-files}">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="./saxon/saxon9he.jar"/>
@@ -149,7 +149,7 @@
         <fileset dir="${tmpDir}"/>
     </move>
     <delete dir="${tmpDir}"/>
-    <mkdir dir="${tmpDir}"/>-->
+    <mkdir dir="${tmpDir}"/>
 
     <xslt style="./transkribus-transformationen_action/facs_transkribus-teil-weg.xsl"
         destdir="${tmpDir}" basedir="${splitted-files}">
@@ -166,20 +166,7 @@
     <delete dir="${tmpDir}"/>
     <mkdir dir="${tmpDir}"/>
 
-   <!-- <xslt style="./transkribus-transformationen_action/rautePMBstattRaute.xsl" destdir="${tmpDir}"
-        basedir="${splitted-files}">
-        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
-        <classpath location="./saxon/saxon9he.jar"/>
-        <fileset dir="${splitted-files}">
-            <include name="*.xml"/>
-        </fileset>
-        <mapper type="glob" from="*.xml" to="*.xml"/>
-    </xslt>
-    <move todir="${splitted-files}">
-        <fileset dir="${tmpDir}"/>
-    </move>
-    <delete dir="${tmpDir}"/>
-    <mkdir dir="${tmpDir}"/>
+   <!--
 
     <xslt style="./transkribus-transformationen_action/backElement-0.xsl" destdir="${tmpDir}"
         basedir="${splitted-files}">

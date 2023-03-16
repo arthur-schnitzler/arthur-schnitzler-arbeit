@@ -72,7 +72,9 @@
                                     <name>Untner, Laura</name>
                                 </respStmt>
                                 <idno type="asbw">
+                                    <xsl:attribute name="n">
                                     <xsl:value-of select="concat('L0', $nummer)"/>
+                                    </xsl:attribute>
                                 </idno>
                             </editionStmt>
                             <publicationStmt>
