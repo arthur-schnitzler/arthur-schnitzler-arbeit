@@ -166,7 +166,6 @@
     <delete dir="${tmpDir}"/>
     <mkdir dir="${tmpDir}"/>
 
-   <!--
 
     <xslt style="./transkribus-transformationen_action/backElement-0.xsl" destdir="${tmpDir}"
         basedir="${splitted-files}">
@@ -224,8 +223,8 @@
     </xslt>
     <move todir="${splitted-files}">
         <fileset dir="${tmpDir}"/>
-    </move>-->
-
+    </move>
+    
     <property name="editions" value="./editions"/>
     <move todir="${editions}">
         <fileset dir="${splitted-files}"/>
