@@ -5,17 +5,24 @@
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
     
-    <xsl:template match="//tei:div[@type='writingSession']">
-        <xsl:element name="div" namespace="http://www.tei-c.org/ns/1.0">
-            <xsl:attribute name="type">
-                <xsl:value-of select="'writingSession'"/>
-            </xsl:attribute>
-            <xsl:attribute name="n">
-                <xsl:value-of select="'1'"/>
-            </xsl:attribute>
-        <xsl:copy-of select="node()"/>
-        <xsl:text>&lt;/p&gt;</xsl:text>
-        </xsl:element>
+    <xsl:template match="tei:p[@facs]">
+        <xsl:apply-templates/>
     </xsl:template>
+    
+    <xsl:template match="tei:page">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:letter-begin|tei:letter-end"/>
+    
+    
+    <xsl:template match="tei:pb">
+        <xsl:text> </xsl:text>
+        <xsl:copy-of select="."/>
+    </xsl:template>
+    
+    
+    
+    
     
 </xsl:stylesheet>

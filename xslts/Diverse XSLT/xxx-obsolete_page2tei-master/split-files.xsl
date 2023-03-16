@@ -6,13 +6,13 @@
     <xsl:output name="xml" method="xml" indent="yes" omit-xml-declaration="yes"/>
 
     <!-- directory of new files -->
-    <xsl:param name="dir">../../../editions</xsl:param>
+    <xsl:param name="dir">../OEditions</xsl:param>
 
     <!-- output xml file for each letter tag with file name according to number of xml files in output directory (+1) -->
     <xsl:param name="n" select="count(collection(concat($dir, '?select=*.xml')))"/>
     <xsl:template match="/*">
         <xsl:for-each select="//tei:letter">
-            <xsl:result-document href="{$dir}/L0{$n + position() +1}.xml">
+            <xsl:result-document href="{$dir}/X0{$n + position() +1}.xml">
                 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"

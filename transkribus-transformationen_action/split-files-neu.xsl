@@ -7,7 +7,7 @@
 
     <!-- directory of new files -->
     <xsl:param name="dir">../editions</xsl:param>
-    
+
     <!-- output xml file for each letter tag with file name according to number of xml files in output directory (+1) -->
     <xsl:template match="tei:div">
         <xsl:variable name="letzte-nummer" as="xs:integer">

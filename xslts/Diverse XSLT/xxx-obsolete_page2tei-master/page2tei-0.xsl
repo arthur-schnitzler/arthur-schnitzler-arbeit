@@ -197,6 +197,7 @@
         select="p:PrintSpace | p:TextRegion | p:SeparatorRegion | p:GraphicRegion | p:TableRegion"
         mode="facsimile"/>
     </surface>
+
   </xsl:template>
 
   <xd:doc>
@@ -282,10 +283,28 @@
 
     <xsl:variable name="coords" select="tokenize(p:PrintSpace/p:Coords/@points, ' ')"/>
     <xsl:variable name="type" select="@imageFilename"/>
-
+    <xsl:element name="page" namespace="http://www.tei-c.org/ns/1.0">
+      <xsl:choose>
+        <xsl:when test="descendant::*:TextLine[@custom/contains(., 'letter-begin')][1] and descendant::*:TextLine[@custom/contains(., 'letter-end')][1]">
+          <xsl:attribute name="type">
+            <xsl:text>letter-begin-end</xsl:text>
+          </xsl:attribute>
+        </xsl:when>
+        <xsl:when test="descendant::*:TextLine[@custom/contains(., 'letter-begin')][1]">
+          <xsl:attribute name="type">
+            <xsl:text>letter-begin</xsl:text>
+          </xsl:attribute>
+        </xsl:when>
+        <xsl:when test="descendant::*:TextLine[@custom/contains(., 'letter-end')][1]">
+          <xsl:attribute name="type">
+            <xsl:text>letter-end</xsl:text>
+          </xsl:attribute>
+        </xsl:when>
+      </xsl:choose>
     <pb facs="{substring-before($type, '.jpg')}"/>
     <xsl:apply-templates select="p:TextRegion | p:SeparatorRegion | p:GraphicRegion | p:TableRegion"
       mode="text"/>
+    </xsl:element>
   </xsl:template>
 
   <xd:doc>
@@ -354,15 +373,13 @@
         </note>
       </xsl:when>
       <xsl:when test="@type = ('other', 'paragraph')">
-        <p facs="#facs_{$numCurr}_{@id}">
+<!--        <p facs="#facs_{$numCurr}_{@id}">-->
           <xsl:apply-templates select="p:TextLine"/>
-        </p>
+        <!--</p>-->
       </xsl:when>
       <!-- the fallback option should be a semantically open element such as <ab> -->
       <xsl:otherwise>
-        <seite>
           <xsl:apply-templates select="p:TextLine"/>
-        </seite>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -857,13 +874,13 @@
         <xsl:text>&lt;p&gt;&lt;&#47;p&gt;</xsl:text>
       </xsl:when>-->
 
-      <xsl:when test="@type = 'letter-begin'">
+     <!-- <xsl:when test="@type = 'letter-begin'">
         <xsl:text>&lt;letter&gt;</xsl:text>
       </xsl:when>
 
       <xsl:when test="@type = 'letter-end'">
         <xsl:text>&lt;&#47;letter&gt;</xsl:text>
-      </xsl:when>
+      </xsl:when>-->
 
       <xsl:when test="@type = 'date'">
         <date>
