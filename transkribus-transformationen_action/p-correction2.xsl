@@ -8,12 +8,12 @@
     <xsl:template match="//*:letter-begin|//*:letter-end"/>
     
     <xsl:template match="tei:div">
-        <xsl:element name="div">
+        <xsl:element name="div" namespace="http://www.tei-c.org/ns/1.0">
             <xsl:copy-of select="@*"/>
             <xsl:for-each-group select="node()" group-ending-with="descendant::tei:*[name()='paragraph-start' or name()='closer' or name()='opener']">
                 <xsl:choose>
                     <xsl:when test="current-group()/descendant-or-self::tei:opener">
-                        <xsl:element name="opener">
+                        <xsl:element name="opener" namespace="http://www.tei-c.org/ns/1.0">
                             <xsl:for-each-group select="current-group()" group-adjacent="name()='closer'">
                                 <xsl:apply-templates select="current-group()"/>
                                 <xsl:if test="not(position()=last())">
@@ -23,7 +23,7 @@
                         </xsl:element>
                     </xsl:when>
                     <xsl:when test="current-group()/descendant-or-self::tei:closer">
-                        <xsl:element name="closer">
+                        <xsl:element name="closer" namespace="http://www.tei-c.org/ns/1.0">
                             <xsl:for-each-group select="current-group()" group-adjacent="name()='closer'">
                                 <xsl:apply-templates select="current-group()"/>
                                 <xsl:if test="not(position()=last())">
@@ -33,7 +33,7 @@
                         </xsl:element>
                     </xsl:when>
                     <xsl:when test="current-group()/descendant-or-self::*">
-                        <xsl:element name="p">
+                        <xsl:element name="p" namespace="http://www.tei-c.org/ns/1.0">
                             <xsl:copy-of select="current-group()"/>
                         </xsl:element>
                     </xsl:when>
@@ -49,16 +49,6 @@
         <xsl:apply-templates/>
     </xsl:template>
     
-    <!--<xsl:template match="//tei:paragraph-start">
-        <xsl:choose>
-            <xsl:when test=".[preceding::tei:paragraph-start]">
-                <xsl:element name="p-end"/>
-                <xsl:element name="p-end"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:text>&lt;p&gt;</xsl:text>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>-->
+   
     
 </xsl:stylesheet>

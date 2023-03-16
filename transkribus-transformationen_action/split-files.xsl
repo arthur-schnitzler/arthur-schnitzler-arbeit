@@ -30,12 +30,11 @@
         <xsl:variable name="heute" select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
         <xsl:for-each-group select="tei:page" group-starting-with="*[starts-with(@type, 'letter-begin')]">
             <xsl:variable name="nummer" select="$letzte-nummer + position()" as="xs:integer"/>
-            <xsl:result-document href="../splitted-files/Y0{$nummer}.xml">
-                
+            <xsl:result-document href="../splitted-files/L0{$nummer}.xml">
                 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-                    xml:id="L0XXXX"
+                    xml:id="{concat('LO',$nummer)}"
                     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
                     <teiHeader>
                         <fileDesc>
