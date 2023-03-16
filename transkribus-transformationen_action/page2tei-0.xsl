@@ -882,7 +882,7 @@
       <!--<xsl:when test="@type = 'paragraph-inbetween'">
         <xsl:text>&lt;p&gt;&lt;&#47;p&gt;</xsl:text>
       </xsl:when>-->
-
+<!--
       <xsl:when test="@type = 'letter-begin'">
         <xsl:text>&lt;letter&gt;</xsl:text>
       </xsl:when>
@@ -890,7 +890,7 @@
       <xsl:when test="@type = 'letter-end'">
         <xsl:text>&lt;&#47;letter&gt;</xsl:text>
       </xsl:when>
-
+-->
       <xsl:when test="@type = 'date'">
         <date>
           <!--<xsl:variable name="year" select="if(map:keys($custom) = 'year') then format-number(xs:integer(map:get($custom, 'year')), '0000') else '00'"/>
