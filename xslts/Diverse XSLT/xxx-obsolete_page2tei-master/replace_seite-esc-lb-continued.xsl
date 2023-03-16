@@ -10,7 +10,23 @@
     </xsl:template>
     
     <xsl:template match="//text()">
-        <xsl:value-of select="translate(., '¬', '')" disable-output-escaping="yes"/>
+        <xsl:analyze-string select="." regex="¬[\n]\s*(.*)¬[\n]\s*">
+            <xsl:matching-substring>
+                <xsl:value-of select="normalize-space(regex-group(1))" disable-output-escaping="yes"/>
+            </xsl:matching-substring>
+            <xsl:non-matching-substring>
+                <xsl:analyze-string select="." regex="¬[\n]\s*(.*)">
+                    <xsl:matching-substring>
+                        <xsl:value-of select="normalize-space(regex-group(1))" disable-output-escaping="yes"/>
+                    </xsl:matching-substring>
+                    <xsl:non-matching-substring>
+                <xsl:value-of select="." disable-output-escaping="yes"/>
+                    </xsl:non-matching-substring>
+                </xsl:analyze-string>
+            </xsl:non-matching-substring>
+        </xsl:analyze-string>
+        
+        <!--<xsl:value-of select="translate(., '¬', '')" disable-output-escaping="yes"/>-->
     </xsl:template>
     
     <xsl:template match="@continued"/>
