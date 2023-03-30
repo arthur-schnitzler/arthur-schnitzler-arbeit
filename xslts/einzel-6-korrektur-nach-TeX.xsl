@@ -1342,6 +1342,7 @@
          select="count(parent::incident/preceding-sibling::incident[@type = 'supplement'])"/>
       <xsl:choose>
          <xsl:when test="$poschitzion &gt; 0">
+            <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
             <xsl:apply-templates/>
@@ -1367,6 +1368,7 @@
          select="count(parent::incident/preceding-sibling::incident[@type = 'postal'])"/>
       <xsl:choose>
          <xsl:when test="$poschitzion &gt; 0">
+            <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
             <xsl:apply-templates/>
@@ -1394,6 +1396,7 @@
          select="count(parent::incident/preceding-sibling::incident[@type = 'receiver'])"/>
       <xsl:choose>
          <xsl:when test="$poschitzion &gt; 0">
+            <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
             <xsl:apply-templates/>
@@ -1424,6 +1427,7 @@
          select="count(parent::incident/preceding-sibling::incident[@type = 'archival'])"/>
       <xsl:choose>
          <xsl:when test="$poschitzion &gt; 0">
+            <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
             <xsl:apply-templates/>
@@ -1449,6 +1453,7 @@
          select="count(parent::incident/preceding-sibling::incident[@type = 'additional-information'])"/>
       <xsl:choose>
          <xsl:when test="$poschitzion &gt; 0">
+            <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
             <xsl:apply-templates/>
@@ -1474,6 +1479,7 @@
          select="count(parent::incident/preceding-sibling::incident[@type = 'editorial'])"/>
       <xsl:choose>
          <xsl:when test="$poschitzion &gt; 0">
+            <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
             <xsl:apply-templates/>
