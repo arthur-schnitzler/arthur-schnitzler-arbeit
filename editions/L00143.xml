@@ -85,8 +85,11 @@
                         <objectDesc>
                            <desc type="kartenbrief"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="bleistift" style="deutsche-kurrent"/>
+                        <handDesc hands="1">
+                           <handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb2121"/>
+                           <handNote medium="bleistift" style="lateinische-kurrent" corresp="#pmb2121">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -156,7 +159,6 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      
       <revisionDesc status="approved">
          <change who="MAM" when="2019-06-12">Automatisch angelegt aus Buchausgabe</change>
          <change who="GHS" when="2019-09-20">geprüft am Faksimile</change>
@@ -173,18 +175,9 @@
          <div type="address">
             <address>
                <addrLine>
-                  <pb facs="1892_AS_RBH_2_00014"/>
-                  <hi rend="latintype">Hrn Dr. Rich Beer Hofmann</hi>
-               </addrLine>
-               <addrLine>
-                  <hi rend="latintype">
-                     <rs ref="#pmb50" type="place">Wien</rs>
-                  </hi>
-               </addrLine>
-               <addrLine>
-                  <hi rend="latintype">
-                     <rs ref="#pmb338" type="place">I
-                  Wollzeile 15</rs>.</hi>
+                  <pb facs="1892_AS_RBH_2_00014"/>Hrn Dr. Rich Beer Hofmann</addrLine>
+               <addrLine><rs ref="#pmb50" type="place">Wien</rs></addrLine>
+               <addrLine><rs ref="#pmb338" type="place">I Wollzeile 15</rs>.
                </addrLine>
             </address>
          </div>

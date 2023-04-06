@@ -84,8 +84,11 @@
                         <objectDesc>
                            <desc type="kartenbrief"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="bleistift" style="deutsche-kurrent"/>
+                        <handDesc hands="1">
+                           <handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb2121"/>
+                           <handNote medium="bleistift" style="lateinische-kurrent" corresp="#pmb2121">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -171,7 +174,6 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      
       <revisionDesc status="approved">
          <change who="MAM" when="2019-06-12">Automatisch angelegt aus Buchausgabe</change>
          <change who="GHS" when="2019-09-06">finalisiert</change>
@@ -189,18 +191,9 @@
          <div type="address">
             <address>
                <addrLine>
-                  <pb facs="1891_AS_RBH_00010"/>
-                  <hi rend="latintype">Herrn Dr. Rich. Beer-Hofmann</hi>
-               </addrLine>
-               <addrLine>
-                  <hi rend="latintype">
-                     <rs ref="#pmb50" type="place">Wien</rs>
-                  </hi>
-               </addrLine>
-               <addrLine>
-                  <rs ref="#pmb730" type="place">
-                     <hi rend="latintype">III Seidlgasse 30</hi>
-                  </rs>
+                  <pb facs="1891_AS_RBH_00010"/>Herrn Dr. Rich. Beer-Hofmann</addrLine>
+               <addrLine><rs ref="#pmb50" type="place">Wien</rs></addrLine>
+               <addrLine><rs ref="#pmb730" type="place">III Seidlgasse 30</rs>
                </addrLine>
             </address>
          </div>
