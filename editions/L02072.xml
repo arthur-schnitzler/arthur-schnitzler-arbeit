@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L02072"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02072"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader type="text">
       <fileDesc>
          <titleStmt>
@@ -41,28 +39,27 @@
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
                   <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
-                vervielfältigen und weiterverbreiten Bearbeiten — das Material remixen,
-                verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar
-                kommerziell.</p>
-                  <p>Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich
-                an die Lizenzbedingungen halten. Unter folgenden Bedingungen:</p>
-                  <p>Namensnennung — Sie müssen angemessene Urheber- und Rechteangaben machen,
-                einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen
-                wurden. Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht
-                werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber
-                unterstütze gerade Sie oder Ihre Nutzung besonders. Keine weiteren
-                Einschränkungen — Sie dürfen keine zusätzlichen Klauseln oder technische
-                Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was
-                die Lizenz erlaubt.</p>
+                     vervielfältigen und weiterverbreiten Bearbeiten — das Material remixen,
+                     verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar
+                     kommerziell.</p>
+                  <p>Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die
+                     Lizenzbedingungen halten. Unter folgenden Bedingungen:</p>
+                  <p>Namensnennung — Sie müssen angemessene Urheber- und Rechteangaben machen, einen
+                     Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese
+                     Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings
+                     nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie
+                     oder Ihre Nutzung besonders. Keine weiteren Einschränkungen — Sie dürfen keine
+                     zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen
+                     rechtlich irgendetwas untersagen, was die Lizenz erlaubt.</p>
                   <p>Hinweise:</p>
-                  <p>Sie müssen sich nicht an diese Lizenz halten hinsichtlich solcher Teile
-                des Materials, die gemeinfrei sind, oder soweit Ihre Nutzungshandlungen
-                durch Ausnahmen und Schranken des Urheberrechts gedeckt sind. Es werden
-                keine Garantien gegeben und auch keine Gewähr geleistet. Die Lizenz
-                verschafft Ihnen möglicherweise nicht alle Erlaubnisse, die Sie für die
-                jeweilige Nutzung brauchen. Es können beispielsweise andere Rechte wie
-                Persönlichkeits- und Datenschutzrechte zu beachten sein, die Ihre
-                Nutzung des Materials entsprechend beschränken.</p>
+                  <p>Sie müssen sich nicht an diese Lizenz halten hinsichtlich solcher Teile des
+                     Materials, die gemeinfrei sind, oder soweit Ihre Nutzungshandlungen durch
+                     Ausnahmen und Schranken des Urheberrechts gedeckt sind. Es werden keine
+                     Garantien gegeben und auch keine Gewähr geleistet. Die Lizenz verschafft Ihnen
+                     möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung
+                     brauchen. Es können beispielsweise andere Rechte wie Persönlichkeits- und
+                     Datenschutzrechte zu beachten sein, die Ihre Nutzung des Materials entsprechend
+                     beschränken.</p>
                </licence>
             </availability>
             <idno type="handle">https://hdl.handle.net/21.11115/0000-000E-7338-2</idno>
@@ -84,22 +81,27 @@
                         <objectDesc>
                            <desc type="karte" subtype="bildpostkarte"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"/>
+                        <handDesc hands="1">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"
+                              corresp="#pmb10815"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"
+                              corresp="#pmb10815">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
                               <desc>
                                  <stamp n="1">
-                                    <placeName ref="#pmb843">S. Eli<supplied>sabetta</supplied> di Lido
-                              (Venezia)</placeName>
+                                    <placeName ref="#pmb843">S. Eli<supplied>sabetta</supplied> di
+                                       Lido (Venezia)</placeName>
                                     <date when="1912-06-02">2. 6. 12</date>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="archival">
                               <desc>mit Bleistift von unbekannter Hand nummeriert:
-                              »<quote>173</quote>«</desc>
+                                    »<quote>173</quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -137,16 +139,19 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
-               <date evidence="conjecture" notBefore="1912-06-03" notAfter="1912-06-07">[3. 6. 1912 – 7. 6. 1912?]</date>
+               <date evidence="conjecture" notBefore="1912-06-03" notAfter="1912-06-07">[3. 6. 1912
+                  – 7. 6. 1912?]</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="#pmb10815">Bahr, Hermann</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L02071">Schnitzler an Bahr, 25. 5. 1912</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L02073">Schnitzler an Adam, 4. 6. 1912</ref>
-               <ref subtype="previous_letter"
-                    type="withinCorrespondence"
-                    target="L02071">Schnitzler an Bahr, 25. 5. 1912</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L02090">Schnitzler an Bahr, [25./26.] 9. 1912</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L02071">Schnitzler an
+                  Bahr, 25. 5. 1912</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L02073">Schnitzler an
+                  Adam, 4. 6. 1912</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" target="L02071">Schnitzler
+                  an Bahr, 25. 5. 1912</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" target="L02090">Schnitzler an
+                  Bahr, [25./26.] 9. 1912</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -166,26 +171,15 @@
       <body>
          <div type="address">
             <address>
+               <addrLine><pb facs="MS-B-00005-B-000-00307"/>Arthur Schnitzler</addrLine>
                <addrLine>
-                  <pb facs="MS-B-00005-B-000-00307"/>
-                  <hi rend="latintype">Arthur
-                  Schnitzler</hi>
+                  <rs ref="#pmb150" type="place">XVIII Sternwartestraße 71</rs>
                </addrLine>
                <addrLine>
-                  <hi rend="latintype">
-                     <rs ref="#pmb150" type="place">XVIII Sternwartestraße
-                     71</rs>
-                  </hi>
+                  <rs ref="#pmb50" type="place">Vienna</rs>
                </addrLine>
                <addrLine>
-                  <hi rend="latintype">
-                     <rs ref="#pmb50" type="place">Vienna</rs>
-                  </hi>
-               </addrLine>
-               <addrLine>
-                  <hi rend="latintype">
-                     <rs ref="#pmb41240" type="place">Austria</rs>
-                  </hi>
+                  <rs ref="#pmb41240" type="place">Austria</rs>
                </addrLine>
             </address>
          </div>
@@ -202,8 +196,9 @@
                </dateline>
             </opener>
             <p>Schönsten Dank!</p>
-            <p>Herzliche Grüße von uns <rs type="person" ref="#pmb10818" subtype="implied">beiden</rs>
-               an Dich und Deine liebe <rs type="person" ref="#pmb2173" subtype="implied">Frau</rs>! </p>
+            <p>Herzliche Grüße von uns <rs type="person" ref="#pmb10818" subtype="implied"
+                  >beiden</rs> an Dich und Deine liebe <rs type="person" ref="#pmb2173"
+                  subtype="implied">Frau</rs>! </p>
             <closer>
                <signed>Hermann</signed>
             </closer>
@@ -237,13 +232,18 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb100">Kritiker/Kritikerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13374</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13374</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118505955</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb10815</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb10815</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10815</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10815</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10815.html</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb10815</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10815</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10815.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/personen/pmb10815</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -272,10 +272,13 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
             </person>
             <person xml:id="pmb10818">
                <persName>
@@ -304,11 +307,14 @@
                </death>
                <sex value="female"/>
                <occupation ref="pmb107">Sänger/Sängerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13376</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13376</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118646370</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb10818</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb10818</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10818</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10818</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10818</idno>
             </person>
             <person xml:id="pmb2173">
                <persName>
@@ -340,10 +346,13 @@
                <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
                <occupation ref="pmb107">Sänger/Sängerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116848723</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2173</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2173</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2173</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19832</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2173</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19832</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2173</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -362,9 +371,11 @@
                   <placeName ref="pmb462">Venedig</placeName>
                   <geo>45,43713 12,33265</geo>
                </location>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb843</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb843</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/843</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb843</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb843</idno>
             </place>
             <place xml:id="pmb462">
                <placeName>Venedig</placeName>
@@ -378,16 +389,20 @@
                   <placeName ref="pmb40306">Italien</placeName>
                   <geo>42,83333 12,83333</geo>
                </location>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb462</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb462</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/462</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb462</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb462</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64195/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/3164603/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb462</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb462</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
@@ -411,14 +426,17 @@
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
             </place>
             <place xml:id="pmb150">
                <placeName>Sternwartestraße</placeName>
@@ -431,17 +449,21 @@
                   <placeName ref="pmb68">XVIII., Währing</placeName>
                   <geo>48,23333 16,31667</geo>
                </location>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:Sternwartestra%C3%9Fe</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb150</idno>
+               <idno type="URL" subtype="pmb"
+                  >https://pmb.acdh.oeaw.ac.at/entities:Sternwartestra%C3%9Fe</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb150</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/150</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb150</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb150</idno>
             </place>
             <place xml:id="pmb41240">
                <placeName>Österreich</placeName>
                <placeName type="alternative-name">Republik Österreich</placeName>
                <placeName type="legacy-uri-merge">http://sws.geonames.org/2782113/</placeName>
                <placeName type="legacy-uri-merge">https://www.wikidata.org/wiki/Q40</placeName>
-               <placeName type="legacy-uri-merge">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
+               <placeName type="legacy-uri-merge"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb162</placeName>
                <placeName type="alternative-name">Republic of Austria</placeName>
                <desc type="entity_type">http://www.geonames.org/ontology#A.PCLI</desc>
                <desc type="entity_type_id">1107</desc>
@@ -453,15 +475,19 @@
                   <geo>48,4054 16,4887</geo>
                </location>
                <idno type="URL" subtype="geonames">http://sws.geonames.org/2782113/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43319/</idno>
+               <idno type="URL" subtype="pmb"
+                  >https://pmb.acdh.oeaw.ac.at/apis/api2/entity/43319/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2782113/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41240</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41240</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb41240</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb41240</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb41240</idno>
             </place>
             <place xml:id="pmb148">
                <placeName>Ponte di Rialto</placeName>
-               <placeName type="uri_wikipedia">https://de.wikipedia.org/wiki/Rialtobr%C3%BCcke</placeName>
+               <placeName type="uri_wikipedia"
+                  >https://de.wikipedia.org/wiki/Rialtobr%C3%BCcke</placeName>
                <desc type="entity_type">Brücke (K.BRK)</desc>
                <desc type="entity_type_id">37</desc>
                <location type="coords">
@@ -472,9 +498,11 @@
                   <geo>45,43713 12,33265</geo>
                </location>
                <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q52505</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb148</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb148</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/148</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb148</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb148</idno>
                <note type="apis_dates">
                   <date notBefore="1591-01-01" when="1591-07-02">1591</date>
                </note>

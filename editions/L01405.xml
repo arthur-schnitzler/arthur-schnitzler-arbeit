@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L01405"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L01405"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader type="text">
       <fileDesc>
          <titleStmt>
@@ -84,8 +82,12 @@
                         <objectDesc>
                            <desc type="telegramm"/>
                         </objectDesc>
-                        <handDesc>
+                        <handDesc hands="1">
                            <handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb51015"/>
+                           <handNote medium="bleistift" style="lateinische-kurrent"
+                              corresp="#pmb51015">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -97,19 +99,23 @@
                                        <space unit="chars" quantity="1"/>
                                        <hi rend="pre-print">um</hi>
                                        <space unit="chars" quantity="1"/>
-                                       <time>4 <hi rend="pre-print">Uhr <c rendition="#dots" n="3"/> Min.</hi>
+                                       <time>4 <hi rend="pre-print">Uhr <c rendition="#dots" n="3"
+                                             /> Min.</hi>
                                        </time> N <hi rend="pre-print">Mi<supplied>ttag</supplied>
                                        </hi>
                                     </p>
                                     <p>
-                                       <hi rend="pre-print">Eingelangt von</hi> L. <hi rend="pre-print">auf Leitung Nr.</hi>
-                                       <space unit="chars" quantity="1"/>43 <hi rend="pre-print">am</hi>
+                                       <hi rend="pre-print">Eingelangt von</hi> L. <hi
+                                          rend="pre-print">auf Leitung Nr.</hi>
+                                       <space unit="chars" quantity="1"/>43 <hi rend="pre-print"
+                                          >am</hi>
                                        <space unit="chars" quantity="1"/>
                                        <date>9/VI<hi rend="pre-print">190</hi>4 </date>
                                        <space unit="chars" quantity="1"/>
                                        <hi rend="pre-print">um</hi>
                                        <space unit="chars" quantity="1"/>
-                                       <time>4 <hi rend="pre-print">Uhr</hi> 45 <hi rend="pre-print">Min.</hi> N <hi rend="pre-print">Mittag</hi>
+                                       <time>4 <hi rend="pre-print">Uhr</hi> 45 <hi rend="pre-print"
+                                             >Min.</hi> N <hi rend="pre-print">Mittag</hi>
                                        </time>
                                     </p>
                                     <p>
@@ -124,8 +130,11 @@
                                        <space unit="chars" quantity="1"/>
                                        <rs type="place" ref="#pmb50">Wien 113</rs>
                                        <space unit="chars" quantity="1"/>
-                                       <hi rend="pre-print">Aufgabe-Nr.</hi> 64<space unit="chars" quantity="1"/>
-                                       <hi rend="pre-print">mit</hi> 21 <hi rend="pre-print">Taxworten (<c rendition="#dots" n="3"/> Worten <c rendition="#dots" n="3"/> Chiffern)</hi>
+                                       <hi rend="pre-print">Aufgabe-Nr.</hi> 64<space unit="chars"
+                                          quantity="1"/>
+                                       <hi rend="pre-print">mit</hi> 21 <hi rend="pre-print"
+                                          >Taxworten (<c rendition="#dots" n="3"/> Worten <c
+                                             rendition="#dots" n="3"/> Chiffern)</hi>
                                     </p>
                                  </quote>«</desc>
                            </incident>
@@ -153,12 +162,14 @@
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="#pmb10863">Beer-Hofmann, Richard</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L01404">Schnitzler an Beer-Hofmann, 2. 6. 1904</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L01406">Hofmannsthal an Schnitzler, 1[9?]. 6. [1904]</ref>
-               <ref subtype="previous_letter"
-                    type="withinCorrespondence"
-                    target="L01404">Schnitzler an Beer-Hofmann, 2. 6. 1904</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" target="L01413">Beer-Hofmann an Schnitzler, 1. 7. 1904</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01404">Schnitzler an
+                  Beer-Hofmann, 2. 6. 1904</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01406">Hofmannsthal an
+                  Schnitzler, 1[9?]. 6. [1904]</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" target="L01404">Schnitzler
+                  an Beer-Hofmann, 2. 6. 1904</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" target="L01413">Beer-Hofmann
+                  an Schnitzler, 1. 7. 1904</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -177,23 +188,21 @@
          <div type="address">
             <address>
                <addrLine>
-                  <pb facs="1904_AS_RBH_1_00020"/>
-                  <hi rend="latintype">Richard Beerhofma<c rendition="#gemination-n"/>
-                  </hi>
-               </addrLine>
+                  <pb facs="1904_AS_RBH_1_00020"/>Richard Beerhofma<c rendition="#gemination-n"
+                  /></addrLine>
                <addrLine>
-                  <hi rend="latintype">
-                     <rs type="place" ref="#pmb173">Rodaun</rs>
-                  </hi>
+                  <rs type="place" ref="#pmb173">Rodaun</rs>
                </addrLine>
             </address>
          </div>
          <div type="writingSession" n="1">
             <p>
-               <pb facs="1904_AS_RBH_1_00020"/>Wären gern gekommen haben aber <anchor type="commentary" xml:id="K_L01405-1"/>Sitze <rs type="place" ref="#pmb14">Burgtheater</rs>
-               <note type="commentary" xml:id="K_L01405-1h">für <rs type="work" ref="#pmb53251">Vater
-                     und Sohn</rs> von <rs type="person" ref="#pmb15512">Alexandre Dumas
-                  fils</rs>.</note>. Grüßen Sie die verſa<c rendition="#gemination-m"/>elten auf
+               <pb facs="1904_AS_RBH_1_00020"/>Wären gern gekommen haben aber <anchor
+                  type="commentary" xml:id="K_L01405-1"/>Sitze <rs type="place" ref="#pmb14"
+                  >Burgtheater</rs>
+               <note type="commentary" xml:id="K_L01405-1h">für <rs type="work" ref="#pmb53251"
+                     >Vater und Sohn</rs> von <rs type="person" ref="#pmb15512">Alexandre Dumas
+                     fils</rs>.</note>. Grüßen Sie die verſa<c rendition="#gemination-m"/>elten auf
                ſehr baldiges Wiederſehen herzlichſt</p>
             <closer>
                <signed>Arthur</signed>
@@ -229,10 +238,13 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
             </person>
             <person xml:id="pmb51015">
                <persName>
@@ -241,7 +253,8 @@
                <sex value="not-set"/>
                <occupation ref="pmb963">Telegrafenbeamter/Telegrafenbeamtin</occupation>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51015/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb51015</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb51015</idno>
             </person>
             <person xml:id="pmb10863">
                <persName>
@@ -268,12 +281,16 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13551</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13551</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118654756</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb10863</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb10863</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10863</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10863</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb10863</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10863.html</idno>
             </person>
             <person xml:id="pmb15512">
                <persName>
@@ -281,7 +298,8 @@
                   <surname>Dumas</surname>
                </persName>
                <persName type="legacy-name-merge">Dumas, Alexandre (fils)</persName>
-               <persName type="legacy-uri-merge">https://schnitzler-briefe.acdh.oeaw.ac.at/A002759</persName>
+               <persName type="legacy-uri-merge"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/A002759</persName>
                <persName type="legacy-uri-merge">http://d-nb.info/gnd/11852805X</persName>
                <birth>
                   <date when="1824-07-28">28.07.1824</date>
@@ -303,12 +321,16 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14546</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb15512</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14546</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb15512</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/15512</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb15512</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb15512</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/11852805X</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb15512.html</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb15512.html</idno>
             </person>
          </listPerson>
          <listBibl>
@@ -317,15 +339,18 @@
                <author ref="pmb15512" role="hat-geschaffen">Dumas, Alexandre fils</author>
                <date notBefore="1859-01-01" when="1859-07-02">1859</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/53251/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb53251</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb53251.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb53251</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb53251.html</idno>
                <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
             </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="alternative-name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="legacy-uri-merge">http://d-nb.info/gnd/4066009-6</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
@@ -349,19 +374,23 @@
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/2316/</idno>
                <idno type="URL" subtype="">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/20954/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
             </place>
             <place xml:id="pmb173">
                <placeName>Rodaun</placeName>
                <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
-               <placeName type="legacy-uri-merge">http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11742/</placeName>
+               <placeName type="legacy-uri-merge"
+                  >http://pmb.acdh.oeaw.ac.at/apis/api2/entity/11742/</placeName>
                <desc type="entity_type">Teil eines besiedelten Ortes (A.BSOX)</desc>
                <desc type="entity_type_id">18</desc>
                <location type="coords">
@@ -372,10 +401,12 @@
                   <geo>48,13333 16,3</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:Rodaun</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb173</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb173</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/173</idno>
                <idno type="URL" subtype="geonames">https://www.geonames.org/2767332</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb173</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb173</idno>
             </place>
             <place xml:id="pmb14">
                <placeName>Burgtheater</placeName>
@@ -388,10 +419,13 @@
                   <placeName ref="pmb51">I., Innere Stadt</placeName>
                   <geo>48,20769 16,37049</geo>
                </location>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entities:Burgtheater+%28Gebäude</idno>
-               <idno type="URL" subtype="bahrschnitzler">https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb14</idno>
+               <idno type="URL" subtype="pmb"
+                  >https://pmb.acdh.oeaw.ac.at/entities:Burgtheater+%28Gebäude</idno>
+               <idno type="URL" subtype="bahrschnitzler"
+                  >https://bahrschnitzler.acdh.oeaw.ac.at/entity/pmb14</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb14</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb14</idno>
             </place>
          </listPlace>
       </back>

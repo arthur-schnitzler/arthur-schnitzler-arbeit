@@ -82,8 +82,13 @@
                         <objectDesc>
                            <desc type="karte" subtype="postkarte"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"/>
+                        <handDesc hands="1">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"
+                              corresp="#pmb11740"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"
+                              corresp="#pmb11740">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -176,18 +181,13 @@
          <div type="address">
             <address>
                <addrLine>
-                  <pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00217"/>
-                  <hi rend="latintype">Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</hi>
+                  <pb facs="MS-SCHNITZLER-B-00043-B-00001-000-00217"/>Herrn D<hi rend="superscript"
+                     >r</hi> Arthur Schnitzler</addrLine>
+               <addrLine>
+                  <rs ref="#pmb50" type="place">Wien</rs>
                </addrLine>
                <addrLine>
-                  <rs ref="#pmb50" type="place">
-                     <hi rend="latintype">Wien</hi>
-                  </rs>
-               </addrLine>
-               <addrLine>
-                  <rs ref="#pmb397" type="place">
-                     <hi rend="latintype">IX Franckgasse 1</hi>
-                  </rs>
+                  <rs ref="#pmb397" type="place">IX Franckgasse 1</rs>
                </addrLine>
             </address>
          </div>
