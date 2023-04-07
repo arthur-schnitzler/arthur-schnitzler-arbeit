@@ -69,39 +69,41 @@ entstehen Duplikate! -->
                             <xsl:apply-templates/>
                         </xsl:element>
                     </xsl:for-each>
-                    <xsl:element name="correspContext" namespace="http://www.tei-c.org/ns/1.0">
-                        <xsl:for-each select="$partner/tei:persName">
-                            <xsl:choose>
-                                <xsl:when test="key('corresp-lookup', @ref, $correspPartner)/@xml:id = 'correspondence_null'"/>
-                                    <!-- Das filtert die paar Fälle, die wir (noch) nicht aufnehmen -->
-                                <xsl:otherwise>
-                                    <xsl:element name="ref" namespace="http://www.tei-c.org/ns/1.0">
-                                        <xsl:attribute name="type">
-                                            <xsl:text>belongsToCorrespondence</xsl:text>
-                                        </xsl:attribute>
-                                        <xsl:choose>
-                                            <xsl:when test="string-length(key('corresp-lookup', @ref, $correspPartner)/tei:persName[@role='main']) &gt; 1">
-                                                <xsl:attribute name="target">
-                                                    <xsl:value-of select="key('corresp-lookup', @ref, $correspPartner)/@xml:id"/>
+                    
+                        
+                            <xsl:element name="correspContext" namespace="http://www.tei-c.org/ns/1.0">
+                                <xsl:for-each select="$partner/tei:persName">
+                                    <xsl:choose>
+                                        <xsl:when test="key('corresp-lookup', @ref, $correspPartner)/@xml:id = 'correspondence_null'"/>
+                                        <!-- Das filtert die paar Fälle, die wir (noch) nicht aufnehmen -->
+                                        <xsl:otherwise>
+                                            <xsl:element name="ref" namespace="http://www.tei-c.org/ns/1.0">
+                                                <xsl:attribute name="type">
+                                                    <xsl:text>belongsToCorrespondence</xsl:text>
                                                 </xsl:attribute>
-                                                <xsl:value-of select="key('corresp-lookup', @ref, $correspPartner)/tei:persName[@role='main']"/>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <xsl:attribute name="target">
-                                                    <xsl:value-of select="@ref"/>
-                                                </xsl:attribute>
-                                                <xsl:value-of select="."/>
-                                            </xsl:otherwise>
-                                        </xsl:choose>
-                                    </xsl:element>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                            
-                            
-                            
-                            
-                        </xsl:for-each>
-                    </xsl:element>
+                                                <xsl:choose>
+                                                    <xsl:when test="string-length(key('corresp-lookup', @ref, $correspPartner)/tei:persName[@role='main']) &gt; 1">
+                                                        <xsl:attribute name="target">
+                                                            <xsl:value-of select="key('corresp-lookup', @ref, $correspPartner)/@xml:id"/>
+                                                        </xsl:attribute>
+                                                        <xsl:value-of select="key('corresp-lookup', @ref, $correspPartner)/tei:persName[@role='main']"/>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:attribute name="target">
+                                                            <xsl:value-of select="@ref"/>
+                                                        </xsl:attribute>
+                                                        <xsl:value-of select="."/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                            </xsl:element>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </xsl:for-each>
+                                <xsl:copy-of select="tei:correspContext/child::*"/>
+                            </xsl:element>
+                        
+                    
+                    
                 </xsl:element>
             </xsl:for-each>
         </xsl:element>
