@@ -107,6 +107,8 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
+    
+    
     <xsl:template match="tei:listPlace">
         <xsl:variable name="listenname" select="name()" as="xs:string"/>
         <xsl:result-document href="listplace.xml">
@@ -233,7 +235,7 @@
             </xsl:element>
         </xsl:result-document>
     </xsl:template>
-    <xsl:template match="tei:list">
+    <xsl:template match="tei:listBibl">
         <xsl:variable name="listenname" select="name()" as="xs:string"/>
         <xsl:result-document href="listwork.xml">
             <xsl:element name="TEI" namespace="http://www.tei-c.org/ns/1.0">
@@ -243,7 +245,7 @@
                 <xsl:element name="text" namespace="http://www.tei-c.org/ns/1.0">
                     <xsl:element name="body" namespace="http://www.tei-c.org/ns/1.0">
                         <xsl:element name="listBibl" namespace="http://www.tei-c.org/ns/1.0">
-                            <xsl:for-each select="tei:item">
+                            <xsl:for-each select="tei:bibl">
                                 <xsl:choose>
                                     <xsl:when test="@xml:id">
                                         <xsl:element name="bibl"
