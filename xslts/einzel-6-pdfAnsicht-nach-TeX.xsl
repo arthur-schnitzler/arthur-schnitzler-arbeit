@@ -2183,7 +2183,30 @@
       <xsl:text>\newline </xsl:text>
    </xsl:template>-->
    <xsl:template match="front"/>
-   <xsl:template match="back"/>
+<!--   <xsl:template match="back"/>-->
+   <xsl:template match="back">
+      <xsl:text>\\Erwähnte Personen: </xsl:text>
+      <xsl:for-each select="descendant::person[not(@xml:id='pmb2121') and not(replace(@xml:id, '#','') = replace(ancestor::TEI//titleStmt/author/@ref, '#',''))]">
+         <xsl:sort select="descendant::surname/text()"/>
+         <xsl:value-of select="concat(descendant::forename/text(), ' ', descendant::surname/text())"/>
+         <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+      </xsl:for-each>
+      <xsl:text>\\</xsl:text>
+      <xsl:text>Erwähnte Orte: </xsl:text>
+      <xsl:for-each select="descendant::place">
+         <xsl:sort select="descendant::placeName[1]/text()"/>
+         <xsl:value-of select="descendant::placeName[1]/text()"/>
+         <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+      </xsl:for-each>
+      <xsl:text>\\</xsl:text>
+      <xsl:text>Erwähnte Werke: </xsl:text>
+      <xsl:for-each select="descendant::bibl">
+         <xsl:sort select="descendant::title[1]/text()"/>
+         <xsl:value-of select="descendant::title[1]/text()"/>
+         <xsl:if test="descendant::date[text()]"><xsl:text> (</xsl:text><xsl:value-of select="descendant::date/text()"/><xsl:text>)</xsl:text></xsl:if>
+         <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+      </xsl:for-each>
+   </xsl:template>
    <xsl:function name="foo:briefempfaenger-mehrere-persName-rekursiv">
       <xsl:param name="briefempfaenger" as="node()"/>
       <xsl:param name="briefempfaenger-anzahl" as="xs:integer"/>
@@ -3172,6 +3195,7 @@
             </xsl:otherwise>
          </xsl:choose>
       </xsl:if>-->
+      <xsl:apply-templates select="back"/>
    </xsl:template>
    <!-- Das ist speziell für die Behandlung von Bildern, der eigentliche body für alles andere kommt danach -->
    <xsl:template match="image">
