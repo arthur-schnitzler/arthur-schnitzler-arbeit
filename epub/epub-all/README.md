@@ -15,7 +15,7 @@ and
 ant
 ```
 
-2) copy generated html files to /OEBPS/texts
+2) copy generated html files in schnitzler-briefe-static/html/L*.html to arthur-schnitzler-arbeit/OEBPS/texts
 
 3) rename the suffixes of the generated html files to .xhtml
 
