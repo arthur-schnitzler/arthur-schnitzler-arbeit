@@ -2135,28 +2135,49 @@
       <xsl:text>\newline </xsl:text>
    </xsl:template>-->
    <xsl:template match="front"/>
-<!--   <xsl:template match="back"/>-->
+   <!--   <xsl:template match="back"/>-->
    <xsl:template match="back">
-      <xsl:text>\\Erwähnte Personen: </xsl:text>
-      <xsl:for-each select="descendant::person[not(@xml:id='pmb2121') and not(replace(@xml:id, '#','') = replace(ancestor::TEI//titleStmt/author/@ref, '#',''))]">
+      <xsl:text>\\</xsl:text>
+      <xsl:text>Erwähnte Personen: </xsl:text>
+      <xsl:for-each
+         select="descendant::person[not(@xml:id = 'pmb2121') and not(replace(@xml:id, '#', '') = replace(ancestor::TEI//titleStmt/author/@ref, '#', ''))]">
          <xsl:sort select="descendant::surname/text()"/>
          <xsl:value-of select="concat(descendant::forename/text(), ' ', descendant::surname/text())"/>
-         <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+         <xsl:if test="position() != last()">
+            <xsl:text>, </xsl:text>
+         </xsl:if>
+      </xsl:for-each>
+      <xsl:text>\\</xsl:text>
+      <xsl:text>Erwähnte Institutionen: </xsl:text>
+      <xsl:for-each select="descendant::org">
+         <xsl:sort select="descendant::orgName[1]/text()"/>
+         <xsl:value-of select="descendant::orgName[1]/text()"/>
+         <xsl:if test="position() != last()">
+            <xsl:text>, </xsl:text>
+         </xsl:if>
       </xsl:for-each>
       <xsl:text>\\</xsl:text>
       <xsl:text>Erwähnte Orte: </xsl:text>
       <xsl:for-each select="descendant::place">
          <xsl:sort select="descendant::placeName[1]/text()"/>
          <xsl:value-of select="descendant::placeName[1]/text()"/>
-         <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+         <xsl:if test="position() != last()">
+            <xsl:text>, </xsl:text>
+         </xsl:if>
       </xsl:for-each>
       <xsl:text>\\</xsl:text>
       <xsl:text>Erwähnte Werke: </xsl:text>
       <xsl:for-each select="descendant::bibl">
          <xsl:sort select="descendant::title[1]/text()"/>
          <xsl:value-of select="descendant::title[1]/text()"/>
-         <xsl:if test="descendant::date[text()]"><xsl:text> (</xsl:text><xsl:value-of select="descendant::date/text()"/><xsl:text>)</xsl:text></xsl:if>
-         <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
+         <xsl:if test="descendant::date[text()]">
+            <xsl:text> (</xsl:text>
+            <xsl:value-of select="descendant::date/text()"/>
+            <xsl:text>)</xsl:text>
+         </xsl:if>
+         <xsl:if test="position() != last()">
+            <xsl:text>, </xsl:text>
+         </xsl:if>
       </xsl:for-each>
    </xsl:template>
    <xsl:function name="foo:briefempfaenger-mehrere-persName-rekursiv">
@@ -3173,7 +3194,7 @@
    <xsl:template match="lb[parent::item]">
       <xsl:text>{\newline}</xsl:text>
    </xsl:template>
-   <xsl:template match="note[@type='footnote' and ancestor::text/body]">
+   <xsl:template match="note[@type = 'footnote' and ancestor::text/body]">
       <xsl:text>\footnote{</xsl:text>
       <xsl:for-each select="p">
          <xsl:apply-templates select="."/>
@@ -3259,7 +3280,7 @@
       </xsl:if>
    </xsl:template>
    <xsl:template
-      match="p[ancestor::body and not(ancestor::TEI[starts-with(@id, 'E')]) and not(child::space[@dim] and not(child::*[2]) and empty(text())) and not(ancestor::div[@type = 'biographical']) and not(parent::note[@type='footnote'])] | closer | dateline">
+      match="p[ancestor::body and not(ancestor::TEI[starts-with(@id, 'E')]) and not(child::space[@dim] and not(child::*[2]) and empty(text())) and not(ancestor::div[@type = 'biographical']) and not(parent::note[@type = 'footnote'])] | closer | dateline">
       <!--     <xsl:if test="self::closer">\leftskip=1em{}</xsl:if>
 -->
       <xsl:if test="self::p[@rend = 'inline']">
@@ -3697,7 +3718,7 @@
    </xsl:template>
    <!-- anchors in Fussnoten, sehr seltener Fall-->
    <xsl:template
-      match="anchor[(@type = 'textConst' or @type = 'commentary') and ancestor::note[@type='footnote']]">
+      match="anchor[(@type = 'textConst' or @type = 'commentary') and ancestor::note[@type = 'footnote']]">
       <xsl:variable name="xmlid" select="concat(@id, 'h')"/>
       <xsl:text>\label{</xsl:text>
       <xsl:value-of select="@id"/>
@@ -3716,7 +3737,7 @@
    </xsl:template>
    <!-- Normaler anchor, Inhalt leer -->
    <xsl:template
-      match="anchor[(@type = 'textConst' or @type = 'commentary') and not(ancestor::note[@type='footnote'])]">
+      match="anchor[(@type = 'textConst' or @type = 'commentary') and not(ancestor::note[@type = 'footnote'])]">
       <xsl:variable name="typ-i-typ" select="@type"/>
       <xsl:variable name="lemmatext" as="xs:string">
          <xsl:for-each-group select="following-sibling::node()"
@@ -3732,15 +3753,15 @@
       <xsl:text>\edtext{</xsl:text>
       <xsl:apply-templates/>
    </xsl:template>
-   
+
    <xsl:template
-      match="note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::note[@type='footnote'])]"
+      match="note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::note[@type = 'footnote'])]"
       mode="lemma"/>
    <xsl:template match="space[@unit = 'chars' and @quantity = '1']" mode="lemma">
       <xsl:text> </xsl:text>
    </xsl:template>
    <xsl:template
-      match="note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::note[@type='footnote'])]">
+      match="note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::note[@type = 'footnote'])]">
       <xsl:text>}{</xsl:text>
       <!-- Der Teil hier bildet das Lemma und kürzt es -->
       <xsl:variable name="lemma-start" as="xs:string"
@@ -3814,7 +3835,7 @@
       <xsl:text>}</xsl:text>
    </xsl:template>
    <xsl:template
-      match="note[(@type = 'textConst' or @type = 'commentary') and (ancestor::note[@type='footnote'])]">
+      match="note[(@type = 'textConst' or @type = 'commentary') and (ancestor::note[@type = 'footnote'])]">
       <!--     <xsl:text>\toendnotes[C]{</xsl:text>
       <xsl:apply-templates/>
       <xsl:text>\par}</xsl:text>-->
@@ -4464,14 +4485,14 @@
    </xsl:template>
    <!-- Großbuchstaben -->
    <xsl:template
-      match="hi[@rend = 'capitals' and not(descendant::note) and not(descendant::note[@type='footnote'])]//text()">
+      match="hi[@rend = 'capitals' and not(descendant::note) and not(descendant::note[@type = 'footnote'])]//text()">
       <xsl:value-of select="upper-case(.)"/>
    </xsl:template>
    <xsl:template
-      match="hi[(@rend = 'capitals' and descendant::note) or (@rend = 'capitals' and descendant::note[@type='footnote'])]//text()">
+      match="hi[(@rend = 'capitals' and descendant::note) or (@rend = 'capitals' and descendant::note[@type = 'footnote'])]//text()">
       <xsl:choose>
          <xsl:when
-            test="ancestor-or-self::note[@type='footnote' and not(descendant::hi[@rend = 'capitals'])] | ancestor-or-self::note[not(descendant::hi[@rend = 'capitals'])]">
+            test="ancestor-or-self::note[@type = 'footnote' and not(descendant::hi[@rend = 'capitals'])] | ancestor-or-self::note[not(descendant::hi[@rend = 'capitals'])]">
             <xsl:value-of select="."/>
          </xsl:when>
          <xsl:otherwise>
