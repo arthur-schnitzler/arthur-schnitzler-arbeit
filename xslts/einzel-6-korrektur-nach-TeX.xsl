@@ -1117,6 +1117,7 @@
             <xsl:otherwise>
                <xsl:text>\input{../tex-inputs/latex-korrekturansicht-vorspann}
 </xsl:text>
+               <xsl:apply-templates select="text/back" mode="tex"/>
                <xsl:text>
                \section[</xsl:text>
                <xsl:value-of
@@ -2135,51 +2136,71 @@
       <xsl:text>\newline </xsl:text>
    </xsl:template>-->
    <xsl:template match="front"/>
-   <!--   <xsl:template match="back"/>-->
-   <xsl:template match="back">
-      <xsl:text>\\</xsl:text>
-      <xsl:text>Erwähnte Personen: </xsl:text>
-      <xsl:for-each
-         select="descendant::person[not(@xml:id = 'pmb2121') and not(replace(@xml:id, '#', '') = replace(ancestor::TEI//titleStmt/author/@ref, '#', ''))]">
-         <xsl:sort select="descendant::surname/text()"/>
-         <xsl:value-of select="concat(descendant::forename/text(), ' ', descendant::surname/text())"/>
-         <xsl:if test="position() != last()">
-            <xsl:text>, </xsl:text>
-         </xsl:if>
-      </xsl:for-each>
-      <xsl:text>\\</xsl:text>
-      <xsl:text>Erwähnte Institutionen: </xsl:text>
-      <xsl:for-each select="descendant::org">
-         <xsl:sort select="descendant::orgName[1]/text()"/>
-         <xsl:value-of select="descendant::orgName[1]/text()"/>
-         <xsl:if test="position() != last()">
-            <xsl:text>, </xsl:text>
-         </xsl:if>
-      </xsl:for-each>
-      <xsl:text>\\</xsl:text>
-      <xsl:text>Erwähnte Orte: </xsl:text>
-      <xsl:for-each select="descendant::place">
-         <xsl:sort select="descendant::placeName[1]/text()"/>
-         <xsl:value-of select="descendant::placeName[1]/text()"/>
-         <xsl:if test="position() != last()">
-            <xsl:text>, </xsl:text>
-         </xsl:if>
-      </xsl:for-each>
-      <xsl:text>\\</xsl:text>
-      <xsl:text>Erwähnte Werke: </xsl:text>
-      <xsl:for-each select="descendant::bibl">
-         <xsl:sort select="descendant::title[1]/text()"/>
-         <xsl:value-of select="descendant::title[1]/text()"/>
-         <xsl:if test="descendant::date[text()]">
+   <xsl:template match="back"/>
+   <xsl:template match="back" mode="tex">
+      <xsl:text>
+         
+         \newcommand{\erwaehntePersonen}{</xsl:text>
+      <xsl:text>Personen: </xsl:text>
+      
+      <xsl:if test="descendant::person[not(@id = 'pmb2121') and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author/@ref, '#', '')))]">
+         <xsl:for-each
+            select="descendant::person[not(@id = 'pmb2121') and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author/@ref, '#', '')))]">
+            <xsl:sort select="descendant::surname/text()"/>
+            <xsl:value-of select="concat(descendant::forename/text(), ' ', descendant::surname/text())"/>
+            <xsl:if test="position() != last()">
+               <xsl:text>, </xsl:text>
+            </xsl:if>
+         </xsl:for-each>
+      </xsl:if>
+      <xsl:text>}</xsl:text>
+      <xsl:text>
+         \newcommand{\erwaehnteInstitutionen}{</xsl:text>
+      <xsl:if test="descendant::org">
+         <xsl:text>Institutionen: </xsl:text>
+         <xsl:for-each select="descendant::org">
+            <xsl:sort select="descendant::orgName[1]/text()"/>
+            <xsl:value-of select="descendant::orgName[1]/text()"/>
+            <xsl:if test="position() != last()">
+               <xsl:text>, </xsl:text>
+            </xsl:if>
+         </xsl:for-each>
+      </xsl:if>
+      <xsl:text>}</xsl:text>
+      <xsl:text>
+         \newcommand{\erwaehnteOrte}{</xsl:text>
+      <xsl:if test="descendant::place">
+         <xsl:text>Orte: </xsl:text>
+         <xsl:for-each select="descendant::place">
+            <xsl:sort select="descendant::placeName[1]/text()"/>
+            <xsl:value-of select="descendant::placeName[1]/text()"/>
+            <xsl:if test="position() != last()">
+               <xsl:text>, </xsl:text>
+            </xsl:if>
+         </xsl:for-each>
+      </xsl:if>
+      <xsl:text>}</xsl:text>
+      <xsl:text>
+         \newcommand{\erwaehnteWerke}{</xsl:text>
+      <xsl:if test="descendant::bibl">
+         <xsl:text>Werke: </xsl:text>
+         
+         <xsl:for-each select="descendant::bibl">
+            <xsl:sort select="descendant::title[1]/text()"/>
+            <xsl:value-of select="descendant::title[1]/text()"/>
+            <!--<xsl:if test="descendant::date[text()]">
             <xsl:text> (</xsl:text>
             <xsl:value-of select="descendant::date/text()"/>
             <xsl:text>)</xsl:text>
-         </xsl:if>
-         <xsl:if test="position() != last()">
-            <xsl:text>, </xsl:text>
-         </xsl:if>
-      </xsl:for-each>
+         </xsl:if>-->
+            <xsl:if test="position() != last()">
+               <xsl:text>, </xsl:text>
+            </xsl:if>
+         </xsl:for-each>
+         <xsl:text>}</xsl:text>
+      </xsl:if>
    </xsl:template>
+   
    <xsl:function name="foo:briefempfaenger-mehrere-persName-rekursiv">
       <xsl:param name="briefempfaenger" as="node()"/>
       <xsl:param name="briefempfaenger-anzahl" as="xs:integer"/>
