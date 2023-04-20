@@ -62,7 +62,7 @@
                         <body>
                             <xsl:element name="list" namespace="http://www.tei-c.org/ns/1.0">
                                 <xsl:for-each
-                                    select="collection(concat($folderURI, '../../editions/?select=L0*.xml;recurse=yes'))[descendant::tei:correspAction/tei:persName/@ref = concat('#pmb', $correspondence-nummer)]/node()">
+                                    select="collection(concat($folderURI, '../../editions/?select=L0*.xml;recurse=yes'))[descendant::tei:correspContext/tei:ref[@type='belongsToCorrespondence' and @target= concat('correspondence_', $correspondence-nummer)]]/node()">
                                     <xsl:sort
                                         select="child::tei:teiHeader[1]/tei:profileDesc[1]/tei:correspDesc[1]/tei:correspAction[@type = 'sent']/tei:date[1]/@*[name() = 'when' or name() = 'from' or name() = 'notBefore']"/>
                                     <xsl:sort
