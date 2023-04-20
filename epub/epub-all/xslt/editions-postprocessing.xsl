@@ -24,15 +24,19 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="@data-bs-target">
+    <xsl:template match="//@data-bs-target">
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="@source">
+    <xsl:template match="//@source">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="//@name">
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="@data-bs-toggle">
+    <xsl:template match="//@data-bs-toggle">
         <xsl:apply-templates/>
     </xsl:template>
 
@@ -40,7 +44,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="@align">
+    <xsl:template match="//@align">
         <xsl:attribute name="class">
             <xsl:value-of select="."/>
         </xsl:attribute>
@@ -103,7 +107,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="text()">
+    <xsl:template match="xhtml:body//xhtml:div//text()">
         <xsl:value-of select="replace(., 'ſ', 's')"/>
     </xsl:template>
 
