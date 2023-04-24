@@ -108,13 +108,33 @@
                                     <String>text/any</String>
                                 </field>
                                 <field name="unparsedInsertString">
-                                    <String>&lt;p>&lt;hi rend="pre-print">Dr.&amp;#160;Arthur Schnitzler&lt;/hi>&lt;lb/>&lt;hi rend="pre-print">&lt;rs type="place" ref="#pmb133">Wien XVIII. Spoettelgasse&amp;#160;7&lt;/rs>.&lt;/hi>&lt;/p></String>
+                                    <String>&lt;p>&lt;hi rend="pre-print">Dr&amp;#160;Arthur Schnitzler&lt;/hi>&lt;lb/>&lt;hi rend="pre-print">&lt;rs type="place" ref="#pmb133">Wien XVIII. Spoettelgasse&amp;#160;7&lt;/rs>.&lt;/hi>&lt;/p></String>
                                 </field>
                                 <field name="descriptionString">
                                     <String></String>
                                 </field>
                                 <field name="renderString">
-                                    <String>Briefkopf Spoettelgasse 7</String>
+                                    <String>Briefkopf Spoettelgasse ab ca. 1907</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/any</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;p>&lt;hi rend="pre-print">Dr.&amp;#160;Arthur Schnitzler&lt;/hi>&lt;lb/>&lt;hi rend="pre-print">&lt;rs type="place" ref="#pmb133">Wien, XVIII. Spoettelgasse&amp;#160;7&lt;/rs>.&lt;/hi>&lt;/p></String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>Briefkopf Spoettelgasse bis 1906</String>
                                 </field>
                                 <field name="enabled">
                                     <Boolean>true</Boolean>
@@ -929,6 +949,27 @@ The "authorAccess" variable has access to the entire Java API "ro.sync.ecss.exte
                                 </field>
                                 <field name="renderString">
                                     <String>op_JSOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/css</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.MoveBlockAuthorOperation',
+          arg-direction, 'up'</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Move the current block element containing the caret offset or the current selected block elements up or down.&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>direction&lt;/b> = Move direction can have values "up" or "down"&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.MoveBlockAuthorOperation',&lt;br/>          arg-direction, 'up'&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_MoveBlockAuthorOperation</String>
                                 </field>
                                 <field name="enabled">
                                     <Boolean>true</Boolean>
@@ -2678,6 +2719,27 @@ The "authorAccess" variable has access to the entire Java API "ro.sync.ecss.exte
                                 </field>
                                 <field name="renderString">
                                     <String>op_JSOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/less</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.MoveBlockAuthorOperation',
+          arg-direction, 'up'</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Move the current block element containing the caret offset or the current selected block elements up or down.&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>direction&lt;/b> = Move direction can have values "up" or "down"&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.MoveBlockAuthorOperation',&lt;br/>          arg-direction, 'up'&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_MoveBlockAuthorOperation</String>
                                 </field>
                                 <field name="enabled">
                                     <Boolean>true</Boolean>
@@ -7503,48 +7565,6 @@ ${caret}</String>
                                 </field>
                                 <field name="renderString">
                                     <String>xsl</String>
-                                </field>
-                                <field name="enabled">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="accelerator">
-                                    <null/>
-                                </field>
-                            </codeTemplateItem>
-                            <codeTemplateItem>
-                                <field name="contentType">
-                                    <String>text/css</String>
-                                </field>
-                                <field name="unparsedInsertString">
-                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.MoveBlockAuthorOperation',
-          arg-direction, 'up'</String>
-                                </field>
-                                <field name="descriptionString">
-                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Move the current block element containing the caret offset or the current selected block elements up or down.&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>direction&lt;/b> = Move direction can have values "up" or "down"&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.MoveBlockAuthorOperation',&lt;br/>          arg-direction, 'up'&lt;/p>&lt;/body>&lt;/html></String>
-                                </field>
-                                <field name="renderString">
-                                    <String>op_MoveBlockAuthorOperation</String>
-                                </field>
-                                <field name="enabled">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="accelerator">
-                                    <null/>
-                                </field>
-                            </codeTemplateItem>
-                            <codeTemplateItem>
-                                <field name="contentType">
-                                    <String>text/less</String>
-                                </field>
-                                <field name="unparsedInsertString">
-                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.MoveBlockAuthorOperation',
-          arg-direction, 'up'</String>
-                                </field>
-                                <field name="descriptionString">
-                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Move the current block element containing the caret offset or the current selected block elements up or down.&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>direction&lt;/b> = Move direction can have values "up" or "down"&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.MoveBlockAuthorOperation',&lt;br/>          arg-direction, 'up'&lt;/p>&lt;/body>&lt;/html></String>
-                                </field>
-                                <field name="renderString">
-                                    <String>op_MoveBlockAuthorOperation</String>
                                 </field>
                                 <field name="enabled">
                                     <Boolean>true</Boolean>

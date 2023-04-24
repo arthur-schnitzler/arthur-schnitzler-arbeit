@@ -5316,7 +5316,7 @@
          <xsl:when test="@subtype = 'See'">
             <xsl:text>Siehe </xsl:text>
          </xsl:when>
-         <xsl:when test="@subtype = 'Cf'">
+         <xsl:when test="@subtype = 'cf'">
             <xsl:text>Vgl. </xsl:text>
          </xsl:when>
       </xsl:choose>
@@ -5324,7 +5324,7 @@
       <xsl:variable name="start-label" select="substring-after(@target, '#')"/>
       <xsl:choose>
          <xsl:when test="$start-label = ''">
-            <xsl:text>\textcolor{red}{XXXX Labelref}</xsl:text>
+            <xsl:text>\textcolor{red}{XXXX labelref}</xsl:text>
          </xsl:when>
          <xsl:when test="ends-with(@target, 'v')">
             <xsl:variable name="end-label"
@@ -5343,6 +5343,12 @@
             <xsl:text>h}</xsl:text>
          </xsl:otherwise>
       </xsl:choose>
+   </xsl:template>
+   <xsl:template match="ref[@type = 'footnotemarkpointer']">
+      <!-- für Verweise auf Fußnotennummern. Innerhalb der Fußnote einen anchor setzen -->
+      <xsl:text>\ref{</xsl:text>
+      <xsl:value-of select="substring-after(@target, '#')"/>
+      <xsl:text>}</xsl:text>
    </xsl:template>
    <xsl:template match="ref[@type = 'schnitzler-tagebuch']">
       <xsl:if test="not(@subtype = 'date-only')">
