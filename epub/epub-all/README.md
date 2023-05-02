@@ -6,7 +6,7 @@ Workflow:
 
 1) run in schnitzler briefe-static:
 ```
-sh fetch-data.sh
+sh fetch_data.sh
 ```
 
 and 
