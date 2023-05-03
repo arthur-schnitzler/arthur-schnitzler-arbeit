@@ -7,7 +7,7 @@
    <!-- subst root persName address body div sourceDesc physDesc witList msIdentifier fileDesc teiHeader correspDesc correspAction date witnessdate -->
    <!-- Globale Parameter -->
    <xsl:param name="persons" select="//back/listPerson"/>
-   <xsl:param name="works" as="node()" select="descendant::back/listBibl"/>
+   <xsl:param name="works" as="node()?" select="descendant::back/listBibl"/>
    <xsl:param name="orgs" select="//back/listOrg"/>
    <xsl:param name="places" select="//back/listPlace"/>
    <!--<xsl:param name="sigle" select="document('../indices/siglen.xml')"/>-->
@@ -649,7 +649,7 @@
    <xsl:function name="foo:org-in-index">
       <xsl:param name="first" as="xs:string"/>
       <xsl:param name="endung" as="xs:string"/>
-      <xsl:variable name="org-entry" select="key('org-lookup', ($first), $orgs)"/>
+      <xsl:variable name="org-entry" select="key('org-lookup', ($first), $orgs)" as="node()?"/>
       <xsl:variable name="ort" select="$org-entry/place[1]/placeName[1]"/>
       <xsl:variable name="bezirk" select="$org-entry/Bezirk"/>
       <xsl:variable name="typ" select="$org-entry/desc[1]/gloss[1]"/>
