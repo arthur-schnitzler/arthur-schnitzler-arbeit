@@ -2138,25 +2138,38 @@
    <xsl:template match="front"/>
    <xsl:template match="back"/>
    <xsl:template match="back" mode="tex">
-      <xsl:text>
+      <xsl:if test="
+         descendant::person[not(@id = 'pmb2121')
+         and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[1]/@ref, '#', '')))
+         and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[2]/@ref, '#', '')))
+         and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[3]/@ref, '#', '')))
+         and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[4]/@ref, '#', '')))
+         and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[5]/@ref, '#', '')))
+         and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[6]/@ref, '#', '')))]">
+         <xsl:text>
          
          \newcommand{\erwaehntePersonen}{</xsl:text>
-      <xsl:text>Personen: </xsl:text>
-      
-      <xsl:if test="descendant::person[not(@id = 'pmb2121') and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author/@ref, '#', '')))]">
-         <xsl:for-each
-            select="descendant::person[not(@id = 'pmb2121') and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author/@ref, '#', '')))]">
+         <xsl:text>Personen: </xsl:text>
+         <xsl:for-each select="
+            descendant::person[not(@id = 'pmb2121')
+            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[1]/@ref, '#', '')))
+            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[2]/@ref, '#', '')))
+            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[3]/@ref, '#', '')))
+            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[4]/@ref, '#', '')))
+            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[5]/@ref, '#', '')))
+            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[6]/@ref, '#', '')))]">
             <xsl:sort select="descendant::surname/text()"/>
-            <xsl:value-of select="concat(descendant::forename/text(), ' ', descendant::surname/text())"/>
+            <xsl:value-of
+               select="concat(descendant::forename/text(), ' ', descendant::surname/text())"/>
             <xsl:if test="position() != last()">
                <xsl:text>, </xsl:text>
             </xsl:if>
          </xsl:for-each>
+         <xsl:text>}</xsl:text>
       </xsl:if>
-      <xsl:text>}</xsl:text>
-      <xsl:text>
-         \newcommand{\erwaehnteInstitutionen}{</xsl:text>
       <xsl:if test="descendant::org">
+         <xsl:text>
+         \newcommand{\erwaehnteInstitutionen}{</xsl:text>
          <xsl:text>Institutionen: </xsl:text>
          <xsl:for-each select="descendant::org">
             <xsl:sort select="descendant::orgName[1]/text()"/>
@@ -2165,11 +2178,11 @@
                <xsl:text>, </xsl:text>
             </xsl:if>
          </xsl:for-each>
+         <xsl:text>}</xsl:text>
       </xsl:if>
-      <xsl:text>}</xsl:text>
-      <xsl:text>
-         \newcommand{\erwaehnteOrte}{</xsl:text>
       <xsl:if test="descendant::place">
+         <xsl:text>
+         \newcommand{\erwaehnteOrte}{</xsl:text>
          <xsl:text>Orte: </xsl:text>
          <xsl:for-each select="descendant::place">
             <xsl:sort select="descendant::placeName[1]/text()"/>
@@ -2178,8 +2191,8 @@
                <xsl:text>, </xsl:text>
             </xsl:if>
          </xsl:for-each>
+         <xsl:text>}</xsl:text>
       </xsl:if>
-      <xsl:text>}</xsl:text>
       <xsl:text>
          \newcommand{\erwaehnteWerke}{</xsl:text>
       <xsl:if test="descendant::bibl">
