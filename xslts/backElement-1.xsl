@@ -135,13 +135,16 @@
                         </xsl:if>
                     </xsl:for-each>
                     <xsl:if test="ancestor::tei:TEI/tei:teiHeader/descendant::tei:title/@ref">
+                        <xsl:for-each select="distinct-values(ancestor::tei:TEI/tei:teiHeader/descendant::tei:title/@ref)">
+                        
                         <xsl:element name="bibl" namespace="http://www.tei-c.org/ns/1.0">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of
-                                    select="replace(ancestor::tei:TEI/tei:teiHeader/descendant::tei:title/@ref, '#', '')"
+                                    select="replace(., '#', '')"
                                 />
                             </xsl:attribute>
                         </xsl:element>
+                        </xsl:for-each>
                     </xsl:if>
                 </xsl:element>
                 <xsl:element name="listPlace" namespace="http://www.tei-c.org/ns/1.0">
