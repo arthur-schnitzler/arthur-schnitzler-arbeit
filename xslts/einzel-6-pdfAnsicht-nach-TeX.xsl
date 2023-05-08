@@ -2217,7 +2217,7 @@
          </xsl:for-each>
          <xsl:text>}</xsl:text>
       </xsl:if>
-      <xsl:if test="descendant::org">
+      <xsl:if test="descendant::listOrg/org">
          <xsl:text>
          \newcommand{\erwaehnteInstitutionen}{</xsl:text>
          <xsl:text>Institutionen: </xsl:text>
@@ -2230,7 +2230,7 @@
          </xsl:for-each>
          <xsl:text>}</xsl:text>
       </xsl:if>
-      <xsl:if test="descendant::place">
+      <xsl:if test="descendant::listPlace/place">
          <xsl:text>
          \newcommand{\erwaehnteOrte}{</xsl:text>
          <xsl:text>Orte: </xsl:text>
@@ -2245,7 +2245,7 @@
       </xsl:if>
       <xsl:text>
          \newcommand{\erwaehnteWerke}{</xsl:text>
-      <xsl:if test="descendant::bibl">
+      <xsl:if test="descendant::listBibl/bibl">
          <xsl:text>Werke: </xsl:text>
 
          <xsl:for-each select="descendant::bibl">
