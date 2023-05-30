@@ -824,7 +824,7 @@
       </xsl:when>
 
 
-      <xsl:when test="@type = 'pre-print'">
+      <xsl:when test="@type = 'pre-print' or @type='preprint'">
         <hi rend="pre-print">
           <xsl:call-template name="elem">
             <xsl:with-param name="elem" select="$elem"/>
