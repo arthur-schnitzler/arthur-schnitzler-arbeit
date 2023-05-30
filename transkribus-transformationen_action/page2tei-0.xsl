@@ -831,6 +831,20 @@
           </xsl:call-template>
         </hi>
       </xsl:when>
+      <xsl:when test="@type = 'stamp'">
+        <hi rend="stamp">
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </hi>
+      </xsl:when>
+      <xsl:when test="@type = 'capitals'">
+        <hi rend="capitals">
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </hi>
+      </xsl:when>
 
       <xsl:when test="@type = 'salute'">
         <salute>
