@@ -845,6 +845,13 @@
           </xsl:call-template>
         </hi>
       </xsl:when>
+      <xsl:when test="@type = 'postscript'">
+        <postscript>
+          <xsl:call-template name="elem">
+            <xsl:with-param name="elem" select="$elem"/>
+          </xsl:call-template>
+        </postscript>
+      </xsl:when>
 
       <xsl:when test="@type = 'salute'">
         <salute>
