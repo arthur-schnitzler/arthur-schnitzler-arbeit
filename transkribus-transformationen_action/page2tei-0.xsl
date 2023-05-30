@@ -708,7 +708,7 @@
           </xsl:when>
         </xsl:choose>
         <xsl:choose>
-          <xsl:when test="@o[contains(., 'smallCaps')]">
+          <xsl:when test="@o[contains(., 'smallCaps') or contains(., 'small-caps')]">
             <hi rend="small_caps">
               <xsl:call-template name="elem">
                 <xsl:with-param name="elem" select="$elem"/>
