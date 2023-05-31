@@ -2148,7 +2148,7 @@
          and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[6]/@ref, '#', '')))]">
          <xsl:text>
          
-         \newcommand{\erwaehntePersonen}{</xsl:text>
+         \renewcommand{\erwaehntePersonen}{</xsl:text>
          <xsl:text>Personen: </xsl:text>
          <xsl:for-each select="
             descendant::person[not(@id = 'pmb2121')
@@ -2169,7 +2169,7 @@
       </xsl:if>
       <xsl:if test="descendant::org">
          <xsl:text>
-         \newcommand{\erwaehnteInstitutionen}{</xsl:text>
+         \renewcommand{\erwaehnteInstitutionen}{</xsl:text>
          <xsl:text>Institutionen: </xsl:text>
          <xsl:for-each select="descendant::org">
             <xsl:sort select="descendant::orgName[1]/text()"/>
@@ -2182,7 +2182,7 @@
       </xsl:if>
       <xsl:if test="descendant::place">
          <xsl:text>
-         \newcommand{\erwaehnteOrte}{</xsl:text>
+         \renewcommand{\erwaehnteOrte}{</xsl:text>
          <xsl:text>Orte: </xsl:text>
          <xsl:for-each select="descendant::place">
             <xsl:sort select="descendant::placeName[1]/text()"/>
@@ -2194,13 +2194,20 @@
          <xsl:text>}</xsl:text>
       </xsl:if>
       <xsl:text>
-         \newcommand{\erwaehnteWerke}{</xsl:text>
-      <xsl:if test="descendant::bibl">
+         \renewcommand{\erwaehnteWerke}{</xsl:text>
+      <xsl:if test="descendant::listBibl/bibl">
          <xsl:text>Werke: </xsl:text>
          
          <xsl:for-each select="descendant::bibl">
             <xsl:sort select="descendant::title[1]/text()"/>
-            <xsl:value-of select="descendant::title[1]/text()"/>
+            <xsl:analyze-string select="descendant::title[1]/text()" regex="&amp;">
+               <xsl:matching-substring>
+                  <xsl:text>{\kaufmannsund}</xsl:text>
+               </xsl:matching-substring>
+               <xsl:non-matching-substring>
+                  <xsl:value-of select="."/>
+               </xsl:non-matching-substring>
+            </xsl:analyze-string>
             <!--<xsl:if test="descendant::date[text()]">
             <xsl:text> (</xsl:text>
             <xsl:value-of select="descendant::date/text()"/>
@@ -2210,8 +2217,8 @@
                <xsl:text>, </xsl:text>
             </xsl:if>
          </xsl:for-each>
-         <xsl:text>}</xsl:text>
       </xsl:if>
+      <xsl:text>}</xsl:text>
    </xsl:template>
    
    <xsl:function name="foo:briefempfaenger-mehrere-persName-rekursiv">
