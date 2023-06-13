@@ -736,11 +736,11 @@
       </xsl:when>
 
       <xsl:when test="@type = 'Address'">
-        <address>
+        <addrLine>
           <xsl:call-template name="elem">
             <xsl:with-param name="elem" select="$elem"/>
           </xsl:call-template>
-        </address>
+        </addrLine>
       </xsl:when>
 
       <xsl:when test="@type = 'foreign'">
