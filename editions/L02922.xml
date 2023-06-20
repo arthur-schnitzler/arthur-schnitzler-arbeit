@@ -145,6 +145,8 @@
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2023-02-02">Angelegt</change>
+         <change who="MAM" when="2023-06-20">Durchsicht</change>
+         <change who="MAM" when="2023-06-20">Index check</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -154,48 +156,46 @@
    </facsimile>
    <text>
       <body>
-         <div type="address">
-            <address>
-               <p>
-                  <pb facs="HS.NZ85.1.3170_0049-1"/>
-                  <rs type="place" ref="#pmb40583">
-                     <hi rend="pre-print">
-                        <hi rend="capitals">Dessauerstrasse 19</hi></hi>
-                  </rs>
-               </p>
-            </address>
-         </div>
          <div type="writingSession" n="1">
             <opener>
-               <dateline rend="right">
-                  <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1900-06-27">27. <subst>
-                        <del rend="overwritten">
-                           <gap quantity="2" reason="illegible" unit="chars"/>
-                        </del>
-                        <add place="inline">Ju</add>
-                     </subst>ni</date>.</dateline>
+               <p>
+                  <seg rend="left">
+                     <pb facs="HS.NZ85.1.3170_0049-1"/>
+                     <rs type="place" ref="#pmb40583">
+                        <hi rend="pre-print">
+                           <hi rend="capitals">Dessauerstrasse 19</hi>
+                        </hi>
+                     </rs>
+                  </seg>
+                  <seg rend="right">
+                     <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1900-06-27">27. <subst>
+                           <del rend="overwritten">
+                              <gap quantity="2" reason="illegible" unit="chars"/>
+                           </del>
+                           <add place="inline">Ju</add>
+                        </subst>ni</date>.</seg>
+               </p>
                <salute rend="center">Mein lieber Freund,</salute>
             </opener>
             <p>Für <date when="1900-06-27">heut</date> nur ein Wort bezüglich der <anchor type="commentary" xml:id="K_L02922-2"/>Sommerpläne<note type="commentary" xml:id="K_L02922-2h">
                   <ref type="schnitzler-briefe" target="L02920" subtype="see"/>
-               </note>. Ich möchte bald ins Klare kommen, da ich mich nach verſchiedenen Seiten
+               </note>. Ich möchte bald in’s Klare kommen, da ich mich nach verſchiedenen Seiten
                entſcheiden ſoll. Auf <hi rend="latintype">
                   <rs type="person" ref="#pmb10863">Richard</rs>
                </hi> iſt alſo nicht zu rechnen. Überdies habe ich <del rend="strikethrough">
                   <unclear>an</unclear>
                </del> ihm auch <anchor type="commentary" xml:id="K_L02922-1"/>direkt
-                  geſchrieben<note type="commentary" xml:id="K_L02922-1h">vermutlich handelte es
-                  sich um den Brief vom <date when="1900-06-20">20. 6. [1900]</date> (<bibl>
+                  geſchrieben<note type="commentary" xml:id="K_L02922-1h">wohl der Brief vom <date when="1900-06-20">20. 6. [1900]</date> (<bibl>
                      <rs ref="#pmb29616" type="org">Houghton Library</rs>, <pubPlace>Harvard</pubPlace> (Signatur
                      825.978)</bibl>)</note>, und er antwortet mir nicht. Alſo nicht! Auf Dich
                ſcheint auch nicht <pb facs="HS.NZ85.1.3170_0050-0"/>zu rechnen zu ſein. Bitte; gib’
                mir eine entſcheidende Antwort hierüber. In dieſem Falle würde ich einer Einladung
                   <hi rend="latintype">
-                  <rs type="person" ref="#pmb11701">Hirschfeld</rs>s</hi> nach <hi rend="latintype">
+                  <rs type="person" ref="#pmb11707">Hirschfeld</rs>s</hi> nach <hi rend="latintype">
                   <rs type="place" ref="#pmb91729">Seekirn</rs>
                </hi> folgen und mit dieſem zuſammen <del rend="strikethrough">
                   <unclear>w</unclear>an</del> eine Wanderung nach <rs type="place" ref="#pmb969">Südtirol</rs> machen, – wenn ich überhaupt fortkomme<del rend="strikethrough">
-                  <unclear>te</unclear>
+                  <unclear>n</unclear>
                </del>, was noch immer zweifelhaft iſt.</p>
             <p>
                <pb facs="HS.NZ85.1.3170_0050-1"/>In welche<subst>
@@ -252,6 +252,7 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2059817</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -290,6 +291,7 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
             <person xml:id="pmb10863">
                <persName>
@@ -328,42 +330,46 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q213750</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Richard_Beer-Hofmann</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10863.html</idno>
             </person>
-            <person xml:id="pmb11701">
+            <person xml:id="pmb11707">
                <persName>
-                  <forename>Georg</forename>
+                  <forename>Robert</forename>
                   <surname>Hirschfeld</surname>
                </persName>
+               <persName type="person_pseudonym">L. A. Terne</persName>
                <birth>
-                  <date when="1873-02-11">11.02.1873</date>
-                  <settlement ref="pmb168">
-                     <placeName type="pref">Berlin</placeName>
+                  <date when="1857-09-17">17.09.1857</date>
+                  <settlement ref="pmb39803">
+                     <placeName type="pref">Žďár nad Sázavou</placeName>
                      <location>
-                        <geo>52,52437 13,41053</geo>
+                        <geo>49,5 16,03333</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1942-01-17">17.01.1942</date>
-                  <settlement ref="pmb45258">
-                     <placeName type="pref">München</placeName>
+                  <date when="1914-04-02">02.04.1914</date>
+                  <settlement ref="pmb30">
+                     <placeName type="pref">Salzburg</placeName>
                      <location>
-                        <geo>48,13743 11,57549</geo>
+                        <geo>47,80067 13,04532</geo>
                      </location>
                   </settlement>
                </death>
                <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16222</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/101708122</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11701.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11701/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11701</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11701.html</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp44292</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q108045</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Georg_Hirschfeld</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb11701.html</idno>
+               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <occupation ref="pmb201">Kritiker/Kritikerin &gt;&gt; Musikkritiker/Musikkritikerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16228</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/119060620</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11707.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11707/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11707</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp52345</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00281e66</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2157560</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Robert_Hirschfeld</idno>
+               <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001d17d</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11707.html</idno>
             </person>
             <person xml:id="pmb26392">
                <persName>
@@ -396,6 +402,7 @@
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb26392.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/26392/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb26392</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb26392.html</idno>
             </person>
          </listPerson>
          <listBibl>
@@ -416,6 +423,7 @@
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q108122826</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Tagebuch_(Schnitzler)</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb33243.html</idno>
                <note type="work_kind">Tagebuch</note>
             </bibl>
          </listBibl>
@@ -447,6 +455,7 @@
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92171.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
             </place>
             <place xml:id="pmb34401">
                <placeName>Altaussee</placeName>
@@ -493,11 +502,19 @@
                <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
                <desc type="entity_type_id">1412</desc>
                <location type="coords">
-                  <geo>46,6 14,2</geo>
+                  <geo>46,60936 14,21037</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb41240">Österreich</placeName>
                   <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb45266">Maria Wörth</placeName>
+                  <geo>46,61639 14,16306</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb651">Kärnten</placeName>
+                  <geo>46,75 13,83333</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91729/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2765188/</idno>
@@ -567,6 +584,7 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4076982-3</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q34713</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Salzburg</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb30.html</idno>
             </place>
          </listPlace>
          <listOrg>
