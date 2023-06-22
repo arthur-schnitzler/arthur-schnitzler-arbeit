@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3083"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3083"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -104,6 +106,7 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
+               <date evidence="conjecture" notBefore="1901-09-10" notAfter="1901-09-14">[10. 9. 1901 – 14. 9. 1901?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -115,29 +118,44 @@
       <body>
          <div type="address">
             <address>
-               <addrLine><pb facs="DLA_1901_00093 DLA_85.1.3171_00077"/><hi rend="pre-print"
-                  >An</hi></addrLine>
+               <addrLine>
+                  <pb facs="DLA_1901_00093 DLA_85.1.3171_00077"/>
+                  <hi rend="pre-print">An</hi>
+               </addrLine>
                <addrLine>Herrn</addrLine>
                <addrLine>Dr. Arthur Schnitzler</addrLine>
-               <addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine>
-               <addrLine><rs type="place" ref="#pmb397">IX. <hi rend="latintype">Frankgaße</hi>
+               <addrLine>
+                  <rs type="place" ref="#pmb50">Wien</rs>
+               </addrLine>
+               <addrLine>
+                  <rs type="place" ref="#pmb397">IX. <hi rend="latintype">Frankgaße</hi>
                      1</rs>.</addrLine>
             </address>
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <p rend="right"><hi rend="pre-print"><hi rend="capitals"><pb
-                           facs="DLA_1901_00092 DLA_85.1.3171_00076"/>Gruss aus <rs type="place"
-                           ref="#pmb42763">Danzig</rs></hi></hi></p>
-               <p rend="left"><rs type="place" ref="">Rathaus Marienkirchen</rs></p>
-               <p rend="center"><hi rend="pre-print">Über <rs type="place" ref="">Pfarrkirche</rs>
+               <p rend="right">
+                  <hi rend="pre-print">
+                     <hi rend="capitals">
+                        <pb facs="DLA_1901_00092 DLA_85.1.3171_00076"/>Gruss aus <rs type="place" ref="#pmb42763">Danzig</rs>
+                     </hi>
+                  </hi>
+               </p>
+               <p rend="left">
+                  <rs type="place" ref="">Rathaus Marienkirchen</rs>
+               </p>
+               <p rend="center">
+                  <hi rend="pre-print">Über <rs type="place" ref="">Pfarrkirche</rs>
                      zu <rs type="place" ref="">S<hi rend="superscript">t</hi> Marien</rs>
-                  </hi></p>
+                  </hi>
+               </p>
                <dateline rend="center">
                   <date when="1901-09-09">9. September</date>.</dateline>
             </opener>
             <p>Herzlichſte Grüße!</p>
-            <closer><signed>Paul Goldmnn</signed></closer>
+            <closer>
+               <signed>Paul Goldmnn</signed>
+            </closer>
          </div>
       </body>
    </text>

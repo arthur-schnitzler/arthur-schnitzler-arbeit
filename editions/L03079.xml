@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3079"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3079"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,11 +101,12 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1901-08-15" n="01">15. 8. [1901]</date>
-               <placeName ref="#pmb465">[Riva del Garda?]</placeName>
+               <placeName ref="#pmb465">Riva del Garda</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
+               <date evidence="conjecture" notBefore="1901-08-16" notAfter="1901-08-20">[16. 8. 1901 – 20. 8. 1901?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -115,20 +118,27 @@
       <body>
          <div type="address">
             <address>
-               <addrLine><pb facs="DLA_1901_00084 DLA_85.1.3171_00069"/>Herrn</addrLine>
+               <addrLine>
+                  <pb facs="DLA_1901_00084 DLA_85.1.3171_00069"/>Herrn</addrLine>
                <addrLine>Dr. Arthur Schnitzler</addrLine>
                <addrLine>
-                  <rs type="place" ref="#pmb428">Welsberg im Pusterthal</rs></addrLine>
-               <addrLine><rs type="place" ref="#pmb723">Wildbad-Hôtel</rs>.</addrLine>
+                  <rs type="place" ref="#pmb428">Welsberg im Pusterthal</rs>
+               </addrLine>
+               <addrLine>
+                  <rs type="place" ref="#pmb723">Wildbad-Hôtel</rs>.</addrLine>
             </address>
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <p><pb facs="DLA_1901_00083 DLA_85.1.3171_00068"/><hi rend="pre-print">
-                     <hi rend="capitals"><rs type="place" ref="">Palast Hôtel Lido</rs>, <rs
-                           type="place" ref="">Riva <hi rend="superscript"
-                     >a</hi>/Gardasee</rs></hi>.</hi></p>
-               <dateline rend="right"><date when="1901-08-15">15. Auguſt</date>.</dateline>
+               <p>
+                  <pb facs="DLA_1901_00083 DLA_85.1.3171_00068"/>
+                  <hi rend="pre-print">
+                     <hi rend="capitals">
+                        <rs type="place" ref="">Palast Hôtel Lido</rs>, <rs type="place" ref="">Riva <hi rend="superscript">a</hi>/Gardasee</rs>
+                     </hi>.</hi>
+               </p>
+               <dateline rend="right">
+                  <date when="1901-08-15">15. Auguſt</date>.</dateline>
             </opener>
             <p>Es iſt kühl und XXXXlich <rs type="place" ref="">hier</rs>. Aber einſam. Bitte,
                lieber <hi rend="latintype">Arthur</hi>, hol’ auch einmal <foreign xml:lang="">

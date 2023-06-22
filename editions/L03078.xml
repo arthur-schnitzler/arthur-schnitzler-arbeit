@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3078"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3078"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -99,11 +101,12 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1901-08-07" n="01">7. 8. [1901]</date>
-               <placeName ref="#pmb758">Landro</placeName>
+               <placeName ref="#pmb758">Höhlenstein</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
+               <date evidence="conjecture" notBefore="1901-08-08" notAfter="1901-08-12">[8. 8. 1901 – 12. 8. 1901?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -115,30 +118,43 @@
       <body>
          <div type="address">
             <address>
-               <addrLine><pb facs="DLA_1901_00081 DLA_85.1.3171_00066"/><hi rend="pre-print"
-                  >An</hi></addrLine>
-               <addrLine><foreign xml:lang="it">
+               <addrLine>
+                  <pb facs="DLA_1901_00081 DLA_85.1.3171_00066"/>
+                  <hi rend="pre-print">An</hi>
+               </addrLine>
+               <addrLine>
+                  <foreign xml:lang="it">
                      <hi rend="pre-print">Al</hi>
-                  </foreign></addrLine>
+                  </foreign>
+               </addrLine>
                <addrLine>Herrn</addrLine>
                <addrLine>Dr. Arthur Schnitzler</addrLine>
-               <addrLine><hi rend="pre-print">in</hi></addrLine>
-               <addrLine><foreign xml:lang="it">
+               <addrLine>
+                  <hi rend="pre-print">in</hi>
+               </addrLine>
+               <addrLine>
+                  <foreign xml:lang="it">
                      <hi rend="pre-print">a</hi>
-                  </foreign></addrLine>
-               <addrLine><del rend="strikethrough">V</del><space unit="chars" quantity="1"/><rs
-                     type="place" ref="#pmb946">Vahrn</rs></addrLine>
+                  </foreign>
+               </addrLine>
+               <addrLine>
+                  <del rend="strikethrough">V</del>
+                  <space unit="chars" quantity="1"/>
+                  <rs type="place" ref="#pmb946">Vahrn</rs>
+               </addrLine>
                <addrLine>bei <rs type="place" ref="#pmb43040">Brixen</rs>.</addrLine>
             </address>
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <dateline rend="center"><pb facs="DLA_1901_00082 DLA_85.1.3171_00067"/>
+               <dateline rend="center">
+                  <pb facs="DLA_1901_00082 DLA_85.1.3171_00067"/>
                   <hi rend="latintype">
-                     <rs type="place" ref="#pmb758">Landro</rs></hi>, <date when="1901-08-07"
-                     >7. Auguſt</date>.</dateline>
+                     <rs type="place" ref="#pmb758">Landro</rs>
+                  </hi>, <date when="1901-08-07">7. Auguſt</date>.</dateline>
             </opener>
-            <p><hi rend="latintype">
+            <p>
+               <hi rend="latintype">
                   <rs type="person" ref="">Kerr</rs>
                </hi> wohnt: <rs type="place" ref="">
                   <hi rend="latintype">Luitpoldstraße</hi> 43</rs>.</p>
