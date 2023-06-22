@@ -2173,7 +2173,7 @@
          <xsl:text>Institutionen: </xsl:text>
          <xsl:for-each select="descendant::org">
             <xsl:sort select="descendant::orgName[1]/text()"/>
-            <xsl:value-of select="descendant::orgName[1]/text()"/>
+            <xsl:value-of select="foo:sonderzeichen-ersetzen(normalize-space(descendant::orgName[1]/text()))"/>
             <xsl:if test="position() != last()">
                <xsl:text>, </xsl:text>
             </xsl:if>
@@ -2186,7 +2186,7 @@
          <xsl:text>Orte: </xsl:text>
          <xsl:for-each select="descendant::place">
             <xsl:sort select="descendant::placeName[1]/text()"/>
-            <xsl:value-of select="descendant::placeName[1]/text()"/>
+            <xsl:value-of select="foo:sonderzeichen-ersetzen(normalize-space(descendant::placeName[1]/text()))"/>
             <xsl:if test="position() != last()">
                <xsl:text>, </xsl:text>
             </xsl:if>
@@ -2200,14 +2200,7 @@
          
          <xsl:for-each select="descendant::bibl">
             <xsl:sort select="descendant::title[1]/text()"/>
-            <xsl:analyze-string select="descendant::title[1]/text()" regex="&amp;">
-               <xsl:matching-substring>
-                  <xsl:text>{\kaufmannsund}</xsl:text>
-               </xsl:matching-substring>
-               <xsl:non-matching-substring>
-                  <xsl:value-of select="."/>
-               </xsl:non-matching-substring>
-            </xsl:analyze-string>
+            <xsl:value-of select="foo:sonderzeichen-ersetzen(normalize-space(descendant::title[1]/text()))"/>
             <!--<xsl:if test="descendant::date[text()]">
             <xsl:text> (</xsl:text>
             <xsl:value-of select="descendant::date/text()"/>
