@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L03093"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03093"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -82,11 +80,22 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <desc type="brief"/>
+                           <desc type="_blaetter" n="1"/>
+                           <desc type="_seiten" n="4"/>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Jahr »<quote><date when="1901"
+                                          ><supplied>1</supplied>901</date></quote>« vermerkt</desc>
+                           </incident>
+                           <incident type="receiver">
+                              <desc>mit rotem Buntstift zwei Unterstreichungen</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -100,14 +109,14 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1901-12-04" n="01">4. 12. [1901]<duplicate-date-nn of="LO3093"/>
-               </date>
+               <date when="1901-12-04" n="01">4. 12. [1901]</date>
                <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
-               <date evidence="conjecture" notBefore="1901-12-05" notAfter="1901-12-09">[5. 12. 1901 – 9. 12. 1901?]</date>
+               <date evidence="conjecture" notBefore="1901-12-05" notAfter="1901-12-09">[5. 12. 1901
+                  – 9. 12. 1901?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -133,7 +142,8 @@
                   </rs>
                </p>
                <dateline rend="left">
-                  <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1901-12-04">4. Dezember</date>.</dateline>
+                  <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1901-12-04"
+                     >4. Dezember</date>.</dateline>
                <salute rend="center">Mein lieber Freund,</salute>
             </opener>
             <p>Zolltarif im <rs type="org" ref="">Reichſtag</rs>. Ich habe keine freie Minute. </p>
@@ -144,22 +154,27 @@
                Erklärung <pb facs="DLA_1901_00128 DLA_85.1.3171_00105-0"/> an den Haaren
                herbeiziehen? Warum das Eigentliche nicht ſehen wollen? Wenn Einer geiſtig lerr iſt,
                ſo iſt er immer geiſig leer geweſen. Man kann ein Stück verfehlen, man kann aber
-               nicht auf einmal weder Geiſt noch Talent haben. Und was Deine Anſicht betrifft, <hi rend="latintype">
+               nicht auf einmal weder Geiſt noch Talent haben. Und was Deine Anſicht betrifft, <hi
+                  rend="latintype">
                   <rs type="work" ref="">Hannele</rs>
                </hi> ſei für »alle Zeiten« ein ſchönes Stück, ſo ſprichſt Du im Namen von »allen
-               Zeiten« ein künſtleriſches Urtheil aus, zu dem »alle Zeiten« Dich gewiß <pb facs="DLA_1901_00129 DLA_85.1.3171_00105-1"/> nicht ermächtigt haben. </p>
+               Zeiten« ein künſtleriſches Urtheil aus, zu dem »alle Zeiten« Dich gewiß <pb
+                  facs="DLA_1901_00129 DLA_85.1.3171_00105-1"/> nicht ermächtigt haben. </p>
             <p>Wann kommſt Du? Ich freue mich ſehr darauf, Dich wiederzuſehen. </p>
             <p>Haſt Du <hi rend="latintype">
                   <rs type="person" ref="">Hirschfeld</rs>s</hi>
                <rs type="work" ref="">Feuilleton</rs> in der <rs type="work" ref="">Frkf. Ztg.</rs>
                geleſen? Wenn das Jung-<rs type="place" ref="#pmb50">Wien</rs>er Theater ſo
-               erbärmlich war, wie es darin geſchildert wird, ſo kann ich auch der <rs type="org" ref="">N. Fr. Pr.</rs> und dem alten <hi rend="latintype">
+               erbärmlich war, wie es darin geſchildert wird, ſo kann ich auch der <rs type="org"
+                  ref="">N. Fr. Pr.</rs> und dem alten <hi rend="latintype">
                   <rs type="person" ref="">Neuda</rs>
                </hi> nicht Unrecht geben. </p>
             <closer>Ich ſende Dir einen Ausſchnitt <pb facs="DLA_1901_00130 DLA_85.1.3171_00106"/>
                aus einem <rs type="work" ref="">Referat</rs>
                <hi rend="latintype">
-                  <rs type="person" ref="">Perfall</rs>s</hi> in der <rs type="work" ref="">Kölniſchen Zeitung</rs>, nur damit Du ſiehſt, daß es außer Herrn <hi rend="latintype">
+                  <rs type="person" ref="">Perfall</rs>s</hi> in der <rs type="work" ref=""
+                  >Kölniſchen Zeitung</rs>, nur damit Du ſiehſt, daß es außer Herrn <hi
+                  rend="latintype">
                   <rs type="person" ref="">Ebermann</rs>
                </hi> auch noch andere Leute gibt, die meine Anſicht theilen. <lb/>Viele treue
                Grüße!</closer>
@@ -169,18 +184,26 @@
             <p>
                <anchor type="commentary" xml:id="XXXX">
                   <hi rend="bold">
-                     <rs type="person" ref="">Hauptmann</rs>s Niedergang und die <rs type="place" ref="#pmb168">Berlin</rs>er Litteratur-</hi>
+                     <rs type="person" ref="">Hauptmann</rs>s Niedergang und die <rs type="place"
+                        ref="#pmb168">Berlin</rs>er Litteratur-</hi>
                   <rs type="place" ref="#pmb168">Berlin</rs>er Litteratur-[Kommentar:
                   aus\u0020Transkribus\u0020rauslöschen]</anchor>
                <note type="commentary" xml:id="XXXX"/>
                <hi rend="bold">Tyrannei.</hi> In der »<rs type="work" ref="">Kölniſchen
                Zeitung</rs>« leſen wir: ». . . Der Mißerfolg des »<rs type="work" ref="">roten
                   Hahns</rs>«, der dem Mißerfolge des »<rs type="work" ref="">Michael</rs>
-               <rs type="work" ref="">Kramer</rs>« folgt, läßt kaum noch die Hoffnung übrig, daß <rs type="person" ref="">Hauptmann</rs> über ſeine früheren Werke zu einer großen
+               <rs type="work" ref="">Kramer</rs>« folgt, läßt kaum noch die Hoffnung übrig, daß <rs
+                  type="person" ref="">Hauptmann</rs> über ſeine früheren Werke zu einer großen
                Dramatik aufſteigen wird. Es iſt vielmehr ziemlich ſicher, daß er beſtenfalls ſich
-               noch einmal auf halber Höhe aufrichtet, aber der <rs type="person" ref="">Hauptmann</rs>, über den eine ganze Litteratur entſtanden iſt, der <rs type="person" ref="">Hauptmann</rs>, in dem man die Zukunft des <rs type="place" ref="">Deutſch</rs>en Dramas ahnen wollte, dieſer <rs type="person" ref="">Hauptmann</rs> iſt geweſen, und die <rs type="place" ref="">deutſch</rs>e
+               noch einmal auf halber Höhe aufrichtet, aber der <rs type="person" ref=""
+                  >Hauptmann</rs>, über den eine ganze Litteratur entſtanden iſt, der <rs
+                  type="person" ref="">Hauptmann</rs>, in dem man die Zukunft des <rs type="place"
+                  ref="">Deutſch</rs>en Dramas ahnen wollte, dieſer <rs type="person" ref=""
+                  >Hauptmann</rs> iſt geweſen, und die <rs type="place" ref="">deutſch</rs>e
                Litteratur geht über ihn hinweg, weil ſie ſchon über manchen kurzlebigen Stern, der
-               an dem Theaterhimmel glänzte, hinweggegangen iſt. Aber <rs type="person" ref="">Hauptmann</rs>s Niedergang bedeutet, wie die Dinge einmal liegen, noch mehr. <rs type="person" ref="">Hauptmann</rs> war ohne ſeinen Willen der große Neuerer, um
+               an dem Theaterhimmel glänzte, hinweggegangen iſt. Aber <rs type="person" ref=""
+                  >Hauptmann</rs>s Niedergang bedeutet, wie die Dinge einmal liegen, noch mehr. <rs
+                  type="person" ref="">Hauptmann</rs> war ohne ſeinen Willen der große Neuerer, um
                den ſich ein ganzes Programm, eine ganze Bewegung gebildet hat; er war der heimliche
                Diktator der <rs type="place" ref="">deutſch</rs>en Theaterlitteratur. Das alles hat
                ein Ende. <anchor type="commentary" xml:id="XXXX">
@@ -190,7 +213,10 @@
             <p>ihm bricht ein Gebäude zuſammen, in dem eine ganze Schar schwächerer, aber ſehr
                lauter Geiſter Obdach gefunden hat. Der Durchfall des »<rs type="work" ref="">roten
                   Hahns</rs>« iſt ſo etwas wie ein litterariſcher Börſenſturz, wie eine Kataſtrophe,
-               die ihre Wirkung ausüben muß, wenn auch noch frecher als nach dem »<rs type="work" ref="">Michael Kramer</rs>« der Verſuch gemacht werden ſollte, das <rs type="place" ref="">deutſch</rs>e Publikum über die Wahrheit zu täuſchen. Die <rs type="place" ref="#pmb168">Berlin</rs>er Litteratur-Tyrannei hat am <date>27.
+               die ihre Wirkung ausüben muß, wenn auch noch frecher als nach dem »<rs type="work"
+                  ref="">Michael Kramer</rs>« der Verſuch gemacht werden ſollte, das <rs
+                  type="place" ref="">deutſch</rs>e Publikum über die Wahrheit zu täuſchen. Die <rs
+                  type="place" ref="#pmb168">Berlin</rs>er Litteratur-Tyrannei hat am <date>27.
                   November</date> ihr Ende<anchor type="commentary" xml:id="XXXX">
                   <supplied> </supplied>[Kommentar:
                   im\u0020Original\u0020kein\u0020Spatium,\u0020Druckfehler]</anchor>
@@ -225,18 +251,25 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
-               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb11485</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp51209</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0028183c</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2059817</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb11485.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -265,17 +298,24 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="kraus1933"
+                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -296,21 +336,28 @@
                   <geo>51,5 10,5</geo>
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb168</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92171.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92171.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -330,18 +377,23 @@
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb50</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
             <place xml:id="pmb40583">
                <placeName>Dessauer Straße</placeName>
@@ -355,7 +407,8 @@
                   <geo>52,52437 13,41053</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40583/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40583</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb40583</idno>
             </place>
          </listPlace>
       </back>

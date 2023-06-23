@@ -82,11 +82,35 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <desc type="karte" subtype="bildpostkarte"/>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                        <handDesc hands="2">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent" corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb42763">Danzig</placeName>
+                                    <date when="1901-09-09">9. 9. <supplied>19</supplied>01</date>
+                                    <time>8–9N.</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="2">
+                                    <placeName ref="#pmb50">Wien 9/3 72</placeName>
+                                    <date when="1901-09-11">11. 9. <supplied>19</supplied>01</date>
+                                    <time>8. V</time>
+                                    <addSpan>Bestellt</addSpan>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -100,9 +124,12 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1901-09-09" n="01">9. 9. [1901]<duplicate-date-nn of="LO3083"/>
-               </date>
+               <date when="1901-09-09" n="01">9. 9. [1901]</date>
                <placeName ref="#pmb42763">Danzig</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <placeName ref="#pmb50">Wien</placeName>
+               <date when="1901-09-11">11. 9. [19]01</date>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -149,6 +176,7 @@
                <p rend="left">
                   <rs type="place" ref="">Rathaus Marienkirchen</rs>
                </p>
+               <p rend="left"><hi rend="pre-print"><rs type="place" ref="">Langer Markt</rs>.</hi></p>
                <p rend="center">
                   <hi rend="pre-print">Über <rs type="place" ref="">Pfarrkirche</rs>
                      zu <rs type="place" ref="">S<hi rend="superscript">t</hi> Marien</rs>
