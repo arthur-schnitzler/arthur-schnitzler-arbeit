@@ -304,8 +304,26 @@
           </xsl:attribute>
         </xsl:when>
       </xsl:choose>
-      <pb facs="{substring-before($type, '.jpg')} or {substring-before($type, '.tif')} or {substring-before($type, '.tiff')}
-        or {substring-before($type, '.jp2')}"/>
+      <xsl:variable name="facsname" as="xs:string">
+        <xsl:choose>
+          <xsl:when test="ends-with($type, '.jpg')">
+            <xsl:value-of select="substring-before($type, '.jpg')"/>
+          </xsl:when>
+          <xsl:when test="ends-with($type, '.tiff')">
+            <xsl:value-of select="substring-before($type, '.tiff')"/>
+          </xsl:when>
+          <xsl:when test="ends-with($type, '.tif')">
+            <xsl:value-of select="substring-before($type, '.tif')"/>
+          </xsl:when>
+          <xsl:when test="ends-with($type, '.jp2')">
+            <xsl:value-of select="substring-before($type, '.jp2')"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="@type"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <pb facs="{$facsname}"/>
 <!--    <xsl:variable name="facs-id" select="key('facs-name', $pb-position, $facs-doc)" as="node()?"/>-->
 <!--    <xsl:variable name="img-num" select=""/>-->
     <!--<xsl:variable name="facs-id" select="key('facs-name', $type, $facs-doc)/text()" as="node()?"/>-->
