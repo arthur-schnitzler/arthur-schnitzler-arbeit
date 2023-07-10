@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3111"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3184"
    xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 8. 8. 1892</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, [April 1892]</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -31,7 +31,7 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03111"/>
+            <idno type="asbw" n="03108"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -80,11 +80,20 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc></desc>
+                           <desc type="_blaetter" n="1"/>
+                           <desc type="_seiten" n="2"/>
+                           <desc type="brief"/>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="lateinische-kurrent"/>
+                           <handNote medium="bleistift" style="lateinische-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit Bleistift datiert: »<quote>
+                                    <date>April 92</date>
+                                 </quote>«</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -98,14 +107,13 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1892-08-08" n="01">8. 8. 1892</date>
-               <placeName ref="#pmb877">Unterach am Attersee</placeName>
+               <date notBefore="1892-04-01" notAfter="1892-04-30" n="01">[April 1892]</date>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName evidence="conjecture" ref="#pmb">Wien</placeName>
-               <date evidence="conjecture" notBefore="1892-08-08" notAfter="1892-08-10">[8. 8. 1892
-                  – 12. 8. 1892?]</date>
+               <placeName ref="#pmb50">Wien</placeName>
+               <date notBefore="1892-04-01" notAfter="1892-04-30" evidence="conjecture">[April 1892]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -116,38 +124,20 @@
    <text>
       <body>
          <div type="writingSession" n="1">
-            <opener>
-               <dateline><pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00014-R"/>
-                  <rs type="place" ref="#pmb877"> Unterach</rs>, <date>8. VIII. 92</date>.
-               </dateline>
-            </opener>
-            <p><salute>Lieber Freund! </salute>
-               <date>Samstag</date> abend wollte ich ins <rs type="place" ref="#pmb46">Kremser</rs>
-               kommen u ihnen Adieu sagen, da ich erst <date>Sonntag</date> zu reisen gedachte.
-               Allein um 8&#160;Uhr Abd. erhielt ich meine Kleider und so fuhr ich also zur selbigen
-               Stunde. Seien Sie also nicht böse. Hier ist's wunderschön u ich denke oft an Sie u.
-               an Ihre Arbeiten. Schreiben Sie mir bitte bald, was Sie treiben.</p>
-            <p><pb facs=""/>Ich hoffe hier einiges arbeiten zu können, da man ganz ungezwungen lebt
-               u. Tagelang allein sein kann. Nächste Woche will ich zu <rs type="person"
-                  ref="#pmb10863">Richard</rs> nach <rs type="place" ref="#pmb213">Ischl</rs>
-               hinüber, und werde auch <rs type="person" ref="#pmb11740">Loris</rs> davon
-               verständigen. <rs type="person" ref="#pmb18523">Paul<space unit="chars" quantity="1"
-                     /><pb facs=""/>Horn</rs> soll heute Nachmittag ankommen. Leben Sie wol u.
-               schreiben Sie bald auch wie es mit jenem Engagement nach <rs type="place"
-                  ref="#pmb151">Deutschld</rs> steht. </p>
-            <p>Ich werde übrigens auch bald wieder schreiben, sobald ich Ihnen künstlerisch ei<pb
-                  facs="MS-SCHNITZLER-B-00089-A-00001-000-00014"/>niges Neue zu sagen habe. Grüßen
-               Sie <rs type="person" ref="#pmb12740">Schwarzkopf</rs> u. <rs type="person"
-                  ref="#pmb10815">Bahr</rs>.</p>
-            <closer>Herzlichst Ihr
-               <lb/>Treuester
-               <lb/>Salten</closer>
-            <postscript>
-               <p>
-                  <rs type="place" ref="#pmb411">Unterach, Berghof</rs>.
-               </p>
-            </postscript>
-            
+            <p>
+               <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00010-R"/>
+               <salute>Lieber Arthur! </salute>Ich ging vorbei, vergaß natürlich, dass Sie <rs
+                  type="place" ref="#pmb274">Burgring 1</rs><space unit="chars" quantity="1"/><rs type="place" ref="#pmb144330">ordiniren</rs>. Ihre Handschuhe brachte ich zurück, u.
+               sagen wollte ich Ihnen, dass ich Abends wahrscheinlich komme, doch erst gegen <time>11 Uhr</time>.
+               Jetzt bin ich müde und ruhe mich <pb facs=""/>ein wenig aus und
+            lese die <rs type="work" ref="">Neue fr Pr.</rs> u. bilde mir ein,
+               ich »bin mein mich innig liebender
+            </p>
+            <p rend="center">Arthur Schnitzler</p>
+            <p>Habe heute gearbeitet aber wenig, gehe jetzt
+            nach Hause, wieder arbeiten.</p>
+            <p><rs type="person" ref="">Loris</rs>, <rs
+            type="person" ref="">Beer Hofmann</rs>?</p>
          </div>
       </body>
    </text>
