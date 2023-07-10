@@ -304,7 +304,8 @@
           </xsl:attribute>
         </xsl:when>
       </xsl:choose>
-    <pb facs="{substring-before($type, '.jpg')}"/>
+      <pb facs="{substring-before($type, '.jpg')} or {substring-before($type, '.tif')} or {substring-before($type, '.tiff')}
+        or {substring-before($type, '.jp2')}"/>
 <!--    <xsl:variable name="facs-id" select="key('facs-name', $pb-position, $facs-doc)" as="node()?"/>-->
 <!--    <xsl:variable name="img-num" select=""/>-->
     <!--<xsl:variable name="facs-id" select="key('facs-name', $type, $facs-doc)/text()" as="node()?"/>-->
