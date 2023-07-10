@@ -5,7 +5,7 @@
     <xsl:output name="xml" method="xml" indent="yes" omit-xml-declaration="yes"/>
     <!-- directory of new files -->
     <xsl:param name="dir">../editions</xsl:param>
-    <xsl:param name="sender-in_pmb" as="xs:string">pmb11485</xsl:param>
+   <!-- <xsl:param name="sender-in_pmb" as="xs:string">pmb11485</xsl:param>
     <xsl:param name="sender-in_name" as="xs:string">Goldmann, Paul</xsl:param>
     <xsl:param name="empfaenger-in_pmb" as="xs:string">pmb2121</xsl:param>
     <xsl:param name="empfaenger-in_name" as="xs:string">Schnitzler, Arthur</xsl:param>
@@ -14,7 +14,20 @@
     <xsl:param name="archiv-stadt" as="xs:string">Marbach am Neckar</xsl:param>
     <xsl:param name="archiv-institution" as="xs:string">Deutsches Literaturarchiv</xsl:param>
     <xsl:param name="signatur" as="xs:string">A:Schnitzler, HS.NZ85.1.3171</xsl:param>
-    <xsl:param name="exporter">LU</xsl:param>
+   --> 
+    <xsl:param name="sender-in_pmb" as="xs:string">pmb2167</xsl:param>
+    <xsl:param name="sender-in_name" as="xs:string">Salten, Felix</xsl:param>
+    <xsl:param name="empfaenger-in_pmb" as="xs:string">pmb2121</xsl:param>
+    <xsl:param name="empfaenger-in_name" as="xs:string">Schnitzler, Arthur</xsl:param>
+    <xsl:param name="titel" as="xs:string">Felix Salten an Arthur Schnitzler</xsl:param>
+    <xsl:param name="archiv-land" as="xs:string">GB</xsl:param>
+    <xsl:param name="archiv-stadt" as="xs:string">Cambridge</xsl:param>
+    <xsl:param name="archiv-institution" as="xs:string">University Library</xsl:param>
+    <xsl:param name="signatur" as="xs:string">Schnitzler, B&#160;89, A&#160;1</xsl:param>
+    
+    
+    
+    <xsl:param name="exporter">MAM</xsl:param>
     <!-- hier Kürzel, LU oder MAM -->
     <!-- output xml file for each letter tag with file name according to number of xml files in output directory (+1) -->
     <xsl:template match="tei:div">
