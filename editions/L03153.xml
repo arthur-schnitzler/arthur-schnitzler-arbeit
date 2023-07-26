@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L03153"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03153"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -89,6 +87,11 @@
                         <handDesc>
                            <handNote medium="bleistift" style="lateinische-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit Bleistift datiert: »<quote><date>11/5&#160;94</date></quote>«</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -108,7 +111,8 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName evidence="conjecture" ref="#pmb">Wien</placeName>
-               <date evidence="conjecture" notBefore="1895-05-12" notAfter="1895-05-16">[12. 5. 1895 – 16. 5. 1895?]</date>
+               <date evidence="conjecture" notBefore="1895-05-12" notAfter="1895-05-16">[12. 5. 1895
+                  – 16. 5. 1895?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -124,25 +128,31 @@
          <div type="writingSession" n="1">
             <p>
                <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00054-A-R"/>
-               <salute>L. F. </salute>herzlichen Dank mit der Bitte, zu entschuldigen, dass es
-               nicht früher möglich war. – Die <anchor type="commentary" xml:id="K_L03153-1"/>
+               <salute>L. F. </salute>herzlichen Dank mit der Bitte, zu entschuldigen, dass es nicht
+               früher möglich war. – Die <anchor type="commentary" xml:id="K_L03153-1"/>
                <rs type="work" ref="#pmb144677" subtype="implied">Notiz</rs>
                <note type="commentary" xml:id="K_L03153-1h">
-                  <bibl>[O. V. = <rs type="person" ref="#pmb2167">Salten</rs>]: <rs type="work" ref="#pmb144677">Jung-Wien im Auslande</rs>.
-                     In: <rs type="work" ref="#pmb39950">Wiener Allgemeine Zeitung</rs>,
-                     Nr. 5.156, <date>12. 5. 1895</date>, S. 4</bibl>:
-                     »<quote>Der erst kürzlich erschienene Roman ›<rs type="work" ref="#pmb30117">
+                  <bibl>[O. V. = <rs type="person" ref="#pmb2167">Salten</rs>]: <rs type="work"
+                        ref="#pmb144677">Jung-Wien im Auslande</rs>. In: <rs type="work"
+                        ref="#pmb39950">Wiener Allgemeine Zeitung</rs>, Nr. 5.156,
+                        <date>12. 5. 1895</date>, S. 4</bibl>: »<quote>Der erst kürzlich erschienene
+                     Roman ›<rs type="work" ref="#pmb30117">
                         <hi rend="spaced_out">Sterben</hi>
-                     </rs>‹ des <rs type="place" ref="#pmb50">Wien</rs>er Dichters <rs type="person" ref="#pmb2121">
+                     </rs>‹ des <rs type="place" ref="#pmb50">Wien</rs>er Dichters <rs type="person"
+                        ref="#pmb2121">
                         <hi rend="spaced_out">Arthur Schnitzler</hi>
-                     </rs> ist bereits in’s
-                     Französische übersetzt worden. Die bekannte französische Wochenschrift in <rs type="place" ref="#pmb562">Genf</rs> ›<rs type="work" ref="#pmb48880">
+                     </rs> ist bereits in’s Französische übersetzt worden. Die bekannte französische
+                     Wochenschrift in <rs type="place" ref="#pmb562">Genf</rs> ›<rs type="work"
+                        ref="#pmb48880">
                         <hi rend="spaced_out">La Semaine Littéraire</hi>
-                     </rs>‹ beginnt in ihrer
-                     letzten Nummer mit der Veröffentlichung dieses Romanes, welcher demnächst auch
-                     in <rs type="place" ref="#pmb182">Paris</rs> in Buchform erscheinen
-                     wird.</quote>«</note> über <rs type="work" ref="#pmb48880">Semaine
-                  littéraire</rs> habe ich heute erst, – weil Sonntagsblatt – gegeben. </p>
+                     </rs>‹ beginnt in ihrer letzten Nummer mit der Veröffentlichung dieses Romanes,
+                     welcher demnächst auch in <rs type="place" ref="#pmb182">Paris</rs> in Buchform
+                     erscheinen wird.</quote>«</note> über <rs type="work" ref="#pmb48880">Semaine
+                  littéraire</rs> habe ich <anchor type="commentary" xml:id="K_L03153-11"/>heute
+               erst, – weil Sonntagsblatt – gegeben<note type="commentary" xml:id="K_L03153-11h"
+                  >Zwei am Seitenende angebrachte Zeichen fordern zum Umblättern auf, verweisen
+                  möglicherweise auf die nicht erhaltene Beilage der erwähnten
+               Zeitungsnotiz.</note>. </p>
             <closer>Ihr <lb/>
                <signed>Salten</signed>
             </closer>
@@ -180,18 +190,26 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118840819</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2167/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp43175</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
+               <idno type="URL" subtype="kraus1933"
+                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284367</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q163747</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Felix_Salten</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Felix_Salten</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -220,23 +238,31 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="kraus1933"
+                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb144677">
                <title>Jung-Wien im Auslande</title>
-               <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=waz&amp;datum=18950512&amp;seite=4</title>
+               <title type="werk_link-anno"
+                  >https://anno.onb.ac.at/cgi-content/anno?aid=waz&amp;datum=18950512&amp;seite=4</title>
                <author ref="pmb2167" role="hat-anonym-veroffentlicht">Salten, Felix</author>
                <date when="1895-05-12">1895-05-12</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144677/</idno>
@@ -245,32 +271,42 @@
             <bibl xml:id="pmb39950">
                <title>Wiener Allgemeine Zeitung</title>
                <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=waz</title>
-               <date to="1934-02-11">1.3.1880  – 11.2.1934</date>
+               <date to="1934-02-11">1.3.1880 – 11.2.1934</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39950/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb39950.html</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/werke/pmb39950</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb39950.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb39950.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/werke/pmb39950</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb39950.html</idno>
                <note type="work_kind">Periodikum &gt;&gt; Tageszeitung</note>
             </bibl>
             <bibl xml:id="pmb30117">
                <title>Sterben. Novelle</title>
-               <title type="werk_bibliografische-angabe">Neue Deutsche Rundschau, Jg. 5, H. 10–12, Oktober–Dezember 1894</title>
+               <title type="werk_bibliografische-angabe">Neue Deutsche Rundschau, Jg. 5, H. 10–12,
+                  Oktober–Dezember 1894</title>
                <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date to="1894-12-01">1894-10-01  – 1894-12-01</date>
+               <date to="1894-12-01">1894-10-01 – 1894-12-01</date>
                <idno type="URL" subtype="asaf">https://asaf.com/S.04.02.43</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2345387</idno>
-               <idno type="URL" subtype="babel">https://babel.hathitrust.org/cgi/pt/search?id=coo.31924069263006;view=1up;seq=9;q1=sterben;start=1;sz=10;page=search;orient=0;index=1</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30117.html</idno>
+               <idno type="URL" subtype="babel"
+                  >https://babel.hathitrust.org/cgi/pt/search?id=coo.31924069263006;view=1up;seq=9;q1=sterben;start=1;sz=10;page=search;orient=0;index=1</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30117.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30117/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30117.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30117.html</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Sterben_(Novelle)</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb30117.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30117.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30117.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Sterben_(Novelle)</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb30117.html</idno>
                <note type="work_kind">Novelle</note>
             </bibl>
             <bibl xml:id="pmb48880">
                <title>La Semaine Littéraire</title>
-               <date from="1893-01-01" to="1927-07-02">1893  – 1927</date>
+               <date from="1893-01-01" to="1927-07-02">1893 – 1927</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/48880/</idno>
                <note type="work_kind">Periodikum &gt;&gt; Zeitschrift &gt;&gt; Wochenschrift</note>
             </bibl>
@@ -278,7 +314,8 @@
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
@@ -298,18 +335,23 @@
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
             <place xml:id="pmb562">
                <placeName>Genf</placeName>
@@ -325,18 +367,23 @@
                   <geo>47,00016 8,01427</geo>
                </location>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q71</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb562.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb562.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/562/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/22973/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb562.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb562.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64309/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2660646/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb562</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb562.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb562</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb562.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/99397/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4020137-5</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Genf</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb562.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb562.html</idno>
             </place>
             <place xml:id="pmb182">
                <placeName>Paris</placeName>
@@ -353,17 +400,22 @@
                   <placeName ref="pmb166">Frankreich</placeName>
                   <geo>46,0 2,0</geo>
                </location>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb182.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb182.html</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4044660-8</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/182/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb182.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb182.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64183/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2988507/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb182</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb182.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q90</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Paris</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb182.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb182.html</idno>
             </place>
          </listPlace>
       </back>
