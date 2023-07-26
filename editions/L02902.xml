@@ -101,7 +101,7 @@
                            </handNote>
                            <handNote medium="schwarze_tinte" style="deutsche-kurrent"
                               corresp="#pmb14953"/>
-                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"
                               corresp="#pmb14948"/>
                            <handNote medium="schwarze_tinte" style="lateinische-kurrent"
                               corresp="#pmb28645"/>
@@ -112,15 +112,15 @@
                                  <stamp n="1">
                                     <placeName ref="#pmb168">Berlin, W.</placeName>
                                     <date when="1900-01-13">13. 1. 00</date>
-                                    <time>12<unclear>–</unclear>1V.</time>
+                                    <time>12–1 V.</time>
                                  </stamp>
                                  <stamp n="2">
                                     <placeName ref="#pmb59">Wien 9/3 72</placeName>
                                     <date when="1900-01-14">14. 1<supplied>.</supplied> 00</date>
-                                    <time>9<supplied>.V</supplied>
+                                    <time>9<supplied>. V</supplied>
                                     </time>
                                     <addSpan>
-                                       <unclear>Bestellt</unclear>
+                                       <supplied>Bestellt</supplied>
                                     </addSpan>
                                  </stamp>
                               </desc>
@@ -166,10 +166,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2023-02-02">Angelegt</change>
          <change who="MAM" when="2023-06-01">Index check</change>
          <change who="MAM" when="2023-06-01">Durchsicht</change>
+         <change who="LU" when="2023-07-26">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -180,18 +181,11 @@
       <body>
          <div type="address">
             <address>
-               <addrLine>
-                  <pb facs="HS.NZ85.1.3170_0003"/>
-                  <hi rend="latintype">Herrn</hi>
-               </addrLine>
-               <addrLine>
-                  <hi rend="latintype">Dr. Arthur Schnitzler</hi>
-               </addrLine>
-               <addrLine>
-                  <hi rend="latintype">
-                     <rs type="place" ref="#pmb50">Wien</rs>
-                  </hi>
-               </addrLine>
+               <addrLine><pb facs="HS.NZ85.1.3170_0003"/><hi rend="pre-print">An</hi></addrLine>
+               <addrLine>Herrn</addrLine>
+               <addrLine>Dr. Arthur Schnitzler</addrLine>
+               <addrLine><hi rend="pre-print">in</hi><space unit="chars" quantity="1"/><rs
+                     type="place" ref="#pmb50">Wien</rs></addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb397">IX. Frankgaſse 1</rs>.</addrLine>
             </address>
@@ -213,7 +207,7 @@
                </note>. Wir haben von Dir geſprochen – und auch ein wenig von <hi rend="latintype">
                   <rs type="person" ref="#pmb11740">Hoffmannsthal</rs>
                </hi>. <del rend="strikethrough">D<unclear>ein</unclear> tr</del> Dein treuer
-                  <signed>Paul Goldmann</signed>
+                  <signed>Paul Goldmann<unclear>.</unclear></signed>
             </p>
             <p>
                <handShift scribe="#pmb14953"/>Ja, vom lieben <rs type="person" ref="#pmb11740"
@@ -222,26 +216,24 @@
                   <rs type="person" ref="#pmb11485">Goldmann</rs>
                </note> iſt ſehr lieb, wir ſind wieder einmal ganz glücklich – Sonſt geht es elend. –
                Was iſt das für eine <anchor type="commentary" xml:id="K_L02902-4"/>
-               <rs type="work" ref="#pmb33784">Gouvernante</rs> im <hi rend="underline" n="1">
-                  <rs type="org" ref="#pmb36430">Volkstheater</rs>
-               </hi>
-               <note type="commentary" xml:id="K_L02902-4h">Bezug auf eine Zeitungsmeldung, dass <rs
-                     type="person" ref="#pmb2121">Schnitzler</rs> einen Vierakter mit dem Titel <rs
-                     type="work" ref="#pmb33784">Die Gouvernante</rs> abgeschlossen habe und dieser
-                  im <rs type="org" ref="#pmb36430">Volkstheater</rs> aufgeführt werden solle
-                     (<bibl>vgl. [O. V.]: <rs type="work" ref="#pmb142419">Theater, Kunst und
+               <rs type="work" ref="#pmb33784">Gouvernante</rs><note type="commentary"
+                  xml:id="K_L02902-4h">Bezug auf eine Zeitungsmeldung, dass <rs type="person"
+                     ref="#pmb2121">Schnitzler</rs> einen Vierakter mit dem Titel <rs type="work"
+                     ref="#pmb33784">Die Gouvernante</rs> abgeschlossen hätte und dieser im <rs
+                     type="org" ref="#pmb36430">Volkstheater</rs> aufgeführt werden sollte.
+                     <bibl>Vgl. [O. V.]: <rs type="work" ref="#pmb142419">Theater, Kunst und
                         Literatur</rs>. In: <rs type="work" ref="#pmb39950">Wiener Allgemeine
                         Zeitung</rs>, Nr. 6554, <date when="1900-01-12">12. 1. 1900</date>,
-                     6 Uhr-Blatt, S. 3</bibl>)</note>
-               <note xml:id="FT2902-1" type="footnote">
+                     6 Uhr-Blatt, S. 3</bibl>.</note> im <hi rend="underline" n="1">
+                  <rs type="org" ref="#pmb36430">Volkstheater</rs>
+               </hi><note xml:id="FT2902-1" type="footnote">
                   <p>
                      <handShift scribe="#pmb11485"/>
                      <anchor type="textConst" xml:id="T_L02902-1"/>Das unterſtrichene Wort ſoll »<rs
                         type="org" ref="#pmb36430">Volkstheater</rs>« heißen und nicht
                         »Kohlrabi«.<note type="textConst" xml:id="T_L02902-1h">kopfüber am oberen
                         Rand</note>
-                  </p>
-               </note>? G. weiß auch nichts. <hi rend="underline" n="1">
+                  </p></note>? G. weiß auch nichts. <hi rend="underline" n="1">
                   <hi rend="latintype">Telefonirt</hi>
                </hi>?</p>
             <p>
