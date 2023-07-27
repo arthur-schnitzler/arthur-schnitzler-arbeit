@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3184"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3184"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -31,7 +33,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03108"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -71,6 +72,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -80,9 +82,12 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="_blaetter" n="1"/>
-                           <desc type="_seiten" n="2"/>
-                           <desc type="brief"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="2"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="bleistift" style="lateinische-kurrent"/>
@@ -126,8 +131,9 @@
          <div type="writingSession" n="1">
             <p>
                <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00010-R"/>
-               <salute>Lieber Arthur! </salute>Ich ging vorbei, vergaß natürlich, dass Sie <rs
-                  type="place" ref="#pmb274">Burgring 1</rs><space unit="chars" quantity="1"/><rs type="place" ref="#pmb144330">ordiniren</rs>. Ihre Handschuhe brachte ich zurück, u.
+               <salute>Lieber Arthur! </salute>Ich ging vorbei, vergaß natürlich, dass Sie <rs type="place" ref="#pmb274">Burgring 1</rs>
+               <space unit="chars" quantity="1"/>
+               <rs type="place" ref="#pmb144330">ordiniren</rs>. Ihre Handschuhe brachte ich zurück, u.
                sagen wollte ich Ihnen, dass ich Abends wahrscheinlich komme, doch erst gegen <time>11 Uhr</time>.
                Jetzt bin ich müde und ruhe mich <pb facs=""/>ein wenig aus und
             lese die <rs type="work" ref="">Neue fr Pr.</rs> u. bilde mir ein,
@@ -136,8 +142,8 @@
             <p rend="center">Arthur Schnitzler</p>
             <p>Habe heute gearbeitet aber wenig, gehe jetzt
             nach Hause, wieder arbeiten.</p>
-            <p><rs type="person" ref="#pmb11740">Loris</rs>, <rs
-               type="person" ref="#pmb10863">Beer Hofmann</rs>?</p>
+            <p>
+               <rs type="person" ref="#pmb11740">Loris</rs>, <rs type="person" ref="#pmb10863">Beer Hofmann</rs>?</p>
          </div>
       </body>
    </text>

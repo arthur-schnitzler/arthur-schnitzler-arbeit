@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3148"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3148"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -31,7 +33,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03148"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -71,6 +72,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -80,9 +82,12 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="brief"/>
-                           <desc type="_blaetter" n="2"/>
-                           <desc type="_seiten" n="1"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="2"/>
+                                 <measure unit="seite" quantity="1"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="bleistift" style="lateinische-kurrent"/>
@@ -135,33 +140,23 @@
                <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00049-R"/>
                <salute>Lieber Freund, </salute>
                <anchor type="commentary" xml:id="K_L03148-1"/>
-               <rs type="person" ref="#pmb3784">Lotte</rs> geht morgen in Haft<note
-                  type="commentary" xml:id="K_L03148-1h">
+               <rs type="person" ref="#pmb3784">Lotte</rs> geht morgen in Haft<note type="commentary" xml:id="K_L03148-1h">
                   <ref type="schnitzler-briefe" target="L03142" subtype="cf"/>
                </note> und ich habe heute für sie einiges zu kaufen. Sie schreibt mir eben um Geld,
-               und bittet mich, da ihre Leute nichts für sie thun wollen. Nun ist erst <anchor
-                  type="commentary" xml:id="K_L03148-11"/>morgen der 15<hi rend="superscript"
-                  >te</hi>
+               und bittet mich, da ihre Leute nichts für sie thun wollen. Nun ist erst <anchor type="commentary" xml:id="K_L03148-11"/>morgen der 15<hi rend="superscript">te</hi>
                <note type="commentary" xml:id="K_L03148-11h">
                   <rs type="person" ref="#pmb2121">Schnitzler</rs> datiert den Brief auf den
                      <date>13. 1. 1895</date>, doch nimmt er dabei eine Überschreibung vor und
                   ändert den <date>12.</date> ab, den er zuerst geschrieben haben dürfte. Diese
                   Unsicherheit wird als Grund herangezogen, weswegen bei der Einordnung des Briefes
-                  mit der vorliegenden Stelle das Datum <rs type="person" ref="#pmb2121"
-                     >Schnitzler</rs>s um einen weiteren Tag – auf den <date>14.</date> – angepasst
+                  mit der vorliegenden Stelle das Datum <rs type="person" ref="#pmb2121">Schnitzler</rs>s um einen weiteren Tag – auf den <date>14.</date> – angepasst
                   wird. In jedem Fall dürfte <rs type="person" ref="#pmb2121">Schnitzler</rs> am
                      <ref type="schnitzler-tagebuch" subtype="date-only" target="1895-01-15"/> den
-                  Brief erhalten haben, da eine Aussage zu diesem Tag im <rs type="work"
-                     ref="#pmb33243">Tagebuch</rs> davon motiviert scheint: »<quote><rs
-                        type="person" ref="#pmb2167">Salten</rs>s <rs type="person"
-                        subtype="implied" ref="#pmb3784">Gel.</rs> wird morgen (wegen social.
+                  Brief erhalten haben, da eine Aussage zu diesem Tag im <rs type="work" ref="#pmb33243">Tagebuch</rs> davon motiviert scheint: »<quote>
+                     <rs type="person" ref="#pmb2167">Salten</rs>s <rs type="person" subtype="implied" ref="#pmb3784">Gel.</rs> wird morgen (wegen social.
                      Geschichten) eingesperrt. Der Glückliche.</quote>«</note>, und ich bitte Sie
-               deswegen <hi rend="underline" n="1">recht sehr</hi>, mir <hi rend="underline" n="1"
-                  >bis morgen</hi> mit fl. 10.~ zu helfen. Ich erhalte <hi rend="underline" n="1"
-                  >morgen 3 Uhr Gage</hi>, und gebe Ihnen <pb
-                  facs="MS-SCHNITZLER-B-00089-A-00001-000-00049-V"/>
-               <hi rend="underline" n="1">mein Wort</hi>, dass ich Ihnen das Geld <hi
-                  rend="underline" n="1">morgen Nachmittag</hi> sofort hinüberbringe. </p>
+               deswegen <hi rend="underline" n="1">recht sehr</hi>, mir <hi rend="underline" n="1">bis morgen</hi> mit fl. 10.~ zu helfen. Ich erhalte <hi rend="underline" n="1">morgen 3 Uhr Gage</hi>, und gebe Ihnen <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00049-V"/>
+               <hi rend="underline" n="1">mein Wort</hi>, dass ich Ihnen das Geld <hi rend="underline" n="1">morgen Nachmittag</hi> sofort hinüberbringe. </p>
             <closer>Besten Dank im Voraus. <lb/>Herzlichst Ihr <lb/>
                <signed>Salten</signed>
             </closer>

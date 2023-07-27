@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model target="https://raw.githubusercontent.com/arthur-schnitzler/arthur-schnitzler-arbeit/main/meta/asbwschema.xsd"type="application/xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3159"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3159"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 22.&#160;7.&#160;1895</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 22. 7. 1895</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -32,7 +34,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03159"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -72,6 +73,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -81,9 +83,12 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="brief"/>
-                           <desc type="_blaetter" n="1"/>
-                           <desc type="_seiten" n="4"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="4"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="bleistift" style="lateinische-kurrent"/>
@@ -101,7 +106,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1895-07-22" n="01">22.&#160;7.&#160;1895</date>
+               <date when="1895-07-22" n="01">22. 7. 1895</date>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -117,8 +122,9 @@
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <dateline><pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00058-R"/>
-                  <date>22.&#160;Juli 95</date>. </dateline>
+               <dateline>
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00058-R"/>
+                  <date>22. Juli 95</date>. </dateline>
             </opener>
             <p>
                <salute>Lieber Freund! </salute>Das war sehr lieb von Ihnen, dass Sie mir
@@ -127,11 +133,8 @@
                »Ich möcht mehr g’lobt werd’n.« Sie können sich vorstellen, welches Gewicht ich auf
                das Urtheil von <rs type="person" ref="#pmb21876">Neumann</rs> lege. Jetzt erst glaube ich,
                dass ich doch etwas kann. Ich habe mir jetzt meine Feuilletons zusammenstellen laßen,
-               und schicke sie Ihnen morgen. Wählen Sie davon welche aus, und senden Sie das am <rs
-                  type="person" ref="#pmb11485">Goldmann</rs> weiter, ja? Dass ich <rs type="person"
-                  ref="#pmb10863">Beer-Hofmann</rs> nichts geschrieben habe, soll nicht missdeutet
-               werden. Zu einem Brief lag rein äußerlich nichts vor, und ihm auf den <rs type="work"
-                  ref="#pmb30969">Wurstelprater</rs> eine Widmung schreiben, mochte ich nicht, weil
+               und schicke sie Ihnen morgen. Wählen Sie davon welche aus, und senden Sie das am <rs type="person" ref="#pmb11485">Goldmann</rs> weiter, ja? Dass ich <rs type="person" ref="#pmb10863">Beer-Hofmann</rs> nichts geschrieben habe, soll nicht missdeutet
+               werden. Zu einem Brief lag rein äußerlich nichts vor, und ihm auf den <rs type="work" ref="#pmb30969">Wurstelprater</rs> eine Widmung schreiben, mochte ich nicht, weil
                ich ja nicht wusste, wie ihm der <rs type="work" ref="#pmb30969">Wurstelprater</rs>
                gefallen werde, und weil, – nun Sie wissen ja dass ich da vielleicht ein bisschen zu
                sehr empfindlich bin. Ich weiss ja auch heute nicht, ob er was davon hält, und so
@@ -140,61 +143,45 @@
                nicht begreifen, <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00058i-R-0"/>seit wann
                wir uns das <hi rend="underline" n="1">nicht </hi>mittheilen. Das Sie einen kleinen
                <rs type="person" ref="#pmb24420" subtype="implied">Neffen</rs> haben, wusste ich, aber das
-               kann mir doch nicht imponiren, da ich doch zwei <rs type="person"
-                  ref="#pmb143356 #pmb89578" subtype="implied">Töchter</rs> habe! Übrigens habe ich
+               kann mir doch nicht imponiren, da ich doch zwei <rs type="person" ref="#pmb143356 #pmb89578" subtype="implied">Töchter</rs> habe! Übrigens habe ich
                jetzt wieder acht Schreckenstage mitgemacht. Ich bin nämlich einmal doch erlegen, und
                so kamen dann die acht langen Tage. Endlich erschien die Gefahr doch beseitigt und
                ich atmete auf. Es wäre wirklich zu schrecklich gewesen. Übrigens verbringe ich nach
-               dieser Seite hin arge Tage. Scenen, Scenen, Scenen. Wie einem <hi rend="underline"
-                  n="1">da</hi> zu Muthe wird, können nicht einmal Sie recht wissen. Es gibt
+               dieser Seite hin arge Tage. Scenen, Scenen, Scenen. Wie einem <hi rend="underline" n="1">da</hi> zu Muthe wird, können nicht einmal Sie recht wissen. Es gibt
                gegenwärtig, besonders aber heute, keine Frau, die mir unausstehlicher wäre als meine
                   <rs type="person" ref="#pmb3784" subtype="implied" cert="medium">Geliebte</rs>.
                Sie hat übrigens gestern, als wir eine Stunde lang wortlos und wüthend nebeneinander
                saßen plötzlich gesagt: »Uns sollte man Knütteln auseinander jagen.« O, wie recht!
                Wir sind übrigens in ein Stadium getreten, in welchem jeder Streit sofort ausartet
                und nicht wieder gut zu machende gegenseitige Beschimpfungen hervorruft, ich tue
-               nichts, um das zu mildern <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00058i-R-1"
-               />und könnte es auch nicht. Intensiv denke ich ans Fortreisen, wo ich dann durch Ruhe
-               und lieberen Umgang mich zu erholen, und <rs type="person" ref="#pmb3784"
-                  subtype="implied" cert="medium">ihr</rs> durch Briefe unsere
-               Nichtzusammengehörigkeit eindringlich vorzustellen beabsichtige. Dass <rs
-                  type="person" ref="#pmb10863">B.-H.</rs> erst <date>Anfangs September</date>
-               fahren will ist fatal, aber da er den »<rs type="work" ref="#pmb31535"
-                  >Götterliebling</rs>« fertig macht, läßt sich nichts thun. Das ist jedenfalls
+               nichts, um das zu mildern <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00058i-R-1"/>und könnte es auch nicht. Intensiv denke ich ans Fortreisen, wo ich dann durch Ruhe
+               und lieberen Umgang mich zu erholen, und <rs type="person" ref="#pmb3784" subtype="implied" cert="medium">ihr</rs> durch Briefe unsere
+               Nichtzusammengehörigkeit eindringlich vorzustellen beabsichtige. Dass <rs type="person" ref="#pmb10863">B.-H.</rs> erst <date>Anfangs September</date>
+               fahren will ist fatal, aber da er den »<rs type="work" ref="#pmb31535">Götterliebling</rs>« fertig macht, läßt sich nichts thun. Das ist jedenfalls
                wichtiger, und wenn er im Herbste erscheinen will soll er doch dazu schauen, noch
                diesen Monat (August) fertig zu werden. Mit mir steht die Sache so: Ich kann den
                   <date>13. </date>od. 14. August fort, <hi rend="underline" n="1">muss</hi> aber
                jedenfalls den 1. September zurück sein. Wenn wir zusammen reisen, dann müssten Sie
                sich <hi rend="underline" n="1">längstens</hi> bis 1. Aug. entschloßen haben, damit
-               ich mich danach einrichten kann. Für diesen Fall käme ich <hi rend="underline" n="1"
-                  >nicht</hi> nach <rs type="place" ref="#pmb213">Ischl</rs>, sondern wir träfen uns
-               entweder in <rs type="place" ref="#pmb50">Wien</rs>, oder am 16. Aug. in <rs
-                  type="place" ref="#pmb49847">Stettin</rs>, da ich auf 1 Tag nach der Insel <rs
-                  type="place" ref="#pmb142884">Rügen</rs> muss. </p>
+               ich mich danach einrichten kann. Für diesen Fall käme ich <hi rend="underline" n="1">nicht</hi> nach <rs type="place" ref="#pmb213">Ischl</rs>, sondern wir träfen uns
+               entweder in <rs type="place" ref="#pmb50">Wien</rs>, oder am 16. Aug. in <rs type="place" ref="#pmb49847">Stettin</rs>, da ich auf 1 Tag nach der Insel <rs type="place" ref="#pmb142884">Rügen</rs> muss. </p>
             <p>Nun aber folgendes: <rs type="person" ref="#pmb23605">Moriz Rosenthal</rs>, den ich
                heute sprach, sagte mir, er könne nicht <hi rend="underline" n="1">dringend
                   genug</hi> vor <rs type="place" ref="#pmb36300">Kopenhagen</rs> warnen. Es sei
-               weder schön noch gut dort, ferner theuer, schlechte Bäder etc. Er rät <rs
-                  type="place" ref="#pmb142884">Rügen</rs> an, oder <rs type="place" ref="#pmb91863"
-                  >Sylt</rs>, <hi rend="underline" n="1">gewiss nicht</hi>
+               weder schön noch gut dort, ferner theuer, schlechte Bäder etc. Er rät <rs type="place" ref="#pmb142884">Rügen</rs> an, oder <rs type="place" ref="#pmb91863">Sylt</rs>, <hi rend="underline" n="1">gewiss nicht</hi>
                <rs type="place" ref="#pmb36300">Kopenhagen</rs>. Geht es noch, dass daran gerüttelt
                wird? </p>
-            <p>Ferner: wenn Sie nicht sehr gerne von <pb
-                  facs="MS-SCHNITZLER-B-00089-A-00001-000-00058-V"/>
-               <rs type="place" ref="#pmb213">Ischl</rs> früher weggingen, als bis <rs type="person"
-                  ref="#pmb10863">BH.</rs> fährt, oder auch die <rs type="person" ref="#pmb11485"
-                  subtype="implied">anderen</rs> in <rs type="place" ref="#pmb36300">Kphg.</rs>
+            <p>Ferner: wenn Sie nicht sehr gerne von <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00058-V"/>
+               <rs type="place" ref="#pmb213">Ischl</rs> früher weggingen, als bis <rs type="person" ref="#pmb10863">BH.</rs> fährt, oder auch die <rs type="person" ref="#pmb11485" subtype="implied">anderen</rs> in <rs type="place" ref="#pmb36300">Kphg.</rs>
                eintreffen, bin ich auch bereit auf die Reise zu verzichten. Für diesen Fall käme ich
                dann am 13. oder 14. Aug. einfach nach <rs type="place" ref="#pmb213">Ischl</rs>,
                ginge zum <rs type="place" ref="#pmb414">Leopold</rs>, nähme mein Bicycle mit, und
                bliebe ruhig bis <date>1. September</date> dort. Wie es Ihnen angenehmer ist, mögen
                Sie nun entscheiden. Ich muß gestehen, dass es mir im Grunde gleich ist, wie u. wo
-               ich die 14 Tage verbringe, ich möchte nur gerne <hi rend="underline" n="1"
-                  >rechtzeitig</hi> wissen, (also bis 1. Aug.) was geschieht. Mir kommt es in meiner
+               ich die 14 Tage verbringe, ich möchte nur gerne <hi rend="underline" n="1">rechtzeitig</hi> wissen, (also bis 1. Aug.) was geschieht. Mir kommt es in meiner
                momentanen Verfassung lediglich darauf an überhaupt nur dort zu fahren und ein
                bisschen Ruhe zu haben. </p>
-            <p>Schreiben Sie bald und leben Sie recht wohl. Ich grüße <rs type="person"
-                  ref="#pmb10863">Beer Hofmann</rs> und Sie </p>
+            <p>Schreiben Sie bald und leben Sie recht wohl. Ich grüße <rs type="person" ref="#pmb10863">Beer Hofmann</rs> und Sie </p>
             <closer>Herzlichst Ihr <lb/>
                <signed>Salten</signed>
             </closer>

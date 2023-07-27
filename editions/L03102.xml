@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3102"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3102"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, [23.&#160;5.&#160;1891]</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, [23. 5. 1891]</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -31,7 +33,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03102"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -71,6 +72,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="karte" ana="visitenkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -80,14 +82,19 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="karte" subtype="visitenkarte"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="karte" quantity="1"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="bleistift" style="lateinische-kurrent"/>
                         </handDesc>
                         <additions>
                            <incident type="receiver">
-                              <desc>mit Bleistift datiert »<quote><date>23/5&#160;91</date>.</quote>«</desc>
+                              <desc>mit Bleistift datiert »<quote>
+                                    <date>23/5 91</date>.</quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -103,13 +110,13 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1891-05-23" n="01">[23.&#160;5.&#160;1891]</date>
+               <date when="1891-05-23" n="01">[23. 5. 1891]</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
-               <date when="1891-05-23">[23.&#160;5.&#160;1891]</date>
+               <date when="1891-05-23">[23. 5. 1891]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -127,20 +134,23 @@
                </hi>
                <hi rend="pre-print"/>
             </p>
-            <p rend="left"><hi rend="pre-print">
-                     <hi rend="pre-print">Wien</hi>
-                  </hi></p>
-            <p><pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00003-V"/>
-               <salute>Lieber! </salute>Ich bin in einer Lage, in der ich mit Jemanden, d.&#160;h. mit <hi
-                  rend="underline" n="1">Einem</hi> reden muss. <hi rend="underline" n="2">Bitte</hi>
+            <p rend="left">
+               <hi rend="pre-print">
+                  <hi rend="pre-print">Wien</hi>
+               </hi>
+            </p>
+            <p>
+               <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00003-V"/>
+               <salute>Lieber! </salute>Ich bin in einer Lage, in der ich mit Jemanden, d. h. mit <hi rend="underline" n="1">Einem</hi> reden muss. <hi rend="underline" n="2">Bitte</hi>
                kommen Sie, lieber Einer, sobald Sie diese Zeilen lesen, zu mir.</p>
             <closer>Ihr<lb/>
-               <signed>Salten.</signed></closer>
+               <signed>Salten.</signed>
+            </closer>
             <postscript>
-            <p>
-               <rs type="place" ref="#pmb41831">III. Reisnerstraße 113</rs>.
-            </p></postscript>
-            
+               <p>
+                  <rs type="place" ref="#pmb41831">III. Reisnerstraße 113</rs>.
+            </p>
+            </postscript>
          </div>
       </body>
    </text>

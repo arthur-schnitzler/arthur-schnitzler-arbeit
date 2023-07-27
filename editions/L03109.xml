@@ -33,7 +33,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03109"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -73,6 +72,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -82,16 +82,21 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="_blaetter" n="1"/>
-                           <desc type="_seiten" n="3"/>
-                           <desc type="brief"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="3"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="bleistift" style="lateinische-kurrent"/>
                         </handDesc>
                         <additions>
                            <incident type="receiver">
-                              <desc>mit Bleistift datiert: »<quote><date>25/5&#160;92</date></quote>«</desc>
+                              <desc>mit Bleistift datiert: »<quote>
+                                    <date>25/5 92</date>
+                                 </quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -148,7 +153,10 @@
                Ich bin sehr <pb facs=""/>betrübt darüber, daß ich Sie so übermäßig strapazieren muß,
                aber meine klägliche Situation dürfte sich erst mit nächstem Monate ein wenig
                bessern.</p>
-            <p>Waren Sie heute bei <anchor type="commentary" xml:id="K_L03109-3"/><rs type="person" ref="#pmb26862">Weiss</rs><note type='commentary' xml:id="K_L03109-3h"><rs type="person" ref="#pmb2121">Schnitzler</rs> war
+            <p>Waren Sie heute bei <anchor type="commentary" xml:id="K_L03109-3"/>
+               <rs type="person" ref="#pmb26862">Weiss</rs>
+               <note type="commentary" xml:id="K_L03109-3h">
+                  <rs type="person" ref="#pmb2121">Schnitzler</rs> war
             auf der Suche nach einem Verlag für <rs type="work" ref="#pmb29935">Anatol</rs>, bekam mündlich eine Zusage, aber am 
                <ref type="schnitzler-tagebuch" target="1892-06-18" subtype="date-only"/> eine schriftliche Absage.</note>? »Ist mit dem Manne etwas
                anzufangen?»</p>

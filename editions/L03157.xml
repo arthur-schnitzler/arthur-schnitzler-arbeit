@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3157"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3157"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 30.&#160;6.&#160;1895</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 30. 6. 1895</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -31,7 +33,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03157"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -71,6 +72,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="karte" ana="bildpostkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -80,7 +82,11 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="karte" subtype="bildpostkarte"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="karte" quantity="1"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="schwarze_tinte" style="lateinische-kurrent"/>
@@ -90,7 +96,7 @@
                               <desc>
                                  <stamp n="1">
                                     <placeName ref="#pmb45258">Muenchen</placeName>
-                                    <date when="1895-06-30">30&#160;6&#160;98</date>
+                                    <date when="1895-06-30">30 6 98</date>
                                     <time>5–<unclear>6</unclear>Nm</time>
                                  </stamp>
                               </desc>
@@ -99,14 +105,16 @@
                               <desc>
                                  <stamp n="2">
                                     <placeName ref="#pmb59">Wien 9/3 72</placeName>
-                                    <date when="1895-07-01">1.&#160;7.&#160;95</date>
+                                    <date when="1895-07-01">1. 7. 95</date>
                                     <time>10V</time>
                                     <addSpan>Bestellt</addSpan>
                                  </stamp>
                               </desc>
                            </incident>
                            <incident type="receiver">
-                              <desc>mit Bleistift datiert: »<quote><date>30/6&#160;95</date></quote>«</desc>
+                              <desc>mit Bleistift datiert: »<quote>
+                                    <date>30/6 95</date>
+                                 </quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -122,13 +130,13 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1895-06-30" n="01">30.&#160;6.&#160;1895</date>
+               <date when="1895-06-30" n="01">30. 6. 1895</date>
                <placeName ref="#pmb45258">München</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
-               <date when="1895-07-01">1.&#160;7.&#160;1895</date>
+               <date when="1895-07-01">1. 7. 1895</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -140,12 +148,13 @@
       <body>
          <div type="address">
             <address>
-               <addrLine><pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00056-V"/>Herrn D<hi
-                     rend="superscript">r</hi> Arthur Schnitzler</addrLine>
+               <addrLine>
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00056-V"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb50">Wien</rs>
                </addrLine>
-               <addrLine><rs type="place" ref="#pmb397">IX. Frankgaße 1</rs>
+               <addrLine>
+                  <rs type="place" ref="#pmb397">IX. Frankgaße 1</rs>
                </addrLine>
             </address>
          </div>
@@ -153,12 +162,17 @@
             <opener>
                <p rend="center">
                   <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00056-R"/>
-                  <hi rend="pre-print">Gruſs aus <rs type="place" ref="#pmb45258">München</rs></hi>
+                  <hi rend="pre-print">Gruſs aus <rs type="place" ref="#pmb45258">München</rs>
+                  </hi>
                </p>
             </opener>
             <lg type="stanza">
-               <l><hi rend="pre-print">Erheiternd wirkt auf den Sinn,</hi></l>
-               <l><hi rend="pre-print">Der Anblick einer Sennerin.</hi></l>
+               <l>
+                  <hi rend="pre-print">Erheiternd wirkt auf den Sinn,</hi>
+               </l>
+               <l>
+                  <hi rend="pre-print">Der Anblick einer Sennerin.</hi>
+               </l>
             </lg>
             <p>Wie vielt' gradig ist <hi rend="underline" n="2">das</hi>? </p>
          </div>

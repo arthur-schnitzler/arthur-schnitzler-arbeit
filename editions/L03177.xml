@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3177"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3177"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten u.&#160;a. an Arthur Schnitzler, 6.&#160;8.&#160;1896</title>
+            <title level="a">Felix Salten u. a. an Arthur Schnitzler, 6. 8. 1896</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <author ref="#pmb144420">Schlesinger, Gretl</author>
             <author ref="#pmb3261">Fanto, Leonhard</author>
@@ -39,7 +41,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03177"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -79,6 +80,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp=""/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -88,7 +90,9 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <supportDesc>
+                              <extent/>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="" style="lateinische-kurrent"/>
@@ -114,7 +118,7 @@
                <persName ref="#pmb14056">Berger, Else</persName>
                <persName ref="#pmb24241">Schlesinger, Julius</persName>
                <persName ref="#pmb144430">Laurent, M.</persName>
-               <date when="1896-08-06" n="01">6.&#160;8.&#160;1896</date>
+               <date when="1896-08-06" n="01">6. 8. 1896</date>
                <placeName ref="#pmb213">Bad Ischl</placeName>
             </correspAction>
             <correspAction type="received">
@@ -132,8 +136,7 @@
          <div type="address">
             <address>
                <addrLine>
-                  <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00076-R"/>Herrn D<hi rend="superscript"
-                     >r</hi> Arthur Schnitzler</addrLine>
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00076-R"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb958">Skodsborg</rs>
                </addrLine>
@@ -145,10 +148,10 @@
                </addrLine>
             </address>
          </div>
-         
          <div type="writingSession" n="1">
             <opener>
-               <dateline rend="right"><pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00076-V"/>
+               <dateline rend="right">
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00076-V"/>
                   <rs type="place" ref="#pmb213">Ischl</rs>, <date>6. August 96</date>. </dateline>
             </opener>
             <p>Man soupiert nämlich heute Abend bei <rs type="person" ref="">Schlesinger</rs>. Es
@@ -156,21 +159,25 @@
                Consequenz dieses lobenden Gefühlsausbruches ist »vorliegende« Karte, welche Ihnen
                Grüße von nachstehenden Persönlichkeiten übermittelt:</p>
             <closer>
-               <signed>Therese Schlesinger</signed><space unit="chars" quantity="1"/>
+               <signed>Therese Schlesinger</signed>
+               <space unit="chars" quantity="1"/>
                <signed>Julius Schlesinger</signed>
                <signed>Fanto</signed>, <signed>D<hi rend="superscript">r</hi> R. Eisler</signed>,
                   <signed>M. Laurent</signed>
                <signed>Gretl Schlesinger,</signed>
-               <signed>Fanny Schlesinger</signed></closer>
+               <signed>Fanny Schlesinger</signed>
+            </closer>
             <p> Trotzdem Herr <add>will</add> Salten mir absolut nicht erlauben mehr als meinen
                Namen zu schreiben benütze ich die gute Gelegenheit Ihnen viele herzliche Grüße zu
                senden.</p>
-            <closer>Herzlich und freundschaftlich, Ihre <signed>Else.</signed></closer>
+            <closer>Herzlich und freundschaftlich, Ihre <signed>Else.</signed>
+            </closer>
             <p>Med. Dr. <add>in spe</add> Alfred Schlesinger grüßt den zukünftigen Herrn Collegen
                bestens nachdem er seine Matura glücklich überstanden.</p>
             <postscript>
                <p>Fanny fragt warum »nachstehend« nicht unter Anführungszeichen steht. Bitte,
-                  erklären <hi rend="underline" n="">Sie</hi> ihr das!! <signed>E</signed></p>
+                  erklären <hi rend="underline" n="">Sie</hi> ihr das!! <signed>E</signed>
+               </p>
             </postscript>
          </div>
       </body>

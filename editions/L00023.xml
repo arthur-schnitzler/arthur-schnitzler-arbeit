@@ -33,12 +33,11 @@
                <name>Müller, Martin Anton</name>
                <name>Susen, Gerd-Hermann</name>
             </respStmt>
-            <idno type="asbw" n="00023"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
             <pubPlace>Vienna</pubPlace>
-            <date when="2021">2021</date>
+            <date when="2023">2023</date>
             <availability>
                <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
                   <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
@@ -73,6 +72,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -82,9 +82,12 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="brief"/>
-                           <desc n="1" type="_blaetter">Briefpapier mit aufgeprägtem Wappen</desc>
-                           <desc n="3" type="_seiten"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1">Briefpapier mit aufgeprägtem Wappen</measure>
+                                 <measure unit="seite" quantity="3"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="schwarze_tinte" style="deutsche-kurrent"/>
@@ -103,6 +106,8 @@
                   </msDesc>
                </witness>
                <witness n="2">
+                  <objectType corresp="brief" ana="entwurf">
+                  </objectType>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -112,10 +117,12 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc type="brief"/>
-                           <desc n="1" type="_blaetter">Briefpapier mit aufgeprägtem Wappen</desc>
-                           <desc n="1" type="_seiten"/>
-                           <desc type="entwurf"/>
+                           <supportDesc>
+                              <extent>
+                                 <measure unit="blatt" quantity="1">Briefpapier mit aufgeprägtem Wappen</measure>
+                                 <measure unit="seite" quantity="1"/>
+                              </extent>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="schwarze_tinte" style="deutsche-kurrent"/>
@@ -168,7 +175,8 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
-               <date evidence="conjecture" notBefore="1891-07-13" notAfter="1891-07-15">[13. 7. 1891 – 17. 7. 1891?]</date>
+               <date evidence="conjecture" notBefore="1891-07-13" notAfter="1891-07-15">[13. 7. 1891
+                  – 17. 7. 1891?]</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo
@@ -209,8 +217,8 @@
                   <rs ref="#pmb573" type="place">Bad Fuſch</rs>, <date>13 Juli</date>.</dateline>
             </opener>
             <p>Mir fehlt hier irgend etwas; was, weiß ich ſelbſt nicht. Vielleicht Sonne. Vielleicht
-               Lärm. Dann wird wohl <rs ref="#pmb30" type="place">Salzburg</rs> helfen. Ich habe einen
-               dicken <anchor xml:id="K_L00023_1" type="commentary"/>Paletot<note xml:id="K_L00023_1h" type="commentary">Herrenmantel</note> an, auf dem Papier
+               Lärm. Dann wird wohl <rs ref="#pmb30" type="place">Salzburg</rs> helfen. Ich habe
+               einen dicken <anchor xml:id="K_L00023_1" type="commentary"/>Paletot<note xml:id="K_L00023_1h" type="commentary">Herrenmantel</note> an, auf dem Papier
                tanzen grelle kalte Lichter, der Brunnen plätſchert und es riecht nach reinlichen
                kleinen Kindern. Wenn das eine Stimmung iſt, ſo iſts zumindeſten nicht die, die ich
                brauchen kann. <anchor xml:id="K_L00023_2" type="commentary"/>
@@ -224,8 +232,8 @@
                      <space unit="chars" quantity="1"/>
                      <date>1878</date>
                   </bibl>.</note> und freue mich wie in ſeiner kalten Klarheit, der »<anchor xml:id="K_L00023_4" type="commentary"/>hellen Luft der Cordilleren<note xml:id="K_L00023_4h" type="commentary">
-                  <rs ref="#pmb11740" type="person">Hofmannsthal</rs> markiert die Stelle eindeutig als
-                  Zitat. Dabei variiert er zumindest seine eigenen Aufzeichnungen vom
+                  <rs ref="#pmb11740" type="person">Hofmannsthal</rs> markiert die Stelle eindeutig
+                  als Zitat. Dabei variiert er zumindest seine eigenen Aufzeichnungen vom
                      <date>21. 5. 1891</date>: »<quote>In <rs ref="#pmb12358" type="person">Nietzsche</rs> ist die freudige Klarheit der Zerstörung wie in einem einem
                      hellen Sturm der Cordilleren oder in dem reinen Lodern grosser
                   Flammen</quote>«. (<bibl>
@@ -245,10 +253,12 @@
                   <hi rend="latintype">Mod. Rundschau</hi>
                </rs> 5 u. 6 Heft, Seite 17<c rendition="#dots" n="3"/>ff.<note xml:id="K_L00023_5h" type="commentary">
                   <bibl>
-                     <rs ref="#pmb10815" type="person">Hermann Bahr</rs>: <rs ref="#pmb33672" type="work">Vorsatz.</rs> In: <rs ref="#pmb35942" type="work">Moderne Rundschau</rs>,
-                     Bd. 3, H. 5/6, <date>15. 6. 1891</date>, S. 178–180</bibl>. Es handelt sich um
-                  die »<quote>Einleitung zu <rs ref="#pmb10815" type="person">Bahr</rs>’s demnächst
-                     (bei <rs ref="#pmb29771" type="org">E. Pierson</rs> in <rs ref="#pmb866" type="place">Dresden</rs>) erscheinendem neuesten Buche: ›<rs ref="#pmb30175" type="work">Russische Reise, ein lyrischer Zwischenakt</rs>‹.</quote>«</note>)</p>
+                     <rs ref="#pmb10815" type="person">Hermann Bahr</rs>: <rs ref="#pmb33672" type="work">Vorsatz.</rs> In: <rs ref="#pmb35942" type="work">Moderne
+                        Rundschau</rs>, Bd. 3, H. 5/6, <date>15. 6. 1891</date>, S. 178–180</bibl>.
+                  Es handelt sich um die »<quote>Einleitung zu <rs ref="#pmb10815" type="person">Bahr</rs>’s demnächst (bei <rs ref="#pmb29771" type="org">E. Pierson</rs>
+                     in <rs ref="#pmb866" type="place">Dresden</rs>) erscheinendem neuesten Buche:
+                        ›<rs ref="#pmb30175" type="work">Russische Reise, ein lyrischer
+                        Zwischenakt</rs>‹.</quote>«</note>)</p>
             <p>So dumme Fragen frage ich nur wenn ich Gedanken denke ſtatt mein Leben zu leben. Ich
                möchte mich alſo verlieben, oder täglich <hi rend="latintype">lawn-tennis</hi>
                <space unit="chars" quantity="1"/>ſpielen, oder meinetwegen <anchor xml:id="K_L00023_6" type="commentary"/>
@@ -268,9 +278,9 @@
                </geogName>, wo die Leute meiſtens Würmer unter der Haut haben (ſie war dort als
                junge Frau) oder von dem häſslichen <hi rend="latintype">boycott</hi> in <rs ref="#pmb577" type="place">
                   <hi rend="latintype">Irland</hi>
-               </rs> und den ſchönen rothhaarigen <hi rend="latintype">Cocotten</hi> von <rs ref="#pmb1267" type="place">Dublin</rs> (von denen ſpricht ſie ſo giftig gut, wie aus
-               einem <hi rend="latintype">ressentiment</hi> heraus, ſie muſs dort etwas unangenehmes
-               erlebt haben) oder von <rs ref="#pmb5869" type="person">
+               </rs> und den ſchönen rothhaarigen <hi rend="latintype">Cocotten</hi> von <rs ref="#pmb1267" type="place">Dublin</rs> (von denen ſpricht ſie ſo giftig gut, wie
+               aus einem <hi rend="latintype">ressentiment</hi> heraus, ſie muſs dort etwas
+               unangenehmes erlebt haben) oder von <rs ref="#pmb5869" type="person">
                   <hi rend="latintype">Henry Irving</hi>
                </rs> oder von <rs ref="#pmb5874" type="person">
                   <hi rend="latintype">Sir Laurence Oliphant</hi>
@@ -285,22 +295,21 @@
                </rs>, das <rs ref="#pmb29610" type="org">Linzer Volksblatt</rs>, <rs ref="#pmb11233" type="person">Eichendorff</rs> und <rs type="work" ref="#pmb31951" subtype="implied">
                   <anchor xml:id="K_L00023_8" type="commentary"/>
                   <hi rend="latintype">cette touchante histoire de petite Secousse</hi>
-                  <note xml:id="K_L00023_8h" type="commentary">französisch: die rührende Geschichte von der
-                     kleinen Schüttlerin (<rs ref="#pmb3892" type="person">Barrès</rs> bezeichnet so
-                     die Hauptfigur <rs type="work" ref="#pmb31951" subtype="implied">Berénice</rs>.)</note>
+                  <note xml:id="K_L00023_8h" type="commentary">französisch: die rührende Geschichte
+                     von der kleinen Schüttlerin (<rs ref="#pmb3892" type="person">Barrès</rs>
+                     bezeichnet so die Hauptfigur <rs type="work" ref="#pmb31951" subtype="implied">Berénice</rs>.)</note>
                </rs>, die manchmal ſo ſchön iſt, <anchor xml:id="K_L00023_9" type="commentary"/>
                <hi rend="latintype">qu’elle donne presque envie de pleurer</hi>
-               <note xml:id="K_L00023_9h" type="commentary">französisch: dass sie nahezu Lust zu weinen
-                  macht</note>, trotz <rs type="person" ref="#pmb5864" subtype="implied">
+               <note xml:id="K_L00023_9h" type="commentary">französisch: dass sie nahezu Lust zu
+                  weinen macht</note>, trotz <rs type="person" ref="#pmb5864" subtype="implied">
                   <hi rend="latintype">Boulange</hi>
                </rs>, Mysti-, <del rend="strikethrough">Ch<gap quantity="3" reason="illegible" unit="chars"/>- </del>, Stoi- und Katholi-cismus. Ich habe gar keine eigenen
                Empfindungen, citiere fortwährend in Gedanken mich ſelbſt oder andere, habe auch die
-               dumme letzte Scene von »<rs ref="#pmb30141" type="work">Geſtern</rs>« noch immer nicht
-               fertig gebracht, dafür aber von <rs ref="#pmb11485" type="person">Goldmann</rs>, der
-               immer auf der Eiſenbahn zu ſein ſcheint eine, ſoweit man ſie leſen kann, ſehr
-               herzliche Karte bekommen. Jetzt muſs ich packen (ganz origineller Abgang!) ſchreiben
-               Sie mir, mein verehrter Freund, bitte, bald und geben Sie Ihr Project mich irgendwo
-               zu beſuchen, nicht auf.</p>
+               dumme letzte Scene von »<rs ref="#pmb30141" type="work">Geſtern</rs>« noch immer
+               nicht fertig gebracht, dafür aber von <rs ref="#pmb11485" type="person">Goldmann</rs>, der immer auf der Eiſenbahn zu ſein ſcheint eine, ſoweit man ſie
+               leſen kann, ſehr herzliche Karte bekommen. Jetzt muſs ich packen (ganz origineller
+               Abgang!) ſchreiben Sie mir, mein verehrter Freund, bitte, bald und geben Sie Ihr
+               Project mich irgendwo zu beſuchen, nicht auf.</p>
             <closer>Herzlichſt<lb/>
                <signed>Loris</signed>
             </closer>
@@ -794,18 +803,21 @@
                <title>Moderne Rundschau</title>
                <title type="werk_link">https://babel.hathitrust.org/cgi/pt?id=njp.32101064246596&amp;view=1up&amp;seq=17&amp;skin=2021</title>
                <author ref="pmb10815" role="hat-einen-beitrag-geschaffen-zu">Bahr, Hermann</author>
-               <author ref="pmb2121" role="hat-einen-beitrag-geschaffen-zu">Schnitzler, Arthur</author>
-               <author ref="pmb11740" role="hat-einen-beitrag-geschaffen-zu">Hofmannsthal, Hugo von</author>
+               <author ref="pmb2121" role="hat-einen-beitrag-geschaffen-zu">Schnitzler,
+                  Arthur</author>
+               <author ref="pmb11740" role="hat-einen-beitrag-geschaffen-zu">Hofmannsthal, Hugo
+                  von</author>
                <author ref="pmb2563" role="hat-herausgegeben">Kafka, Eduard Michael</author>
                <author ref="pmb18870" role="hat-herausgegeben">Joachim, Jaques</author>
-               <date to="1891-12-31">1.4.1891  – 31.12.1891</date>
+               <date to="1891-12-31">1.4.1891 – 31.12.1891</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35942/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pages/hits.html?searchkey=pmb35942</idno>
                <note type="work_kind">Periodikum &gt;&gt; Zeitschrift</note>
             </bibl>
             <bibl xml:id="pmb33672">
                <title>Vorsatz [Einleitung Russische Reise]</title>
-               <title type="werk_bibliografische-angabe">Moderne Rundschau, Bd. 3, H. 5/6, 15. 6. 1891, S. 178–180</title>
+               <title type="werk_bibliografische-angabe">Moderne Rundschau, Bd. 3, H. 5/6, 15. 6.
+                  1891, S. 178–180</title>
                <author ref="pmb10815" role="hat-geschaffen">Bahr, Hermann</author>
                <date when="1891-06-15">15.06.1891</date>
                <idno type="URL" subtype="babel">https://babel.hathitrust.org/cgi/pt?id=njp.32101064246596;view=1up;seq=210</idno>
@@ -835,8 +847,10 @@
             </bibl>
             <bibl xml:id="pmb30141">
                <title>Gestern. Dramatische Studie in einem Akt in Versen</title>
-               <title type="werk_bibliografische-angabe">Moderne Rundschau, Bd. 4, H. 2, 15. 10. 1891; H. 3, 1. 11. 1891</title>
-               <author ref="pmb11740" role="hat-unter-pseudonym-geschrieben">Hofmannsthal, Hugo von</author>
+               <title type="werk_bibliografische-angabe">Moderne Rundschau, Bd. 4, H. 2, 15. 10.
+                  1891; H. 3, 1. 11. 1891</title>
+               <author ref="pmb11740" role="hat-unter-pseudonym-geschrieben">Hofmannsthal, Hugo
+                  von</author>
                <date when="1891-10-15">15.10.1891</date>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30141.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30141/</idno>
@@ -847,7 +861,8 @@
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+                  Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>

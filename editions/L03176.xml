@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3176"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3176"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -31,7 +33,6 @@
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
             </respStmt>
-            <idno type="asbw" n="03176"/>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -71,6 +72,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp=""/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -80,7 +82,9 @@
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
-                           <desc/>
+                           <supportDesc>
+                              <extent/>
+                           </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="" style="lateinische-kurrent"/>
@@ -116,8 +120,7 @@
          <div type="address">
             <address>
                <addrLine>
-                  <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00075-R"/>Herrn D<hi
-                     rend="superscript">r</hi> Arthur Schnitzler </addrLine>
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00075-R"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler </addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb36300">Kopenhagen</rs>
                </addrLine>
@@ -129,8 +132,9 @@
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <p><pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00075-V"/>Für <hi rend="underline"
-                     n="">Arthur <c rendition="#kaufmannsund"/> Richard</hi></p>
+               <p>
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00075-V"/>Für <hi rend="underline" n="">Arthur <c rendition="#kaufmannsund"/> Richard</hi>
+               </p>
                <dateline>
                   <rs type="place" ref="#pmb213">Ischl</rs>, <date>1. August 1896</date>
                </dateline>
@@ -140,9 +144,11 @@
                gut! das »recht gut« ist nur meine ((seiner) Bescheidenheit) gefallen; Natürlich ist
                er (ich) <hi rend="underline" n="">sofort</hi> wieder abgereist. Das hat er (habe
                ich) seit sechs Wochen vorher gewusst.</p>
-            <closer>Dies wünscht <lb/>Euch <lb/><signed>Salten</signed>
+            <closer>Dies wünscht <lb/>Euch <lb/>
+               <signed>Salten</signed>
                <lb/>
-               <signed>Hugo</signed></closer>
+               <signed>Hugo</signed>
+            </closer>
          </div>
       </body>
    </text>
