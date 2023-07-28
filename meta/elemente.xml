@@ -495,71 +495,25 @@
                     <div type="level3">
                         <head xml:id="h.ddeok5sllgz9">listWit/witness[@n="1"]</head>
                         <p>Der erste Archivzeuge. Weitere Archivzeugen (etwa Durchschläge) sind mit
-                            dem Zähler <code>@n</code> unterschieden. Das Kind <code>msDesc</code>
+                            dem Zähler <code>@n</code> unterschieden. Das Kind <code>objectType</code> dient der Einordung in die Korrespondenzsorten (Brief, Karte, Telegramm…).
+
+
+                            
+                            Das Kind <code>msDesc</code>
                             enthält Hinweise auf das Archiv und die Signatur des Objekts innerhalb
                             des Archivs. Während <code>msIdentifier</code> den Archivstandort und
                             die dortige Signatur angibt, enthält <code>physDesc</code> die physische
                             Beschreibung des Objekts (siehe unten). </p>
                     </div>
-                    <div type="level3">
-                        <head xml:id="h.4kqrmkxn6mbo">listBibl/biblStruct</head>
-                        <p>Über verschiedene <code>biblStruct</code>-Elemente werden Drucke
-                            verzeichnet, die das jeweilige Korrespondenzstück bislang erhalten hat.
-                            Mit einem Attribut <code>@corresp</code> sind ein paar Buchausgaben
-                            gekennzeichnet, die nicht zur Gänze, sondern nur als Sigle zitiert
-                            werden, beispielsweise die beiden Auswahlbriefbände. </p>
-                    </div>
-                </div>
-                <div type="level2">
-                    <head xml:id="h.e5iaxzaz0b4">physDesc</head>
-                    <p>Dabei handelt es sich um ein Kind von
-                            <code>listWit/witness[@n="1"]/msDesc</code>. <code>physDesc</code>
-                        enthält die Beschreibung der physischen Beschaffenheit des Archivzeugens.
-                        Drei bis vier Elemente machen im Normalfall <code>physDesc</code> aus: </p>
-                    <list>
-                        <item><code>objectDesc</code> – für das Material</item>
-                        <item><code>handDesc</code> – für die Handschriften</item>
-                        <item><code>typeDesc</code> – für den gedruckten/getippten Anteil</item>
-                        <item><code>additions</code> – für Hinzufügungen, nachdem das
-                            Korrespondenzstück übermittelt wurde</item>
-                    </list>
-                    <div type="level3">
-                        <head xml:id="h.4kcxg5ehed61">objectDesc/desc</head>
-                        <p>Enthält die Angaben zur Materialität und zum Typ des Korrespondenzstücks.
-                            Mehrere dieser Elemente sind erlaubt. </p>
-                        <div type="level4">
-                            <head xml:id="h.ddolrupl7wro">@n, @type="_blaetter" und
-                                @type="_seiten"</head>
-                            <p>Für Postkarten und Ähnliches ist keine solche Angabe nötig. Im
-                                Ausnahmefall kann das Element aber auch Inhalt haben. Da dies als
-                                alternative Beschreibung verwendet wird, ist dann die komplette
-                                Angabe notwendig.</p>
-                            <div type="example">
-                                <p>Beispiel 1: </p>
-                                <p>3 Blatt, 6 Seiten sehen so aus:</p>
-                                <p>
-                                    <code>&lt;desc n="3" type="_blaetter"/&gt;</code>
-                                </p>
-                                <p>
-                                    <code>&lt;desc n="6" type="_seiten"/&gt;</code>
-                                </p>
-                            </div>
-                            <div type="example">
-                                <p>Beispiel 2:</p>
-                                <p>
-                                    <code>&lt;desc n="3" type="_blaetter"&gt; 3 Blätter mit Lochung
-                                        &lt;/desc&gt;</code>
-                                </p>
-                            </div>
-                        </div>
-                        <div type="level4">
-                            <head xml:id="h.aeo34ktad7o9">@type und @subtype</head>
-                            <p>Für die Klassifizierung der Korrespondenztypen sind folgende Werte
-                                zulässig: </p>
+                    <div type="level4">
+                            <head xml:id="h.aeo34ktad7o9"objectType</head>
+                            <p>Die Klassifizierung der Korrespondenztypen erfolgt mit einem Vokabular an Werten, die
+                            in einem Haupt- und einem Unterattribut festgehalten sind. In Ausnahmefällen (»anderes«) enthält das Element auch
+                            einen beschreibenden Textinhalt. </p>
                             <table>
                                 <row>
-                                    <cell>@type</cell>
-                                    <cell>@subtype</cell>
+                                    <cell>@corresp</cell>
+                                    <cell>@sana</cell>
                                 </row>
                                 <row>
                                     <cell>anderes </cell>
@@ -571,14 +525,6 @@
                                 </row>
                                 <row>
                                     <cell>brief </cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>entwurf </cell>
-                                    <cell/>
-                                </row>
-                                <row>
-                                    <cell>fragment </cell>
                                     <cell/>
                                 </row>
                                 <row>
@@ -635,6 +581,58 @@
                             </div>
                         </div>
                     </div>
+                    <div type="level3">
+                        <head xml:id="h.4kqrmkxn6mbo">listBibl/biblStruct</head>
+                        <p>Über verschiedene <code>biblStruct</code>-Elemente werden Drucke
+                            verzeichnet, die das jeweilige Korrespondenzstück bislang erhalten hat.
+                            Mit einem Attribut <code>@corresp</code> sind ein paar Buchausgaben
+                            gekennzeichnet, die nicht zur Gänze, sondern nur als Sigle zitiert
+                            werden, beispielsweise die beiden Auswahlbriefbände. </p>
+                    </div>
+                </div>
+                <div type="level2">
+                    <head xml:id="h.e5iaxzaz0b4">physDesc</head>
+                    <p>Dabei handelt es sich um ein Kind von
+                            <code>listWit/witness[@n="1"]/msDesc</code>. <code>physDesc</code>
+                        enthält die Beschreibung der physischen Beschaffenheit des Archivzeugens.
+                        Drei bis vier Elemente machen im Normalfall <code>physDesc</code> aus: </p>
+                    <list>
+                        <item><code>objectDesc</code> – für das Material</item>
+                        <item><code>handDesc</code> – für die Handschriften</item>
+                        <item><code>typeDesc</code> – für den gedruckten/getippten Anteil</item>
+                        <item><code>additions</code> – für Hinzufügungen, nachdem das
+                            Korrespondenzstück übermittelt wurde</item>
+                    </list>
+                    <div type="level3">
+                        <head xml:id="h.4kcxg5ehed61">objectDesc/desc</head>
+                        <p>Enthält die Angaben zur Materialität und zum Typ des Korrespondenzstücks.
+                            Mehrere dieser Elemente sind erlaubt. </p>
+                        <div type="level4">
+                            <head xml:id="h.ddolrupl7wro">@n, @type="_blaetter" und
+                                @type="_seiten"</head>
+                            <p>Für Postkarten und Ähnliches ist keine solche Angabe nötig. Im
+                                Ausnahmefall kann das Element aber auch Inhalt haben. Da dies als
+                                alternative Beschreibung verwendet wird, ist dann die komplette
+                                Angabe notwendig.</p>
+                            <div type="example">
+                                <p>Beispiel 1: </p>
+                                <p>3 Blatt, 6 Seiten sehen so aus:</p>
+                                <p>
+                                    <code>&lt;desc n="3" type="_blaetter"/&gt;</code>
+                                </p>
+                                <p>
+                                    <code>&lt;desc n="6" type="_seiten"/&gt;</code>
+                                </p>
+                            </div>
+                            <div type="example">
+                                <p>Beispiel 2:</p>
+                                <p>
+                                    <code>&lt;desc n="3" type="_blaetter"&gt; 3 Blätter mit Lochung
+                                        &lt;/desc&gt;</code>
+                                </p>
+                            </div>
+                        </div>
+                        
                     <div type="level3">
                         <head xml:id="h.qw2h1um6d6u8">handDesc</head>
                         <p>Hier findet sich die Beschreibung der verschiedenen Handschriften auf
