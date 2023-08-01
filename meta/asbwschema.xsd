@@ -435,9 +435,9 @@
    <xs:element name="objectDesc">
       <xs:complexType>
          <xs:sequence>
-            <xs:element ref="tei:supportDesc" minOccurs="0" maxOccurs="1"/>
+            <xs:element minOccurs="1" maxOccurs="unbounded" ref="tei:supportDesc"/>
          </xs:sequence>
-         <xs:attribute name="form">
+         <xs:attribute name="form" >
             <xs:simpleType>
                <xs:restriction base="xs:string">
                   <xs:enumeration value="fotografie"/>
@@ -449,6 +449,7 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
+         <xs:assert test="tei:supportDesc"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="handNote">
