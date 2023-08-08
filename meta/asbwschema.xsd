@@ -400,7 +400,7 @@
       <xs:complexType>
          <xs:all>
             <xs:element ref="tei:support" minOccurs="0" maxOccurs="1"/>
-            <xs:element ref="tei:extent" maxOccurs="1" minOccurs="0"/>
+            <xs:element ref="tei:extent" maxOccurs="1" minOccurs="1"/>
             <xs:element ref="tei:condition" maxOccurs="1" minOccurs="0"/>
          </xs:all>
       </xs:complexType>
@@ -431,13 +431,12 @@
          <!-- 'support' element can have text content -->
       </xs:complexType>
    </xs:element>
-   <!-- Define the 'objectDesc' element with 'supportDesc' as its child and 'form' attribute -->
    <xs:element name="objectDesc">
       <xs:complexType>
-         <xs:sequence>
-            <xs:element minOccurs="1" maxOccurs="unbounded" ref="tei:supportDesc"/>
-         </xs:sequence>
-         <xs:attribute name="form" >
+         <xs:all>
+            <xs:element minOccurs="1" maxOccurs="1" ref="tei:supportDesc"/>
+         </xs:all>
+         <xs:attribute name="form">
             <xs:simpleType>
                <xs:restriction base="xs:string">
                   <xs:enumeration value="fotografie"/>
@@ -449,7 +448,6 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
-         <xs:assert test="tei:supportDesc"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="handNote">
