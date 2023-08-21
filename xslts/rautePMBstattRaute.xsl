@@ -76,7 +76,7 @@
                     </xsl:when>
                 </xsl:choose>
             </xsl:variable>
-            <xsl:variable name="current-xml-id" select="ancestor::tei:TEI[1]/@xml:id[1]/data()"/>
+            <xsl:variable name="current-xml-id" select="ancestor::tei:TEI[1]/@xml:id[1]"/>
             <xsl:for-each
                 select="collection('../?select=L0*.xml;recurse=yes')[descendant::tei:teiHeader[1]/tei:profileDesc[1]/tei:correspDesc[1]/tei:correspAction[1]/tei:date[@n = $nn and (@*[name() = 'when' or name() = 'notBefore' or name() = 'from'][1] = $attribute-when)]]/tei:TEI/@xml:id">
                 <xsl:if test="not(. = $current-xml-id)">
