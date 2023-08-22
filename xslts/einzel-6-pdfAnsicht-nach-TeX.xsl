@@ -1693,289 +1693,34 @@
          <xsl:text>)</xsl:text>
       </xsl:if>
    </xsl:function>
-   <xsl:template match="objectDesc/desc[@type = '_blaetter']">
-      <xsl:choose>
-         <xsl:when test="parent::objectDesc/desc/@type = 'karte'">
-            <xsl:choose>
-               <xsl:when test="@n = '1'">
-                  <xsl:value-of select="concat(@n, '&#160;Karte')"/>
-               </xsl:when>
-               <xsl:otherwise>
-                  <xsl:value-of select="concat(@n, '&#160;Karten')"/>
-               </xsl:otherwise>
-            </xsl:choose>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:choose>
-               <xsl:when test="@n = '1'">
-                  <xsl:value-of select="concat(@n, '&#160;Blatt')"/>
-               </xsl:when>
-               <xsl:otherwise>
-                  <xsl:value-of select="concat(@n, '&#160;Blätter')"/>
-               </xsl:otherwise>
-            </xsl:choose>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if test="string-length(.) &gt; 1">
-         <xsl:text> (</xsl:text>
-         <xsl:value-of select="normalize-space(.)"/>
-         <xsl:text>)</xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = '_seiten']">
-      <xsl:text>, </xsl:text>
-      <xsl:choose>
-         <xsl:when test="@n = '1'">
-            <xsl:value-of select="concat(@n, '&#160;Seite')"/>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:value-of select="concat(@n, '&#160;Seiten')"/>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if test="string-length(.) &gt; 1">
-         <xsl:text> (</xsl:text>
-         <xsl:value-of select="normalize-space(.)"/>
-         <xsl:text>)</xsl:text>
-      </xsl:if>
-      <xsl:if
-         test="preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'entwurf' or @type = 'reproduktion'] or following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'entwurf' or @type = 'reproduktion']">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc">
-      <xsl:apply-templates select="
-            desc[@type = 'karte' or @type = 'bild'
-            or @type = 'kartenbrief'
-            or @type = 'brief'
-            or @type = 'telegramm'
-            or @type = 'widmung'
-            or @type = 'anderes']"/>
-      <xsl:apply-templates select="desc[@type = '_blaetter']"/>
-      <xsl:apply-templates select="desc[@type = '_seiten']"/>
-      <xsl:apply-templates select="desc[@type = 'umschlag']"/>
-      <xsl:apply-templates select="desc[@type = 'reproduktion']"/>
-      <xsl:apply-templates select="desc[@type = 'entwurf']"/>
-      <xsl:apply-templates select="desc[@type = 'fragment']"/>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = 'karte']">
-      <xsl:choose>
-         <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:value-of select="normalize-space(.)"/>
-         </xsl:when>
-         <xsl:when test="@subtype = 'bildpostkarte'">
-            <xsl:text>Bildpostkarte</xsl:text>
-         </xsl:when>
-         <xsl:when test="@subtype = 'postkarte'">
-            <xsl:text>Postkarte</xsl:text>
-         </xsl:when>
-         <xsl:when test="@subtype = 'briefkarte'">
-            <xsl:text>Briefkarte</xsl:text>
-         </xsl:when>
-         <xsl:when test="@subtype = 'visitenkarte'">
-            <xsl:text>Visitenkarte</xsl:text>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>Karte</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if
-         test="(following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten']) or (preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten'])">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = 'reproduktion']">
-      <xsl:choose>
-         <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:value-of select="normalize-space(.)"/>
-         </xsl:when>
-         <xsl:when test="@subtype = 'fotokopie'">
-            <xsl:text>Fotokopie</xsl:text>
-         </xsl:when>
-         <xsl:when test="@subtype = 'fotografische_vervielfaeltigung'">
-            <xsl:text>fotografische Vervielfältigung</xsl:text>
-         </xsl:when>
-         <xsl:when test="@subtype = 'ms_abschrift'">
-            <xsl:text>maschinelle Abschrift</xsl:text>
-         </xsl:when>
-         <xsl:when test="@subtype = 'hs_abschrift'">
-            <xsl:text>handschriftliche Abschrift</xsl:text>
-         </xsl:when>
-         <xsl:when test="@subtype = 'durchschlag'">
-            <xsl:text>maschineller Durchschlag</xsl:text>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>Reproduktion</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if
-         test="(following-sibling::desc[@type = 'fragment' or @type = 'entwurf']) or (preceding-sibling::desc[@type = 'fragment' or @type = 'entwurf'])">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = 'widmung']">
-      <xsl:choose>
-         <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:value-of select="normalize-space(.)"/>
-         </xsl:when>
-         <xsl:when test="@subtype = 'widmung_vorsatzblatt'">
-            <xsl:text>Widmung am Vorsatzblatt</xsl:text>
-         </xsl:when>
-         <xsl:when test="@subtype = 'widmung_titelblatt'">
-            <xsl:text>Widmung am Titelblatt</xsl:text>
-         </xsl:when>
-         <xsl:when test="@subtype = 'widmung_vortitel'">
-            <xsl:text>Widmung am Vortitel</xsl:text>
-         </xsl:when>
-         <xsl:when test="@subtype = 'widmung_schmutztitel'">
-            <xsl:text>Widmung am Schmutztitel</xsl:text>
-         </xsl:when>
-         <xsl:when test="@subtype = 'widmung_umschlag'">
-            <xsl:text>Widmung am Umschlag</xsl:text>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>Widmung</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if
-         test="(following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf']) or (preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf'])">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = 'brief']">
-      <xsl:choose>
-         <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:value-of select="normalize-space(.)"/>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>Brief</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if
-         test="(following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter']) or (preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter'])">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = 'bild']">
-      <xsl:choose>
-         <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:value-of select="normalize-space(.)"/>
-         </xsl:when>
-         <xsl:when test="@subtype = 'fotografie'">
-            <xsl:text>Fotografie</xsl:text>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>Bild</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if
-         test="(following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf']) or (preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf'])">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = 'kartenbrief']">
-      <xsl:choose>
-         <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:value-of select="normalize-space(.)"/>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>Kartenbrief</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if
-         test="(following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten']) or (preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten'])">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = 'umschlag']">
-      <xsl:choose>
-         <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:value-of select="normalize-space(.)"/>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>Umschlag</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if
-         test="(following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf']) or (preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf'])">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = 'telegramm']">
-      <xsl:choose>
-         <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:value-of select="normalize-space(.)"/>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>Telegramm</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if
-         test="(following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf' or @type = '_blaetter' or @type = '_seiten']) or (preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf'])">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = 'anderes']">
-      <xsl:choose>
-         <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:value-of select="normalize-space(.)"/>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>XXXXAnderes</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if
-         test="(following-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf']) or (preceding-sibling::desc[@type = 'umschlag' or @type = 'fragment' or @type = 'reproduktion' or @type = 'entwurf'])">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = 'entwurf']">
-      <xsl:choose>
-         <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:value-of select="normalize-space(.)"/>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>Entwurf</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-      <xsl:if
-         test="(following-sibling::desc[@type = 'fragment']) or (preceding-sibling::desc[@type = 'fragment'])">
-         <xsl:text>, </xsl:text>
-      </xsl:if>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[@type = 'fragment']">
-      <xsl:choose>
-         <xsl:when test="string-length(normalize-space(.)) &gt; 1">
-            <xsl:value-of select="normalize-space(.)"/>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:text>Fragment</xsl:text>
-         </xsl:otherwise>
-      </xsl:choose>
-   </xsl:template>
-   <xsl:template match="objectDesc/desc[not(@type)]">
-      <xsl:text>XXXX desc-Fehler</xsl:text>
-   </xsl:template>
+   
    <xsl:template match="physDesc">
-      <xsl:text>
-\physDesc{</xsl:text>
+      <xsl:text>&#10;\physDesc{</xsl:text>
       <xsl:choose>
          <xsl:when
-            test="child::objectDesc or child::typeDesc or child::handDesc or child::additions">
-            <xsl:if test="objectDesc">
-               <xsl:apply-templates select="objectDesc"/>
-               <xsl:if test="typeDesc or handDesc">
-                  <xsl:text>
-\newline{}</xsl:text>
-               </xsl:if>
+            test="(ancestor::witness/objectType or child::objectDesc) and (child::typeDesc or child::handDesc or child::additions)">
+            <xsl:choose>
+               <xsl:when test="ancestor::witness/objectType and child::objectDesc">
+                  <xsl:apply-templates select="ancestor::witness/objectType" mode="physdesc"/>
+                  <xsl:text>, </xsl:text>
+                  <xsl:apply-templates select="child::objectDesc"/>
+               </xsl:when>
+               <xsl:when test="child::objectDesc">
+                  <xsl:apply-templates select="child::objectDesc"/>
+               </xsl:when>
+            </xsl:choose>
+            <xsl:if
+               test="(ancestor::witness/objectType or child::objectDesc) and child::*[not(name() = 'objectDesc')]">
+               <xsl:text>&#10;\newline{}</xsl:text>
             </xsl:if>
             <xsl:if test="typeDesc">
                <xsl:apply-templates select="typeDesc"/>
                <xsl:if test="handDesc">
-                  <xsl:text>
-\newline{}</xsl:text>
+                  <xsl:text>&#10;\newline{}</xsl:text>
                </xsl:if>
             </xsl:if>
             <xsl:if test="handDesc">
+               
                <xsl:apply-templates select="handDesc"/>
             </xsl:if>
             <xsl:if test="additions">
@@ -1990,6 +1735,198 @@
          </xsl:otherwise>
       </xsl:choose>
       <xsl:text>}</xsl:text>
+   </xsl:template>
+   <xsl:template match="objectType"/>
+   <xsl:template match="objectType" mode="physdesc">
+      <!-- VVV -->
+      <xsl:choose>
+         <xsl:when test="text() != ''">
+            <!-- für den Fall, dass Textinhalt, wird einfach dieser ausgegeben -->
+            <xsl:value-of select="normalize-space(.)"/>
+         </xsl:when>
+         <xsl:when test="@ana">
+            <xsl:choose>
+               <xsl:when test="@ana = 'fotografie'">
+                  <xsl:text>Fotografie</xsl:text>
+               </xsl:when>
+               <xsl:when test="@ana = 'entwurf' and @corresp = 'brief'">
+                  <xsl:text>Briefentwurf</xsl:text>
+               </xsl:when>
+               <xsl:when test="@ana = 'entwurf' and @corresp = 'telegramm'">
+                  <xsl:text>Telegrammentwurf</xsl:text>
+               </xsl:when>
+               <xsl:when test="@ana = 'bildpostkarte'">
+                  <xsl:text>Bildpostkarte</xsl:text>
+               </xsl:when>
+               <xsl:when test="@ana = 'postkarte'">
+                  <xsl:text>Postkarte</xsl:text>
+               </xsl:when>
+               <xsl:when test="@ana = 'briefkarte'">
+                  <xsl:text>Briefkarte</xsl:text>
+               </xsl:when>
+               <xsl:when test="@ana = 'visitenkarte'">
+                  <xsl:text>Visitenkarte</xsl:text>
+               </xsl:when>
+               <xsl:when test="@corresp = 'widmung'">
+                  <xsl:choose>
+                     <xsl:when test="@ana = 'widmung_vorsatzblatt'">
+                        <xsl:text>Widmung am Vorsatzblatt</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="@ana = 'widmung_titelblatt'">
+                        <xsl:text>Widmung am Titelblatt</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="@ana = 'widmung_schmutztitel'">
+                        <xsl:text>Widmung am Schmutztitel</xsl:text>
+                     </xsl:when>
+                     <xsl:when test="@ana = 'widmung_umschlag'">
+                        <xsl:text>Widmung am Umschlag</xsl:text>
+                     </xsl:when>
+                  </xsl:choose>
+               </xsl:when>
+            </xsl:choose>
+         </xsl:when>
+         <!-- ab hier ist nurmehr @corresp zu berücksichtigen, alle @ana-Fälle sind erledigt -->
+         <xsl:when test="@corresp = 'anderes'">
+            <xsl:text>Sonderfall</xsl:text>
+         </xsl:when>
+         <xsl:when test="@corresp = 'bild'">
+            <xsl:text>Bild</xsl:text>
+         </xsl:when>
+         <xsl:when test="@corresp = 'brief'">
+            <xsl:text>Brief</xsl:text>
+         </xsl:when>
+         <xsl:when test="@corresp = 'karte'">
+            <xsl:text>Karte</xsl:text>
+         </xsl:when>
+         <xsl:when test="@corresp = 'kartenbrief'">
+            <xsl:text>Kartenbrief</xsl:text>
+         </xsl:when>
+         <xsl:when test="@corresp = 'telegramm'">
+            <xsl:text>Telegramm</xsl:text>
+         </xsl:when>
+         <xsl:when test="@corresp = 'umschlag'">
+            <xsl:text>Umschlag</xsl:text>
+         </xsl:when>
+         <xsl:when test="@corresp = 'widmung'">
+            <xsl:text>Widmung</xsl:text>
+         </xsl:when>
+      </xsl:choose>
+   </xsl:template>
+   <xsl:template match="objectDesc">
+      <!-- VVV -->
+      <xsl:if test="@form">
+         <xsl:choose>
+            <xsl:when test="@form = 'durchschlag'">
+               <xsl:text>Durchschlag</xsl:text>
+            </xsl:when>
+            <xsl:when test="@form = 'fotografische_vervielfaeltigung'">
+               <xsl:text>Fotografische Vervielfältigung</xsl:text>
+            </xsl:when>
+            <xsl:when test="@form = 'fotokopie'">
+               <xsl:text>Fotokopie</xsl:text>
+            </xsl:when>
+            <xsl:when test="@form = 'hs_abschrift'">
+               <xsl:text>Handschriftliche Abschrift</xsl:text>
+            </xsl:when>
+            <xsl:when test="@form = 'ms_abschrift'">
+               <xsl:text>Maschinenschriftliche Abschrift</xsl:text>
+            </xsl:when>
+         </xsl:choose>
+      </xsl:if>
+      <xsl:if test="@form and supportDesc">
+         <xsl:text>, </xsl:text>
+      </xsl:if>
+      <xsl:apply-templates select="supportDesc"/>
+   </xsl:template>
+   <xsl:template match="supportDesc">
+      <xsl:choose>
+         <xsl:when test="extent/measure[2] or not(extent/measure/@quantity = 1)">
+            <!-- das übergeht Widmung, Kartenbrief und Karte, wenn nur eine Angabe -->
+            <xsl:apply-templates select="extent"/>
+         </xsl:when>
+      </xsl:choose>
+      <xsl:if test="support">
+         <xsl:apply-templates select="support"/>
+      </xsl:if>
+      <xsl:if test="condition/@ana = 'fragment'">
+         <xsl:text>, Fragment</xsl:text>
+      </xsl:if>
+   </xsl:template>
+   <xsl:template match="extent">
+      <xsl:variable name="unitOrder" select="'blatt seite karte kartenbrief widmung umschlag'"/>
+      <xsl:variable name="measures" select="." as="node()"/>
+      <xsl:for-each select="tokenize($unitOrder, ' ')">
+         <xsl:variable name="unit" select="." as="xs:string"/>
+         <xsl:apply-templates select="$measures/measure[@unit = $unit][1]"/>
+         <xsl:variable name="rest-unit-order"
+            select="normalize-space(substring-after($unitOrder, $unit))" as="xs:string?"/>
+         <xsl:variable name="kommakomma" as="xs:boolean">
+            <xsl:choose>
+               <xsl:when test="
+                  (
+                  contains($rest-unit-order, 'seite') and $measures/measure[@unit = 'seite'][1]
+                  ) or (
+                  contains($rest-unit-order, 'karte') and $measures/measure[@unit = 'karte'][1]
+                  ) or (
+                  contains($rest-unit-order, 'kartenbrief') and $measures/measure[@unit = 'kartenbrief'][1]
+                  ) or (
+                  contains($rest-unit-order, 'widmung') and $measures/measure[@unit = 'widmung'][1]
+                  ) or (
+                  contains($rest-unit-order, 'umschlag') and $measures/measure[@unit = 'umschlag'][1]
+                  )">
+                  <xsl:value-of select="true()"/>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:value-of select="false()"/>
+               </xsl:otherwise>
+            </xsl:choose>
+         </xsl:variable>
+         <xsl:if test="$kommakomma">
+            <xsl:text>, </xsl:text>
+         </xsl:if>
+      </xsl:for-each>
+   </xsl:template>
+   <xsl:template match="measure">
+      <xsl:choose>
+         <xsl:when test="@unit = 'seite' and @quantity = '1'">
+            <xsl:text>1&#160;Seite</xsl:text>
+         </xsl:when>
+         <xsl:when test="@unit = 'blatt' and @quantity = '1'">
+            <xsl:text>1&#160;Blatt</xsl:text>
+         </xsl:when>
+         <xsl:when test="@unit = 'umschlag' and @quantity = '1'">
+            <xsl:text>Umschlag</xsl:text>
+         </xsl:when>
+         <!-- hier fehlen die Varianten für »widmung«, »kartenbrief« oder »karte«  und @quantity='1' -->
+         <xsl:when test="@unit = 'seite'">
+            <xsl:value-of select="@quantity"/>
+            <xsl:text>&#160;Seiten</xsl:text>
+         </xsl:when>
+         <xsl:when test="@unit = 'blatt'">
+            <xsl:value-of select="@quantity"/>
+            <xsl:text>&#160;Blätter</xsl:text>
+         </xsl:when>
+         <xsl:when test="@unit = 'umschlag'">
+            <xsl:value-of select="@quantity"/>
+            <xsl:text>&#160;Umschläge</xsl:text>
+         </xsl:when>
+         <xsl:when test="@unit = 'widmung' and not(@quantity = '1')">
+            <xsl:value-of select="@quantity"/>
+            <xsl:text>&#160;Widmungen</xsl:text>
+         </xsl:when>
+         <xsl:when test="@unit = 'kartenbrief' and not(@quantity = '1')">
+            <xsl:value-of select="@quantity"/>
+            <xsl:text>&#160;Kartenbriefe</xsl:text>f </xsl:when>
+         <xsl:when test="@unit = 'karte' and not(@quantity = '1')">
+            <xsl:value-of select="@quantity"/>
+            <xsl:text>&#160;Karten</xsl:text>
+         </xsl:when>
+      </xsl:choose>
+   </xsl:template>
+   <xsl:template match="support">
+      <xsl:text> (</xsl:text>
+      <xsl:apply-templates/>
+      <xsl:text>)</xsl:text>
    </xsl:template>
    <xsl:template match="listBibl">
       <xsl:apply-templates/>
