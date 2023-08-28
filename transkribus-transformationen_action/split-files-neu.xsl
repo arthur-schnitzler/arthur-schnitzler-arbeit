@@ -100,7 +100,7 @@
                                     </licence>
                                 </availability>
                                 <idno type="handle"
-                                    >https://hdl.handle.net/21.11115/0000-000E-6B22-4</idno>
+                                    >XXXX</idno>
                             </publicationStmt>
                             <seriesStmt>
                                 <p>Machine-Readable Transcriptions of the Correspondences of Arthur
@@ -221,7 +221,7 @@
                                     </licence>
                                 </availability>
                                 <idno type="handle"
-                                    >https://hdl.handle.net/21.11115/0000-000E-6B22-4</idno>
+                                    >XXXX</idno>
                             </publicationStmt>
                             <seriesStmt>
                                 <p>Machine-Readable Transcriptions of the Correspondences of Arthur
@@ -230,6 +230,7 @@
                             <sourceDesc>
                                 <listWit>
                                     <witness n="1">
+                                        <objectType corresp=""></objectType>
                                         <msDesc>
                                             <msIdentifier>
                                                 <country>D</country>
@@ -239,8 +240,12 @@
                                             </msIdentifier>
                                             <physDesc>
                                                 <objectDesc>
-                                                    <desc/>
-                                                </objectDesc>
+                                                    <supportDesc>
+                                                        <extent>
+                                                            <measure unit="blatt" quantity=""/>
+                                                            <measure unit="seite" quantity=""/>
+                                                        </extent>
+                                                    </supportDesc>                                                </objectDesc>
                                                 <handDesc>
                                                     <handNote medium="" style="deutsche-kurrent"/>
                                                 </handDesc>
