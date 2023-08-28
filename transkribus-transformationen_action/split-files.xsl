@@ -70,11 +70,6 @@
                                     <name>Müller, Martin Anton</name>
                                     <name>Untner, Laura</name>
                                 </respStmt>
-                                <idno type="asbw">
-                                    <xsl:attribute name="n">
-                                    <xsl:value-of select="concat('L0', $nummer)"/>
-                                    </xsl:attribute>
-                                </idno>
                             </editionStmt>
                             <publicationStmt>
                                 <publisher>Austrian Centre for Digital Humanities and Cultural
@@ -126,7 +121,7 @@
                                     </licence>
                                 </availability>
                                 <idno type="handle"
-                                    >https://hdl.handle.net/21.11115/0000-000E-6B22-4</idno>
+                                    >XXXX</idno>
                             </publicationStmt>
                             <seriesStmt>
                                 <p>Machine-Readable Transcriptions of the Correspondences of Arthur
@@ -136,6 +131,7 @@
                                 <listWit>
                                     <witness n="1">
                                         <msDesc>
+                                            <objectType corresp=""/>
                                             <msIdentifier>
                                                 <country>
                                                   <xsl:value-of select="$archiv-land"/>
@@ -152,7 +148,12 @@
                                             </msIdentifier>
                                             <physDesc>
                                                 <objectDesc>
-                                                  <desc/>
+                                                    <supportDesc>
+                                                        <extent>
+                                                            <measure unit="blatt" quantity=""/>
+                                                            <measure unit="seite" quantity=""/>
+                                                        </extent>
+                                                    </supportDesc>
                                                 </objectDesc>
                                                 <handDesc>
                                                   <handNote medium="" style="deutsche-kurrent"/>
