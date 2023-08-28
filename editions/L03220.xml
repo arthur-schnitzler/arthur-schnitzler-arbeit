@@ -6,7 +6,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, XXXX</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 16. 8. 1902</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -90,6 +90,27 @@
                         <handDesc>
                            <handNote medium="" style="deutsche-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="">Leuk-Bad Loëche-Bains</placeName>
+                                    <!-- XXXX -->
+                                    <date when="1902-08-16">16. VIII. 02</date>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="2">
+                                    <placeName ref="#pmb50">9/3 Wien 72</placeName>
+                                    <date when="1902-08-18">18. 8. 02</date>
+                                    <time>11. V</time>
+                                    <addSpan>Bestellt</addSpan>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -103,8 +124,9 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1902-" n="">XXXX</date>
-               <placeName ref="#pmb168">Berlin</placeName>
+               <date when="1902-08-16" n="2">16. 8. 1902</date>
+               <placeName ref="">Leuk-Bad</placeName>
+               <!-- XXXX auch Aufenthaltsort in PMB eintragen -->
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -122,37 +144,26 @@
    </facsimile>
    <text>
       <body>
+         <div type="address">
+            <address>
+               <addrLine><pb facs="HS.NZ85.1.3172_0068"/>Herrn</addrLine>
+               <addrLine>Dr. Arthur Schnitzler</addrLine>
+               <addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine>
+               <addrLine><rs type="place" ref="#pmb397">IX. Frankgaße 1</rs>.</addrLine>
+            </address>
+         </div>
          <div type="writingSession" n="1">
-            <p>
-               <pb facs="HS.NZ85.1.3172_0068"/>
-               <addrLine>
-                  <addrLine> Herrn</addrLine>
-               </addrLine>
-               <addrLine>
-                  <addrLine>Dr. Arthur Schnitzler</addrLine>
-               </addrLine>
-               <addrLine>
-                  <addrLine>
-                     <rs type="place" ref="#pmb50">Wien</rs>
-                  </addrLine>
-               </addrLine>
-               <addrLine>
-                  <addrLine>
-                     <rs type="place" ref="">IX. Frankgaße 1</rs>.</addrLine>
-               </addrLine>
-               <pb facs="HS.NZ85.1.3172_0069"/>
-               
-            </p>
             <opener>
-               <hi rend="pre-print">
-                  <rs type="place" ref="">Gemmi</rs>. Passhöhe 2329 m.</hi>
-               <dateline>
-                  <date>16. Auguſt</date>. </dateline>
+               <p rend="left"><pb facs="HS.NZ85.1.3172_0069"/>
+                  <hi rend="pre-print">
+                     <rs type="place" ref="">Gemmi</rs>. Passhöhe 2329 m.</hi></p>
+               <dateline rend="left">
+                  <date when="1902-08-16">16. Auguſt</date>.</dateline>
             </opener>
-            <closer>Herzlichſte Grüße! Nächſtes Jahr mußt Du auch nach der <rs type="place" ref=""
+            <p>Herzlichſte Grüße! Nächſtes Jahr mußt Du auch nach der <rs type="place" ref=""
                   >Schweiz</rs>. Das iſt viel großartiger a<unclear>l</unclear>s <rs type="place"
                   ref="">Tirol</rs>. <lb/>Dein <signed>Paul Goldmnn </signed>
-            </closer>
+            </p>
          </div>
       </body>
       <back>
