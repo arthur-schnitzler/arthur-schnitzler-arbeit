@@ -19,7 +19,7 @@
                 </xsl:if>
             </xsl:for-each>
         </xsl:variable>
-        <xsl:variable name="heute" select="format-date(current-date(),'[Y0001]-[M01]-[D01]')"/>
+        <xsl:variable name="heute" select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
         <xsl:for-each select="tei:page[starts-with(@type, 'letter-begin')]">
             <xsl:variable name="nummer" select="$letzte-nummer + position()" as="xs:integer"/>
             <xsl:result-document href="../splitted-files/Y0{$nummer}.xml">
@@ -28,7 +28,7 @@
                     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
                     xml:id="L0XXXX"
                     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
-                    <!--<teiHeader>
+                    <teiHeader>
                         <fileDesc>
                             <titleStmt>
                                 <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und
@@ -99,8 +99,7 @@
                                             beschränken.</p>
                                     </licence>
                                 </availability>
-                                <idno type="handle"
-                                    >XXXX</idno>
+                                <idno type="handle">XXXX</idno>
                             </publicationStmt>
                             <seriesStmt>
                                 <p>Machine-Readable Transcriptions of the Correspondences of Arthur
@@ -114,7 +113,7 @@
                                                 <country>D</country>
                                                 <settlement>Marbach am Neckar</settlement>
                                                 <repository>Deutsches Literaturarchiv</repository>
-                                                <idno>A:Schnitzler, HS.NZ85.1.3166</idno>
+                                                <idno>A:Schnitzler, HS.NZ85.1.3172</idno>
                                             </msIdentifier>
                                             <physDesc>
                                                 <objectDesc>
@@ -136,8 +135,8 @@
                             <correspDesc>
                                 <correspAction type="sent">
                                     <persName ref="#11485">Goldmann, Paul</persName>
-                                    <date when="1896-" n="">XXXX</date>
-                                    <placeName ref="#182">Paris</placeName>
+                                    <date when="1902-" n="">XXXX</date>
+                                    <placeName ref="#168">Berlin</placeName>
                                 </correspAction>
                                 <correspAction type="received">
                                     <persName ref="#2121">Schnitzler, Arthur</persName>
@@ -148,8 +147,8 @@
                         <revisionDesc status="proposed">
                             <change who="LU" when="{$heute}">Export aus Transkribus</change>
                         </revisionDesc>
-                    </teiHeader>-->
-                    <teiHeader>
+                    </teiHeader>
+                    <!--<teiHeader>
                         <fileDesc>
                             <titleStmt>
                                 <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und
@@ -274,7 +273,7 @@
                         <revisionDesc status="proposed">
                             <change who="MAM" when="{$heute}">Export aus Transkribus</change>
                         </revisionDesc>
-                    </teiHeader>
+                    </teiHeader>-->
                     <text>
                         <body>
                             <xsl:element name="div" namespace="http://www.tei-c.org/ns/1.0">
@@ -285,8 +284,9 @@
                                     <xsl:value-of select="'1'"/>
                                 </xsl:attribute>
                                 <xsl:copy-of select="."/>
-                                <xsl:if test="@type !='letter-begin-end'">
-                                    <xsl:for-each select="following-sibling::tei:page[not(contains(@type,'begin'))]">
+                                <xsl:if test="@type != 'letter-begin-end'">
+                                    <xsl:for-each
+                                        select="following-sibling::tei:page[not(contains(@type, 'begin'))]">
                                         <xsl:copy-of select="."/>
                                     </xsl:for-each>
                                 </xsl:if>
