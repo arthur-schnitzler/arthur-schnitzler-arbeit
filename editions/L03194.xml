@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L03194"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03194"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -72,8 +70,8 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
-                     <objectType corresp=""/>
                      <msIdentifier>
                         <country>D</country>
                         <settlement>Marbach am Neckar</settlement>
@@ -84,14 +82,20 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="blatt" quantity=""/>
-                                 <measure unit="seite" quantity=""/>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="4"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Jahr »<quote><date when="1902"
+                                          ><supplied>1</supplied>902</date></quote>« vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -111,7 +115,8 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
-               <date evidence="conjecture" notBefore="1902-01-21" notAfter="1902-01-25">[21. 1. 1902 – 25. 1. 1902?]</date>
+               <date evidence="conjecture" notBefore="1902-01-21" notAfter="1902-01-25">[21. 1. 1902
+                  – 25. 1. 1902?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -131,30 +136,35 @@
             <opener>
                <dateline rend="left">
                   <pb facs="HS.NZ85.1.3172_0008-1"/>
-                  <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1902-01-20">20. Januar</date>.</dateline>
+                  <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1902-01-20"
+                     >20. Januar</date>.</dateline>
                <p rend="right">
                   <rs type="place" ref="#pmb40583">
-                     <hi rend="pre-print">Dessauerstrasse 19</hi>
+                     <hi rend="pre-print"><hi rend="capitals">Dessauerstrasse</hi> 19</hi>
                   </rs>
                </p>
             </opener>
             <p>
                <salute rend="inline">Mein lieber Freund,</salute> dass Du dir keiner Schuld bewußt
-               biſt, iſt zweifellos, – ebenſo, daß Du <add>nie</add> mir <del rend="strikethrough">nie</del> mit Abſicht wehgethan haſt. Dazu biſt Du viel zu gut und mir viel zu
+               biſt, iſt zweifellos, – ebenſo, daß Du <add>nie</add> mir <del rend="strikethrough"
+                  >nie</del> mit Abſicht wehgethan haſt. Dazu biſt Du viel zu gut und mir viel zu
                gut. <del rend="strikethrough">D<unclear>ie</unclear>
                </del>
                <del rend="strikethrough">
                   <gap/>Xu<gap/>X</del> Trotzdem haſt Du eine Schuld, und ſie liegt darin (Dir
                unbewußt, mir ſeit Jahren bewußt und recht ſchmerzlich bewußt), daß in unſerer
-               Freundſchaft Du mir längſt nicht mehr das gleiche wiedergibſt, <del rend="strikethrough">w<add/>
+               Freundſchaft Du mir längſt nicht mehr das gleiche wiedergibſt, <del
+                  rend="strikethrough">w<add/>
                </del>
                <add>D</add>as ich Dir gebe, – daß Du <del rend="strikethrough">es Dir
-                  fe<gap/>X</del> es Dir, von Dir erfüllt, ſeit Langem abgewöhnt haſt, <del rend="strikethrough">r</del> gründlich auch auf mich einzugehen. Ich lebe mit Dir
+                  fe<gap/>X</del> es Dir, von Dir erfüllt, ſeit Langem abgewöhnt haſt, <del
+                  rend="strikethrough">r</del> gründlich auch auf mich einzugehen. Ich lebe mit Dir
                viel mehr, als Du mit mir lebſt. Und ich habe ſeit Langem den Eindruck, daß ich (ich
                muß das Wort wieder gebrauchen, <del rend="strikethrough">ob<unclear>w</unclear>
                </del> obwohl es Dir mißfällt) nicht viel mehr bin, als eine Bequemlichkeit in Deinem
                Leben. Die Beweiſe? So etwas kann man nur fühlen, aber nicht beweiſen. Aber wenn Du
-               Beweiſe willſt, ſo denke an unſeren Briefwechſel, all’ die Jahre hindurch. Denke <pb facs="HS.NZ85.1.3172_0009-0"/> daran, wie viel von Dir darin ſteht und wie wenig
+               Beweiſe willſt, ſo denke an unſeren Briefwechſel, all’ die Jahre hindurch. Denke <pb
+                  facs="HS.NZ85.1.3172_0009-0"/> daran, wie viel von Dir darin ſteht und wie wenig
                von mir. Oh, es hat an Anfragen nach meinen Erlebniſſen von Deiner Seite nicht
                gefehlt. Aber Du haſt Dich ſtets leicht dabei beruhigt, wenn ich mich, wie es zumeiſt
                geſchah, nicht habe entſchließen können, ſie zu beantworten. Nun weiß ich ja, daß in
@@ -172,11 +182,14 @@
                Aufrichtung, die ich von Deiner Freundſchaft erwartet hatte, nicht habe finden können
                und daß ich vom Beiſammenſein mit Dir nur noch verſtimmter und gedrückter heimgekehrt
                bin. Und das muß umſo mehr geſagt werden, als es in der letzten Zeit mehrfach dahin
-               gekommen iſt, daß Du, weil Du eben nicht gründlich genug auf mich eingehſt, mich <del rend="strikethrough">
+               gekommen iſt, daß Du, weil Du eben nicht gründlich genug auf mich eingehſt, mich <del
+                  rend="strikethrough">
                   <gap/>X</del> nicht verſtanden und mich darum verletzt haſt. Du haſt, wenn ich
                mich darüber erregt habe, darin nichts geſehen, als eine koloſſale Empfindlichkeit.
                Ich will Dir nur ſagen, daß die Gründe dieſer koloſſalen Empfindlichkeit tiefer
-               liegen und daß unſere Differenzen nicht blos daher gekommen ſind, weil Du ein <rs type="work" ref="">Feuilleton</rs> von mir ungünſtig beurtheilt <del rend="strikethrough">haſt und<unclear>, arb</unclear>
+               liegen und daß unſere Differenzen nicht blos daher gekommen ſind, weil Du ein <rs
+                  type="work" ref="">Feuilleton</rs> von mir ungünſtig beurtheilt <del
+                  rend="strikethrough">haſt und<unclear>, arb</unclear>
                </del> oder weil Du mir eine »Nachricht« gegeben haſt. </p>
             <p>Zweck hat es nicht viel, das Alles zu ſagen. Ändern wird ſich dadurch nichts. Unſer
                Verhältniß hat die Geſtalt angenommen, <pb facs="HS.NZ85.1.3172_0008-0"/> die es
@@ -231,17 +244,24 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="kraus1933"
+                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
             <person xml:id="pmb2167">
                <persName>
@@ -275,18 +295,26 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118840819</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2167/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp43175</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
+               <idno type="URL" subtype="kraus1933"
+                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284367</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q163747</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Felix_Salten</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Felix_Salten</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -313,18 +341,23 @@
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
          </listPlace>
       </back>

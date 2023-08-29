@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L03215"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03215"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -72,8 +70,8 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
+                  <objectType corresp="brief"/>
                   <msDesc>
-                     <objectType corresp=""/>
                      <msIdentifier>
                         <country>D</country>
                         <settlement>Marbach am Neckar</settlement>
@@ -84,14 +82,21 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="blatt" quantity=""/>
-                                 <measure unit="seite" quantity=""/>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="4"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Jahr »<quote><date when="1902"
+                                          ><supplied>1</supplied>90<unclear>2</unclear></date></quote>«
+                                 vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -111,7 +116,8 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien?</placeName>
-               <date evidence="conjecture" notBefore="1902-07-31" notAfter="1902-08-04">[31. 7. 1902 – 4. 8. 1902?]</date>
+               <date evidence="conjecture" notBefore="1902-07-31" notAfter="1902-08-04">[31. 7. 1902
+                  – 4. 8. 1902?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -136,6 +142,7 @@
                   <date when="1902-07-30">30. Juli</date>.</dateline>
                <salute rend="center">Mein lieber Freund,</salute>
             </opener>
+            <!-- XXXX Schnitzler könnte auch 903 datiert haben -> war Goldi 1903 in der Schweiz? -->
             <p>Ich bin hier auf der Durchreiſe nach der <rs type="place" ref="">Schweiz</rs>. Bitte,
                ſchreib’ mir ein Wort über Dein und <hi rend="latintype">
                   <rs type="person" ref="#pmb2173">Olga</rs>s</hi> Ergehen <foreign xml:lang="">
@@ -150,14 +157,22 @@
                   <rs type="place" ref="">(Schweiz)</rs>
                </hi>, wo ich etwa <del rend="strikethrough">
                   <unclear>den</unclear>
-               </del> am <date>5. Auguſt</date> eintreffe. Läßt ſich ſchon der Tag des großen <pb facs="HS.NZ85.1.3172_0058-0"/>
+               </del> am <date>5. Auguſt</date> eintreffe. Läßt ſich ſchon der Tag des großen <pb
+                  facs="HS.NZ85.1.3172_0058-0"/>
                <del rend="strikethrough">Ereigniſſ<unclear>te</unclear>
-               </del> Ereigniſſes ungeführ präciſiren? Ich wäre für eine Depeſche <del rend="strikethrough">übe</del> über das Ereigniß ſelbſt ſehr dankbar und möchte
-               namentlich wiſſen, ob Du den <rs type="person" ref="">Sohn</rs> haſt, <del rend="strikethrough">den</del> den ich Dir wünſche. </p>
-            <p>Hier habe ich Deine <rs type="work" ref="">Geſchichten</rs> en der »<rs type="work" ref="">Zeit</rs>« und in der »<rs type="work" ref="">Jugend</rs>« geleſen. Die <rs type="work" ref="">erſte</rs> hat mir gar nicht gefallen, die <rs type="work" ref="">zweite</rs> finde ich <pb facs="HS.NZ85.1.3172_0058-1"/> köſtlich. Oh Gott,
-               wenn Du doch der Humoriſt, der glänzende Humoriſt <del rend="strikethrough">i<unclear>mm</unclear>
+               </del> Ereigniſſes ungeführ präciſiren? Ich wäre für eine Depeſche <del
+                  rend="strikethrough">übe</del> über das Ereigniß ſelbſt ſehr dankbar und möchte
+               namentlich wiſſen, ob Du den <rs type="person" ref="">Sohn</rs> haſt, <del
+                  rend="strikethrough">den</del> den ich Dir wünſche. </p>
+            <p>Hier habe ich Deine <rs type="work" ref="">Geſchichten</rs> en der »<rs type="work"
+                  ref="">Zeit</rs>« und in der »<rs type="work" ref="">Jugend</rs>« geleſen. Die <rs
+                  type="work" ref="">erſte</rs> hat mir gar nicht gefallen, die <rs type="work"
+                  ref="">zweite</rs> finde ich <pb facs="HS.NZ85.1.3172_0058-1"/> köſtlich. Oh Gott,
+               wenn Du doch der Humoriſt, der glänzende Humoriſt <del rend="strikethrough"
+                     >i<unclear>mm</unclear>
                </del> immer ſein wollteſt, <del rend="strikethrough">d<unclear>e</unclear>
-               </del> der Du biſt! Einen Stoff<unclear>e</unclear> humoriſtiſch <rs type="work" ref="">behandeln</rs> heißt ſich über ihn erheben. Ich glaube, das ſollte in den
+               </del> der Du biſt! Einen Stoff<unclear>e</unclear> humoriſtiſch <rs type="work"
+                  ref="">behandeln</rs> heißt ſich über ihn erheben. Ich glaube, das ſollte in den
                Jahren der Reife das höchſte Ziel ſein. </p>
             <closer>Bitte, grüße mir <hi rend="latintype">
                   <rs type="person" ref="">Richard</rs>
@@ -209,17 +224,24 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="kraus1933"
+                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
             <person xml:id="pmb2167">
                <persName>
@@ -253,18 +275,26 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118840819</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2167/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp43175</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
+               <idno type="URL" subtype="kraus1933"
+                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284367</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q163747</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Felix_Salten</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Felix_Salten</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -291,18 +321,23 @@
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
          </listPlace>
       </back>
