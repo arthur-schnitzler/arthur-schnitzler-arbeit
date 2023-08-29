@@ -33,8 +33,8 @@
                             <titleStmt>
                                 <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und
                                     Autoren</title>
-                                <title level="a">Paul Goldmann an Arthur Schnitzler, XXXX</title>
-                                <author ref="#pmb11485">Goldmann, Paul</author>
+                                <title level="a">Arthur Schnitzler an Felix Salten, XXXX</title>
+                                <author ref="#pmb2121">Schnitzler, Arthur</author>
                                 <editor>
                                     <name>Müller, Martin Anton</name>
                                     <name>Untner, Laura</name>
@@ -108,128 +108,7 @@
                             <sourceDesc>
                                 <listWit>
                                     <witness n="1">
-                                        <msDesc>
-                                            <msIdentifier>
-                                                <country>D</country>
-                                                <settlement>Marbach am Neckar</settlement>
-                                                <repository>Deutsches Literaturarchiv</repository>
-                                                <idno>A:Schnitzler, HS.NZ85.1.3172</idno>
-                                            </msIdentifier>
-                                            <physDesc>
-                                                <objectDesc>
-                                                  <desc/>
-                                                </objectDesc>
-                                                <handDesc>
-                                                  <handNote medium="" style="deutsche-kurrent"/>
-                                                </handDesc>
-                                            </physDesc>
-                                        </msDesc>
-                                    </witness>
-                                </listWit>
-                            </sourceDesc>
-                        </fileDesc>
-                        <profileDesc>
-                            <langUsage>
-                                <language ident="de-AT">German</language>
-                            </langUsage>
-                            <correspDesc>
-                                <correspAction type="sent">
-                                    <persName ref="#11485">Goldmann, Paul</persName>
-                                    <date when="1902-" n="">XXXX</date>
-                                    <placeName ref="#168">Berlin</placeName>
-                                </correspAction>
-                                <correspAction type="received">
-                                    <persName ref="#2121">Schnitzler, Arthur</persName>
-                                    <placeName ref="#50">Wien</placeName>
-                                </correspAction>
-                            </correspDesc>
-                        </profileDesc>
-                        <revisionDesc status="proposed">
-                            <change who="LU" when="{$heute}">Export aus Transkribus</change>
-                        </revisionDesc>
-                    </teiHeader>
-                    <!--<teiHeader>
-                        <fileDesc>
-                            <titleStmt>
-                                <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und
-                                    Autoren</title>
-                                <title level="a">Arthur Schnitzler an Felix Salten, XXXX</title>
-                                <author ref="#pmb2121">Schnitzler, Arthur</author>
-                                <editor>
-                                    <name>Müller, Martin Anton</name>
-                                    <name>Untner, Laura</name>
-                                </editor>
-                                <funder>
-                                    <name>FWF - Der Wissenschaftsfonds</name>
-                                    <address>
-                                        <street>Sensengasse 1</street>
-                                        <postCode>1090 Wien</postCode>
-                                        <placeName>
-                                            <country>A</country>
-                                            <settlement>Wien</settlement>
-                                        </placeName>
-                                    </address>
-                                </funder>
-                            </titleStmt>
-                            <editionStmt>
-                                <edition>ASBW</edition>
-                                <respStmt>
-                                    <resp>Transkription und Kommentierung</resp>
-                                    <name>Müller, Martin Anton</name>
-                                    <name>Untner, Laura</name>
-                                </respStmt>
-                                <idno type="asbw">L0XXXX</idno>
-                            </editionStmt>
-                            <publicationStmt>
-                                <publisher>Austrian Centre for Digital Humanities and Cultural
-                                    Heritage</publisher>
-                                <pubPlace>Vienna</pubPlace>
-                                <date when="2023">2023</date>
-                                <availability>
-                                    <licence
-                                        target="https://creativecommons.org/licenses/by/4.0/deed.de">
-                                        <p>Sie dürfen: Teilen — das Material in jedwedem Format oder
-                                            Medium vervielfältigen und weiterverbreiten Bearbeiten —
-                                            das Material remixen, verändern und darauf aufbauen und
-                                            zwar für beliebige Zwecke, sogar kommerziell.</p>
-                                        <p>Der Lizenzgeber kann diese Freiheiten nicht widerrufen
-                                            solange Sie sich an die Lizenzbedingungen halten. Unter
-                                            folgenden Bedingungen:</p>
-                                        <p>Namensnennung — Sie müssen angemessene Urheber- und
-                                            Rechteangaben machen, einen Link zur Lizenz beifügen und
-                                            angeben, ob Änderungen vorgenommen wurden. Diese Angaben
-                                            dürfen in jeder angemessenen Art und Weise gemacht
-                                            werden, allerdings nicht so, dass der Eindruck entsteht,
-                                            der Lizenzgeber unterstütze gerade Sie oder Ihre Nutzung
-                                            besonders. Keine weiteren Einschränkungen — Sie dürfen
-                                            keine zusätzlichen Klauseln oder technische Verfahren
-                                            einsetzen, die anderen rechtlich irgendetwas untersagen,
-                                            was die Lizenz erlaubt.</p>
-                                        <p>Hinweise:</p>
-                                        <p>Sie müssen sich nicht an diese Lizenz halten hinsichtlich
-                                            solcher Teile des Materials, die gemeinfrei sind, oder
-                                            soweit Ihre Nutzungshandlungen durch Ausnahmen und
-                                            Schranken des Urheberrechts gedeckt sind. Es werden
-                                            keine Garantien gegeben und auch keine Gewähr geleistet.
-                                            Die Lizenz verschafft Ihnen möglicherweise nicht alle
-                                            Erlaubnisse, die Sie für die jeweilige Nutzung brauchen.
-                                            Es können beispielsweise andere Rechte wie
-                                            Persönlichkeits- und Datenschutzrechte zu beachten sein,
-                                            die Ihre Nutzung des Materials entsprechend
-                                            beschränken.</p>
-                                    </licence>
-                                </availability>
-                                <idno type="handle"
-                                    >XXXX</idno>
-                            </publicationStmt>
-                            <seriesStmt>
-                                <p>Machine-Readable Transcriptions of the Correspondences of Arthur
-                                    Schnitzler</p>
-                            </seriesStmt>
-                            <sourceDesc>
-                                <listWit>
-                                    <witness n="1">
-                                        <objectType corresp=""></objectType>
+                                        <objectType corresp=""/>
                                         <msDesc>
                                             <msIdentifier>
                                                 <country>D</country>
@@ -239,14 +118,15 @@
                                             </msIdentifier>
                                             <physDesc>
                                                 <objectDesc>
-                                                    <supportDesc>
-                                                        <extent>
-                                                            <measure unit="blatt" quantity=""/>
-                                                            <measure unit="seite" quantity=""/>
-                                                        </extent>
-                                                    </supportDesc>                                                </objectDesc>
+                                                  <supportDesc>
+                                                  <extent>
+                                                  <measure unit="blatt" quantity=""/>
+                                                  <measure unit="seite" quantity=""/>
+                                                  </extent>
+                                                  </supportDesc>
+                                                </objectDesc>
                                                 <handDesc>
-                                                    <handNote medium="" style="deutsche-kurrent"/>
+                                                  <handNote medium="" style="deutsche-kurrent"/>
                                                 </handDesc>
                                             </physDesc>
                                         </msDesc>
@@ -273,7 +153,7 @@
                         <revisionDesc status="proposed">
                             <change who="MAM" when="{$heute}">Export aus Transkribus</change>
                         </revisionDesc>
-                    </teiHeader>-->
+                    </teiHeader>
                     <text>
                         <body>
                             <xsl:element name="div" namespace="http://www.tei-c.org/ns/1.0">
