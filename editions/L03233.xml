@@ -6,7 +6,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, XXXX</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 3. 5. [1905]</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -70,7 +70,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp=""/>
+                  <objectType corresp="karte" ana="postkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -82,14 +82,45 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="blatt" quantity=""/>
-                                 <measure unit="seite" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                        <handDesc hands="2">
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"
+                              corresp="#pmb11485"/>
+                           <handNote medium="blaue_tinte" style="lateinische-kurrent"
+                              corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb50">Wien 1/1 15</placeName>
+                                    <date when="1905-05-03">3.&#160;5.&#160;05</date>
+                                    <time>11–12&#160;V</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="2">
+                                    <placeName ref="#pmb50">Wien</placeName>
+                                    <date when="1905-05-03">3.&#160;5.&#160;05</date>
+                                    <time>3&#160;N</time>
+                                    <addSpan>Bestellt</addSpan>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Jahr »<quote>
+                                    <date when="1905">
+                                       <supplied>19</supplied>05</date>
+                                 </quote>« vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -103,63 +134,109 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="" n="01">XXXX</date>
-               <placeName ref="#pmb168">Berlin</placeName>
+               <date when="1905-05-03" n="01">3.&#160;5.&#160;1905</date>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+               <date when="1905-05-03">3.&#160;5.&#160;1905</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="KSK" when="2023-08-30">Export aus Transkribus</change>
+         <change who="KSK" when="2023-08-31">Einfügen der Metadaten</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <graphic url="HS.NZ85.1.3175_0002"/>
-      <graphic url="HS.NZ85.1.3175_0003"/>
+      <graphic url="HS.NZ85.1.3175_0001"/>
    </facsimile>
    <text>
       <body>
+         <div type="address">
+            <address>
+               <addrLine>
+                  <pb facs="HS.NZ85.1.3175_0001"/>
+                  <hi rend="pre-print">An</hi> Herrn</addrLine>
+               <addrLine>Dr. Arthur Schnitzler</addrLine>
+               <addrLine>
+                  <hi rend="pre-print">in</hi>
+                  <space unit="chars" quantity="1"/>
+                  <rs type="place" ref="#pmb50">Wien</rs>
+               </addrLine>
+               <addrLine>
+                  <rs type="place" ref="#pmb133">XVIII. Spöttelgaſse 7</rs>.</addrLine>
+            </address>
+         </div>
          <div type="writingSession" n="1">
             <opener>
-               <pb facs="HS.NZ85.1.3175_0002"/>
-               <dateline>
-                  <rs type="place" ref=""> Wien</rs>
-                  <date>3. Mai</date>. <date>3. Mai</date>.</dateline>
+               <dateline><pb facs="HS.NZ85.1.3175_0002"/>
+                  <rs type="place" ref="#pmb50">Wien</rs>
+                  <date when="1905-05-03">3. Mai</date>. </dateline>
                <salute>Lieber Freund,</salute>
-            </opener>
-            <p>
-               
-            </p>
-            <p>Darf ich <date>morgen, Donnerſtag,</date>
-               <time>Abend</time> zu Dir kommen? 
-            </p>
+               </opener>
+            <p>Darf ich <date when="1905-05-04">morgen, Donnerſtag,</date>
+               <time>Abend</time> zu Dir kommen? </p>
             <closer>Herzliche<del rend="strikethrough">n</del> Grüße Dir und Deiner <rs
-                  type="person" ref="">Frau</rs>! <lb/>Dein</closer>
-            <closer>
-               <lb/>
+                  type="person" subtype="implied" ref="#pmb2173">Frau</rs>! <lb/>Dein <lb/>
                <signed>Paul Goldmann</signed>
             </closer>
-            <p>
-               <postscript>
-                  <rs type="place" ref="">Grand Hotel</rs>.</postscript>
-               <pb facs="HS.NZ85.1.3175_0003"/>
-               <addrLine>
-                  <hi rend="pre-print">An</hi>
-               </addrLine>
-               <addrLine>Herrn</addrLine>
-               <addrLine>Dr. Arthur Schnitzler</addrLine>
-               <addrLine>in <rs type="place" ref="">Wien</rs>
-               </addrLine>
-               <addrLine>
-                  <rs type="place" ref="">XVIII. Spöttelgaſse 7</rs>.</addrLine>
-            </p>
+            <postscript>
+               <p>
+                  <rs type="place" ref="#pmb255">Grand Hotel</rs>.</p>
+            </postscript>
          </div>
       </body>
       <back>
          <listPerson>
+            <person xml:id="pmb11485">
+               <persName>
+                  <forename>Paul</forename>
+                  <surname>Goldmann</surname>
+               </persName>
+               <birth>
+                  <date when="1865-01-31">31.01.1865</date>
+                  <settlement ref="pmb677">
+                     <placeName type="pref">Breslau</placeName>
+                     <location>
+                        <geo>51,10773 17,03533</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1935-09-25">25.09.1935</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15529</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116755105</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11485/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-lektueren"
+                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp51209</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0028183c</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2059817</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Paul_Goldmann</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb11485.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11485.html</idno>
+            </person>
             <person xml:id="pmb2121">
                <persName>
                   <forename>Arthur</forename>
@@ -206,58 +283,49 @@
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
-            <person xml:id="pmb2167">
+            <person xml:id="pmb2173">
                <persName>
-                  <forename>Felix</forename>
-                  <surname>Salten</surname>
+                  <forename>Olga</forename>
+                  <surname>Schnitzler</surname>
                </persName>
-               <persName type="person_geburtsname-vorname">Siegmund</persName>
-               <persName type="person_geburtsname_nachname">Salzmann</persName>
-               <persName type="x_zum-loschen-markiert">X</persName>
-               <persName type="person_pseudonym">Sascha</persName>
-               <persName type="person_pseudonym">Martin Finder</persName>
+               <persName type="person_geburtsname_nachname">Gussmann</persName>
+               <persName type="person_pseudonym">Dina Marius</persName>
+               <persName type="legacy-name-merge">Schnitzler, Olga</persName>
                <birth>
-                  <date when="1869-09-06">06.09.1869</date>
-                  <settlement ref="pmb43471">
-                     <placeName type="pref">Budapest</placeName>
+                  <date when="1882-01-17">17.01.1882</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>47,49835 19,04045</geo>
+                        <geo>48,2066 16,37341</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1945-10-08">08.10.1945</date>
-                  <settlement ref="pmb484">
-                     <placeName type="pref">Zürich</placeName>
+                  <date when="1970-01-13">13.01.1970</date>
+                  <settlement ref="pmb885">
+                     <placeName type="pref">Lugano</placeName>
                      <location>
-                        <geo>47,37174 8,54226</geo>
+                        <geo>46,01008 8,96004</geo>
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118840819</idno>
+               <sex value="female"/>
+               <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
+               <occupation ref="pmb107">Sänger/Sängerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116848723</idno>
                <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2167/</idno>
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2173/</idno>
                <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19832</idno>
                <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp43175</idno>
-               <idno type="URL" subtype="kraus1933"
-                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
-               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284367</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q163747</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Felix_Salten</idno>
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp50811</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q55884531</idno>
                <idno type="URL" subtype="schnitzler-kino"
-                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2173.html</idno>
                <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2173.html</idno>
             </person>
          </listPerson>
          <listPlace>
@@ -301,6 +369,55 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+            </place>
+            <place xml:id="pmb133">
+               <placeName>Edmund-Weiß-Gasse</placeName>
+               <placeName type="ort_fruherer_name">Spöttelgasse</placeName>
+               <desc type="entity_type">Straße (K.STR)</desc>
+               <desc type="entity_type_id">26</desc>
+               <location type="coords">
+                  <geo>48,23056 16,3348</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb133.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/133/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb133.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92539/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92539.html</idno>
+               <idno type="URL" subtype="geonames">https://www.geonames.org/12495676</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb133.html</idno>
+            </place>
+            <place xml:id="pmb255">
+               <placeName>Grand Hotel Wien</placeName>
+               <desc type="entity_type">Hotel (K.HTL)</desc>
+               <desc type="entity_type_id">12</desc>
+               <location type="coords">
+                  <geo>48,202111 16,372194</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb255.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/255/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb255.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb255</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1536160</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Grand_Hotel_Wien</idno>
+               <note type="apis_dates">
+                  <date notBefore="1870-01-01" when="1870-07-02">1870</date>
+               </note>
             </place>
          </listPlace>
       </back>
