@@ -80,6 +80,30 @@
                                     <String>text/any</String>
                                 </field>
                                 <field name="unparsedInsertString">
+                                    <String>&lt;additions>
+    &lt;incident type="archival">
+        &lt;desc>mit Bleistift von unbekannter Hand Blattzählung: »&lt;quote>x&lt;/quote>«&lt;/desc>
+    &lt;/incident>
+&lt;/additions></String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>Blattzählung (additions)</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/any</String>
+                                </field>
+                                <field name="unparsedInsertString">
                                     <String>&lt;opener>&lt;p>&lt;pb facs=""/>&lt;hi rend="pre-print">&lt;rs type="org" ref="#pmb29442">Frankfurter Zeitung&lt;/rs>.&lt;/hi>&lt;/p>
     &lt;p>&lt;hi rend="pre-print">(&lt;rs type="org" ref="#pmb29442">Gazette de Francfort&lt;/rs>.)&lt;/hi>&lt;/p>
     &lt;p>&lt;hi rend="pre-print">Directeur &lt;hi rend="bold">M. &lt;rs type="person" ref="#pmb87771">L. Sonnemann&lt;/rs>&lt;/hi>.&lt;/hi>&lt;/p>
@@ -554,6 +578,30 @@
                                 </field>
                                 <field name="renderString">
                                     <String>nummeriert (additions)</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/any</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;additions>
+    &lt;incident type="archival">
+        &lt;desc>mit Bleistift von unbekannter Hand paginiert: »&lt;quote>x&lt;/quote>«&lt;/desc>
+    &lt;/incident>
+&lt;/additions></String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>paginiert (additions)</String>
                                 </field>
                                 <field name="enabled">
                                     <Boolean>true</Boolean>
@@ -7622,6 +7670,26 @@ ${caret}</String>
                     <entry>
                         <String>scenario.associations</String>
                         <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>editions/L03009.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>editions/L03003.xml</String>
