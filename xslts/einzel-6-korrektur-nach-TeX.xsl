@@ -5565,7 +5565,7 @@
       <xsl:value-of select="(@target)"/>
       <xsl:text>}}</xsl:text>
    </xsl:template>
-   <xsl:template match="ref[@type = 'schnitzler-briefe']">
+   <xsl:template match="*:ref[@type = 'schnitzler-briefe']">
       <xsl:variable name="current-folder" select="substring-before(document-uri(/), '/meta')"/>
       <xsl:variable name="target-path" as="xs:string">
          <xsl:choose>
@@ -5583,7 +5583,7 @@
          </xsl:when>
          <xsl:when test="@subtype = 'date-only'">
             <xsl:value-of
-               select="document(resolve-uri($target-path, document-uri(/)))//correspDesc/correspAction[@type = 'sent']/date/text()"
+               select="document(resolve-uri($target-path, document-uri(/)))//*:correspDesc/*:correspAction[@type = 'sent']/*:date/text()"
             />
          </xsl:when>
          <xsl:otherwise>
@@ -5602,13 +5602,12 @@
                </xsl:when>
             </xsl:choose>
             <xsl:choose>
-               <xsl:when test="document($target-path)//titleStmt/title[@level = 'a']">
-                  <xsl:value-of select="document($target-path)//titleStmt/title[@level = 'a']"
+               <xsl:when test="document($target-path)//*:titleStmt/*:title[@level = 'a']">
+                  <xsl:value-of select="document($target-path)//*:titleStmt/*:title[@level = 'a']"
                   > </xsl:value-of>
                </xsl:when>
                <xsl:otherwise>
-                  <xsl:text>XXXX Auszeichnungsfehler</xsl:text>
-                  <xsl:value-of select="document($target-path)"/>
+                  <xsl:text>XXXX Auszeichnungsfehler PROBLEM MIT DOKUMENT</xsl:text>
                </xsl:otherwise>
             </xsl:choose>
          </xsl:otherwise>
