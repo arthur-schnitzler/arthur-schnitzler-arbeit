@@ -2,13 +2,13 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L03237"
+     xml:id="L03240"
      xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, 20. 11. 1905</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 19. 2. 1906</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -72,7 +72,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="karte" ana="postkarte"/>
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -84,40 +84,19 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="karte" quantity="1"/>
+                                 <measure unit="blatt" quantity="1"/>
+                                 <measure unit="seite" quantity="2"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="blaue_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
-                           <handNote medium="blaue_tinte"
-                                     style="lateinische-kurrent"
-                                     corresp="#pmb11485">
-                              <p>Adresse</p>
-                           </handNote>
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
                         </handDesc>
                         <additions>
-                           <incident type="postal">
-                              <desc>
-                                 <stamp n="1">
-                                    <placeName ref="#pmb168">Berlin S. W. 11</placeName>
-                                    <date when="1905-11-20">20. 11. 05</date>
-                                    <time>11<hi rend="superscript">20</hi> V</time>
-                                 </stamp>
-                              </desc>
-                           </incident>
-                           <incident type="postal">
-                              <desc>
-                                 <stamp n="4">
-                                    <placeName ref="#pmb168">Berlin N. W. 7</placeName>
-                                    <date when="1905-11-20">20. 11. 05</date>
-                                    <time>11<hi rend="superscript">40</hi> V</time>
-                                 </stamp>
-                              </desc>
-                           </incident>
                            <incident type="receiver">
-                              <desc>mit Bleistift das Datum »<quote>
-                                    <date when="1905-11-20"> 1<supplied>9</supplied>05 20/11</date>
+                              <desc>mit Bleistift das Jahr »<quote>
+                                    <date when="1906">
+                                       <supplied>1</supplied>906</date>
                                  </quote>« vermerkt</desc>
                            </incident>
                         </additions>
@@ -134,66 +113,52 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1905-11-20" n="01">20. 11. 1905</date>
+               <date when="1906-02-19" n="02">19. 2. 1906
+               </date>
                <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb168">Berlin</placeName>
-               <date evidence="conjecture" notBefore="1905-11-20" notAfter="1905-11-22">[20. 11. 1905 – 24. 11. 1905?]</date>
+               <date evidence="conjecture" notBefore="1906-02-20" notAfter="1906-02-24">[20. 2. 1906
+                  – 24. 2. 1906?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
-         <change who="KSK" when="2023-08-30">Export aus Transkribus</change>
-         <change who="KSK" when="2023-08-31">Einfügen von Metadaten</change>
-         <change who="KSK" when="2023-09-04">Kommentar</change>
+         <change who="KSK" when="2023-09-05">Export aus Transkribus</change>
          <change who="KSK" when="2023-09-05">Indexkontrolle und Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="HS.NZ85.1.3175_0011"/>
-      <graphic url="HS.NZ85.1.3175_0012"/>
+      <graphic url="HS.NZ85.1.3175_0017-1"/>
+      <graphic url="HS.NZ85.1.3175_0018-1"/>
    </facsimile>
    <text>
       <body>
-         <div type="address">
-            <address>
-               <addrLine>
-                  <pb facs="HS.NZ85.1.3175_0011"/>Rohr-<hi rend="pre-print">Poſtkarte</hi>
-               </addrLine>
-               <addrLine>Herrn</addrLine>
-               <addrLine>Dr. Arthur Schnitzler</addrLine>
-               <addrLine>
-                  <rs type="place" ref="#pmb168">Berlin</rs>
-               </addrLine>
-               <addrLine>Hotel, <rs type="place" ref="#pmb127">
-                     <del rend="strikethrough">B<unclear>ri</unclear>st<unclear>o</unclear>l</del>
-                  </rs>
-               </addrLine>
-               <addrLine>
-                  <rs type="place" ref="#pmb399">Continental</rs>
-               </addrLine>
-            </address>
-         </div>
          <div type="writingSession" n="1">
-            <p>
-               <pb facs="HS.NZ85.1.3175_0012"/>
-               <date when="1905-11-20">Montag</date>. <salute rend="inline">Lieber Freund,</salute> Es hat mir
-               ſehr leid gethan, Deinen lieben Beſuch <date when="1905-11-19">geſtern</date>
-               verſäumt zu haben. Ich muß wenige Minuten vorher weggegangen ſein. Hätteſt Du mir
-               telephonirt, ſo hätte ich Dich gern erwartet.</p>
-            <p>Willſt Du <anchor type="commentary" xml:id="K-L03237-1"/><date when="1905-11-20">heut</date><space unit="chars" quantity="1"/>
-               <time>Abend</time> mit mir<note type="commentary" xml:id="K-L03237-1h">
-                  <rs type="person" ref="#pmb2121">Schnitzler</rs> verbrachte den <time>Abend</time>
-                  des <date when="1905-11-20">20. 11. 1905</date> nicht mit <rs type="person" ref="#pmb11485">Goldmann</rs>, sondern mit <rs type="person" ref="#pmb11813">Siegfried Jacobsohn</rs>. <ref type="schnitzler-tagebuch" target="1905-11-20" subtype="See"/>.
-               </note> in die <rs type="place" ref="#pmb695">Oper</rs> gehen (<hi rend="latintype">
-                  <rs type="work" ref="#pmb32011">Fidelio</rs>
-               </hi>, Urfaſſung)?
-                Bis <time>4 Uhr</time> halte ich das Billet zu Deiner Verfügung. Erbitte
-               telephoniſche Antwort.</p>
-            <closer>Herzlichſt <lb/>
-               <signed>Dein Paul Goldmann</signed>
+            <opener>
+               <p rend="right">
+                  <pb facs="HS.NZ85.1.3175_0017-1"/>
+                  <rs type="place" ref="#pmb40583">
+                     <hi rend="pre-print">
+                        <hi rend="capitals">Dessauerstrasse</hi> 19</hi>
+                  </rs>
+               </p>
+               <dateline rend="left">
+                  <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1906-02-19">19.
+                     Februar</date>. </dateline>
+               <salute>Mein lieber Freund,</salute>
+            </opener>
+            <p>Ich danke Dir vielmals für Deine Einladung, freue mich <hi rend="underline" n="1">ſehr</hi>, Dich und Deine <rs type="person" subtype="implied" ref="#pmb2173">Frau</rs> wiederzuſehen, und werde am <date when="1906-02-21">Mittwoch</date> zur
+               angegebenen Stunde mich <anchor type="commentary" xml:id="K-L03240-1"/>einfinden<note type="commentary" xml:id="K-L03240-1h">
+                  <rs type="person" ref="#pmb2121">Schnitzler</rs> traf <rs type="person" ref="#pmb11485">Goldmann</rs> wie
+                  verabredet am <date when="1906-02-21">21. 2. 1906</date>, <ref type="schnitzler-tagebuch" target="1906-02-21" subtype="see"/>.</note>, – wenn
+               nicht etwas Unvorhergeſehenes im <rs type="place" ref="#pmb142545">Reichstag</rs>
+               <pb facs="HS.NZ85.1.3175_0018-1"/> dazwiſchenkommt, was ich aber nicht hoffe.</p>
+            <closer>Einſtweilen herzliche Grüße Dir und Deiner <rs type="person" subtype="implied" ref="#pmb2173">Frau</rs> von <lb/>Deinem getreuen <lb/>
+               <signed>Paul
+                  Goldmann.</signed>
             </closer>
          </div>
       </body>
@@ -277,55 +242,46 @@
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
-            <person xml:id="pmb11813">
+            <person xml:id="pmb2173">
                <persName>
-                  <forename>Siegfried</forename>
-                  <surname>Jacobsohn</surname>
+                  <forename>Olga</forename>
+                  <surname>Schnitzler</surname>
                </persName>
+               <persName type="person_geburtsname_nachname">Gussmann</persName>
+               <persName type="person_pseudonym">Dina Marius</persName>
+               <persName type="legacy-name-merge">Schnitzler, Olga</persName>
                <birth>
-                  <date when="1881-01-28">28.01.1881</date>
-                  <settlement ref="pmb168">
-                     <placeName type="pref">Berlin</placeName>
+                  <date when="1882-01-17">17.01.1882</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
                      <location>
-                        <geo>52,52437 13,41053</geo>
+                        <geo>48,2066 16,37341</geo>
                      </location>
                   </settlement>
                </birth>
                <death>
-                  <date when="1926-12-03">03.12.1926</date>
-                  <settlement ref="pmb168">
-                     <placeName type="pref">Berlin</placeName>
+                  <date when="1970-01-13">13.01.1970</date>
+                  <settlement ref="pmb885">
+                     <placeName type="pref">Lugano</placeName>
                      <location>
-                        <geo>52,52437 13,41053</geo>
+                        <geo>46,01008 8,96004</geo>
                      </location>
                   </settlement>
                </death>
-               <sex value="male"/>
-               <occupation ref="pmb99">Journalist/Journalistin</occupation>
-               <occupation ref="pmb100">Kritiker/Kritikerin</occupation>
-               <occupation ref="pmb237">Publizist/Publizistin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16477</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118556371</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11813.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11813/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11813.html</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb11813</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp53253</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q66477</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Siegfried_Jacobsohn</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11813.html</idno>
+               <sex value="female"/>
+               <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
+               <occupation ref="pmb107">Sänger/Sängerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116848723</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2173/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19832</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp50811</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q55884531</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2173.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2173.html</idno>
             </person>
          </listPerson>
-         <listBibl>
-            <bibl xml:id="pmb32011">
-               <title>Fidelio</title>
-               <author ref="pmb10866" role="hat-geschaffen">Beethoven, Ludwig van</author>
-               <date>1805/1806/1814</date>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb32011.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/32011/</idno>
-               <note type="work_kind">Musikstück &gt;&gt; Oper</note>
-            </bibl>
-         </listBibl>
          <listPlace>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
@@ -356,54 +312,41 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
             </place>
-            <place xml:id="pmb127">
-               <placeName>Hotel Bristol</placeName>
-               <desc type="entity_type">Hotel (K.HTL)</desc>
-               <desc type="entity_type_id">12</desc>
+            <place xml:id="pmb40583">
+               <placeName>Dessauer Straße</placeName>
+               <desc type="entity_type">Straße (K.STR)</desc>
+               <desc type="entity_type_id">26</desc>
                <location type="coords">
-                  <geo>52,516152 13,383456</geo>
+                  <geo>52,504956 13,378587</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb168">Berlin</placeName>
                   <geo>52,52437 13,41053</geo>
                </location>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb127.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/127/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb127.html</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1630839</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Hotel_Bristol_(Berlin)</idno>
-               <note type="apis_dates">
-                  <date from="1890-01-01" to="1944-07-01">1890  – 1944</date>
-               </note>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40583/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40583.html</idno>
             </place>
-            <place xml:id="pmb399">
-               <placeName>Hotel Continental (Berlin)</placeName>
-               <desc type="entity_type">Hotel (K.HTL)</desc>
-               <desc type="entity_type_id">12</desc>
+            <place xml:id="pmb142545">
+               <placeName>Reichstag</placeName>
+               <placeName type="ort_namensvariante">Reichstagsgebäude</placeName>
+               <placeName type="ort_namensvariante">Bundestag</placeName>
+               <desc type="entity_type">Regierungsgebäude (K.RGB)</desc>
+               <desc type="entity_type_id">54</desc>
                <location type="coords">
-                  <geo>52,518889 13,385556</geo>
+                  <geo>52,518611 13,376111</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb168">Berlin</placeName>
                   <geo>52,52437 13,41053</geo>
                </location>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb399.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/399/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb399.html</idno>
-               <note type="apis_dates">
-                  <date from="1884-01-01" to="1944-07-01">1884  – 1944</date>
-               </note>
-            </place>
-            <place xml:id="pmb695">
-               <placeName>Städtische Oper</placeName>
-               <desc type="entity_type">Oper (K.OPR)</desc>
-               <desc type="entity_type_id">10</desc>
                <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
                </location>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb695.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/695/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/142545/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q151897</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4140193-1</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Reichstagsgeb%C3%A4ude</idno>
             </place>
          </listPlace>
       </back>
