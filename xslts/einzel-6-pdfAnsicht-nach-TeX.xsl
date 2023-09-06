@@ -1702,7 +1702,10 @@
             <xsl:choose>
                <xsl:when test="ancestor::witness/objectType and child::objectDesc">
                   <xsl:apply-templates select="ancestor::witness/objectType" mode="physdesc"/>
-                  <xsl:text>, </xsl:text>
+                  <xsl:if
+                     test="child::objectDesc/supportDesc/extent/measure[2] or child::objectDesc/supportDesc/child::*[not(name() = 'extent')]">
+                     <xsl:text>, </xsl:text>
+                  </xsl:if>
                   <xsl:apply-templates select="child::objectDesc"/>
                </xsl:when>
                <xsl:when test="child::objectDesc">
