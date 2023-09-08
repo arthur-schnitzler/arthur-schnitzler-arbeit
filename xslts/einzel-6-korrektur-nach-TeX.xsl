@@ -4762,7 +4762,7 @@
          <xsl:when test="$typ = 'place'">
             <xsl:text>\textcolor{pink}{</xsl:text>
             <xsl:variable name="eintrag" select="key('place-lookup', $first, $places)/placeName[1]"
-               as="xs:string"/>
+               as="xs:string?"/>
             <xsl:choose>
                <xsl:when test="$eintrag = ''">
                   <xsl:text>XXXX</xsl:text>
