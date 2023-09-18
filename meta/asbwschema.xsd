@@ -1176,12 +1176,13 @@
          </xs:attribute>
          <xs:attribute name="n" type="xs:integer"/>
          <xs:assert test="
-            if (@rend = 'underline') then
-            @n
-            else if (@rend = 'spaced_out') then
-            not(descendant::tei:*)
-            else
-            not(@n)"/>
+               if (@rend = 'underline') then
+                  @n
+               else
+                  not(@n)"/>
+         <xs:assert
+            test="not(@rend = 'spaced_out') or (text() or tei:space) and not(tei:* except tei:space)"
+         />
       </xs:complexType>
    </xs:element>
    <xs:element name="damage">
@@ -2058,8 +2059,8 @@
             <xs:element maxOccurs="unbounded" minOccurs="1" ref="tei:placeName"/>
             <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:desc"/>
             <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:location"/>
-            <xs:element maxOccurs="unbounded"  minOccurs="0" ref="tei:idno"/>
-            <xs:element minOccurs="0"  maxOccurs="1" ref="tei:listBibl"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:idno"/>
+            <xs:element minOccurs="0" maxOccurs="1" ref="tei:listBibl"/>
             <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:note"/>
          </xs:all>
          <xs:attribute ref="xml:id" use="required"/>
