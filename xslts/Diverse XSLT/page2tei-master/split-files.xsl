@@ -23,8 +23,8 @@
                             <titleStmt>
                                 <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und
                                     Autoren</title>
-                                <title level="a">Paul Goldmann an Arthur Schnitzler, XXXX</title>
-                                <author ref="#11485">Goldmann, Paul</author>
+                                <title level="a">Felix Salten an Arthur Schnitzler, XXXX</title>
+                                <author ref="#pmb2167">Salten, Felix</author>
                                 <editor>
                                     <name>Müller, Martin Anton</name>
                                     <name>Untner, Laura</name>
@@ -98,13 +98,13 @@
                             <sourceDesc>
                                 <listWit>
                                     <witness n="1">
-                                        <objectType corresp=""/>
+                                        <objectType corresp="briefx"/>
                                         <msDesc>
                                             <msIdentifier>
-                                                <country>D</country>
-                                                <settlement>Marbach am Neckar</settlement>
-                                                <repository>Deutsches Literaturarchiv</repository>
-                                                <idno>A:Schnitzler, HS.NZ85.1.3166</idno>
+                                                <country>GB</country>
+                                                <settlement>Cambridge</settlement>
+                                                <repository>University Library</repository>
+                                                <idno>Schnitzler, B 89, A 2</idno>
                                             </msIdentifier>
                                             <physDesc>
                                                 <objectDesc>
@@ -118,6 +118,11 @@
                                                 <handDesc>
                                                   <handNote medium="" style="lateinische-kurrent"/>
                                                 </handDesc>
+                                                <additions>
+                                                    <incident type="archival">
+                                                        <desc>XXXXmit Bleistift von unbekannter Hand nummeriert: »<quote>x</quote>«</desc>
+                                                    </incident>
+                                                </additions>
                                             </physDesc>
                                         </msDesc>
                                     </witness>
