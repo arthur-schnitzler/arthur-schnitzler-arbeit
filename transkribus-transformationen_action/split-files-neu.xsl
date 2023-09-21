@@ -120,8 +120,8 @@
                                                 <objectDesc>
                                                     <supportDesc>
                                                         <extent>
-                                                            <measure unit="blatt" quantity=""/>
                                                             <measure unit="seite" quantity=""/>
+                                                            <measure unit="blatt" quantity=""/>
                                                         </extent>
                                                     </supportDesc>
                                                 </objectDesc>
