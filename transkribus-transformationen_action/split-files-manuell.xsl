@@ -23,7 +23,7 @@
     <xsl:param name="archiv-land" as="xs:string">GB</xsl:param>
     <xsl:param name="archiv-stadt" as="xs:string">Cambridge</xsl:param>
     <xsl:param name="archiv-institution" as="xs:string">University Library</xsl:param>
-    <xsl:param name="signatur" as="xs:string">Schnitzler, B&#160;89, A&#160;1</xsl:param>
+    <xsl:param name="signatur" as="xs:string">Schnitzler, B&#160;89, A&#160;2</xsl:param>
     
     
     
@@ -143,6 +143,7 @@
                             <sourceDesc>
                                 <listWit>
                                     <witness n="1">
+                                        <objectType corresp="xbrief"/>
                                         <msDesc>
                                             <msIdentifier>
                                                 <country>
@@ -160,11 +161,23 @@
                                             </msIdentifier>
                                             <physDesc>
                                                 <objectDesc>
-                                                    <desc/>
+                                                    
+                                                        <supportDesc>
+                                                            <extent>
+                                                                <measure unit="seite" quantity=""/>
+                                                                <measure unit="blatt" quantity=""/>
+                                                            </extent>
+                                                        </supportDesc>
+                                                    
                                                 </objectDesc>
                                                 <handDesc>
                                                     <handNote medium="" style="deutsche-kurrent"/>
                                                 </handDesc>
+                                                <additions>
+                                                    <incident type="archival">
+                                                        <desc>Xmit Bleistift von unbekannter Hand nummeriert: »<quote>x</quote>«</desc>
+                                                    </incident>
+                                                </additions>
                                             </physDesc>
                                         </msDesc>
                                     </witness>
@@ -181,13 +194,13 @@
                                         <xsl:value-of select="$sender-in_name"/>
                                     </persName>
                                     <date when="" n="01">XXXX</date>
-                                    <placeName ref="#50">Wien</placeName>
+                                    <placeName ref="#50" evidence="conjecture">Wien</placeName>
                                 </correspAction>
                                 <correspAction type="received">
                                     <persName ref="{concat('#', $empfaenger-in_pmb)}">
                                         <xsl:value-of select="$empfaenger-in_name"/>
                                     </persName>
-                                    <placeName ref="#50">Wien</placeName>
+                                    <placeName ref="#50" evidence="conjecture">Wien</placeName>
                                 </correspAction>
                             </correspDesc>
                         </profileDesc>
