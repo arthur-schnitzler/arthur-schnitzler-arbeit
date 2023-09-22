@@ -9,7 +9,7 @@
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und
                                     Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, XXXX</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 23.&#160;6.&#160;1901</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -82,7 +82,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="karte" ana="postkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -94,17 +94,16 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="lateinische-kurrent"/>
+                           <handNote medium="bleistift" style="lateinische-kurrent"/>
                         </handDesc>
                         <additions>
                            <incident type="archival">
-                              <desc>Xmit Bleistift von unbekannter Hand nummeriert: »<quote>x</quote>«</desc>
+                              <desc>mit Bleistift von unbekannter Hand nummeriert: »<quote>138</quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -120,12 +119,13 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="" n="01">XXXX</date>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <date when="1901-06-23" n="01">23.&#160;6.&#160;1901</date>
+               <placeName ref="#pmb50" evidence="conjecture">Salzburg</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <placeName ref="#pmb50" >Wien</placeName>
+               <date when="1901-06-23">24.&#160;6.&#160;1901</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -136,16 +136,21 @@
    </teiHeader>
    <text>
       <body>
-         <div type="writingSession" n="1">
-            <opener>
-               <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00056-V"/>
-                  Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler
-      <addrLine>
-                  <rs type="place" ref="">Wien IX</rs>
+         <div type="address">
+            <address>
+               <addrLine><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00056-V"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine>
+               <addrLine>
+                  <rs type="place" ref="#pmb59">Wien IX</rs>
                </addrLine>
                <addrLine>
-                  <rs type="place" ref="">Frankgaße 1</rs>
+                  <rs type="place" ref="">Frankgaſse 1</rs>
                </addrLine>
+            </address>
+         </div>
+         <div type="writingSession" n="1">
+            
+            <opener>
+               
                <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00056-R"/>
                <dateline>
                   <rs type="place" ref="">Salzburg, Bahnhof,</rs>
