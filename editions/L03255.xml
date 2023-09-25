@@ -100,7 +100,7 @@
                                  <stamp n="1">
                                     <placeName ref="#pmb142880">Swinemünde</placeName>
                                     <date when="1907-08-07">7. 8. 07</date>
-                                    <time>10–11 V</time>
+                                    <time>10–11 <unclear>V</unclear></time>
                                  </stamp>
                               </desc>
                            </incident>
@@ -142,9 +142,10 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="candidate">
          <change who="KSK" when="2023-09-13">Export aus Transkribus</change>
          <change who="KSK" when="2023-09-21">Indexkontrolle und Durchsicht</change>
+         <change who="LU" when="2023-09-25">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -169,29 +170,29 @@
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <p rend="left">
-                  <pb facs="HS.NZ85.1.3175_0046"/>
-                  <hi rend="pre-print">
-                     <rs type="place" ref="#pmb142880">Swinemünde</rs>
-                  </hi>
-               </p>
-               <p rend="right">
-                  <hi rend="pre-print">Strand</hi>
+               <p>
+                  <seg rend="left"><pb facs="HS.NZ85.1.3175_0046"/>
+                     <hi rend="pre-print">
+                        <hi rend="bold"><rs type="place" ref="#pmb142880">Swinemünde</rs></hi>
+                     </hi></seg>
+                  <seg rend="right"><hi rend="pre-print"><hi rend="bold"><rs type="place"
+                              ref="#pmb145807">Strand</rs></hi></hi></seg>
                </p>
                <dateline rend="inline">
                   <date when="1907-08-07">7. 8. 07</date>.</dateline>
             </opener>
-            <p>Ich war hier, um über die <anchor type="commentary" xml:id="K-L03255-1"/>Kriſen-<hi
-                  rend="latintype">Entrevue</hi>
-               <note type="commentary" xml:id="K-L03255-1h">Gemeint ist das Treffen zwischen <rs
-                     type="person" ref="#pmb2566">Kaiser Wilhelm II.</rs> und <rs type="person"
-                     ref="#pmb2996">Zar Nikolaus II.</rs> ab dem <date when="1907-08-04"
-                     >4. 8. 1907</date> in <rs type="place" ref="#pmb142880">Swinemünde</rs>. <bibl/>
-                  <!--XXXX Artikel muss Anfang August in der FZ erschienen sein, im Online-Archiv sind aber keine August-Ausgaben verfügbar.-->
-               </note> zu berichten. Herzliche Grüße Dir, <salute>lieber Freund</salute>, u. Deiner
-                  <rs type="person" subtype="implied" ref="#pmb2173">Frau</rs>. Nächſte Woche gehe
-               ich auf Urlaub, aber ich weiß noch immer nicht, wohin. Dein <signed>Paul
-                  Goldmann</signed>.</p>
+            <p>Ich war <rs type="place" subtype="implied" ref="#pmb142880">hier</rs>, um über die
+                  <anchor type="commentary" xml:id="K-L03255-1"/>Kriſen-<hi rend="latintype"
+                  >Entrevue</hi>
+               <note type="commentary" xml:id="K-L03255-1h">Gemeint war das Treffen zwischen <rs
+                     type="person" ref="#pmb2566">Kaiser Wilhelm II.</rs> und <rs type="person"
+                     ref="#pmb2996">Zar Nikolaus II.</rs> am <date when="1907-08-04"
+                     >4. 8. 1907</date> in <rs type="place" ref="#pmb142880">Swinemünde</rs>.
+                     <bibl>XXXX (Bericht in Frankfurter Zeitung)</bibl></note> zu <rs type="work"
+                  subtype="implied" ref="#pmb145811">berichten</rs>. Herzliche Grüße Dir, <salute
+                  rend="inline">lieber Freund</salute>, u. Deiner <rs type="person"
+                  subtype="implied" ref="#pmb2173">Frau</rs>. Nächſte Woche gehe ich auf Urlaub,
+               aber ich weiß noch immer nicht, wohin. Dein <signed>Paul Goldmann</signed>.</p>
          </div>
       </body>
       <back>
