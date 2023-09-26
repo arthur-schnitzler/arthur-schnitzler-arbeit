@@ -11,4 +11,8 @@
         </xsl:element>
     </xsl:template>
     
+    <!-- Dubletten durch Autoren raus -->
+    
+    <xsl:template match="tei:listPerson/tei:person[@xml:id= preceding-sibling::tei:person/@xml:id]"/>
+    
 </xsl:stylesheet>
