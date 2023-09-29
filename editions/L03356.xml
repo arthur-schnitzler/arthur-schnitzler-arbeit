@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3356"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3356"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 11.&#160;12.&#160;1903</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 11. 12. 1903</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -92,8 +94,11 @@
                         </handDesc>
                         <additions>
                            <incident type="receiver">
-                              <desc>mit Bleistift Vermerk: »<quote><date><hi rend="latintype"
-                                          >Salten</hi></date></quote>«</desc>
+                              <desc>mit Bleistift Vermerk: »<quote>
+                                    <date>
+                                       <hi rend="latintype">Salten</hi>
+                                    </date>
+                                 </quote>«</desc>
                            </incident>
                            <incident type="archival">
                               <desc>mit Bleistift von unbekannter Hand nummeriert:
@@ -113,13 +118,26 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1903-12-11" n="02">11.&#160;12.&#160;1903</date>
+               <date when="1903-12-11" n="02">11. 12. 1903</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01349">Hofmannsthal an Schnitzler, 11. 12. [1903?]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01350">Schnitzler an Bahr, 13. 12. 1903</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3354">Salten an Schnitzler, 9. 12. 1903</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02991">Schnitzler an Salten, 13. 4. 1904</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -133,19 +151,20 @@
                <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00100-R"/>
                <salute> Lieber, </salute>gewiß begreife ich, dass Sie jetzt eher mit einer größeren
                   <rs type="work" ref="" subtype="implied">Arbeit</rs> kämen. Habe auch mehr dem
-                  D<hi rend="superscript">r</hi>&#160;<rs type="person" ref="#pmb11867">Kanner</rs>
+                  D<hi rend="superscript">r</hi> <rs type="person" ref="#pmb11867">Kanner</rs>
                zu Gefallen angefragt, und ziemlich spät, weil ich mir ja ungefähr so was selber
-               dachte. Für Abends kann ich jetzt leider nichts besti<c rendition="#gemination-m"
-               />en, aber ich komme, wenns Ihnen paßt, <anchor type="commentary" xml:id="K_L03356-4"
-                  /><date>Mittwoch</date><note type="commentary" xml:id="K_L03356-4h"><ref
-                     type="schnitzler-tagebuch" target="1903-12-16" subtype="see"/></note> od.
+               dachte. Für Abends kann ich jetzt leider nichts besti<c rendition="#gemination-m"/>en, aber ich komme, wenns Ihnen paßt, <anchor type="commentary" xml:id="K_L03356-4"/>
+               <date>Mittwoch</date>
+               <note type="commentary" xml:id="K_L03356-4h">
+                  <ref type="schnitzler-tagebuch" target="1903-12-16" subtype="see"/>
+               </note> od.
                   <date>Donnerstag</date> so gegen sechs zu Ihnen.</p>
             <closer>Herzlichst Ihr <lb/>
                <signed>Salten </signed>
             </closer>
             <postscript>
                <dateline>
-                  <date>11./12.&#160;03</date>
+                  <date>11./12. 03</date>
                </dateline>
             </postscript>
          </div>

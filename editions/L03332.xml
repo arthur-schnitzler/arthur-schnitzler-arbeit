@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3332"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3332"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 9.&#160;6.&#160;1902</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 9. 6. 1902</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -92,10 +94,13 @@
                         </handDesc>
                         <additions>
                            <incident type="receiver">
-                              <desc>mit Bleistift datiert: »<quote><date><subst>
+                              <desc>mit Bleistift datiert: »<quote>
+                                    <date>
+                                       <subst>
                                           <del rend="overwritten">15</del>
                                           <add place="inline">9</add>
-                                       </subst>/6&#160;902</date></quote>«</desc>
+                                       </subst>/6 902</date>
+                                 </quote>«</desc>
                            </incident>
                            <incident type="archival">
                               <desc>mit Bleistift von unbekannter Hand nummeriert:
@@ -115,13 +120,26 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1902-06-09" n="01">9.&#160;6.&#160;1902</date>
+               <date when="1902-06-09" n="02">9. 6. 1902</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L03210">Goldmann an Schnitzler, 9. 6. [1902]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01222">Hofmannsthal an Schnitzler, 1[1?]. 6. 1902</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02974">Schnitzler an Salten, 27. 5. 1902</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02975">Schnitzler an Salten, 14. 6. 1902</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -131,22 +149,23 @@
    <text>
       <body>
          <div type="writingSession" n="1">
-            <p><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00075-R"/>
+            <p>
+               <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00075-R"/>
                <salute>Lieber, </salute>für heute Abend bin ich leider schon verabredet. Vielleicht
-                  <anchor type="commentary" xml:id="K_L03332-1"/><date>Freitag</date><note
-                  type="commentary" xml:id="K_L03332-1h"><ref type="schnitzler-tagebuch"
-                     target="1902-06-13" subtype="see"/></note>? Das <rs type="work" ref=""
-                  subtype="implied">Kritik Buch</rs> will ich nächste Woche auf dem Land fertig
+                  <anchor type="commentary" xml:id="K_L03332-1"/>
+               <date>Freitag</date>
+               <note type="commentary" xml:id="K_L03332-1h">
+                  <ref type="schnitzler-tagebuch" target="1902-06-13" subtype="see"/>
+               </note>? Das <rs type="work" ref="" subtype="implied">Kritik Buch</rs> will ich nächste Woche auf dem Land fertig
                machen.</p>
-            <p>Wir ziehen voraussichtlich <date>Montag</date> früh nach <rs type="place" ref="#pmb44102"
-               >Kaltenleutgeben</rs> in die <rs type="org" ref="#pmb93742" subtype="implied">Anstalt</rs>, (Kur wegen
-               Schnupfen, Nerven ec.<supplied>)</supplied> damit ich für den Winter ganz <pb
-                  facs="MS-SCHNITZLER-B-00089-A-00002-000-00075-V"/>beisammen bin, </p>
+            <p>Wir ziehen voraussichtlich <date>Montag</date> früh nach <rs type="place" ref="#pmb44102">Kaltenleutgeben</rs> in die <rs type="org" ref="#pmb93742" subtype="implied">Anstalt</rs>, (Kur wegen
+               Schnupfen, Nerven ec.<supplied>)</supplied> damit ich für den Winter ganz <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00075-V"/>beisammen bin, </p>
             <closer>herzlichst <lb/>Ihr <lb/>
                <signed>F.S.</signed>
             </closer>
             <postscript>
-               <p>Wenn <hi rend="underline" n="1">Frtg</hi><space unit="chars" quantity="1"/>
+               <p>Wenn <hi rend="underline" n="1">Frtg</hi>
+                  <space unit="chars" quantity="1"/>
                   <hi rend="underline" n="2">nicht</hi>, bitte eine Zeile. </p>
             </postscript>
          </div>

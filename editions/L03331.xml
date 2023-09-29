@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3331"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3331"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 25.&#160;5.&#160;1902</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 25. 5. 1902</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -91,21 +93,29 @@
                         </handDesc>
                         <additions>
                            <incident type="postal">
-                              <desc><stamp n="1">
+                              <desc>
+                                 <stamp n="1">
                                     <placeName ref="#pmb263">Firenze Ferrovia</placeName>
-                                    <date when="1902-05-25">25&#160;5&#160;02</date>
-                                    <time><unclear>11</unclear></time>
-                                 </stamp></desc>
+                                    <date when="1902-05-25">25 5 02</date>
+                                    <time>
+                                       <unclear>11</unclear>
+                                    </time>
+                                 </stamp>
+                              </desc>
                            </incident>
                            <incident type="postal">
-                              <desc><stamp n="2">
+                              <desc>
+                                 <stamp n="2">
                                     <placeName ref="#pmb59">9/3 W<unclear>ien
-                                       72</unclear></placeName>
-                                    <date when="1902-05-27"
-                                       >27.&#160;5.&#160;<unclear>02</unclear></date>
+                                       72</unclear>
+                                    </placeName>
+                                    <date when="1902-05-27">27. 5. <unclear>02</unclear>
+                                    </date>
                                     <time>8.V</time>
-                                    <addSpan>Beste<supplied>llt</supplied></addSpan>
-                                 </stamp></desc>
+                                    <addSpan>Beste<supplied>llt</supplied>
+                                    </addSpan>
+                                 </stamp>
+                              </desc>
                            </incident>
                            <incident type="archival">
                               <desc>mit Bleistift von unbekannter Hand nummeriert:
@@ -125,13 +135,26 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1902-05-25" n="01">25.&#160;5.&#160;1902</date>
+               <date when="1902-05-25" n="01">25. 5. 1902</date>
                <placeName ref="#pmb263">Florenz</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L03100">Salten an Schnitzler, [24. 5. 1902]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L02974">Schnitzler an Salten, 27. 5. 1902</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03100">Salten an Schnitzler, [24. 5. 1902]</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02974">Schnitzler an Salten, 27. 5. 1902</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -143,13 +166,12 @@
          <div type="address">
             <address>
                <addrLine>
-                  <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00074-V"/>Herrn D<hi
-                     rend="superscript">r</hi> Arthur Schnitzler</addrLine>
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00074-V"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb59">Wien IX.</rs>
                </addrLine>
                <addrLine>
-                  <rs type="place" ref="#pmb397">Frankgaße&#160;1</rs>
+                  <rs type="place" ref="#pmb397">Frankgaße 1</rs>
                </addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb41240">Austria</rs>
@@ -160,26 +182,25 @@
             <opener>
                <p rend="center">
                   <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00074-R"/>
-                  <hi rend="pre-print"><rs type="place" ref="#pmb263">Firenze</rs></hi>
+                  <hi rend="pre-print">
+                     <rs type="place" ref="#pmb263">Firenze</rs>
+                  </hi>
                   <space unit="chars" quantity="5"/>
                   <rs type="place" ref="#pmb144079">
-                     <hi rend="pre-print">Passeggiata delle Cascine<space unit="chars" quantity="3"
-                        />Viale del Re</hi>
-                  </rs></p>
+                     <hi rend="pre-print">Passeggiata delle Cascine<space unit="chars" quantity="3"/>Viale del Re</hi>
+                  </rs>
+               </p>
             </opener>
-            <p>Vielen Dank für den <anchor type="commentary" xml:id="K_L03331-33"/><rs type="work" subtype="implied" ref="#pmb145915"><rs type="person"
-                  ref="#pmb11910">Kerr</rs>-Ausschnitt</rs><note type="commentary" xml:id="K_L03331-33h"
-                     >Beilage nicht erhalten. Es handelte sich wohl um diese Sammelrezension über die neuen
-                     Theaterstücke des vergangenen Winters: <bibl><rs type="person"
-                        ref="#pmb11910">Alfred Kerr</rs>: <rs type="work" ref="#pmb145915">Abschluß</rs>. In: <rs ref="#pmb36152" type="work">Neue Deutsche Rundschau</rs>, Jg.&#160;13, H.&#160;5, <date>Mai 1902</date>, S.&#160;545–553</bibl>.
+            <p>Vielen Dank für den <anchor type="commentary" xml:id="K_L03331-33"/>
+               <rs type="work" subtype="implied" ref="#pmb145915">
+                  <rs type="person" ref="#pmb11910">Kerr</rs>-Ausschnitt</rs>
+               <note type="commentary" xml:id="K_L03331-33h">Beilage nicht erhalten. Es handelte sich wohl um diese Sammelrezension über die neuen
+                     Theaterstücke des vergangenen Winters: <bibl>
+                     <rs type="person" ref="#pmb11910">Alfred Kerr</rs>: <rs type="work" ref="#pmb145915">Abschluß</rs>. In: <rs ref="#pmb36152" type="work">Neue Deutsche Rundschau</rs>, Jg. 13, H. 5, <date>Mai 1902</date>, S. 545–553</bibl>.
                      Insofern das Wort »Ausschnitt« wörtlich zu nehmen ist, könnte <rs type="person" ref="#pmb2121">Schnitzler</rs> auch nur die
                      Seiten 551–553 gesandt haben, die (trotz allgemeinen Lobs für <rs type="person" ref="#pmb2121">Schnitzler</rs>), die vier Einakter der
-                     <rs type="work" ref="#pmb29863">Lebendigen Stunden</rs> abwertend beurteilen.</note>. Natürlich würde ich mich der <rs type="org"
-                  ref="#pmb29351">N. fr. Pr.</rs> gegenüber – prinzipiell – <hi rend="underline"
-                  n="1">nicht</hi> ablehnend verhalten. <anchor type="commentary"
-                  xml:id="K_L03331-4"/>Schrieb Ihnen gestern<note type="commentary"
-                  xml:id="K_L03331-4h"><ref type="schnitzler-briefe" target="L03330" subtype="see"
-                  />/></note> wegen »<rs type="work" ref="#pmb33776">Dämmerseele</rs>«.</p>
+                     <rs type="work" ref="#pmb29863">Lebendigen Stunden</rs> abwertend beurteilen.</note>. Natürlich würde ich mich der <rs type="org" ref="#pmb29351">N. fr. Pr.</rs> gegenüber – prinzipiell – <hi rend="underline" n="1">nicht</hi> ablehnend verhalten. <anchor type="commentary" xml:id="K_L03331-4"/>Schrieb Ihnen gestern<note type="commentary" xml:id="K_L03331-4h">
+                  <ref type="schnitzler-briefe" target="L03330" subtype="see"/>/&gt;</note> wegen »<rs type="work" ref="#pmb33776">Dämmerseele</rs>«.</p>
             <closer>Herzlichst <lb/>
                <signed>Salten</signed>
             </closer>

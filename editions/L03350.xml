@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3350"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3350"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, [23./24.?&#160;10.&#160;1903]</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, [23./24.? 10. 1903]</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -92,7 +94,9 @@
                         <additions>
                            <incident type="receiver">
                               <desc>mit Bleistift datiert:
-                                 »<quote><date>Oct&#160;903</date></quote>«</desc>
+                                 »<quote>
+                                    <date>Oct 903</date>
+                                 </quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -108,14 +112,28 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date notBefore="1903-10-23" notAfter="1903-10-24" n="01">[23./24.?&#160;10.&#160;1903]</date>
+               <date notBefore="1903-10-23" notAfter="1903-10-24" n="01">[23./24.? 10. 1903]</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
-               <date notBefore="1903-10-23" notAfter="1903-10-24" >[23./24.?&#160;10.&#160;1903]</date>
+               <date notBefore="1903-10-23" notAfter="1903-10-24">[23./24.? 10. 1903]</date>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L02987">Schnitzler an Salten, 22. 10. 1903</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01331">Hofmannsthal an Schnitzler, 24. [10.] 1903</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02987">Schnitzler an Salten, 22. 10. 1903</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3348">Salten an Schnitzler, [zwischen 26. und
+                  30. 10. 1903]</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -127,25 +145,21 @@
          <div type="writingSession" n="1">
             <p>
                <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00094-R"/>
-               <salute>Lieber, </salute>da wir die <rs type="person" ref="#pmb143671" cert="low"
-                  subtype="implied">Amme</rs> und das <rs type="person" ref="#pmb2922"
-                  subtype="implied">Kleine</rs> nicht so lange allein laßen wollen, kommen wir
-                  <date>Sonntag</date> nicht zum Essen, sondern um 3 od. ½&#160;4 zum Kaffee, wenn
+               <salute>Lieber, </salute>da wir die <rs type="person" ref="#pmb143671" cert="low" subtype="implied">Amme</rs> und das <rs type="person" ref="#pmb2922" subtype="implied">Kleine</rs> nicht so lange allein laßen wollen, kommen wir
+                  <date>Sonntag</date> nicht zum Essen, sondern um 3 od. ½ 4 zum Kaffee, wenn
                wir einen kriegen. </p>
             <p>
                <rs type="person" ref="#pmb11740">Hfthl.</rs> bittet mich am <date>Dienstag</date>
-               vorzulesen, weil er <anchor type="commentary" xml:id="K_L03350-1"
-                  /><date>Mittwoch</date> abreist<note type="commentary" xml:id="K_L03350-1h"><rs
-                     type="person" ref="#pmb11740">Hofmannsthal</rs> kam bereits am <date>Dienstag,
-                     27.&#160;10.&#160;1903</date> in <rs type="place" ref="#pmb168">Berlin</rs> an,
-                  so dass die Lesung erst recht auf November verschoben werden musste, <ref
-                     type="schnitzler-tagebuch" target="1903-11-12" subtype="cf"/>. Entsprechend
+               vorzulesen, weil er <anchor type="commentary" xml:id="K_L03350-1"/>
+               <date>Mittwoch</date> abreist<note type="commentary" xml:id="K_L03350-1h">
+                  <rs type="person" ref="#pmb11740">Hofmannsthal</rs> kam bereits am <date>Dienstag,
+                     27. 10. 1903</date> in <rs type="place" ref="#pmb168">Berlin</rs> an,
+                  so dass die Lesung erst recht auf November verschoben werden musste, <ref type="schnitzler-tagebuch" target="1903-11-12" subtype="cf"/>. Entsprechend
                   muss dieses undatierte Korrespondenzstück in der Vorwoche verfasst sein. Der Kaffeebesuch
                   am Sonntag, dem <ref type="schnitzler-tagebuch" target="1903-10-25" subtype="date-only"/>, dürfte
                   nicht stattgefunden haben.</note>.
                Also Dienstag. Ich hoffe sehr, dass Sie nicht verhindert sind, denn ich möchte es
-               jetzt nicht mehr verschieben. Sonst müßte die Sache bis November bleiben, weil <rs
-                  type="person" ref="#pmb11740">H.</rs> dabei sein will, und ein so langer Aufschub
+               jetzt nicht mehr verschieben. Sonst müßte die Sache bis November bleiben, weil <rs type="person" ref="#pmb11740">H.</rs> dabei sein will, und ein so langer Aufschub
                wäre mir jetzt mehr als unangenehm. </p>
             <p>Also zunächst auf Sonntag.</p>
             <closer>herzlichst <lb/>Ihr <lb/>

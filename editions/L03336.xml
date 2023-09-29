@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3336"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3336"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, [24.&#160;10.&#160;1902]</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, [24. 10. 1902]</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -93,7 +95,7 @@
                         <additions>
                            <incident type="archival">
                               <desc>mit Bleistift von unbekannter Hand nummeriert:
-                                    »<quote>24/X&#160;902</quote>«</desc>
+                                    »<quote>24/X 902</quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -109,13 +111,26 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1902-10-24" n="01">[24.&#160;10.&#160;1902]</date>
+               <date when="1902-10-24" n="01">[24. 10. 1902]</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01244">Hofmannsthal an Schnitzler, 23. 10. [1902]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01245">Saar an Schnitzler, 25. 10. 1902</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02979">Schnitzler an Salten, 16. 10. 1902</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03337">Salten an Schnitzler, [3. 12.? 1902]</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -127,12 +142,13 @@
          <div type="writingSession" n="1">
             <p>
                <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00079-R"/>
-               <salute>Lieber, </salute>die <anchor type="commentary" xml:id="K_L03336-1"/><rs type="work" ref="#pmb76513">kl. Veronika</rs>
-               erscheint also am <date>1. Dezember</date> in der »<rs type="work" ref="#pmb36152"
-                  >N.&#160;D.&#160;R.</rs><note type='commentary' xml:id="K_L03336-1h"><bibl>
+               <salute>Lieber, </salute>die <anchor type="commentary" xml:id="K_L03336-1"/>
+               <rs type="work" ref="#pmb76513">kl. Veronika</rs>
+               erscheint also am <date>1. Dezember</date> in der »<rs type="work" ref="#pmb36152">N. D. R.</rs>
+               <note type="commentary" xml:id="K_L03336-1h">
+                  <bibl>
                      <rs type="person" ref="#pmb2167">Felix Salten</rs>: <rs type="work" ref="#pmb76513">Die kleine Veronika</rs>. In: <rs type="work" ref="#pmb36152">Neue deutsche Rundschau</rs>, Jg. 13, Nr. 12,
-                     <date>Dezember 1902</date>, S. 1285–1333</bibl>.</note>« Eben theilt es mir <rs type="person" ref="#pmb11324"
-                  >Fischer</rs> mit. Ich freue mich aufrichtig und danke Ihnen herzlichst. </p>
+                     <date>Dezember 1902</date>, S. 1285–1333</bibl>.</note>« Eben theilt es mir <rs type="person" ref="#pmb11324">Fischer</rs> mit. Ich freue mich aufrichtig und danke Ihnen herzlichst. </p>
             <closer>Ihr <lb/>
                <signed>Salten</signed>
             </closer>

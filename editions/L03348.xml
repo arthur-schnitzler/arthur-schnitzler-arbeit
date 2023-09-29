@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3348"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3348"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
             <title level="a">Felix Salten an Arthur Schnitzler, [zwischen 26. und
-               30.&#160;10.&#160;1903]</title>
+               30. 10. 1903]</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -116,15 +118,28 @@
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
                <date notBefore="1903-10-26" notAfter="1903-10-30" n="01">[zwischen 26. und
-                  30.&#160;10.&#160;1903]</date>
+                  30. 10. 1903]</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
                <date notBefore="1903-10-26" notAfter="1903-10-30">[zwischen 26. und
-                  30.&#160;10.&#160;1903]</date>
+                  30. 10. 1903]</date>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01331">Hofmannsthal an Schnitzler, 24. [10.] 1903</ref>
+               <ref subtype="next_letter" type="withinCollection" target="LO3349">Salten an Schnitzler, [zwischen 27. und 31. 10. 1903]</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3350">Salten an Schnitzler, [23./24.? 10. 1903]</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3349">Salten an Schnitzler, [zwischen 27. und 31. 10. 1903]</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -201,23 +216,19 @@
                </p>
             </opener>
             <p>
-               <salute>Lieber, </salute> wir kommen also (mit <anchor type="commentary"
-                  xml:id="K_L03348-1"/>Fourage<note type="commentary" xml:id="K_L03348-1h">eigtl.
+               <salute>Lieber, </salute> wir kommen also (mit <anchor type="commentary" xml:id="K_L03348-1"/>Fourage<note type="commentary" xml:id="K_L03348-1h">eigtl.
                   Pferdefutter, hier im Sinn von: mit Essen</note>) <date>Sonntag</date> nach dem
-                  »<anchor type="commentary" xml:id="K_L03348-21"/><rs type="work" ref="#pmb146020"
-                  >Müller</rs><note type="commentary" xml:id="K_L03348-21h"><rs type="work"
-                     ref="#pmb146020">Der Müller und sein Kind. Volksdrama in fünf Aufzügen</rs> von
+                  »<anchor type="commentary" xml:id="K_L03348-21"/>
+               <rs type="work" ref="#pmb146020">Müller</rs>
+               <note type="commentary" xml:id="K_L03348-21h">
+                  <rs type="work" ref="#pmb146020">Der Müller und sein Kind. Volksdrama in fünf Aufzügen</rs> von
                      <rs type="person" ref="#pmb64875">Ernst Raupach</rs> wurde am
-                     <date>1.&#160;11.&#160;1903</date> am <rs type="org" ref="#pmb39666"
-                     >Raimundtheater</rs> als Nachmittagsvorstellung (Beginnzeit halb 3&#160;Uhr)
+                     <date>1. 11. 1903</date> am <rs type="org" ref="#pmb39666">Raimundtheater</rs> als Nachmittagsvorstellung (Beginnzeit halb 3 Uhr)
                   gegeben. Das erlaubt die Datierung des Korrespondenzstückes in die Woche vor
-                  diesem Sonntag. Zwar lief das Stück auch am <date>25.&#160;10.&#160;1903</date>
-                  als Nachmittagsvorstellung, doch lässt sich das nicht mit dem Schreiben vom <ref
-                     type="schnitzler-briefe" target="L0350" subtype="date-only"/> vereinbaren.
-                  Damit bleibt nur das Treffen am <ref type="schnitzler-tagebuch"
-                     subtype="date-only" target="1903-11-01"/> übrig, in Vorbereitung dessen zuerst
-                  dieses und dann der Brief vom <ref type="schnitzler-briefe" target="L003349"
-                     subtype="date-only"/> gelaufen sein dürften.</note>« zu Ihnen.</p>
+                  diesem Sonntag. Zwar lief das Stück auch am <date>25. 10. 1903</date>
+                  als Nachmittagsvorstellung, doch lässt sich das nicht mit dem Schreiben vom <ref type="schnitzler-briefe" target="L0350" subtype="date-only"/> vereinbaren.
+                  Damit bleibt nur das Treffen am <ref type="schnitzler-tagebuch" subtype="date-only" target="1903-11-01"/> übrig, in Vorbereitung dessen zuerst
+                  dieses und dann der Brief vom <ref type="schnitzler-briefe" target="L003349" subtype="date-only"/> gelaufen sein dürften.</note>« zu Ihnen.</p>
             <closer>Herzlichst <lb/>Ihr <lb/>
                <signed>Salten</signed>
             </closer>

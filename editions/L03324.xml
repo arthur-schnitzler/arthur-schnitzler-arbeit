@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3324"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3324"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, [10?.&#160;3.&#160;1902]</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, [10?. 3. 1902]</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -92,10 +94,16 @@
                         </handDesc>
                         <additions>
                            <incident type="receiver">
-                              <desc>mit Bleistift datiert: »<quote><date>1<subst>
-                                          <del rend="overwritten"><unclear>5</unclear></del>
-                                          <add place="inline"><unclear>0</unclear></add>
-                                       </subst>.&#160;3.&#160;902</date></quote>«</desc>
+                              <desc>mit Bleistift datiert: »<quote>
+                                    <date>1<subst>
+                                          <del rend="overwritten">
+                                             <unclear>5</unclear>
+                                          </del>
+                                          <add place="inline">
+                                             <unclear>0</unclear>
+                                          </add>
+                                       </subst>. 3. 902</date>
+                                 </quote>«</desc>
                            </incident>
                            <incident type="archival">
                               <desc>mit Bleistift von unbekannter Hand nummeriert:
@@ -115,13 +123,26 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1902-03-10" n="01">[10?.&#160;3.&#160;1902]</date>
+               <date when="1902-03-10" n="01">[10?. 3. 1902]</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01208">Beer-Hofmann an Schnitzler, 8. 3. 1902</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L03325">Salten an Schnitzler, [11. 3. 1902]</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3323">Salten an Schnitzler, [19. 2. 1902]</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03325">Salten an Schnitzler, [11. 3. 1902]</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -132,21 +153,19 @@
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <dateline rend="right"><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00066-R"/>
-                  <date><anchor type="commentary" xml:id="K_L03324-1"/>Montag<note type="commentary"
-                        xml:id="K_L03324-1h">Die Datierung <rs type="person" ref="#pmb2121"
-                           >Schnitzler</rs>s ist bei der zweiten Ziffer des Kalendertags nicht mit
+               <dateline rend="right">
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00066-R"/>
+                  <date>
+                     <anchor type="commentary" xml:id="K_L03324-1"/>Montag<note type="commentary" xml:id="K_L03324-1h">Die Datierung <rs type="person" ref="#pmb2121">Schnitzler</rs>s ist bei der zweiten Ziffer des Kalendertags nicht mit
                         Sicherheit zu entziffern. Unter der Annahme, dass der Wochentag hier richtig
                         wiedergegeben ist, sind nur der <date>10.</date> und <date>17.</date>
-                        mögliche Daten, wobei eine »7« bei <rs type="person" ref="#pmb2121"
-                           >Schnitzler</rs> nicht zu erkennen ist. Weiters scheint er als Folge
-                        dieses Briefs am Folgetag einen Krankenbesuch zu machen, <ref
-                           type="schnitzler-briefe" subtype="cf" target="L03325"
-                  />.</note></date>.</dateline>
+                        mögliche Daten, wobei eine »7« bei <rs type="person" ref="#pmb2121">Schnitzler</rs> nicht zu erkennen ist. Weiters scheint er als Folge
+                        dieses Briefs am Folgetag einen Krankenbesuch zu machen, <ref type="schnitzler-briefe" subtype="cf" target="L03325"/>.</note>
+                  </date>.</dateline>
             </opener>
-            <p><salute>Lieber, </salute>bin seit acht Tagen recht krank und zu Bett. Geschichte mit
-                  <rs type="person" ref="">G. G.</rs> hat sich nur auf N<hi rend="superscript"
-                  >r</hi> 10 bezogen, die »Conservatoristin« wurde dazu erfunden. So wird man
+            <p>
+               <salute>Lieber, </salute>bin seit acht Tagen recht krank und zu Bett. Geschichte mit
+                  <rs type="person" ref="">G. G.</rs> hat sich nur auf N<hi rend="superscript">r</hi> 10 bezogen, die »Conservatoristin« wurde dazu erfunden. So wird man
                manchmal beunruhigt. Warum sind Sie noch auf der Suche? Sagten Sie mir nicht, Sie
                hätten in der <rs type="place" ref="#pmb44413">Brühl</rs> schon fix gemietet? </p>
             <p>Hoffentlich bin ich in 8 Tagen wieder wol.</p>

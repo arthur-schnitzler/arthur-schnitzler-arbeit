@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3346"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3346"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 29.&#160;9.&#160;1903</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 29. 9. 1903</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -102,13 +104,26 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1903-09-29" n="02">29.&#160;9.&#160;1903</date>
+               <date when="1903-09-29" n="02">29. 9. 1903</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01320">Schnitzler an Hofmannsthal, 29. 9. 1903</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01321">Hofmannsthal an Schnitzler, 30. 9. 1903</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3345">Salten an Schnitzler, 28. 9. 1903</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02986">Schnitzler an Salten, [12. 10. 1903?]</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -119,23 +134,19 @@
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <salute><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00089-R"/>Lieber,</salute>
+               <salute>
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00089-R"/>Lieber,</salute>
             </opener>
-            <p>vielleicht ist es Ihnen oder Ihrer <rs type="person" ref="#pmb2173" subtype="implied"
-                  >Frau</rs> von Interesse, dass <rs type="person" ref="#pmb2549">Mirjam</rs> bei
+            <p>vielleicht ist es Ihnen oder Ihrer <rs type="person" ref="#pmb2173" subtype="implied">Frau</rs> von Interesse, dass <rs type="person" ref="#pmb2549">Mirjam</rs> bei
                ihren <rs type="person" ref="#pmb144103 #pmb144105" subtype="implied">Eltern</rs>
-               bleibt. Dazu dürften neben dem Brief Ihrer <rs type="person" ref="#pmb2173"
-                  subtype="implied">Frau</rs> an <rs type="person" ref="#pmb144103"
-                  subtype="implied">Mirjams Vater</rs>, wiederholte dringende Briefe von mir an <rs
-                  type="person" ref="#pmb2549">Mirjam</rs> beigetragen haben. Für den Fall, dass <rs
-                  type="person" ref="#pmb2549">M.</rs> Sie davon noch nicht in Kenntnis gesetzt hat,
+               bleibt. Dazu dürften neben dem Brief Ihrer <rs type="person" ref="#pmb2173" subtype="implied">Frau</rs> an <rs type="person" ref="#pmb144103" subtype="implied">Mirjams Vater</rs>, wiederholte dringende Briefe von mir an <rs type="person" ref="#pmb2549">Mirjam</rs> beigetragen haben. Für den Fall, dass <rs type="person" ref="#pmb2549">M.</rs> Sie davon noch nicht in Kenntnis gesetzt hat,
                sende ich Ihnen diese Mittheilung, </p>
             <closer>herzl. <lb/>
                <signed>Salten </signed>
             </closer>
             <postscript>
                <dateline>
-                  <date>29/IX.&#160;03</date>
+                  <date>29/IX. 03</date>
                </dateline>
             </postscript>
          </div>

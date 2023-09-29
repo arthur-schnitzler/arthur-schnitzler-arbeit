@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3351"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3351"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -120,9 +122,21 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
-               <date evidence="conjecture" notBefore="1903-11-19" notAfter="1903-11-21"
-                  >[19. 11. 1903 – 21. 11. 1903?]</date>
+               <date evidence="conjecture" notBefore="1903-11-19" notAfter="1903-11-21">[19. 11. 1903 – 21. 11. 1903?]</date>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01345">Bahr an Schnitzler, 15. 11. 1903</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L02990">Schnitzler an Salten, 23. 11. 1903</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03355">Salten an Schnitzler, [11. 11?. 1903]</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02990">Schnitzler an Salten, 23. 11. 1903</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -133,22 +147,26 @@
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <dateline rend="right"><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00095-R"/>
-                  <date><anchor type="commentary" xml:id="K_L03351-1"/>Donnerstag<note
-                        type="commentary" xml:id="K_L03351-1h">Diese Wochentagsangabe und die
+               <dateline rend="right">
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00095-R"/>
+                  <date>
+                     <anchor type="commentary" xml:id="K_L03351-1"/>Donnerstag<note type="commentary" xml:id="K_L03351-1h">Diese Wochentagsangabe und die
                         Datierung <rs type="person" ref="#pmb2121">Schnitzler</rs>s auf einen
                         Mittwoch widersprechen sich. Durch die Angabe der Uhrzeit nach Mitternacht
                         dürfte das Schreiben am Donnerstag, dem 19., um 1h früh verfasst
-                        sein.</note></date>. </dateline>
+                        sein.</note>
+                  </date>. </dateline>
                <p rend="right">
                   <time>1<hi rend="superscript">h</hi> früh</time>. </p>
             </opener>
             <p>
-               <salute>Lieber Freund, </salute>wenn Sie <rs type="person" ref="#pmb2173" subtype="implied">Beide</rs><space unit="chars" quantity="1"/>
+               <salute>Lieber Freund, </salute>wenn Sie <rs type="person" ref="#pmb2173" subtype="implied">Beide</rs>
+               <space unit="chars" quantity="1"/>
                <date>heute</date> Abend mit <rs type="person" ref="#pmb146023">Safonoff</rs> bei uns essen
                wollten (8<hi rend="superscript">h.</hi>) würden wir uns herzlich darüber freuen.
                <rs type="person" ref="#pmb146023">Safonoff</rs> ist eben angekommen, deshalb bitte ich wegen der knappen Frist um
-               Entschuldigung. Sie pneumatisiren mir hoffentlich Ihre <anchor type="commentary" xml:id="K_L03351-11"/>Zusage<note type='commentary' xml:id="K_L03351-11h"><rs type="person" ref="#pmb2121">Schnitzler</rs> war anderweitig verpflichtet.</note>. </p>
+               Entschuldigung. Sie pneumatisiren mir hoffentlich Ihre <anchor type="commentary" xml:id="K_L03351-11"/>Zusage<note type="commentary" xml:id="K_L03351-11h">
+                  <rs type="person" ref="#pmb2121">Schnitzler</rs> war anderweitig verpflichtet.</note>. </p>
             <closer>herzlichst Ihr <signed>S. </signed>
             </closer>
          </div>

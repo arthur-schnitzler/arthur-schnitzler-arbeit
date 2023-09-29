@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3272"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3272"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 21.&#160;8.&#160;1897</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 21. 8. 1897</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -108,13 +110,26 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1897-08-21" n="01">21.&#160;8.&#160;1897</date>
+               <date when="1897-08-21" n="01">21. 8. 1897</date>
                <placeName ref="#30">Salzburg</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#213">Ischl</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00717">Schnitzler an Beer-Hofmann, 17. 8. 1897</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00718">Hofmannsthal an Schnitzler, 26. 8. 1897</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3274">Salten an Schnitzler, 3. 9. [1897]</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3273">Salten an Schnitzler, 31. 8. 1897</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -126,8 +141,7 @@
          <div type="address">
             <address>
                <addrLine>
-                  <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00013-V"/>Herrn D<hi
-                     rend="superscript">r</hi> Arthur Schnitzler </addrLine>
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00013-V"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler </addrLine>
                <addrLine>
                   <rs type="place" ref="#213">Ischl</rs>
                </addrLine>
@@ -137,14 +151,13 @@
             </address>
          </div>
          <div type="writingSession" n="1">
-            <p><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00013-R"/>
-               <salute>Lieber Arthur, </salute>bin <date>Mittwoch</date> mit <rs type="person"
-                  ref="">Van Jung</rs> leider zu spät hereingekommen und habe sehr bedauert, Sie
-               nicht mehr sehen zu können. Bin seit heute früh hier, <rs type="place" ref=""
-                  >Linzerstraße 74</rs> bei Frau <rs type="person" ref="">Sandholzer</rs>.</p>
-            <p>Vielleicht kommen Sie einmal her, oder ich nach <rs type="place" ref="#pmb213"
-                  >Ischl</rs>. Jedenfalls verständigen wir uns vorher davon. </p>
-            <closer>Herzlich <lb/><signed>Salten</signed>
+            <p>
+               <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00013-R"/>
+               <salute>Lieber Arthur, </salute>bin <date>Mittwoch</date> mit <rs type="person" ref="">Van Jung</rs> leider zu spät hereingekommen und habe sehr bedauert, Sie
+               nicht mehr sehen zu können. Bin seit heute früh hier, <rs type="place" ref="">Linzerstraße 74</rs> bei Frau <rs type="person" ref="">Sandholzer</rs>.</p>
+            <p>Vielleicht kommen Sie einmal her, oder ich nach <rs type="place" ref="#pmb213">Ischl</rs>. Jedenfalls verständigen wir uns vorher davon. </p>
+            <closer>Herzlich <lb/>
+               <signed>Salten</signed>
             </closer>
          </div>
       </body>

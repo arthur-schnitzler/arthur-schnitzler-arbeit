@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3265"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3265"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 16.&#160;5.&#160;1897</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 16. 5. 1897</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -109,13 +111,26 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1897-05-16" n="01">16.&#160;5.&#160;1897</date>
+               <date when="1897-05-16" n="01">16. 5. 1897</date>
                <placeName ref="#50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="" evidence="internal">Paris</placeName>
+               <placeName ref="#pmb182" evidence="internal">Paris</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00676">Blumenthal an Schnitzler, 12. 5. 1897</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00677">Hofmannsthal an Schnitzler, 17. 5. [1897]</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3264">Salten an Schnitzler, 5. 5. 1897</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3266">Salten an Schnitzler, 23. 5. 1897</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -126,11 +141,13 @@
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <dateline rend="right"><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00006-R"/>
-                  <rs type="place" ref="#pmb50"> Wien</rs>, <date>16. Mai 97</date>
+               <dateline rend="right">
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00006-R"/>
+                  <rs type="place" ref="#pmb50">Wien</rs>, <date>16. Mai 97</date>
                </dateline>
             </opener>
-            <p><salute>Lieber Arthur, </salute>gestern Abend erfuhr ich durch Zufall Ihre jetzige
+            <p>
+               <salute>Lieber Arthur, </salute>gestern Abend erfuhr ich durch Zufall Ihre jetzige
                Adresse und erklärte mir daraus, weshalb Sie mir wol bis heute nicht geantwortet
                haben. Offenbar haben Sie meinen Brief nicht erhalten, den ich Ihnen vor mehr als
                vierzehn Tagen schrieb. Ich kam Ende April aus <rs type="place" ref="">Riva</rs>
@@ -140,7 +157,8 @@
                   de la Bourse</rs>. Offenbar haben Sie dieses Schreiben nicht erhalten, und da ich
                hier mit Niemandem verkehre, habe ich erst gestern Abend Ihre neue Wohnung erfahren
                und glaube, Ihnen das zur Aufklärung sagen zu müßen.</p>
-            <closer>Herzlich <lb/><signed>Salten</signed>
+            <closer>Herzlich <lb/>
+               <signed>Salten</signed>
             </closer>
          </div>
       </body>

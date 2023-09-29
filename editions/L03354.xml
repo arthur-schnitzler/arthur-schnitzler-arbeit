@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3354"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3354"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 9.&#160;12.&#160;1903</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 9. 12. 1903</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -114,13 +116,26 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1903-12-09" n="01">9.&#160;12.&#160;1903</date>
+               <date when="1903-12-09" n="01">9. 12. 1903</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01347">Hofmannsthal an Schnitzler, 8. 12. [1903]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01348">Schnitzler an Hofmannsthal, 10. 12. 1903</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3352">Salten an Schnitzler, 27. 11. 1903</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3356">Salten an Schnitzler, 11. 12. 1903</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -156,7 +171,7 @@
                         </rs>
                      </hi>
                      <space unit="chars" quantity="1"/>
-                     <date>9.&#160;Dezember 1903</date>. </seg>
+                     <date>9. Dezember 1903</date>. </seg>
                </p>
                <p>
                   <seg rend="left">
@@ -177,7 +192,9 @@
                   </hi>
                </p>
                <p>
-                  <hi rend="pre-print"><hi rend="bold">Redaction</hi></hi>
+                  <hi rend="pre-print">
+                     <hi rend="bold">Redaction</hi>
+                  </hi>
                </p>
                <p>
                   <hi rend="pre-print">Telegramm-Adresse: <rs type="org" ref="#pmb29626">
@@ -190,7 +207,11 @@
                      </rs>
                   </hi>
                </p>
-               <p><hi rend="pre-print"><hi rend="bold">Telephone:</hi></hi></p>
+               <p>
+                  <hi rend="pre-print">
+                     <hi rend="bold">Telephone:</hi>
+                  </hi>
+               </p>
                <p>
                   <hi rend="pre-print">Interurbanes Telephon Nr. 15.988</hi>
                </p>
@@ -198,17 +219,18 @@
                   <hi rend="pre-print">= Telephone Nr. 17.040, 17.041 =</hi>
                </p>
                <p>
-                  <hi rend="pre-print">Depeschensaal Nr.&#160;4548.</hi>
+                  <hi rend="pre-print">Depeschensaal Nr. 4548.</hi>
                </p>
                <p>Sa/H</p>
                <salute rend="center">Lieber Freund!</salute>
             </opener>
             <p>Da unsere Weihnachtsnummer jetzt fertig gestellt werden muss, frage ich Sie, ob Sie
                etwas für mich haben. Es muss nichts Grosses sein, aber aus mancherlei Gründen wäre
-               es mir lieb, wenn Sie mir irgend etwas schicken können. Die <anchor type="commentary" xml:id="K_L03354-1"/><rs type="person" ref="#pmb12671"
-                  >Schlenther</rs>-Briefe<note type='commentary' xml:id="K_L03354-1h">Handelt es sich noch um die Briefe, die
-                     <rs type="person" ref="#pmb12671"
-                        >Schlenther</rs><space unit="chars" quantity="1"/><rs type="person" ref="#pmb2121">Schnitzler</rs> zur geplanten Annahme und späteren Ablehnung von
+               es mir lieb, wenn Sie mir irgend etwas schicken können. Die <anchor type="commentary" xml:id="K_L03354-1"/>
+               <rs type="person" ref="#pmb12671">Schlenther</rs>-Briefe<note type="commentary" xml:id="K_L03354-1h">Handelt es sich noch um die Briefe, die
+                     <rs type="person" ref="#pmb12671">Schlenther</rs>
+                  <space unit="chars" quantity="1"/>
+                  <rs type="person" ref="#pmb2121">Schnitzler</rs> zur geplanten Annahme und späteren Ablehnung von
                      <rs type="work" ref="#pmb29857">Der Schleier der Beatrice</rs> geschickt hatte? <rs type="person" ref="#pmb2167">Salten</rs> organisierte
                   damals den Protest, der </note> habe ich Ihnen gleich am Montag rekommandiert
                zurückgeschickt. Hoffentlich bin ich in der nächsten Woche mit dem Preisausschreiben
@@ -218,11 +240,18 @@
                <lb/>
                <signed>Salten</signed>
             </closer>
-            <postscript><p>Herrn Dr. Arthur Schnitzler</p>
-               <p><rs type="place" ref="#pmb50"><hi rend="spaced_out">Wien</hi></rs></p>
-               <p><hi rend="pre-print">Alle für »<rs type="org" ref="#pmb29626">Die Zeit</rs>« bestimmten Zuschriften und Sendungen sind an
+            <postscript>
+               <p>Herrn Dr. Arthur Schnitzler</p>
+               <p>
+                  <rs type="place" ref="#pmb50">
+                     <hi rend="spaced_out">Wien</hi>
+                  </rs>
+               </p>
+               <p>
+                  <hi rend="pre-print">Alle für »<rs type="org" ref="#pmb29626">Die Zeit</rs>« bestimmten Zuschriften und Sendungen sind an
                   die Redaction »<rs type="org" ref="#pmb29626">Die Zeit</rs>« und <hi rend="bold">nicht</hi> an die  Person eines der Herausgeber oder Mitarbeiter zu richten.</hi>
-            </p></postscript>
+               </p>
+            </postscript>
          </div>
       </body>
    </text>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3260"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3260"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, [27.&#160;2.&#160;1897]</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, [27. 2. 1897]</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -92,7 +94,9 @@
                         </handDesc>
                         <additions>
                            <incident type="receiver">
-                              <desc>mit Bleistift datiert: »<quote><date>27/2&#160;97</date></quote>«</desc>
+                              <desc>mit Bleistift datiert: »<quote>
+                                    <date>27/2 97</date>
+                                 </quote>«</desc>
                            </incident>
                            <incident type="archival">
                               <desc>mit Bleistift von unbekannter Hand nummeriert:
@@ -112,13 +116,39 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1897-02-27" n="01">[27.&#160;2.&#160;1897]</date>
+               <date when="1897-02-27" n="01">[27. 2. 1897]</date>
                <placeName ref="#50" evidence="conjecture">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#50" evidence="conjecture">Wien</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L00647">Schnitzler an Bahr, 26. 2. 1897</ref>
+               <ref subtype="next_letter" type="withinCollection" target="LO3260">Salten an Schnitzler, [27. 2. 1897?]</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3262">Salten an Schnitzler, [17.?] 1. [1897]</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3260">Salten an Schnitzler, [27. 2. 1897?]</ref>
+            </correspContext>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="LO3260">Salten an Schnitzler, [27. 2. 1897]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L00648">Schnitzler an Bahr, 28. 2. 1897</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3260">Salten an Schnitzler, [27. 2. 1897]</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02963">Schnitzler an Salten, 26. 4. 1897</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -130,13 +160,13 @@
          <div type="writingSession" n="1">
             <p>
                <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00001-R"/>
-               <salute>Lieber Arthur, </salute><space unit="chars" quantity="1"/>
+               <salute>Lieber Arthur, </salute>
+               <space unit="chars" quantity="1"/>
                <rs type="person" ref="#pmb146041">L.</rs> schreibt mir eben wieder. Die Sache ist noch nicht
                beendet und Sie drängt fürchterlich. Ich bitte Sie können Sie mir bis
-                  <date>Donnerstag</date> Nachmittag <unclear>1</unclear>0f. <pb
-                  facs="MS-SCHNITZLER-B-00089-A-00002-000-00004-V"/>leihen? Sie bekommen Sie <hi
-                  rend="underline" n="1">genau</hi> zurück. <date>Donnerstag</date> Nachmittag! </p>
-            <closer>Herzl <lb/><signed>Salten</signed>
+                  <date>Donnerstag</date> Nachmittag <unclear>1</unclear>0f. <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00004-V"/>leihen? Sie bekommen Sie <hi rend="underline" n="1">genau</hi> zurück. <date>Donnerstag</date> Nachmittag! </p>
+            <closer>Herzl <lb/>
+               <signed>Salten</signed>
             </closer>
          </div>
       </body>

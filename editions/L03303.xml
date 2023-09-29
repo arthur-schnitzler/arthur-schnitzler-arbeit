@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3303"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3303"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
             <title level="a">Felix Salten und Ottilie Metzl an Arthur Schnitzler,
-               25.&#160;12.&#160;1899</title>
+               25. 12. 1899</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <author ref="#pmb23918">Metzl, Ottilie</author>
             <editor>
@@ -89,28 +91,32 @@
                            </supportDesc>
                         </objectDesc>
                         <handDesc hands="2">
-                           <handNote medium="bleistift" style="lateinische-kurrent"
-                              corresp="#pmb2167"/>
-                           <handNote medium="bleistift" corresp="#pmb23918" style="nicht_anzuwenden"
-                           />
+                           <handNote medium="bleistift" style="lateinische-kurrent" corresp="#pmb2167"/>
+                           <handNote medium="bleistift" corresp="#pmb23918" style="nicht_anzuwenden"/>
                         </handDesc>
                         <additions>
                            <incident type="postal">
-                              <desc><stamp n="1">
+                              <desc>
+                                 <stamp n="1">
                                     <placeName ref="#pmb30">Salzburg Stadt</placeName>
-                                    <date when="1899-12-25"
-                                       >25&#160;12&#160;<unclear>9</unclear>9</date>
+                                    <date when="1899-12-25">25 12 <unclear>9</unclear>9</date>
                                     <time>9</time>
-                                 </stamp></desc>
+                                 </stamp>
+                              </desc>
                            </incident>
                            <incident type="postal">
-                              <desc><stamp n="2">
-                                    <placeName ref="#pmb59"><unclear>W</unclear>ien 9/3
+                              <desc>
+                                 <stamp n="2">
+                                    <placeName ref="#pmb59">
+                                       <unclear>W</unclear>ien 9/3
                                        72</placeName>
-                                 </stamp></desc>
+                                 </stamp>
+                              </desc>
                            </incident>
                            <incident type="receiver">
-                              <desc>mit Bleistift die Jahreszahl »<quote><date>99</date></quote>«
+                              <desc>mit Bleistift die Jahreszahl »<quote>
+                                    <date>99</date>
+                                 </quote>«
                                  vermerkt</desc>
                            </incident>
                            <incident type="archival">
@@ -132,13 +138,26 @@
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
                <persName ref="#pmb23918">Metzl, Ottilie</persName>
-               <date when="1899-12-25" n="01">25.&#160;12.&#160;1899</date>
+               <date when="1899-12-25" n="02">25. 12. 1899</date>
                <placeName ref="#pmb30">Salzburg</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01008">Schnitzler an Beer-Hofmann, 25. 12. 1899</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L03032">Schnitzler an Salten, 30. 12. [1899?]</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="LO3302">Salten an Schnitzler, [18. 11. 1899]</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03032">Schnitzler an Salten, 30. 12. [1899?]</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -150,8 +169,7 @@
          <div type="address">
             <address>
                <addrLine>
-                  <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00045-V"/>Herrn D<hi
-                     rend="superscript">r</hi> Arthur Schnitzler </addrLine>
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00045-V"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler </addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb50">Wien</rs>
                </addrLine>
@@ -162,14 +180,21 @@
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <p rend="center"><pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00045-R"/><hi
-                     rend="pre-print">Gruss aus <rs type="place" ref="#pmb30">Salzburg</rs></hi></p>
-               <p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb145772"
-                        >Stadtbrücke</rs></hi></p>
+               <p rend="center">
+                  <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00045-R"/>
+                  <hi rend="pre-print">Gruss aus <rs type="place" ref="#pmb30">Salzburg</rs>
+                  </hi>
+               </p>
+               <p rend="center">
+                  <hi rend="pre-print">
+                     <rs type="place" ref="#pmb145772">Stadtbrücke</rs>
+                  </hi>
+               </p>
             </opener>
             <p>Herzliche Grüße</p>
             <closer>
-               <signed>Salten </signed><lb/>
+               <signed>Salten </signed>
+               <lb/>
                <handShift scribe="#pmb23918"/>
                <signed>Ottilie M.</signed>
             </closer>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="LO3335"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="LO3335"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, 15.&#160;10.&#160;1902</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 15. 10. 1902</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -109,13 +111,26 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1902-10-15" n="01">15.&#160;10.&#160;1902</date>
+               <date when="1902-10-15" n="03">15. 10. 1902</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01242">Bahr an Schnitzler, 15. 10. 1902</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L02979">Schnitzler an Salten, 16. 10. 1902</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02978">Schnitzler an Salten, 30. 9. 1902</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02979">Schnitzler an Salten, 16. 10. 1902</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -128,7 +143,9 @@
             <opener>
                <p>
                   <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00078-R"/>
-                  <hi rend="pre-print"><hi rend="capitals">Die</hi></hi>
+                  <hi rend="pre-print">
+                     <hi rend="capitals">Die</hi>
+                  </hi>
                </p>
                <p>
                   <hi rend="pre-print">
@@ -138,21 +155,30 @@
                   </hi>
                </p>
                <p>
-                  <seg rend="left"><hi rend="pre-print"><rs type="place" ref="#pmb50">Wien</rs>er
-                        Tageszeitung</hi></seg>
+                  <seg rend="left">
+                     <hi rend="pre-print">
+                        <rs type="place" ref="#pmb50">Wien</rs>er
+                        Tageszeitung</hi>
+                  </seg>
                   <seg rend="right">
                      <hi rend="pre-print">
                         <rs type="place" ref="#pmb50">
                            <hi rend="capitals">Wien</hi>
-                        </rs></hi>
+                        </rs>
+                     </hi>
                      <space unit="chars" quantity="1"/>
-                     <date>15.&#160;Octob.&#160;02</date></seg>
+                     <date>15. Octob. 02</date>
+                  </seg>
                </p>
                <p>
-                  <seg rend="left"><hi rend="pre-print">Herausgeber: </hi></seg>
+                  <seg rend="left">
+                     <hi rend="pre-print">Herausgeber: </hi>
+                  </seg>
                   <seg rend="right">
-                     <hi rend="pre-print"><rs type="place" ref="#pmb120">I.,
-                           Wipplingerstrasse 38</rs></hi>
+                     <hi rend="pre-print">
+                        <rs type="place" ref="#pmb120">I.,
+                           Wipplingerstrasse 38</rs>
+                     </hi>
                   </seg>
                </p>
                <p>
@@ -166,62 +192,69 @@
                <p>
                   <hi rend="pre-print">Redaction.</hi>
                </p>
-               <p><hi rend="pre-print">Telegramm-Adresse: <rs type="org" ref="#pmb29626"><hi
-                           rend="spaced_out">Zeit</hi></rs><hi rend="spaced_out">,<space
-                           unit="chars" quantity="1"/></hi><rs type="place" ref="#pmb50"><hi
-                           rend="spaced_out">Wien</hi></rs></hi></p>
-               <p><hi rend="pre-print">Interurbanes Telephon Nr.&#160;15.988</hi></p>
-               <p><hi rend="pre-print">=&#160;Telephone Nr.&#160;17.040, 17.041&#160;=</hi></p>
-               
+               <p>
+                  <hi rend="pre-print">Telegramm-Adresse: <rs type="org" ref="#pmb29626">
+                        <hi rend="spaced_out">Zeit</hi>
+                     </rs>
+                     <hi rend="spaced_out">,<space unit="chars" quantity="1"/>
+                     </hi>
+                     <rs type="place" ref="#pmb50">
+                        <hi rend="spaced_out">Wien</hi>
+                     </rs>
+                  </hi>
+               </p>
+               <p>
+                  <hi rend="pre-print">Interurbanes Telephon Nr. 15.988</hi>
+               </p>
+               <p>
+                  <hi rend="pre-print">= Telephone Nr. 17.040, 17.041 =</hi>
+               </p>
             </opener>
             <p>
                <salute>Lieber Freund, </salute>ich habe sehr bedauert, dass mich die Satzcorrectur
-               zum »<anchor type="commentary" xml:id="K_L03335-11"/><rs type="work" ref="#pmb145957"
-                  >Fünfkreuzertanz</rs><note type="commentary" xml:id="K_L03335-11h"><bibl><rs
-                        type="person" ref="#pmb2167">Felix Salten</rs>: <rs type="work"
-                        ref="#pmb145957">Fünfkreuzertanz</rs>. In: <rs type="work" ref="#pmb35935"
-                        >Die Zeit</rs>, Jg.&#160;1, Nr.&#160;16,
-                     <date>12.&#160;10.&#160;1902</date>, Morgenblatt, S.&#160;2–3</bibl>.</note>«
-                  <date>Samstag</date> bis 2&#160;Uhr in der Redaction aufhielt, so dass ich Sie
+               zum »<anchor type="commentary" xml:id="K_L03335-11"/>
+               <rs type="work" ref="#pmb145957">Fünfkreuzertanz</rs>
+               <note type="commentary" xml:id="K_L03335-11h">
+                  <bibl>
+                     <rs type="person" ref="#pmb2167">Felix Salten</rs>: <rs type="work" ref="#pmb145957">Fünfkreuzertanz</rs>. In: <rs type="work" ref="#pmb35935">Die Zeit</rs>, Jg. 1, Nr. 16,
+                     <date>12. 10. 1902</date>, Morgenblatt, S. 2–3</bibl>.</note>«
+                  <date>Samstag</date> bis 2 Uhr in der Redaction aufhielt, so dass ich Sie
                nicht mehr sehen konnte. Ich bitte Sie nun um einige Kleinigkeiten, die Sie
                gelegentlich, ohne Mühe ausrichten, und für die ich Ihnen sehr dankbar wäre. Erstens
-               Herrn D<hi rend="superscript">r</hi>&#160;<anchor type="commentary"
-                  xml:id="K_L03335-12"/><rs type="person" ref="#pmb12140">Löwenfeld</rs> bestens von
-               mir zu grüßen<note type="commentary" xml:id="K_L03335-12h"><ref
-                     type="schnitzler-tagebuch" target="1902-10-17" subtype="cf"/></note>, und ihm
+               Herrn D<hi rend="superscript">r</hi> <anchor type="commentary" xml:id="K_L03335-12"/>
+               <rs type="person" ref="#pmb12140">Löwenfeld</rs> bestens von
+               mir zu grüßen<note type="commentary" xml:id="K_L03335-12h">
+                  <ref type="schnitzler-tagebuch" target="1902-10-17" subtype="cf"/>
+               </note>, und ihm
                zu sagen, dass ich seinen <anchor type="commentary" xml:id="K_L03335-111"/>Aufsatz über
-               volksthümliche Claßikervorstellungen schon sehnlichst erwarte<note type='commentary' xml:id="K_L03335-111h">nicht nachgewiesen</note>. Dann erkundigen Sie
+               volksthümliche Claßikervorstellungen schon sehnlichst erwarte<note type="commentary" xml:id="K_L03335-111h">nicht nachgewiesen</note>. Dann erkundigen Sie
                sich, bitte, nach dem Schauspieler <rs type="person" ref="#pmb145962">Paul
                   Paschen</rs> (<rs type="org" ref="#pmb57124">Schillertheater</rs>) was das für ein
                Mensch ist. Ich habe durch Geh. Rt. <rs type="person" ref="">Forster</rs> einen <anchor type="commentary" xml:id="K_L03335-124"/>Artikel von ihm bekommen über die
-               Schweinerei des Coulissentones<note type='commentary' xml:id="K_L03335-124h">Abdruck nicht nachgewiesen</note>. Zuletzt noch – wenn bei <rs type="org"
-                  ref="#pmb29639">Fischer</rs> eine endgültige Entscheidung getroffen ist,
+               Schweinerei des Coulissentones<note type="commentary" xml:id="K_L03335-124h">Abdruck nicht nachgewiesen</note>. Zuletzt noch – wenn bei <rs type="org" ref="#pmb29639">Fischer</rs> eine endgültige Entscheidung getroffen ist,
                depeschiren Sie mir, bitte. Ich bin sehr neugierig, wie Sie sich leicht denken
-               können. Ich muß nun den <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00078-V"/>»<rs
-                  type="work" ref="#pmb76940">Moloch</rs>« trotzdem ich ihn das erste Mal refüsirt
-               habe, <rs type="work" ref="#pmb35935" subtype="implied">besprechen</rs>. <rs type="person"
-                  ref="#pmb2618">Hugo Ganz</rs> hätte ihn übel zugerichtet, und bat mich schließlich
-               darum, weil er <anchor type="commentary" xml:id="K_L03335-13"/><rs type="person"
-                  ref="#pmb11673">Herzl</rs>’s Roman »<rs type="work" ref="#pmb76498"
-                  >Altneuland</rs>« übernommen<note type="commentary" xml:id="K_L03335-13h"
-                        ><bibl><rs type="person" ref="#pmb2618">Lector</rs> [&#160;=<rs
-                        type="person" ref="#pmb2618">Hugo Ganz</rs>]: <rs type="work"
-                        ref="#pmb145975">»Altneuland«</rs>. In: <rs type="work" ref="#pmb35935">Die
-                        Zeit</rs>, Jg.&#160;1, Nr.&#160;39, <date>5.&#160;11.&#160;1902</date>,
-                     Morgenblatt, S.&#160;1–2</bibl>.</note> hat. Ich habe aufmerksam gemacht, dass
+               können. Ich muß nun den <pb facs="MS-SCHNITZLER-B-00089-A-00002-000-00078-V"/>»<rs type="work" ref="#pmb76940">Moloch</rs>« trotzdem ich ihn das erste Mal refüsirt
+               habe, <rs type="work" ref="#pmb35935" subtype="implied">besprechen</rs>. <rs type="person" ref="#pmb2618">Hugo Ganz</rs> hätte ihn übel zugerichtet, und bat mich schließlich
+               darum, weil er <anchor type="commentary" xml:id="K_L03335-13"/>
+               <rs type="person" ref="#pmb11673">Herzl</rs>’s Roman »<rs type="work" ref="#pmb76498">Altneuland</rs>« übernommen<note type="commentary" xml:id="K_L03335-13h">
+                  <bibl>
+                     <rs type="person" ref="#pmb2618">Lector</rs> [ =<rs type="person" ref="#pmb2618">Hugo Ganz</rs>]: <rs type="work" ref="#pmb145975">»Altneuland«</rs>. In: <rs type="work" ref="#pmb35935">Die
+                        Zeit</rs>, Jg. 1, Nr. 39, <date>5. 11. 1902</date>,
+                     Morgenblatt, S. 1–2</bibl>.</note> hat. Ich habe aufmerksam gemacht, dass
                ich das Buch nicht loben kann, und da man daran keinen Anstoß nahm, habe ich weiter
-               keine Ursache, mich meiner ganzen Meinung über <rs type="person" ref="#pmb13055"
-                  >W.</rs> zurückzuhalten. Bei alledem hat <rs type="person" ref="#pmb13055">W.</rs>
+               keine Ursache, mich meiner ganzen Meinung über <rs type="person" ref="#pmb13055">W.</rs> zurückzuhalten. Bei alledem hat <rs type="person" ref="#pmb13055">W.</rs>
                noch Glück. Erstens ist er aus <rs type="person" ref="#pmb2618">Ganz</rs>’ Händen
-               entwischt, zweitens nützt ihm die Raserei <rs type="person" ref="#pmb12968"
-                  >Trebitsch</rs>’s bei mir, der schon glaubt, der Tag der nächsten Woche, an
+               entwischt, zweitens nützt ihm die Raserei <rs type="person" ref="#pmb12968">Trebitsch</rs>’s bei mir, der schon glaubt, der Tag der nächsten Woche, an
                welchem mein <rs type="work" ref="#pmb35935" subtype="implied">Moloch-F.</rs> erscheint, sei
                der Tag des Herrn <rs type="person" ref="#pmb12968">Trebitsch</rs>. </p>
             <p>
-               <anchor type="commentary" xml:id="K_L03335-51"/><rs type="person" ref="#pmb2164">Gettke</rs> ist seit ca. 14&#160;Tagen im Besitz
-               Ihres Vertrages<note type='commentary' xml:id="K_L03335-51h"><ref type="schnitzler-tagebuch" target="1902-10-29" subtype="cf"></ref></note>. Ich besuche ihn heute, und mache ihm von der inzwischen
+               <anchor type="commentary" xml:id="K_L03335-51"/>
+               <rs type="person" ref="#pmb2164">Gettke</rs> ist seit ca. 14 Tagen im Besitz
+               Ihres Vertrages<note type="commentary" xml:id="K_L03335-51h">
+                  <ref type="schnitzler-tagebuch" target="1902-10-29" subtype="cf"/>
+               </note>. Ich besuche ihn heute, und mache ihm von der inzwischen
                eingetretenen Änderung der Dinge Mittheilung. Das schiebt allerdings die Premiere im
-                  <rs type="org" ref="#pmb39666">R.&#160;Th</rs>. ein
+                  <rs type="org" ref="#pmb39666">R. Th</rs>. ein
                wenig hinaus! </p>
             <p>Hoffentlich schreiben Sie mir bald! </p>
             <closer>Herzlichst Ihr <lb/>
