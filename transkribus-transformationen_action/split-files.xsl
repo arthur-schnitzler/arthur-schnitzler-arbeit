@@ -6,7 +6,7 @@
     <!-- directory of new files -->
     <xsl:param name="dir">../editions</xsl:param>
     <xsl:param name="sender-in_pmb" as="xs:string">pmb11485</xsl:param>
-    <xsl:param name="sender-in_name" as="xs:string">Goldmann, Arthur</xsl:param>
+    <xsl:param name="sender-in_name" as="xs:string">Goldmann, Paul</xsl:param>
     <xsl:param name="empfaenger-in_pmb" as="xs:string">pmb2121</xsl:param>
     <xsl:param name="empfaenger-in_name" as="xs:string">Schnitzler, Arthur</xsl:param>
     <xsl:param name="titel" as="xs:string">Paul Goldmann an Arthur Schnitzler</xsl:param>
@@ -14,7 +14,7 @@
     <xsl:param name="archiv-stadt" as="xs:string">Marbach am Neckar</xsl:param>
     <xsl:param name="archiv-institution" as="xs:string">Deutsches Literaturarchiv</xsl:param>
     <xsl:param name="signatur" as="xs:string">A:Schnitzler, HS.NZ85.1.3175</xsl:param>
-    <xsl:param name="exporter">KSK</xsl:param>
+    <xsl:param name="exporter">LU</xsl:param>
     <!-- hier Kürzel, LU oder MAM -->
     <!-- output xml file for each letter tag with file name according to number of xml files in output directory (+1) -->
     <xsl:template match="tei:div">
@@ -130,8 +130,8 @@
                             <sourceDesc>
                                 <listWit>
                                     <witness n="1">
+                                        <objectType corresp=""/>
                                         <msDesc>
-                                            <objectType corresp=""/>
                                             <msIdentifier>
                                                 <country>
                                                   <xsl:value-of select="$archiv-land"/>
@@ -174,7 +174,7 @@
                                         <xsl:value-of select="$sender-in_name"/>
                                     </persName>
                                     <date when="" n="01">XXXX</date>
-                                    <placeName ref="#50">Wien</placeName>
+                                    <placeName ref="#168">Berlin</placeName>
                                 </correspAction>
                                 <correspAction type="received">
                                     <persName ref="{concat('#', $empfaenger-in_pmb)}">
