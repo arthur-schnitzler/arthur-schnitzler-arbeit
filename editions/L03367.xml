@@ -174,21 +174,25 @@
             </opener>
             <p>Ich werde <date when="1903-02-28">heut</date>
                <space unit="chars" quantity="1"/>
-               <time>Abend zwiſchen 10. u. 10<hi rend="superscript">1</hi>/<hi rend="subscript"
-                     >2</hi>
-               </time>
-               <time>Uhr</time> bei <hi rend="latintype">
-                  <rs type="place" ref="">Josty</rs>
+               <time>Abend zwiſchen 10 u. 10½ Uhr</time> bei <hi rend="latintype">
+                  <rs type="place" ref="#pmb146875">Josty</rs>
                </hi>, <hi rend="latintype">
                   <rs type="place" ref="#pmb141471">Potsdamer Platz</rs>
-               </hi>, nachſchauen, ob Du dort biſt.<hi rend="underline" n="">Du biſt</hi>
+               </hi>, nachſchauen, ob Du <anchor type="commentary" xml:id="K_L03367-1"/>dort
+                  biſt<note type="commentary" xml:id="K_L03367-1h">
+                  <rs type="person" ref="#pmb11485">Goldmann</rs> und <rs type="person"
+                     ref="#pmb2121">Schnitzler</rs> trafen sich am <ref type="schnitzler-tagebuch"
+                     target="1902-02-28" subtype="date-only"/> bei <rs type="person" ref="#pmb2315"
+                     >Elisabeth Gussmann</rs>.</note>.<hi rend="underline" n="1">Du biſt</hi>
+               <space unit="chars" quantity="1"/>
                <del rend="strikethrough">aber</del>
-               <hi rend="underline" n="">aber nicht im Mindeſten gebunden.</hi> Treffen wir uns
-                  <date>heut</date> nicht, ſo erwarte ich <date>morgen</date>
-               <time>Vormittag bis 11<hi rend="superscript">1</hi>/<hi rend="subscript">2</hi>
-                  Uhr</time> eine Verſtändigung <lb/>Herzlichſt Dein</p>
-            <closer>
-               <lb/>
+               <space unit="chars" quantity="1"/>
+               <hi rend="underline" n="1">aber nicht im Mindeſten gebunden.</hi> Treffen wir uns
+                  <date when="1903-02-28">heut</date> nicht, ſo erwarte ich <date when="1903-03-01"
+                  >morgen</date>
+               <space unit="chars" quantity="1"/>
+               <time>Vormittag bis 11½ Uhr</time> eine Verſtändigung</p>
+            <closer>Herzlichſt Dein <lb/>
                <signed>P. G.</signed>
             </closer>
          </div>
@@ -287,6 +291,37 @@
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
+            <person xml:id="pmb2315">
+               <persName>
+                  <forename>Elisabeth</forename>
+                  <surname>Steinrück</surname>
+               </persName>
+               <persName type="person_rufname">Liesl</persName>
+               <persName type="person_geburtsname_nachname">Gussmann</persName>
+               <persName type="legacy-name-merge">Steinrück, Elisabeth</persName>
+               <birth>
+                  <date when="1885-11-19">19.11.1885</date>
+               </birth>
+               <death>
+                  <date when="1920-04-07">07.04.1920</date>
+                  <settlement ref="pmb2318">
+                     <placeName type="pref">Partenkirchen</placeName>
+                     <location>
+                        <geo>47,4956 11,1097</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/117263958</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2315.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2315/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_20386</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2315.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q85087576</idno>
+            </person>
          </listPerson>
          <listPlace>
             <place xml:id="pmb168">
@@ -335,6 +370,10 @@
                   <placeName ref="pmb168">Berlin</placeName>
                   <geo>52,52437 13,41053</geo>
                </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb141471">Potsdamer Platz</placeName>
+                  <geo>52,51028 13,3759</geo>
+               </location>
                <idno type="URL" subtype="schnitzler-bahr"
                   >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb88.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/88/</idno>
@@ -345,9 +384,28 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q328191</idno>
                <idno type="URL" subtype="wikipedia"
                   >https://de.wikipedia.org/wiki/Palasthotel_(Berlin)</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q114678726</idno>
                <note type="apis_dates">
-                  <date from="1893-01-01" to="1936-07-01">1893 – 1936</date>
+                  <date from="1893-01-01" to="1943-07-02">1893 – 1943</date>
                </note>
+            </place>
+            <place xml:id="pmb146875">
+               <placeName>Café Josty</placeName>
+               <desc type="entity_type">Kaffeehaus (K.KAF)</desc>
+               <desc type="entity_type_id">20</desc>
+               <location type="coords">
+                  <geo>52,51 13,373611</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb141471">Potsdamer Platz</placeName>
+                  <geo>52,51028 13,3759</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/146875/</idno>
+               <idno type="URL" subtype="wikidata">https://www.wikidata.org/wiki/Q881270</idno>
             </place>
             <place xml:id="pmb141471">
                <placeName>Potsdamer Platz</placeName>
