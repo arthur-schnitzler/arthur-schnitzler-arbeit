@@ -4499,8 +4499,19 @@
       <xsl:apply-templates/>
       <xsl:text>}</xsl:text>
    </xsl:template>
+   <xsl:template match="hi[@rend = 'superscript']" mode="lemma">
+      <xsl:text>\textsuperscript{</xsl:text>
+      <xsl:apply-templates/>
+      <xsl:text>}</xsl:text>
+   </xsl:template>
+   
    <!-- Tiefstellung -->
    <xsl:template match="hi[@rend = 'subscript']">
+      <xsl:text>\textsubscript{</xsl:text>
+      <xsl:apply-templates/>
+      <xsl:text>}</xsl:text>
+   </xsl:template>
+   <xsl:template match="hi[@rend = 'subscript']" mode="lemma">
       <xsl:text>\textsubscript{</xsl:text>
       <xsl:apply-templates/>
       <xsl:text>}</xsl:text>
