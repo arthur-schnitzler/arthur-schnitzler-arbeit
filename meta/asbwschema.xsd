@@ -228,6 +228,7 @@
          <xs:assert
             test="tei:date/@when or tei:date/@notAfter or tei:date/@notBefore or not(tei:date)"/>
          <xs:assert test="tei:persName/@ref or not(tei:persName)"/>
+         <xs:assert test="tei:date[not(matches(., '\n\s+\n\s+'))]"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="addressee">
