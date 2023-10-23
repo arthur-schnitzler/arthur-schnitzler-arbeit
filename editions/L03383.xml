@@ -171,25 +171,31 @@
                   <time>Abend</time>.</dateline>
                <salute rend="left">Mein lieber Freund,</salute>
             </opener>
-            <p>Ich fahre <date when="1903-08-11">heut</date>
+            <p>Ich <anchor type="commentary" xml:id="K_L03383-1"/>fahre<note type="commentary"
+                  xml:id="K_L03383-1h">
+                  <ref type="schnitzler-briefe" target="L03375" subtype="see"/>
+               </note>
+               <space unit="chars" quantity="1"/>
+               <date when="1903-08-11">heut</date>
                <space unit="chars" quantity="1"/>
                <time>Abend</time>, habe <date when="1903-08-12">morgen</date>
                <space unit="chars" quantity="1"/>
-               <time>Nachmittag</time> in <rs type="place" ref="">Franzensfeſte</rs> Rendezvous,
-                  dürfte<date>morgen</date>
+               <time>Nachmittag</time> in <rs type="place" ref="#pmb40264">Franzensfeſte</rs>
+               Rendezvous, dürfte <date when="1903-08-12">morgen</date>
                <time>Abend</time> in <hi rend="latintype">
                   <rs type="place" ref="#pmb101487">Klausen</rs>
                </hi> (<hi rend="latintype">
-                  <rs type="place" ref="">Hotel Lamm</rs>
-               </hi>) fein. <date>Donnerſtag</date> ſende ich Dir Nachricht nach <hi
-                  rend="latintype">
+                  <rs type="place" ref="#pmb147017">Hotel Lamm</rs>
+               </hi>) ſein. <date when="1903-08-13">Donnerſtag</date> ſende ich Dir Nachricht nach
+                  <hi rend="latintype">
                   <rs type="place" ref="#pmb40260">Bozen</rs>
-               </hi>. Du kannft mir bis <date>Donnerſtag</date>
+               </hi>. Du kannft mir bis <date when="1903-08-13">Donnerſtag</date>
+               <space unit="chars" quantity="1"/>
                <time>früh</time> Nachricht nach <hi rend="latintype">
                   <rs type="place" ref="#pmb101487">Klausen</rs>
-               </hi> ſenden, wenn Du willſt. <lb/>Leb’ wohl! Glückliche Reiſe! Tauſend Dank!
-               Grüße!</p>
-            <closer>Dein <signed>Paul Goldm</signed>
+               </hi> ſenden, wenn Du willſt.</p>
+            <closer>Leb’ wohl! Glückliche Reiſe! Tauſend Dank! Grüße! <lb/>Dein <signed>Paul
+                  Goldm</signed>
             </closer>
          </div>
       </body>
@@ -300,7 +306,6 @@
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer_name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>
                <location type="coords">
@@ -351,13 +356,58 @@
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb397.html</idno>
             </place>
+            <place xml:id="pmb40264">
+               <placeName>Franzensfeste</placeName>
+               <desc type="entity_type">http://www.geonames.org/ontology#A.ADM3</desc>
+               <desc type="entity_type_id">1124</desc>
+               <location type="coords">
+                  <geo>46,78333 11,6</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3176672/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40264/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40264.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb40264.html</idno>
+            </place>
             <place xml:id="pmb101487">
                <placeName>Klausen (Südtirol)</placeName>
+               <placeName type="ort_namensvariante">Chiusa</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
+               <location type="coords">
+                  <geo>46,641509 11,568237</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/101487/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4030978-2</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q378095</idno>
                <idno type="URL" subtype="wikipedia"
                   >https://de.wikipedia.org/wiki/Klausen_(S%C3%BCdtirol)</idno>
+            </place>
+            <place xml:id="pmb147017">
+               <placeName>Gasthof zum Lamm</placeName>
+               <desc type="entity_type">Gastgewerbegebäude (K.GGW)</desc>
+               <desc type="entity_type_id">17</desc>
+               <location type="coords">
+                  <geo>46,64139 11,56727</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb101487">Klausen (Südtirol)</placeName>
+                  <geo>46,641509 11,568237</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/147017/</idno>
             </place>
             <place xml:id="pmb40260">
                <placeName>Bozen</placeName>
