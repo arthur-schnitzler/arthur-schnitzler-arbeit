@@ -23,7 +23,7 @@
     <xsl:param name="archiv-land" as="xs:string">GB</xsl:param>
     <xsl:param name="archiv-stadt" as="xs:string">Cambridge</xsl:param>
     <xsl:param name="archiv-institution" as="xs:string">University Library</xsl:param>
-    <xsl:param name="signatur" as="xs:string">Schnitzler, B&#160;89, A&#160;2</xsl:param>
+    <xsl:param name="signatur" as="xs:string">Schnitzler, B&#160;89, B&#160;1</xsl:param>
     
     
     
