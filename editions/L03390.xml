@@ -6,8 +6,10 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, 30. 12. 1903</title>
+            <title level="a">Paul Goldmann und Theodore Rottenberg an Arthur
+               Schnitzler, 30. 12. 1903</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
+            <author ref="#pmb23674">Rottenberg, Theodore</author>
             <editor>
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
@@ -86,13 +88,15 @@
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc hands="2">
+                        <handDesc hands="3">
                            <handNote medium="schwarze_tinte" style="deutsche-kurrent"
                               corresp="#pmb11485"/>
                            <handNote medium="schwarze_tinte" style="lateinische-kurrent"
                               corresp="#pmb11485">
                               <p>Adresse</p>
                            </handNote>
+                           <handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb23674"
+                           />
                         </handDesc>
                         <additions>
                            <incident type="postal">
@@ -119,6 +123,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
+               <persName ref="#pmb23674">Rottenberg, Theodore</persName>
                <date when="1903-12-30" n="01">30. 12. 1903</date>
                <placeName ref="#pmb146">Frankfurt am Main</placeName>
             </correspAction>
@@ -184,8 +189,8 @@
                <signed>Paul Goldmann.</signed>
             </closer>
             <postscript>
-               <!-- XXXX handShift -->
-               <p>Herzlichen Gruß!</p>
+               <p>
+                  <handShift scribe="#pmb23674"/>Herzlichen Gruß!</p>
             </postscript>
          </div>
       </body>
@@ -236,6 +241,31 @@
                   >https://schnitzler-kino.acdh.oeaw.ac.at/pmb11485.html</idno>
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11485.html</idno>
+            </person>
+            <person xml:id="pmb23674">
+               <persName>
+                  <forename>Theodore</forename>
+                  <surname>Rottenberg</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Adickes</persName>
+               <persName type="person_geburtsname-vorname">Marie Theodore Emilie
+                  Magdalene</persName>
+               <birth>
+                  <date when="1875-09-07">1875-09-07</date>
+               </birth>
+               <death>
+                  <date when="1945-04-05">1945-04-05</date>
+                  <settlement ref="pmb43292">
+                     <placeName type="pref">Limburg an der Lahn</placeName>
+                     <location>
+                        <geo>50,3836 8,0503</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19434</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/23674/</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -479,7 +509,6 @@
                <placeName type="alternative-name">Beč</placeName>
                <placeName type="ort_fruherer_name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
                <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
                <desc type="entity_type_id">14</desc>
                <location type="coords">
