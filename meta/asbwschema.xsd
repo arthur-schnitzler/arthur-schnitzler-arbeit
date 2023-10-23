@@ -38,6 +38,7 @@
             <xs:element ref="tei:listPlace" maxOccurs="1" minOccurs="0"/>
          </xs:choice>
          <xs:attribute ref="xml:id" use="optional"/>
+         <xs:assert test="not(descendant::*:error)"></xs:assert>
       </xs:complexType>
    </xs:element>
    <xs:element name="facsimile">
