@@ -5,7 +5,7 @@
     <xsl:output name="xml" method="xml" indent="yes" omit-xml-declaration="yes"/>
     <!-- directory of new files -->
     <xsl:param name="dir">../editions</xsl:param>
-   <!-- <xsl:param name="sender-in_pmb" as="xs:string">pmb11485</xsl:param>
+    <xsl:param name="sender-in_pmb" as="xs:string">pmb11485</xsl:param>
     <xsl:param name="sender-in_name" as="xs:string">Goldmann, Paul</xsl:param>
     <xsl:param name="empfaenger-in_pmb" as="xs:string">pmb2121</xsl:param>
     <xsl:param name="empfaenger-in_name" as="xs:string">Schnitzler, Arthur</xsl:param>
@@ -13,9 +13,9 @@
     <xsl:param name="archiv-land" as="xs:string">D</xsl:param>
     <xsl:param name="archiv-stadt" as="xs:string">Marbach am Neckar</xsl:param>
     <xsl:param name="archiv-institution" as="xs:string">Deutsches Literaturarchiv</xsl:param>
-    <xsl:param name="signatur" as="xs:string">A:Schnitzler, HS.NZ85.1.3171</xsl:param>
-   --> 
-    <xsl:param name="sender-in_pmb" as="xs:string">pmb2167</xsl:param>
+    <xsl:param name="signatur" as="xs:string">A:Schnitzler, HS.NZ85.1.3174</xsl:param>
+
+    <!--<xsl:param name="sender-in_pmb" as="xs:string">pmb2167</xsl:param>
     <xsl:param name="sender-in_name" as="xs:string">Salten, Felix</xsl:param>
     <xsl:param name="empfaenger-in_pmb" as="xs:string">pmb2121</xsl:param>
     <xsl:param name="empfaenger-in_name" as="xs:string">Schnitzler, Arthur</xsl:param>
@@ -23,11 +23,12 @@
     <xsl:param name="archiv-land" as="xs:string">GB</xsl:param>
     <xsl:param name="archiv-stadt" as="xs:string">Cambridge</xsl:param>
     <xsl:param name="archiv-institution" as="xs:string">University Library</xsl:param>
-    <xsl:param name="signatur" as="xs:string">Schnitzler, B&#160;89, B&#160;1</xsl:param>
-    
-    
-    
-    <xsl:param name="exporter">MAM</xsl:param>
+    <xsl:param name="signatur" as="xs:string">Schnitzler, B&#160;89, B&#160;1</xsl:param>-->
+
+
+
+    <!--<xsl:param name="exporter">MAM</xsl:param>-->
+    <xsl:param name="exporter">LU</xsl:param>
     <!-- hier Kürzel, LU oder MAM -->
     <!-- output xml file for each letter tag with file name according to number of xml files in output directory (+1) -->
     <xsl:template match="tei:div">
@@ -41,7 +42,8 @@
             </xsl:for-each>
         </xsl:variable>
         <xsl:variable name="heute" select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
-        <xsl:for-each-group select="tei:page" group-starting-with="*[starts-with(@type, 'letter-begin')]">
+        <xsl:for-each-group select="tei:page"
+            group-starting-with="*[starts-with(@type, 'letter-begin')]">
             <xsl:variable name="nummer" select="$letzte-nummer + position()" as="xs:integer"/>
             <xsl:result-document href="../editions/L0{$nummer}.xml">
                 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
@@ -133,8 +135,7 @@
                                         </p>
                                     </licence>
                                 </availability>
-                                <idno type="handle"
-                                    >XXXX</idno>
+                                <idno type="handle">XXXX</idno>
                             </publicationStmt>
                             <seriesStmt>
                                 <p>Machine-Readable Transcriptions of the Correspondences of Arthur
@@ -147,37 +148,37 @@
                                         <msDesc>
                                             <msIdentifier>
                                                 <country>
-                                                    <xsl:value-of select="$archiv-land"/>
+                                                  <xsl:value-of select="$archiv-land"/>
                                                 </country>
                                                 <settlement>
-                                                    <xsl:value-of select="$archiv-stadt"/>
+                                                  <xsl:value-of select="$archiv-stadt"/>
                                                 </settlement>
                                                 <repository>
-                                                    <xsl:value-of select="$archiv-institution"/>
+                                                  <xsl:value-of select="$archiv-institution"/>
                                                 </repository>
                                                 <idno>
-                                                    <xsl:value-of select="$signatur"/>
+                                                  <xsl:value-of select="$signatur"/>
                                                 </idno>
                                             </msIdentifier>
                                             <physDesc>
                                                 <objectDesc>
-                                                    
-                                                        <supportDesc>
-                                                            <extent>
-                                                                <measure unit="seite" quantity=""/>
-                                                                <measure unit="blatt" quantity=""/>
-                                                            </extent>
-                                                        </supportDesc>
-                                                    
+
+                                                  <supportDesc>
+                                                  <extent>
+                                                  <measure unit="seite" quantity=""/>
+                                                  <measure unit="blatt" quantity=""/>
+                                                  </extent>
+                                                  </supportDesc>
+
                                                 </objectDesc>
                                                 <handDesc>
-                                                    <handNote medium="" style="deutsche-kurrent"/>
+                                                  <handNote medium="" style="deutsche-kurrent"/>
                                                 </handDesc>
-                                                <additions>
+                                                <!--<additions>
                                                     <incident type="archival">
                                                         <desc>Xmit Bleistift von unbekannter Hand nummeriert: »<quote>x</quote>«</desc>
                                                     </incident>
-                                                </additions>
+                                                </additions>-->
                                             </physDesc>
                                         </msDesc>
                                     </witness>
@@ -194,7 +195,8 @@
                                         <xsl:value-of select="$sender-in_name"/>
                                     </persName>
                                     <date when="" n="01">XXXX</date>
-                                    <placeName ref="#50" evidence="conjecture">Wien</placeName>
+                                    <!--<placeName ref="#50" evidence="conjecture">Wien</placeName>-->
+                                    <placeName ref="#168" evidence="conjecture">Berlin</placeName>
                                 </correspAction>
                                 <correspAction type="received">
                                     <persName ref="{concat('#', $empfaenger-in_pmb)}">
