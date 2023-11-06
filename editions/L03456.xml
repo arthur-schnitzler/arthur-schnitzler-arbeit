@@ -6,7 +6,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, XXXX</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 18. 11. [1904]</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -103,12 +103,12 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="" n="01">XXXX</date>
-               <placeName ref="#168" evidence="conjecture">Berlin</placeName>
+               <date when="1904-11-18" n="01">18. 11. [1904]</date>
+               <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#50" evidence="conjecture">Wien</placeName>
+               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -116,11 +116,15 @@
          <change who="LU" when="2023-11-06">Export aus Transkribus</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="HS.NZ85.1.3174_0035-1"/>
+      <graphic url="HS.NZ85.1.3174_0036-1"/>
+   </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <pb facs="DLA_74_00050 HS.NZ85.1.3174_0035-1"/>
+               <pb facs="HS.NZ85.1.3174_0035-1"/>
                <rs type="place" ref="">
                   <hi rend="pre-print"> Dessauerstrasse 19</hi>
                </rs>
@@ -145,7 +149,7 @@
                   <time>Abends</time> ins <rs type="place" ref="">Theater</rs> (<hi rend="latintype">
                   <rs type="person" ref="">Dreyer</rs>
                </hi>) und muß gerade in dieſer Stunde meine <rs type="work" ref="">Telegramm</rs>e
-               raſch fertigſtellen. <pb facs="DLA_74_00052 HS.NZ85.1.3174_0036-1"/>
+               raſch fertigſtellen. <pb facs="HS.NZ85.1.3174_0036-1"/>
                <date>Sonntag</date> bin ich leider auch nicht frei – wohl aber <date>Montag</date>
                <time>Abend</time>. Ich habe <date>heut</date> mit <hi rend="latintype">
                   <rs type="person" ref="">Richard</rs>
@@ -164,5 +168,15 @@
             </closer>
          </div>
       </body>
+      <back>
+         <listPerson>
+            <error type="person">11485</error>
+            <error type="person">2121</error>
+         </listPerson>
+         <listPlace>
+            <error type="place">168</error>
+            <error type="place">50</error>
+         </listPlace>
+      </back>
    </text>
 </TEI>

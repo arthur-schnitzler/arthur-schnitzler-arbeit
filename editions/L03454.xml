@@ -6,7 +6,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, XXXX</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 31. 8. 1904</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -103,12 +103,13 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="" n="01">XXXX</date>
-               <placeName ref="#168" evidence="conjecture">Berlin</placeName>
+               <date when="1904-08-31" n="01">31. 8. 1904</date>
+               <placeName ref="" evidence="conjecture">Madonna di Campiglio</placeName>
+               <!-- XXXX Aufenthaltsort PMB -->
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#50" evidence="conjecture">Wien</placeName>
+               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -116,11 +117,15 @@
          <change who="LU" when="2023-11-06">Export aus Transkribus</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="HS.NZ85.1.3174_0031-1"/>
+      <graphic url="HS.NZ85.1.3174_0032-1"/>
+   </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <pb facs="DLA_74_00044 HS.NZ85.1.3174_0031-1"/>
+               <pb facs="HS.NZ85.1.3174_0031-1"/>
                <hi rend="pre-print">
                   <rs type="place" ref=""> Brenta-Dolomiten</rs> (<Foreign>cima tosa</Foreign> 3176
                   M) vom <rs type="place" ref="">M. Spinale</rs> 2021 M.</hi>
@@ -187,10 +192,10 @@
                Das Nähere hängt von meinem <rs type="person" ref="">Onkel</rs> ab, der aus dem <rs
                   type="place" ref="">Engadin</rs> an einen von ihm noch zu beſtimmenden Ort kommt.
                Im <rs type="place" ref="">Gebirge</rs> werde ich Dich alſo wohl nicht ſehen können –
-               rathe Dir auch <pb facs="DLA_74_00046 HS.NZ85.1.3174_0032-1"/> dringend ab, nach <rs
-                  type="place" ref="">Tirol</rs> zu kommen, ehe das Wetter ſich gebeſſert hat (wozu
-               anſcheinend wenig Ausſicht.) Aber wenn ich über <rs type="place" ref="">Wien</rs>
-               zurückkehre (es iſt allerdings auch möglich, daß ich <hi rend="latintype">
+               rathe Dir auch <pb facs="HS.NZ85.1.3174_0032-1"/> dringend ab, nach <rs type="place"
+                  ref="">Tirol</rs> zu kommen, ehe das Wetter ſich gebeſſert hat (wozu anſcheinend
+               wenig Ausſicht.) Aber wenn ich über <rs type="place" ref="">Wien</rs> zurückkehre (es
+               iſt allerdings auch möglich, daß ich <hi rend="latintype">
                   <rs type="place" ref="">Gotthardt</rs>
                </hi>-<rs type="place" ref="">Frankfurt</rs> fahre) hoffe ich ſehr, Dir dort die Hand
                drücken zu können. <lb/>Mit herzlichen Grüßen</closer>
@@ -207,5 +212,15 @@
             </closer>
          </div>
       </body>
+      <back>
+         <listPerson>
+            <error type="person">11485</error>
+            <error type="person">2121</error>
+         </listPerson>
+         <listPlace>
+            <error type="place">168</error>
+            <error type="place">50</error>
+         </listPlace>
+      </back>
    </text>
 </TEI>

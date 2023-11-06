@@ -6,7 +6,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, XXXX</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, 16. 8. [1904]</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -103,12 +103,12 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="" n="01">XXXX</date>
-               <placeName ref="#168" evidence="conjecture">Berlin</placeName>
+               <date when="1904-08-26" n="01">16. 8. [1904]</date>
+               <placeName ref="" evidence="conjecture">Mende</placeName><!-- XXXX Aufenthaltsort PMB -->
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#50" evidence="conjecture">Wien</placeName>
+               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -116,11 +116,14 @@
          <change who="LU" when="2023-11-06">Export aus Transkribus</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="HS.NZ85.1.3174_0026"/>
+   </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1">
             <p>
-               <pb facs="DLA_74_00038 HS.NZ85.1.3174_0026"/>
+               <pb facs="HS.NZ85.1.3174_0026"/>
                <addrLine>
                   <hi rend="pre-print"> An</hi>
                </addrLine>
@@ -139,5 +142,15 @@
             </p>
          </div>
       </body>
+      <back>
+         <listPerson>
+            <error type="person">11485</error>
+            <error type="person">2121</error>
+         </listPerson>
+         <listPlace>
+            <error type="place">168</error>
+            <error type="place">50</error>
+         </listPlace>
+      </back>
    </text>
 </TEI>
