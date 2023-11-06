@@ -104,7 +104,8 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1904-07-02" n="01">2. 7. 1904</date>
-               <placeName ref="" evidence="conjecture">Hamburg</placeName><!-- XXXX Aufenthaltsort PMB -->
+               <placeName ref="" evidence="conjecture">Hamburg</placeName>
+               <!-- XXXX Aufenthaltsort PMB -->
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -122,30 +123,25 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1">
-            <opener>
-               <pb facs="HS.NZ85.1.3174_0018"/>
-               <addrLine> Herrn</addrLine>
+         <div type="address">
+            <address>
+               <addrLine><pb facs="HS.NZ85.1.3174_0018"/>Herrn</addrLine>
                <addrLine>Dr. Arthur Schnitzler</addrLine>
                <addrLine>
-                  <rs type="place" ref="">Wien</rs>
+                  <rs type="place" ref="#pmb50">Wien</rs>
                </addrLine>
-               <addrLine>XVIII. <rs type="place" ref="">Spöttelgaſse 7</rs>
+               <addrLine>XVIII. <rs type="place" ref="">Spöttelgaſse 7</rs>
                </addrLine>
-               <pb facs="HS.NZ85.1.3174_0019"/>
-               <dateline>
-                  <rs type="place" ref="">Hamburg</rs>
-               </dateline>
-               <date>
-                  <dateline> 2. Juli </dateline>
-               </date>
+            </address>
+         </div>
+         <div type="writingSession" n="1">
+            <opener>
+               <dateline><pb facs="HS.NZ85.1.3174_0019"/>
+                  <rs type="place" ref="">Hamburg</rs><space unit="chars" quantity="1"/><date
+                     when="1904-07-02">2. Juli</date></dateline>
             </opener>
-            <p>
-               <paragraph-start/>
-            </p>
-            <closer>Herzliche Grüße! <lb/>
-               <signed>P. G. </signed>
-            </closer>
+            <p>Herzliche Grüße!</p>
+            <closer><signed>P. G.</signed></closer>
          </div>
       </body>
       <back>

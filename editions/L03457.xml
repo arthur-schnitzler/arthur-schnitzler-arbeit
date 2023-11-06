@@ -104,7 +104,8 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1904-09-10" n="02">10. 9. 1904</date>
-               <placeName ref="" evidence="conjecture">Como</placeName><!-- XXXX PMB Aufenthaltsort -->
+               <placeName ref="" evidence="conjecture">Como</placeName>
+               <!-- XXXX PMB Aufenthaltsort -->
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -122,60 +123,44 @@
    </facsimile>
    <text>
       <body>
-         <div type="writingSession" n="1">
-            <opener>
-               <pb facs="HS.NZ85.1.3174_0037"/>
-               <addrLine>
-                  <Foreign>
-                     <hi rend="pre-print"> A</hi>
-                  </Foreign> Herrn</addrLine>
+         <div type="address">
+            <address>
+               <addrLine><pb facs="HS.NZ85.1.3174_0037"/>Herrn</addrLine>
                <addrLine>Dr. Arthur Schnitzler</addrLine>
                <addrLine>
-                  <rs type="place" ref="">XVIII. Spöttelgaſse 7</rs>
+                  <rs type="place" ref="">XVIII. Spöttelgaſse 7</rs>
                </addrLine>
                <addrLine>
-                  <rs type="place" ref="">Wien</rs>
+                  <rs type="place" ref="#pmb50">Wien</rs>
                </addrLine>
                <addrLine>
-                  <hi rend="pre-print">(<rs type="place" ref=""/>
-                  </hi>
-                  <rs type="place" ref="">Austria<hi rend="pre-print"/>
-                  </rs>
+                  <hi rend="pre-print">(</hi>
+                  <rs type="place" ref="">Austria</rs>
                   <hi rend="pre-print">)</hi>
                </addrLine>
-               <pb facs="HS.NZ85.1.3174_0038"/>
-               <hi rend="pre-print">
-                  <rs type="place" ref="">Como</rs>.</hi>
-            </opener>
+            </address>
+         </div>
+         <div type="writingSession" n="1">
             <opener>
-               <hi rend="pre-print">
-                  <Foreign>Il <rs type="place" ref="">Duomo</rs>
-                  </Foreign>.</hi>
-            </opener>
-            <opener>
-               <dateline>
-                  <rs type="place" ref="">Como</rs>
+               <p rend="left"><pb facs="HS.NZ85.1.3174_0038"/>
+                  <hi rend="pre-print">
+                     <rs type="place" ref="">Como</rs>. <foreign xml:lang="it">Il <rs type="place" ref=""
+                           >Duomo</rs>
+                     </foreign>.</hi></p>
+               <dateline rend="left">
+                  <rs type="place" ref="">Como</rs><space unit="chars" quantity="1"/><date
+                     when="1904-09-10">10. Sept.</date>
                </dateline>
-               <date>
-                  <dateline> 10. Sept. </dateline>
-               </date>
             </opener>
-            <p>
-               <paragraph-start/>
-            </p>
-            <closer>Herzlichen Gruß! <lb/>
-               <signed>Paul</signed>
+            <p>Herzlichen Gruß!</p>
+            <closer><signed>Paul Goldmann.</signed>
             </closer>
-            <closer>
-               <lb/>
-               <signed>Goldmann.</signed>
-            </closer>
-            <closer>
+            <closer><!-- XXXX Rosengart auch in Titel und correspDesc aufnehmen, handShift -->
                <lb/>
                <signed>
                   <anchor type="commentary" xml:id="XXXX">V[Kommentar:
                      Vally?\u0020Könnte\u0020auch\u0020ein\u0020Kaufmannsund\u0020sein\u0020oder,\u0020was\u0020am\u0020meisten\u0020Sinn\u0020machen\u0020würde,\u0020J\u0020heißen\u0020(für\u0020Josef)]</anchor>
-                  <note type="commentary" xml:id="XXXX"/>Rosengart </signed>
+                  <note type="commentary" xml:id="XXXX"/>Rosengart</signed>
             </closer>
          </div>
       </body>
