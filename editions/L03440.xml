@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03440"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L03440"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -109,6 +111,7 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <date evidence="conjecture" notBefore="1904-03-15" notAfter="1904-03-19">[15. 3. 1904 – 19. 3. 1904?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -127,47 +130,50 @@
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <p rend="right"><pb facs="HS.NZ85.1.3174_0003-1"/><hi rend="pre-print"><hi
-                        rend="capitals"><rs type="place" ref="#pmb40583">Dessauerstrasse 19</rs></hi></hi>
-             </p>
+               <p rend="right">
+                  <pb facs="HS.NZ85.1.3174_0003-1"/>
+                  <hi rend="pre-print">
+                     <hi rend="capitals">
+                        <rs type="place" ref="#pmb40583">Dessauerstrasse 19</rs>
+                     </hi>
+                  </hi>
+               </p>
                <dateline rend="left">
-                  <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1904-03-14"
-                     >14. März</date>.</dateline>
+                  <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1904-03-14">14. März</date>.</dateline>
                <salute rend="left">Mein lieber Freund,</salute>
             </opener>
             <p>Dein lieber Brief, der mich, wenigſtens durch ſeinen Schlußabſatz, ſehr erfreut hat,
                traf mich inmitten einer ſtürmiſch <del rend="strikethrough">be</del> bewegten Zeit.
-               Meine <rs type="person" ref="">Freundin</rs> war – aus <anchor type="commentary"
-                  xml:id="XXXX">Gründen[Kommentar: Schwangerschaftsabbruch?]</anchor>
+               Meine <rs type="person" subtype="implied" ref="#pmb23674">Freundin</rs>
+               <!-- XXXX Kommentare korrigieren, dass die Beziehung nur bis 1903 ging -->
+               war – aus <anchor type="commentary" xml:id="XXXX">Gründen[Kommentar:
+                  Schwangerschaftsabbruch?]</anchor>
                <note type="commentary" xml:id="XXXX"/>, die Du Dir denken kannſt – erkrankt, ſie hat
-               längere Zeit hier auf einer <rs type="place" ref="">Klinik</rs> gelegen, auch jetzt
-               iſt ſie noch recht leidend und immer noch hier. Ich habe viel Aufregungen und Sorgen
-               durchgemacht, und ſo kommt <add>für</add> es, daß ich Deinen Brief, den ich, wenn ich
-               meinem Wunſche hätte <del rend="strikethrough">
+               längere Zeit hier auf einer <rs type="place" subtype="implied" ref="">Klinik</rs>
+               gelegen, auch jetzt iſt ſie noch recht leidend und immer noch hier. Ich habe viel
+               Aufregungen und Sorgen durchgemacht, und ſo kommt <add>für</add> es, daß ich Deinen
+               Brief, den ich, wenn ich meinem Wunſche hätte <del rend="strikethrough">
                   <gap/>X<unclear>f</unclear>
                </del> folgen können, ſofort beantwortet hätte, Dir erſt <date>heute</date> danken
                kann.</p>
             <p>Ich unterlaſſe es, auf das Einzelne <pb facs="HS.NZ85.1.3174_0004-0"/> einzugehen.
                Äußerungen in Deinem Briefe wie »Dein kritiſches Gebahren«, – die Meinung, ich hätte
-               Dir zugemuthet, das <rs type="work" ref="">Stück</rs> ſtatt als Trauerſpiel als
-               Luſtſpiel zu ſchreiben – die Aufforderung »ich ſollte <del rend="strikethrough"
-                  >D</del> mir den Inhalt des Ganzen einmal überlegen«, – die Anſicht, ich wiſſe
-               nicht immer »mit ſoviel Klugheit und Würde zu wägen« etc. – das alles zeigt mir nur
-               von Neuem, wie unrichtig Du <del rend="strikethrough">
+               Dir zugemuthet, das <rs type="work" subtype="implied" ref="">Stück</rs> ſtatt als
+               Trauerſpiel als Luſtſpiel zu ſchreiben – die Aufforderung »ich ſollte <del rend="strikethrough">D</del> mir den Inhalt des Ganzen einmal überlegen«, – die
+               Anſicht, ich wiſſe nicht immer »mit ſoviel Klugheit und Würde zu wägen« etc. – das
+               alles zeigt mir nur von Neuem, wie unrichtig Du <del rend="strikethrough">
                   <unclear>me</unclear>
                </del> meine kritiſche Thätigkeit beurtheilſt und <del rend="strikethrough">
                   <gap/>X</del> wie ſehr es Dir (wenn Du auch nur ein offenes Wort erlaubſt) an
                Verſtändniß für den Ernſt und die Höhe meines Strebens fehlt. Darüber läßt ſich,
-               meiner Anſicht, nicht diskutiren, und Diskuſſionen ſchaffen nur <del
-                  rend="strikethrough">eine</del> unnütze Verbitterung in einen Fall, wo, wie in dem
+               meiner Anſicht, nicht diskutiren, und Diskuſſionen ſchaffen nur <del rend="strikethrough">eine</del> unnütze Verbitterung in einen Fall, wo, wie in dem
                   <pb facs="HS.NZ85.1.3174_0004-1"/> unſerigen, nicht eine Verſchiedenheit der
                Anſichten, ſondern eine Verſchiedenheit der Standpunkte vorliegt, die ihren
                   <add>unſere</add> Grund wohl darin haben, daß <del rend="strikethrough">ſich
                   d<gap/>X</del> Lebenswege ſich ſeit Langem getrennt und in verſchiedenen
                Richtungen bewegt haben.</p>
             <p>Eines nur bitte ich Dich, mir zu glauben: Es gehört zu den peinlichſten Aufgaben
-               meiner Stellung, ein <rs type="work" ref="">Stück</rs> von Dir <del
-                  rend="strikethrough">
+               meiner Stellung, ein <rs type="work" subtype="implied" ref="">Stück</rs> von Dir <del rend="strikethrough">
                   <gap/>X</del> kritiſiren zu müſſen, wenn ich nicht ganz damit einverſtanden bin;
                und ich habe den ſehnlichen Wunſch, Dein nächſtes Stück möge ſo ſchön ſein, daß ich
                mit rückhaltsloſer Anerkennung darüber berichten kann, oder es möge mir überhaupt
@@ -188,19 +194,17 @@
                großen Worte hineingerathen bin. Das iſt überflüſſig, und ich denke, wir Zwei
                verſtehen uns <pb facs="HS.NZ85.1.3174_0005"/> auch ohne dieſe ſehr gut und werden
                uns – im Weſentlichen – immer verſtehen....</p>
-            <p>Ich hofe, daß dieſer Brief Dich bereits inmitten der Vorbereitungen zur <rs
-                  type="place" ref="">ſicili</rs>aniſchen Reiſe trifft. Zu meiner Freude höre ich,
-               daß der »<rs type="work" ref="">Einſame Weg</rs>« dem <rs type="place" ref=""
-                  >Berlin</rs>er Publikum gefällt und daß das <rs type="place" ref="">Theater</rs>
-               immer voll iſt. Laß’ mich wiſſen, wie es Dir und Deiner kleinen <rs type="person"
-                  ref="">Familie</rs> geht, und ſei herzlichſt gegrüßt von Deinem getreuen
-                  <signed>Paul Goldmann</signed>
-          </p>
+            <p>Ich hofe, daß dieſer Brief Dich bereits inmitten der Vorbereitungen zur <rs type="place" subtype="implied" ref="#pmb451">ſicili</rs>aniſchen Reiſe trifft. Zu
+               meiner Freude höre ich, daß der »<rs type="work" ref="#pmb29985">Einſame Weg</rs>«
+               dem <rs type="place" ref="#pmb168">Berlin</rs>er Publikum gefällt und daß das <rs type="place" ref="">Theater</rs> immer voll iſt. Laß’ mich wiſſen, wie es Dir und
+               Deiner kleinen <rs type="person" subtype="implied" ref="#pmb2173 #pmb12692">Familie</rs> geht, und ſei herzlichſt gegrüßt von Deinem getreuen <signed>Paul
+                  Goldmann</signed>
+            </p>
             <p>
-               <postscript>Meine <rs type="person" ref="">Freundin</rs> bittet mich, Dich
-                  zu</postscript>
+               <postscript>Meine <rs type="person" subtype="implied" ref="#pmb23674">Freundin</rs>
+                  bittet mich, Dich zu</postscript>
                <postscript>grüßen.</postscript>
-          </p>
+            </p>
          </div>
       </body>
       <back>
