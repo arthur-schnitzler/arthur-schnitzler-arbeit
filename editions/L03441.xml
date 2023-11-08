@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03441"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L03441"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -109,6 +111,7 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <date evidence="conjecture" notBefore="1904-03-20" notAfter="1904-03-24">[20. 3. 1904 – 24. 3. 1904?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -125,19 +128,22 @@
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <p rend="right"><pb facs="HS.NZ85.1.3174_0006-1"/>
-                  <hi rend="pre-print"><hi rend="capitals"><rs type="place" ref=""
-                           >Dessauerstrasse 19</rs></hi></hi></p>
+               <p rend="right">
+                  <pb facs="HS.NZ85.1.3174_0006-1"/>
+                  <hi rend="pre-print">
+                     <hi rend="capitals">
+                        <rs type="place" ref="">Dessauerstrasse 19</rs>
+                     </hi>
+                  </hi>
+               </p>
                <dateline rend="left">
-                  <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1904-03-19"
-                     >19. März</date>.</dateline>
+                  <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1904-03-19">19. März</date>.</dateline>
                <salute rend="center">Mein lieber Freund,</salute>
             </opener>
-            <p>Das Verbot des »<rs type="work" ref="">Reigen</rs>« durch die <rs type="place" ref=""
-                  >Berlin</rs>er <rs type="org" ref="">Staatsanwaltſchaft</rs> ſcheint ſich nun wohl
+            <p>Das Verbot des »<rs type="work" ref="#pmb29855">Reigen</rs>« durch die <rs type="place" ref="">Berlin</rs>er <rs type="org" ref="">Staatsanwaltſchaft</rs> ſcheint ſich nun wohl
                leider zu beſtätigen? Ich bitte Dich, mir mitzutheilen, ob ich Dir in dieſer
                Angelegenheit irgendwie <del rend="strikethrough">di</del> dienen kann? Du weißt, daß
-               nach <rs type="place" ref="">deutsch</rs>em Recht, auf jede Confiscation ein Prozeß
+               nach <rs type="place" subtype="implied" ref="#pmb151">deutsch</rs>em Recht, auf jede Confiscation ein Prozeß
                folgen muß. Eſ iſt alſo dringend nöthig, daß Du oder Dein <rs type="org" ref="">
                   <rs type="person" ref="">Verleger</rs>
                </rs> einen tüchtigen Rechtsanwalt<del rend="strikethrough">zur</del> als Berather
@@ -146,12 +152,11 @@
                   <rs type="person" ref="">Heine</rs>
                </hi> empfehlen.</p>
             <p>Schreibe mir, ob ich igendwelche Schritte in dieſer Angelegenheit für Dich thun kann,
-               – ob Du wünſcheſt, daß irgend Etwas in den <rs type="place" ref="#pmb168"
-               >Berlin</rs>er Blättern oder in der <rs type="work" ref="">N. Fr. Pr.</rs>
+               – ob Du wünſcheſt, daß irgend Etwas in den <rs type="place" ref="#pmb168">Berlin</rs>er Blättern oder in der <rs type="work" ref="#pmb36374">N. Fr. Pr.</rs>
                veröffentlicht wird?</p>
-            <closer>Das <rs type="work" ref="">Verbot</rs> richtet hoffentlich keinen großen
+            <closer>Das <rs type="work" subtype="implied" ref="">Verbot</rs> richtet hoffentlich keinen großen
                materiellen Schaden mehr an, – im Gegentheil <pb facs="HS.NZ85.1.3174_0007-1"/> wird
-               es wohl, wie imer ſolche Verbote, auf das <rs type="work" ref="">Buch</rs> erſt recht
+               es wohl, wie imer ſolche Verbote, auf das <rs type="work" subtype="implied" ref="">Buch</rs> erſt recht
                aufmerkſam machen. <lb/>Viele herzIiche Grüße!</closer>
             <closer>
                <lb/>Dein</closer>
