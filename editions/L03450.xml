@@ -70,7 +70,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="karte" ana="postkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -82,14 +82,36 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                        <handDesc hands="2">
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent" corresp="#pmb11485"/>
+                           <handNote medium="blaue_tinte" style="lateinische-kurrent" corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb50">Wien 1/1 15</placeName>
+                                    <date when="1904-08-10">10 VIII 04</date>
+                                    <time>8 40 N</time>
+                                 </stamp>
+                                 <stamp n="2">
+                                    <placeName ref="#pmb50">Wien 18/<unclear>1</unclear> 11<unclear>1</unclear> r</placeName>
+                                    <date when="1904-08-10">10 VIII 04</date>
+                                    <time>9 50 N</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="receiver">
+                              <desc>mit Bleistift das Datum »<quote><date when="1904-08-10"
+                                 >10. 8<supplied>. 1</supplied>904</date></quote>« vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -105,6 +127,10 @@
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1904-08-10" n="01">10. 8. 1904</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+            </correspAction>
+            <correspAction type="delivered">
+               <placeName ref="#pmb50">Wien</placeName>
+               <date when="1904-08-10">10. 8. 1904</date>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
