@@ -70,7 +70,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="karte" ana="bildpostkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -82,14 +82,30 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                        <handDesc hands="2">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"
+                              corresp="#pmb11485"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"
+                              corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb772">Marienbad 1 <unclear>8</unclear>
+                                    </placeName>
+                                    <date when="1908-08-17">17. VIII. 08</date>
+                                    <time>–1</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -126,9 +142,11 @@
       <body>
          <div type="address">
             <address>
-               <addrLine><pb facs="HS.NZ85.1.3175_0067"/>Herrn</addrLine>
+               <addrLine>
+                  <pb facs="HS.NZ85.1.3175_0067"/>Herrn</addrLine>
                <addrLine>Dr. Arthur Schnitzler</addrLine>
-               <addrLine><rs type="place" ref="#pmb50">Wien</rs>
+               <addrLine>
+                  <rs type="place" ref="#pmb50">Wien</rs>
                </addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb133">XVIII. Spöttelgaſse 7</rs>.</addrLine>
@@ -136,10 +154,12 @@
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <p rend="left"><pb facs="HS.NZ85.1.3175_0068"/>
+               <p rend="left">
+                  <pb facs="HS.NZ85.1.3175_0068"/>
                   <hi rend="pre-print">
                      <rs type="place" ref="#pmb772">Marienbad</rs>. <rs type="place" ref=""
-                        >Kreuzbrunn Colonnade</rs>.</hi></p>
+                        >Kreuzbrunn Colonnade</rs>.</hi>
+               </p>
                <dateline rend="left">
                   <date when="1908-08-17">17. 8. 08</date>.</dateline>
                <salute rend="left">Lieber Freund,</salute>
@@ -250,40 +270,50 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb168">
-               <placeName>Berlin</placeName>
-               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Barlīn</placeName>
-               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Berolino</placeName>
-               <placeName type="legacy-name-merge">B-n</placeName>
-               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
-               <desc type="entity_type_id">1418</desc>
+            <place xml:id="pmb772">
+               <placeName>Marienbad</placeName>
+               <placeName type="alternative-name">Mariánské Lázně</placeName>
+               <placeName type="legacy-name-merge">Výhledy [Mariánské Lázně-Úšovice]</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
                <location type="coords">
-                  <geo>52,52437 13,41053</geo>
+                  <geo>49,96115 12,72872</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
+                  <placeName ref="pmb43430">Tschechische Republik</placeName>
+                  <geo>49,75 15,0</geo>
                </location>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q523469</idno>
                <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb772.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/772/</idno>
                <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb772.html</idno>
                <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
+                  >https://kraus.wienbibliothek.at/register/orte/pmb772</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91211/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3071024/</idno>
                <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92171.html</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91211.html</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4037541-9</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Marienbad</idno>
+            </place>
+            <place xml:id="pmb467">
+               <placeName>Villa Heufler</placeName>
+               <desc type="entity_type">Beherbergungsgebäude (K.BHB)</desc>
+               <desc type="entity_type_id">42</desc>
+               <location type="coords">
+                  <geo>46,54555 11,560026</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb988">Seis am Schlern</placeName>
+                  <geo>46,54133 11,55868</geo>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb467.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/467/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb467.html</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
@@ -324,6 +354,90 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+            </place>
+            <place xml:id="pmb133">
+               <placeName>Edmund-Weiß-Gasse</placeName>
+               <placeName type="ort_fruherer_name">Spöttelgasse</placeName>
+               <desc type="entity_type">Straße (K.STR)</desc>
+               <desc type="entity_type_id">26</desc>
+               <location type="coords">
+                  <geo>48,23056 16,3348</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb133.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/133/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb133.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92539/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92539.html</idno>
+               <idno type="URL" subtype="geonames">https://www.geonames.org/12495676</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb133.html</idno>
+            </place>
+            <place xml:id="pmb423">
+               <placeName>Tirol</placeName>
+               <desc type="entity_type">Teil eines Landes (A.LNDX)</desc>
+               <desc type="entity_type_id">13</desc>
+               <location type="coords">
+                  <geo>47,25 11,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q42880</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2763586/</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb423.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/423/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb423.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb423</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb423.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Tirol_(Bundesland)</idno>
+            </place>
+            <place xml:id="pmb168">
+               <placeName>Berlin</placeName>
+               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Barlīn</placeName>
+               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Berolino</placeName>
+               <placeName type="legacy-name-merge">B-n</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
+               <desc type="entity_type_id">1418</desc>
+               <location type="coords">
+                  <geo>52,52437 13,41053</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb151">Deutschland</placeName>
+                  <geo>51,5 10,5</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92171.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
             </place>
          </listPlace>
       </back>

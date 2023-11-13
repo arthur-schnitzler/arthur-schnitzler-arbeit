@@ -70,7 +70,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="karte" ana="bildpostkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -82,14 +82,34 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                        <handDesc hands="2">
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"
+                              corresp="#pmb11485"/>
+                           <handNote medium="blaue_tinte" style="lateinische-kurrent"
+                              corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb168">Berlin SW 11 c</placeName>
+                                    <date when="1908-01-16">16. 1. 08</date>
+                                    <time>5—6 N.</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="receiver">
+                              <desc>mit Bleistift »<quote>
+                                    <rs type="person" ref="#pmb11485">Goldmann</rs>
+                                 </quote>« unterstrichen</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -126,7 +146,8 @@
       <body>
          <div type="address">
             <address>
-               <addrLine><pb facs="HS.NZ85.1.3175_0057"/>Herrn</addrLine>
+               <addrLine>
+                  <pb facs="HS.NZ85.1.3175_0057"/>Herrn</addrLine>
                <addrLine>Dr. Arthur Schnitzler</addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb50">Wien</rs>
@@ -148,7 +169,7 @@
                <lb/>an Dich u. Deine</closer>
             <closer>
                <lb/>
-               <rs type="person" ref="">Frau</rs>
+               <rs type="person" subtype="implied" ref="">Frau</rs>
             </closer>
             <closer>
                <lb/>Dein</closer>
@@ -158,17 +179,17 @@
             </closer>
             <p>
                <pb facs="HS.NZ85.1.3175_0058"/>
-           </p>
+            </p>
             <p>
                <hi rend="pre-print">Glückliches Neujahr!</hi>
-           </p>
+            </p>
             <p>
                <rs type="person" ref="">
                   <hi rend="pre-print">
                      <unclear>Jan Stroom </unclear>
                   </hi>
                </rs>
-           </p>
+            </p>
          </div>
       </body>
       <back>
@@ -341,6 +362,30 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+            </place>
+            <place xml:id="pmb133">
+               <placeName>Edmund-Weiß-Gasse</placeName>
+               <placeName type="ort_fruherer_name">Spöttelgasse</placeName>
+               <desc type="entity_type">Straße (K.STR)</desc>
+               <desc type="entity_type_id">26</desc>
+               <location type="coords">
+                  <geo>48,23056 16,3348</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb133.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/133/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb133.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92539/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92539.html</idno>
+               <idno type="URL" subtype="geonames">https://www.geonames.org/12495676</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb133.html</idno>
             </place>
          </listPlace>
       </back>

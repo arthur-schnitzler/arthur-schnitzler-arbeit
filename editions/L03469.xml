@@ -6,8 +6,10 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, 1. 10. 1909</title>
+            <title level="a">Paul Goldmann und Eva Marie Goldmann an Arthur
+               Schnitzler, 1. 10. 1909</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
+            <author ref="#pmb17164">Goldmann, Eva Marie</author>
             <editor>
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
@@ -70,7 +72,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="kartenbrief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -82,14 +84,35 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                        <handDesc hands="3">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"
+                              corresp="#pmb11485"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"
+                              corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"
+                              corresp="#pmb17164"/>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb50">
+                                       <unclear>1/1</unclear> <unclear>Wi</unclear>
+                                       <supplied>en</supplied> 3a</placeName>
+                                    <date when="1909-10-01">1. X. <supplied>01</supplied>
+                                    </date>
+                                    <time>
+                                       <unclear>1</unclear>–2</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -103,14 +126,15 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
+               <persName ref="#pmb17164">Goldmann, Eva Marie</persName>
                <date when="1909-10-01" n="01">1. 10. 1909</date>
-               <!-- XXXX Ort eruierbar? -->
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
-               <date evidence="conjecture" notBefore="1909-10-02" notAfter="1909-10-06">[2. 10. 1909
-                  – 6. 10. 1909?]</date>
+               <date evidence="conjecture" notBefore="1909-10-01" notAfter="1909-10-05">[1. 10. 1909
+                  – 5. 10. 1909?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -126,7 +150,8 @@
       <body>
          <div type="address">
             <address>
-               <addrLine><pb facs="HS.NZ85.1.3175_0076"/>Herrn</addrLine>
+               <addrLine>
+                  <pb facs="HS.NZ85.1.3175_0076"/>Herrn</addrLine>
                <addrLine>Dr. Arthur Schnitzler</addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb50">Wien</rs>
@@ -142,8 +167,9 @@
             </opener>
             <p>
                <salute rend="inline">Lieber Freund,</salute> Ich fahre <date>heut</date>
-               <time>Mittag</time> ab u. will Dir nur raſch vorher mitteilen, daß meine <rs
-                  type="person" ref="">Schwägerin</rs>, Frl. <hi rend="latintype">
+               <time>Mittag</time>
+               <!-- aus Wien, vgl. TB 1909-09-28 --> ab u. will Dir nur raſch vorher mitteilen, daß
+               meine <rs type="person" ref="">Schwägerin</rs>, Frl. <hi rend="latintype">
                   <rs type="person" ref="">Fränkel</rs>
                </hi>, die im <hi rend="latintype">
                   <rs type="place" ref="">Hotel Sacher</rs>
@@ -157,8 +183,9 @@
                   hier\u0020die\u0020Fußnote]</anchor>
                <note type="commentary" xml:id="XXXX"/>. Du ſollteſt Dir das <rs type="place" ref=""
                   >Haus</rs>, das tatſächlich mit den billigſten Mitteln erbaut iſt u. auf der <rs
-                  type="place" ref="">Hohen Warte</rs>, <rs type="place" ref="">Armbruſterſtraße 20</rs>, ſteht, einmal anſehen, ehe Du daran gehſt,
-               die Wohnungsfrage zu löſen. <lb/>Herzliche Grüße Deiner</p>
+                  type="place" ref="">Hohen Warte</rs>, <rs type="place" ref="">Armbruſterſtraße
+                  20</rs>, ſteht, einmal anſehen, ehe Du daran gehſt, die Wohnungsfrage zu löſen.
+               <lb/>Herzliche Grüße Deiner</p>
             <closer>
                <lb/>
                <rs type="person" subtype="implied" ref="">Frau</rs> u. Dir! Dein</closer>
@@ -220,6 +247,36 @@
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
+            <person xml:id="pmb17164">
+               <persName>
+                  <forename>Eva Marie</forename>
+                  <surname>Goldmann</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Fränkel</persName>
+               <persName type="person_geschieden">Kobler</persName>
+               <birth>
+                  <date when="1877-10-27">27.10.1877</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1937-11-02">02.11.1937</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15526</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/17164/</idno>
+            </person>
             <person xml:id="pmb2121">
                <persName>
                   <forename>Arthur</forename>
@@ -268,41 +325,6 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb168">
-               <placeName>Berlin</placeName>
-               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Barlīn</placeName>
-               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Berolino</placeName>
-               <placeName type="legacy-name-merge">B-n</placeName>
-               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
-               <desc type="entity_type_id">1418</desc>
-               <location type="coords">
-                  <geo>52,52437 13,41053</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb151">Deutschland</placeName>
-                  <geo>51,5 10,5</geo>
-               </location>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92171.html</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
-            </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
                <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
@@ -342,6 +364,30 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+            </place>
+            <place xml:id="pmb133">
+               <placeName>Edmund-Weiß-Gasse</placeName>
+               <placeName type="ort_fruherer_name">Spöttelgasse</placeName>
+               <desc type="entity_type">Straße (K.STR)</desc>
+               <desc type="entity_type_id">26</desc>
+               <location type="coords">
+                  <geo>48,23056 16,3348</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb133.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/133/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb133.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92539/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92539.html</idno>
+               <idno type="URL" subtype="geonames">https://www.geonames.org/12495676</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb133.html</idno>
             </place>
          </listPlace>
       </back>

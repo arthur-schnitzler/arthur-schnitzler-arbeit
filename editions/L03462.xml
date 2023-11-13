@@ -70,7 +70,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="karte" ana="bildpostkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -82,14 +82,30 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                        <handDesc hands="2">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"
+                              corresp="#pmb11485"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"
+                              corresp="#pmb11485">
+                              <p>Adresse</p>
+                           </handNote>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb506">Hamburg <unclear>1</unclear>
+                                    </placeName>
+                                    <date when="1908-06-06">6. 6. 08</date>
+                                    <time>9—10 N</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -126,9 +142,11 @@
       <body>
          <div type="address">
             <address>
-               <addrLine><pb facs="HS.NZ85.1.3175_0061"/>Herrn</addrLine>
+               <addrLine>
+                  <pb facs="HS.NZ85.1.3175_0061"/>Herrn</addrLine>
                <addrLine>Dr. Arthur Schnitzler</addrLine>
-               <addrLine><rs type="place" ref="#pmb50">Wien</rs>
+               <addrLine>
+                  <rs type="place" ref="#pmb50">Wien</rs>
                </addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb133">XVIII. Spöttelgaſse 7</rs>
@@ -137,16 +155,25 @@
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <p><pb facs="HS.NZ85.1.3175_0062"/><hi rend="pre-print"><hi rend="capitals">Gruss aus
-                           <rs type="place" ref="#pmb506">Hamburg</rs></hi></hi>
-              </p>
-               <p><hi rend="pre-print"><rs type="person" ref="">Kley</rs></hi></p>
-               <dateline rend="left"><date when="1908-06-06">6. 6. 08</date>.</dateline>
+               <p>
+                  <pb facs="HS.NZ85.1.3175_0062"/>
+                  <hi rend="pre-print">
+                     <hi rend="capitals">Gruss aus <rs type="place" ref="#pmb506">Hamburg</rs>
+                     </hi>
+                  </hi>
+               </p>
+               <p>
+                  <hi rend="pre-print">
+                     <rs type="person" ref="">Kley</rs>
+                  </hi>
+               </p>
+               <dateline rend="left">
+                  <date when="1908-06-06">6. 6. 08</date>.</dateline>
             </opener>
             <p>Herzliche Grüße Dir, <salute rend="inline">lieber Freund,</salute> u. Deiner <rs
-                  type="person" subtype="implied" ref="">Frau</rs> von Deinem <lb/><signed>Paul
-                  Goldmann.</signed>
-           </p>
+                  type="person" subtype="implied" ref="">Frau</rs> von Deinem <lb/>
+               <signed>Paul Goldmann.</signed>
+            </p>
          </div>
       </body>
       <back>
@@ -245,40 +272,34 @@
             </person>
          </listPerson>
          <listPlace>
-            <place xml:id="pmb168">
-               <placeName>Berlin</placeName>
-               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Barlīn</placeName>
-               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
-               <placeName type="alternative-name">Berolino</placeName>
-               <placeName type="legacy-name-merge">B-n</placeName>
-               <desc type="entity_type">https://www.geonames.org/ontology#P.PPLC</desc>
-               <desc type="entity_type_id">1418</desc>
+            <place xml:id="pmb506">
+               <placeName>Hamburg</placeName>
+               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
+               <desc type="entity_type_id">14</desc>
                <location type="coords">
-                  <geo>52,52437 13,41053</geo>
+                  <geo>53,57532 10,01534</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
                </location>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1055</idno>
                <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb506.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/506/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44883/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4023118-5</idno>
                <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb506.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64301/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2911298/</idno>
                <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
+                  >https://kraus.wienbibliothek.at/register/orte/pmb506</idno>
                <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92171.html</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb506.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Hamburg</idno>
                <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb506.html</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
@@ -319,6 +340,30 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+            </place>
+            <place xml:id="pmb133">
+               <placeName>Edmund-Weiß-Gasse</placeName>
+               <placeName type="ort_fruherer_name">Spöttelgasse</placeName>
+               <desc type="entity_type">Straße (K.STR)</desc>
+               <desc type="entity_type_id">26</desc>
+               <location type="coords">
+                  <geo>48,23056 16,3348</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb68">XVIII., Währing</placeName>
+                  <geo>48,23333 16,31667</geo>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb133.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/133/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb133.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92539/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92539.html</idno>
+               <idno type="URL" subtype="geonames">https://www.geonames.org/12495676</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb133.html</idno>
             </place>
          </listPlace>
       </back>
