@@ -70,7 +70,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -82,14 +82,23 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="seite" quantity="3"/>
+                                 <measure unit="blatt" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit Bleistift »<quote>
+                                    <rs type="person" ref="#pmb11485">Goldma<c
+                                          rendition="#gemination-n"/>
+                                    </rs>
+                                 </quote>« vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -111,16 +120,7 @@
                   <duplicate-date-nn of="L03431"/>
                   <duplicate-date-nn of="L03433"/>
                   <duplicate-date-nn of="L03432"/>
-                  <duplicate-date-nn of="L03482"/>
-                  <duplicate-date-nn of="L03483"/>
-                  <duplicate-date-nn of="L03481"/>
-                  <duplicate-date-nn of="L03480"/>
                   <duplicate-date-nn of="L03485"/>
-                  <duplicate-date-nn of="L03478"/>
-                  <duplicate-date-nn of="L03479"/>
-                  <duplicate-date-nn of="L03475"/>
-                  <duplicate-date-nn of="L03477"/>
-                  <duplicate-date-nn of="L03476"/>
                   <duplicate-date-nn of="L03438"/>
                </date>
                <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
@@ -142,13 +142,18 @@
       <graphic url="HS.NZ85.0001.03176_0048-1"/>
    </facsimile>
    <text>
-      <!-- XXXX vgl. für Datierung den anderen Brief Goldis in lateinischer Kurrent (1908), evtl. in der Gegend, aber er muss noch in der Dessauerstraße gewohnt haben -->
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <dateline rend="right"><pb facs="HS.NZ85.0001.03176_0047-1"/><hi rend="pre-print"><hi
-                        rend="capitals"><rs type="place" ref="">Dessauerstrasse 19</rs></hi></hi>,
-                  d. <date>5. 6.</date><!-- XXXX @when --></dateline>
+               <dateline rend="right">
+                  <pb facs="HS.NZ85.0001.03176_0047-1"/>
+                  <hi rend="pre-print">
+                     <hi rend="capitals">
+                        <rs type="place" ref="">Dessauerstrasse 19</rs>
+                     </hi>
+                  </hi>, d. <date>5. 6.</date>
+                  <!-- XXXX @when -->
+               </dateline>
                <salute rend="left">Lieber Freund,</salute>
             </opener>
             <p>Mit der Uebersendung Deines <rs type="work" subtype="implied" ref="">Roman</rs>s hast
