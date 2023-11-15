@@ -7,7 +7,7 @@
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
             <title level="a">Paul Goldmann, Markus Hajek, Gisela Hajek und Margot Vallo an Arthur
-               Schnitzler, XXXX</title>
+               Schnitzler, [29. 8. 1907?]</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <author ref="#pmb2284">Hajek, Markus</author>
             <author ref="#pmb2461">Hajek, Gisela</author>
@@ -105,7 +105,13 @@
                         <additions>
                            <incident type="postal">
                               <desc>
-                                 <stamp n="1">XXXX</stamp>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb40474"
+                                       >Goss<supplied>ensa</supplied>ss</placeName>
+                                    <date when="1907-08-29"
+                                          >2<unclear>9</unclear> 8 <unclear>07</unclear>
+                                    </date>
+                                 </stamp>
                               </desc>
                            </incident>
                         </additions>
@@ -125,28 +131,14 @@
                <persName ref="#pmb2284">Hajek, Markus</persName>
                <persName ref="#pmb2461">Hajek, Gisela</persName>
                <persName ref="#pmb28004">Vallo, Margot</persName>
-               <date when="" n="01">XXXX<duplicate-date-nn of="L03436"/>
-                  <duplicate-date-nn of="L03437"/>
-                  <duplicate-date-nn of="L03435"/>
-                  <duplicate-date-nn of="L03434"/>
-                  <duplicate-date-nn of="L03430"/>
-                  <duplicate-date-nn of="L03425"/>
-                  <duplicate-date-nn of="L03431"/>
-                  <duplicate-date-nn of="L03427"/>
-                  <duplicate-date-nn of="L03433"/>
-                  <duplicate-date-nn of="L03432"/>
-                  <duplicate-date-nn of="L03426"/>
-                  <duplicate-date-nn of="L03428"/>
-                  <duplicate-date-nn of="L03429"/>
-                  <duplicate-date-nn of="L03438"/>
-               </date>
-               <!-- XXXX Datum von Aufenthaltsort in PMB nachtragen, sobald datiert -->
+               <date when="1907-08-29" n="02">[29. 8. 1907?]</date>
                <placeName ref="#pmb147506" evidence="conjecture">Hühnerspiel</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
-               <!-- XXXX correspDesc automatic und Abgleich mit schnitzler-orte -->
+               <placeName ref="#pmb91003" evidence="conjecture">Carezza?</placeName>
+               <date evidence="conjecture" notBefore="1907-08-30" notAfter="1907-09-03">[30. 8. 1907
+                  – 3. 9. 1907?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -172,28 +164,29 @@
                   <rs type="place" ref="#pmb133">XVIII. Spöttelgaſse 7</rs>.</addrLine>
             </address>
          </div>
-         <div type="writingSession" n="1"><!-- XXXX Datierungshinweise: Briefmarke mit Preisangabe, Einordnung DLA -->
-            <p>Wir denken Deiner in einer unwahrſcheinlichen Höhe über dem <rs type="place" ref=""
-                  >Meer</rs> u. ſenden Dir herzliche, teils verwandtſchaftliche, teils
-               freundſchaftliche Grüße. <signed>Paul Goldmann.</signed>
-               <signed>Dr. M. Hajek</signed>
-               <unclear>Herzlichſt</unclear>
-               <anchor type="commentary" xml:id="XXXX">
-                  <signed>Giſa</signed>[Kommentar: Hajek]</anchor>
-               <note type="commentary" xml:id="XXXX"/>
-               <anchor type="commentary" xml:id="XXXX">
-                  <signed>Margot</signed>[Kommentar: Vallo]</anchor>
-               <note type="commentary" xml:id="XXXX"/>
-            </p>
+         <div type="writingSession" n="1">
             <p>
                <pb facs="HS.NZ85.1.3175_0056"/>
-               <hi rend="pre-print">Gruss von der <rs type="place" ref="">Hühnerspielalm</rs> (<rs
-                     type="place" ref="">Amthorspitze</rs>) 2746 m</hi>
+               <hi rend="pre-print">Gruss von der <rs type="place" ref="#pmb147506"
+                     >Hühnerspielalm</rs> (<rs type="place" ref="#pmb147506"
+                  >Amthorspitze</rs>) 2746 m</hi>
             </p>
             <p>
-               <hi rend="pre-print">
-                  <rs type="org" ref="">Photogr. u. Verl.</rs> von <rs type="person" ref="">R.
-                     Largajolli</rs>, <rs type="place" ref="">Brixen</rs>. </hi>
+               <pb facs="HS.NZ85.1.3175_0055"/>Wir denken Deiner in einer unwahrſcheinlichen Höhe
+               über dem Meer u. ſenden Dir herzliche, teils verwandtſchaftliche, teils
+               freundſchaftliche Grüße. <signed>Paul Goldmann.</signed>
+            </p>
+            <p>
+               <signed>
+                  <handShift scribe="#pmb2284"/>Dr. M. Hajek</signed>
+            </p>
+            <p>
+               <handShift scribe="#pmb2461"/>Herzlichſt <lb/>
+               <signed>Giſa</signed>
+            </p>
+            <p>
+               <signed>
+                  <handShift scribe="#pmb28004"/>Margot</signed>
             </p>
          </div>
       </body>
@@ -407,6 +400,36 @@
             </person>
          </listPerson>
          <listPlace>
+            <place xml:id="pmb40474">
+               <placeName>Gossensass</placeName>
+               <desc type="entity_type">http://www.geonames.org/ontology#P.PPLA3</desc>
+               <desc type="entity_type_id">1128</desc>
+               <location type="coords">
+                  <geo>46,93857 11,44245</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40473">Vipiteno</placeName>
+                  <geo>46,89253 11,43007</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb969">Südtirol</placeName>
+                  <geo>46,71667 11,5</geo>
+               </location>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3178386/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40474/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40474.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb40474.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q992211</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4510646-0</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Gossensa%C3%9F</idno>
+            </place>
             <place xml:id="pmb147506">
                <placeName>Hühnerspiel</placeName>
                <placeName type="ort_namensvariante">Amthorspitze</placeName>
@@ -424,6 +447,22 @@
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/7630539-9</idno>
                <idno type="URL" subtype="geonames"
                   >https://www.geonames.org/6690357/huehnerspiel.html</idno>
+            </place>
+            <place xml:id="pmb91003">
+               <placeName>Carezza</placeName>
+               <desc type="entity_type">https://www.geonames.org/ontology#P.PPL</desc>
+               <desc type="entity_type_id">1412</desc>
+               <location type="coords">
+                  <geo>46,41147 11,58817</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40306">Italien</placeName>
+                  <geo>42,83333 12,83333</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91003/</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/3180522/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91003.html</idno>
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
