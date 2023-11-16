@@ -462,18 +462,22 @@
                                     <String>text/any</String>
                                 </field>
                                 <field name="unparsedInsertString">
-                                    <String>&lt;stamp n="1">
-    &lt;placeName ref="">&lt;/placeName>
-    &lt;date when="">&lt;/date>
-    &lt;time>&lt;/time>
-    &lt;addSpan>&lt;/addSpan>
-&lt;/stamp></String>
+                                    <String>&lt;incident type="postal">
+    &lt;desc>
+        &lt;stamp n="1">
+            &lt;placeName ref="">&lt;/placeName>
+            &lt;date when="">&lt;/date>
+            &lt;time>&lt;/time>
+            &lt;addSpan>&lt;/addSpan>
+        &lt;/stamp>
+    &lt;/desc>
+&lt;/incident></String>
                                 </field>
                                 <field name="descriptionString">
                                     <String></String>
                                 </field>
                                 <field name="renderString">
-                                    <String>Stempel (stamp)</String>
+                                    <String>Stempel (incident postal)</String>
                                 </field>
                                 <field name="enabled">
                                     <Boolean>true</Boolean>
@@ -7694,6 +7698,29 @@ ${caret}</String>
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>editions/L03487.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
+                                        <String>correspDesc-automatic</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>editions/L03486.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -12066,29 +12093,6 @@ ${caret}</String>
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>editions/L03166.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
-                                        <String>correspDesc-automatic</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>editions/L03165.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
