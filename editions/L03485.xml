@@ -6,7 +6,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Arthur Schnitzler, XXXX</title>
+            <title level="a">Paul Goldmann an Arthur Schnitzler, [23. 11. 1904?]</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -70,7 +70,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -82,14 +82,24 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="seite" quantity="1"/>
+                                 <measure unit="blatt" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                           <handNote medium="bleistift" style="deutsche-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="receiver">
+                              <desc>mit Bleistift »<quote>XXXX</quote>« vermerkt und »<quote>daß
+                                    eine Freigabe <del rend="strikethrough">nichts</del>
+                                    <space unit="chars" quantity="1"/>
+                                    <date when="1904-11-22">Dienſtag</date> nicht erfolgen
+                                       k<unclear>ö</unclear>nne</quote>« vor »<quote>Nur aus dieſem
+                                    Grunde</quote>« hinzugefügt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -103,18 +113,14 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="" n="01">XXXX<duplicate-date-nn of="L03436"/>
-                  <duplicate-date-nn of="L03437"/>
-                  <duplicate-date-nn of="L03435"/>
-                  <duplicate-date-nn of="L03484"/>
-                  <duplicate-date-nn of="L03438"/>
-               </date>
+               <date when="1904-11-23" n="01">[23. 11. 1904?]</date>
                <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
-               <!-- XXXX correspDesc automatic -->
+               <date evidence="conjecture" notBefore="1904-11-24" notAfter="1904-11-28"
+                  >[24. 11. 1904 – 28. 11. 1904?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -127,7 +133,6 @@
    </facsimile>
    <text>
       <body>
-         <!-- XXXX vmtl. auf 1904 (vgl. 1904-11-22) datierbar; ggf. auch physDesc noch anpassen -->
          <div type="writingSession" n="1">
             <p>
                <pb facs="HS.NZ85.0001.03176_0049"/>
@@ -135,30 +140,42 @@
                   <unclear>E</unclear>
                </del>
                <space unit="chars" quantity="1"/>
-               <salute>Sehr geehrte <rs type="org" subtype="implied" ref="">Redaktion</rs>,</salute>
+               <salute>Sehr geehrte <anchor type="commentary" xml:id="K_L03485-1"/>
+                  <rs type="org" subtype="implied" ref="#pmb29329">Redaktion</rs>
+                  <note type="commentary" xml:id="K_L03485-1h"
+                     ><!-- alles kommentieren: vmtl. am 1904-11-23 entstanden, bei Besuch AS bei Goldi, 
+                        dann womöglich postalisch nachgeschickt; 
+                        vgl. TB 1904-11-22 und 1904-11-23; 
+                        Kontext und bibl Meldung (Berl. Tageblatt (vgl. TB 1904-11-22): https://www.deutsche-digitale-bibliothek.de/newspaper/item/OL4XFU4SJJ5USBDOYLKVDNKIA3NFB3EF?issuepage=2;
+                        AS machte Stellungnahme, abgedruckt 
+                        in NFP ([LudwigKlinenberger]:ArthurSchnitzlers»HausDelorme«.In: NeueFreiePresse,Nr.14.460,25.11.1904,S.12. 
+                        und Neues Wiener Tagblatt ([MarcoBrociner]:HausDelorme.(EineRichtigstellungvon ArthurSchnitzler.).In:NeuesWienerTagblatt,Jg.38,Nr.327, 25.11.1904,S.13.)
+                        – siehe dazu auch TB 1904-11-25 --></note>,</salute>
                Geſtatten Sie mir, zur Richtigſtellung der <rs type="work" subtype="implied" ref=""
-                  >Meldungen</rs>, die Sie <date>geſtern</date> bezüglich <del rend="strikethrough"
-                  >d</del> meines noch unveröffentlichten Einakters »<rs type="work" ref="">Das Haus
-                  Delorme</rs>« publizirt haben, Ihnen Folgendes mitzutheilen: <del
-                  rend="strikethrough">Es iſt <unclear>manc</unclear>he</del> Es entſpricht nicht
-               den Thatſachen, daß die <rs type="person" subtype="implied" ref="">Schauſpieler</rs>
-               ſich geweigert haben, <del rend="strikethrough">daß</del> das <rs type="work"
-                  subtype="implied" ref="">Stück</rs> zu ſpielen. <date>Freitag</date> war noch
-               Probe <del rend="strikethrough">
-                  <time>Abends</time> infolge die das Cenſur</del> Am <date>Freitag</date>
+                  >Meldungen</rs>, die Sie <date when="1904-11-22">geſtern</date> bezüglich <del
+                  rend="strikethrough">d</del> meines noch unveröffentlichten Einakters »<rs
+                  type="work" ref="#pmb31547">Das Haus Delorme</rs>« publizirt haben, Ihnen
+               Folgendes mitzutheilen: <del rend="strikethrough">Es iſt
+                  <unclear>manc</unclear>he</del> Es entſpricht nicht den Thatſachen, daß die <rs
+                  type="person" subtype="implied" ref="">Schauſpieler</rs> ſich geweigert haben,
+                  <del rend="strikethrough">daß</del> das <rs type="work" subtype="implied"
+                  ref="#pmb31547">Stück</rs> zu ſpielen. <date when="1904-11-18">Freitag</date> war
+               noch Probe. <del rend="strikethrough">
+                  <time>Abends</time> infolge die das Cenſur</del> Am <date when="1904-11-18"
+                  >Freitag</date>
                <space unit="chars" quantity="1"/>
-               <time>Abend</time>, vor der auf <date>Sonnabend</date> angeſetzten Generalprobe, <del
-                  rend="strikethrough">
+               <time>Abend</time>, vor der auf <date when="1904-11-19">Sonnabend</date> angeſetzten
+               Generalprobe, <del rend="strikethrough">
                   <unclear>er</unclear>
-               </del> erfolgte <del rend="strikethrough">das Cenſurverbot</del>. <add>die Meldung
-                  von Seiten der Cenſur</add> daß eine Freigabe <del rend="strikethrough"
-                  >nicht</del>
-               <anchor type="commentary" xml:id="XXXX">
-                  <date>Dinſtag</date>[Kommentar: 1904-11-22]</anchor>
-               <note type="commentary" xml:id="XXXX"/> nicht erfolgen k<supplied>ö</supplied>nne Nur
-               aus dieſem Grunde wurde das <rs type="work" subtype="implied" ref="">Stück</rs>
-               abgeſetzt. Der Inhalt des <rs type="work" subtype="implied" ref="">Stück</rs>es iſt
-               in <del rend="strikethrough">der Ihrem <rs type="work" ref="">Blatte</rs>
+               </del> erfolgte <subst>
+                  <del rend="strikethrough">das Cenſurverbot</del>
+                  <add place="above">die Meldung von Seiten der <rs type="org" subtype="implied"
+                        ref="">Cenſur</rs>
+                  </add>
+               </subst>. Nur aus dieſem Grunde wurde das <rs type="work" subtype="implied"
+                  ref="#pmb31547">Stück</rs> abgeſetzt. Der Inhalt des <rs type="work"
+                  subtype="implied" ref="#pmb31547">Stück</rs>es iſt in <del rend="strikethrough"
+                  >der Ihrem <rs type="work" ref="#pmb41531">Blatte</rs>
                </del> Ihrem <rs type="work" subtype="implied" ref="">Berichte</rs> unrichtig
                wiedergegeben.</p>
          </div>
@@ -258,6 +275,39 @@
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
          </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb31547">
+               <title>Das Haus Delorme. Eine Familienszene</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+               <date when="1977-01-01">1977</date>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q24895554</idno>
+               <idno type="URL" subtype="theadok">https://theadok.at/work/38166</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb31547.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/31547/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb31547.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb31547.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Das_Haus_Delorme</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb31547.html</idno>
+               <note type="work_kind">Drama &gt;&gt; Einakter</note>
+            </bibl>
+            <bibl xml:id="pmb41531">
+               <title>Berliner Tageblatt</title>
+               <title type="werk_link"
+                  >https://www.deutsche-digitale-bibliothek.de/newspaper/2764651-8</title>
+               <date to="1939-01-01">1872 – 1939</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/41531/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb41531.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/werke/pmb41531</idno>
+               <note type="work_kind">Periodikum &gt;&gt; Tageszeitung</note>
+            </bibl>
+         </listBibl>
          <listPlace>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
@@ -335,6 +385,52 @@
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
          </listPlace>
+         <listOrg>
+            <org xml:id="pmb29329">
+               <orgName>Berliner Tageblatt</orgName>
+               <desc type="entity_type">Tageszeitungsredaktion</desc>
+               <desc type="entity_type_id">972</desc>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
+                  <idno type="URL" subtype="schnitzler-bahr"
+                     >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
+                  <idno type="URL" subtype="schnitzler-briefe"
+                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="kraus"
+                     >https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch"
+                     >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch"
+                     >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb92171.html</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
+                  <idno type="URL" subtype="schnitzler-interviews"
+                     >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb146879">Redaktion des Berliner Tageblatts</placeName>
+                  <geo>52,59997 13,47401</geo>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/146879/</idno>
+               </location>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29329.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29329/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29329.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/institutionen/pmb29329</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q455014</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Berliner_Tageblatt</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb29329.html</idno>
+            </org>
+         </listOrg>
       </back>
    </text>
 </TEI>
