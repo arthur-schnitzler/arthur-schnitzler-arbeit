@@ -13,7 +13,7 @@
     <xsl:param name="archiv-land" as="xs:string">D</xsl:param>
     <xsl:param name="archiv-stadt" as="xs:string">Marbach am Neckar</xsl:param>
     <xsl:param name="archiv-institution" as="xs:string">Deutsches Literaturarchiv</xsl:param>
-    <xsl:param name="signatur" as="xs:string">A:Schnitzler, HS.NZ85.1.3176</xsl:param>
+    <xsl:param name="signatur" as="xs:string">A:Schnitzler, HS.1985.1.857</xsl:param>
 
     <!--<xsl:param name="sender-in_pmb" as="xs:string">pmb2167</xsl:param>
     <xsl:param name="sender-in_name" as="xs:string">Salten, Felix</xsl:param>
