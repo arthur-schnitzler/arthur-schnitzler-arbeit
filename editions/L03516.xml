@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03516"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions"><teiHeader>
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
             <title level="a">Paul Goldmann an Arthur Schnitzler, 3. 5. 1928</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
-            <editor><name>Müller, Martin Anton</name><name>Untner, Laura</name></editor>
+            <editor>
+               <name>Müller, Martin Anton</name>
+               <name>Untner, Laura</name>
+            </editor>
             <funder>
                <name>FWF - Der Wissenschaftsfonds</name>
                <address>
                   <street>Sensengasse 1</street>
                   <postCode>1090 Wien</postCode>
-                  <placeName><country>A</country><settlement>Wien</settlement></placeName>
+                  <placeName>
+                     <country>A</country>
+                     <settlement>Wien</settlement>
+                  </placeName>
                </address>
             </funder>
          </titleStmt>
          <editionStmt>
             <edition>ASBW</edition>
-            <respStmt><resp>Transkription und Kommentierung</resp><name>Müller, Martin
-                  Anton</name><name>Untner, Laura</name></respStmt>
+            <respStmt>
+               <resp>Transkription und Kommentierung</resp>
+               <name>Müller, Martin Anton</name>
+               <name>Untner, Laura</name>
+            </respStmt>
          </editionStmt>
          <publicationStmt>
             <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
@@ -90,43 +100,51 @@
          <langUsage>
             <language ident="de-AT">German</language>
          </langUsage>
-         <correspDesc><correspAction type="sent">
+         <correspDesc>
+            <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1928-05-03" n="01">3. 5. 1928</date>
-               <placeName ref="#168" evidence="conjecture">Berlin</placeName>
+               <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#50" evidence="conjecture">Wien</placeName>
-            </correspAction></correspDesc>
+               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <date evidence="conjecture" notBefore="1928-05-04" notAfter="1928-05-08">[4. 5. 1928
+                  – 8. 5. 1928?]</date>
+            </correspAction>
+         </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2023-11-20">Export aus Transkribus</change>
       </revisionDesc>
-   </teiHeader><text>
+   </teiHeader>
+   <text>
       <body>
          <div type="writingSession" n="1">
-            <pb facs="HS.NZ85.0001.03176_0040"/>
-            <dateline>
-               <opener>
-                  <date> 3. 5. 28</date>.</opener>
-            </dateline>
             <opener>
-               <salute>Lieber Freund,</salute>
+               <p><seg rend="left"><pb facs="HS.NZ85.0001.03176_0040"/><hi rend="pre-print">Dr. Paul
+                        Goldmann</hi></seg><seg rend="right"><hi rend="pre-print"><rs type="place"
+                           ref="#pmb168">Berlin W. 10</rs></hi></seg></p>
+               <p><seg rend="left"><hi rend="pre-print">Vertreter der »<rs type="org"
+                           ref="#pmb29351">Neuen Freien Presse</rs>«</hi></seg><seg rend="right"><hi
+                        rend="pre-print">
+                        <rs type="place" ref="#pmb63858">Bendlerſtraße 36</rs>.</hi></seg></p>
+               <p rend="right"><hi rend="pre-print">Tel. Lützow 9142</hi></p>
+               <dateline rend="right"><date when="1928-05-03">3. 5. 28</date>.</dateline>
+               <salute rend="center">Lieber Freund,</salute>
             </opener>
-            <p>Für die Übersendung Deines neuen <rs type="work" subtype="implied" ref="">Romans</rs> sagen wir alle
-               Dir unseren herzlichsten Dank. Er geht gegenwärtig in meinem Haushalt von Hand zu
-               Hand und findet den Beifall von Jung und Alt. Wenn <rs type="person" subtype="implied" ref="">Frau</rs>
-               und <rs type="person" subtype="implied" ref="">Tochter</rs> fertig sind, darf ich dann das <rs
-                  type="work" subtype="implied" ref="">Buch</rs> auch lesen. Darum kann ich einstweilen nur für die
-               Übersendung danken.</p>
+            <p>Für die Übersendung Deines neuen <rs type="work" subtype="implied" ref="">Roman</rs>s
+               sagen wir alle Dir unseren herzlichsten Dank. Er geht gegenwärtig in meinem Haushalt
+               von Hand zu Hand und findet den Beifall von Jung und Alt. Wenn <rs type="person"
+                  subtype="implied" ref="#pmb17164">Frau</rs> und <rs type="person"
+                  subtype="implied" ref="#pmb17167">Tochter</rs> fertig sind, darf ich dann das <rs
+                  type="work" subtype="implied" ref="">Buch</rs> auch lesen. Darum kann ich
+               einstweilen nur für die Übersendung danken.</p>
             <p>Ich hoffe, dass es Dir gut geht, und dass wir bald wieder einmal die Freude haben
                werden, Dich in <rs type="place" ref="#pmb168">Berlin</rs> zu sehen.</p>
-            <closer>Alles Herzliche von uns Allen!</closer>
-            <closer>Dein</closer>
-            <closer>
-               <signed>Paul Goldmann. </signed>
+            <closer>Alles Herzliche von uns Allen! <lb/>Dein <lb/><signed>Paul Goldmann. </signed>
             </closer>
          </div>
       </body>
-   </text></TEI>
+   </text>
+</TEI>
