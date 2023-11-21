@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03412"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L03412"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -117,6 +119,20 @@
                <date evidence="external" notBefore="1905-07-19" notAfter="1905-07-20">[19. 7. 1905 –
                   20. 7. 1905?]</date>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               
+               <ref subtype="previous_letter" type="withinCollection" target="L01531">Schnitzler an Beer-Hofmann, 17. 7. 1905</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L03000">Schnitzler an Salten, 20. 7. 1905</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03409">Salten, Salten an Schnitzler, Schnitzler, 3. 6. [1905?]</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03000">Schnitzler an Salten, 20. 7. 1905</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -178,30 +194,24 @@
                </p>
             </opener>
             <p>
-               <salute>Lieber, </salute>bis jetzt waren die <rs type="person"
-                  ref="#pmb2922 #pmb23915">Kinder</rs> krank und <rs type="person" ref="#pmb2922"
-                  >Paul</rs> hat uns wieder viele Sorgen gemacht. Deshalb sind wir nicht abgeko<c
-                  rendition="#gemination-m"/>en. Schreiben Sie mir, ob es Ihnen passt, wenn wir
-                  <anchor type="commentary" xml:id="K_L03412-1"/><date>Samstag</date><note
-                  type="commentary" xml:id="K_L03412-1h">22.&#160;7.&#160;1905<date/></note> nach
+               <salute>Lieber, </salute>bis jetzt waren die <rs type="person" ref="#pmb2922 #pmb23915">Kinder</rs> krank und <rs type="person" ref="#pmb2922">Paul</rs> hat uns wieder viele Sorgen gemacht. Deshalb sind wir nicht abgeko<c rendition="#gemination-m"/>en. Schreiben Sie mir, ob es Ihnen passt, wenn wir
+                  <anchor type="commentary" xml:id="K_L03412-1"/>
+               <date>Samstag</date>
+               <note type="commentary" xml:id="K_L03412-1h">22. 7. 1905<date/>
+               </note> nach
                   <rs type="place" ref="#pmb483">Reichenau</rs> kommen, und ob Sie dann Lust haben
-               (nur für diesen Fall kämen wir) am Sonntag oder Montag die <anchor type="commentary"
-                  xml:id="K_L03412-55"/><rs type="place" ref="#pmb431">Maria Zell</rs>er Partie<note
-                  type="commentary" xml:id="K_L03412-55h">Diese fand erst am Monatsende und ohne <rs
-                     type="person" ref="#pmb2121">Schnitzler</rs> statt, <ref
-                     type="schnitzler-briefe" target="L03410" subtype="cf"/>.</note> mitzumachen.
-               Ich habe auch <rs type="place" ref="#pmb908">Eisenerz</rs> u.&#160;s.&#160;w. vor,
+               (nur für diesen Fall kämen wir) am Sonntag oder Montag die <anchor type="commentary" xml:id="K_L03412-55"/>
+               <rs type="place" ref="#pmb431">Maria Zell</rs>er Partie<note type="commentary" xml:id="K_L03412-55h">Diese fand erst am Monatsende und ohne <rs type="person" ref="#pmb2121">Schnitzler</rs> statt, <ref type="schnitzler-briefe" target="L03410" subtype="cf"/>.</note> mitzumachen.
+               Ich habe auch <rs type="place" ref="#pmb908">Eisenerz</rs> u. s. w. vor,
                worüber wir aber noch sprechen könnten. Ich denke mir: Samstag Tennis, Sonntag
-               Tennis. Montag früh od. Sonntag Abds. Abfahrt nach <rs type="place" ref="#pmb431"
-                  >Mzll.</rs>
+               Tennis. Montag früh od. Sonntag Abds. Abfahrt nach <rs type="place" ref="#pmb431">Mzll.</rs>
             </p>
             <p>Herzliche Grüße von uns an Sie Beide</p>
             <closer>Ihr<lb/>
                <signed>Salten</signed>
             </closer>
             <postscript>
-               <p>Das <rs type="work" ref="#pmb29999" subtype="implied">Stück</rs> von <rs
-                     type="person" ref="#pmb10815">Bahr</rs> haben Sie erhalten?</p>
+               <p>Das <rs type="work" ref="#pmb29999" subtype="implied">Stück</rs> von <rs type="person" ref="#pmb10815">Bahr</rs> haben Sie erhalten?</p>
             </postscript>
          </div>
       </body>

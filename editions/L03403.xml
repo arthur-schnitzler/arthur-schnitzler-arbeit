@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03403"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L03403"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, [22.&#160;12.&#160;1904?]</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, [22. 12. 1904?]</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -108,14 +110,28 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1904-12-22" n="01">[22.&#160;12.&#160;1904?]</date>
+               <date when="1904-12-22" n="01">[22. 12. 1904?]</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1904-12-23" evidence="conjecture">[23.&#160;12.&#160;1904?]</date>
+               <date when="1904-12-23" evidence="conjecture">[23. 12. 1904?]</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               
+               <ref subtype="previous_letter" type="withinCollection" target="L03402">Salten an Schnitzler, [20. 12. 1904]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01481">Schnitzler an Beer-Hofmann, 23. 12. 1904</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03402">Salten an Schnitzler, [20. 12. 1904]</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L02994">Schnitzler an Salten, [23. 12. 1904?]</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -126,8 +142,8 @@
       <body>
          <div type="address">
             <address>
-               <addrLine><pb facs="MS-SCHNITZLER-B-00089-B-00001-000-00014-V"/>Herrn D<hi
-                     rend="superscript">r</hi> Arthur Schnitzler</addrLine>
+               <addrLine>
+                  <pb facs="MS-SCHNITZLER-B-00089-B-00001-000-00014-V"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb68">Wien XVIII.</rs>
                </addrLine>
@@ -138,24 +154,40 @@
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <p rend="center"><pb facs="MS-SCHNITZLER-B-00089-B-00001-000-00014-R"/>
-                  
-                  <hi rend="pre-print"><rs type="person" ref="#pmb147246">Johann Benedickter</rs>’s</hi>
-                  </p>
-               <p rend="center"><rs type="place" ref="#pmb44">
+               <p rend="center">
+                  <pb facs="MS-SCHNITZLER-B-00089-B-00001-000-00014-R"/>
+                  <hi rend="pre-print">
+                     <rs type="person" ref="#pmb147246">Johann Benedickter</rs>’s</hi>
+               </p>
+               <p rend="center">
+                  <rs type="place" ref="#pmb44">
                      <hi rend="pre-print">Restaurant u. Weinhandlung »zum Riedhof«</hi>
-                  </rs></p>
-               <p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb50"><hi rend="capitals">Wien</hi></rs>
-                  </hi></p>
-               <p rend="center"><hi rend="pre-print"><rs type="place" ref="#pmb42773">VIII, Schlösselgasse 14</rs>
-                  </hi></p>
+                  </rs>
+               </p>
+               <p rend="center">
+                  <hi rend="pre-print">
+                     <rs type="place" ref="#pmb50">
+                        <hi rend="capitals">Wien</hi>
+                     </rs>
+                  </hi>
+               </p>
+               <p rend="center">
+                  <hi rend="pre-print">
+                     <rs type="place" ref="#pmb42773">VIII, Schlösselgasse 14</rs>
+                  </hi>
+               </p>
                <p rend="center">
                   <rs type="place" ref="#pmb51237">
-                     <hi rend="pre-print">Wickenburggasse 15 </hi></rs>
+                     <hi rend="pre-print">Wickenburggasse 15 </hi>
+                  </rs>
                </p>
-               <p rend="center"><hi rend="pre-print">Garten mit Spiegelveranda</hi></p>
-               <p rend="center"><hi rend="pre-print">Marmorsaal</hi></p>
-               <dateline>zwischen ¾&#160;11–11</dateline>
+               <p rend="center">
+                  <hi rend="pre-print">Garten mit Spiegelveranda</hi>
+               </p>
+               <p rend="center">
+                  <hi rend="pre-print">Marmorsaal</hi>
+               </p>
+               <dateline>zwischen ¾ 11–11</dateline>
             </opener>
             <p>Sind etwas verspätet gekommen, weil <rs type="person" ref="#pmb23918">Otti</rs> nach dem
                <rs type="work" subtype="implied" ref="#pmb30123">Konzert</rs> des <rs type="person" ref="#pmb23915" subtype="implied">Kindes</rs> wegen nochmals
