@@ -70,7 +70,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="brief"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -82,14 +82,22 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="seite" quantity="4"/>
+                                 <measure unit="blatt" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="deutsche-kurrent"/>
+                           <handNote medium="blaue_tinte" style="deutsche-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="archival">
+                              <desc>mit Bleistift von <rs type="person" ref="#pmb2121">Arthur
+                                    Schnitzler</rs> das Jahr »<quote>
+                                    <date when="1901">1901</date>
+                                 </quote>« vermerkt</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -103,12 +111,14 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1901-04-01" n="01">1. 4. [1901]</date>
+               <date when="1901-04-01" n="02">1. 4. [1901]</date>
                <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2173">Gussmann, Olga</persName>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <placeName ref="#pmb50" evidence="conjecture">Wien?</placeName>
+               <date evidence="conjecture" notBefore="1901-04-02" notAfter="1901-04-06">[2. 4. 1901
+                  – 6. 4. 1901?]</date>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -126,77 +136,112 @@
       <body>
          <div type="writingSession" n="1">
             <opener>
-               <p rend="right"><pb facs="DLA_PG-an-Olga_00003 DLA_85.1.5247_00003"/>
-                  <hi rend="pre-print"><rs type="place" ref="#pmb40583"><hi rend="capitals"
-                           >Dessauerstrasse</hi> 19</rs></hi></p>
-               <dateline rend="left"><rs type="place" ref="#pmb168">Berlin</rs>, <date
-                     when="1901-04-01">1. April</date>.</dateline>
+               <p rend="right">
+                  <pb facs="DLA_PG-an-Olga_00003 DLA_85.1.5247_00003"/>
+                  <hi rend="pre-print">
+                     <rs type="place" ref="#pmb40583">
+                        <hi rend="capitals">Dessauerstrasse</hi> 19</rs>
+                  </hi>
+               </p>
+               <dateline rend="left">
+                  <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1901-04-01"
+                     >1. April</date>.</dateline>
                <salute rend="center">Liebes Fräulein <hi rend="latintype">Olga</hi>,</salute>
             </opener>
-            <p>Endlich einmal eine freie Stunde, nach arbeitsſchweren Tagen. Heut will ich erſt
-               Ihren lieben Brief beantworten. Das <rs type="person" subtype="implied" ref="#pmb2315">Schweſterchen</rs> kommt
-               nächſtens an die Reihe.</p>
+            <p>Endlich einmal eine freie Stunde, nach arbeitsſchweren Tagen. <date when="1901-04-01"
+                  >Heut</date> will ich erſt Ihren lieben Brief beantworten. Das <rs type="person"
+                  subtype="implied" ref="#pmb2315">Schweſterchen</rs> kommt nächſtens an die
+               Reihe.</p>
             <p>Dieſer Ihr Brief war alſo ſehr ſchön. Ich ſage ihnen, es thut wohl, ein wenig
                geſtreichelt zu werden, – namentlich wenn man in dieſer Beziehung gar nicht, aber
                auch ſchon gar nicht verwöhnt iſt. Und doch, er kam ein wenig zu ſpät, dieſer Brief.
                Ich merke gar zu deutlich, daß mein lieber Freund <hi rend="latintype">
                   <rs type="person" ref="#pmb2121">Arthur</rs>
-               </hi> hinter den Couliſſen die Regie führt. Ich habe ſchon aus den <rs type="place"
-                  ref="#pmb50">Wien</rs>
-           </p>
-            <p>
-               <postscript>Herzliche Grüße an Sie <rs type="person" ref="">Beide</rs> und an Herrn
-                     <hi rend="latintype">
-                     <rs type="person" ref="">Paul</rs>
-                  </hi>!</postscript>
-               <pb facs="DLA_PG-an-Olga_00004 DLA_85.1.5247_00004-0"/> den Eindruck mitgebracht,
-                  <del rend="strikethrough">
-                  <gap/>X</del> daß Sie auf mich nur aufmerkſam geworden ſind, weil ich Ihnen an der
-               Seite dieſes meines lieben <rs type="person" ref="">Freund</rs>es erſchienen bin.
-               Sonſt wären Sie wahrſcheinlich an mir vorübergegangen, ohne mich zu ſehen. Ihre
-               Briefe haben mir die Wahrnehmung beſtätigt. Natürlich werden Sie jetzt proteſtiren.
-               Aber, glauben Sie mir, ich kenne ſo gut den Ton, den Diejenigen annehmen, die Einen
-               verkennen. Ich höre ihn mit ſcharfem Ohr ſelbſt aus der Freundſchaft heraus. Ich bin
-               ein Fachmann in Verkanntwerden.</p>
+               </hi> hinter den Couliſſen die <anchor type="commentary" xml:id="K_L03524-1"
+                  />Regie<note type="commentary" xml:id="K_L03524-1h">
+                  <rs type="person" ref="#pmb11485">Goldmann</rs> hatte sich jedenfalls von <ref
+                     type="schnitzler-tagebuch" target="1900-09-06" subtype="date-only"/> bis <ref
+                     type="schnitzler-briefe" target="L02930" subtype="date-only"/> in <rs
+                     type="place" ref="#pmb50">Wien</rs> aufgehalten. Am <ref
+                     type="schnitzler-tagebuch" target="1900-09-06" subtype="date-only"/>, <ref
+                     type="schnitzler-tagebuch" target="1900-09-08" subtype="date-only"/>, <ref
+                     type="schnitzler-tagebuch" target="1900-09-09" subtype="date-only"/> und <ref
+                     type="schnitzler-tagebuch" target="1900-09-13" subtype="date-only"/> hatten <rs
+                     type="person" ref="#pmb11485">Goldmann</rs>, <rs type="person" ref="#pmb2121"
+                     >Schnitzler</rs> und <rs type="person" ref="#pmb2173">Olga Gussmann</rs>
+                  gemeinsam Zeit verbracht.</note> führt. Ich habe ſchon aus <anchor
+                  type="textConst" xml:id="T_L03524-1"/>
+               <rs type="place" ref="#pmb50">Wien</rs>
+               <note type="textConst" xml:id="T_L03524-1h">korrigiert aus »<quote>den <rs
+                        type="place" ref="#pmb50">Wien</rs>
+                  </quote>«</note>
+               <space unit="chars" quantity="1"/>
+               <pb facs="DLA_PG-an-Olga_00004 DLA_85.1.5247_00004-0"/>den Eindruck mitgebracht, <del
+                  rend="strikethrough">
+                  <gap quantity="3" reason="illegible" unit="chars"/>
+               </del> daß Sie auf mich nur aufmerkſam geworden ſind, weil ich Ihnen an der Seite
+               dieſes meines lieben <rs type="person" subtype="implied" ref="#pmb2121">Freund</rs>es
+               erſchienen bin. Sonſt wären Sie wahrſcheinlich an mir vorübergegangen, ohne mich zu
+               ſehen. Ihre Briefe haben mir die Wahrnehmung beſtätigt. Natürlich werden Sie jetzt
+               proteſtiren. Aber, glauben Sie mir, ich kenne ſo gut den Ton, den Diejenigen
+               annehmen, die Einen verkennen. Ich höre ihn mit ſcharfem Ohr ſelbſt aus der
+               Freundſchaft heraus. Ich bin ein Fachmann im Verkanntwerden.</p>
             <p>Und da ich müde bin, immer wieder das ſelbe zu erleben, ſelbſt bei den ganz Klugen
                (es gibt kluge Frauen, die doch <pb facs="DLA_PG-an-Olga_00005 DLA_85.1.5247_00004-1"
-               /> nur Denjenigen richtig beurtheilen, den ſie lieben), ſo habe ich Ihnen vielleicht
+               />nur Denjenigen richtig beurtheilen, den ſie lieben), ſo habe ich Ihnen vielleicht
                nicht ſo oft geſchrieben, als ich es hätte thun ſollen. Das iſt aber keine Behandlung
-                  »<foreign xml:lang="">
-                  <hi rend="latintype">en canaille</hi>
-               </foreign>«, wahrhaftig nicht. Mit der Freundſchaſt hat das gar nichts zu thun. Ich
-               will mit der Freundſchaft keine Geſchäfte machen, und es iſt mir ein ſehr feines und
-               ein wenig weiſches Vergnügen, mehr geben zu können, als ich bekomme.</p>
-            <closer>Vielleicht hätte ich das, was ich Ihnen, liebes Fräulein <hi rend="latintype"
+                  »<anchor type="commentary" xml:id="K_L03524-2"/>
+               <hi rend="latintype">
+                  <foreign xml:lang="fra">en canaille</foreign>
+               </hi>
+               <note type="commentary" xml:id="K_L03524-2h">französisch: verachtend</note>«,
+               wahrhaftig nicht. Mit der Freundſchaſt hat das gar nichts zu thun. Ich will mit der
+               Freundſchaft keine Geſchäfte machen, und es iſt mir ein ſehr feines und ein wenig
+               weiſches Vergnügen, mehr geben zu können, als ich bekomme.</p>
+            <p>Vielleicht hätte ich das, was ich Ihnen, liebes Fräulein <hi rend="latintype"
                   >Olga</hi>, da erzählt habe, gar nicht geſpürt, wenn ich <del rend="strikethrough">
-                  <gap/>X</del> nur einen einzigen Menſchen hätte (ſtatt Menſch iſt natürlich »Frau«
-               zu leſen), der ſich für mich intereſſirt und der mich lieb hat. Aber ich habe <pb
-                  facs="DLA_PG-an-Olga_00006 DLA_85.1.5247_00005"/> Niemand. So ſitze ich in der
+                  <gap reason="illegible" unit="chars" quantity="1"/>
+               </del> nur einen einzigen Menſchen hätte (ſtatt Menſch iſt natürlich »Frau« zu
+               leſen), der ſich für mich intereſſirt und der mich lieb hat. Aber ich habe <pb
+                  facs="DLA_PG-an-Olga_00006 DLA_85.1.5247_00005"/>Niemand. So ſitze ich in der
                Einſamkeit und fange Grillen. Dieſer Brief iſt nichts als eine große gefangene
                Grille. Sie werden ihn als ſolche<supplied>n</supplied> behandeln und darüber lachen.
-               Aber jetzt, wo mir die <date>Oſter</date>ſonne zum Fenſter hereinſcheint, wird es <hi
-                  rend="underline" n="">gar</hi> ſchlimm. Die dumme Frage regt ſich wieder, warum es
-               für die ganze Welt Frühling wird und warum ich allein davon ausgenommen ſein ſoll? Es
-               iſt ſchwer, ſeinen Gleichmuth zu bewahren, wenn einem ſo eine Frage im Kopfe rumort.
-               <lb/>Liebes Fräulein ich möchte wiſſen, wie</closer>
-            <closer>
-               <lb/>es Ihnen und dem lieben <rs type="person" subtype="implied" ref="#pmb2315">Schweſterchen</rs>
-            </closer>
-            <closer>
-               <lb/>geht. Und die <rs type="work" ref="">Brautlieder</rs> von <hi rend="latintype">
-                  <rs type="person" ref="">Cornelius</rs>
+               Aber jetzt, wo mir die <date when="1901-04-07">Oſter</date>ſonne zum Fenſter
+               hereinſcheint, wird es <hi rend="underline" n="1">gar</hi> ſchlimm. Die dumme Frage
+               regt ſich wieder, warum es für die ganze Welt Frühling wird und warum ich allein
+               davon ausgenommen ſein ſoll? Es iſt ſchwer, ſeinen Gleichmuth zu bewahren, wenn einem
+               ſo eine Frage im Kopfe rumort.</p>
+            <closer>Liebes Fräulein ich möchte wiſſen, wie es Ihnen und dem lieben <rs type="person"
+                  subtype="implied" ref="#pmb2315">Schweſterchen</rs> geht. Und die <anchor
+                  type="commentary" xml:id="K_L03524-3"/>
+               <rs type="work" subtype="implied" ref="#pmb147922">Brautlieder</rs> von <hi
+                  rend="latintype">
+                  <rs type="person" ref="#pmb6704">Cornelius</rs>
                </hi>
+               <note type="commentary" xml:id="K_L03524-3h">eine <rs type="work" subtype="implied"
+                     ref="#pmb147922">Komposition</rs> aus dem Jahr <date when="1856">1856</date>,
+                  die <rs type="person" ref="#pmb2173">Olga Gussmann</rs> vermutlich gesanglich
+                  einübte</note> möchte ich auch wohl einmal hören. Schreiben Sie mir bald wieder!
+               Und fröhliche <date when="1901-04-07">Oſtern</date>! Ihr <signed>Dr. Paul
+                  Goldmann.</signed>
             </closer>
-            <closer>
-               <lb/>möchte ich auch wohl einmal hören. Schreiben</closer>
-            <closer>
-               <lb/>Sie mir bald wieder! Und fröhliche</closer>
-            <closer>
-               <lb/>
-               <date>Oſtern</date>!</closer>
-            <closer>
-               <lb/>Ihr <signed>Dr. Paul Goldmann. </signed>
-            </closer>
+            <postscript>
+               <p>
+                  <pb facs="DLA_PG-an-Olga_00003 DLA_85.1.5247_00003"/>
+                  <anchor type="textConst" xml:id="T_L03524-3"/>Herzliche Grüße an Sie <rs
+                     type="person" ref="#pmb2121">Beide</rs> und an Herrn <anchor type="commentary"
+                     xml:id="K_L03524-4"/>
+                  <hi rend="latintype">
+                     <rs type="person" ref="#pmb21647">Paul</rs>
+                  </hi>
+                  <note type="commentary" xml:id="K_L03524-4h">
+                     <rs type="person" ref="#pmb21647">Paul Mosé</rs> war zwischen <date when="1900"
+                        >1900</date> und <date when="1903">1903</date> der Partner von <rs
+                        type="person" ref="#pmb2173">Olga</rs>s Schwester <rs type="person"
+                        ref="#pmb2315">Elisabeth Gussmann</rs>.</note>!<note type="textConst"
+                     xml:id="T_L03524-3h">am oberen Rand der ersten Seite, verkehrt zum Text</note>
+               </p>
+            </postscript>
          </div>
       </body>
       <back>
@@ -247,6 +292,52 @@
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11485.html</idno>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <forename>Arthur</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15.05.1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21.10.1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
+               <idno type="URL" subtype="kraus1933"
+                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+            </person>
             <person xml:id="pmb2173">
                <persName>
                   <forename>Olga</forename>
@@ -291,7 +382,115 @@
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2173.html</idno>
             </person>
+            <person xml:id="pmb2315">
+               <persName>
+                  <forename>Elisabeth</forename>
+                  <surname>Steinrück</surname>
+               </persName>
+               <persName type="person_rufname">Liesl</persName>
+               <persName type="person_geburtsname_nachname">Gussmann</persName>
+               <persName type="legacy-name-merge">Steinrück, Elisabeth</persName>
+               <birth>
+                  <date when="1885-11-19">19.11.1885</date>
+               </birth>
+               <death>
+                  <date when="1920-04-07">07.04.1920</date>
+                  <settlement ref="pmb2318">
+                     <placeName type="pref">Partenkirchen</placeName>
+                     <location>
+                        <geo>47,4956 11,1097</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="female"/>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/117263958</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2315.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2315/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_20386</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2315.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q85087576</idno>
+            </person>
+            <person xml:id="pmb6704">
+               <persName>
+                  <forename>Peter</forename>
+                  <surname>Cornelius</surname>
+               </persName>
+               <birth>
+                  <date when="1824-12-24">24.12.1824</date>
+                  <settlement ref="pmb44119">
+                     <placeName type="pref">Mainz</placeName>
+                     <location>
+                        <geo>49,98419 8,2791</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1874-10-26">26.10.1874</date>
+                  <settlement ref="pmb44119">
+                     <placeName type="pref">Mainz</placeName>
+                     <location>
+                        <geo>49,98419 8,2791</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb129">Komponist/Komponistin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14281</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118522213</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/6704/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q57257</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Peter_Cornelius_(Komponist)</idno>
+               <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001cb27</idno>
+               <idno type="URL" subtype="thun-korrespondenz"
+                  >https://thun-korrespondenz.acdh.oeaw.ac.at/cornelius-peter.html</idno>
+            </person>
+            <person xml:id="pmb21647">
+               <persName>
+                  <forename>Paul</forename>
+                  <surname>Marx</surname>
+               </persName>
+               <persName type="person_geburtsname_nachname">Mosé</persName>
+               <birth>
+                  <date when="1879-07-21">21.07.1879</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1956-10-30">1956-10-30</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb104">Regisseur/Regisseurin</occupation>
+               <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_17958</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/21647/</idno>
+            </person>
          </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb147922">
+               <title>Brautlieder</title>
+               <author ref="pmb6704" role="hat-geschaffen">Cornelius, Peter</author>
+               <date>1856</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/147922/</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1047410559</idno>
+               <note type="work_kind">Musikstück &gt;&gt; Lieder</note>
+            </bibl>
+         </listBibl>
          <listPlace>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
@@ -367,6 +566,21 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+            </place>
+            <place xml:id="pmb40583">
+               <placeName>Dessauer Straße</placeName>
+               <desc type="entity_type">Straße (K.STR)</desc>
+               <desc type="entity_type_id">26</desc>
+               <location type="coords">
+                  <geo>52,504956 13,378587</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40583/</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40583.html</idno>
             </place>
          </listPlace>
       </back>
