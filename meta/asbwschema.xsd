@@ -966,6 +966,7 @@
             <xs:element ref="tei:c" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element ref="tei:foreign" minOccurs="0" maxOccurs="unbounded"/>
          </xs:choice>
+         <xs:assert test="not(child::*[1][name()='lb'] and text()[1][normalize-space(.) = ''])"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="postscript">
@@ -1380,6 +1381,7 @@
                (child::tei:seg/@rend = 'left' and child::tei:seg/@rend = 'right' and not(child::*[3])) or not(child::tei:seg)"
          />
          <xs:assert test="not(child::tei:anchor[@type='commentary']) or child::tei:anchor[@type='commentary'] and child::tei:note[@type='commentary']"/>
+         <xs:assert test="text()[normalize-space(.) != '' or *]"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="salute">
