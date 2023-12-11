@@ -226,9 +226,9 @@
             </xs:simpleType>
          </xs:attribute>
          <xs:assert
-            test="tei:date/@when or (tei:date/@notAfter and tei:date/@notBefore) or (tei:date/@from and tei:date/@to) or not(tei:date)"/>
+            test="position()=1 and (tei:date/@when or (tei:date/@notAfter and tei:date/@notBefore) or (tei:date/@from and tei:date/@to) or not(tei:date))"/>
          <xs:assert test="tei:persName/@ref or not(tei:persName)"/>
-         <xs:assert test="tei:date[not(matches(., '\n\s+\n\s+'))]"/>
+         <xs:assert test="not(tei:date) or tei:date[not(matches(., '\n\s+\n\s+'))]"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="addressee">
