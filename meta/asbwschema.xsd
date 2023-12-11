@@ -508,7 +508,7 @@
          </xs:sequence>
          <xs:attribute name="n" use="required" type="xs:integer"/>
          <xs:assert
-            test="tei:placeName[(starts-with(@ref, '#pmb') and string(number(substring-after(@ref, '#pmb'))) != 'NaN') or (tokenize(@ref, ' #pmb')[2])] or not(child::tei:placeName)"
+            test="tei:placeName[(starts-with(@ref, '#pmb') and not(@ref='#pmb') and (string(number(substring-after(@ref, '#pmb'))) != 'NaN')  or (tokenize(@ref, ' #pmb')[2]))] or not(child::tei:placeName)"
          />
       </xs:complexType>
    </xs:element>
