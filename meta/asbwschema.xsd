@@ -1511,7 +1511,7 @@
             <xs:element ref="tei:c" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="tei:supplied" maxOccurs="unbounded" minOccurs="0"/>
          </xs:choice>
-         <xs:assert test="child::tei:* or not(matches(., '\n\s+\n\s+'))"/>
+         <xs:assert test="child::tei:* or not(matches(., '^\s|\s$'))"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="supplied">
