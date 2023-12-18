@@ -97,9 +97,9 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1">
-                                    <placeName ref="#pmb506">Hamburg 1 af</placeName>
+                                    <placeName ref="#pmb506">Hamburg&#160;1</placeName>
                                     <date when="1904-07-02">2. 7. 04</date>
-                                    <time>12–1 N.</time>
+                                    <time>12–1N.</time>
                                  </stamp>
                               </desc>
                            </incident>
@@ -118,18 +118,17 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1904-07-02" n="01">2. 7. 1904</date>
-               <placeName ref="#pmb506" evidence="conjecture">Hamburg</placeName>
+               <placeName ref="#pmb506">Hamburg</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <placeName ref="#pmb50">Wien</placeName>
                <date evidence="conjecture" notBefore="1904-07-03" notAfter="1904-07-07">[3. 7. 1904
                   – 7. 7. 1904?]</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_11485">Goldmann,
                   Paul</ref>
-
                <ref subtype="previous_letter" type="withinCollection" target="L01414">Hofmannsthal
                   an Schnitzler, 1. 7. 1904</ref>
                <ref subtype="next_letter" type="withinCollection" target="L03398">Salten an
@@ -144,6 +143,8 @@
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2023-11-06">Export aus Transkribus</change>
+         <change who="MAM" when="2023-12-18">Index check</change>
+         <change who="MAM" when="2023-12-18">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -160,22 +161,37 @@
                <addrLine>
                   <rs type="place" ref="#pmb50">Wien</rs>
                </addrLine>
-               <addrLine>XVIII. <rs type="place" ref="#pmb133">Spöttelgaſse 7</rs>
+               <addrLine><rs type="place" ref="#pmb133">XVIII. Spöttelgaſse 7</rs>
                </addrLine>
             </address>
          </div>
          <div type="writingSession" n="1">
             <opener>
+               <p rend="center"><pb facs="HS.NZ85.1.3174_0019"/><supplied type="image-description"
+                        ><anchor type="commentary" xml:id="K_L03447-1"/>Kunstdruck einer Wäscherin
+                     mit schwarzer Hautfarbe von <rs type="person" ref="#pmb148147 #pmb148144"
+                        >Bonte</rs><note type="commentary" xml:id="K_L03447-1h">Die Postkartenserie,
+                        aus der das Motiv dieser Karte stammt, ist eine rassistische Seltsamkeit mit
+                        Stereotypen schwarzer Plantagenarbeiter:innen. Die meisten (nicht alle)
+                        Darstellungen fanden leicht modifiziert Verwendung in einem Kinderbuch von
+                           <rs type="person" ref="#pmb148147">Louise Quarles Bonte</rs> und <rs
+                           type="person" ref="#pmb148144">Georges Willard Bonte</rs>: <rs
+                           type="work" ref="#pmb148149">ABC in Dixie. A Plantation Alphabet</rs>,
+                        das um die Zeit in <rs type="place" ref="#pmb224">London</rs> und <rs
+                           type="place" ref="#pmb44053">New York</rs> erschien, jedoch in
+                           <rs type="place" ref="#pmb314">Bayern</rs> gedruckt war. Das deutet auf den aus <rs
+                           type="place" ref="#pmb148156">Ober-Klingen</rs> stammenden Verleger <rs
+                           type="person" ref="#pmb148152">Ernest Nister</rs> als den Vermittler
+                  hin.</note></supplied></p>
                <dateline>
-                  <pb facs="HS.NZ85.1.3174_0019"/>
-                  <rs type="place" ref="#pmb506">Hamburg</rs>
+                  <rs type="place" ref="#pmb506"><hi rend="latintype">Hamburg</hi></rs>
                   <space unit="chars" quantity="1"/>
                   <date when="1904-07-02">2. Juli</date>
                </dateline>
             </opener>
             <p>Herzliche Grüße!</p>
             <closer>
-               <signed>P. G.</signed>
+               <signed>P.&#160;G.</signed>
             </closer>
          </div>
       </body>
