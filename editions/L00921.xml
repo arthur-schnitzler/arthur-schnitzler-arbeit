@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L00921"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L00921"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader type="text">
       <fileDesc>
          <titleStmt>
@@ -85,13 +87,13 @@
                                  <measure unit="blatt" quantity="2"/>
                                  <measure unit="seite" quantity="8"/>
                                  <measure unit="umschlag" quantity="1"/>
+                                 <measure unit="zeichenanzahl" quantity="2400"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
                            <handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb2121"/>
-                           <handNote medium="schwarze_tinte" style="deutsche-kurrent"
-                              corresp="#pmb2121">
+                           <handNote medium="schwarze_tinte" style="deutsche-kurrent" corresp="#pmb2121">
                               <p>Umschlag</p>
                            </handNote>
                         </handDesc>
@@ -157,16 +159,19 @@
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann,
                   Richard</ref>
-
                <ref subtype="previous_letter" type="withinCollection" target="L00920">Hofmannsthal
                   an Schnitzler, 30. 5. 1899</ref>
                <ref subtype="next_letter" type="withinCollection" target="L00922">Hofmannsthal an
                   Schnitzler, [4. 6. 1899]</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence"
-                  source="correspondence_10863" target="L00919">Beer-Hofmann an Schnitzler,
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_10863"
+                    target="L00919">Beer-Hofmann an Schnitzler,
                   29. 5. 1899</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863"
-                  target="L00926">Beer-Hofmann an Schnitzler, 16. [6.] 1899</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_10863"
+                    target="L00926">Beer-Hofmann an Schnitzler, 16. [6.] 1899</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -222,66 +227,43 @@
                   <date when="1899-06-01">1. 6. 99</date>. </dateline>
             </opener>
             <p>Mein lieber Richard,</p>
-            <p>die <anchor xml:id="K_L00921_1" type="commentary"/>Rieſenkarte<note
-                  xml:id="K_L00921_1h" type="commentary">Die Karte vom <ref type="schnitzler-briefe"
-                     subtype="date-only" target="L00919"/> ist größer als eine normale
+            <p>die <anchor xml:id="K_L00921_1" type="commentary"/>Rieſenkarte<note xml:id="K_L00921_1h" type="commentary">Die Karte vom <ref type="schnitzler-briefe" subtype="date-only" target="L00919"/> ist größer als eine normale
                   Postkarte.</note> hab ich beko<c rendition="#gemination-m"/>en und danke für den
-               lieben <anchor xml:id="K_L00921_2" type="commentary"/>Frozelgruſs<note
-                  xml:id="K_L00921_2h" type="commentary">frotzeln, umgangssprachlich für:
+               lieben <anchor xml:id="K_L00921_2" type="commentary"/>Frozelgruſs<note xml:id="K_L00921_2h" type="commentary">frotzeln, umgangssprachlich für:
                   necken</note>. – Hier iſt es traurig – immer trauriger – Frühling und einſam – und
                ich weiſs nicht was ich mit mir beginnen ſoll –</p>
-            <p>Jetzt eben, <anchor xml:id="K_L00921_3" type="commentary"/>Feiertag<note
-                  xml:id="K_L00921_3h" type="commentary">Fronleichnam</note>, Nachmittg, ſehr ſchön
-               – und der Abend vor mir – und nebſtbei das »ganze« Leben – vollko<c
-                  rendition="#gemination-m"/>en <pb facs="1899_AS_RBH_1_00017"/>überflüſſig. –</p>
+            <p>Jetzt eben, <anchor xml:id="K_L00921_3" type="commentary"/>Feiertag<note xml:id="K_L00921_3h" type="commentary">Fronleichnam</note>, Nachmittg, ſehr ſchön
+               – und der Abend vor mir – und nebſtbei das »ganze« Leben – vollko<c rendition="#gemination-m"/>en <pb facs="1899_AS_RBH_1_00017"/>überflüſſig. –</p>
             <p>
-               <anchor xml:id="K_L00921_4" type="commentary"/>Neulich<note xml:id="K_L00921_4h"
-                  type="commentary">
+               <anchor xml:id="K_L00921_4" type="commentary"/>Neulich<note xml:id="K_L00921_4h" type="commentary">
                   <ref target="1899-05-28" type="schnitzler-tagebuch" subtype="see"/>
                </note> war ich mit <rs ref="#pmb11740" type="person">Hugo</rs>
                <space unit="chars" quantity="1"/>
-               <rs ref="#pmb42940" type="place">Kampthal</rs> und <rs ref="#pmb531" type="place"
-                  >Wachau</rs>, die Abende auf dem Land ſind ſchauerlich – was da alles in der Luft
+               <rs ref="#pmb42940" type="place">Kampthal</rs> und <rs ref="#pmb531" type="place">Wachau</rs>, die Abende auf dem Land ſind ſchauerlich – was da alles in der Luft
                ſchwebt – da verſtummen die Worte und verſiegen die Thränen. Ich habe Angſt vor dem
                Sommer, beſonders vor den Abenden, vor den Abenden am See –</p>
-            <p>– Zuckungen, als we<c rendition="#gemination-n"/> ich <pb facs="1899_AS_RBH_1_00017"
-               />arbeiten wollte hab ich ſchon zuweilen, aber weiter noch nichts. Vorläufig ſteht es
+            <p>– Zuckungen, als we<c rendition="#gemination-n"/> ich <pb facs="1899_AS_RBH_1_00017"/>arbeiten wollte hab ich ſchon zuweilen, aber weiter noch nichts. Vorläufig ſteht es
                noch immer ſo, daſs nur der <hi rend="underline" n="1">eine</hi> Gedanke mildert –
                nun, Sie wiſſen ja.</p>
             <p>Nebstbei, ganz nebſtbei bringt mich auch das Ohrenſauſen langſam um – es iſt wahrhaft
-               gräßlich, nicht eine Sekunde Ruhe zu haben und jeden Tag ein wenig nur <pb
-                  facs="1899_AS_RBH_1_00018"/>ein ganz klein wenig ſchlechter zu hören. –</p>
+               gräßlich, nicht eine Sekunde Ruhe zu haben und jeden Tag ein wenig nur <pb facs="1899_AS_RBH_1_00018"/>ein ganz klein wenig ſchlechter zu hören. –</p>
             <p>Sie wiſſen ſchon, dſs der Direktor <rs ref="#pmb24230" type="person">Schleſinger</rs>
                geſtern geſtorben ist. <anchor xml:id="K_L00921_5" type="commentary"/>Morgen vor 14
                   Tagen<note xml:id="K_L00921_5h" type="commentary">
                   <ref target="1899-05-19" type="schnitzler-tagebuch" subtype="see"/>
-               </note> waren <rs ref="#pmb11740" type="person">Hugo</rs> und ich mit <rs
-                  ref="#pmb24230" type="person" subtype="implied">ihm</rs> auf der <rs ref="#pmb456"
-                  type="place">Rohrerhütte</rs> zuſammen; er war heiſer und ſonſt »ganz
+               </note> waren <rs ref="#pmb11740" type="person">Hugo</rs> und ich mit <rs ref="#pmb24230" type="person" subtype="implied">ihm</rs> auf der <rs ref="#pmb456" type="place">Rohrerhütte</rs> zuſammen; er war heiſer und ſonſt »ganz
                geſund«. –</p>
             <p>
-               <anchor xml:id="K_L00921_6" type="commentary"/>Geſtern war <add place="above"
-                  >auch</add> das »<rs ref="#pmb30219" type="work">Vermächtnis</rs>«<note
-                  xml:id="K_L00921_6h" type="commentary">Es stand am <rs type="org" ref="#pmb36247"
-                     >Burgtheater</rs> noch immer am Spielplan.</note>. Kein gutes Klima, unſre
-               Stücke. – <anchor xml:id="K_L00921_7" type="commentary"/>Zweimal<note
-                  xml:id="K_L00921_7h" type="commentary">am <ref target="1899-05-25"
-                     type="schnitzler-tagebuch" subtype="date-only"/> und am <ref
-                     target="1899-05-30" type="schnitzler-tagebuch" subtype="date-only"/>
-               </note> war ich <pb facs="1899_AS_RBH_1_00019"/>in <rs ref="#pmb44102" type="place"
-                  >Kaltenleutgeben</rs>, bei <rs ref="#pmb10986" type="person">Brahm</rs>. Er iſt
+               <anchor xml:id="K_L00921_6" type="commentary"/>Geſtern war <add place="above">auch</add> das »<rs ref="#pmb30219" type="work">Vermächtnis</rs>«<note xml:id="K_L00921_6h" type="commentary">Es stand am <rs type="org" ref="#pmb36247">Burgtheater</rs> noch immer am Spielplan.</note>. Kein gutes Klima, unſre
+               Stücke. – <anchor xml:id="K_L00921_7" type="commentary"/>Zweimal<note xml:id="K_L00921_7h" type="commentary">am <ref target="1899-05-25" type="schnitzler-tagebuch" subtype="date-only"/> und am <ref target="1899-05-30" type="schnitzler-tagebuch" subtype="date-only"/>
+               </note> war ich <pb facs="1899_AS_RBH_1_00019"/>in <rs ref="#pmb44102" type="place">Kaltenleutgeben</rs>, bei <rs ref="#pmb10986" type="person">Brahm</rs>. Er iſt
                ein nahezu wohlthuender Menſch. –</p>
             <p>
-               <anchor xml:id="K_L00921_8" type="commentary"/>Samſtag<note xml:id="K_L00921_8h"
-                  type="commentary">
+               <anchor xml:id="K_L00921_8" type="commentary"/>Samſtag<note xml:id="K_L00921_8h" type="commentary">
                   <ref target="1899-05-27" type="schnitzler-tagebuch" subtype="cf"/>
-               </note> beim »<rs ref="#pmb42941" type="work">Richter von Zalamea</rs>«. <rs
-                  ref="#pmb6173" type="person">Baumeiſter</rs> unbeſchreiblich. Und das Stück! <rs
-                  ref="#pmb11740" type="person">Hugo</rs> findet, daſs Sie noch am eheſten ſo eins
-               ſchreiben könnten (er meint, unter »uns«, alſo: Sie, er, ich, <rs ref="#pmb18308"
-                  type="person">Leo Hirſchfeld</rs>, <rs ref="#pmb2965" type="person">Oskar
-                  Friedmann</rs>, <rs ref="#pmb13082" type="person">Karlweis</rs>) – ich hoffe <pb
-                  facs="1899_AS_RBH_1_00020"/>Sie laſſen ihn nicht in dem Glauben, – ſondern
+               </note> beim »<rs ref="#pmb42941" type="work">Richter von Zalamea</rs>«. <rs ref="#pmb6173" type="person">Baumeiſter</rs> unbeſchreiblich. Und das Stück! <rs ref="#pmb11740" type="person">Hugo</rs> findet, daſs Sie noch am eheſten ſo eins
+               ſchreiben könnten (er meint, unter »uns«, alſo: Sie, er, ich, <rs ref="#pmb18308" type="person">Leo Hirſchfeld</rs>, <rs ref="#pmb2965" type="person">Oskar
+                  Friedmann</rs>, <rs ref="#pmb13082" type="person">Karlweis</rs>) – ich hoffe <pb facs="1899_AS_RBH_1_00020"/>Sie laſſen ihn nicht in dem Glauben, – ſondern
                ſchreiben wirklich ein Stück.</p>
             <p>Hören Sie: Ein jüdiſcher Selcher will <add place="above">im</add>
                <space unit="chars" quantity="1"/>So<c rendition="#gemination-m"/>er einmal auf ein
@@ -292,8 +274,7 @@
                laſſe doch lieber die Thür offen, werd er glauben, ich bin gar nicht eweg<!-- so!-->
                gegangen. –</p>
             <p>– Er geht, ko<c rendition="#gemination-m"/>t nach einer Weile zurück, der Hund iſt im
-               Geschäft und hat ſich richtig alle Würſtel aufgefreſſen. Der Selcher schüttelt <pb
-                  facs="1899_AS_RBH_1_00021"/>den Kopf und ſagt: »A ſo ä Dreh von dem Hund!«</p>
+               Geschäft und hat ſich richtig alle Würſtel aufgefreſſen. Der Selcher schüttelt <pb facs="1899_AS_RBH_1_00021"/>den Kopf und ſagt: »A ſo ä Dreh von dem Hund!«</p>
             <p>– Schöneres ka<c rendition="#gemination-n"/> ich Ihnen heut nicht mehr <subst>
                   <del rend="strikethrough">ſagen</del>
                   <add place="above">erzählen</add>
@@ -332,24 +313,17 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933"
-                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-               <idno type="URL" subtype="schnitzler-kino"
-                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
             <person xml:id="pmb10863">
                <persName>
@@ -376,27 +350,19 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13551</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13551</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118654756</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10863/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10863.html</idno>
-               <idno type="URL" subtype="schnitzler-lektueren"
-                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10863.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp52172</idno>
-               <idno type="URL" subtype="kraus1933"
-                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=B#DWpers1010</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=B#DWpers1010</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00280f95</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q213750</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Richard_Beer-Hofmann</idno>
-               <idno type="URL" subtype="schnitzler-kino"
-                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb10863.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Richard_Beer-Hofmann</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb10863.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10863.html</idno>
             </person>
             <person xml:id="pmb11740">
                <persName>
@@ -426,27 +392,20 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16293</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16293</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118552759</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11740.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11740.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11740/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11740.html</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/personen/pmb11740</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11740.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb11740</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp46353</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00281a55</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q51513</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Hugo_von_Hofmannsthal</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Hugo_von_Hofmannsthal</idno>
                <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001d1cc</idno>
                <idno type="URL" subtype="amp">https://amp.acdh.oeaw.ac.at/amp_person_42.html</idno>
-               <idno type="URL" subtype="schnitzler-kino"
-                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb11740.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11740.html</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb11740.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11740.html</idno>
             </person>
             <person xml:id="pmb24230">
                <persName>
@@ -473,11 +432,9 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb465">Bankdirektor/Bankdirektorin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19728</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19728</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/24230/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb24230.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb24230.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp39078</idno>
             </person>
             <person xml:id="pmb10986">
@@ -507,23 +464,17 @@
                <sex value="male"/>
                <occupation ref="pmb103">Theaterleiter/Theaterleiterin</occupation>
                <occupation ref="pmb104">Regisseur/Regisseurin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13913</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13913</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118514245</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10986.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb10986.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/10986/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10986.html</idno>
-               <idno type="URL" subtype="schnitzler-lektueren"
-                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10986.html</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/personen/pmb10986</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb10986.html</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb10986.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb10986</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp50936</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q71903</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Otto_Brahm</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10986.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb10986.html</idno>
             </person>
             <person xml:id="pmb6173">
                <persName>
@@ -552,22 +503,17 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb105">Schauspieler/Schauspielerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13489</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_13489</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118869272</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb28476.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb28476.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/6173/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/28476/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb6173.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb6173.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp39121</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q111326</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Bernhard_Baumeister</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Bernhard_Baumeister</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00280f6d</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb6173.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb6173.html</idno>
             </person>
             <person xml:id="pmb18308">
                <persName>
@@ -601,13 +547,10 @@
                <occupation ref="pmb131">Dirigent/Dirigentin</occupation>
                <occupation ref="pmb1535">Librettist/Librettistin</occupation>
                <occupation ref="pmb2134">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14923</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb18308.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14923</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb18308.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/18308/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb18308.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb18308.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/96974/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116495545</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00281e64</idno>
@@ -615,8 +558,7 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q89341</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Leo_Feld</idno>
                <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001d17c</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb18308.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb18308.html</idno>
             </person>
             <person xml:id="pmb2965">
                <persName>
@@ -646,16 +588,12 @@
                <occupation ref="pmb104">Regisseur/Regisseurin</occupation>
                <occupation ref="pmb115">Dramaturg/Dramaturgin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/1046764543</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15233</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2965.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_15233</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2965.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2965/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2965.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2965.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1548042</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Oskar_Friedmann</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Oskar_Friedmann</idno>
             </person>
             <person xml:id="pmb13082">
                <persName>
@@ -685,25 +623,18 @@
                </death>
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16730</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16730</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/117302996</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb13082.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb13082.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/13082/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb13082.html</idno>
-               <idno type="URL" subtype="schnitzler-lektueren"
-                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb13082.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb13082.html</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb13082.html</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x003afca6</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp39668</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q735989</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Carl_Karlweis</idno>
-               <idno type="URL" subtype="schnitzler-kino"
-                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb13082.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb13082.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Carl_Karlweis</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb13082.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb13082.html</idno>
             </person>
          </listPerson>
          <listBibl>
@@ -714,17 +645,12 @@
                <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.05</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1170678</idno>
                <idno type="URL" subtype="theadok">https://theadok.at/work/38155</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30219.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30219.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30219/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30219.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30219.html</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Das_Verm%C3%A4chtnis_(Schnitzler)</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb30219.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30219.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30219.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Das_Verm%C3%A4chtnis_(Schnitzler)</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb30219.html</idno>
                <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
             </bibl>
             <bibl xml:id="pmb42941">
@@ -733,12 +659,9 @@
                <author ref="pmb5208" role="hat-ubersetzt">Wilbrandt, Adolf von</author>
                <date notBefore="1640-01-01" when="1640-07-01">1640</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42941/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42941.html</idno>
-               <idno type="URL" subtype="schnitzler-lektueren"
-                  >https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb42941.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb42941.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42941.html</idno>
+               <idno type="URL" subtype="schnitzler-lektueren">https://schnitzler-lektueren.acdh.oeaw.ac.at/pmb42941.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb42941.html</idno>
                <note type="work_kind">Drama &gt;&gt; Mehraktiges Drama</note>
             </bibl>
          </listBibl>
@@ -756,15 +679,11 @@
                   <geo>48,2066 16,37341</geo>
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2782729/</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb59.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb59.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/59/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb59.html</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb59</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb59.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb59.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb59</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb59.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/143650/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066013-8</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q257780</idno>
@@ -783,12 +702,10 @@
                   <geo>47,33333 13,33333</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/34824/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34824.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb34824.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91717/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2765286/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91717.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91717.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92802/</idno>
             </place>
             <place xml:id="pmb50">
@@ -814,23 +731,18 @@
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
             <place xml:id="pmb651">
                <placeName>Kärnten</placeName>
@@ -845,15 +757,11 @@
                </location>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q37985</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2774686/</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb651.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb651.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/651/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb651.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb651.html</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/K%C3%A4rnten</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb651.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb651.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/K%C3%A4rnten</idno>
             </place>
             <place xml:id="pmb39637">
                <placeName>Millstätter See</placeName>
@@ -867,15 +775,12 @@
                   <geo>47,33333 13,33333</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39637/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb39637.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb39637.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/91247/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2771583/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91247.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb91247.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q220241</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Millst%C3%A4tter_See</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Millst%C3%A4tter_See</idno>
             </place>
             <place xml:id="pmb40788">
                <placeName>Villa Platzer</placeName>
@@ -890,8 +795,7 @@
                   <geo>46,83649 13,52346</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40788/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40788.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40788.html</idno>
             </place>
             <place xml:id="pmb42940">
                <placeName>Kamptal</placeName>
@@ -901,11 +805,9 @@
                   <geo>48,38394 15,79749</geo>
                </location>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/42940/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42940.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb42940.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q268589</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Kamp_(Fluss)</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Kamp_(Fluss)</idno>
             </place>
             <place xml:id="pmb531">
                <placeName>Wachau</placeName>
@@ -916,13 +818,10 @@
                </location>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q192201</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2762137/</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb531.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb531.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/531/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb531.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb531.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb531.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb531.html</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wachau</idno>
             </place>
             <place xml:id="pmb456">
@@ -936,11 +835,9 @@
                   <placeName ref="pmb67">XVII., Hernals</placeName>
                   <geo>48,22707 16,31006</geo>
                </location>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb456.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb456.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/456/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb456.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb456.html</idno>
             </place>
             <place xml:id="pmb44102">
                <placeName>Kaltenleutgeben</placeName>
@@ -960,15 +857,12 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/23466/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44102/</idno>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2774851/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44102.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb44102.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44102.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb44102.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/101566/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4514859-4</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q665008</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Kaltenleutgeben</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Kaltenleutgeben</idno>
             </place>
          </listPlace>
          <listOrg>
@@ -980,55 +874,41 @@
                <location type="located_in_place">
                   <placeName ref="pmb51">I., Innere Stadt</placeName>
                   <geo>48,20769 16,37049</geo>
-                  <idno type="URL" subtype="schnitzler-bahr"
-                     >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb51.html</idno>
+                  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb51.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789/</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51010/</idno>
                   <idno type="URL" subtype="geonames">https://sws.geonames.org/2775259/</idno>
-                  <idno type="URL" subtype="schnitzler-briefe"
-                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb51.html</idno>
-                  <idno type="URL" subtype="kraus"
-                     >https://kraus.wienbibliothek.at/register/orte/pmb51</idno>
-                  <idno type="URL" subtype="schnitzler-interviews"
-                     >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb51.html</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb51.html</idno>
+                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb51</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb51.html</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb14">Burgtheater</placeName>
                   <geo>48,210333 16,361139</geo>
-                  <idno type="URL" subtype="schnitzler-bahr"
-                     >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb14.html</idno>
+                  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb14.html</idno>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14/</idno>
-                  <idno type="URL" subtype="schnitzler-briefe"
-                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb14.html</idno>
-                  <idno type="URL" subtype="schnitzler-tagebuch"
-                     >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb14.html</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb14.html</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb14.html</idno>
                   <idno type="URL" subtype="geonames">https://www.geonames.org/6354992/</idno>
-                  <idno type="URL" subtype="schnitzler-interviews"
-                     >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb14.html</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb14.html</idno>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb44649">Schlosstheater Schönbrunn</placeName>
                   <geo>48,186667 16,3125</geo>
                   <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44649/</idno>
-                  <idno type="URL" subtype="schnitzler-briefe"
-                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44649.html</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44649.html</idno>
                   <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2244724</idno>
-                  <idno type="URL" subtype="wikipedia"
-                     >https://de.wikipedia.org/wiki/Schlosstheater_Sch%C3%B6nbrunn</idno>
-                  <idno type="URL" subtype="schnitzler-interviews"
-                     >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb44649.html</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Schlosstheater_Sch%C3%B6nbrunn</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb44649.html</idno>
                </location>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/38633-9</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36247/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36247.html</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/institutionen/pmb36247</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36247.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/institutionen/pmb36247</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q308720</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Burgtheater</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb36247.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb36247.html</idno>
                <note type="apis_dates">
                   <date notBefore="1852-01-01" when="1852-07-01">1852</date>
                </note>

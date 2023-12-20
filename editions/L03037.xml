@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03037"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L03037"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -84,6 +86,7 @@
                               <extent>
                                  <measure unit="blatt" quantity="1"/>
                                  <measure unit="seite" quantity="2"/>
+                                 <measure unit="zeichenanzahl" quantity="512"/>
                               </extent>
                               <support>Briefpapier mit Trauerrand</support>
                            </supportDesc>
@@ -120,16 +123,19 @@
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
-
                <ref subtype="previous_letter" type="withinCollection" target="L03132">Salten an
                   Schnitzler, [24. 1. 1894]</ref>
                <ref subtype="next_letter" type="withinCollection" target="L00296">Saar an
                   Schnitzler, 5. 2. 1894</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence"
-                  source="correspondence_2167" target="L03132">Salten an Schnitzler,
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03132">Salten an Schnitzler,
                   [24. 1. 1894]</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_2167"
-                  target="L03029">Schnitzler an Salten, [2. 4. 1894?]</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03029">Schnitzler an Salten, [2. 4. 1894?]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -148,21 +154,13 @@
                <salute>
                   <pb facs="Wienbibliothek_AS_FS_2823314"/>Lieber!</salute>
             </opener>
-            <p>Was ſind das für <anchor type="commentary" xml:id="K_L03037-2"/>Lächerlichkeiten<note
-                  type="commentary" xml:id="K_L03037-2h">Das Korrespondenzstück ist undatiert. Die
+            <p>Was ſind das für <anchor type="commentary" xml:id="K_L03037-2"/>Lächerlichkeiten<note type="commentary" xml:id="K_L03037-2h">Das Korrespondenzstück ist undatiert. Die
                   Einordnung gelingt durch Annäherung. Durch die Verwendung von Briefpapier mit
-                  Trauerrand lässt es sich in das Jahr nach dem Tod des <rs subtype="implied"
-                     ref="#pmb12695" type="person">Vaters</rs> am <ref type="schnitzler-tagebuch"
-                     target="1893-05-02" subtype="date-only"/> verorten. Am <ref
-                     type="schnitzler-tagebuch" target="1893-10-25" subtype="date-only"/> trug <rs
-                     type="person" ref="#pmb2121">Schnitzler</rs> das Gedicht in Gegenwart <rs
-                     type="person" ref="#pmb2167">Salten</rs>s vor, was zumindest als Indiz genommen
+                  Trauerrand lässt es sich in das Jahr nach dem Tod des <rs subtype="implied" ref="#pmb12695" type="person">Vaters</rs> am <ref type="schnitzler-tagebuch" target="1893-05-02" subtype="date-only"/> verorten. Am <ref type="schnitzler-tagebuch" target="1893-10-25" subtype="date-only"/> trug <rs type="person" ref="#pmb2121">Schnitzler</rs> das Gedicht in Gegenwart <rs type="person" ref="#pmb2167">Salten</rs>s vor, was zumindest als Indiz genommen
                   werden kann, dass das Schreiben danach abgefasst ist. Aus dem so ermittelten
                   Zeitraum gibt es im <rs type="work" ref="#pmb33243">Tagebuch</rs> keine Aussage,
                   die sich unmittelbar mit der hier geäußerten Verärgerung in Beziehung setzen
-                  lässt. Unter den überlieferten Briefen <rs type="person" ref="#pmb2167"
-                     >Salten</rs>s hingegen dürfte jener vom <ref type="schnitzler-briefe"
-                     subtype="date-only" target="L03132"/> diesem vorangegangen sein. Zumindest
+                  lässt. Unter den überlieferten Briefen <rs type="person" ref="#pmb2167">Salten</rs>s hingegen dürfte jener vom <ref type="schnitzler-briefe" subtype="date-only" target="L03132"/> diesem vorangegangen sein. Zumindest
                   fügen sich die Angaben zu einem möglichen Treffen am Folgetag gut
                zusammen.</note>? Bin ich ein grüner Oberſchwan? Bin ich ein verlobter Fähnrich, dem
                der Tiefſinn die Leuchter hinters Fenſter geſetzt hat? Oder hab ich gar die
@@ -171,12 +169,10 @@
                <time>½ 6</time> und <time>6</time> aufſuchen.– </p>
             <p>Es wäre möglich, daſs ich Sie morgen im Laufe des Nachmittags aufſuche – kanns aber
                nicht verſprechen. </p>
-            <p>Herzliche Grüße. Was Sie mir ſchrieben, »<anchor type="commentary"
-                  xml:id="K_L03037-1"/>
+            <p>Herzliche Grüße. Was Sie mir ſchrieben, »<anchor type="commentary" xml:id="K_L03037-1"/>
                <rs type="work" ref="#pmb30151" subtype="implied">das iſt von einem böſen Wahn der
                   trügevolle Schimmer</rs>
-               <note type="commentary" xml:id="K_L03037-1h">In <rs type="person" ref="#pmb2121"
-                     >Schnitzler</rs>s Gedicht <rs type="work" ref="#pmb30151">Morgenandacht</rs>
+               <note type="commentary" xml:id="K_L03037-1h">In <rs type="person" ref="#pmb2121">Schnitzler</rs>s Gedicht <rs type="work" ref="#pmb30151">Morgenandacht</rs>
                   heißt es in der 8. Strophe: »<quote>Das war von einem holden Wahn / Der trügevolle
                      Schimmer</quote>«. (<bibl>
                      <rs type="work" ref="#pmb35919">Die Gesellschaft</rs>, Jg. 7, Bd. 1, H. 2,
@@ -214,24 +210,17 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933"
-                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-               <idno type="URL" subtype="schnitzler-kino"
-                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
             <person xml:id="pmb2167">
                <persName>
@@ -265,26 +254,18 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118840819</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2167/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp43175</idno>
-               <idno type="URL" subtype="kraus1933"
-                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284367</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q163747</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Felix_Salten</idno>
-               <idno type="URL" subtype="schnitzler-kino"
-                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Felix_Salten</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
             </person>
             <person xml:id="pmb12695">
                <persName>
@@ -313,21 +294,16 @@
                <sex value="male"/>
                <occupation ref="pmb132">Mediziner/Medizinerin &gt;&gt;
                   Laryngologe/Laryngologin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19824</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19824</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/116848669</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb12695.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb12695.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/12695/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb12695.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb12695.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp46937</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q86302</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Johann_Schnitzler</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Johann_Schnitzler</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284418</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb12695.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb12695.html</idno>
             </person>
          </listPerson>
          <listBibl>
@@ -344,42 +320,32 @@
                <author ref="pmb143337" role="hat-herausgegeben">Pertlik, Susanne</author>
                <date to="2000-01-01">1981 – 2000</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33243/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33243.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33243.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb33243.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q108122826</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Tagebuch_(Schnitzler)</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb33243.html</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Tagebuch_(Schnitzler)</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb33243.html</idno>
                <note type="work_kind">Tagebuch</note>
             </bibl>
             <bibl xml:id="pmb30151">
                <title>Morgenandacht</title>
-               <title type="werk_link"
-                  >https://archive.org/details/bub_gb_3N7NAAAAMAAJ/page/n199</title>
+               <title type="werk_link">https://archive.org/details/bub_gb_3N7NAAAAMAAJ/page/n199</title>
                <title type="werk_bibliografische-angabe">Die Gesellschaft, Jg. 7, Bd. 1, H. 2,
                   Februar 1891, S. 189–190</title>
                <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
                <date when="1891-02-01">1.2.1891</date>
-               <idno type="URL" subtype="archive"
-                  >https://archive.org/details/bub_gb_3N7NAAAAMAAJ/page/n199</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30151.html</idno>
+               <idno type="URL" subtype="archive">https://archive.org/details/bub_gb_3N7NAAAAMAAJ/page/n199</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb30151.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/30151/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30151.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30151.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb30151.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb30151.html</idno>
                <note type="work_kind">Gedicht</note>
                <note type="references">Schnitzler, Arthur: „Morgenandacht“, in: Die Gesellschaft. Halbmonatschrift. Litteratur, Kunst und Sozialpolitik 7/2 (1891), S. 189–190.</note>
             </bibl>
             <bibl xml:id="pmb35919">
                <title>Die Gesellschaft. Monatsschrift für Litteratur, Kunst und
                   Sozialpolitik</title>
-               <title type="werk_link"
-                  >https://de.wikisource.org/wiki/Die_Gesellschaft_(Literaturzeitschrift)</title>
+               <title type="werk_link">https://de.wikisource.org/wiki/Die_Gesellschaft_(Literaturzeitschrift)</title>
                <title type="werk_namensvariante">Die Gesellschaft. Realistische Wochenschrift für
                   Litteratur, Kunst und öffentliches Leben</title>
                <title type="werk_namensvariante">Die Gesellschaft. Monatsschrift für Litteratur und
@@ -396,8 +362,7 @@
                <author ref="pmb11988" role="hat-einen-beitrag-geschaffen-zu">Kraus, Karl</author>
                <date from="1885-01-01" to="1902-07-02">1885 – 1902</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35919/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb35919.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb35919.html</idno>
                <note type="work_kind">Periodikum &gt;&gt; Zeitschrift &gt;&gt; Monatsschrift</note>
             </bibl>
          </listBibl>
@@ -425,23 +390,18 @@
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
             </place>
          </listPlace>
       </back>
