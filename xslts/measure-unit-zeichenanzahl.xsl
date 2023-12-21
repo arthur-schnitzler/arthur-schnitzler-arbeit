@@ -28,4 +28,32 @@
             </xsl:element>
         </xsl:element>
     </xsl:template>
+    <xsl:template match="tei:sourceDesc[not(tei:listWit)]/tei:listBibl[1]/tei:biblStruct[1]">
+        <xsl:element name="biblStruct" namespace="http://www.tei-c.org/ns/1.0">
+            <xsl:copy-of select="@* | * except tei:note[@type = 'zeichenanzahl']"/>
+            <xsl:element name="note" namespace="http://www.tei-c.org/ns/1.0">
+                <xsl:attribute name="type">
+                    <xsl:text>zeichenanzahl</xsl:text>
+                </xsl:attribute>
+                <xsl:variable name="character-count"
+                    select="sum(ancestor::tei:TEI/tei:text/tei:body//text()[not(ancestor::tei:note) and not(ancestor::tei:back) and not(ancestor::tei:hi[@rend = 'pre-print'])]/string-length(normalize-space(.)))"/>
+                <xsl:variable name="number-of-spaces"
+                    select="count(ancestor::tei:TEI/tei:text/tei:body/descendant::tei:space[not(ancestor::tei:note) and not(ancestor::tei:back) and not(ancestor::tei:hi[@rend = 'pre-print'])])"/>
+                <xsl:variable name="dots"
+                    select="sum(ancestor::tei:TEI/descendant::tei:c[not(ancestor::tei:note) and not(ancestor::tei:back) and not(ancestor::tei:hi[@rend = 'pre-print'])]/@n)"/>
+                <xsl:variable name="c-ohne-dots"
+                    select="count(ancestor::tei:TEI/tei:text/tei:body/descendant::tei:c[not(ancestor::tei:note) and not(ancestor::tei:back) and not(@n) and not(ancestor::tei:hi[@rend = 'pre-print'])])"/>
+                <xsl:element name="measure" namespace="http://www.tei-c.org/ns/1.0">
+                    <xsl:attribute name="unit">
+                        <xsl:text>zeichenanzahl</xsl:text>
+                    </xsl:attribute>
+                    <xsl:attribute name="quantity">
+                        <xsl:value-of
+                            select="sum($character-count + $number-of-spaces + $dots + $c-ohne-dots)"
+                        />
+                    </xsl:attribute>
+                </xsl:element>
+            </xsl:element>
+        </xsl:element>
+    </xsl:template>
 </xsl:stylesheet>
