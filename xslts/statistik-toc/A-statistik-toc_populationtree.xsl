@@ -8,13 +8,13 @@
     <!-- diese datei soll, angewandt auf statistik_toc_XXXX.xml-Dateien,
        mehrere csv-Dateien schreiben, mit denen sich Grafiken bauen lassen
    -->
-    <xsl:template match="/">
+    <!--<xsl:template match="/">
         <xsl:variable name="filename"
             select="concat('statistik_1_', descendant::tei:correspContext[not(tei:ref[@type = 'belongsToCorrespondence'][2])][1]/tei:ref[@type = 'belongsToCorrespondence'][1]/@target)"/>
-        <xsl:result-document href="{$filename}.csv">
+        <xsl:result-document href="../../../schnitzler-briefe-statistik/statistik1/{$filename}.csv">
             <xsl:apply-templates select="tei:TEI"/>
         </xsl:result-document>
-    </xsl:template>
+    </xsl:template>-->
     <xsl:template match="tei:body/tei:list">
         <xsl:variable name="startYear" select="1888"/>
         <xsl:variable name="endYear" select="1901"/>
