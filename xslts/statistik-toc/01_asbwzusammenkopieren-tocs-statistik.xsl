@@ -80,11 +80,7 @@
                                                 copy-namespaces="false"
                                                 xpath-default-namespace="http://www.tei-c.org/ns/1.0"/>
                                             <xsl:copy-of
-                                                select="child::tei:teiHeader[1]/tei:profileDesc[1]/tei:correspDesc[1]/tei:correspAction[@type = 'sent']/tei:date[1]"
-                                                xpath-default-namespace="http://www.tei-c.org/ns/1.0"
-                                                copy-namespaces="false"/>
-                                            <xsl:copy-of
-                                                select="child::tei:teiHeader[1]/tei:profileDesc[1]/tei:correspDesc[1]/tei:correspAction[@type = 'sent']/tei:persName"
+                                                select="child::tei:teiHeader[1]/tei:profileDesc[1]/tei:correspDesc[1]"
                                                 xpath-default-namespace="http://www.tei-c.org/ns/1.0"
                                                 copy-namespaces="false"/>
                                             <xsl:copy-of
@@ -93,6 +89,8 @@
                                                 copy-namespaces="false"/>
                                             <xsl:copy-of
                                                 select="child::tei:teiHeader[1]/tei:fileDesc[1]/tei:sourceDesc[1]/tei:listWit[1]/tei:witness[1]/tei:msDesc[1]/tei:physDesc[1]/tei:objectDesc[1]/tei:supportDesc[1]/tei:extent[1]/tei:measure[@unit = 'zeichenanzahl']"
+                                                xpath-default-namespace="http://www.tei-c.org/ns/1.0"
+                                                copy-namespaces="false"
                                             />
                                         </xsl:element>
                                     </xsl:if>
