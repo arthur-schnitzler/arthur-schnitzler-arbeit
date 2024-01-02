@@ -7,13 +7,13 @@
    <!-- subst root persName address body div sourceDesc physDesc witList msIdentifier fileDesc teiHeader correspDesc correspAction date witnessdate -->
    <!-- Globale Parameter -->
    <xsl:param name="persons"
-      select="document('/Users/oldfiche/Documents/schnitzler-git/PMB-csv_to_TEI-list/personen/listperson-pmb.xml')"/>
+      select="document('../indices/listperson.xml')"/>
    <xsl:param name="works"
-      select="document('/Users/oldfiche/Documents/schnitzler-git/PMB-csv_to_TEI-list/werke/listwork-pmb.xml')"/>
+      select="document('../indices/listwork.xml')"/>
    <xsl:param name="orgs"
-      select="document('/Users/oldfiche/Documents/schnitzler-git/PMB-csv_to_TEI-list/institution/listorg-pmb.xml')"/>
+      select="document('../indices/listorg.xml')"/>
    <xsl:param name="places"
-      select="document('/Users/oldfiche/Documents/schnitzler-git/PMB-csv_to_TEI-list/orte/listplace-pmb.xml')"/>
+      select="document('../indices/listplace.xml')"/>
    <xsl:param name="sigle" select="document('../indices/siglen.xml')"/>
    <xsl:key name="person-lookup" match="tei:person" use="@xml:id"/>
    <xsl:key name="work-lookup" match="tei:bibl" use="@xml:id"/>

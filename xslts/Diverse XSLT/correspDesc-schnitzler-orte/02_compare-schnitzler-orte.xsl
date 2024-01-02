@@ -6,7 +6,7 @@
     <xsl:output method="xml" indent="yes"/>
     
     <xsl:param name="places"
-        select="document('/Users/oldfiche/Documents/git/schnitzler-orte/editions/schnitzler_places.xml')"/>
+        select="document('../../../schnitzler-orte/editions/schnitzler_places.xml')"/>
     <xsl:key name="place-lookup" match="tei:event" use="@when"/>
  
  <xsl:template match="correspAction">
