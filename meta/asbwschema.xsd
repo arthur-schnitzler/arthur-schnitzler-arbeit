@@ -1349,7 +1349,7 @@
          </xs:choice>
       </xs:complexType>
    </xs:element>
-   <xs:element name="p">
+
       <xs:complexType mixed="true">
          <xs:choice minOccurs="0" maxOccurs="unbounded">
             <xs:element ref="tei:gap" maxOccurs="unbounded" minOccurs="0"/>
@@ -1403,7 +1403,6 @@
          <xs:assert test="child::* or text()[normalize-space(.) != '']"/>
          <xs:assert test="not(contains(., '&amp;'))"/>
       </xs:complexType>
-   </xs:element>
    <xs:element name="salute">
       <xs:complexType mixed="true">
          <xs:all minOccurs="0">
