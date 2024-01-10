@@ -167,10 +167,10 @@
                         <p>Fehlende Verfasserinnen- und Verfasserangaben werden mit »[O. V.]«
                             markiert, wobei das Leerzeichen fix ist. Nach der schließenden eckigen
                             Klammer folgt ein Doppelpunkt, dann kommt der Titel. Bsp.: [O. V.]:
-                            Titel. Wenn der Autor oder die Autorin trotz fehlender Angabe bekannt ist, wird der Name
-                            in eckige Klammern gesetzt, »[O. V.]« entfällt. Bsp.: [Name]: Titel.
-                            Wenn ein Kürzel oder ein Pseudonym aufgelöst wird, wird hinter das
-                            Kürzel oder Pseudonym »[ = Name]:« gesetzt, wieder mit fixen
+                            Titel. Wenn der Autor oder die Autorin trotz fehlender Angabe bekannt
+                            ist, wird der Name in eckige Klammern gesetzt, »[O. V.]« entfällt. Bsp.:
+                            [Name]: Titel. Wenn ein Kürzel oder ein Pseudonym aufgelöst wird, wird
+                            hinter das Kürzel oder Pseudonym »[ = Name]:« gesetzt, wieder mit fixen
                             Leerzeichen. Bsp.: Kürzel [ =Name ]: Titel.</p>
                     </div>
                     <div type="level3">
@@ -613,7 +613,7 @@
                             besondere Hinweise zur Drucksorte, etwa wenn ein Trauerrand vorhanden
                             ist oder ein Wappen aufgeprägt. Die Aussage wird entweder als Stichwort
                             (»Trauerrand«) oder sprachlich ausformuliert getroffen, wenn nur ein
-                            Teil der Materialien betroffen sind (Umschlag mit Trauerrand«).
+                            Teil der Materialien betroffen sind (»Umschlag mit Trauerrand«).
                                 <code>condition</code> kommt im Normalfall nur mit dem Attribut
                                 <code>@ana</code>, das den Inhalt »fragment« hat und darauf
                             hinweist, dass das vorliegende Objekt nur unvollständig überliefert
@@ -625,9 +625,14 @@
                             Seitenzählung verzichtet, da diese für gewöhnlich aus einer oder zwei
                             Seiten bestehen und das sehr einfach ermittelt werden kann. Dafür ist
                             eine Art Platzhalterelement vorgesehen, das »widmung«, »kartenbrief«
-                            oder »karte« als @unit hat. Im Ausnahmefall kann das Element aber auch
-                            Angaben zur Seiten und Blattzählung haben.</p>
-
+                            oder »karte« als @unit hat. Im Ausnahmefall – wenn mehrere Karten eine
+                            Einheit bilden – kann das Element aber auch Angaben zur Seiten und
+                            Blattzählung haben.</p>
+                        <p>Die Angabe zur Zeichenanzahl wird automatisch ermittelt. Sie
+                            berücksichtigt nur den im <code>&lt;body&gt;</code> enthaltenen Text und
+                            übergeht verständlicherweise Kommentare und Textanmerkungen.
+                            Vorgedruckter Text wird ebenfalls übergangen. Der nicht gedruckte
+                            Textinhalt von Beilagen wird mitgezählt.</p>
                         <div type="example">
                             <p>3 Blatt, 6 Seiten mit Umschlag:</p>
                             <p>
@@ -636,6 +641,7 @@
                                 <lb/>
                                 <code>&lt;measure unit="blatt" n="3"/&gt;</code><lb/>
                                 <code>&lt;measure unit="umschlag" n="1"/&gt;</code><lb/>
+                                <code>&lt;measure unit="zeichenanzahl" n="1560"/&gt;</code><lb/>
                                 <code>&lt;/extent&gt;</code></p>
                             <p/>
                         </div>

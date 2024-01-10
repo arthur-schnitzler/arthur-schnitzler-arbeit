@@ -6,7 +6,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, XXXX</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, [3.&#160;4.?]&#160;1910</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -70,7 +70,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="karte" ana="bildpostkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -82,14 +82,29 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="lateinische-kurrent"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref=""
+                                          ><unclear>Trie</unclear><supplied>ste</supplied></placeName>
+                                    <date when="1910-04-03">3.&#160;IV.&#160;10</date>
+                                    <time>VI</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="archival">
+                              <desc>mit Bleistift von unbekannter Hand numeriert:
+                                    »<quote>262</quote>«</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -103,12 +118,12 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="" n="01">XXXX</date>
-               <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
+               <date when="1910-04-03" n="01">[3.&#160;4.?]&#160;1910</date>
+               <placeName ref="">Triest</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -123,19 +138,19 @@
                <addrLine><pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00004-V"/>Herrn D<hi
                      rend="superscript">r</hi> Arthur Schnitzler</addrLine>
                <addrLine><rs type="place" ref="#pmb50">Wien</rs></addrLine>
-               <addrLine><rs type="place" ref="">XVIII. Spöttelgaße 7</rs></addrLine>
+               <addrLine><rs type="place" ref="#pmb133">XVIII. Spöttelgaße&#160;7</rs></addrLine>
             </address>
          </div>
          <div type="writingSession" n="1">
-            <p rend="center"><pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00004-R"/>
-               <rs type="place" ref="">
-                  <hi rend="pre-print">Trieste.</hi>
-               </rs>
-               <rs type="place" ref="">
-                  <hi rend="pre-print">Monumento a Domenico Rossetti.</hi>
-               </rs></p>
-            <p>Viele schöne Grüße an Sie <rs type="person" ref="#pmb2173" subtype="implied"
-                  >Beide</rs></p>
+            <opener>
+               <p><seg rend="left"><pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00004-R"/>
+                     <hi rend="pre-print"><rs type="place" ref="">Trieste</rs>.</hi></seg>
+                  <seg rend="right"><hi rend="pre-print"><rs type="place" ref="">Monumento a
+                           Domenico Rossetti</rs>.</hi></seg>
+               </p>
+            </opener>
+            <p><pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00004-V"/>Viele schöne Grüße an Sie <rs
+                  type="person" ref="#pmb2173" subtype="implied">Beide</rs></p>
             <closer>Ihr <lb/>
                <signed>Salten</signed>
             </closer>

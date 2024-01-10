@@ -6,7 +6,8 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, XXXX</title>
+            <title level="a">Felix Salten an Arthur und Olga Schnitzler,
+               22.&#160;6.&#160;1910</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -70,7 +71,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="karte" ana="bildpostkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -82,14 +83,29 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="lateinische-kurrent"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb877">Unter<supplied>ach</supplied> am
+                                       Attersee</placeName>
+                                    <date when="1910-06-22">22/6&#160;<unclear>10</unclear></date>
+                                    <time><unclear>5</unclear></time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="archival">
+                              <desc>mit Bleistift von unbekannter Hand numeriert:
+                                    »<quote>263</quote>«</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -103,12 +119,13 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="" n="01">XXXX</date>
-               <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
+               <date when="1910-06-22" n="01">22.&#160;6.&#160;1910</date>
+               <placeName ref="#pmb877">Unterach</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <persName ref="#pmb2173">Schnitzler, Olga</persName>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -122,13 +139,12 @@
             <address>
                <addrLine><pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00005-V"/>Herrn u.
                   Frau</addrLine>
-
                <addrLine>D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb50">Wien</rs>
                </addrLine>
                <addrLine>
-                  <rs type="place" ref="">XVIII. Spöttelgaße 7</rs>
+                  <rs type="place" ref="#pmb133">XVIII. Spöttelgaße 7</rs>
                </addrLine>
             </address>
          </div>
@@ -136,32 +152,21 @@
             <opener>
                <p rend="center">
                   <pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00005-R"/>
-                  <rs type="place" ref="">
-                     <hi rend="pre-print"> Berghof bei Unterach am Attersee</hi>
-                  </rs>
+                  <hi rend="pre-print"><rs type="place" ref="#pmb411">Berghof bei Unterach am
+                     Attersee</rs></hi>
                </p>
             </opener>
-            <p>Viele herzliche Grüße von uns zu Ihnen. </p>
-            <closer>Wann übersiedeln Sie? <lb/>Herzl. Ihr</closer>
-            <closer>
-               <lb/>
+            <p><pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00005-V"/>Viele herzliche Grüße von uns
+               zu Ihnen. </p>
+            <p>Wann übersiedeln Sie?</p>
+            <closer>Herzl. Ihr <lb/>
                <signed>Salten</signed>
             </closer>
-            <p>
-               <date>
-                  <dateline>
-                     <postscript>22./VI.10<dateline/>
-                     </postscript>
-                     <dateline/>
-                     <dateline/>
-                  </dateline>
-                  <dateline>
-                     <dateline/>
-                  </dateline>
-                  <dateline/>
-               </date>
-               <postscript/>
-            </p>
+            <postscript>
+               <dateline>
+                  <date>22./VI.&#160;10</date>
+               </dateline>
+            </postscript>
          </div>
       </body>
    </text>
