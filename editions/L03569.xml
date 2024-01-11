@@ -6,7 +6,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, XXXX</title>
+            <title level="a">Felix Salten an Arthur Schnitzler, 18.&#160;3.&#160;1921</title>
             <author ref="#pmb2167">Salten, Felix</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -70,7 +70,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="karte" ana="postkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -82,14 +82,37 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc>
-                           <handNote medium="" style="lateinische-kurrent"/>
+                           <handNote medium="schwarze_tinte" style="lateinische-kurrent"/>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb44176">Olomouc 3 C.S.P.</placeName>
+                                    <date when="1921-03-19">19.&#160;III.&#160;21</date>
+                                    <time>9<unclear>–</unclear>10N</time>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                           <incident type="receiver">
+                              <desc>mit Bleistift Jahreszahl ergänzt:
+                                    »<quote><date>21</date>.</quote>«</desc>
+                           </incident>
+                           <incident type="archival">
+                              <desc>mit Bleistift von <rs type="person" ref="#pmb22728">Frieda
+                                    Pollak</rs> (?) mit dem Buchstaben »<quote>A</quote>«
+                                 (Abgeschrieben/Abschrift) gekennzeichnet</desc>
+                           </incident>
+                           <incident type="archival">
+                              <desc>mit Bleistift von unbekannter Hand nummeriert:
+                                    »<quote>282</quote>«</desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -103,12 +126,16 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="" n="01">XXXX</date>
-               <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
+               <date when="1921-03-18" n="01">18.&#160;3.&#160;1921</date>
+               <placeName ref="#pmb44176">Olmütz</placeName>
+            </correspAction>
+            <correspAction type="transmitted">
+               <date when="1921-03-19">19.&#160;3.&#160;1921</date>
+               <placeName ref="#pmb44176">Olmütz</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -132,18 +159,20 @@
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00027-R"/>
-               <dateline>
-                  <rs type="place" ref="">Olmütz</rs>, <date>18.&#160;3.</date>
+               <dateline rend="right"><pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00027-R"/>
+                  <rs type="place" ref="#pmb44176">Olmütz</rs>, <date>18.&#160;3.</date>
                </dateline>
                <salute>Lieber,</salute>
             </opener>
-            <p>hoffentlich haben Sie von <rs type="person" ref="">Otti</rs> schon das Mscpt. meiner
-                  <rs type="work" ref="">Erzählung</rs>. Wenn nicht, bitte, verlangen Sie’s. Ich
-               hoffe sehr, dass Sie wohl und mehr und mehr ruhig sind und dass Ihnen das Arbeiten
-               von der Hand geht! Und ich hoffe, dass Ihnen der Frühling so stark hilft, wie er
-               kann. Das viele Umherfahren, das ich jetzt absolvieren muß, meist in Bum̄el-Zügen,
-               ist zu nicht angenehm, aber das Anschauen der milden, böhmischen Landschaft, die
+            <p>hoffentlich <anchor type="commentary" xml:id="K_L03569-1"/>haben Sie von <rs type="person" ref="#pmb23918">Otti</rs> schon<note type='commentary' xml:id="K_L03569-1h">Er bekam das Manuskript
+               von <rs type="work" ref="#pmb76509">Der Hund von Florenz</rs>
+            erst am <ref subtype="date-only" type="schnitzler-tagebuch" target="1921-03-21"/>.</note> das
+               Mscpt. meiner <rs type="work" ref="#pmb76509" subtype="implied">Erzählung</rs>. Wenn nicht,
+               bitte, verlangen Sie’s. Ich hoffe sehr, dass Sie wohl und mehr und mehr ruhig sind
+               und dass Ihnen das Arbeiten von der Hand geht! Und ich hoffe, dass Ihnen der Frühling
+               so stark hilft, wie er kann. Das viele Umherfahren, das ich jetzt absolvieren muß,
+               meist in Bu<c rendition="#gemination-m"/>el-Zügen, ist zu nicht angenehm, aber das
+               Anschauen der milden, <rs type="place" ref="#pmb628">böhmischen</rs> Landschaft, die
                jetzt, bei dem schönen Wetter, wie neu aussieht, beruhigt so angenehm. Auch ist das
                die vierte Stadt, in der ich seit Sonntag lese. Noch vier folgen. Es geht gut. Ich
                bin zwischendurch doch viel allein, was wohltut, denke viel und denke natürlich auch
