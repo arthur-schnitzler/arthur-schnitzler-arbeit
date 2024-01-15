@@ -277,7 +277,7 @@
                                 </xsl:element>
                                 <!-- hier noch autoren nachschlagen -->
                                 <xsl:variable name="eintrag"
-                                    select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/entities/tei/work/', $werk-ref))"
+                                    select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/tei/work/', $werk-ref))"
                                     as="xs:string"/>
                                 
                                     <xsl:if test="doc-available($eintrag)">

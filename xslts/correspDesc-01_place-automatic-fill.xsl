@@ -214,7 +214,7 @@
             <xsl:copy-of select="@ref | @evidence | @cert"/>
             <xsl:variable name="nummer" select="substring-after(@ref, 'pmb')"/>
             <xsl:variable name="eintrag"
-                select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/entities/tei/place/', $nummer))"
+                select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/tei/place/', $nummer))"
                 as="xs:string"/>
             <xsl:choose>
                 <xsl:when test="doc-available($eintrag)">

@@ -25,7 +25,7 @@
                         <xsl:for-each select="child::tei:idno[@type='pmb' or @subtype='pmb']">
                             <xsl:variable name="nummeri" select="replace(replace(., 'https://pmb.acdh.oeaw.ac.at/entity/', ''), '/', '')"/>
                             <xsl:variable name="eintragi"
-                                select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/entities/tei/person/', $nummeri))"
+                                select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/tei/person/', $nummeri))"
                                 as="xs:string"/>
                             <xsl:if test="doc-available($eintragi)">
                                 <xsl:value-of select="$nummeri"/>
@@ -49,7 +49,7 @@
                 </xsl:choose>
             </xsl:variable>
             <xsl:variable name="eintrag"
-                select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/entities/tei/person/', $nummer-check))"
+                select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/tei/person/', $nummer-check))"
                 as="xs:string"/>
             <xsl:choose>
                 <xsl:when test="doc-available($eintrag)">

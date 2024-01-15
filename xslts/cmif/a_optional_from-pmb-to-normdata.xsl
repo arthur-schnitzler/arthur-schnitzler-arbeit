@@ -9,7 +9,7 @@
         <xsl:variable name="nummeri"
             select="replace(replace(replace(., '#', ''), 'pmb', ''), '/', '')"/>
         <xsl:variable name="eintragi"
-            select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/entities/tei/person/', $nummeri))"
+            select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/tei/person/', $nummeri))"
             as="xs:string"/>
         <xsl:attribute name="ref">
             <xsl:choose>
@@ -28,7 +28,7 @@
         <xsl:variable name="nummeri"
             select="replace(replace(replace(., '#', ''), 'pmb', ''), '/', '')"/>
         <xsl:variable name="eintragi"
-            select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/entities/tei/place/', $nummeri))"
+            select="fn:escape-html-uri(concat('https://pmb.acdh.oeaw.ac.at/apis/tei/place/', $nummeri))"
             as="xs:string"/>
         <xsl:attribute name="ref">
             <xsl:choose>
