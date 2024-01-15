@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03580"
-   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L03580"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Felix Salten an Arthur Schnitzler, XXXX</title>
+            <title level="a">Felix Salten u. a. an Arthur Schnitzler, [November 1927 – Juni
+               1928?]</title>
             <author ref="#pmb2167">Salten, Felix</author>
+            <author ref="#pmb23918">Salten, Ottilie</author>
+            <author ref="#pmb2922">Salten, Paul</author>
+            <author ref="#pmb23915">Salten, Anna Katharina</author>
             <editor>
                <name>Müller, Martin Anton</name>
                <name>Untner, Laura</name>
@@ -70,7 +76,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="xbrief"/>
+                  <objectType corresp="karte" ana="bildpostkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>GB</country>
@@ -82,14 +88,26 @@
                         <objectDesc>
                            <supportDesc>
                               <extent>
-                                 <measure unit="seite" quantity=""/>
-                                 <measure unit="blatt" quantity=""/>
+                                 <measure unit="karte" quantity="1"/>
+                                 <measure unit="zeichenanzahl" quantity="190"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
-                        <handDesc>
-                           <handNote medium="" style="lateinische-kurrent"/>
+                        <handDesc hands="4">
+                           <handNote medium="bleistift" style="lateinische-kurrent" corresp="#pmb2167"/>
+                           <handNote medium="bleistift" style="lateinische-kurrent" corresp="#pmb23918"/>
+                           <handNote medium="bleistift" style="nicht_anzuwenden" corresp="#pmb2922"/>
+                           <handNote medium="bleistift" style="lateinische-kurrent" corresp="#pmb23915"/>
                         </handDesc>
+                        <additions>
+                           <incident type="postal">
+                              <desc>
+                                 <stamp n="1">
+                                    <placeName ref="#pmb49582">Chemnitz</placeName>
+                                 </stamp>
+                              </desc>
+                           </incident>
+                        </additions>
                      </physDesc>
                   </msDesc>
                </witness>
@@ -103,12 +121,34 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="" n="01">XXXX</date>
-               <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
+               <persName ref="#pmb23918">Salten, Ottilie</persName>
+               <persName ref="#pmb2922">Salten, Paul</persName>
+               <persName ref="#pmb23915">Salten, Anna Katharina</persName>
+               <date notBefore="1927-11-01" notAfter="1928-06-30" n="01">[November 1927 – Juni
+                  1928?]<duplicate-date-nn of="L03584"/>
+                  <duplicate-date-nn of="L03583"/>
+                  <duplicate-date-nn of="L03582"/>
+                  <duplicate-date-nn of="L03585"/>
+                  <duplicate-date-nn of="L03590"/>
+                  <duplicate-date-nn of="L03583"/>
+                  <duplicate-date-nn of="L03587"/>
+                  <duplicate-date-nn of="L03593"/>
+                  <duplicate-date-nn of="L03592"/>
+                  <duplicate-date-nn of="L03586"/>
+                  <duplicate-date-nn of="L03590"/>
+                  <duplicate-date-nn of="L03584"/>
+                  <duplicate-date-nn of="L03585"/>
+                  <duplicate-date-nn of="L03591"/>
+                  <duplicate-date-nn of="L03588"/>
+                  <duplicate-date-nn of="L03589"/>
+                  <duplicate-date-nn of="L03582"/>
+                  <duplicate-date-nn of="L03593"/>
+               </date>
+               <placeName ref="#pmb49582">Chemnitz</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+               <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
          </correspDesc>
       </profileDesc>
@@ -116,12 +156,16 @@
          <change who="MAM" when="2024-01-09">Export aus Transkribus</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="MS-SCHNITZLER-B-00089-B-00002-000-00038-V"/>
+      <graphic url="MS-SCHNITZLER-B-00089-B-00002-000-00038-R"/>
+   </facsimile>
    <text>
       <body>
          <div type="address">
             <address>
-               <addrLine><pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00038-V"/>Herrn D<hi
-                     rend="superscript">r</hi> Arthur Schnitzler</addrLine>
+               <addrLine>
+                  <pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00038-V"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzler</addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb50">Wien</rs>
                </addrLine>
@@ -132,32 +176,64 @@
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <p><pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00038-R"/>
+               <p>
+                  <pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00038-R"/>
                   <rs type="place" ref="#pmb49582">
                      <hi rend="pre-print">Chemnitz</hi>
                   </rs>
                </p>
                <p>
-                  <hi rend="pre-print">»<rs type="work" ref="">Die Jägerin</rs>« (<rs type="place"
-                        ref="">Kassberg-Auffahrt</rs>)</hi>
+                  <hi rend="pre-print">»<rs type="work" ref="#pmb143725">Die Jägerin</rs>« (<rs type="place" ref="#pmb143723">Kassberg-Auffahrt</rs>)</hi>
                </p>
             </opener>
             <p>Viele herzlichste Grüße</p>
-            <closer>Ihr <signed>Felix Salten</signed></closer>
+            <closer>Ihr <signed>Felix Salten</signed>
+            </closer>
          </div>
          <div type="writingSession" n="2">
-            <p><handShift scribe=""/>Wir sind heute hier sehr froh und denken Ihrer herzlichst</p>
+            <p>
+               <handShift scribe="#pmb23918"/>Wir sind <anchor type="commentary" xml:id="K_L03580-1"/>heute hier<note type="commentary" xml:id="K_L03580-1h">Die Karte ist undatiert und
+                  der Poststempel verwischt, so dass die Datierung nur mittels Indizien und nur
+                  annäherungsweise erfolgen kann. Die verwendete Briefmarke wurde erstmals am <date>1. 11. 1927</date>
+               ausgegeben, womit der frühest mögliche Zeitpunkt benannt ist. In der Theatersaison <date>1927/1928</date> war
+                  <rs type="person" ref="#pmb23915">Anna Katharina Salten</rs> am <rs type="org" ref="#pmb148292">Städtischen Theater</rs>
+                  in <rs type="place" ref="#pmb49582">Chemnitz</rs> engagiert, was den Grund für die
+                  Reise der Familie liefern dürfte.</note> sehr froh und denken Ihrer herzlichst</p>
             <closer>
                <signed>Otti S.</signed>
-               <lb/><handShift scribe=""/>
-               <signed>Paul Salten</signed></closer>
+               <lb/>
+               <handShift scribe="#pmb2922"/>
+               <signed>Paul Salten</signed>
+            </closer>
          </div>
          <div type="writingSession" n="3">
-            <p><handShift scribe=""/>Viele liebe Grüße! </p>
+            <p>
+               <handShift scribe="#pmb23915"/>Viele liebe Grüße! </p>
             <closer>
                <signed>Annerl</signed>
             </closer>
          </div>
       </body>
+      <back>
+         <listPerson>
+            <error type="person">2167</error>
+            <error type="person">23918</error>
+            <error type="person">2922</error>
+            <error type="person">23915</error>
+            <error type="person">2121</error>
+         </listPerson>
+         <listBibl>
+            <error type="bibl">143725</error>
+         </listBibl>
+         <listPlace>
+            <error type="place">49582</error>
+            <error type="place">50</error>
+            <error type="place">150</error>
+            <error type="place">143723</error>
+         </listPlace>
+         <listOrg>
+            <error type="org">148292</error>
+         </listOrg>
+      </back>
    </text>
 </TEI>
