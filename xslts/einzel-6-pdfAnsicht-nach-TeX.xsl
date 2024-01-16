@@ -1400,13 +1400,13 @@
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'supplement'])">
-            <xsl:text>\newline{}Beilage: </xsl:text>
+            <xsl:text>&#10;\newline{}Beilage: </xsl:text>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'supplement']">
-            <xsl:text>\newline{}Beilagen: </xsl:text>
+            <xsl:text>&#10;\newline{}Beilagen: </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
             <xsl:apply-templates/>
@@ -1422,19 +1422,22 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'postal'])">
-            <xsl:text>\newline{}Versand: </xsl:text>
+            <xsl:text>&#10;\newline{}Versand: </xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'postal']">
-            <xsl:text>\newline{}Versand: </xsl:text>
+            <xsl:text>&#10;\newline{}Versand: </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1450,24 +1453,25 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'receiver']">
-            <xsl:text>
-\newline{}</xsl:text>
+            <xsl:text>&#10;\newline{}</xsl:text>
             <xsl:value-of select="$receiver"/>
             <xsl:text>: </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
          <xsl:otherwise>
-            <xsl:text>
-\newline{}</xsl:text>
+            <xsl:text>&#10;\newline{}</xsl:text>
             <xsl:value-of select="$receiver"/>
             <xsl:text>: </xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:otherwise>
@@ -1481,19 +1485,22 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'archival'])">
-            <xsl:text>\newline{}Ordnung: </xsl:text>
+            <xsl:text>&#10;\newline{}Ordnung: </xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'archival']">
-            <xsl:text>\newline{}Ordnung: </xsl:text>
+            <xsl:text>&#10;\newline{}Ordnung: </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1507,19 +1514,22 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'additional-information'])">
-            <xsl:text>\newline{}Zusatz: </xsl:text>
+            <xsl:text>&#10;\newline{}Zusatz: </xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'additional-information']">
-            <xsl:text>\newline{}Zusatz: </xsl:text>
+            <xsl:text>&#10;\newline{}Zusatz: </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1533,19 +1543,22 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'editorial'])">
-            <xsl:text>\newline{}Editorischer Hinweis: </xsl:text>
+            <xsl:text>&#10;\newline{}Editorischer Hinweis: </xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and parent::incident/following-sibling::incident[@type = 'editorial']">
-            <xsl:text>\newline{}Editorischer Hinweise: </xsl:text>
+            <xsl:text>&#10;\newline{}Editorischer Hinweise: </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -5707,4 +5720,33 @@
    <xsl:template match="processing-instruction()[name() = 'latex']">
       <xsl:value-of select="concat('{', normalize-space(.), '}')"/>
    </xsl:template>
+   <xsl:function name="foo:incident-rend">
+      <xsl:param name="rend" as="xs:string?"/>
+      <xsl:choose>
+         <xsl:when test="$rend = 'bleistift'">
+            <xsl:text>mit Bleistift </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'roter_buntstift'">
+            <xsl:text>mit rotem Buntstift </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'blauer_buntstift'">
+            <xsl:text>mit blauem Buntstift </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'gruener_buntstift'">
+            <xsl:text>mit grünem Buntstift </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'schwarze_tinte'">
+            <xsl:text>mit schwarzer Tinte </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'blaue_tinte'">
+            <xsl:text>mit blauer Tinte </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'gruene_tinte'">
+            <xsl:text>mit grüner Tinte </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'rote_tinte'">
+            <xsl:text>mit roter Tinte </xsl:text>
+         </xsl:when>
+      </xsl:choose>
+   </xsl:function>
 </xsl:stylesheet>

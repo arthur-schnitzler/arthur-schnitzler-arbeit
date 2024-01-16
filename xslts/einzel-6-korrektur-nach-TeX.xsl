@@ -1371,11 +1371,13 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'postal'])">
             <xsl:text>&#10;\newline{}Versand: </xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1384,6 +1386,7 @@
             <xsl:text>&#10;\newline{}Versand: </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1399,6 +1402,7 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
          </xsl:when>
          <xsl:when
@@ -1408,6 +1412,7 @@
             <xsl:text>: </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1415,6 +1420,7 @@
             <xsl:text>&#10;\newline{}</xsl:text>
             <xsl:value-of select="$receiver"/>
             <xsl:text>: </xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:otherwise>
@@ -1428,11 +1434,13 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'archival'])">
             <xsl:text>&#10;\newline{}Ordnung: </xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1441,6 +1449,7 @@
             <xsl:text>&#10;\newline{}Ordnung: </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1454,11 +1463,13 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'additional-information'])">
             <xsl:text>&#10;\newline{}Zusatz: </xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1467,6 +1478,7 @@
             <xsl:text>&#10;\newline{}Zusatz: </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1480,11 +1492,13 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
          </xsl:when>
          <xsl:when
             test="$poschitzion = 0 and not(parent::incident/following-sibling::incident[@type = 'editorial'])">
             <xsl:text>&#10;\newline{}Editorischer Hinweis: </xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1493,6 +1507,7 @@
             <xsl:text>&#10;\newline{}Editorischer Hinweise: </xsl:text>
             <xsl:value-of select="$poschitzion + 1"/>
             <xsl:text>)&#160;</xsl:text>
+            <xsl:value-of select="foo:incident-rend(parent::*:incident/@rend)"/>
             <xsl:apply-templates/>
             <xsl:text> </xsl:text>
          </xsl:when>
@@ -1787,11 +1802,7 @@
       <xsl:apply-templates select="supportDesc"/>
    </xsl:template>
    <xsl:template match="supportDesc">
-      
-         
-            <xsl:apply-templates select="extent"/>
-         
-      
+      <xsl:apply-templates select="extent"/>
       <xsl:if test="support">
          <xsl:apply-templates select="support"/>
       </xsl:if>
@@ -1799,22 +1810,24 @@
          <xsl:text>, Fragment</xsl:text>
       </xsl:if>
    </xsl:template>
-   
    <xsl:template match="*:extent">
-      <xsl:variable name="unitOrder" select="'blatt seite karte kartenbrief widmung umschlag zeichenanzahl'"/>
+      <xsl:variable name="unitOrder"
+         select="'blatt seite karte kartenbrief widmung umschlag zeichenanzahl'"/>
       <xsl:variable name="measures" select="." as="node()"/>
       <xsl:for-each select="tokenize($unitOrder, ' ')">
          <xsl:variable name="current" select="."/>
-         <xsl:for-each select="$measures/*:measure[@unit=$current]">
+         <xsl:for-each select="$measures/*:measure[@unit = $current]">
             <xsl:apply-templates select="."/>
-            <xsl:variable name="unitOrderRest" select="normalize-space(substring-after($unitOrder, $current))" as="xs:string?"/>
-            <xsl:if test="exists($measures/*:measure[@unit=tokenize($unitOrderRest, ' ')]) and $measures/*:measure[not(@unit='karte' and @quantity='1') and not(@unit='widmung' and @quantity='1') and not(@unit='kartenbrief' and @quantity='1')][2]">
+            <xsl:variable name="unitOrderRest"
+               select="normalize-space(substring-after($unitOrder, $current))" as="xs:string?"/>
+            <xsl:if
+               test="exists($measures/*:measure[@unit = tokenize($unitOrderRest, ' ')]) and $measures/*:measure[not(@unit = 'karte' and @quantity = '1') and not(@unit = 'widmung' and @quantity = '1') and not(@unit = 'kartenbrief' and @quantity = '1')][2]">
                <xsl:text>, </xsl:text>
             </xsl:if>
          </xsl:for-each>
       </xsl:for-each>
    </xsl:template>
-   <xsl:template match="*:measure[@unit='seite']">
+   <xsl:template match="*:measure[@unit = 'seite']">
       <xsl:choose>
          <xsl:when test="@quantity = '1'">
             <xsl:text>1&#160;Seite</xsl:text>
@@ -1825,7 +1838,7 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
-   <xsl:template match="*:measure[@unit='blatt']">
+   <xsl:template match="*:measure[@unit = 'blatt']">
       <xsl:choose>
          <xsl:when test="@quantity = '1'">
             <xsl:text>1&#160;Blatt</xsl:text>
@@ -1836,7 +1849,7 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
-   <xsl:template match="*:measure[@unit='umschlag']">
+   <xsl:template match="*:measure[@unit = 'umschlag']">
       <xsl:choose>
          <xsl:when test="@quantity = '1'">
             <xsl:text>Umschlag</xsl:text>
@@ -1847,7 +1860,7 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
-   <xsl:template match="*:measure[@unit='widmung']">
+   <xsl:template match="*:measure[@unit = 'widmung']">
       <xsl:choose>
          <xsl:when test="@quantity = '1'"/>
          <xsl:otherwise>
@@ -1856,7 +1869,7 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
-   <xsl:template match="*:measure[@unit='kartenbrief']">
+   <xsl:template match="*:measure[@unit = 'kartenbrief']">
       <xsl:choose>
          <xsl:when test="@quantity = '1'"/>
          <xsl:otherwise>
@@ -1865,7 +1878,7 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
-   <xsl:template match="*:measure[@unit='karte']">
+   <xsl:template match="*:measure[@unit = 'karte']">
       <xsl:choose>
          <xsl:when test="@quantity = '1'"/>
          <xsl:otherwise>
@@ -1874,7 +1887,7 @@
          </xsl:otherwise>
       </xsl:choose>
    </xsl:template>
-   <xsl:template match="*:measure[@unit='zeichenanzahl']">
+   <xsl:template match="*:measure[@unit = 'zeichenanzahl']">
       <xsl:value-of select="@quantity"/>
       <xsl:text>&#160;Zeichen</xsl:text>
    </xsl:template>
@@ -4511,7 +4524,6 @@
       <xsl:apply-templates/>
       <xsl:text>}</xsl:text>
    </xsl:template>
-   
    <!-- Tiefstellung -->
    <xsl:template match="hi[@rend = 'subscript']">
       <xsl:text>\textsubscript{</xsl:text>
@@ -4785,7 +4797,6 @@
                <xsl:when test="$eintrag = ''">
                   <xsl:text>XXXX</xsl:text>
                </xsl:when>
-               
                <xsl:otherwise>
                   <xsl:analyze-string select="$eintrag" regex="&amp;">
                      <xsl:matching-substring>
@@ -5599,7 +5610,9 @@
          </xsl:choose>
          <xsl:text>A.&#8239;S.: \emph{»Das Zeitlose ist von kürzester Dauer«}, </xsl:text>
       </xsl:if>
-      <xsl:value-of select="normalize-space(document(concat('https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-interviews-static/main/data/editions/', replace(@target, '.html', ''), '.xml'))/descendant::tei:titleStmt/tei:title[@level='a'])"/>
+      <xsl:value-of
+         select="normalize-space(document(concat('https://raw.githubusercontent.com/arthur-schnitzler/schnitzler-interviews-static/main/data/editions/', replace(@target, '.html', ''), '.xml'))/descendant::tei:titleStmt/tei:title[@level = 'a'])"
+      />
    </xsl:template>
    <xsl:template match="ref[@type = 'url']">
       <xsl:text>\uline{\url{</xsl:text>
@@ -5658,4 +5671,33 @@
    <xsl:template match="processing-instruction()[name() = 'latex']">
       <xsl:value-of select="concat('{', normalize-space(.), '}')"/>
    </xsl:template>
+   <xsl:function name="foo:incident-rend">
+      <xsl:param name="rend" as="xs:string?"/>
+      <xsl:choose>
+         <xsl:when test="$rend = 'bleistift'">
+            <xsl:text>mit Bleistift </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'roter_buntstift'">
+            <xsl:text>mit rotem Buntstift </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'blauer_buntstift'">
+            <xsl:text>mit blauem Buntstift </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'gruener_buntstift'">
+            <xsl:text>mit grünem Buntstift </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'schwarze_tinte'">
+            <xsl:text>mit schwarzer Tinte </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'blaue_tinte'">
+            <xsl:text>mit blauer Tinte </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'gruene_tinte'">
+            <xsl:text>mit grüner Tinte </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'rote_tinte'">
+            <xsl:text>mit roter Tinte </xsl:text>
+         </xsl:when>
+      </xsl:choose>
+   </xsl:function>
 </xsl:stylesheet>
