@@ -13,7 +13,7 @@
             <xsl:copy-of select="@* | *[not(name() = 'correspContext')]" copy-namespaces="false"/>
             <xsl:if test="key('kontext-lookup', ancestor::tei:TEI/@xml:id, $schnitzler-briefe_cmif)">
                 <xsl:element name="correspContext" namespace="http://www.tei-c.org/ns/1.0">
-                    <xsl:copy-of select="tei:correspContext/*[not(name()='ab')]"/>
+                    <xsl:copy-of select="key('kontext-lookup', ancestor::tei:TEI/@xml:id, $schnitzler-briefe_cmif)/tei:correspContext/*[not(name()='ab')]" copy-namespaces="0"/>
                     
                 </xsl:element>
             </xsl:if>
