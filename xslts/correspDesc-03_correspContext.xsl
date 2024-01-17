@@ -12,10 +12,13 @@
         <xsl:element name="correspDesc" namespace="http://www.tei-c.org/ns/1.0">
             <xsl:copy-of select="@* | *[not(name() = 'correspContext')]" copy-namespaces="false"/>
             <xsl:if test="key('kontext-lookup', ancestor::tei:TEI/@xml:id, $schnitzler-briefe_cmif)">
-                <xsl:copy-of
-                    select="key('kontext-lookup', ancestor::tei:TEI/@xml:id, $schnitzler-briefe_cmif)/tei:correspContext"
-                    exclude-result-prefixes="#all" copy-namespaces="false"/>
+                <xsl:element name="correspContext" namespace="http://www.tei-c.org/ns/1.0">
+                    <xsl:copy-of select="tei:correspContext/*[not(name()='ab')]"/>
+                    
+                </xsl:element>
             </xsl:if>
         </xsl:element>
     </xsl:template>
+    
+    
 </xsl:stylesheet>
