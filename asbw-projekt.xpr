@@ -7698,7 +7698,67 @@ ${caret}</String>
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>editions/L03533.xml</String>
+                                    <String>meta/asbw-gesamt.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Listen_listperson-etc-erstellen</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>asbwzusammenkopieren.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>asbwzusammenkopieren</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>xslts/create-listPerson-listWork-listOrg-listPlace/schnitzler-briefe-refs.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Listen_listperson-etc-erstellen</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>editions/L02799.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -7718,7 +7778,27 @@ ${caret}</String>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>editions/L02799.xml</String>
+                                    <String>xslts/cmif/create-cmif.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>create-asbw-cmif</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>editions/L03533.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -8460,66 +8540,6 @@ ${caret}</String>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>xslts/create-listPerson-listWork-listOrg-listPlace/schnitzler-briefe-refs.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Listen_listperson-etc-erstellen</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>meta/asbw-gesamt.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>asbw-alleBwChronologisch-zu-tex</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>asbwzusammenkopieren.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>asbwzusammenkopieren</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>xslts/Diverse%20XSLT/page2tei-master/trans-out/mets.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -8618,9 +8638,12 @@ ${caret}</String>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array>
-                                        <String>${pdu}/xslts/create-listPerson-listWork-listOrg-listPlace/C_createLists.xsl</String>
-                                        <String>${pdu}/xslts/create-listPerson-listWork-listOrg-listPlace/D_namespace-fix.xsl</String>
-                                        <String>${pdu}/xslts/create-listPerson-listWork-listOrg-listPlace/E_separate-and-format-lists.xsl</String>
+                                        <String>${pdu}/xslts/create-listPerson-listWork-listOrg-listPlace/A_alle-verwendeten-refs-extrahieren.xsl</String>
+                                        <String>${pdu}/xslts/create-listPerson-listWork-listOrg-listPlace/B_alle-verwendeten-refs-distinct.xsl</String>
+                                        <String>${pdu}/xslts/create-listPerson-listWork-listOrg-listPlace/C_autorinnennummern-erg%C3%A4nzen.xsl</String>
+                                        <String>${pdu}/xslts/create-listPerson-listWork-listOrg-listPlace/D_createLists.xsl</String>
+                                        <String>${pdu}/xslts/create-listPerson-listWork-listOrg-listPlace/E_Dubletten%20raus,xsl.xsl</String>
+                                        <String>${pdu}/xslts/create-listPerson-listWork-listOrg-listPlace/F_namespace-fix.xsl</String>
                                     </String-array>
                                 </field>
                                 <field name="xslTransformer">
