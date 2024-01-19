@@ -12,6 +12,7 @@
         <xsl:copy>
             <xsl:variable name="folderURI" select="resolve-uri('.',base-uri())"/>
             <xsl:for-each select="collection(concat($folderURI, '/editions/?select=L0*.xml;recurse=yes'))">
+                <!--<xsl:if test="tei:TEI/tei:teiHeader[1]/tei:profileDesc[1]/tei:correspDesc[1]/tei:correspContext[1]/tei:ref[@type='belongsToCorrespondence' and @target='correspondence_2167'][1]">-->
                 <xsl:element name="TEI" namespace="http://www.tei-c.org/ns/1.0">
                     <xsl:copy-of select="tei:TEI/@*"/>
                     <xsl:copy-of select="tei:TEI/tei:teiHeader"/>
@@ -19,6 +20,7 @@
                         <xsl:copy-of select="tei:TEI/tei:text/tei:body"/>
                     </xsl:element>
                 </xsl:element>
+                <!--</xsl:if>-->
             </xsl:for-each>
         </xsl:copy>
     </xsl:template>

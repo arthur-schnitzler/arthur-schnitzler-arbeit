@@ -4,6 +4,12 @@
     version="3.0">
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
+    
+    <!-- das entfernt whitespace am Beginn eines Elements: -->
+    <xsl:template match="tei:*[not(child::*) and starts-with(text()[1], ' ')]/text()">
+        <xsl:value-of select="replace(., '^\s+', '')"/>
+    </xsl:template>
+        
     <xsl:template match="@ref">
         <xsl:attribute name="ref">
             <xsl:for-each select="tokenize(., ' ')">

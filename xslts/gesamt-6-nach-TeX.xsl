@@ -568,7 +568,7 @@
             <xsl:value-of select="foo:werk-metadaten-in-index($work-entry/Typ, $work-entry/Erscheinungsdatum, $work-entry/Aufführung)"/>
          </xsl:when>-->
          <xsl:otherwise>
-            <xsl:apply-templates select="foo:werk-kuerzen($work-entry/tei:title)"/>
+            <xsl:apply-templates select="foo:werk-kuerzen($work-entry/tei:title[1])"/>
             <!--<xsl:value-of select="($work-entry/Bibliografie)"/>-->
             <xsl:if
                test="not(empty($work-entry/Erscheinungsdatum) or $work-entry/Erscheinungsdatum = '')">
@@ -586,14 +586,14 @@
             </xsl:choose>
             <xsl:choose>
                <xsl:when
-                  test="$work-entry/tei:author/@xml:id = 'A002003' and contains($work-entry/tei:title, 'O. V.:')">
+                  test="$work-entry/tei:author/@xml:id = 'A002003' and contains($work-entry/tei:title[1], 'O. V.:')">
                   <xsl:apply-templates
-                     select="normalize-space(substring(foo:sonderzeichen-ersetzen($work-entry/tei:title), 9))"
+                     select="normalize-space(substring(foo:sonderzeichen-ersetzen($work-entry/tei:title[1]), 9))"
                   />
                </xsl:when>
                <xsl:otherwise>
                   <xsl:apply-templates
-                     select="normalize-space(foo:sonderzeichen-ersetzen($work-entry/tei:title))"/>
+                     select="normalize-space(foo:sonderzeichen-ersetzen($work-entry/tei:title[1]))"/>
                </xsl:otherwise>
             </xsl:choose>
             <xsl:text>}</xsl:text>
@@ -2420,10 +2420,10 @@
       <xsl:choose>
          <xsl:when test="not($analytic/title/@type = 'j')">
             <xsl:text>\emph{</xsl:text>
-            <xsl:value-of select="normalize-space(foo:sonderzeichen-ersetzen($analytic/title))"/>
+            <xsl:value-of select="normalize-space(foo:sonderzeichen-ersetzen($analytic/title[1]))"/>
             <xsl:choose>
-               <xsl:when test="ends-with(normalize-space($analytic/title), '!')"/>
-               <xsl:when test="ends-with(normalize-space($analytic/title), '?')"/>
+               <xsl:when test="ends-with(normalize-space($analytic/title[1]), '!')"/>
+               <xsl:when test="ends-with(normalize-space($analytic/title[1]), '?')"/>
                <xsl:otherwise>
                   <xsl:text>.</xsl:text>
                </xsl:otherwise>
@@ -2431,10 +2431,10 @@
             <xsl:text>}</xsl:text>
          </xsl:when>
          <xsl:otherwise>
-            <xsl:value-of select="normalize-space(foo:sonderzeichen-ersetzen($analytic/title))"/>
+            <xsl:value-of select="normalize-space(foo:sonderzeichen-ersetzen($analytic/title[1]))"/>
             <xsl:choose>
-               <xsl:when test="ends-with(normalize-space($analytic/title), '!')"/>
-               <xsl:when test="ends-with(normalize-space($analytic/title), '?')"/>
+               <xsl:when test="ends-with(normalize-space($analytic/title[1]), '!')"/>
+               <xsl:when test="ends-with(normalize-space($analytic/title[1]), '?')"/>
                <xsl:otherwise>
                   <xsl:text>.</xsl:text>
                </xsl:otherwise>
@@ -2443,7 +2443,7 @@
       </xsl:choose>
       <xsl:if test="$analytic/editor[1]">
          <xsl:text> </xsl:text>
-         <xsl:value-of select="$analytic/editor"/>
+         <xsl:value-of select="$analytic/editor[1]"/>
          <xsl:text>.</xsl:text>
       </xsl:if>
    </xsl:function>
@@ -2842,6 +2842,7 @@
             <xsl:choose>
                <xsl:when
                   test="not(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@notBefore)">
+                  <xsl:message select="ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/@notAfter"/>
                   <xsl:value-of
                      select="foo:briefempfaenger-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@notAfter, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"/>
                   <xsl:value-of
