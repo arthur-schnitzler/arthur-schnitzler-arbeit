@@ -1144,6 +1144,7 @@
       <xs:assert
          test="(@type = 'footnote' and @xml:id and starts-with(@xml:id, 'F') and child::tei:p and not(child::*[name() != 'p'])) or not(child::tei:p)"
       />
+      <xs:assert test="((@type='commentary' or @type='label' or @type='textConst') and matches(@xml:id, '^((L_|T_|K_)(L\d{5}-\d+h))$')) or @type='footnote'"/>
    </xs:complexType>
    <xs:complexType name="backNote_type-org">
       <xs:sequence minOccurs="0">

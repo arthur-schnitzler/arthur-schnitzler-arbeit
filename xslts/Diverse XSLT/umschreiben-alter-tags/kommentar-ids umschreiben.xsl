@@ -13,7 +13,7 @@
                 <xsl:text>commentary</xsl:text>
             </xsl:attribute>
             <xsl:attribute name="xml:id">
-                <xsl:value-of select="concat('K_',$xmlid,'_',$i)"/>
+                <xsl:value-of select="concat('K_',$xmlid,'-',$i)"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </xsl:element>
@@ -28,7 +28,7 @@
                 <xsl:text>commentary</xsl:text>
             </xsl:attribute>
             <xsl:attribute name="xml:id">
-                <xsl:value-of select="concat('K_',$xmlid,'_',$i,'h')"/>
+                <xsl:value-of select="concat('K_',$xmlid,'-',$i,'h')"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </xsl:element>
@@ -43,7 +43,7 @@
                 <xsl:text>textConst</xsl:text>
             </xsl:attribute>
             <xsl:attribute name="xml:id">
-                <xsl:value-of select="concat('T_',$xmlid,'_',$i)"/>
+                <xsl:value-of select="concat('T_',$xmlid,'-',$i)"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </xsl:element>
@@ -58,7 +58,7 @@
                 <xsl:text>textConst</xsl:text>
             </xsl:attribute>
             <xsl:attribute name="xml:id">
-                <xsl:value-of select="concat('T_',$xmlid,'_',$i,'h')"/>
+                <xsl:value-of select="concat('T_',$xmlid,'-',$i,'h')"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </xsl:element>
