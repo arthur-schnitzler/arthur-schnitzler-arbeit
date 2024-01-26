@@ -7648,7 +7648,70 @@ ${caret}</String>
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>editions/L02967.xml</String>
+                                    <String>editions/L02074.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>editions/L03353.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>textConst und commentary neu nummerieren</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>editions/L03371.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
+                                        <String>tex-leseansicht</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>editions/L00005.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -7688,11 +7751,11 @@ ${caret}</String>
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>editions/L02074.xml</String>
+                                    <String>editions/L02967.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
+                                        <String>textConst und commentary neu nummerieren</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -7729,26 +7792,6 @@ ${caret}</String>
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>editions/L00006.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>textConst und commentary neu nummerieren</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>editions/L00005.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -8242,29 +8285,6 @@ ${caret}</String>
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>editions/L03384.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>back-element-hinzufuegen_facs-normalisieren</String>
-                                        <String>tex-leseansicht</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>editions/L03371.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -10958,7 +10978,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/xslts/Diverse%20XSLT/umschreiben-alter-tags/kommentar-ids%20umschreiben.xsl</String>
+                                    <String>${pdu}/xslts/Diverse%20XSLT/umschreiben-alter-tags/1-kommentar-textconst-ids-umschreiben.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -11009,7 +11029,9 @@ ${caret}</String>
                                     <list/>
                                 </field>
                                 <field name="cascadingStylesheets">
-                                    <String-array/>
+                                    <String-array>
+                                        <String>${pdu}/xslts/Diverse%20XSLT/umschreiben-alter-tags/2-kommentar-textconst-ids-umschreiben.xsl</String>
+                                    </String-array>
                                 </field>
                                 <field name="xslTransformer">
                                     <String>Saxon-PE</String>
