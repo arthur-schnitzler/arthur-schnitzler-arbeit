@@ -87,7 +87,7 @@
         <!--       <xsl:message select="$make_div"></xsl:message>-->
         <xsl:for-each-group select="$make_div//*[local-name() = 'div']/*"
           group-starting-with="*[local-name() = 'head']">
-          <div xmlns="http://www.tei-c.org/ns/1.0">
+          <div>
             <xsl:copy-of select="current-group()"/>
           </div>
         </xsl:for-each-group>
@@ -194,8 +194,8 @@
 
     <!-- NOTE: up to now, lry and lry were mixed up. This is fiex here. -->
     <surface ulx="0" uly="0" lrx="{@imageWidth}" lry="{@imageHeight}" xml:id="facs_{$numCurr}">
-      <graphic url="{encode-for-uri(substring-before($imageName, '.'))||'.'||$type}"
-        width="{@imageWidth}px" height="{@imageHeight}px"/>
+      <graphic
+        width="{@imageWidth}px" height="{@imageHeight}px" facs="{encode-for-uri(substring-before($imageName, '.'))||'.'||$type}"/>
       <xsl:apply-templates
         select="p:PrintSpace | p:TextRegion | p:SeparatorRegion | p:GraphicRegion | p:TableRegion"
         mode="facsimile"/>
