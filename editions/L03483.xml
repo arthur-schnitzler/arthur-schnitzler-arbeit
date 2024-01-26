@@ -72,8 +72,7 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="karte"/>
-                  <!-- XXXX Rückseite fehlt für @ana -->
+                  <objectType corresp="karte" ana="bildpostkarte"/>
                   <msDesc>
                      <msIdentifier>
                         <country>D</country>
@@ -119,7 +118,7 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1931-08-22" n="01">22. 8. 1931</date>
-               <placeName ref="#pmb909" evidence="conjecture">Velden am Wörthersee</placeName>
+               <placeName ref="#pmb909">Velden am Wörthersee</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -140,11 +139,12 @@
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="LU" when="2023-11-15">Export aus Transkribus</change>
+         <change who="MAM" when="2024-01-26">Bildseite ergänzt</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
       <graphic url="HS.NZ85.0001.03176_0046"/>
-      <!-- XXXX Rückseite -->
+      <graphic url="HS.NZ85.0001.03176_0046-V"/>
    </facsimile>
    <text>
       <body>
@@ -162,7 +162,7 @@
          </div>
          <div type="writingSession" n="1">
             <opener>
-               <!-- XXXX Rückseite -->
+               <p rend="center"><pb facs="HS.NZ85.0001.03176_0046-V"/><hi rend="pre-print">Blick auf <rs type="place" ref="#pmb909">Velden am Wörtersee</rs>.</hi></p>
                <dateline rend="left">
                   <rs type="place" ref="#pmb909">Velden a. Wörtherſee</rs>, <hi rend="latintype">
                      <rs type="place" ref="#pmb147776">Hotel Excelsior</rs>
