@@ -291,6 +291,7 @@
          </xs:all>
          <xs:attribute name="n" use="required" type="xs:integer"/>
          <xs:assert test="(child::tei:objectType) or (number(@n) &gt; 1)"/>
+         <xs:assert test="(@n=1 and descendant::tei:measure[@unit='zeichenanzahl']) or @n != 1"/>
       </xs:complexType>
    </xs:element>
    <xs:simpleType name="objectTypeCorresp">
@@ -407,7 +408,7 @@
             <xs:element ref="tei:measure" maxOccurs="unbounded" minOccurs="1"/>
          </xs:all>
          <xs:assert test="count(distinct-values(tei:measure/@unit)) = count(tei:measure)"/>
-         <xs:assert test="tei:measure[@unit='zeichenanzahl']"/>
+         
       </xs:complexType>
    </xs:element>
    <!-- Define the 'supportDesc' element with 'extent' as its child -->
