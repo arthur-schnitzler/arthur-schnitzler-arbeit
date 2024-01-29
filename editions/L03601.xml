@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L00320"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03601"
    xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Arthur Schnitzler: Widmungsexemplar Das Märchen für Hugo von
-               Hofmannsthal, [8. 5.?] 1894</title>
+            <title level="a">Arthur Schnitzler: Widmungsexemplar Anatol für Felix Salten,
+               29. 9. 1900</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
-               <name>Susen, Gerd-Hermann</name>
+               <name>Untner, Laura</name>
             </editor>
             <funder>
                <name>FWF - Der Wissenschaftsfonds</name>
@@ -30,7 +30,7 @@
             <respStmt>
                <resp>Transkription und Kommentierung</resp>
                <name>Müller, Martin Anton</name>
-               <name>Susen, Gerd-Hermann</name>
+               <name>Untner, Laura</name>
             </respStmt>
          </editionStmt>
          <publicationStmt>
@@ -63,7 +63,7 @@
                      beschränken.</p>
                </licence>
             </availability>
-            <idno type="handle">https://hdl.handle.net/21.11115/0000-000E-6C61-C</idno>
+            <idno type="handle">XXXX</idno>
          </publicationStmt>
          <seriesStmt>
             <p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
@@ -71,20 +71,20 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="widmung" ana="widmung_vortitel"/>
+                  <objectType corresp="widmung" ana="widmung_schmutztitel"/>
                   <msDesc>
                      <msIdentifier>
-                        <country>D</country>
-                        <settlement>Frankfurt am Main</settlement>
-                        <repository>Freies Deutsches Hochstift</repository>
-                        <idno>FDH 3228</idno>
+                        <country>A</country>
+                        <settlement>Wien</settlement>
+                        <repository>Wienbibliothek im Rathaus</repository>
+                        <idno>A-72116/2.Ex., DS-2018-9601</idno>
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
                            <supportDesc>
                               <extent>
                                  <measure unit="widmung" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="38"/>
+                                 <measure unit="zeichenanzahl" quantity="60"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -95,26 +95,6 @@
                   </msDesc>
                </witness>
             </listWit>
-            <listBibl>
-               <biblStruct>
-                  <monogr>
-                     <author ref="#pmb11740">Hofmannsthal, Hugo von</author>
-                     <title level="m">Bibliothek</title>
-                     <editor>Hg. Ellen Ritter † in Zusammenarbeit mit Dalia Bukauskaité und Konrad
-                        Heumann</editor>
-                     <imprint>
-                        <date when="2011">2011</date>
-                        <pubPlace>Frankfurt am Main</pubPlace>
-                        <publisher>S. Fischer</publisher>
-                     </imprint>
-                     <biblScope unit="pp">604–605</biblScope>
-                  </monogr>
-                  <series>
-                     <title level="s">Sämtliche Werke. Kritische Ausgabe</title>
-                     <biblScope unit="vol">XL</biblScope>
-                  </series>
-               </biblStruct>
-            </listBibl>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
@@ -124,96 +104,79 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+               <date when="1900-09-29" n="01">29. 9. 1900</date>
                <placeName ref="#pmb50">Wien</placeName>
-               <date when="1894-05-08" n="02">[8. 5.?] 1894</date>
             </correspAction>
             <correspAction type="received">
-               <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
-               <date evidence="conjecture" notBefore="1894-05-08" notAfter="1894-05-11">[8. 5. 1894
-                  – 11. 5. 1894?]</date>
+               <persName ref="#pmb2167">Salten, Felix</persName>
             </correspAction>
-            <correspContext>
-               <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo
-                  von</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00319">Schnitzler an
-                  Bahr, [5. 5.?] 1894</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00321">Liliencron an
-                  Schnitzler, 7. 5. 1894</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence"
-                  source="correspondence_11740" target="L00313">Hofmannsthal an Schnitzler,
-                  [7. 4. 1894]</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11740"
-                  target="L00324">Schnitzler an Hofmannsthal, [15. 5. 1894?]</ref>
-            </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="approved">
-         <change who="MAM" when="2020-09-17">Angelegt aus Buchausgabe</change>
-         <change who="MAM" when="2020-09-22">Index check</change>
-         <change who="MAM" when="2020-09-29">Durchsicht mit Faksimile</change>
-         <change who="GHS" when="2020-10-23">finalisiert</change>
-         <change who="MAM" when="2024-01-29">umdatiert</change>
+      <revisionDesc status="proposed">
+         <change who="MAM" when="2024-01-29">Export aus Liste der Wienbibliothek</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile>
-      <graphic facs="3228_Schnitzler_Märchen_001"/>
-      <graphic facs="3228_Schnitzler_Märchen_002"/>
-   </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1">
-            <p>
-               <pb facs="3228_Schnitzler_Märchen_001"/>Meinem lieben Hugo</p>
+            <p><pb facs=""/>Meinem lieben Felix Salten</p>
             <closer>
-               <space unit="chars" quantity="5"/>herzlichſt<lb/>
-               <signed>ArthSch</signed>
+               <signed>Arthur Schnitzler</signed>
             </closer>
+            <postscript>
+               <dateline><rs type="place" ref="#pmb50">Wien</rs>
+                  <space unit="chars" quantity="1"/>
+                  <date>29. 9. 900</date>.</dateline>
+            </postscript>
          </div>
          <div type="writingSession" n="2">
             <p>
                <space dim="vertical" unit="line" quantity="1"/>
             </p>
             <p rend="center">
-               <pb facs="3228_Schnitzler_Märchen_002"/>
+               <pb facs=""/>
                <hi rend="pre-print">
-                  <rs type="work" ref="#pmb29823">Das Märchen</rs>.</hi>
+                  <hi rend="capitals">Arthur Schnitzler</hi>
+               </hi>
             </p>
             <p rend="center">
-               <hi rend="pre-print">Schauſpiel in drei Aufzügen</hi>
-               <lb/>
-               <hi rend="pre-print">von</hi>
-               <lb/>
-               <hi rend="pre-print">Arthur Schnitzler.</hi>
+               <hi rend="pre-print">
+                  <hi rend="capitals">
+                     <rs type="work" ref="#pmb29935">Anatol</rs>
+                  </hi>
+               </hi>
+            </p>
+            <p rend="center">
+               <hi rend="pre-print">illustriert von</hi>
+            </p>
+            <p rend="center">
+               <hi rend="pre-print">
+                  <hi rend="capitals">
+                     <rs type="person" ref="#pmb28645">M. Coschell.</rs>
+                  </hi>
+               </hi>
             </p>
             <p>
                <space dim="vertical" unit="line" quantity="1"/>
             </p>
             <p rend="center">
+               <hi rend="pre-print">Erste bis dritte Auflage</hi>
+            </p>
+            <p rend="center">
                <hi rend="pre-print">
-                  <rs type="place" ref="#pmb866">
-                     <hi rend="bold">Dresden</hi>
-                  </rs> und <rs type="place" ref="#pmb864">
-                     <hi rend="bold">Leipzig</hi>
+                  <rs ref="#pmb168" type="place">Berlin</rs>
+               </hi>
+            </p>
+            <p rend="center">
+               <hi rend="pre-print">
+                  <rs ref="#pmb29639" type="org">
+                     <hi rend="spaced_out">S. Fiſcher, Verlag</hi>
                   </rs>
                </hi>
             </p>
             <p rend="center">
                <hi rend="pre-print">
-                  <rs type="org" ref="#pmb29771">
-                     <hi rend="spaced_out">E. Pierſon’s Verlag</hi>
-                  </rs>
-               </hi>
-            </p>
-            <p rend="center">
-               <hi rend="pre-print">
-                  <date>
-                     <anchor type="commentary" xml:id="K_L00320-1"/>1894<note xml:id="K_L00320-1h"
-                        type="commentary">am <date>5. 5. 1894</date> vom <rs type="work"
-                           ref="#pmb47979">Börsenblatt für den deutschen Buchhandel</rs> als
-                        Neuerscheinung gemeldet. Die Datierung folgt jener der Widmung an <rs
-                           type="person" ref="#pmb2167">Felix Salten</rs> vom <ref
-                           type="schnitzler-briefe" target="L03600" subtype="date-only"/>.</note>
-                  </date>.</hi>
+                  <date>1901</date>.</hi>
             </p>
          </div>
       </body>
@@ -265,57 +228,6 @@
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
-            <person xml:id="pmb11740">
-               <persName>
-                  <forename>Hugo von</forename>
-                  <surname>Hofmannsthal</surname>
-               </persName>
-               <persName type="person_pseudonym">Loris</persName>
-               <persName type="person_pseudonym">Theophil Morren</persName>
-               <persName type="namensvariante">Hofmannsthal, Hugo</persName>
-               <birth>
-                  <date when="1874-02-01">1874-02-01</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,2066 16,37341</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1929-07-15">1929-07-15</date>
-                  <settlement ref="pmb173">
-                     <placeName type="pref">Rodaun</placeName>
-                     <location>
-                        <geo>48,132793312328 16,256152195922</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16293</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118552759</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11740.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11740/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11740.html</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/personen/pmb11740</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp46353</idno>
-               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00281a55</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q51513</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Hugo_von_Hofmannsthal</idno>
-               <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001d1cc</idno>
-               <idno type="URL" subtype="amp">https://amp.acdh.oeaw.ac.at/amp_person_42.html</idno>
-               <idno type="URL" subtype="schnitzler-kino"
-                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb11740.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11740.html</idno>
-               <idno type="URL" subtype="">https://hermanbahrtextverzeichnis/HB-tv_4864_p17</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -326,6 +238,7 @@
                <persName type="person_pseudonym">Sascha</persName>
                <persName type="person_pseudonym">Martin Finder</persName>
                <persName type="person_pseudonym">Karl Heinrich</persName>
+               <persName type="legacy-name-merge">Salten, Felix</persName>
                <birth>
                   <date when="1869-09-06">06.09.1869</date>
                   <settlement ref="pmb43471">
@@ -368,42 +281,80 @@
                   >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162012/</idno>
+               <idno type="URL" subtype="">https://hermanbahrtextverzeichnis/HB-TSN_3793</idno>
+            </person>
+            <person xml:id="pmb28645">
+               <persName>
+                  <forename>Moritz</forename>
+                  <surname>Coschell</surname>
+               </persName>
+               <persName type="person_pseudonym">Moritz Coschell</persName>
+               <persName type="person_geburtsname_nachname">Kocheles</persName>
+               <persName type="legacy-name-merge">Kochel, Moritz</persName>
+               <birth>
+                  <date when="1872-09-18">1872-09-18</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1943-07-11">1943-07-11</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb110">Maler/Malerin</occupation>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb28645.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/28645/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_14283</idno>
+               <idno type="URL" subtype="">http://d-nb.info/gnd/116685972</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb28645.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q15434509</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Moritz_Coschell</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb28645.html</idno>
             </person>
          </listPerson>
          <listBibl>
-            <bibl xml:id="pmb29823">
-               <title>Das Märchen. Schauspiel in drei Aufzügen</title>
-               <title type="werk_bibliografische-angabe">Arthur Schnitzler: Das Märchen. Schauspiel
-                  in drei Aufzügen. Dresden, Leipzig: E. Pierson’s Verlag 1894.</title>
-               <title type="werk_link"
-                  >https://babel.hathitrust.org/cgi/pt?id=coo.31924026341598&amp;view=1up&amp;seq=5</title>
+            <bibl xml:id="pmb29935">
+               <title>Anatol</title>
+               <title type="werk_bibliografische-angabe">Arthur Schnitzler: Anatol. Berlin:
+                  Bibliographisches Bureau 1892, vordatiert auf 1893</title>
                <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
-               <date>1893-12-01</date>
-               <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.04</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1169917</idno>
-               <idno type="URL" subtype="theadok">https://theadok.at/work/38151</idno>
-               <idno type="URL" subtype="books">https://books.google.at/books?id=eUc8AQAAMAAJ</idno>
+               <author ref="pmb11740" role="hat-ein-vorwortnachwort-verfasst-zu">Hofmannsthal, Hugo
+                  von</author>
+               <author ref="pmb28645" role="hat-illustriert">Coschell, Moritz</author>
+               <date>1892-10-29</date>
+               <idno type="URL" subtype="asaf">https://asaf.com/S.04.01.03</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q487409</idno>
+               <idno type="URL" subtype="dracor">https://dracor.org/ger/schnitzler-anatol</idno>
+               <idno type="URL" subtype="theadok">https://theadok.at/work/32630</idno>
+               <idno type="URL" subtype="deutschestextarchiv"
+                  >http://www.deutschestextarchiv.de/book/view/schnitzler_anatol_1893</idno>
                <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29823.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29823/</idno>
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29935.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29935/</idno>
                <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29823.html</idno>
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29935.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29823.html</idno>
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb29935.html</idno>
                <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Das_M%C3%A4rchen_(Schnitzler)</idno>
+                  >https://de.wikipedia.org/wiki/Anatol_(Schauspiel)</idno>
                <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb29823.html</idno>
-               <note type="work_kind">Mehraktiges Drama</note>
-            </bibl>
-            <bibl xml:id="pmb47979">
-               <title>Börsenblatt für den Deutschen Buchhandel</title>
-               <title type="werk_link">https://www.boersenblatt-digital.de</title>
-               <date when="1843-01-03">1843-01-03</date>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/47979/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb47979.html</idno>
-               <note type="work_kind">Wochenschrift</note>
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb29935.html</idno>
+               <note type="work_kind">Einakterzyklus</note>
             </bibl>
          </listBibl>
          <listPlace>
@@ -453,124 +404,139 @@
                      url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"/>
                </figure>
             </place>
-            <place xml:id="pmb866">
-               <placeName>Dresden</placeName>
-               <placeName type="alternative-name">Landeshauptstadt Dresden</placeName>
-               <placeName type="legacy-name-merge">Kreisfreie Stadt Dresden</placeName>
-               <desc type="entity_type">P.PPLA</desc>
-               <desc type="entity_type_id">1108</desc>
+            <place xml:id="pmb168">
+               <placeName>Berlin</placeName>
+               <placeName type="alternative-name">Hauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Barlīn</placeName>
+               <placeName type="alternative-name">Reichshauptstadt Berlin</placeName>
+               <placeName type="alternative-name">Berolino</placeName>
+               <placeName type="legacy-name-merge">B-n</placeName>
+               <desc type="entity_type">P.PPLC</desc>
+               <desc type="entity_type_id">1103</desc>
                <location type="coords">
-                  <geo>51,0833 13,7666</geo>
+                  <geo>52,52437 13,41053</geo>
                </location>
                <location type="located_in_place">
                   <placeName ref="pmb151">Deutschland</placeName>
                   <geo>51,5 10,5</geo>
                </location>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1731</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4012995-0</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
                <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb866.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/866/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39739/</idno>
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
                <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb866.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64187/</idno>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2935020/</idno>
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
                <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb866</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/90550/</idno>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2935022/</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Dresden</idno>
+                  >https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
                <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb866.html</idno>
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb866.html</idno>
-            </place>
-            <place xml:id="pmb864">
-               <placeName>Leipzig</placeName>
-               <placeName type="alternative-name">Gross-Leipzig</placeName>
-               <desc type="entity_type">P.PPLA3</desc>
-               <desc type="entity_type_id">1128</desc>
-               <location type="coords">
-                  <geo>51,33962 12,37129</geo>
-               </location>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2079</idno>
-               <idno type="URL" subtype="geonames">https://sws.geonames.org/2879139/</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb864.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/864/</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44885/</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4035206-7</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb864.html</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/orte/pmb864</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Leipzig</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb864.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb864.html</idno>
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
                <figure>
                   <graphic
-                     url="https://iiif.onb.ac.at/images/AKON/AK073_200/200/full/,600/0/native.jpg"/>
+                     url="https://iiif.onb.ac.at/images/AKON/AK113_515/515/full/,600/0/native.jpg"/>
                </figure>
             </place>
          </listPlace>
          <listOrg>
-            <org xml:id="pmb29771">
-               <orgName>E. Pierson’s Verlag</orgName>
+            <org xml:id="pmb29639">
+               <orgName>S. Fischer Verlag</orgName>
                <desc type="entity_type">Verlag</desc>
                <desc type="entity_type_id">975</desc>
                <location type="located_in_place">
-                  <placeName ref="pmb866">Dresden</placeName>
-                  <geo>51,0833 13,7666</geo>
-                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1731</idno>
-                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4012995-0</idno>
+                  <placeName ref="pmb146">Frankfurt am Main</placeName>
+                  <geo>50,11552 8,68417</geo>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2925533/</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1794</idno>
                   <idno type="URL" subtype="schnitzler-bahr"
-                     >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb866.html</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/866/</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39739/</idno>
+                     >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb146.html</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/146/</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/46955/</idno>
+                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4018118-2</idno>
                   <idno type="URL" subtype="schnitzler-briefe"
-                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb866.html</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64187/</idno>
-                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2935020/</idno>
+                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb146.html</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64181/</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64493/</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64501/</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/64503/</idno>
                   <idno type="URL" subtype="kraus"
-                     >https://kraus.wienbibliothek.at/register/orte/pmb866</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/90550/</idno>
-                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2935022/</idno>
-                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Dresden</idno>
+                     >https://kraus.wienbibliothek.at/register/orte/pmb146</idno>
+                  <idno type="URL" subtype="wikipedia"
+                     >https://de.wikipedia.org/wiki/Frankfurt_am_Main</idno>
                   <idno type="URL" subtype="schnitzler-interviews"
-                     >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb866.html</idno>
+                     >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb146.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch"
-                     >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb866.html</idno>
+                     >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb146.html</idno>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb864">Leipzig</placeName>
-                  <geo>51,33962 12,37129</geo>
-                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2079</idno>
-                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2879139/</idno>
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
                   <idno type="URL" subtype="schnitzler-bahr"
-                     >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb864.html</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/864/</idno>
-                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44885/</idno>
-                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4035206-7</idno>
+                     >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
                   <idno type="URL" subtype="schnitzler-briefe"
-                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb864.html</idno>
+                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
                   <idno type="URL" subtype="kraus"
-                     >https://kraus.wienbibliothek.at/register/orte/pmb864</idno>
-                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Leipzig</idno>
+                     >https://kraus.wienbibliothek.at/register/orte/pmb168</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
                   <idno type="URL" subtype="schnitzler-interviews"
-                     >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb864.html</idno>
+                     >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
                   <idno type="URL" subtype="schnitzler-tagebuch"
-                     >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb864.html</idno>
+                     >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb659">Bülowstraße</placeName>
+                  <geo>52,49737 13,36385</geo>
+                  <idno type="URL" subtype="schnitzler-bahr"
+                     >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb659.html</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/659/</idno>
+                  <idno type="URL" subtype="schnitzler-briefe"
+                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb659.html</idno>
+                  <idno type="URL" subtype="kraus"
+                     >https://kraus.wienbibliothek.at/register/orte/pmb659</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92181/</idno>
+                  <idno type="URL" subtype="schnitzler-interviews"
+                     >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb659.html</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch"
+                     >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb659.html</idno>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb359">Köthenerstraße</placeName>
+                  <geo>52,506944 13,377222</geo>
+                  <idno type="URL" subtype="schnitzler-bahr"
+                     >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb359.html</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/359/</idno>
+                  <idno type="URL" subtype="schnitzler-briefe"
+                     >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb359.html</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1796753</idno>
+                  <idno type="URL" subtype="wikipedia"
+                     >https://de.wikipedia.org/wiki/K%C3%B6thener_Stra%C3%9Fe</idno>
+                  <idno type="URL" subtype="schnitzler-interviews"
+                     >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb359.html</idno>
                </location>
                <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29771.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29771/</idno>
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29639.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29639/</idno>
                <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29771.html</idno>
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29639.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/institutionen/pmb29639</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q481576</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/S._Fischer_Verlag</idno>
                <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb29771.html</idno>
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb29639.html</idno>
+               <note type="apis_dates">
+                  <date notBefore="1886-01-01" when="1886-07-02">1886</date>
+               </note>
             </org>
          </listOrg>
       </back>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L00320"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03600"
    xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Arthur Schnitzler: Widmungsexemplar Das Märchen für Hugo von
-               Hofmannsthal, [8. 5.?] 1894</title>
+            <title level="a">Arthur Schnitzler: Widmungsexemplar Das Märchen für Felix Salten,
+               8. 5. 1894</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
-               <name>Susen, Gerd-Hermann</name>
+               <name>Untner, Laura</name>
             </editor>
             <funder>
                <name>FWF - Der Wissenschaftsfonds</name>
@@ -30,7 +30,7 @@
             <respStmt>
                <resp>Transkription und Kommentierung</resp>
                <name>Müller, Martin Anton</name>
-               <name>Susen, Gerd-Hermann</name>
+               <name>Untner, Laura</name>
             </respStmt>
          </editionStmt>
          <publicationStmt>
@@ -63,7 +63,7 @@
                      beschränken.</p>
                </licence>
             </availability>
-            <idno type="handle">https://hdl.handle.net/21.11115/0000-000E-6C61-C</idno>
+            <idno type="handle">XXXX</idno>
          </publicationStmt>
          <seriesStmt>
             <p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
@@ -71,20 +71,20 @@
          <sourceDesc>
             <listWit>
                <witness n="1">
-                  <objectType corresp="widmung" ana="widmung_vortitel"/>
+                  <objectType corresp="widmung" ana="widmung_vorsatzblatt"/>
                   <msDesc>
                      <msIdentifier>
-                        <country>D</country>
-                        <settlement>Frankfurt am Main</settlement>
-                        <repository>Freies Deutsches Hochstift</repository>
-                        <idno>FDH 3228</idno>
+                        <country>A</country>
+                        <settlement>Wien</settlement>
+                        <repository>Wienbibliothek im Rathaus</repository>
+                        <idno>A-57094/2.Ex., DS-2018-9503</idno>
                      </msIdentifier>
                      <physDesc>
                         <objectDesc>
                            <supportDesc>
                               <extent>
                                  <measure unit="widmung" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="38"/>
+                                 <measure unit="zeichenanzahl" quantity="69"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -95,26 +95,6 @@
                   </msDesc>
                </witness>
             </listWit>
-            <listBibl>
-               <biblStruct>
-                  <monogr>
-                     <author ref="#pmb11740">Hofmannsthal, Hugo von</author>
-                     <title level="m">Bibliothek</title>
-                     <editor>Hg. Ellen Ritter † in Zusammenarbeit mit Dalia Bukauskaité und Konrad
-                        Heumann</editor>
-                     <imprint>
-                        <date when="2011">2011</date>
-                        <pubPlace>Frankfurt am Main</pubPlace>
-                        <publisher>S. Fischer</publisher>
-                     </imprint>
-                     <biblScope unit="pp">604–605</biblScope>
-                  </monogr>
-                  <series>
-                     <title level="s">Sämtliche Werke. Kritische Ausgabe</title>
-                     <biblScope unit="vol">XL</biblScope>
-                  </series>
-               </biblStruct>
-            </listBibl>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
@@ -124,57 +104,38 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+               <date when="1894-05-08" n="03">8. 5. 94</date>
                <placeName ref="#pmb50">Wien</placeName>
-               <date when="1894-05-08" n="02">[8. 5.?] 1894</date>
             </correspAction>
             <correspAction type="received">
-               <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
-               <date evidence="conjecture" notBefore="1894-05-08" notAfter="1894-05-11">[8. 5. 1894
-                  – 11. 5. 1894?]</date>
+               <persName ref="#pmb2167">Salten, Felix</persName>
             </correspAction>
-            <correspContext>
-               <ref type="belongsToCorrespondence" target="correspondence_11740">Hofmannsthal, Hugo
-                  von</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L00319">Schnitzler an
-                  Bahr, [5. 5.?] 1894</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L00321">Liliencron an
-                  Schnitzler, 7. 5. 1894</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence"
-                  source="correspondence_11740" target="L00313">Hofmannsthal an Schnitzler,
-                  [7. 4. 1894]</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11740"
-                  target="L00324">Schnitzler an Hofmannsthal, [15. 5. 1894?]</ref>
-            </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="approved">
-         <change who="MAM" when="2020-09-17">Angelegt aus Buchausgabe</change>
-         <change who="MAM" when="2020-09-22">Index check</change>
-         <change who="MAM" when="2020-09-29">Durchsicht mit Faksimile</change>
-         <change who="GHS" when="2020-10-23">finalisiert</change>
-         <change who="MAM" when="2024-01-29">umdatiert</change>
+      <revisionDesc status="proposed">
+         <change who="MAM" when="2024-01-29">Export aus Liste der Wienbibliothek</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile>
-      <graphic facs="3228_Schnitzler_Märchen_001"/>
-      <graphic facs="3228_Schnitzler_Märchen_002"/>
-   </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1">
             <p>
-               <pb facs="3228_Schnitzler_Märchen_001"/>Meinem lieben Hugo</p>
-            <closer>
-               <space unit="chars" quantity="5"/>herzlichſt<lb/>
-               <signed>ArthSch</signed>
+               <pb facs=""/>Meinem lieben Felix Salten</p>
+            <closer>herzlichst<lb/>
+               <signed>Arthur Schnitzler</signed>
             </closer>
+            <postscript>
+               <dateline>
+                  <rs type="place" ref="#pmb50">Wien</rs>, <date when="1894-05-08"
+                  >8. 5. 94</date>.</dateline>
+            </postscript>
          </div>
          <div type="writingSession" n="2">
             <p>
                <space dim="vertical" unit="line" quantity="1"/>
             </p>
             <p rend="center">
-               <pb facs="3228_Schnitzler_Märchen_002"/>
+               <pb facs=""/>
                <hi rend="pre-print">
                   <rs type="work" ref="#pmb29823">Das Märchen</rs>.</hi>
             </p>
@@ -207,12 +168,10 @@
             <p rend="center">
                <hi rend="pre-print">
                   <date>
-                     <anchor type="commentary" xml:id="K_L00320-1"/>1894<note xml:id="K_L00320-1h"
+                     <anchor type="commentary" xml:id="K_L03600-1"/>1894<note xml:id="K_L03600-1h"
                         type="commentary">am <date>5. 5. 1894</date> vom <rs type="work"
                            ref="#pmb47979">Börsenblatt für den deutschen Buchhandel</rs> als
-                        Neuerscheinung gemeldet. Die Datierung folgt jener der Widmung an <rs
-                           type="person" ref="#pmb2167">Felix Salten</rs> vom <ref
-                           type="schnitzler-briefe" target="L03600" subtype="date-only"/>.</note>
+                        Neuerscheinung gemeldet.</note>
                   </date>.</hi>
             </p>
          </div>
@@ -265,57 +224,6 @@
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
-            <person xml:id="pmb11740">
-               <persName>
-                  <forename>Hugo von</forename>
-                  <surname>Hofmannsthal</surname>
-               </persName>
-               <persName type="person_pseudonym">Loris</persName>
-               <persName type="person_pseudonym">Theophil Morren</persName>
-               <persName type="namensvariante">Hofmannsthal, Hugo</persName>
-               <birth>
-                  <date when="1874-02-01">1874-02-01</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,2066 16,37341</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1929-07-15">1929-07-15</date>
-                  <settlement ref="pmb173">
-                     <placeName type="pref">Rodaun</placeName>
-                     <location>
-                        <geo>48,132793312328 16,256152195922</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch"
-                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_16293</idno>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118552759</idno>
-               <idno type="URL" subtype="schnitzler-bahr"
-                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb11740.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/11740/</idno>
-               <idno type="URL" subtype="schnitzler-briefe"
-                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb11740.html</idno>
-               <idno type="URL" subtype="kraus"
-                  >https://kraus.wienbibliothek.at/register/personen/pmb11740</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp46353</idno>
-               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00281a55</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q51513</idno>
-               <idno type="URL" subtype="wikipedia"
-                  >https://de.wikipedia.org/wiki/Hugo_von_Hofmannsthal</idno>
-               <idno type="URL" subtype="dx">https://dx.doi.org/10.1553/0x0001d1cc</idno>
-               <idno type="URL" subtype="amp">https://amp.acdh.oeaw.ac.at/amp_person_42.html</idno>
-               <idno type="URL" subtype="schnitzler-kino"
-                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb11740.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews"
-                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb11740.html</idno>
-               <idno type="URL" subtype="">https://hermanbahrtextverzeichnis/HB-tv_4864_p17</idno>
-            </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
@@ -326,6 +234,7 @@
                <persName type="person_pseudonym">Sascha</persName>
                <persName type="person_pseudonym">Martin Finder</persName>
                <persName type="person_pseudonym">Karl Heinrich</persName>
+               <persName type="legacy-name-merge">Salten, Felix</persName>
                <birth>
                   <date when="1869-09-06">06.09.1869</date>
                   <settlement ref="pmb43471">
@@ -368,6 +277,8 @@
                   >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="schnitzler-interviews"
                   >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162012/</idno>
+               <idno type="URL" subtype="">https://hermanbahrtextverzeichnis/HB-TSN_3793</idno>
             </person>
          </listPerson>
          <listBibl>
