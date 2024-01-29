@@ -1472,8 +1472,10 @@
    </xs:element>
    <xs:element name="graphic">
       <xs:complexType>
-         <xs:attribute name="facs" use="required"/>
+         <xs:attribute name="facs" use="optional"/>
+         <xs:attribute name="url" use="optional"/>
          <xs:attribute name="width" type="xs:NMTOKEN" use="optional"/>
+         <xs:assert test="(@facs or @url) or (@facs and @url)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="address">
@@ -2138,6 +2140,7 @@
             <xs:element maxOccurs="unbounded" minOccurs="0" ref="tei:idno"/>
             <xs:element minOccurs="0" maxOccurs="1" ref="tei:listBibl"/>
             <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:note"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="tei:figure"/>
          </xs:all>
          <xs:attribute ref="xml:id" use="required"/>
       </xs:complexType>
