@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -9,7 +9,7 @@
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und
                                     Autoren</title>
-            <title level="a">Arthur Schnitzler: Widmungsexemplar Dämmerseelen für Felix Salten, 2.&#160;3.&#160;1907</title>
+            <title level="a">Arthur Schnitzler: Widmungsexemplar Dämmerseelen für Felix Salten, 2. 3. 1907</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -115,12 +115,25 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1907-03-02" n="03">2.&#160;3.&#160;1907</date>
+               <date when="1907-03-02" n="03">2. 3. 1907</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2167">Salten, Felix</persName>
             </correspAction>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L01661">Schnitzler an Hofmannsthal, [2.?] 3. 1907</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L03046">Salten an Schnitzler, 9. 3. 1907</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03437">Salten an Schnitzler, 2[1]. 1. 1907</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2167"
+                    target="L03046">Salten an Schnitzler, 9. 3. 1907</ref>
+            </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
@@ -131,16 +144,17 @@
    <text>
       <body>
          <div type="writingSession" n="1">
-            
-               <p><pb facs=""/>Meinem lieben Felix Salten</p>
-               <closer>
-                  <signed>Arthur</signed>
-               </closer>
-               <postscript><dateline>
+            <p>
+               <pb facs=""/>Meinem lieben Felix Salten</p>
+            <closer>
+               <signed>Arthur</signed>
+            </closer>
+            <postscript>
+               <dateline>
                   <rs type="place" ref="#pmb50">Wien</rs>
                   <space unit="chars" quantity="1"/>
-                  <date when="1907-03-02">2. 3. 907</date>.</dateline></postscript>
-            
+                  <date when="1907-03-02">2. 3. 907</date>.</dateline>
+            </postscript>
          </div>
          <div type="writingSession" n="2">
             <p>
