@@ -5485,25 +5485,25 @@
          <xsl:when test="$rend = 'bleistift'">
             <xsl:text>mit Bleistift </xsl:text>
          </xsl:when>
-         <xsl:when test="$rend = 'roter_buntstift'">
+         <xsl:when test="$rend = 'roter-buntstift'">
             <xsl:text>mit rotem Buntstift </xsl:text>
          </xsl:when>
-         <xsl:when test="$rend = 'blauer_buntstift'">
+         <xsl:when test="$rend = 'blauer-buntstift'">
             <xsl:text>mit blauem Buntstift </xsl:text>
          </xsl:when>
-         <xsl:when test="$rend = 'gruener_buntstift'">
+         <xsl:when test="$rend = 'gruener-buntstift'">
             <xsl:text>mit grünem Buntstift </xsl:text>
          </xsl:when>
-         <xsl:when test="$rend = 'schwarze_tinte'">
+         <xsl:when test="$rend = 'schwarze-tinte'">
             <xsl:text>mit schwarzer Tinte </xsl:text>
          </xsl:when>
-         <xsl:when test="$rend = 'blaue_tinte'">
+         <xsl:when test="$rend = 'blaue-tinte'">
             <xsl:text>mit blauer Tinte </xsl:text>
          </xsl:when>
-         <xsl:when test="$rend = 'gruene_tinte'">
+         <xsl:when test="$rend = 'gruene-tinte'">
             <xsl:text>mit grüner Tinte </xsl:text>
          </xsl:when>
-         <xsl:when test="$rend = 'rote_tinte'">
+         <xsl:when test="$rend = 'rote-tinte'">
             <xsl:text>mit roter Tinte </xsl:text>
          </xsl:when>
       </xsl:choose>

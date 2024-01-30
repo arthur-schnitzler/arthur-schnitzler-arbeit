@@ -15,37 +15,37 @@
                 </xsl:when>
                 <xsl:when test="starts-with(tei:desc, 'mit rotem Buntstift ')">
                     <xsl:attribute name="rend">
-                        <xsl:text>roter_buntstift</xsl:text>
+                        <xsl:text>roter-buntstift</xsl:text>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:when test="starts-with(tei:desc, 'mit blauem Buntstift ')">
                     <xsl:attribute name="rend">
-                        <xsl:text>blauer_buntstift</xsl:text>
+                        <xsl:text>blauer-buntstift</xsl:text>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:when test="starts-with(tei:desc, 'mit grünem Buntstift ')">
                     <xsl:attribute name="rend">
-                        <xsl:text>gruener_buntstift</xsl:text>
+                        <xsl:text>gruener-buntstift</xsl:text>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:when test="starts-with(tei:desc, 'mit schwarzer Tinte ')">
                     <xsl:attribute name="rend">
-                        <xsl:text>schwarze_tinte</xsl:text>
+                        <xsl:text>schwarze-tinte</xsl:text>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:when test="starts-with(tei:desc, 'mit blauer Tinte ')">
                     <xsl:attribute name="rend">
-                        <xsl:text>blaue_tinte</xsl:text>
+                        <xsl:text>blaue-tinte</xsl:text>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:when test="starts-with(tei:desc, 'mit grüner Tinte ')">
                     <xsl:attribute name="rend">
-                        <xsl:text>grüne_tinte</xsl:text>
+                        <xsl:text>grüne-tinte</xsl:text>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:when test="starts-with(tei:desc, 'mit roter Tinte ')">
                     <xsl:attribute name="rend">
-                        <xsl:text>rote_tinte</xsl:text>
+                        <xsl:text>rote-tinte</xsl:text>
                     </xsl:attribute>
                 </xsl:when>
             </xsl:choose>
