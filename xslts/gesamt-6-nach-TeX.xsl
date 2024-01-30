@@ -1473,7 +1473,21 @@
          </xsl:when>
       </xsl:choose>
    </xsl:template>
-   <xsl:template match="typeDesc">
+   <xsl:template match="*:typeDesc">
+      <xsl:choose>
+         <xsl:when test="*:typeNote/@medium='schreibmaschine'">
+            <xsl:text>Schreibmaschine</xsl:text>
+         </xsl:when>
+         <xsl:when test="*:typeNote/@medium='maschinell'">
+            <xsl:text>maschinell</xsl:text>
+         </xsl:when>
+         <xsl:when test="*:typeNote/@medium='druck'">
+            <xsl:text>Druck</xsl:text>
+         </xsl:when>
+         <xsl:when test="*:typeNote/@medium='anderes'">
+            <xsl:apply-templates/>
+         </xsl:when>
+      </xsl:choose>
       <xsl:apply-templates/>
    </xsl:template>
    <xsl:template match="typeDesc/p">
