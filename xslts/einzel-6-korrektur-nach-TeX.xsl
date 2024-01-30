@@ -1624,32 +1624,32 @@
          <xsl:when test="$entry/@medium = 'bleistift'">
             <xsl:text>Bleistift</xsl:text>
          </xsl:when>
-         <xsl:when test="$entry/@medium = 'roter_buntstift'">
+         <xsl:when test="$entry/@medium = 'roter-buntstift'">
             <xsl:text>roter Buntstift</xsl:text>
          </xsl:when>
-         <xsl:when test="$entry/@medium = 'blauer_buntstift'">
+         <xsl:when test="$entry/@medium = 'blauer-buntstift'">
             <xsl:text>blauer Buntstift</xsl:text>
          </xsl:when>
-         <xsl:when test="$entry/@medium = 'gruener_buntstift'">
+         <xsl:when test="$entry/@medium = 'gruener-buntstift'">
             <xsl:text>grüner Buntstift</xsl:text>
          </xsl:when>
-         <xsl:when test="$entry/@medium = 'schwarze_tinte'">
+         <xsl:when test="$entry/@medium = 'schwarze-tinte'">
             <xsl:text>schwarze Tinte</xsl:text>
          </xsl:when>
-         <xsl:when test="$entry/@medium = 'blaue_tinte'">
+         <xsl:when test="$entry/@medium = 'blaue-tinte'">
             <xsl:text>blaue Tinte</xsl:text>
          </xsl:when>
-         <xsl:when test="$entry/@medium = 'gruene_tinte'">
+         <xsl:when test="$entry/@medium = 'gruene-tinte'">
             <xsl:text>grüne Tinte</xsl:text>
          </xsl:when>
-         <xsl:when test="$entry/@medium = 'rote_tinte'">
+         <xsl:when test="$entry/@medium = 'rote-tinte'">
             <xsl:text>rote Tinte</xsl:text>
          </xsl:when>
          <xsl:when test="$entry/@medium = 'anderes'">
             <xsl:text>anderes Schreibmittel</xsl:text>
          </xsl:when>
       </xsl:choose>
-      <xsl:if test="not($entry/@style = 'nicht_anzuwenden')">
+      <xsl:if test="not($entry/@style = 'nicht-anzuwenden')">
          <xsl:text>, </xsl:text>
       </xsl:if>
       <xsl:choose>
@@ -4480,7 +4480,7 @@
       </xsl:choose>
    </xsl:template>
    <!-- Kapitälchen -->
-   <xsl:template match="hi[@rend = 'small_caps']">
+   <xsl:template match="hi[@rend = 'small-caps']">
       <xsl:text>\textsc{</xsl:text>
       <xsl:apply-templates/>
       <xsl:text>}</xsl:text>
@@ -4503,7 +4503,7 @@
       </xsl:choose>
    </xsl:template>
    <!-- Gesperrter Text -->
-   <xsl:template match="hi[@rend = 'spaced_out' and not(child::hi)]">
+   <xsl:template match="hi[@rend = 'spaced-out' and not(child::hi)]">
       <xsl:choose>
          <xsl:when test="not(child::*[1])">
             <xsl:text>\so{</xsl:text>
