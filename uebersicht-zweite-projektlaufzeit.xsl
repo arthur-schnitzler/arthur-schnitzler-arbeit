@@ -58,12 +58,15 @@
                             <xsl:value-of select="tei:TEI/@xml:id"/>
                             <xsl:text>&#xa;</xsl:text>
                         </xsl:when>
-                        <xsl:when
-                            test="//tei:author[@ref = '#pmb2167'] and not(boolean(//tei:revisionDesc/tei:change[@who = 'LU'][contains(., 'Durchsicht')]))">
-                            <xsl:value-of select="tei:TEI/@xml:id"/>
-                            <xsl:text>&#xa;</xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise/>
+                        <xsl:otherwise>
+                            <xsl:choose>
+                                <xsl:when
+                                    test="//tei:author[@ref = '#pmb2167'] and not(boolean(//tei:revisionDesc/tei:change[@who = 'LU'][contains(., 'Durchsicht')]))">
+                                    <xsl:value-of select="tei:TEI/@xml:id"/>
+                                    <xsl:text>&#xa;</xsl:text>
+                                </xsl:when>
+                            </xsl:choose>
+                        </xsl:otherwise>
                     </xsl:choose>
                 </xsl:if>
             </xsl:for-each>
