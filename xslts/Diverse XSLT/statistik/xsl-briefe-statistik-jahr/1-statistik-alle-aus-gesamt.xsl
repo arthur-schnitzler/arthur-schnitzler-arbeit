@@ -7,8 +7,10 @@
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:template match="root">
         <xsl:element name="root">
+            <!--<xsl:for-each
+                select="descendant::correspDesc[correspAction[last()]/persName/@ref='#pmb2121']/correspContext/ref[@type = 'belongsToCorrespondence']">-->
             <xsl:for-each
-                select="descendant::correspDesc[correspAction[last()]/persName/@ref='#pmb2121']/correspContext/ref[@type = 'belongsToCorrespondence']">
+                select="descendant::correspDesc/correspContext/ref[@type = 'belongsToCorrespondence']">
                 <xsl:variable name="correspActionSentDate"
                     select="ancestor::correspDesc[1]/correspAction[@type = 'sent']/date" as="node()"/>
                 <xsl:element name="correspondence">
@@ -24,6 +26,10 @@
                             <xsl:when test="$correspActionSentDate/@notBefore">
                                 <xsl:value-of
                                     select="substring($correspActionSentDate/@notBefore, 1, 4)"/>
+                            </xsl:when>
+                            <xsl:when test="$correspActionSentDate/@from">
+                                <xsl:value-of select="substring($correspActionSentDate/@from, 1, 4)"
+                                />
                             </xsl:when>
                             <xsl:when test="$correspActionSentDate/@notAfter">
                                 <xsl:value-of
