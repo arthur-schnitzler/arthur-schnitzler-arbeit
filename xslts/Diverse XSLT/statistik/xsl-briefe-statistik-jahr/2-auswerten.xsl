@@ -10,7 +10,7 @@
      <xsl:param name="root" as="node()"/>
      <xsl:param name="target" as="xs:string"/>
      <xsl:param name="jahr"/>
-     <xsl:variable name="zaehler" select="count($root/correspondence[@target=$target and @jahr=$jahr])"/>
+     <xsl:variable name="zaehler" select="count($root/correspondence[@target=$target and @jahr=$jahr])" as="xs:integer"/>
      <xsl:if test="$zaehler &gt; 0">
          <xsl:value-of select="$zaehler"/>
      </xsl:if>

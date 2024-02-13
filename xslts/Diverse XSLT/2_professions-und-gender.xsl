@@ -9,15 +9,21 @@
     </xsl:template>
     
     <!-- Match each row element and output CSV lines -->
-    <xsl:template match="row">
+    <xsl:template match="row[not(name = preceding-sibling::row/name)]">
         <!-- Extract values from the XML elements -->
         <xsl:variable name="id" select="id"/>
-        <xsl:variable name="name" select="name"/>
-        <xsl:variable name="duplicate" select="duplicate"/>
-        
+        <xsl:variable name="current-name" select="name"/>
+        <xsl:variable name="duplicate">
+        <xsl:for-each select="ancestor::root/row[child::*:name=$current-name and not(child::*:id=$id)]">
+            <xsl:value-of select="child::*:id"/>
+            <xsl:if test="not(position()=last())">
+                <xsl:text>|</xsl:text>
+            </xsl:if>
+        </xsl:for-each>     
+        </xsl:variable>
         <!-- Output CSV line -->
-        <xsl:value-of select="concat($id, ',', $name, ',', $duplicate)"/>
+        <xsl:value-of select="concat($id, ',', $current-name, ',', $duplicate)"/>
         <xsl:text>&#10;</xsl:text>
     </xsl:template>
-    
+    <xsl:template match="row[(name = preceding-sibling::row/name)]"/>
 </xsl:stylesheet>
