@@ -1555,8 +1555,14 @@
                <xsl:variable name="corespi-name"
                   select="key('person-lookup', ($corespi[1]), $persons)[1]/persName[1]" as="node()?"/>
                <xsl:text>Handschrift </xsl:text>
-               <xsl:value-of
-                  select="concat($corespi-name/forename, ' ', $corespi-name/surname)"/>
+               <xsl:choose>
+                  <xsl:when test=". ='schreibkraft'">
+                     <xsl:text>Schreibkraft</xsl:text>
+                  </xsl:when>
+                  <xsl:otherwise>
+                     <xsl:value-of select="concat($corespi-name/forename, ' ', $corespi-name/surname)"/>
+                  </xsl:otherwise>
+               </xsl:choose>
                <xsl:text>: </xsl:text>
                <xsl:choose>
                   <xsl:when test="count($handDesc-v/handNote[@corresp = $corespi]) = 1">
