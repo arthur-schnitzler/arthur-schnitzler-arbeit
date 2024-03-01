@@ -111,7 +111,7 @@
     
     <xsl:template match="tei:listPlace">
         <xsl:variable name="listenname" select="name()" as="xs:string"/>
-        <xsl:result-document href="listplace.xml">
+        <xsl:result-document href="../indices/listplace.xml">
             <xsl:element name="TEI" namespace="http://www.tei-c.org/ns/1.0">
                 <xsl:call-template name="teiheader">
                     <xsl:with-param name="listenname" select="$listenname"/>
@@ -153,7 +153,7 @@
     </xsl:template>
     <xsl:template match="tei:listPerson">
         <xsl:variable name="listenname" select="name()" as="xs:string"/>
-        <xsl:result-document href="listperson.xml">
+        <xsl:result-document href="../indices/listperson.xml">
             <xsl:element name="TEI" namespace="http://www.tei-c.org/ns/1.0">
                 <xsl:call-template name="teiheader">
                     <xsl:with-param name="listenname" select="$listenname"/>
@@ -195,7 +195,7 @@
     </xsl:template>
     <xsl:template match="tei:listOrg">
         <xsl:variable name="listenname" select="name()" as="xs:string"/>
-        <xsl:result-document href="listorg.xml">
+        <xsl:result-document href="../indices/listorg.xml">
             <xsl:element name="TEI" namespace="http://www.tei-c.org/ns/1.0">
                 <xsl:call-template name="teiheader">
                     <xsl:with-param name="listenname" select="$listenname"/>
@@ -237,7 +237,7 @@
     </xsl:template>
     <xsl:template match="tei:listBibl">
         <xsl:variable name="listenname" select="name()" as="xs:string"/>
-        <xsl:result-document href="listwork.xml">
+        <xsl:result-document href="../indices/listwork.xml">
             <xsl:element name="TEI" namespace="http://www.tei-c.org/ns/1.0">
                 <xsl:call-template name="teiheader">
                     <xsl:with-param name="listenname" select="$listenname"/>
