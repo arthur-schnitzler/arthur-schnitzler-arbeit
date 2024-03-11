@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="mpxml2tei">
+
+    <property name="collection.id" value="${COL_ID}"/>
+
+    <property name="tei.dir" value="./tei/${collection.id}"/>
+    <delete dir="${tei.dir}"/>
+
+    <property name="source.dir" value="./mets/${collection.id}"/>
+
+    <property name="img" value="./img"/>
+    <delete dir="${img}"/>
+    <mkdir dir="${img}"/>
+
+    <move todir="${img}">
+        <fileset dir="${source.dir}">
+            <include name="*_image_name.xml"/>
+        </fileset>
+        <mapper type="glob" from="*_image_name.xml" to="image_name.xml"/>
+    </move>
+
+    <property name="tmpDir" value="./tmp"/>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+    <property name="lib.dir" value="lib"/>
+
+    <!-- first phase with source.dir as basedir -->
+    <xslt style="./transkribus-transformationen_action/page2tei-0.xsl" destdir="${tmpDir}"
+        basedir="${source.dir}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <param name="col-id" expression="${collection.id}"/>
+        <fileset dir="${source.dir}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*_mets.xml" to="*_tei.xml"/>
+    </xslt>
+    <move todir="${tei.dir}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+    <xslt style="./transkribus-transformationen_action/replace_seite-esc-lb-continued.xsl"
+        destdir="${tmpDir}" basedir="${tei.dir}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <param name="col-id" expression="${collection.id}"/>
+        <fileset dir="${tei.dir}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+    <move todir="${tei.dir}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+    <!-- split files -->
+    <property name="splitted-files" value="./splitted-files"/>
+    <delete dir="${splitted-files}"/>
+    <mkdir dir="${splitted-files}"/>
+
+    <xslt style="./transkribus-transformationen_action/split-files.xsl" destdir="${tmpDir}"
+        basedir="${tei.dir}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <param name="col-id" expression="${collection.id}"/>
+        <fileset dir="${tei.dir}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+
+    <xslt style="./transkribus-transformationen_action/strip-letter.xsl" destdir="${tmpDir}"
+        basedir="${splitted-files}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <fileset dir="${splitted-files}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+    <move todir="${splitted-files}">
+        <fileset dir="${tmpDir}">
+            <exclude name="*_tei.xml"/>
+        </fileset>
+    </move>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+    <xslt style="./transkribus-transformationen_action/p-correction1.xsl" destdir="${tmpDir}"
+        basedir="${splitted-files}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <fileset dir="${splitted-files}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+    <move todir="${splitted-files}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+    <xslt style="./transkribus-transformationen_action/p-correction2.xsl" destdir="${tmpDir}"
+        basedir="${splitted-files}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <fileset dir="${splitted-files}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+    <move todir="${splitted-files}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+    <xslt style="./transkribus-transformationen_action/de-escape.xsl" destdir="${tmpDir}"
+        basedir="${splitted-files}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <fileset dir="${splitted-files}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+    <move todir="${splitted-files}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+   <xslt style="./transkribus-transformationen_action/rautePMBstattRaute.xsl" destdir="${tmpDir}"
+        basedir="${splitted-files}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <fileset dir="${splitted-files}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+    <move todir="${splitted-files}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+    <xslt style="./transkribus-transformationen_action/facs_transkribus-teil-weg.xsl"
+        destdir="${tmpDir}" basedir="${splitted-files}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <fileset dir="${splitted-files}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+    <move todir="${splitted-files}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+
+    <xslt style="./transkribus-transformationen_action/backElement-0.xsl" destdir="${tmpDir}"
+        basedir="${splitted-files}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <fileset dir="${splitted-files}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+    <move todir="${splitted-files}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+    <xslt style="./transkribus-transformationen_action/backElement-1.xsl" destdir="${tmpDir}"
+        basedir="${splitted-files}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <fileset dir="${splitted-files}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+    <move todir="${splitted-files}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+    <xslt style="./transkribus-transformationen_action/backElement-2.xsl" destdir="${tmpDir}"
+        basedir="${splitted-files}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <fileset dir="${splitted-files}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+    <move todir="${splitted-files}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    <delete dir="${tmpDir}"/>
+    <mkdir dir="${tmpDir}"/>
+
+    <xslt style="./transkribus-transformationen_action/backElement-3.xsl" destdir="${tmpDir}"
+        basedir="${splitted-files}">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="./saxon/saxon9he.jar"/>
+        <fileset dir="${splitted-files}">
+            <include name="*.xml"/>
+        </fileset>
+        <mapper type="glob" from="*.xml" to="*.xml"/>
+    </xslt>
+    <move todir="${splitted-files}">
+        <fileset dir="${tmpDir}"/>
+    </move>
+    
+    <property name="editions" value="./editions"/>
+    <move todir="${editions}">
+        <fileset dir="${splitted-files}"/>
+    </move>
+
+    <delete dir="${tmpDir}"/>
+    <delete dir="${tei.dir}"/>
+    <delete dir="${source.dir}"/>
+    <delete dir="${img}"/>
+    <delete dir="${splitted-files}"/>
+
+</project>
