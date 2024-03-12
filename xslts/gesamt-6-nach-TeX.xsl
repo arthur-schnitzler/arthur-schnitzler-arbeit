@@ -1613,6 +1613,9 @@
          <xsl:when test="$entry/@medium = 'rote-tinte'">
             <xsl:text>rote Tinte</xsl:text>
          </xsl:when>
+         <xsl:when test="$entry/@medium = 'lila-tinte'">
+            <xsl:text>lila Tinte</xsl:text>
+         </xsl:when>
          <xsl:when test="$entry/@medium = 'anderes'">
             <xsl:text>anderes Schreibmittel</xsl:text>
          </xsl:when>
@@ -5508,6 +5511,9 @@
          </xsl:when>
          <xsl:when test="$rend = 'gruene-tinte'">
             <xsl:text>mit grüner Tinte </xsl:text>
+         </xsl:when>
+         <xsl:when test="$rend = 'lila-tinte'">
+            <xsl:text>mit lila Tinte</xsl:text>
          </xsl:when>
          <xsl:when test="$rend = 'rote-tinte'">
             <xsl:text>mit roter Tinte </xsl:text>
