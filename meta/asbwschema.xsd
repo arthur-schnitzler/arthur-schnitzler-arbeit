@@ -1934,6 +1934,7 @@
             <xs:element ref="tei:del"/>
             <xs:element ref="tei:add"/>
          </xs:sequence>
+         <xs:assert test="not(descendant::tei:subst)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="orgName" type="orgAttr"/>
