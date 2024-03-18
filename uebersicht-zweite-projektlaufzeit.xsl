@@ -30,21 +30,14 @@
             <xsl:text>&#xa;</xsl:text>
             <xsl:text>Martin, diese Dokumente solltest du noch durchsehen:</xsl:text>
             <xsl:text>&#xa;</xsl:text>
-            <xsl:for-each
-                select="$editions[descendant::tei:revisionDesc[not(@status = 'approved')]]">
+            <xsl:for-each select="
+                    $editions[descendant::tei:revisionDesc[not(@status = 'approved')] and number(substring-after(descendant::tei:TEI/@xml:id, 'L0')) > 2579][not(descendant::tei:revisionDesc[child::tei:change[@who = 'MAM' and contains(., 'Durchsicht')]])
+                    and not(descendant::tei:revisionDesc[child::tei:change[@who = 'MAM' and contains(., 'Angelegt')]])]">
                 <xsl:sort select="//tei:TEI/@xml:id"/>
-                <xsl:if test="number(substring-after(//tei:TEI/@xml:id, 'L0')) > 2579">
-                    <xsl:choose>
-                        <xsl:when
-                            test="descendant::tei:revisionDesc[child::tei:change[@who = 'MAM' and contains(., 'Durchsicht')]]"/>
-                        <xsl:when
-                            test="descendant::tei:revisionDesc[child::tei:change[@who = 'MAM' and contains(., 'Angelegt')]]"/>
-                        <xsl:otherwise>
-                            <xsl:value-of select="tei:TEI/@xml:id"/>
-                            <xsl:text>&#xa;</xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:if>
+                <xsl:value-of select="position()"/>
+                <xsl:text>.) </xsl:text>
+                <xsl:value-of select="descendant::tei:TEI/@xml:id"/>
+                <xsl:text>&#xa;</xsl:text>
             </xsl:for-each>
             <xsl:text>&#xa;</xsl:text>
             <xsl:text>Laura, diese Dokumente solltest du noch durchsehen:</xsl:text>
