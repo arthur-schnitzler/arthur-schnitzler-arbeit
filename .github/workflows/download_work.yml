@@ -39,6 +39,6 @@ jobs:
     - name: Transform to TEI
       run: |
         ant -DCOL_ID=${COL_ID} -f ./build_tei.xml
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: Exported and Transformed ColId ${{ github.event.inputs.colId }}
