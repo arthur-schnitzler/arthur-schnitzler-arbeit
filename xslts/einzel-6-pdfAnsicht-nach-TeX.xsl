@@ -1859,16 +1859,16 @@
                <xsl:text>Durchschlag</xsl:text>
             </xsl:when>
             <xsl:when test="@form = 'fotografische_vervielfaeltigung'">
-               <xsl:text>Fotografische Vervielfältigung</xsl:text>
+               <xsl:text>fotografische Vervielfältigung</xsl:text>
             </xsl:when>
             <xsl:when test="@form = 'fotokopie'">
                <xsl:text>Fotokopie</xsl:text>
             </xsl:when>
             <xsl:when test="@form = 'hs_abschrift'">
-               <xsl:text>Handschriftliche Abschrift</xsl:text>
+               <xsl:text>handschriftliche Abschrift</xsl:text>
             </xsl:when>
             <xsl:when test="@form = 'ms_abschrift'">
-               <xsl:text>Maschinenschriftliche Abschrift</xsl:text>
+               <xsl:text>maschinenschriftliche Abschrift</xsl:text>
             </xsl:when>
          </xsl:choose>
       </xsl:if>
