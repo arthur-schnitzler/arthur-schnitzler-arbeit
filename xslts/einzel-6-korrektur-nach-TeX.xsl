@@ -3849,6 +3849,7 @@
       <xsl:value-of select="@id"/>
       <xsl:text>}</xsl:text>
    </xsl:template>
+   <xsl:template match="*:subst/*:del" mode="lemma"/><!-- das verhindert die Wiedergabe des gelöschten Teils von subst in einem Lemma -->
    <xsl:template
       match="note[(@type = 'textConst' or @type = 'commentary') and (ancestor::note[@type = 'footnote'])]">
       <!--     <xsl:text>\toendnotes[C]{</xsl:text>
