@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L02972"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02972"
+   xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Arthur Schnitzler an Felix Salten, 25. 3. [1902]</title>
+            <title level="a">Arthur Schnitzler an Felix Salten, 25. 3. [1902]</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -86,7 +84,7 @@
                               <extent>
                                  <measure unit="blatt" quantity="1"/>
                                  <measure unit="seite" quantity="3"/>
-                                 <measure unit="zeichenanzahl" quantity="800"/>
+                                 <measure unit="zeichenanzahl" quantity="798"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -95,8 +93,8 @@
                         </handDesc>
                         <additions>
                            <incident type="archival" rend="bleistift">
-                              <desc>von unbekannter Hand Nummerierung der Blätter des
-                                 Konvoluts: »<quote>3</quote>«–»<quote>4</quote>«</desc>
+                              <desc>von unbekannter Hand Nummerierung der Blätter des Konvoluts:
+                                    »<quote>3</quote>«–»<quote>4</quote>«</desc>
                            </incident>
                         </additions>
                      </physDesc>
@@ -123,66 +121,90 @@
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L03327">Salten an Schnitzler, [24. 3. 1902]</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L01209">Hofmannsthal an Schnitzler, 26. 3. 1902</ref>
-               <ref subtype="previous_letter"
-                    type="withinCorrespondence"
-                    source="correspondence_2167"
-                    target="L03327">Salten an Schnitzler, [24. 3. 1902]</ref>
-               <ref subtype="next_letter"
-                    type="withinCorrespondence"
-                    source="correspondence_2167"
-                    target="L02973">Schnitzler an Salten, [10. 4. 1902]</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L03327">Salten an
+                  Schnitzler, [24. 3. 1902]</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L01209">Hofmannsthal an
+                  Schnitzler, 26. 3. 1902</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence"
+                  source="correspondence_2167" target="L03327">Salten an Schnitzler,
+                  [24. 3. 1902]</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_2167"
+                  target="L02973">Schnitzler an Salten, [10. 4. 1902]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2023-03-16">Export aus Transkribus</change>
+         <change who="LU" when="2024-04-09">Durchsicht</change>
+         <change who="LU" when="2024-04-09">Index check</change>
       </revisionDesc>
    </teiHeader>
+   <facsimile>
+      <graphic url="Wienbibliothek_AS_FS_2822978"/>
+      <graphic url="Wienbibliothek_AS_FS_2822979"/>
+      <graphic url="Wienbibliothek_AS_FS_2822980"/>
+   </facsimile>
    <text>
       <body>
          <div type="writingSession" n="1">
             <opener>
                <dateline rend="right">
                   <pb facs="Wienbibliothek_AS_FS_2822978"/>
-                  <date>Dinſtag 25. 3.</date>
+                  <date when="1902-03-25">
+                     <anchor type="commentary" xml:id="K_L02972-1"/>Dinſtag 25. 3.<note
+                        type="commentary" xml:id="K_L02972-1h">Die Datierung auf das Jahr <date
+                           when="1902">1902</date> ist möglich, da nur in diesem Jahr der <date
+                           when="1902-03-25">25. 3.</date> ein Dienstag war.</note>
+                  </date>
                </dateline>
-               <!-- Datierung: nur 1902 ist der 25.3. ein Dienstag -->
             </opener>
             <p>
-               <salute>liebſter Freund,</salute> ich habe heut Nachmittg einen Theil der <anchor type="commentary" xml:id="K_L02972-1"/>Aufſätze<note type="commentary" xml:id="K_L02972-1h">
+               <salute rend="inline">liebſter Freund,</salute> ich habe <date when="1902-03-25"
+                  >heut</date>
+               <space unit="chars" quantity="1"/>
+               <time>Nachmittg</time> einen Theil der <anchor type="commentary" xml:id="K_L02972-2"
+                  />Aufſätze<note type="commentary" xml:id="K_L02972-2h">
                   <rs type="person" ref="#pmb2167">Salten</rs> plante eine Zusammenstellung seiner
-                  kritischen Zeitungsarbeiten zu publizieren, <ref type="schnitzler-tagebuch" target="1902-03-30" subtype="see"/>. Dazu kam es nicht.</note> geleſen,
-               darunter die zwei großen, Sie wiſſen wie <add place="above">ſchon</add> beträchtlich
-               meine Schätzung bisher geweſen iſt, aber ich ka<c rendition="#gemination-n"/> Sie
-               verſichern, die Sachen ſtehen auf einem noch höhern Niveau als wir geglaubt haben.
-               Nebenbei <pb facs="Wienbibliothek_AS_FS_2822979"/>– das wird hoffentlich dem äußern
-               Erfolg zuſtatten kommen, – ſchreiben Sie ſo (entſchuldigen Sie das Wort) amuſant, dſs
-               mir beinah die Phraſe vom »Nicht aus der Hand legen können« in die Feder gekommen
-               wäre.– </p>
+                  kritischen Zeitungsarbeiten zu publizieren, <ref type="schnitzler-tagebuch"
+                     target="1902-03-30" subtype="cf"/>. Dazu kam es jedoch nicht.</note> geleſen,
+               darunter die zwei großen, Sie wiſſen wie beträchtlich meine Schätzung <add
+                  place="above">ſchon</add> bisher geweſen iſt, aber ich ka<c
+                  rendition="#gemination-n"/> Sie verſichern, die Sachen ſtehn auf einem noch höhern
+               Niveau als wir geglaubt haben. Nebenbei <pb facs="Wienbibliothek_AS_FS_2822979"/>–
+               das wird hoffentlich dem äußern Erfolg zu ſtatten kommen, – ſchreiben Sie ſo
+               (entſchuldigen Sie das Wort) amuſant, dſs mir beinah die Phraſe vom »Nicht aus der
+               Hand legen können« in die Feder gekommen wäre.–</p>
             <p>Die Aufſätze über <hi rend="latintype">
-                  <anchor type="commentary" xml:id="K_L02972-2"/>
-                  <rs type="person" ref="#pmb105878">Strasser</rs>
-                  <note type="commentary" xml:id="K_L02972-2h">Gemeint sein dürfte: <bibl>
-                        <rs type="person" ref="#pmb2167">Felix Salten</rs>: <rs type="work" ref="#pmb145099">Secession. (Arthur Strasser)</rs>. In: <rs type="work" ref="#pmb39950">Wiener Allgemeine Zeitung</rs>, Nr. 6.313,
-                           <date>18. 3. 1899</date>, S. 2–3</bibl>.</note>
-               </hi> u <hi rend="latintype">
                   <anchor type="commentary" xml:id="K_L02972-3"/>
+                  <rs type="person" ref="#pmb105878">Strasser</rs>
+                  <note type="commentary" xml:id="K_L02972-3h">Gemeint sein dürfte: <bibl>
+                        <rs type="person" ref="#pmb2167">Felix Salten</rs>: <rs type="work"
+                           ref="#pmb145099">Secession. (Arthur Strasser)</rs>. In: <rs type="work"
+                           ref="#pmb39950">Wiener Allgemeine Zeitung</rs>, Nr. 6.313, <date
+                           when="1899-03-18">18. 3. 1899</date>, S. 2–3</bibl>.</note>
+               </hi> u <hi rend="latintype">
+                  <anchor type="commentary" xml:id="K_L02972-4"/>
                   <rs type="person" ref="#pmb43745">Tilgner</rs>
-                  <note type="commentary" xml:id="K_L02972-3h">
-                     <rs type="person" ref="#pmb2167">Salten</rs> hat mehrfach über den Bildhauer
+                  <note type="commentary" xml:id="K_L02972-4h">
+                     <rs type="person" ref="#pmb2167">Salten</rs> hatte mehrfach über den Bildhauer
                         <rs type="person" ref="#pmb43745">Viktor Tilgner</rs> geschrieben, darunter: <bibl>
-                        <rs type="person" ref="#pmb2167">Felix Salten</rs>: <rs type="work" ref="#pmb145087">Das Mozartdenkmal</rs>. In: <rs type="work" ref="#pmb35942">Moderne Rundschau</rs>, Jg. 1, Bd. 3, H. 1,
-                           <date>1. 4. 1891</date>, S. 35–36</bibl>; <bibl>
-                        <rs type="person" ref="#pmb2167">f. s.</rs>: <rs type="work" ref="#pmb145095">Victor Tilgner †</rs>. In: <rs type="work" ref="#pmb39950">Wiener Allgemeine Zeitung</rs>, Nr. 5.441,
-                           <date>17. 4. 1896</date>, S. 3</bibl>; <bibl>
-                        <rs type="person" ref="#pmb2167">f. s.</rs>: <rs type="work" ref="#pmb145091">Künstlerhaus</rs>. In: <rs type="work" ref="#pmb39950">Wiener Allgemeine Zeitung</rs>, Nr. 5.612, <date>11. 11. 1896</date>,
-                        S. 3</bibl>. </note>
+                        <rs type="person" ref="#pmb2167">Felix Salten</rs>: <rs type="work"
+                           ref="#pmb145087">Das Mozartdenkmal</rs>. In: <rs type="work"
+                           ref="#pmb35942">Moderne Rundschau</rs>, Jg. 1, Bd. 3, H. 1, <date
+                           when="1891-04-01">1. 4. 1891</date>, S. 35–36</bibl>; <bibl>
+                        <rs type="person" ref="#pmb2167">f. s.</rs>: <rs type="work"
+                           ref="#pmb145095">Victor Tilgner †</rs>. In: <rs type="work"
+                           ref="#pmb39950">Wiener Allgemeine Zeitung</rs>, Nr. 5.441, <date
+                           when="1896-04-17">17. 4. 1896</date>, S. 3</bibl>; <bibl>
+                        <rs type="person" subtype="implied" ref="#pmb2167">ders.</rs>: <rs
+                           type="work" ref="#pmb145091">Künstlerhaus</rs>. In: <rs type="work"
+                           subtype="implied" ref="#pmb39950">ebd.</rs>, Nr. 5.612, <date
+                           when="1896-11-11">11. 11. 1896</date>, S. 3</bibl>.</note>
                </hi> heben Sie vielleicht <pb facs="Wienbibliothek_AS_FS_2822980"/>beſſer für eine
-               ſpätere Sa<c rendition="#gemination-m"/>lung auf, um das »moderne <hi rend="underline" n="1">Theater</hi>« nicht zu ſtören?– </p>
-            <p>Zu überlegen, ob die Aufſätze über Literatur 48–98 und ü Theater 48–98 nicht bis auf
-               den heutigen Tag fortzuſetzen wären. (Event. als Anfang?) </p>
+               ſpätere Sa<c rendition="#gemination-m"/>lung auf, um das »moderne <hi
+                  rend="underline" n="1">Theater</hi>« nicht zu ſtören?–</p>
+            <p>Zu überlegen, ob die Aufſätze über Literatur 48–98 und ü Theater 48–98 nicht bis auf
+               den heutigen Tag fortzuſetzen wären. (Event. als Anfang?)</p>
             <closer>Auf Wiederſehen. Herzlichſt <lb/>Ihr <signed>A.</signed>
             </closer>
          </div>
@@ -194,6 +216,7 @@
                   <forename>Arthur</forename>
                   <surname>Schnitzler</surname>
                </persName>
+               <persName type="legacy-name-merge">Schnitzler, Arthur</persName>
                <birth>
                   <date when="1862-05-15">15.05.1862</date>
                   <settlement ref="pmb50">
@@ -216,28 +239,40 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis"
+                  >https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="kraus1933"
+                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis"
+                  >https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
             <person xml:id="pmb2167">
                <persName>
                   <forename>Felix</forename>
                   <surname>Salten</surname>
                </persName>
-               <persName type="person_geburtsname-vorname">Siegmund</persName>
+               <persName type="person_geburtsname_vorname">Siegmund</persName>
                <persName type="person_geburtsname_nachname">Salzmann</persName>
-               <persName type="x_zum-loschen-markiert">X</persName>
                <persName type="person_pseudonym">Sascha</persName>
                <persName type="person_pseudonym">Martin Finder</persName>
+               <persName type="person_pseudonym">Karl Heinrich</persName>
+               <persName type="legacy-name-merge">Salten, Felix</persName>
                <birth>
                   <date when="1869-09-06">06.09.1869</date>
                   <settlement ref="pmb43471">
@@ -260,24 +295,38 @@
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118840819</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2167/</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/entity/person_19542</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_19542.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/personen/pmb2167</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp43175</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
+               <idno type="URL" subtype="kraus1933"
+                  >https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0204</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284367</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q163747</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Felix_Salten</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Felix_Salten</idno>
+               <idno type="URL" subtype="schnitzler-kino"
+                  >https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis"
+                  >https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2167.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162012/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis"
+                  >https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2167</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
             </person>
             <person xml:id="pmb105878">
                <persName>
                   <forename>Arthur</forename>
                   <surname>Strasser</surname>
                </persName>
+               <persName type="legacy-name-merge">Strasser, Arthur</persName>
                <birth>
                   <date when="1854-04-08">1854-04-08</date>
                   <settlement ref="pmb90190">
@@ -297,17 +346,21 @@
                   </settlement>
                </death>
                <sex value="male"/>
-               <occupation ref="pmb110">Bildender Künstler/Bildende Künstlerin &gt;&gt;
-                  Maler/Malerin</occupation>
-               <occupation ref="pmb150">Bildender Künstler/Bildende Künstlerin &gt;&gt;
-                  Bildhauer/Bildhauerin</occupation>
+               <occupation ref="pmb110">Maler/Malerin</occupation>
+               <occupation ref="pmb150">Bildhauer/Bildhauerin</occupation>
                <occupation ref="pmb361">Künstler/Künstlerin</occupation>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/105878/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/132590484</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284fc5</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38508</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q114129</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Strasser</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Arthur_Strasser</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis"
+                  >https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb105878.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162423/</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis"
+                  >https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb105878</idno>
             </person>
             <person xml:id="pmb43745">
                <persName>
@@ -327,20 +380,25 @@
                   </settlement>
                </death>
                <sex value="male"/>
-               <occupation ref="pmb150">Bildender Künstler/Bildende Künstlerin &gt;&gt;
-                  Bildhauer/Bildhauerin</occupation>
+               <occupation ref="pmb150">Bildhauer/Bildhauerin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/121161919</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43745/</idno>
                <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp54121</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q326777</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Viktor_Tilgner</idno>
+               <idno type="URL" subtype="wikipedia"
+                  >https://de.wikipedia.org/wiki/Viktor_Tilgner</idno>
                <idno type="URL" subtype="doi">https://doi.org/10.1553/0x0031115b</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis"
+                  >https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb43745</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis"
+                  >https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb43745.html</idno>
             </person>
          </listPerson>
          <listBibl>
             <bibl xml:id="pmb145099">
                <title>Secession. (Arthur Strasser)</title>
-               <title type="werk_bibliografische-angabe">https://anno.onb.ac.at/cgi-content/anno?aid=waz&amp;datum=18990318&amp;seite=2</title>
+               <title type="werk_bibliografische-angabe"
+                  >https://anno.onb.ac.at/cgi-content/anno?aid=waz&amp;datum=18990318&amp;seite=2</title>
                <title type="werk_bibliografische-angabe">Felix Salten: Secession. (Arthur Strasser).
                   In: Wiener Allgemeine Zeitung, Nr. 6.313, 18. 3. 1899, S. 2–3</title>
                <author ref="pmb2167" role="hat-geschaffen">Salten, Felix</author>
@@ -350,13 +408,18 @@
             </bibl>
             <bibl xml:id="pmb39950">
                <title>Wiener Allgemeine Zeitung</title>
-               <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=waz</title>
+               <title type="anno">https://anno.onb.ac.at/cgi-content/anno?aid=waz</title>
                <date to="1934-02-11">1.3.1880 – 11.2.1934</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/39950/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb39950.html</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/werke/pmb39950</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb39950.html</idno>
-               <note type="work_kind">Periodikum &gt;&gt; Tageszeitung</note>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb39950.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/werke/pmb39950</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis"
+                  >https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb39950.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb39950.html</idno>
+               <note type="work_kind">Tageszeitung</note>
             </bibl>
             <bibl xml:id="pmb145087">
                <title>Das Mozartdenkmal</title>
@@ -369,24 +432,30 @@
             </bibl>
             <bibl xml:id="pmb35942">
                <title>Moderne Rundschau</title>
-               <title type="werk_link">https://babel.hathitrust.org/cgi/pt?id=njp.32101064246596&amp;view=1up&amp;seq=17&amp;skin=2021</title>
+               <title type="werk_link"
+                  >https://babel.hathitrust.org/cgi/pt?id=njp.32101064246596&amp;view=1up&amp;seq=17&amp;skin=2021</title>
+               <author ref="pmb2563" role="hat-herausgegeben">Kafka, Eduard Michael</author>
+               <author ref="pmb18870" role="hat-herausgegeben">Joachim, Jaques</author>
                <author ref="pmb10815" role="hat-einen-beitrag-geschaffen-zu">Bahr, Hermann</author>
                <author ref="pmb2121" role="hat-einen-beitrag-geschaffen-zu">Schnitzler,
                   Arthur</author>
                <author ref="pmb11740" role="hat-einen-beitrag-geschaffen-zu">Hofmannsthal, Hugo
                   von</author>
-               <author ref="pmb2563" role="hat-herausgegeben">Kafka, Eduard Michael</author>
-               <author ref="pmb18870" role="hat-herausgegeben">Joachim, Jaques</author>
                <date to="1891-12-31">1.4.1891 – 31.12.1891</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/35942/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb35942.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb35942.html</idno>
-               <note type="work_kind">Periodikum &gt;&gt; Zeitschrift</note>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb35942.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis"
+                  >https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb35942.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb35942.html</idno>
+               <note type="work_kind">Zeitschrift</note>
             </bibl>
             <bibl xml:id="pmb145095">
                <title>Victor Tilgner †</title>
                <title type="werk_unter-diesem-namen-oder-kurzel-veroffentlicht">f.s.</title>
-               <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=waz&amp;datum=18960417&amp;seite=3</title>
+               <title type="anno"
+                  >https://anno.onb.ac.at/cgi-content/anno?aid=waz&amp;datum=18960417&amp;seite=3</title>
                <title type="werk_bibliografische-angabe">f. s. [= Felix Salten]: Victor Tilgner †.
                   In: Wiener Allgemeine Zeitung, Nr. 5.441, &lt;date&gt;17. 4. 1896&lt;/date&gt;, S.
                   3</title>
@@ -398,7 +467,8 @@
             </bibl>
             <bibl xml:id="pmb145091">
                <title>Künstlerhaus</title>
-               <title type="werk_link-anno">https://anno.onb.ac.at/cgi-content/anno?aid=waz&amp;datum=18961111&amp;seite=3</title>
+               <title type="anno"
+                  >https://anno.onb.ac.at/cgi-content/anno?aid=waz&amp;datum=18961111&amp;seite=3</title>
                <title type="werk_unter-diesem-namen-oder-kurzel-veroffentlicht">f.s.</title>
                <title type="werk_bibliografische-angabe">f. s. [= Felix Salten]: Künstlerhaus. In:
                   Wiener Allgemeine Zeitung, Nr. 5.612, 11. 11. 1896, S. 3</title>
@@ -412,18 +482,17 @@
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer_name">K.K. Reichshaupt- und Residenzstadt
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
                   Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
                <placeName type="alternative-name">Wenia</placeName>
                <placeName type="alternative-name">Beč</placeName>
-               <placeName type="ort_fruherer_name">Vindobona</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
                <placeName type="alternative-name">Vienna</placeName>
-               <placeName type="x_zum-loschen-markiert">Wien?</placeName>
-               <desc type="entity_type">Besiedelter Ort (A.BSO)</desc>
-               <desc type="entity_type_id">14</desc>
+               <desc type="entity_type">A.ADM2</desc>
+               <desc type="entity_type_id">1135</desc>
                <location type="coords">
                   <geo>48,2066 16,37341</geo>
                </location>
@@ -433,18 +502,32 @@
                </location>
                <idno type="URL" subtype="geonames">https://sws.geonames.org/2761369/</idno>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4066009-6</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-bahr"
+                  >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/50/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2316/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/20954/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe"
+                  >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb50.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65221/</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/65223/</idno>
-               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="kraus"
+                  >https://kraus.wienbibliothek.at/register/orte/pmb50</idno>
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q1741</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Wien</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews"
+                  >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb50.html</idno>
+               <idno type="URL" subtype="geonames">https://sws.geonames.org/2761333/</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33999/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch"
+                  >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb50.html</idno>
+               <note type="image">
+                  <figure>
+                     <graphic
+                        url="https://iiif.onb.ac.at/images/AKON/AK117_016/016/full/,600/0/native.jpg"
+                     />
+                  </figure>
+               </note>
             </place>
          </listPlace>
       </back>
