@@ -24,7 +24,7 @@
                    </xsl:element>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:text>SOX </xsl:text>
+                <xsl:text> </xsl:text>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
