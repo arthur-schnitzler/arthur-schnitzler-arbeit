@@ -1263,6 +1263,7 @@
          <xs:assert
             test="not(child::tei:anchor[@type = 'commentary']) or child::tei:anchor[@type = 'commentary'] and child::tei:note[@type = 'commentary']"
          />
+         <xs:assert test="child::* or not(ends-with(., ' '))"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="damage">
