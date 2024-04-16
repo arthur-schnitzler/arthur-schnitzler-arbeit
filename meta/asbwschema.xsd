@@ -1451,6 +1451,7 @@
             test="not(child::tei:anchor[@type = 'commentary']) or child::tei:anchor[@type = 'commentary'] and child::tei:note[@type = 'commentary']"/>
          <xs:assert test="child::* or text()[normalize-space(.) != '']"/>
          <xs:assert test="not(contains(., '&amp;'))"/>
+         <xs:assert test="child::tei:salute[not(@*)] or not(child::tei:salute)"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="salute">

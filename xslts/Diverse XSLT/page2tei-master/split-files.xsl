@@ -13,7 +13,7 @@
     <xsl:template match="/*">
         <xsl:for-each select="//tei:letter">
             <xsl:result-document href="{$dir}/X0{$n + position() +1}.xml">
-                <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
+                <TEI xmlns="http://www.tei-c.org/ns/1.0"
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
                     xml:id="L0XXXX"

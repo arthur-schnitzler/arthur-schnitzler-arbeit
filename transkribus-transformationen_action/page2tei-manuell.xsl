@@ -87,7 +87,7 @@
         <!--       <xsl:message select="$make_div"></xsl:message>-->
         <xsl:for-each-group select="$make_div//*[local-name() = 'div']/*"
           group-starting-with="*[local-name() = 'head']">
-          <div xmlns="http://www.tei-c.org/ns/1.0">
+          <div>
             <xsl:copy-of select="current-group()"/>
           </div>
         </xsl:for-each-group>
