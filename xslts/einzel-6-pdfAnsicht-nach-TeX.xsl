@@ -3541,82 +3541,113 @@
    <xsl:template match="*" mode="no-comments">
       <xsl:value-of select="text()"/>
    </xsl:template>
+   <xsl:template name="foo:laengsterTextInSpalte">
+      <!-- das gibt den längsten text in einer spalte aus -->
+      <xsl:param name="spalte" as="node()?"/>
+      <xsl:variable name="zelleOhneNote" as="node()?">
+         <column>
+            <xsl:for-each select="$spalte//*:cell[1]">
+               <cell>
+                  <xsl:for-each select="descendant::text()[not(ancestor-or-self::*:note)]">
+                     <xsl:value-of select="normalize-space(.)"/>
+                     <xsl:if test="ends-with(., ' ')">
+                        <xsl:text>x</xsl:text>
+                     </xsl:if>
+                  </xsl:for-each>
+                  <xsl:for-each select="descendant::*:c[not(ancestor-or-self::*:note)]">
+                     <xsl:text>m</xsl:text>
+                  </xsl:for-each>
+                  <xsl:for-each select="descendant::*:space[not(ancestor-or-self::*:note)]">
+                     <xsl:text>m</xsl:text>
+                  </xsl:for-each>
+               </cell>
+            </xsl:for-each>
+         </column>
+      </xsl:variable>
+      <xsl:variable name="sorted-cells" as="element(cell)*">
+         <xsl:perform-sort select="$zelleOhneNote//*:cell">
+            <xsl:sort select="string-length(.)"/>
+         </xsl:perform-sort>
+      </xsl:variable>
+      <xsl:copy-of select="$sorted-cells[last()]"/>
+   </xsl:template>
    <xsl:template match="table">
-      <xsl:variable name="longest1">
-         <xsl:variable name="sorted-cells" as="element(cell)*">
-            <xsl:perform-sort select="row/cell[1]">
-               <xsl:sort
-                  select="string-length(string-join(descendant::text()[not(ancestor::note)], '')) + count(descendant::space[not(ancestor::note)]) + count(descendant::c[not(ancestor::note)])"/>
-               <!-- das findet die Textlänge ohne den in note enthaltenen Text plus Leerzeichen und Sonderzeichen, die als Elemente codiert sind -->
-            </xsl:perform-sort>
-         </xsl:variable>
-         <xsl:copy-of select="$sorted-cells[last()]"/>
+      <xsl:variable name="spalte1" as="node()">
+         <row>
+            <xsl:for-each select="descendant::*:row/*:cell[1]">
+               <xsl:copy-of select="."/>
+            </xsl:for-each>
+         </row>
       </xsl:variable>
-      <xsl:variable name="longest2">
-         <xsl:variable name="sorted-cells" as="element(cell)*">
-            <xsl:perform-sort select="row/cell[2]">
-               <xsl:sort
-                  select="string-length(string-join(descendant::text()[not(ancestor::note)], '')) + count(descendant::space[not(ancestor::note)]) + count(descendant::c[not(ancestor::note)])"
-               />
-            </xsl:perform-sort>
-         </xsl:variable>
-         <xsl:copy-of select="$sorted-cells[last()]"/>
+      <xsl:variable name="spalte2" as="node()">
+         <row>
+            <xsl:for-each select="descendant::*:row/*:cell[2]">
+               <xsl:copy-of select="."/>
+            </xsl:for-each>
+         </row>
       </xsl:variable>
-      <xsl:variable name="longest3">
-         <xsl:variable name="sorted-cells" as="element(cell)*">
-            <xsl:perform-sort select="row/cell[3]">
-               <xsl:sort
-                  select="string-length(string-join(descendant::text()[not(ancestor::note)], '')) + count(descendant::space[not(ancestor::note)]) + count(descendant::c[not(ancestor::note)])"
-               />
-            </xsl:perform-sort>
-         </xsl:variable>
-         <xsl:copy-of select="$sorted-cells[last()]"/>
+      <xsl:variable name="spalte3" as="node()">
+         <row>
+            <xsl:for-each select="descendant::*:row/*:cell[3]">
+               <xsl:copy-of select="."/>
+            </xsl:for-each>
+         </row>
       </xsl:variable>
-      <xsl:variable name="longest4">
-         <xsl:variable name="sorted-cells" as="element(cell)*">
-            <xsl:perform-sort select="row/cell[4]">
-               <xsl:sort
-                  select="string-length(string-join(descendant::text()[not(ancestor::note)], '')) + count(descendant::space[not(ancestor::note)]) + count(descendant::c[not(ancestor::note)])"
-               />
-            </xsl:perform-sort>
-         </xsl:variable>
-         <xsl:copy-of select="$sorted-cells[last()]"/>
+      <xsl:variable name="spalte4" as="node()">
+         <row>
+            <xsl:for-each select="descendant::*:row/*:cell[4]">
+               <xsl:copy-of select="."/>
+            </xsl:for-each>
+         </row>
       </xsl:variable>
-      <xsl:variable name="longest5">
-         <xsl:variable name="sorted-cells" as="element(cell)*">
-            <xsl:perform-sort select="row/cell[5]">
-               <xsl:sort
-                  select="string-length(string-join(descendant::text()[not(ancestor::note)], '')) + count(descendant::space[not(ancestor::note)]) + count(descendant::c[not(ancestor::note)])"
-               />
-            </xsl:perform-sort>
-         </xsl:variable>
-         <xsl:copy-of select="$sorted-cells[last()]"/>
+      <xsl:variable name="spalte5" as="node()">
+         <row>
+            <xsl:for-each select="descendant::*:row/*:cell[5]">
+               <xsl:copy-of select="."/>
+            </xsl:for-each>
+         </row>
+      </xsl:variable>
+      <xsl:variable name="longest1" as="xs:string">
+         <xsl:call-template name="foo:laengsterTextInSpalte">
+            <xsl:with-param name="spalte" select="$spalte1"/>
+         </xsl:call-template>
+      </xsl:variable>
+      <xsl:variable name="longest2" as="xs:string?">
+         <xsl:call-template name="foo:laengsterTextInSpalte">
+            <xsl:with-param name="spalte" select="$spalte2"/>
+         </xsl:call-template>
+      </xsl:variable>
+      <xsl:variable name="longest3" as="xs:string?">
+         <xsl:call-template name="foo:laengsterTextInSpalte">
+            <xsl:with-param name="spalte" select="$spalte3"/>
+         </xsl:call-template>
+      </xsl:variable>
+      <xsl:variable name="longest4" as="xs:string?">
+         <xsl:call-template name="foo:laengsterTextInSpalte">
+            <xsl:with-param name="spalte" select="$spalte4"/>
+         </xsl:call-template>
+      </xsl:variable>
+      <xsl:variable name="longest5" as="xs:string?">
+         <xsl:call-template name="foo:laengsterTextInSpalte">
+            <xsl:with-param name="spalte" select="$spalte5"/>
+         </xsl:call-template>
       </xsl:variable>
       <xsl:variable name="tabellen-anzahl" as="xs:integer" select="count(ancestor::body//table)"/>
       <xsl:variable name="xml-id-part" as="xs:string" select="ancestor::TEI/@id"/>
       <xsl:text>\settowidth{\longeste}{</xsl:text>
-      <xsl:value-of select="normalize-space($longest1)"/>
+      <xsl:value-of select="$longest1"/>
       <xsl:text>}</xsl:text>
-      <xsl:if
-         test="normalize-space($longest1) = 'Schnitzler' and normalize-space($longest2) = 'Erziehung zur Ehe'">
-         <!-- Sonderfall einer Tabelle, wo eigentlich das vorletze Element länger ist -->
-         <xsl:text>\addtolength\longeste{0.2em}</xsl:text>
-      </xsl:if>
-      <xsl:if test="contains(normalize-space($longest1), 'Morren')">
-         <!-- Sonderfall einer Tabelle, wo eigentlich das vorletze Element länger ist -->
-         <xsl:text>\settowidth\longeste{ABCDEFGHIJ}</xsl:text>
-      </xsl:if>
       <xsl:text>\settowidth{\longestz}{</xsl:text>
-      <xsl:value-of select="normalize-space($longest2)"/>
+      <xsl:value-of select="$longest2"/>
       <xsl:text>}</xsl:text>
       <xsl:text>\settowidth{\longestd}{</xsl:text>
-      <xsl:value-of select="normalize-space($longest3)"/>
+      <xsl:value-of select="$longest3"/>
       <xsl:text>}</xsl:text>
       <xsl:text>\settowidth{\longestv}{</xsl:text>
-      <xsl:value-of select="normalize-space($longest4)"/>
+      <xsl:value-of select="$longest4"/>
       <xsl:text>}</xsl:text>
       <xsl:text>\settowidth{\longestf}{</xsl:text>
-      <xsl:value-of select="normalize-space($longest5)"/>
+      <xsl:value-of select="$longest5"/>
       <xsl:text>}</xsl:text>
       <xsl:choose>
          <xsl:when test="string-length($longest5) &gt; 0">
@@ -3644,11 +3675,6 @@
         \addtolength\longestz{1em}
       </xsl:text>
          </xsl:otherwise>
-      </xsl:choose>
-      <xsl:choose>
-         <xsl:when test="starts-with($longest1, 'Chiav')">
-            <xsl:text>\addtolength\longeste{2em}</xsl:text>
-         </xsl:when>
       </xsl:choose>
       <xsl:choose>
          <xsl:when test="@cols &gt; 5">
