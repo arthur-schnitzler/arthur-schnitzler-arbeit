@@ -1319,6 +1319,7 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:attribute>
+         <xs:assert test="child::* or not(matches(., '.*[\s\r\n]+$'))"/>
       </xs:complexType>
    </xs:element>
    <xs:element name="add">
