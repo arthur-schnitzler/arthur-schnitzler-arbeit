@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -94,7 +94,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="860"/>
+                                 <measure unit="zeichenanzahl" quantity="858"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -163,7 +163,7 @@
                <persName ref="#pmb14056">Berger, Else</persName>
                <persName ref="#pmb144412">Schlesinger, Alfred</persName>
                <placeName ref="#pmb213">Bad Ischl</placeName>
-               <date when="1896-08-07" n="04">7. 8. 1896</date>
+               <date when="1896-08-06" n="01">6. 8. 1896</date>
             </correspAction>
             <correspAction type="transmitted">
                <date when="1896-08-07">7. 8. 1896</date>
@@ -172,8 +172,8 @@
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <placeName ref="#pmb958">Skodsborg</placeName>
-               <date evidence="conjecture" notBefore="1896-08-07" notAfter="1896-08-11">[7. 8. 1896
-                  – 11. 8. 1896?]</date>
+               <date evidence="conjecture" notBefore="1896-08-08" notAfter="1896-08-13">[8. 8. 1896
+                  – 13. 8. 1896?]</date>
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
@@ -191,10 +191,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2023-07-10">Export aus Transkribus</change>
          <change who="LU" when="2024-03-12">Durchsicht</change>
          <change who="LU" when="2024-03-12">Index check</change>
+         <change who="MAM" when="2024-04-23">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -222,7 +223,11 @@
             <opener>
                <dateline rend="right">
                   <pb facs="MS-SCHNITZLER-B-00089-A-00001-000-00076-V"/>
-                  <rs type="place" ref="#pmb213">Ischl</rs>, <date when="1896-08-06">6. August 96</date>.</dateline>
+                  <rs type="place" ref="#pmb213">Ischl</rs>, <date when="1896-08-06">
+                     <subst>
+                        <del rend="overwritten">2</del>
+                        <add place="inline">6</add>
+                     </subst>. August 96</date>.</dateline>
             </opener>
             <p>Man soupirt nämlich <date when="1896-08-06">heute</date>
                <space unit="chars" quantity="1"/>
@@ -238,7 +243,7 @@
                <space unit="chars" quantity="1"/>
                <signed>
                   <handShift scribe="#pmb24241"/>Julius Schlesinger</signed>
-               <space unit="chars" quantity="1"/>
+               <lb/>
                <signed>
                   <handShift scribe="#pmb3261"/>Fanto</signed>
                <space unit="chars" quantity="1"/>
@@ -247,6 +252,7 @@
                <space unit="chars" quantity="1"/>
                <signed>
                   <handShift scribe="#pmb144430"/>M. Laurent</signed>
+               <lb/>
                <signed>
                   <handShift scribe="#pmb144420"/>Gretl Schlesinger,</signed>
                <space unit="chars" quantity="1"/>
@@ -254,7 +260,7 @@
                   <handShift scribe="#pmb24233"/>Fanny Schlesinger</signed>
             </p>
             <p>
-               <handShift scribe="#pmb14056"/>Trotzdem Herr Salten mir absolut nicht erlauben <add place="above">will</add> mehr als meinen Namen zu schreiben, benütze ich die gute
+               <handShift scribe="#pmb14056"/>Trotzdem Herr Salten mir absolut nicht erlauben <add place="above">will</add> mehr als meinen Namen zu schreiben, benutze ich die gute
                Gelegenheit Ihnen viele herzliche Grüße zu senden. Herzlich und freundschaftlich,
                Ihre <signed>Else.</signed>
             </p>
@@ -321,19 +327,19 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q163747</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Felix_Salten</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2167.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162012/</idno>
                <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2167</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2167.html</idno>
             </person>
-            <person xml:id="pmb144420">
+            <person xml:id="pmb24254">
                <persName>
-                  <forename>Margherita</forename>
+                  <forename>Therese</forename>
                   <surname>Schlesinger</surname>
                </persName>
-               <persName type="person_rufname">Gretel</persName>
+               <persName type="person_geburtsname_nachname">Spitzer</persName>
                <birth>
-                  <date when="1881-12-25">1881-12-25</date>
+                  <date when="1846-07-28">28.07.1846</date>
                   <settlement ref="pmb50">
                      <placeName type="pref">Wien</placeName>
                      <location>
@@ -341,8 +347,46 @@
                      </location>
                   </settlement>
                </birth>
+               <death>
+                  <date when="1935-12-29">29.12.1935</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
                <sex value="female"/>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144420/</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_19737.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/24254/</idno>
+            </person>
+            <person xml:id="pmb24241">
+               <persName>
+                  <forename>Julius</forename>
+                  <surname>Schlesinger</surname>
+               </persName>
+               <birth>
+                  <date when="1837-04-30">30.04.1837</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1927-03-22">22.03.1927</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb1444">Bankier/Bankierin</occupation>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_19732.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/24241/</idno>
             </person>
             <person xml:id="pmb3261">
                <persName>
@@ -407,6 +451,32 @@
                <occupation ref="pmb106">Rechtsanwalt/Rechtsanwältin</occupation>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144427/</idno>
             </person>
+            <person xml:id="pmb144430">
+               <persName>
+                  <forename>M.</forename>
+                  <surname>Laurent</surname>
+               </persName>
+               <sex value="not-set"/>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144430/</idno>
+            </person>
+            <person xml:id="pmb144420">
+               <persName>
+                  <forename>Margherita</forename>
+                  <surname>Schlesinger</surname>
+               </persName>
+               <persName type="person_rufname">Gretel</persName>
+               <birth>
+                  <date when="1881-12-25">1881-12-25</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <sex value="female"/>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144420/</idno>
+            </person>
             <person xml:id="pmb24233">
                <persName>
                   <forename>Franziska</forename>
@@ -441,24 +511,6 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/162105/</idno>
                <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb24233</idno>
             </person>
-            <person xml:id="pmb144412">
-               <persName>
-                  <forename>Alfred</forename>
-                  <surname>Schlesinger</surname>
-               </persName>
-               <birth>
-                  <date notBefore="1867-01-01" when="1867-01-01" notAfter="1867-12-31">1867</date>
-                  <settlement ref="pmb144413">
-                     <placeName type="pref">Velká Střelná</placeName>
-                     <location>
-                        <geo>49,6694 17,5006</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <sex value="male"/>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144412/</idno>
-            </person>
             <person xml:id="pmb14056">
                <persName>
                   <forename>Else</forename>
@@ -487,41 +539,23 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14056/</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_13626.html</idno>
             </person>
-            <person xml:id="pmb24241">
+            <person xml:id="pmb144412">
                <persName>
-                  <forename>Julius</forename>
+                  <forename>Alfred</forename>
                   <surname>Schlesinger</surname>
                </persName>
                <birth>
-                  <date when="1837-04-30">30.04.1837</date>
-                  <settlement ref="pmb43471">
-                     <placeName type="pref">Budapest</placeName>
+                  <date notBefore="1867-01-01" when="1867-01-01" notAfter="1867-12-31">1867</date>
+                  <settlement ref="pmb144413">
+                     <placeName type="pref">Velká Střelná</placeName>
                      <location>
-                        <geo>47,49835 19,04045</geo>
+                        <geo>49,6694 17,5006</geo>
                      </location>
                   </settlement>
                </birth>
-               <death>
-                  <date when="1927-03-22">22.03.1927</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,2066 16,37341</geo>
-                     </location>
-                  </settlement>
-               </death>
                <sex value="male"/>
-               <occupation ref="pmb1444">Bankier/Bankierin</occupation>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/person_19732.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/24241/</idno>
-            </person>
-            <person xml:id="pmb144430">
-               <persName>
-                  <forename>M.</forename>
-                  <surname>Laurent</surname>
-               </persName>
-               <sex value="not-set"/>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144430/</idno>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144412/</idno>
             </person>
             <person xml:id="pmb2121">
                <persName>
@@ -561,9 +595,9 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
                <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb2121.html</idno>
                <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2121</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
             </person>
             <person xml:id="pmb24230">
                <persName>
@@ -603,7 +637,7 @@
             <place xml:id="pmb213">
                <placeName>Bad Ischl</placeName>
                <desc type="entity_type">P.PPL</desc>
-               <desc type="entity_type_id">1123</desc>
+               <desc type="entity_type_id">1412</desc>
                <location type="coords">
                   <geo>47,71109 13,61893</geo>
                </location>
@@ -631,7 +665,7 @@
             <place xml:id="pmb958">
                <placeName>Skodsborg</placeName>
                <desc type="entity_type">P.PPL</desc>
-               <desc type="entity_type_id">1123</desc>
+               <desc type="entity_type_id">1412</desc>
                <location type="coords">
                   <geo>55,8225 12,57324</geo>
                </location>
@@ -652,7 +686,7 @@
                <placeName type="legacy-name-merge">Denmark</placeName>
                <placeName type="alternative-name">Kingdom of Denmark</placeName>
                <desc type="entity_type">A.PCLI</desc>
-               <desc type="entity_type_id">1411</desc>
+               <desc type="entity_type_id">1107</desc>
                <location type="coords">
                   <geo>56,0 10,0</geo>
                </location>
@@ -669,8 +703,8 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/43570/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb43570.html</idno>
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/D%C3%A4nemark</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb43570.html</idno>
                <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb43570.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb43570.html</idno>
             </place>
             <place xml:id="pmb1091">
                <placeName>Badehotel</placeName>
