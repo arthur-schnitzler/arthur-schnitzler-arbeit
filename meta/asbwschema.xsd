@@ -1255,7 +1255,7 @@
                   @n
                else
                   not(@n)"/>
-         <xs:assert test="(@rend='spaced-out' and ((text() and not(child::*)) or (text() and child::tei:space and count(child::*) = 1))) or not(@rend='spaced-out')"/>
+         <xs:assert test="(@rend='spaced-out' and ((text() and not(child::*)) or (text() and not(child::*[name()!='space'])))) or not(@rend='spaced-out')"/>
          
          <xs:assert
             test="not(child::tei:anchor[@type = 'commentary']) or child::tei:anchor[@type = 'commentary'] and child::tei:note[@type = 'commentary']"
