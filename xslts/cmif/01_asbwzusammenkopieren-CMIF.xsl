@@ -30,7 +30,7 @@
                         </availability>
                         <xsl:element name="date">
                             <xsl:attribute name="when">
-                                <xsl:value-of select="fn:year-from-date(fn:current-date())"/>
+                                <xsl:value-of select="format-date(current-date(), '[Y0001]-[M01]-[D01]')"/>
                             </xsl:attribute>
                         </xsl:element>
                     </publicationStmt>
