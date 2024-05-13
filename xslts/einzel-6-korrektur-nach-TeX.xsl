@@ -1269,7 +1269,7 @@
       <xsl:param name="sender" as="node()"/>
       <xsl:param name="sendernummer" as="xs:integer"/>
       <xsl:param name="empfaenger-key" as="xs:string"/>
-      <xsl:param name="date-sort" as="xs:date"/>
+      <xsl:param name="date-sort" as="xs:date?"/>
       <xsl:param name="date-n" as="xs:integer"/>
       <xsl:param name="datum" as="xs:string"/>
       <xsl:param name="vorne" as="xs:boolean"/>
@@ -1289,7 +1289,7 @@
    <xsl:function name="foo:briefempfaengerindex">
       <xsl:param name="empfaenger-key" as="xs:string"/>
       <xsl:param name="sender-key" as="xs:string"/>
-      <xsl:param name="date-sort" as="xs:date"/>
+      <xsl:param name="date-sort" as="xs:date?"/>
       <xsl:param name="date-n" as="xs:integer"/>
       <xsl:param name="datum" as="xs:string"/>
       <xsl:param name="vorne" as="xs:boolean"/>
@@ -2194,7 +2194,7 @@
       <xsl:param name="briefempfaenger" as="node()"/>
       <xsl:param name="briefempfaenger-anzahl" as="xs:integer"/>
       <xsl:param name="briefsender" as="node()"/>
-      <xsl:param name="date" as="xs:date"/>
+      <xsl:param name="date" as="xs:date?"/>
       <xsl:param name="date-n" as="xs:integer"/>
       <xsl:param name="datum" as="xs:string"/>
       <xsl:param name="vorne" as="xs:boolean"/>
@@ -2981,6 +2981,14 @@
                      select="foo:briefempfaenger-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@notAfter, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"/>
                   <xsl:value-of
                      select="foo:briefsender-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@notAfter, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"
+                  />
+               </xsl:when>
+               <xsl:when
+                  test="not(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@from)">
+                  <xsl:value-of
+                     select="foo:briefempfaenger-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@to, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"/>
+                  <xsl:value-of
+                     select="foo:briefsender-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@to, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"
                   />
                </xsl:when>
                <xsl:otherwise>
