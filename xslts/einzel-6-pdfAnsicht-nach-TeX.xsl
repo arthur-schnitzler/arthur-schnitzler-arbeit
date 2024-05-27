@@ -4592,6 +4592,22 @@
    <!-- Gesperrter Text -->
    <xsl:template match="hi[@rend = 'spaced-out' and not(child::hi)]">
       <xsl:choose>
+         <xsl:when test="not(child::*[1]) and ancestor::hi[@rend='capitals' and not(descendant::note)]">
+            <xsl:text>\so{</xsl:text>
+            <xsl:choose>
+               <xsl:when test="starts-with(text(), ' ')">
+                  <xsl:text> </xsl:text>
+                  <xsl:value-of select="upper-case(normalize-space(text()))"/>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:value-of select="upper-case(normalize-space(text()))"/>
+               </xsl:otherwise>
+            </xsl:choose>
+            <xsl:if test="ends-with(text(), ' ')">
+               <xsl:text> </xsl:text>
+            </xsl:if>
+            <xsl:text>}</xsl:text>
+         </xsl:when>
          <xsl:when test="not(child::*[1])">
             <xsl:text>\so{</xsl:text>
             <xsl:choose>
