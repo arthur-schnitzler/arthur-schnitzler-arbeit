@@ -4035,8 +4035,7 @@
       <xsl:text>\end{minipage}}</xsl:text>
    </xsl:template>
    <xsl:template match="div[@type = 'image']">
-      <xsl:text>\pstart{[}Abbildung{]}\pend</xsl:text>
-      <!--<xsl:apply-templates select="figure"/>-->
+      <xsl:apply-templates select="figure"/>
    </xsl:template>
    <xsl:template match="address">
       <xsl:apply-templates/>
@@ -5505,7 +5504,7 @@
       </xsl:text>
    </xsl:template>
    <xsl:template match="graphic">
-      <!--<xsl:text>\includegraphics</xsl:text>
+      <xsl:text>\includegraphics</xsl:text>
       <xsl:choose>
          <xsl:when test="@width">
             <xsl:text>[width=</xsl:text>
@@ -5523,8 +5522,8 @@
          </xsl:otherwise>
       </xsl:choose>
       <xsl:text>{</xsl:text>
-      <xsl:value-of select="replace(@url, '../resources/img', 'images')"/>
-      <xsl:text>}</xsl:text>-->
+      <xsl:value-of select="concat('../tex-inputs/img/', replace(@url, '../resources/img', 'images'), '.jpg')"/>
+      <xsl:text>}</xsl:text>
    </xsl:template>
    <xsl:template match="list">
       <xsl:text>\begin{itemize}[noitemsep, leftmargin=*]</xsl:text>
