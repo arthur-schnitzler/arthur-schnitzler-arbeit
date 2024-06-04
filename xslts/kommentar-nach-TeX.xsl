@@ -519,4 +519,17 @@
       <xsl:apply-templates/>
       <xsl:text>}</xsl:text>
    </xsl:template>
+   <xsl:template match="*:quote">
+      <xsl:choose>
+      <xsl:when test="*:p">
+         <xsl:for-each select="*:p[not(position() = last())]">
+            <xsl:apply-templates/>
+            <xsl:text>{ / }</xsl:text>
+         </xsl:for-each>
+         <xsl:apply-templates select="*:p[(position() = last())]"/>
+      </xsl:when>
+      <xsl:otherwise>
+         <xsl:apply-templates/>
+      </xsl:otherwise>
+   </xsl:choose></xsl:template>
 </xsl:stylesheet>
