@@ -2173,25 +2173,13 @@
    <xsl:template match="back"/>
    <xsl:template match="back" mode="tex">
       <xsl:if test="
-            descendant::person[not(@id = 'pmb2121')
-            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[1]/@ref, '#', '')))
-            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[2]/@ref, '#', '')))
-            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[3]/@ref, '#', '')))
-            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[4]/@ref, '#', '')))
-            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[5]/@ref, '#', '')))
-            and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[6]/@ref, '#', '')))]">
+            descendant::person[not(@id = 'pmb2121')]">
          <xsl:text>
          
          \renewcommand{\erwaehntePersonen}{</xsl:text>
          <xsl:text>Personen: </xsl:text>
          <xsl:for-each select="
-               descendant::person[not(@id = 'pmb2121')
-               and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[1]/@ref, '#', '')))
-               and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[2]/@ref, '#', '')))
-               and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[3]/@ref, '#', '')))
-               and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[4]/@ref, '#', '')))
-               and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[5]/@ref, '#', '')))
-               and (not(replace(@id, '#', '') = replace(ancestor::TEI//titleStmt/author[6]/@ref, '#', '')))]">
+               descendant::person[not(@id = 'pmb2121')]">
             <xsl:sort select="descendant::surname/text()"/>
             <xsl:value-of
                select="concat(descendant::forename/text(), ' ', descendant::surname/text())"/>
