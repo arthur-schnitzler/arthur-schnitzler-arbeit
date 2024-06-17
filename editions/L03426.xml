@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -104,7 +104,7 @@
                                      style="lateinische-kurrent"
                                      corresp="#pmb11324"/>
                            <handNote medium="schwarze-tinte" style="deutsche-kurrent" corresp="#pmb2657"/>
-                           <handNote medium="blauer-buntstift"
+                           <handNote medium="bleistift"
                                      style="lateinische-kurrent"
                                      corresp="#pmb147550"/>
                         </handDesc>
@@ -112,7 +112,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1">
-                                    <placeName ref="#pmb147545">Königs-Wusterhaus<unclear>en</unclear> b</placeName>
+                                    <placeName ref="#pmb147545">Königs-Wusterhaus<unclear>en</unclear></placeName>
                                     <date when="1906-06-04">4. 6. 06</date>
                                     <time>8–9 N.</time>
                                  </stamp>
@@ -168,10 +168,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2023-10-23">Export aus Transkribus</change>
          <change who="LU" when="2024-05-14">Durchsicht</change>
          <change who="LU" when="2024-05-14">Index check</change>
+         <change who="MAM" when="2024-06-17">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -215,7 +216,7 @@
             <p>
                <salute>Lieber,</salute> ja, <anchor type="commentary" xml:id="K_L03426-1"/>krank<note type="commentary" xml:id="K_L03426-1h">
                   <ref type="schnitzler-briefe" target="L03430" subtype="see"/>
-               </note> war ich; aber es geht wieder besser. Brief folgt.</p>
+               </note> war ich: aber es geht wieder besser. Brief folgt.</p>
             <closer>herzlichst für Sie <c rendition="#kaufmannsund"/>
                <space unit="chars" quantity="1"/>
                <rs type="person" ref="#pmb2173">Olga</rs>
@@ -254,6 +255,7 @@
                <persName type="person_pseudonym">Martin Finder</persName>
                <persName type="person_pseudonym">Karl Heinrich</persName>
                <persName type="legacy-name-merge">Salten, Felix</persName>
+               <persName type="person_pseudonym">Ferdinand Stollberg</persName>
                <birth>
                   <date when="1869-09-06">06.09.1869</date>
                   <settlement ref="pmb43471">
@@ -591,8 +593,7 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>

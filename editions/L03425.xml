@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -135,10 +135,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2023-10-23">Export aus Transkribus</change>
          <change who="LU" when="2024-05-14">Durchsicht</change>
          <change who="LU" when="2024-05-14">Index check</change>
+         <change who="MAM" when="2024-06-17">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -154,9 +155,8 @@
                   <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1906-05-17">17. V. 06</date>.</dateline>
             </opener>
             <p>
-               <salute>Lieber,</salute>
-               <space unit="chars" quantity="1"/>
-               <unclear>–</unclear> da Sie rasche Auskunft wünschen (warum?) in aller Kürze: ich
+               <salute>Lieber, –</salute>
+               da Sie rasche Auskunft wünschen (warum?) in aller Kürze: ich
                höre von meinem <anchor type="commentary" xml:id="K_L03425-1"/>
                <rs type="person" ref="#pmb11590" subtype="implied">Anwalt</rs>
                <note type="commentary" xml:id="K_L03425-1h">Es dürfte sich um <rs type="person" ref="#pmb11590">Gustav Harpner</rs> handeln, <ref type="schnitzler-briefe" target="L03435" subtype="cf"/>. Siehe zum Prozess <ref type="schnitzler-briefe" target="L03415"/>.</note>, dass Herr D<hi rend="superscript">r</hi>
@@ -180,7 +180,7 @@
             <p>Zu diesen Dingen kann ich mich wol jeder Bemerkung enthalten.</p>
             <p>Nun aber genug. Ich will auch nichts von anderen Dingen <pb facs="MS-SCHNITZLER-B-00089-B-00001-000-00038-V"/>schreiben, die mir wie Ihnen
                näher u. lieber sind. Es widerstrebt mir aufrichtig, sie in einem Zug mit <rs type="person" ref="#pmb11406">Ludaßy</rs> zu erörtern. Ohnehin störts mich genug,
-               dass dieses Schwein sich immer durch unsere Briefe wälzt.</p>
+               dass dieses Schwein sich immer durch unsere Br<unclear>i</unclear>efe wälzt.</p>
             <closer>herzlichst <lb/>Ihr <signed>Salten</signed>
             </closer>
          </div>
@@ -198,6 +198,7 @@
                <persName type="person_pseudonym">Martin Finder</persName>
                <persName type="person_pseudonym">Karl Heinrich</persName>
                <persName type="legacy-name-merge">Salten, Felix</persName>
+               <persName type="person_pseudonym">Ferdinand Stollberg</persName>
                <birth>
                   <date when="1869-09-06">06.09.1869</date>
                   <settlement ref="pmb43471">
@@ -411,8 +412,7 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
