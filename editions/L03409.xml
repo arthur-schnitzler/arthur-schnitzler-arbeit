@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -118,7 +118,6 @@
                                  </stamp>
                               </desc>
                            </incident>
-                           
                            <incident type="archival" rend="bleistift">
                               <desc>von unbekannter Hand nummeriert: »<quote>201</quote>«</desc>
                            </incident>
@@ -178,12 +177,19 @@
          <div type="address">
             <address>
                <addrLine>
-                  <pb facs="MS-SCHNITZLER-B-00089-B-00001-000-00020-V"/>Herrn D<hi rend="superscript">r</hi><space unit="chars" quantity="1"/><hi rend="latintype">Arthur Schnitzler</hi></addrLine>
-               <addrLine>
-                  <rs type="place" ref="#pmb68"><hi rend="latintype">Wien XVIII</hi></rs>
+                  <pb facs="MS-SCHNITZLER-B-00089-B-00001-000-00020-V"/>Herrn D<hi rend="superscript">r</hi>
+                  <space unit="chars" quantity="1"/>
+                  <hi rend="latintype">Arthur Schnitzler</hi>
                </addrLine>
                <addrLine>
-                  <rs type="place" ref="#pmb168940"><hi rend="latintype">Spöttelgasse 7</hi></rs>
+                  <rs type="place" ref="#pmb68">
+                     <hi rend="latintype">Wien XVIII</hi>
+                  </rs>
+               </addrLine>
+               <addrLine>
+                  <rs type="place" ref="#pmb168940">
+                     <hi rend="latintype">Spöttelgasse 7</hi>
+                  </rs>
                </addrLine>
             </address>
          </div>
@@ -197,7 +203,8 @@
                   </hi>
                </p>
             </opener>
-            <p><handShift scribe="#pmb2167"/>Viele Grüße an Sie <rs type="person" subtype="implied" ref="#pmb2173">Beide</rs>!</p>
+            <p>
+               <handShift scribe="#pmb2167"/>Viele Grüße an Sie <rs type="person" subtype="implied" ref="#pmb2173">Beide</rs>!</p>
             <closer>herzlichst Ihr <signed>Salten</signed>
             </closer>
          </div>
