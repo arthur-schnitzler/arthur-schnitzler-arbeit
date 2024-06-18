@@ -69,6 +69,9 @@
    </xsl:template>
    <xsl:template
       match="*:note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::*:note[@type = 'footnote'])]">
+      <xsl:choose>
+         <xsl:when test="child::*:ref[1] and not(child::*[2]) and normalize-space(.)=''"/> <!-- das sollte reine Verweise rauskürzen -->
+         <xsl:otherwise>
       <!-- Der Teil hier bildet das Lemma und kürzt es -->
       <xsl:variable name="lemma-start" as="xs:string"
          select="substring(@id, 1, string-length(@id) - 1)"/>
@@ -124,6 +127,7 @@
       <xsl:text>]&#10;</xsl:text>
       <xsl:apply-templates select="node() except Lemma"/>
       <xsl:text>&#10;</xsl:text>
+         </xsl:otherwise></xsl:choose>
    </xsl:template>
    
    <xsl:template match="ref[@type = 'pointer']">
