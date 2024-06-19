@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -85,7 +85,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="120"/>
+                                 <measure unit="zeichenanzahl" quantity="119"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -101,6 +101,10 @@
                                     <time>9–<gap reason="illegible" unit="chars" quantity="1"/> V</time>
                                  </stamp>
                               </desc>
+                           </incident>
+                           <incident type="postal" rend="bleistift">
+                              <desc>von unbekannter Hand »<quote><rs type="place" ref="#pmb968">Mödling</rs></quote>« in der
+                              Adressangabe gestrichen</desc>
                            </incident>
                            <incident type="postal" rend="bleistift">
                               <desc>von unbekannter Hand Vermerk: »<quote>N<hi rend="superscript">o</hi> 40</quote>«</desc>
@@ -123,7 +127,7 @@
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
                <date when="1907-05-29" n="02">29. 5. 1907</date>
-               <placeName ref="#pmb8281" evidence="conjecture">Klamm</placeName>
+               <placeName ref="#pmb8281">Klamm</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -146,10 +150,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2023-11-16">Export aus Transkribus</change>
          <change who="LU" when="2024-05-21">Durchsicht</change>
          <change who="LU" when="2024-05-21">Index check</change>
+         <change who="MAM" when="2024-06-19">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -163,8 +168,7 @@
                <addrLine>
                   <pb facs="MS-SCHNITZLER-B-00089-B-00001-000-00063-V"/>Herrn D<hi rend="superscript">r</hi> Arthur Schnitzter</addrLine>
                <addrLine>
-                  <rs type="place" ref="#pmb75">
-                     <del rend="strikethrough">Mödling-</del>Hinterbrühl</rs>
+                  <rs type="place" ref="#pmb75">Mödling-Hinterbrühl</rs>
                </addrLine>
                <addrLine>»<rs type="place" ref="#pmb44510">Zum Radetzky</rs>«</addrLine>
             </address>
@@ -203,6 +207,7 @@
                <persName type="person_pseudonym">Martin Finder</persName>
                <persName type="person_pseudonym">Karl Heinrich</persName>
                <persName type="legacy-name-merge">Salten, Felix</persName>
+               <persName type="person_pseudonym">Ferdinand Stollberg</persName>
                <birth>
                   <date when="1869-09-06">06.09.1869</date>
                   <settlement ref="pmb43471">

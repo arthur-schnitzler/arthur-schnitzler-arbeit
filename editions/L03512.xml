@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -85,7 +85,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="560"/>
+                                 <measure unit="zeichenanzahl" quantity="559"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -96,13 +96,13 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1">
-                                    <placeName ref="#pmb51">1/1 Wien <unclear>5</unclear>
+                                    <placeName ref="#pmb51">1/<hi rend="subscript">1</hi> Wien <unclear>5</unclear>
                                     </placeName>
                                     <date when="1907-10-02">2. X. 07</date>
                                     <time>VII</time>
                                  </stamp>
                                  <stamp n="2">
-                                    <placeName ref="#pmb68">18/1 Wien 110 4a</placeName>
+                                    <placeName ref="#pmb68">18/<hi rend="subscript">1</hi> Wien 110</placeName>
                                     <date when="1907-10-02">2. X. 07</date>
                                     <time>XII</time>
                                  </stamp>
@@ -128,6 +128,10 @@
                <date when="1907-10-01" n="01">1. 10. 1907</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
+            <correspAction type="transmitted">
+               <date when="1907-10-02">2. 10. 1907</date>
+               <placeName ref="#pmb50">Wien</placeName>
+            </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
                <date when="1907-10-02">2. 10. 1907</date>
@@ -148,10 +152,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2023-11-16">Export aus Transkribus</change>
          <change who="LU" when="2024-05-21">Durchsicht</change>
          <change who="LU" when="2024-05-21">Index check</change>
+         <change who="MAM" when="2024-06-19">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -205,7 +210,7 @@
                   <anchor type="commentary" xml:id="K_L03512-3"/>
                <date when="1907-10-06">Sonntag</date>
                <note type="commentary" xml:id="K_L03512-3h">
-                  <ref type="schnitzler-tagebuch" target="1907-10-06" subtype="see"/>
+                  <ref type="schnitzler-tagebuch" target="1907-10-06" subtype="cf"/>
                </note> nicht passt, machen wir vielleicht <date when="1907-10-04">Freitag</date>
                beim Tennis einen andern Tag aus.</p>
             <closer>Herzlichst<lb/> Ihr <signed>Salten</signed>
@@ -225,6 +230,7 @@
                <persName type="person_pseudonym">Martin Finder</persName>
                <persName type="person_pseudonym">Karl Heinrich</persName>
                <persName type="legacy-name-merge">Salten, Felix</persName>
+               <persName type="person_pseudonym">Ferdinand Stollberg</persName>
                <birth>
                   <date when="1869-09-06">06.09.1869</date>
                   <settlement ref="pmb43471">
@@ -436,8 +442,7 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
