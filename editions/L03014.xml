@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -85,7 +85,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="522"/>
+                                 <measure unit="zeichenanzahl" quantity="527"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -134,10 +134,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2023-03-16">Export aus Transkribus</change>
          <change who="LU" when="2024-05-23">Durchsicht</change>
          <change who="LU" when="2024-05-23">Index check</change>
+         <change who="MAM" when="2024-06-20">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -151,7 +152,7 @@
                <p>
                   <seg rend="left">
                      <pb facs="Wienbibliothek_AS_FS_2823241"/>
-                     <hi rend="pre-print">Dr Arthur Schnitzler</hi>
+                     <hi rend="pre-print">Dr. Arthur Schnitzler</hi>
                   </seg>
                   <seg rend="right">am <date when="1908-06-29">29. Juni 908</date>
                   </seg>
@@ -170,16 +171,16 @@
             <p>
                <salute>lieber,</salute> ich leſe eben, daſs Ihr <anchor type="commentary" xml:id="K_L03014-1"/>
                <rs type="person" ref="#pmb45493" subtype="implied">Bruder</rs> geſtorben<note type="commentary" xml:id="K_L03014-1h">
-                  <rs type="person" ref="#pmb45493">(Michael) Emil Salzmann</rs> war am <date when="1908-06-26">26. 6. 1908</date> an einer Neurasthenie verstorben. Er war
-                  das älteste Geschwister, die wichtigste familiäre Bezugsperson <rs type="person" ref="#pmb2167">Salten</rs>s und lebte bis zu seinem Tod unverheiratet bei der
-                     <rs type="person" ref="#pmb142895" subtype="implied">Mutter</rs>.</note> iſt,
+                  <rs type="person" ref="#pmb45493">(Michael) Emil Salzmann</rs> starb am <date when="1908-06-26">26. 6. 1908</date>. Er war
+                  das älteste Geschwister und die wichtigste familiäre Bezugsperson <rs type="person" ref="#pmb2167">Salten</rs>s. Er hatte zeitlebens unverheiratet bei der
+                     <rs type="person" ref="#pmb142895" subtype="implied">Mutter</rs> gelebt.</note> iſt,
                und bin um ſo tiefer ergriffen, als ich nicht wußte, daſs ſein Befinden ſich in der
                letzten Zeit verſchli<c rendition="#gemination-m"/>ert hatte. Glauben Sie mir, daſs
                ich an Ihrem Schmerze den herzlichſten Antheil nehme und ſagen Sie es auch den
                Ihrigen, vor allem Ihrer <rs type="person" ref="#pmb142895" subtype="implied">Mutter</rs>, wie ſehr ich das <pb facs="Wienbibliothek_AS_FS_2823242"/>frühe Ende
                dieſes liebenswerthen <rs type="person" ref="#pmb45493" subtype="implied">Menſchen</rs> beklage. Auch <rs type="person" ref="#pmb2173">Olga</rs> bittet Sie
                ihres Mitgefühls verſichert zu ſein. <rs type="person" subtype="implied" ref="#pmb2173">Wir</rs> grüßen vielmals und hoffen baldmöglichſt
-                  <unclear>wieder</unclear> von Ihnen zu hören.</p>
+                  gutes von Ihnen zu hören.</p>
             <closer>Ihr <lb/>
                <signed>Arthur</signed>
             </closer>
@@ -241,6 +242,7 @@
                <persName type="person_pseudonym">Martin Finder</persName>
                <persName type="person_pseudonym">Karl Heinrich</persName>
                <persName type="legacy-name-merge">Salten, Felix</persName>
+               <persName type="person_pseudonym">Ferdinand Stollberg</persName>
                <birth>
                   <date when="1869-09-06">06.09.1869</date>
                   <settlement ref="pmb43471">
@@ -411,8 +413,7 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
