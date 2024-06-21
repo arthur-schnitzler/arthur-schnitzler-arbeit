@@ -2864,12 +2864,19 @@
             test="not(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@when)">
             <xsl:choose>
                <xsl:when
-                  test="not(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@notBefore)">
-                  <xsl:message select="ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/@notAfter"/>
+                  test="ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@notBefore">
                   <xsl:value-of
                      select="foo:briefempfaenger-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@notAfter, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"/>
                   <xsl:value-of
                      select="foo:briefsender-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@notAfter, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"
+                  />
+               </xsl:when>
+               <xsl:when
+                  test="ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@from">
+                  <xsl:value-of
+                     select="foo:briefempfaenger-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@to, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"/>
+                  <xsl:value-of
+                     select="foo:briefsender-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@to, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"
                   />
                </xsl:when>
                <xsl:otherwise>
@@ -2882,8 +2889,14 @@
             </xsl:choose>
          </xsl:when>
          <xsl:otherwise>
-            <xsl:value-of
-               select="foo:briefempfaenger-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@when, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"/>
+            <xsl:value-of select="
+               foo:briefempfaenger-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'],
+               count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received']/persName),
+               ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'],
+               ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@when,
+               ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n,
+               ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date,
+               true())"/>
             <xsl:value-of
                select="foo:briefsender-mehrere-persName-rekursiv(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent'], count(ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/persName), ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'received'], ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@when, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date/@n, ancestor::TEI/teiHeader/profileDesc/correspDesc/correspAction[@type = 'sent']/date, true())"
             />
