@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -85,7 +85,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="586"/>
+                                 <measure unit="zeichenanzahl" quantity="585"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -97,7 +97,7 @@
                               <desc>
                                  <stamp n="1">
                                     <placeName ref="#pmb877">Unterach am Attersee</placeName>
-                                    <date when="1916-07-31">31. VII. 16 a</date>
+                                    <date when="1916-07-31">31. VII. 16</date>
                                  </stamp>
                               </desc>
                            </incident>
@@ -147,10 +147,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2024-01-09">Export aus Transkribus</change>
          <change who="LU" when="2024-06-03">Durchsicht</change>
          <change who="LU" when="2024-06-03">Index check</change>
+         <change who="MAM" when="2024-06-26">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -184,15 +185,16 @@
                <pb facs="MS-SCHNITZLER-B-00089-B-00002-000-00031-V"/>Vielen Dank für Ihre liebe
                   <anchor type="commentary" xml:id="K_L03573-1"/>Karte<note type="commentary" xml:id="K_L03573-1h">nicht erhalten</note>, die ich hier vorfand. Ich bin erst vor
                wenigen Tagen gekommen und finde es <rs type="place" subtype="implied" ref="#pmb877">hier</rs> wieder einmal herrlich schön. Sie sollten doch (endlich) <anchor type="commentary" xml:id="K_L03573-2"/>einmal mit <rs type="person" ref="#pmb2173">Olga</rs> herüberkommen<note type="commentary" xml:id="K_L03573-2h">Aus <rs type="person" ref="#pmb2121">Schnitzler</rs>s <rs type="work" ref="#pmb33243">Tagebuch</rs> geht nicht hervor, dass sie der Einladung Folge
-                  leisteten.</note>. Zu arbeiten habe ich hier noch nicht begonnen. Meine <anchor type="commentary" xml:id="K_L03573-3"/>
+                  leisteten.</note>. Zu arbeiten habe ich hier noch nicht begonnen. Meine 
                <rs type="work" ref="#pmb32380" subtype="implied">Einakter</rs>
-               <note type="commentary" xml:id="K_L03573-3h">der Einakterzyklus <rs type="work" ref="#pmb32380">Kinder der Freude</rs>
-               </note> sind in <rs type="place" ref="#pmb50">Wien</rs> fertig geworden und schon
+                sind in <rs type="place" ref="#pmb50">Wien</rs> fertig geworden und schon
                verschickt. Auch an Herrn <rs type="person" ref="#pmb12837">Steinrück</rs>, der es
-               gewünscht hat. Wir beabsichtigen nächstens einmal <anchor type="commentary" xml:id="K_L03573-4"/>zur <rs type="person" ref="#pmb14642">Marie Brüll</rs>
-               hinüberzufahren und rechnen natürlich darauf, dabei Sie und Frau <rs type="person" ref="#pmb2173">Olga</rs> zu sehen<note type="commentary" xml:id="K_L03573-4h">nicht nachweisbar</note>. Inzwischen viele herzliche Grüße von <rs type="person" subtype="implied" ref="#pmb23918">uns</rs> zu Ihnen, <lb/>Ihr <lb/>
-               <signed>Felix Salten</signed>
+               gewünscht hat. Wir beabsichtigen nächstens einmal <anchor type="commentary" xml:id="K_L03573-3"/>zur <rs type="person" ref="#pmb14642">Marie Brüll</rs>
+               hinüberzufahren und rechnen natürlich darauf, dabei Sie und Frau <rs type="person" ref="#pmb2173">Olga</rs> zu sehen<note type="commentary" xml:id="K_L03573-3h">nicht nachweisbar</note>. 
             </p>
+            <closer>Inzwischen viele herzliche Grüße von <rs type="person" subtype="implied" ref="#pmb23918">uns</rs> zu Ihnen, <lb/>Ihr <lb/>
+               <signed>Felix Salten</signed>
+            </closer>
          </div>
       </body>
       <back>
@@ -230,6 +232,7 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <occupation ref="pmb117">Chefredakteur/Chefredakteurin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118840819</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2167/</idno>
@@ -664,8 +667,7 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
