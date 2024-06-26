@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -102,7 +102,7 @@
                            <incident type="postal">
                               <desc>
                                  <stamp n="1">
-                                    <placeName ref="#pmb890">Hannover s r 1</placeName>
+                                    <placeName ref="#pmb890">Hannover</placeName>
                                     <date when="1921-03-31">31 3 21</date>
                                     <time>2–3 N</time>
                                  </stamp>
@@ -131,7 +131,7 @@
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
                <persName ref="#pmb10608">Wollf, Julius</persName>
-               <date when="1921-03-21" n="01">31. 3. 1921</date>
+               <date when="1921-03-31" n="01">31. 3. 1921</date>
                <placeName ref="#pmb890">Hannover</placeName>
             </correspAction>
             <correspAction type="received">
@@ -142,23 +142,24 @@
             </correspAction>
             <correspContext>
                <ref type="belongsToCorrespondence" target="correspondence_2167">Salten, Felix</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L02364">Hofmannsthal an Schnitzler, [19. 3. 1921]</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L02365">Schnitzler an Adam, 30. 3. 1921</ref>
+               <ref subtype="previous_letter" type="withinCollection" target="L03570">Salten an Schnitzler, 30. 3. 1921</ref>
+               <ref subtype="next_letter" type="withinCollection" target="L02366">Schnitzler an Beer-Hofmann, 8. 5. 1921</ref>
                <ref subtype="previous_letter"
                     type="withinCorrespondence"
                     source="correspondence_2167"
-                    target="L03569">Salten an Schnitzler, 18. 3. 1921</ref>
+                    target="L03570">Salten an Schnitzler, 30. 3. 1921</ref>
                <ref subtype="next_letter"
                     type="withinCorrespondence"
                     source="correspondence_2167"
-                    target="L03570">Salten an Schnitzler, 30. 3. 1921</ref>
+                    target="L03572">Salten an Schnitzler, 19. 7. 1921</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2024-01-09">Export aus Transkribus</change>
          <change who="LU" when="2024-06-04">Durchsicht</change>
          <change who="LU" when="2024-06-04">Index check</change>
+         <change who="MAM" when="2024-06-26">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -202,7 +203,7 @@
          <div type="writingSession" n="2">
             <p>
                <handShift scribe="#pmb10608"/>Herzliche Grüße von Ihrem <lb/>
-               <signed>Julius F<unclear>.</unclear> Wollf</signed>
+               <signed>JuliusFWollf</signed>
             </p>
          </div>
       </body>
