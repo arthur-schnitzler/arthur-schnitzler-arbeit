@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -106,7 +106,7 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb2167">Salten, Felix</persName>
-               <date when="1928-07-01" n="01">Juli 1928</date>
+               <date notBefore="1928-07-01" notAfter="1928-07-31" n="01">Juli 1928</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
             <correspAction type="received">
@@ -130,10 +130,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2023-05-17">Angelegt</change>
          <change who="LU" when="2024-06-05">Durchsicht</change>
          <change who="LU" when="2024-06-05">Index check</change>
+         <change who="MAM" when="2024-06-28">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -210,7 +211,7 @@
                <hi rend="pre-print">
                   <hi rend="capitals">
                      <hi rend="antiqua">
-                        <rs type="org" ref="#pmb36907">Paul Zsolnay Verlag</rs>
+                        <rs type="org" ref="#pmb36907"><hi rend="spaced-out">Paul Zsolnay Verlag</hi></rs>
                      </hi>
                   </hi>
                </hi>
@@ -261,6 +262,7 @@
                <sex value="male"/>
                <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
                <occupation ref="pmb99">Journalist/Journalistin</occupation>
+               <occupation ref="pmb117">Chefredakteur/Chefredakteurin</occupation>
                <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118840819</idno>
                <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2167.html</idno>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2167/</idno>
@@ -337,8 +339,7 @@
          <listPlace>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>

@@ -87,7 +87,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="213"/>
+                                 <measure unit="zeichenanzahl" quantity="215"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -136,10 +136,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2024-01-09">Export aus Transkribus</change>
          <change who="LU" when="2024-06-05">Durchsicht</change>
          <change who="LU" when="2024-06-05">Index check</change>
+         <change who="MAM" when="2024-06-27">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -155,21 +156,24 @@
                         Salten</hi>
                </hi>
             </p>
-            <p>
+            <p rend="center">
                <hi rend="capitals">
                   <hi rend="pre-print">bitten</hi>
                </hi> Herrn D<hi rend="superscript">r</hi>
             </p>
-            <p>Arthur Schnitzler</p>
-            <p>
-               <hi rend="pre-print">für</hi>
+            <p rend="center">Arthur Schnitzler</p>
+            <p rend="center">
+               <hi rend="pre-print">
+                  <hi rend="capitals">für</hi>
+               </hi>
                <space unit="chars" quantity="1"/>
                <date when="1927-04-13">Mittwoch <hi rend="capitals">
                      <hi rend="pre-print">den</hi>
-                  </hi> 13. April</date>
-               <hi rend="pre-print">192</hi>
+                  </hi> 13. April<space unit="chars" quantity="1"/>
+                  <hi rend="pre-print">192</hi>
+               </date>
             </p>
-            <p>zum Thee</p>
+            <p rend="center">zum Thee</p>
             <p>
                <time>5–8 <hi rend="capitals">
                      <hi rend="pre-print">Uhr</hi>
@@ -186,7 +190,7 @@
                <seg rend="right">
                   <hi rend="pre-print">
                      <hi rend="capitals">
-                        <anchor type="commentary" xml:id="K_L03581-1"/>u.A.w.g.<note type="commentary" xml:id="K_L03581-1h">um Antwort wird gebeten</note>
+                        <anchor type="commentary" xml:id="K_L03581-1"/>u. A. w. g.<note type="commentary" xml:id="K_L03581-1h">um Antwort wird gebeten</note>
                      </hi>
                   </hi>
                </seg>
@@ -194,9 +198,13 @@
             <p>
                <handShift scribe="#pmb2167"/>
                <salute>Lieber,</salute> wir werden uns freuen, Sie
-                  <anchor type="commentary" xml:id="K_L03581-2"/>an diesem <date when="1927-04-13">Tag</date> bei uns zu haben<note type="commentary" xml:id="K_L03581-2h">
-                  <ref type="schnitzler-tagebuch" target="1927-04-13" subtype="see"/>
-               </note> – vielleicht, wenn Sie das vorziehen, kommen Sie gegen <time>7<hi rend="superscript">h</hi>
+               an <anchor type="commentary" xml:id="K_L03581-2"/>diesem <date when="1927-04-13">Tag</date>
+               <note type="commentary" xml:id="K_L03581-2h">Es handelte
+                  sich um die Feier des 
+                  25. Hochzeitstags von <rs type="person" ref="#pmb23918">Ottilie</rs> und <rs type="person" ref="#pmb2167">Felix Salten</rs>. <rs type="person" ref="#pmb2121">Schnitzler</rs>
+                  nahm teil, 
+                  <ref type="schnitzler-tagebuch" target="1927-04-13" subtype="cf"/>.
+               </note> bei uns zu haben – vielleicht, wenn Sie das vorziehen, kommen Sie gegen <time>7<hi rend="superscript">h</hi>
                </time> und bleiben zum Nachtmahl!!</p>
             <closer>Herzlich <lb/>
                <signed>F. S.</signed>
