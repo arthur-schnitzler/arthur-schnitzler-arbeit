@@ -47,19 +47,10 @@
                 <xsl:if test="number(substring-after(//tei:TEI/@xml:id, 'L0')) > 2579">
                     <xsl:choose>
                         <xsl:when
-                            test="//tei:author[@ref = '#pmb11485'] and boolean(//tei:revisionDesc/tei:change[@who = 'MAM'][contains(., 'Durchsicht')]) and not(boolean(//tei:revisionDesc/tei:change[@who = 'LU'][contains(., 'Durchsicht')]))">
+                            test="boolean(//tei:revisionDesc[@status = 'proposed'] or //tei:revisionDesc[@status = 'approved']) and not(boolean(//tei:revisionDesc/tei:change[@who = 'LU'][contains(., 'Durchsicht')]))">
                             <xsl:value-of select="tei:TEI/@xml:id"/>
                             <xsl:text>&#xa;</xsl:text>
                         </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:choose>
-                                <xsl:when
-                                    test="//tei:author[@ref = '#pmb2167'] and not(boolean(//tei:revisionDesc/tei:change[@who = 'LU'][contains(., 'Durchsicht')]))">
-                                    <xsl:value-of select="tei:TEI/@xml:id"/>
-                                    <xsl:text>&#xa;</xsl:text>
-                                </xsl:when>
-                            </xsl:choose>
-                        </xsl:otherwise>
                     </xsl:choose>
                 </xsl:if>
             </xsl:for-each>
