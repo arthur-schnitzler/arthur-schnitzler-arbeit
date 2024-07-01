@@ -15,9 +15,9 @@
          <xsl:value-of select="descendant::*:titleStmt/*:title[@level='a']"/>
          <xsl:text>}</xsl:text>
          <xsl:text>&#10;</xsl:text>
-         <xsl:if test="descendant::*:body//*:note[@type='commentary' or @type='textConst'][1]">
+         <xsl:if test="descendant::*:body//*:note[(@type='commentary' or @type='textConst')][1] and descendant::*:body//*:note[not(child::*:ref[1] and not(child::*[2]) and normalize-space(.)='')]">
             <xsl:text>\begin{description}[nosep]</xsl:text>
-         <xsl:apply-templates select="descendant::*:body//*:note[@type='commentary' or @type='textConst']"></xsl:apply-templates>
+         <xsl:apply-templates select="descendant::*:body//*:note[@type='commentary' or @type='textConst']"/>
             <xsl:text>\end{description}</xsl:text>
          </xsl:if>
       </xsl:for-each>
