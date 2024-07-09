@@ -5,6 +5,7 @@
     <xsl:mode on-no-match="shallow-skip"/>
     <xsl:output media-type="text"/>
     <xsl:variable name="editions" select="collection('editions/?select=*.xml')"/>
+    
     <xsl:template match="*:report">
         <xsl:element name="report">
             <xsl:text>&#xa;</xsl:text>
@@ -30,45 +31,18 @@
             <xsl:text>&#xa;</xsl:text>
             <xsl:text>Martin, diese Dokumente solltest du noch durchsehen:</xsl:text>
             <xsl:text>&#xa;</xsl:text>
-            <xsl:for-each select="
-                    $editions[descendant::tei:revisionDesc[not(@status = 'approved')] and number(substring-after(descendant::tei:TEI/@xml:id, 'L0')) > 2579][not(descendant::tei:revisionDesc[child::tei:change[@who = 'MAM' and contains(., 'Durchsicht')]])
-                    and not(descendant::tei:revisionDesc[child::tei:change[@who = 'MAM' and contains(., 'Angelegt')]])]">
-                <xsl:sort select="//tei:TEI/@xml:id"/>
-                <xsl:value-of select="position()"/>
-                <xsl:text>.) </xsl:text>
-                <xsl:value-of select="descendant::tei:TEI/@xml:id"/>
-                <xsl:text>&#xa;</xsl:text>
-            </xsl:for-each>
-            <xsl:text>&#xa;</xsl:text>
-            <xsl:text>Laura, diese Dokumente solltest du noch durchsehen:</xsl:text>
-            <xsl:text>&#xa;</xsl:text>
             <xsl:for-each select="$editions">
                 <xsl:sort select="//tei:TEI/@xml:id"/>
                 <xsl:if test="number(substring-after(//tei:TEI/@xml:id, 'L0')) > 2579">
                     <xsl:choose>
                         <xsl:when
-                            test="boolean(//tei:revisionDesc[@status = 'proposed'] or //tei:revisionDesc[@status = 'approved']) and not(boolean(//tei:revisionDesc/tei:change[@who = 'LU'][contains(., 'Durchsicht')]))">
+                            test="not(boolean(//tei:revisionDesc[@status='approved']))">
                             <xsl:value-of select="tei:TEI/@xml:id"/>
                             <xsl:text>&#xa;</xsl:text>
                         </xsl:when>
                     </xsl:choose>
                 </xsl:if>
             </xsl:for-each>
-            <xsl:text>&#xa;</xsl:text>
-            <xsl:text>Laura, diese Dokumente sind bereits candidates und warten auf ihr approval:</xsl:text>
-            <xsl:text>&#xa;</xsl:text>
-            <xsl:for-each select="$editions">
-                <xsl:sort select="//tei:TEI/@xml:id"/>
-                <xsl:if test="number(substring-after(//tei:TEI/@xml:id, 'L0')) > 2579">
-                    <xsl:choose>
-                        <xsl:when test="boolean(//tei:revisionDesc[@status = 'candidate'])">
-                            <xsl:value-of select="tei:TEI/@xml:id"/>
-                            <xsl:text>&#xa;</xsl:text>
-                        </xsl:when>
-                    </xsl:choose>
-                </xsl:if>
-            </xsl:for-each>
-            <xsl:text>&#xa;</xsl:text>
         </xsl:element>
     </xsl:template>
 </xsl:stylesheet>
