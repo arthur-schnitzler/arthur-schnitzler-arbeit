@@ -83,7 +83,7 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="328"/>
+                                 <measure unit="zeichenanzahl" quantity="327"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -150,10 +150,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="MAM" when="2023-07-25">Angelegt</change>
          <change who="LU" when="2024-07-01">Durchsicht</change>
          <change who="LU" when="2024-07-01">Index check</change>
+         <change who="MAM" when="2024-08-01">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -167,7 +168,8 @@
                <addrLine>
                   <pb facs="Kerr_2487_001_01"/>Dr. Paul Goldmann</addrLine>
                <addrLine>
-                  <rs type="place" ref="#pmb168">Berlin W<unclear>.</unclear></rs>
+                  <rs type="place" ref="#pmb168">Berlin W<unclear>.</unclear>
+                  </rs>
                </addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb40583">Dessauerstraße 19</rs>.</addrLine>
@@ -178,8 +180,9 @@
                <p>
                   <seg rend="left">
                      <pb facs="Kerr_2487_001_02"/>
-                     <hi rend="pre-print"><hi rend="bold">Gruss</hi> aus <rs type="place"
-                           ref="#pmb46000">Grundlsee</rs>.</hi>
+                     <hi rend="pre-print">
+                        <hi rend="bold">Gruss</hi> aus <rs type="place" ref="#pmb46000"
+                           >Grundlsee</rs>.</hi>
                   </seg>
                   <seg rend="right">
                      <hi rend="pre-print">Totalansicht.</hi>
@@ -191,26 +194,33 @@
                   <hi rend="latintype">Altaussee</hi>
                </rs>
                <note type="commentary" xml:id="K_L03188-1h">
-                  <rs type="person" ref="#pmb2121">Schnitzler</rs> war am <ref
+                  <rs type="person" ref="#pmb2121">Schnitzler</rs> hielt sich seit <ref
                      type="schnitzler-tagebuch" target="1900-06-29" subtype="date-only"/> in <rs
-                     type="place" ref="#pmb34401">Altaussee</rs> angekommen. Am <ref
+                     type="place" ref="#pmb34401">Altaussee</rs> auf. Am <ref
                      type="schnitzler-tagebuch" target="1900-07-03" subtype="date-only"/> fuhr er
                   weiter nach <rs type="place" ref="#pmb49312">Admont</rs>.</note>, (<rs
                   type="person" ref="#pmb10863">Richard</rs> nicht.) – Die berühmte <anchor
                   type="commentary" xml:id="K_L03188-2"/>Fußpartie<note type="commentary"
                   xml:id="K_L03188-2h">
                   <ref type="schnitzler-briefe" target="L02920" subtype="see"/>
-               </note> wäre am erwünſchtesten we<c rendition="#gemination-n"/> ſie etwa <date
+               </note> wäre am erwünſchteſten we<c rendition="#gemination-n"/> ſie etwa <date
                   when="1900-08-15">Mitte Auguſt</date> begänne. Rendezvous <rs type="place"
-                  ref="#pmb30">Salzburg</rs> oder <rs type="place" ref="#pmb867">Innsbruck</rs>.–
-               Nach <rs type="place" ref="#pmb30">Salzburg</rs> auf ein paar Tage könnte <rs
-                  type="person" ref="#pmb10863">Richard</rs> (u ich) (und <rs type="person"
-                  ref="#pmb26392">Leo</rs>) auch <date when="1900-08-01">Anfang Auguſt</date>.</p>
+                  ref="#pmb30">Salzburg</rs> oder <rs type="place" ref="#pmb867"
+               >Innsbruck</rs>.&#160;– Nach <rs type="place" ref="#pmb30">Salzburg</rs> auf ein paar
+               Tage könnte <rs type="person" ref="#pmb10863">Richard</rs> (u ich) (und <rs
+                  type="person" ref="#pmb26392">Leo</rs>) auch <date when="1900-08-01">Anfang
+                  Auguſt</date>.</p>
             <closer>Herzlichſt <signed>Arthur</signed>
             </closer>
             <postscript>
-               <p>Bitte das auch <hi rend="latintype"><rs type="person" ref="#pmb11910"
-                     >Kerr</rs></hi> zu ſagen</p>
+               <p>Bitte das auch <anchor type="commentary" xml:id="K_L03188-3"/>
+                  <hi rend="latintype">
+                     <rs type="person" ref="#pmb11910">Kerr</rs>
+                  </hi> zu ſagen<note type="commentary" xml:id="K_L03188-3h">
+                     <rs type="person" ref="#pmb11485">Goldmann</rs> sandte die Karte direkt weiter,
+                     sie ist im Nachlass <rs type="person" ref="#pmb11910">Kerr</rs>s
+                     überliefert.</note>
+               </p>
             </postscript>
          </div>
       </body>
@@ -621,6 +631,8 @@
                   >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb49312.html</idno>
                <idno type="URL" subtype="schnitzler-briefe"
                   >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb49312.html</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q359324</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Admont</idno>
             </place>
             <place xml:id="pmb30">
                <placeName>Salzburg</placeName>
