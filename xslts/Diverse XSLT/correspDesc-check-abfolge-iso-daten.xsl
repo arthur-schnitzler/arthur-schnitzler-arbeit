@@ -5,17 +5,21 @@
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
     
+    <!-- Dieses Template überprüft die logische Konsistenz der ISO-Daten in 
+    correspAction, also ob 
+    -->
+    
     <xsl:template match="tei:correspAction[not(fn:position()=1)]/tei:date[1]/@when">
         <xsl:variable name="previous-attribute" as="xs:date">
             <xsl:choose>
-                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@when">
-                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@when"/>
+                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@when">
+                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@when"/>
                 </xsl:when>
-                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@to">
-                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@to"/>
+                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@to">
+                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@to"/>
                 </xsl:when>
-                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@notAfter">
-                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@notAfter"/>
+                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@notAfter">
+                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@notAfter"/>
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
@@ -32,14 +36,14 @@
     <xsl:template match="tei:correspAction[not(fn:position()=1)]/tei:date[1]/@notBefore">
         <xsl:variable name="previous-attribute" as="xs:date">
             <xsl:choose>
-                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@when">
-                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@when"/>
+                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@when">
+                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@when"/>
                 </xsl:when>
-                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@to">
-                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@to"/>
+                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@to">
+                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@to"/>
                 </xsl:when>
-                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@notAfter">
-                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@notAfter"/>
+                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@notBefore">
+                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@notBefore"/>
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
@@ -53,21 +57,21 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="tei:correspAction[not(fn:position()=1)]/tei:date[1]/@from">
+    <xsl:template match="tei:correspAction[not(fn:position()=1)]/tei:date[1]/@to">
         <xsl:variable name="previous-attribute" as="xs:date">
             <xsl:choose>
-                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@when">
-                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@when"/>
+                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@when">
+                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@when"/>
                 </xsl:when>
-                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@to">
-                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@to"/>
+                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@to">
+                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@to"/>
                 </xsl:when>
-                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@notAfter">
-                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[1]/tei:date[1]/@notAfter"/>
+                <xsl:when test="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@notAfter">
+                    <xsl:value-of select="ancestor::tei:correspAction[1]/preceding-sibling::tei:correspAction[tei:date][1]/tei:date[1]/@notAfter"/>
                 </xsl:when>
             </xsl:choose>
         </xsl:variable>
-        <xsl:attribute name="from">
+        <xsl:attribute name="to">
             <xsl:value-of select="."/>
         </xsl:attribute>
         <xsl:if test="xs:date($previous-attribute) > xs:date(.)">
