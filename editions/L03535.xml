@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -86,7 +86,7 @@
                               <extent>
                                  <measure unit="seite" quantity="4"/>
                                  <measure unit="blatt" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="2205"/>
+                                 <measure unit="zeichenanzahl" quantity="2212"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -107,7 +107,7 @@
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
                <date when="1901-11-15" n="01">15. 11. [1901]</date>
-               <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
+               <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2173">Gussmann, Olga</persName>
@@ -133,10 +133,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2023-11-22">Export aus Transkribus</change>
          <change who="LU" when="2024-07-09">Durchsicht</change>
          <change who="LU" when="2024-07-09">Index check</change>
+         <change who="MAM" when="2024-08-07">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -153,7 +154,8 @@
                   <pb facs="DLA_85.1.5247_00034"/>
                   <hi rend="pre-print">
                      <rs type="place" ref="#pmb40583">
-                        <hi rend="capitals">Dessauerstrasse</hi> 19</rs>
+                        <hi rend="capitals">Dessauerstrasse 19</hi>
+                     </rs>
                   </hi>
                </p>
                <dateline>
@@ -164,18 +166,18 @@
                   <rs type="person" ref="#pmb2121">Arthur</rs>
                </hi> ein paar <anchor type="commentary" xml:id="K_L03535-1"/>frohe und friedliche
                   Tage<note type="commentary" xml:id="K_L03535-1h">
-                  <rs type="person" ref="#pmb2121">Schnitzler</rs> und <rs type="person" ref="#pmb2173">Olga Gussmann</rs> waren zwischen <ref type="schnitzler-tagebuch" target="1901-11-11" subtype="date-only"/> und <ref type="schnitzler-tagebuch" target="1901-11-14" subtype="date-only"/> in <rs type="place" ref="#pmb714">Payerbach</rs> gewesen.</note> haben verleben
-               können. Ihre Schilderungen ſind ſehr eindrucksvoll, und an Ihren Worten iſt ein
-               Schimmer von Glück haften geblieben.</p>
+                  <rs type="person" ref="#pmb2121">Schnitzler</rs> und <rs type="person" ref="#pmb2173">Olga Gussmann</rs> waren erst am Vortag, dem <ref type="schnitzler-tagebuch" target="1901-11-14" subtype="date-only"/>, aus <rs type="place" ref="#pmb714">Payerbach</rs> nach <rs type="place" ref="#pmb50">Wien</rs> zurückgekehrt, wo sie vier Tage verlebt hatten.</note> haben
+               verleben können. Ihre Schilderungen ſind ſehr eindrucksvoll, und an Ihren Worten iſt
+               ein Schimmer von Glück haften geblieben.</p>
             <p>Ihr Brief erfordert eine ausführliche Beantwortung, und ſie ſoll Ihnen werden, ſobald
                die Arbeit mir ein wenig Luft läßt.</p>
             <p>Eines aber muß ich mir gleich von der Seele ſchreiben. Ich danke Ihnen für <pb facs="DLA_85.1.5247_00035-0"/>die Offenheit, mit der Sie zu mir über meine
                Feuilletons ſprechen, und werde Ihnen mit derſelben Offenheit antworten. Und da muß
                ich Ihnen ſagen, daß Ihre Äußerungen mich außerordentlich geſchmerzt, – daß ſie mich
                in einem Punkte getroffen haben, <del rend="strikethrough">
-                  <unclear>w</unclear>
+                  <unclear>wo</unclear>
                </del> an dem ich überaus empfindlich bin. Oder, um es etwas weniger ſentimental
-               auszudeuten: Ich bin <del rend="strikethrough">
+               auszudrücken: Ich bin <del rend="strikethrough">
                   <gap quantity="5" reason="illegible" unit="chars"/>
                </del> verblüfft, von Ihnen ſo ganz und gar nicht verſtanden zu werden. Ich bin
                verblüfft, daß Sie nicht begreifen, wieviel ehrliche Kunſtbegeiſterung, welch’ heißes
@@ -184,13 +186,13 @@
                über <hi rend="latintype">
                   <rs type="person" ref="#pmb11617">Hauptmann</rs>
                </hi>
-               <note type="commentary" xml:id="K_L03535-2h">
-                  <bibl>
-                     <rs type="person" ref="#pmb11485">Paul Goldmann</rs>: <rs type="work" ref="#pmb145492">Berliner Brief</rs>. In: <rs ref="#pmb36374" type="work">Neue Freie Presse</rs>, Nr. 12.735, <date when="1900-02-06">6. 2. 1900</date>, Morgenblatt, S. 1–3</bibl>; <bibl>
-                     <rs type="person" ref="#pmb11485">ders.</rs>: <rs type="work" ref="#pmb142613">»Michael Kramer.«</rs>. In: <rs type="work" ref="#pmb36374">ebd.</rs>,
-                     Nr. 13.055, <date when="1900-12-28">28. 12. 1900</date>, Morgenblatt,
-                     S. 1–3</bibl>; <bibl>
-                     <rs type="person" ref="#pmb11485">ders.</rs>: <rs ref="#pmb29861" type="work">Berliner Theater. »Einsame Menschen« im Deutschen Theater</rs>. In: <rs ref="#pmb36374" type="work">ebd.</rs>, Nr. 13.345, <date when="1901-10-19">19. 10. 1901</date>, Morgenblatt, S. 1–3</bibl>. Siehe auch <ref type="schnitzler-briefe" target="L03090"/>, <ref type="schnitzler-briefe" target="L03091" subtype="date-only"/> und <ref type="schnitzler-briefe" target="L03092" subtype="date-only"/>.</note> ſich <pb facs="DLA_85.1.5247_00035-1"/>ausdrückt. Ich bin verblüfft, daß Sie in einem
+               <note type="commentary" xml:id="K_L03535-2h">Der unmittelbare Auslöser der
+                  Auseinandersetzung war diese Rezension: <bibl>
+                     <rs type="person" ref="#pmb11485">Paul Goldmann</rs>: <rs ref="#pmb29861" type="work">Berliner Theater. »Einsame Menschen« im Deutschen Theater</rs>.
+                     In: <rs ref="#pmb36374" type="work">Neue Freie Presse</rs>, Nr. 13.345, <date when="1901-10-19">19. 10. 1901</date>, Morgenblatt, S. 1–3</bibl>. Dabei
+                  dürften auch frühere Feuilletons thematisiert worden sein: <bibl>
+                     <rs type="person" ref="#pmb11485">Paul Goldmann</rs>: <rs type="work" ref="#pmb145492">Berliner Brief</rs>. In: <rs ref="#pmb36374" type="work">Neue Freie Presse</rs>, Nr. 12.735, <date when="1900-02-06">6. 2. 1900</date>, Morgenblatt, S. 1–3</bibl>. <bibl>
+                     <rs type="person" ref="#pmb11485">Paul Goldmann</rs>: <rs type="work" ref="#pmb142613">»Michael Kramer.«</rs>. In: <rs ref="#pmb36374" type="work">Neue Freie Presse</rs>, Nr. 13.055, <date when="1900-12-28">28. 12. 1900</date>, Morgenblatt, S. 1–3</bibl>. Siehe auch <ref type="schnitzler-briefe" target="L03090"/>, <ref type="schnitzler-briefe" target="L03091" subtype="date-only"/> und <ref type="schnitzler-briefe" target="L03092" subtype="date-only"/>.</note> ſich <pb facs="DLA_85.1.5247_00035-1"/>ausdrückt. Ich bin verblüfft, daß Sie in einem
                Falle, wo Ihre und meine Meinung ſich gegenüberſtehen, nicht einen Augenblick <subst>
                   <del rend="strikethrough">
                      <unclear>den</unclear> Fall</del>
@@ -205,11 +207,10 @@
                meine Angriffe gegen <hi rend="latintype">
                   <rs type="person" ref="#pmb11617">Hauptmann</rs>
                </hi> perſönlich <pb facs="DLA_85.1.5247_00036"/>finden, ſo wiſſen Sie wohl nicht,
-               was perſönliche Angriffe ſind. Meine Einwendungen ſind einer abſolut <anchor type="textConst" xml:id="T_L03535-1"/>ſachliche<supplied>n</supplied>
-               <note type="textConst" xml:id="T_L03535-1h">korrigiert aus
-                  »<quote>ſachlicher</quote>«</note> Art; und wenn ſie im heftigen Tone vorgebracht
-               werden, ſo kommt dieſer Ton von meinem Temperament, – ſo kommt er von der Erbitterung
-               her, die mich erfüllt, einen ſo minderwerthigen Geiſt, wie <hi rend="latintype">
+               was perſönliche Angriffe ſind. Meine Einwendungen ſind einer abſolut ſachlichen Art;
+               und wenn ſie im heftigen Tone vorgebracht werden, ſo kommt dieſer Ton von meinem
+               Temperament, – ſo kommt er von der Erbitterung her, die mich erfüllt, einen ſo
+               minderwerthigen Geiſt, wie <hi rend="latintype">
                   <rs type="person" ref="#pmb11617">Gerhart Hauptmann</rs>
                </hi>, zum großen Dichter erhoben zu ſehen. Und daß Sie mir dieſe Erbitterung nicht
                glauben wollen, daß Sie nach perſönlichen Motiven ſuchen, – Sie, eine Freundin, – das
@@ -448,11 +449,9 @@
                <note type="work_kind">Mehraktiges Drama</note>
             </bibl>
             <bibl xml:id="pmb145492">
-               <title>Berliner Brief. [»Schluck und Jau« von Gerhart Hauptmann am Deutschen
-                  Theater]</title>
+               <title>Berliner Brief. [»Schluck und Jau« von Gerhart Hauptmann am Deutschen Theater]</title>
                <title type="anno">https://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19000206&amp;seite=1</title>
-               <title type="werk_bibliografische-angabe">Paul Goldmann: Berliner Brief. In: Neue
-                  Freie Presse, Nr. 12.735, 6. 2. 1900, Morgenblatt, S. 1–3</title>
+               <title type="werk_bibliografische-angabe">Paul Goldmann: Berliner Brief. In: Neue Freie Presse, Nr. 12.735, 6. 2. 1900, Morgenblatt, S. 1–3</title>
                <author ref="pmb11485" role="hat-geschaffen">Goldmann, Paul</author>
                <date when="1900-02-06">1900-02-06</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/145492/</idno>
@@ -462,13 +461,22 @@
             <bibl xml:id="pmb142613">
                <title>»Michael Kramer.«</title>
                <title type="anno">https://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19001228&amp;seite=1&amp;zoom=33</title>
-               <title type="werk_bibliografische-angabe">Paul Goldmann: »Michael Kramer.«. In: Neue
-                  Freie Presse, Nr. 13055, 28. 12. 1900, Morgenblatt, S. 1–3</title>
+               <title type="werk_bibliografische-angabe">Paul Goldmann: »Michael Kramer.«. In: Neue Freie Presse, Nr. 13055, 28. 12. 1900, Morgenblatt, S. 1–3</title>
                <author ref="pmb11485" role="hat-geschaffen">Goldmann, Paul</author>
                <date>1900-12-28</date>
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/142613/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb142613.html</idno>
                <note type="work_kind">Feuilleton</note>
+            </bibl>
+            <bibl xml:id="pmb29861">
+               <title>Berliner Theater. »Einsame Menschen« im Deutschen Theater</title>
+               <title type="werk_bibliografische-angabe">Neue Freie Presse, 19. 10. 1901</title>
+               <author ref="pmb11485" role="hat-geschaffen">Goldmann, Paul</author>
+               <date when="1901-10-19">19.10.1901</date>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29861.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29861/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29861.html</idno>
+               <note type="work_kind">Rezension</note>
             </bibl>
             <bibl xml:id="pmb36374">
                <title>Neue Freie Presse</title>
@@ -483,16 +491,6 @@
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36374.html</idno>
                <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb36374.html</idno>
                <note type="work_kind">Tageszeitung</note>
-            </bibl>
-            <bibl xml:id="pmb29861">
-               <title>Berliner Theater. »Einsame Menschen« im Deutschen Theater</title>
-               <title type="werk_bibliografische-angabe">Neue Freie Presse, 19. 10. 1901</title>
-               <author ref="pmb11485" role="hat-geschaffen">Goldmann, Paul</author>
-               <date when="1901-10-19">19.10.1901</date>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb29861.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/29861/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb29861.html</idno>
-               <note type="work_kind">Rezension</note>
             </bibl>
          </listBibl>
          <listPlace>
@@ -531,8 +529,7 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>

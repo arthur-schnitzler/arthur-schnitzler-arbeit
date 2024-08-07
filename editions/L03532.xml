@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
@@ -8,7 +8,7 @@
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Paul Goldmann an Olga Gussmann, 9. 7. [1902]</title>
+            <title level="a">Paul Goldmann an Olga Gussmann, 9. 7. [1902?]</title>
             <author ref="#pmb11485">Goldmann, Paul</author>
             <editor>
                <name>Müller, Martin Anton</name>
@@ -86,7 +86,7 @@
                               <extent>
                                  <measure unit="seite" quantity="4"/>
                                  <measure unit="blatt" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="1817"/>
+                                 <measure unit="zeichenanzahl" quantity="1819"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
@@ -106,8 +106,8 @@
          <correspDesc>
             <correspAction type="sent">
                <persName ref="#pmb11485">Goldmann, Paul</persName>
-               <date when="1902-07-09" n="02">9. 7. [1902]</date>
-               <placeName ref="#pmb168" evidence="conjecture">Berlin</placeName>
+               <date when="1902-07-09" n="02">9. 7. [1902?]</date>
+               <placeName ref="#pmb168">Berlin</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2173">Gussmann, Olga</persName>
@@ -134,10 +134,11 @@
             </correspContext>
          </correspDesc>
       </profileDesc>
-      <revisionDesc status="proposed">
+      <revisionDesc status="approved">
          <change who="LU" when="2023-11-22">Export aus Transkribus</change>
          <change who="LU" when="2024-07-09">Durchsicht</change>
          <change who="LU" when="2024-07-09">Index check</change>
+         <change who="MAM" when="2024-08-07">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -154,33 +155,38 @@
                   <pb facs="DLA_85.1.5247_00026"/>
                   <hi rend="pre-print">
                      <rs type="place" ref="#pmb40583">
-                        <hi rend="capitals">Dessauerstrasse</hi> 19</rs>
+                        <hi rend="capitals">Dessauerstrasse&#160;19</hi></rs>
                   </hi>
                </p>
                <dateline rend="left">
                   <rs type="place" ref="#pmb168">Berlin</rs>, <date when="1902-07-09">9. Juli</date>.</dateline>
                <salute rend="center">Liebe Freundin,</salute>
             </opener>
-            <p>Bitte, laſſen Sie das Danken ſein. Das war doch Alles ſelbſtverſtändlich. Es iſt
-                  <unclear>d</unclear>och die erſte und einfachſte Pflicht der Freundſchaft, in
-               wichtigen Lebensangelegenheiten <anchor type="commentary" xml:id="K_L03532-1"/>Beiſtand<note type="commentary" xml:id="K_L03532-1h">
+            <p>Bitte, laſſen Sie das Danken ſein. Das war doch Alles ſelbſtverſtändlich. Es iſt noch
+               die erſte und einfachſte Pflicht der Freundſchaft, in wichtigen Lebensangelegenheiten
+                  <anchor type="commentary" xml:id="K_L03532-1"/>Beiſtand<note type="commentary" xml:id="K_L03532-1h">
                   <ref type="schnitzler-briefe" target="L03211" subtype="see"/>
                </note> zu leiſten.</p>
-            <p>Ihre lieben Mittheilungen über <anchor type="commentary" xml:id="K_L03532-2"/>
-               <hi rend="latintype">
-                  <rs type="person" ref="#pmb15445">Peter Dorner</rs> etc</hi>
-               <note type="commentary" xml:id="K_L03532-2h">vermutlich Bezug auf <rs type="person" ref="#pmb15445">Peter Dorner</rs>s kürzlich vollzogene Verlobung, <ref type="schnitzler-briefe" target="L03449" subtype="cf"/>
-               </note>. haben mich ſehr intereſſirt. Nur hätte ich gern auch etwas Näheres über Ihr
-               Ergehen gehört.</p>
-            <p>Daß unſer lieber <anchor type="commentary" xml:id="K_L03532-3"/>
+            <p>Ihre lieben <anchor type="commentary" xml:id="K_L03532-2"/>Mittheilungen über 
+               <rs type="person" ref="#pmb15445">
+                  <hi rend="latintype">Peter Dorner</hi>
+               </rs>
+               <note type="commentary" xml:id="K_L03532-2h">
+                  <rs type="person" ref="#pmb2121">Arthur Schnitzler</rs> hatte
+                  den Kunstschmied am <ref type="schnitzler-tagebuch" subtype="date-only" target="1902-07-04"/> in dessen Atelier aufgesucht.</note>
+               <space unit="chars" quantity="1"/>
+               <hi rend="latintype">etc.</hi> haben
+               mich ſehr intereſſirt. Nur hätte ich gern auch etwas Näheres über Ihr Ergehen
+               gehört.</p>
+            <p>Daß unſer liebes <anchor type="commentary" xml:id="K_L03532-3"/>
                <hi rend="latintype">
                   <rs type="place" ref="#pmb428">Welsberg</rs>
                </hi> von <hi rend="latintype">
                   <rs type="person" ref="#pmb11740">Hoffmannsthal</rs>
                </hi> »entdeckt«<note type="commentary" xml:id="K_L03532-3h">
-                  <rs type="person" ref="#pmb11740">Hugo von Hofmannsthal</rs> hielt sich im Sommer
-                     <date when="1902">1902</date> ebenso in <rs type="place" ref="#pmb428">Welsberg</rs> auf, <ref type="schnitzler-tagebuch" target="1902-07-05" subtype="cf"/> und <ref type="schnitzler-tagebuch" target="1902-07-05" subtype="date-only"/>.</note> worden iſt, thut mir leid. Es wird jetzt ein
-               literariſcher Ort werden – obwohl <del rend="strikethrough">es</del>
+                  <rs type="person" ref="#pmb11740">Hugo von Hofmannsthal</rs> reiste am <ref type="schnitzler-tagebuch" subtype="date-only" target="1902-07-04"/> gemeinsam
+                  mit <rs type="person" ref="#pmb2121">Schnitzler</rs> nach <rs type="place" ref="#pmb428">Welsberg</rs> und blieb nach <rs type="person" ref="#pmb2121">Schnitzler</rs>s Abreise ein paar Tage länger (<ref type="schnitzler-briefe" target="L01229" subtype="see"/>).</note> worden iſt,
+               thut mir leid. Es wird jetzt ein literariſcher Ort werden – obwohl <del rend="strikethrough">es</del>
                <space unit="chars" quantity="1"/>
                <pb facs="DLA_85.1.5247_00027-0"/>es doch ein beſſeres Schickſal verdient hätte.</p>
             <p>Meine <rs type="person" subtype="implied" ref="#pmb17163">Mutter</rs> hat ſich ſehr
@@ -192,9 +198,10 @@
                </hi>, wenn er <anchor type="commentary" xml:id="K_L03532-4"/>
                <date when="1902-07-10">morgen</date>
                <note type="commentary" xml:id="K_L03532-4h">
-                  <rs type="person" ref="#pmb2121">Schnitzler</rs> war am <ref type="schnitzler-tagebuch" target="1902-07-08" subtype="date-only"/> nach <rs type="place" ref="#pmb50">Wien</rs> zurückgekehrt, <rs type="person" ref="#pmb11485">Goldmann</rs> irrte sich nur um zwei Tage.</note> zurückkommt,
-               vielmals von mir. Ich <del rend="strikethrough">
-                  <unclear>leſ</unclear>
+                  <rs type="person" ref="#pmb11485">Goldmann</rs> war nicht am aktuellen Stand, <rs type="person" ref="#pmb2121">Schnitzler</rs> war bereits seit <ref type="schnitzler-tagebuch" target="1902-07-08" subtype="date-only"/> wieder in
+                     <rs type="place" ref="#pmb50">Wien</rs>.</note> zurückkommt, vielmals von mir.
+               Ich <del rend="strikethrough">
+                  <unclear>bed</unclear>
                </del> danke ihm für ſeine Karten von unterwegs und hoffe, bald Ausführlicheres von
                ihm zu hören.</p>
             <p>Wenn Ihnen der blöde <rs type="person" subtype="implied" ref="#pmb2315">Fratz</rs>
@@ -202,7 +209,8 @@
                   <rs type="person" ref="#pmb2315">Liesl</rs>
                </hi>) erzählt hat, daß ich über Sie »geſchimpft« habe, ſo hat ſie wieder einmal <pb facs="DLA_85.1.5247_00027-1"/>geſprochen, was <rs type="person" subtype="implied" ref="#pmb2315">ſie</rs> nicht verantworten kann. Ich habe ihr nur geſagt (weil ſie
                mir durch Äußerungen und Verhalten dazu Anlaß gegeben hatte), was ich auch Ihnen
-               ſchon geſagt habe: wie wenig Sie <rs type="person" subtype="implied" ref="#pmb2315">Beide</rs> mich <anchor type="commentary" xml:id="K_L03532-5"/>verſtehen<note type="commentary" xml:id="K_L03532-5h">Bezug unklar</note> und wie ſehr es <del rend="strikethrough">mich</del> mir leid thut, daß ich gerade i<subst>
+               ſchon geſagt habe: wie wenig Sie <rs type="person" subtype="implied" ref="#pmb2315">Beide</rs> mich verſtehen und wie ſehr es <del rend="strikethrough">mich</del>
+               mir leid thut, daß ich gerade i<subst>
                   <del rend="strikethrough">m</del>
                   <add place="inline">n</add>
                </subst> einem Kreiſe, dem ich ſo nahe ſtehe, ſo wenig Verſtändniß finde. An Ihrer
@@ -210,16 +218,15 @@
                hoffentlich nicht an der meinigen zweifeln. Das Wort »Haß« ſollte in einem Briefe,
                den Sie mir ſchreiben, wirklich nicht ſtehen.</p>
             <p>
-               <pb facs="DLA_85.1.5247_00028"/>Es thut mir leid, daß ich nicht <anchor type="commentary" xml:id="K_L03532-6"/>auch Ihnen zu einem Engagement an einem <rs type="place" ref="#pmb168">Berlin</rs>er Theater verhelfen<note type="commentary" xml:id="K_L03532-6h">Bezug auf <rs type="person" ref="#pmb2315">Elisabeth
+               <pb facs="DLA_85.1.5247_00028"/>Es thut mir leid, daß ich nicht <anchor type="commentary" xml:id="K_L03532-5"/>auch Ihnen zu einem Engagement an einem <rs type="place" ref="#pmb168">Berlin</rs>er Theater verhelfen<note type="commentary" xml:id="K_L03532-5h">Bezug auf <rs type="person" ref="#pmb2315">Elisabeth
                      Gussmann</rs>s Engagement am <rs type="org" ref="#pmb57124">Schiller-Theater</rs> ab dem <date when="1902-09-01">1. 9. 1902</date>, <ref type="schnitzler-briefe" target="L03211" subtype="see"/>
                </note> kann; aber ich <del rend="strikethrough">
                   <unclear>d</unclear>
-               </del> denke mir, daß Sie <anchor type="commentary" xml:id="K_L03532-7"/>Beſſeres
-                  gefunden<note type="commentary" xml:id="K_L03532-7h">vermutlich eine Anspielung
-                  auf <rs type="person" ref="#pmb2121">Schnitzler</rs> bzw. die bevorstehende Geburt
-                  des gemeinsamen Sohns <rs type="person" ref="#pmb12692">Heinrich</rs>
-               </note> haben, als Ihnen die größte Stellung an der größten Bühne jemals hätte bieten
-               können.</p>
+               </del> denke mir, daß Sie <anchor type="commentary" xml:id="K_L03532-6"/>Beſſeres
+                  gefunden<note type="commentary" xml:id="K_L03532-6h">Er meint, die Rolle als <rs type="person" ref="#pmb2121">Schnitzler</rs>s Partnerin und Mutter des
+                  gemeinsamen Sohnes <rs type="person" ref="#pmb12692">Heinrich</rs>, dessen Geburt
+                  bevorstand, wäre wichtiger, als ihre Karriere.</note> haben, als Ihnen die größte
+               Stellung an der größten Bühne jemals hätte bieten können.</p>
             <closer>Mit herzlichen Grüßen an Sie und <hi rend="latintype">
                   <rs type="person" ref="#pmb2315">Liesl</rs>
                </hi> (der ich für ihren Brief danke) bin ich <lb/>Ihr ergebener <lb/>
@@ -356,6 +363,49 @@
                <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Peter_Dorner</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb15445.html</idno>
             </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <forename>Arthur</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <persName type="legacy-name-merge">Schnitzler, Arthur</persName>
+               <birth>
+                  <date when="1862-05-15">15.05.1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21.10.1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,2066 16,37341</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
+               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
+               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
+               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
+               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
+               <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=11215</idno>
+               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2121.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2121</idno>
+            </person>
             <person xml:id="pmb11740">
                <persName>
                   <forename>Hugo von</forename>
@@ -470,49 +520,6 @@
                <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416749.html?pmb2315</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2315.html</idno>
                <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2315</idno>
-            </person>
-            <person xml:id="pmb2121">
-               <persName>
-                  <forename>Arthur</forename>
-                  <surname>Schnitzler</surname>
-               </persName>
-               <persName type="legacy-name-merge">Schnitzler, Arthur</persName>
-               <birth>
-                  <date when="1862-05-15">15.05.1862</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,2066 16,37341</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1931-10-21">21.10.1931</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,2066 16,37341</geo>
-                     </location>
-                  </settlement>
-               </death>
-               <sex value="male"/>
-               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
-               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
-               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/118609807</idno>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/2121/</idno>
-               <idno type="URL" subtype="fackel">https://fackel.oeaw.ac.at/?p=fackelp38500</idno>
-               <idno type="URL" subtype="kraus1933">https://kraus1933.ace.oeaw.ac.at/Gesamt.xml?template=register_personen.html&amp;letter=S#DWpers0212</idno>
-               <idno type="URL" subtype="doi">https://doi.org/10.1553/0x00284416</idno>
-               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q44331</idno>
-               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Arthur_Schnitzler</idno>
-               <idno type="URL" subtype="geschichtewiki">https://www.geschichtewiki.wien.gv.at/Special:URIResolver/?curid=11215</idno>
-               <idno type="URL" subtype="schnitzler-kino">https://schnitzler-kino.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb2121.html</idno>
-               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/TSN-listperson.html#pmb2121</idno>
             </person>
             <person xml:id="pmb12692">
                <persName>
@@ -677,8 +684,7 @@
             </place>
             <place xml:id="pmb50">
                <placeName>Wien</placeName>
-               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt
-                  Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
                <placeName type="alternative-name">Bécs</placeName>
                <placeName type="alternative-name">Land Wien</placeName>
                <placeName type="alternative-name">Vídeň</placeName>
