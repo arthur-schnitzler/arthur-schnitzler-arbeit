@@ -518,7 +518,7 @@
          </xsl:otherwise>
       </xsl:choose>-->
    </xsl:template>
-   <xsl:template match="*:rs[@type='work' and not(@subtype='implied')]|*:title[not(@subtype='implied')]">
+   <xsl:template match="*:rs[(@type='work' or @type='org') and not(@subtype='implied')]|*:title[not(@subtype='implied')]">
       <xsl:text>\textit{</xsl:text>
       <xsl:apply-templates/>
       <xsl:text>}</xsl:text>
