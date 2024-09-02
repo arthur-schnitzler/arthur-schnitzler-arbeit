@@ -37,6 +37,13 @@
         </xsl:copy><xsl:text>.</xsl:text>
     </xsl:template>
         
+        
+    <xsl:template match="tei:note[@type='commentary' and not(child::*[2]) and normalize-space(.)='']/tei:ref">
+        <!-- Kopiere das Element, aber ändere das Attribut 'subtype' -->
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+        </xsl:copy><xsl:text>.</xsl:text>
+    </xsl:template>
     
     
     
