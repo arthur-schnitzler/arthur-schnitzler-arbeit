@@ -95,4 +95,41 @@
             </xsl:for-each>
             </xsl:element>
     </xsl:template>
+    
+    <!-- Das hier schreibt die Verweise, die einen 
+            ganzen Kommentar ausmachen, zu Großbuchstaben am 
+            Anfang um und hängt ein Punkt an
+            
+            Also
+            vgl. Schnitzler-Tagebuch, 4.4.1890
+            wird zu
+            
+            Vgl. Schnitzler-Tagebuch, 4.4.1890.
+           
+        -->
+    
+    <!-- Identifizieren der relevanten Elemente -->
+    <xsl:template match="tei:note[@type='commentary' and not(child::*[2]) and normalize-space(.)='']/tei:ref[@subtype='cf']">
+        <!-- Kopiere das Element, aber ändere das Attribut 'subtype' -->
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="subtype">Cf</xsl:attribute>
+        </xsl:copy><xsl:text>.</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="tei:note[@type='commentary' and not(child::*[2]) and normalize-space(.)='']/tei:ref[@subtype='see']">
+        <!-- Kopiere das Element, aber ändere das Attribut 'subtype' -->
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="subtype">See</xsl:attribute>
+        </xsl:copy><xsl:text>.</xsl:text>
+    </xsl:template>
+    
+    
+    <xsl:template match="tei:note[@type='commentary' and not(child::*[2]) and normalize-space(.)='']/tei:ref">
+        <!-- Kopiere das Element, aber ändere das Attribut 'subtype' -->
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+        </xsl:copy><xsl:text>.</xsl:text>
+    </xsl:template>
 </xsl:stylesheet>
