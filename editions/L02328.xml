@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02328" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L02328"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -138,8 +143,14 @@
                <ref type="belongsToCorrespondence" target="correspondence_12438">Adam, Robert</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L02327">Schnitzler an Hofmannsthal, 1. 10. 1919</ref>
                <ref subtype="next_letter" type="withinCollection" target="L02329">Beer-Hofmann an Schnitzler, 27. 10. 1919</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12438" target="L02325">Adam an Schnitzler, 19. 8. 1919</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12438" target="L02330">Schnitzler an Adam, 28. 10. 1919</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_12438"
+                    target="L02325">Adam an Schnitzler, 19. 8. 1919</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_12438"
+                    target="L02330">Schnitzler an Adam, 28. 10. 1919</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -263,7 +274,14 @@
             </person>
          </listPerson>
          <listBibl>
-            <error type="bibl">33666</error>
+            <bibl xml:id="pmb33666">
+               <title>Märchenkomödie</title>
+               <title type="legacy-name-merge">Märchenkomödie</title>
+               <author ref="pmb12438" role="hat-geschaffen">Adam, Robert</author>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/33666/</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb33666.html</idno>
+               <note type="work_kind">Mehraktiges Drama</note>
+            </bibl>
          </listBibl>
          <listPlace>
             <place xml:id="pmb50">

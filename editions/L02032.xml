@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02032" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
+     xml:id="L02032"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -160,8 +165,14 @@
                <ref type="belongsToCorrespondence" target="correspondence_12176">Mann, Thomas</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L02031">Hofmannsthal an Schnitzler, 23. [9. 1911]</ref>
                <ref subtype="next_letter" type="withinCollection" target="L03541">Goldmann an Schnitzler, 1. 10. 1911</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12176" target="L01986">Mann an Schnitzler, 22. 11. 1910</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12176" target="L02039">Mann an Schnitzler, 16. 10. 1911</ref>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_12176"
+                    target="L01986">Mann an Schnitzler, 22. 11. 1910</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_12176"
+                    target="L02039">Mann an Schnitzler, 16. 10. 1911</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -504,7 +515,16 @@
                <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb30213.html</idno>
                <note type="work_kind">Novelle</note>
             </bibl>
-            <error type="bibl">36156</error>
+            <bibl xml:id="pmb36156">
+               <title>Die neue Rundschau</title>
+               <date notBefore="1904-01-01" when="1904-01-01">1904</date>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36156/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/werke/pmb36156</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb36156.html</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36156.html</idno>
+               <idno type="URL" subtype="bahr-textverzeichnis">https://bahr-textverzeichnis.acdh.oeaw.ac.at/pmb36156.html</idno>
+               <note type="work_kind">Zeitschrift</note>
+            </bibl>
             <bibl xml:id="pmb30207">
                <title>Das weite Land. Tragikomödie in fünf Akten</title>
                <title type="werk_link">http://www.literature.at/alo?objid=12113</title>
