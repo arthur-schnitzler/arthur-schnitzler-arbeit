@@ -4,13 +4,13 @@
     xmlns:fn="http://www.w3.org/2005/xpath-functions" version="3.0" xmlns:mam="martinfunktion">
     <xsl:mode on-no-match="shallow-copy"/>
     <xsl:output method="xml" indent="yes"/>
-    <!-- ursprünglich führt das Regex nur 1.000-erpunkte in Zeitungsnummern ein, also aus 12345 wird 12.345, aber
+    <!-- ursprünglich führt das Regex nur 11.000-erpunkte in Zeitungsnummern ein, also aus 12345 wird 12.345 (nicht für vierstellige Zahlen), aber
   es wird auch nach H. und Nr. und Jg. ein fixes Leerzeichen gesetzt-->
     <!-- Template für das <bibl>-Element -->
     <xsl:template
         match="tei:bibl[not(ancestor::tei:back)]//text()[not(ancestor::tei:date) and not(ancestor::tei:title)]">
         <!-- Analyse des Textinhalts des Elements -->
-        <xsl:analyze-string select="." regex="(Nr\.)(&#160;|\s)(\d{{4,}})">
+        <xsl:analyze-string select="." regex="(Nr\.)(&#160;|\s)(\d{{5,}})">
             <!-- Wenn das Muster passt -->
             <xsl:matching-substring>
                 <xsl:text>Nr.&#160;</xsl:text>
