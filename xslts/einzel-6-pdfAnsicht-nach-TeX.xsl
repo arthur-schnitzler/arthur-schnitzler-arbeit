@@ -5681,7 +5681,20 @@
          </xsl:choose>
          <xsl:text>A.&#8239;S.: \emph{Lektüren}, </xsl:text>
       </xsl:if>
-      <xsl:value-of select="replace(@target, '.html', '')"/>
+      <xsl:choose>
+         <xsl:when test="@target='Deutschsprachige-Literatur'">
+            <xsl:text>deutschsprachige Literatur</xsl:text>
+         </xsl:when>
+         <xsl:when test="@target='Polen-Czechen'">
+            <xsl:text>Polen, Czechen</xsl:text>
+         </xsl:when>
+         <xsl:when test="@target='Ungarn-etc.'">
+            <xsl:text>Ungarn etc.</xsl:text>
+         </xsl:when>
+         <xsl:otherwise>
+            <xsl:value-of select="replace(@target, '.html', '')"/>
+         </xsl:otherwise>
+      </xsl:choose>
    </xsl:template>
    <xsl:template match="ref[@type = 'schnitzler-bahr']">
       <xsl:if test="not(@subtype = 'date-only')">
