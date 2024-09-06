@@ -4,7 +4,7 @@
     xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="xs math" version="3.0">
     <xsl:mode on-no-match="shallow-copy"/>
-    <xsl:template match="text()[not(ancestor::tei:rs) and starts-with(., 's')]">
+    <xsl:template match="text()[not(ancestor::tei:rs) and starts-with(., 's') and preceding-sibling::*[1][self::tei:rs]]">
         <xsl:analyze-string select="." regex="(^s)([ \t.,;!?:\r\n])(.*)">
             <xsl:matching-substring>
                 <xsl:choose>
