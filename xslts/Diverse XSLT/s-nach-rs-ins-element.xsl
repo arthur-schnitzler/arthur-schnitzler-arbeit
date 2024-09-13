@@ -28,13 +28,15 @@
             </xsl:non-matching-substring>
         </xsl:analyze-string>
     </xsl:template>
-    <xsl:template match="tei:rs[following-sibling::text()[1][starts-with(., 's')]]">
-        <xsl:variable name="folgender-text" as="xs:string" select="following-sibling::text()[1]"/>
+    <xsl:template match="text()[not(ancestor::tei:rs) and matches(., '(^s$)') and preceding-sibling::*[1][self::tei:rs]]"/>
+    <xsl:template match="tei:rs[following-sibling::node()[1][matches(., '(^s)([ \t.,;!?:\r\n])')]]">
+        <xsl:variable name="folgender-text" as="xs:string" select="following-sibling::node()[1][self::text()[starts-with(., 's')]][1]"/>
         <xsl:variable name="match" as="xs:boolean" select="matches($folgender-text, '(^s)([ \t.,;!?:\r\n])')"/>
         <xsl:choose>
             <xsl:when test="$match">
                 <xsl:element name="rs" namespace="http://www.tei-c.org/ns/1.0">
                     <xsl:copy-of select="@*"/>
+                    
                     <xsl:choose>
                         <xsl:when test="child::*[1]">
                             <xsl:apply-templates/><xsl:element name="s" namespace="http://www.tei-c.org/ns/1.0"/>
@@ -48,9 +50,37 @@
             <xsl:otherwise>
                 <xsl:element name="rs" namespace="http://www.tei-c.org/ns/1.0">
                     <xsl:copy-of select="@*|*"/>
+                    <xsl:value-of select="."/>
                 </xsl:element>
             </xsl:otherwise>
         </xsl:choose>
-        
     </xsl:template>
+    <xsl:template match="tei:rs[following-sibling::node()[1][matches(., '^s$')]]">
+        <xsl:variable name="folgender-text" as="xs:string" select="following-sibling::node()[1]"/>
+        <xsl:variable name="match" as="xs:boolean" select="matches($folgender-text, '^s$')"/>
+        <xsl:choose>
+            <xsl:when test="$match">
+                <xsl:element name="rs" namespace="http://www.tei-c.org/ns/1.0">
+                    <xsl:copy-of select="@*"/>
+                    <xsl:choose>
+                        <xsl:when test="child::*[1]">
+                            <xsl:apply-templates/>
+                            <xsl:element name="s" namespace="http://www.tei-c.org/ns/1.0"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:apply-templates/>
+                            <xsl:text>s</xsl:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:element name="rs" namespace="http://www.tei-c.org/ns/1.0">
+                    <xsl:copy-of select="@*|*"/>
+                    <xsl:value-of select="."/>
+                </xsl:element>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
 </xsl:stylesheet>
