@@ -3773,6 +3773,7 @@
          </xsl:if>
       </xsl:for-each-group>
    </xsl:template>
+   
    <!-- Normaler anchor, Inhalt leer -->
    <xsl:template
       match="anchor[(@type = 'textConst' or @type = 'commentary') and not(ancestor::note[@type = 'footnote'])]">
@@ -3871,6 +3872,7 @@
       <xsl:value-of select="@id"/>
       <xsl:text>}</xsl:text>
    </xsl:template>
+   <xsl:template match="*:del" mode="lemma"/>
    <xsl:template match="*:subst/*:del" mode="lemma"/>
    <!-- das verhindert die Wiedergabe des gelöschten Teils von subst in einem Lemma -->
    <xsl:template

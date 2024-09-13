@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L03526"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L03526" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -138,15 +133,9 @@
                   Schnitzler, 2. 3. [1901]</ref>
                <ref subtype="next_letter" type="withinCollection" target="L01102">Bahr an
                   Schnitzler, [13. 3.? 1901]</ref>
-               <ref subtype="previous_letter"
-                    type="withinCorrespondence"
-                    source="correspondence_11485"
-                    target="L03060">Goldmann an Schnitzler,
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_11485" target="L03060">Goldmann an Schnitzler,
                   2. 3. [1901]</ref>
-               <ref subtype="next_letter"
-                    type="withinCorrespondence"
-                    source="correspondence_11485"
-                    target="L03062">Goldmann an Schnitzler, 21. 3. [1901]</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_11485" target="L03062">Goldmann an Schnitzler, 21. 3. [1901]</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -180,12 +169,13 @@
                <salute rend="center">Liebes Fräulein <hi rend="latintype">Olga</hi>,</salute>
             </opener>
             <p>
-               <hi rend="latintype">Dr. <rs type="person" ref="#pmb2121">Schnitzlers</rs></hi>
+               <hi rend="latintype">Dr. <rs type="person" ref="#pmb2121">Schnitzlers</rs>
+               </hi>
                <space unit="chars" quantity="1"/>
                <anchor type="commentary" xml:id="K_L03526-1"/>
                <rs type="work" subtype="implied" ref="#pmb29951">Stück</rs>
                <note type="commentary" xml:id="K_L03526-1h">
-                  <rs type="work" ref="#pmb29951">Zum großen Wurstel</rs> aus dem <rs type="work" ref="#pmb29859">Marionetten</rs>-Zyklus, am <ref type="schnitzler-tagebuch" target="1901-03-08" subtype="date-only"/> am <rs type="place" ref="#pmb168">Berlin</rs>er <rs type="place" ref="#pmb830">Überbrettl</rs>
+                  <rs type="work" ref="#pmb29951">Zum großen Wurstel</rs> aus dem <rs type="work" ref="#pmb29859">Marionetten</rs>-Zyklus, am <ref type="schnitzler-tagebuch" target="1901-03-08" subtype="date-only"/> am <rs type="place" ref="#pmb168">Berlin</rs>er <rs type="org" ref="#pmb144041">Überbrettl</rs>
                   uraufgeführt</note> kam infolge unzureichender Darſtellung nicht zur rechten
                Wirkung. Auch hatte man die Unverſchämtheit und Taktloſigkeit, es ganz zuletzt, um
                   <del rend="strikethrough">
@@ -195,7 +185,8 @@
                <time>½ 11 Uhr Abends</time>, nachdem das Publikum bereits durch ein überlanges
                Programm ermüdet war, aufzuführen.</p>
             <p>
-               <hi rend="latintype">Dr. <rs type="person" ref="#pmb2121">Schnitzlers</rs></hi>
+               <hi rend="latintype">Dr. <rs type="person" ref="#pmb2121">Schnitzlers</rs>
+               </hi>
                <space unit="chars" quantity="1"/>
                <anchor type="commentary" xml:id="K_L03526-2"/>Anweſenheit<note type="commentary" xml:id="K_L03526-2h">
                   <rs type="person" ref="#pmb2121">Schnitzler</rs> war zwischen <ref type="schnitzler-tagebuch" target="1901-03-03" subtype="date-only"/> und <ref type="schnitzler-tagebuch" target="1901-03-10" subtype="date-only"/> in <rs type="place" ref="#pmb168">Berlin</rs>. <rs type="person" ref="#pmb11485">Goldmann</rs> traf er nachweislich am <ref type="schnitzler-tagebuch" target="1901-03-06" subtype="date-only"/>, <ref type="schnitzler-tagebuch" target="1901-03-07" subtype="date-only"/>, <ref type="schnitzler-tagebuch" target="1901-03-08" subtype="date-only"/> und <ref type="schnitzler-tagebuch" target="1901-03-10" subtype="date-only"/>.</note>
@@ -653,27 +644,46 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/40583/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb40583.html</idno>
             </place>
-            <place xml:id="pmb830">
-               <placeName>Überbrettl</placeName>
-               <desc type="entity_type">Kabarett (K.KBR)</desc>
-               <desc type="entity_type_id">2</desc>
-               <location type="coords">
-                  <geo>52,5208 13,4164</geo>
+         </listPlace>
+         <listOrg>
+            <org xml:id="pmb144041">
+               <orgName>Überbrettl</orgName>
+               <orgName type="namensvariante">Wolzogen-Theater</orgName>
+               <orgName type="namensvariante">Buntes Theater</orgName>
+               <desc type="entity_type">Kabarett</desc>
+               <desc type="entity_type_id">1042</desc>
+               <location type="located_in_place">
+                  <placeName ref="pmb822">Alexanderstraße</placeName>
+                  <geo>52,52383 13,41293</geo>
+                  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb822.html</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/822/</idno>
+                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb822</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb822.html</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb822.html</idno>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb168">Berlin</placeName>
-                  <geo>52,52437 13,41053</geo>
+                  <placeName ref="pmb830">Überbrettl</placeName>
+                  <geo>52,5208 13,4164</geo>
+                  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb830.html</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/830/</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb830.html</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb830.html</idno>
                </location>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb830.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/830/</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb830.html</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb830.html</idno>
+               <location type="located_in_place">
+                  <placeName ref="pmb144263">Köpenicker Straße</placeName>
+                  <geo>52,5073 13,4283</geo>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144263/</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb144263.html</idno>
+               </location>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/144041/</idno>
+               <idno type="URL" subtype="">http://d-nb.info/gnd/7603870-1</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q331410</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/%C3%9Cberbrettl</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb144041.html</idno>
                <note type="apis_dates">
                   <date when="1901-01-18">1901-01-18</date>
                </note>
-            </place>
-         </listPlace>
-         <listOrg>
+            </org>
             <org xml:id="pmb29805">
                <orgName>Konservatorium der Gesellschaft der Musikfreunde</orgName>
                <desc type="entity_type">Bildungseinrichtung</desc>

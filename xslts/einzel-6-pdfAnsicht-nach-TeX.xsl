@@ -3846,6 +3846,7 @@
    <xsl:template
       match="note[(@type = 'textConst' or @type = 'commentary') and not(ancestor::note[@type = 'footnote'])]"
       mode="lemma"/>
+   <xsl:template match="*:del" mode="lemma"/>
    <xsl:template match="*:subst/*:del" mode="lemma"/><!-- das verhindert die Wiedergabe des gelöschten Teils von subst in einem Lemma -->
    <xsl:template match="space[@unit = 'chars' and @quantity = '1']" mode="lemma">
       <xsl:text> </xsl:text>
