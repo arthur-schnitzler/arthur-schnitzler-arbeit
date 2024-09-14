@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd"
-     xml:id="L02035"
-     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/asbwschema.xsd" xml:id="L02035" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -143,14 +138,8 @@
                <ref type="belongsToCorrespondence" target="correspondence_10992">Brandes, Georg</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L02034">Beer-Hofmann an Schnitzler, 9. 10. 1911</ref>
                <ref subtype="next_letter" type="withinCollection" target="L02036">Schnitzler an Bahr, 13. 10. 1911</ref>
-               <ref subtype="previous_letter"
-                    type="withinCorrespondence"
-                    source="correspondence_10992"
-                    target="L02033">Brandes an Schnitzler, 6. 10. 1911</ref>
-               <ref subtype="next_letter"
-                    type="withinCorrespondence"
-                    source="correspondence_10992"
-                    target="L02040">Brandes an Schnitzler, 19. 10. 1911</ref>
+               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10992" target="L02033">Brandes an Schnitzler, 6. 10. 1911</ref>
+               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10992" target="L02040">Brandes an Schnitzler, 19. 10. 1911</ref>
             </correspContext>
          </correspDesc>
       </profileDesc>
@@ -196,7 +185,7 @@
                verbracht hat!</p>
             <p>– Ich bin nun mit den Proben meiner <pb facs="Georg_Brandes_arkiv_147"/>neuen
                Tragikomödie »<rs ref="#pmb30207" type="work">das weite Land</rs>« beschäftigt – am
-               Sonntag ist die Première zugleich am <rs ref="#pmb14" type="place">Burgtheater</rs>,
+               Sonntag ist die Première zugleich am <rs ref="#pmb36247" type="org">Burgtheater</rs>,
                in <rs ref="#pmb168" type="place">Berlin</rs>, <rs ref="#pmb45258" type="place">München</rs>, <rs ref="#pmb506" type="place">Hamburg</rs>, <rs ref="#pmb146" type="place">Frankfurt</rs> und noch etlichen andern Städten. Sie werden das <rs type="work" ref="#pmb30207" subtype="implied">Buch</rs> in diesen Tagen <subst>
                   <del rend="strikethrough">haben</del>
                   <add place="above">beko<c rendition="#gemination-m"/>en</add>
@@ -594,24 +583,6 @@
                <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168815/</idno>
                <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168815.html</idno>
             </place>
-            <place xml:id="pmb14">
-               <placeName>Burgtheater</placeName>
-               <desc type="entity_type">S.THTR</desc>
-               <desc type="entity_type_id">3473</desc>
-               <location type="coords">
-                  <geo>48,210333 16,361139</geo>
-               </location>
-               <location type="located_in_place">
-                  <placeName ref="pmb51">I., Innere Stadt</placeName>
-                  <geo>48,20769 16,37049</geo>
-               </location>
-               <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb14.html</idno>
-               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14/</idno>
-               <idno type="URL" subtype="geonames">https://www.geonames.org/6354992/</idno>
-               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb14.html</idno>
-               <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb14.html</idno>
-               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb14.html</idno>
-            </place>
             <place xml:id="pmb168">
                <placeName>Berlin</placeName>
                <placeName type="alternative-name">Hauptstadt Berlin</placeName>
@@ -794,6 +765,57 @@
                <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2919142</idno>
                <note type="apis_dates">
                   <date to="1939-02-01">1864-09-01 – 1939-02-01</date>
+               </note>
+            </org>
+            <org xml:id="pmb36247">
+               <orgName>Burgtheater</orgName>
+               <orgName type="institution_namensvariante">Burgtheater GmbH</orgName>
+               <desc type="entity_type">Theater</desc>
+               <desc type="entity_type_id">1012</desc>
+               <location type="located_in_place">
+                  <placeName ref="pmb44649">Schlosstheater Schönbrunn</placeName>
+                  <geo>48,186667 16,3125</geo>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/44649/</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q2244724</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Schlosstheater_Sch%C3%B6nbrunn</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb44649.html</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb44649.html</idno>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+                  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb51.html</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51/</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36789/</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/51010/</idno>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2775259/</idno>
+                  <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/orte/pmb51</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb51.html</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb51.html</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q267329</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Innere_Stadt_(Wien)</idno>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb14">Burgtheater</placeName>
+                  <geo>48,210333 16,361139</geo>
+                  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb14.html</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/14/</idno>
+                  <idno type="URL" subtype="geonames">https://www.geonames.org/6354992/</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb14.html</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb14.html</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb14.html</idno>
+               </location>
+               <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/38633-9</idno>
+               <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/36247/</idno>
+               <idno type="URL" subtype="kraus">https://kraus.wienbibliothek.at/register/institutionen/pmb36247</idno>
+               <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q308720</idno>
+               <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Burgtheater</idno>
+               <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb36247.html</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416713.html?pmb36247</idno>
+               <idno type="URL" subtype="schnitzler-mikrofilme">https://schnitzler-mikrofilme.acdh.oeaw.ac.at/1416714.html?pmb36247</idno>
+               <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb36247.html</idno>
+               <note type="apis_dates">
+                  <date notBefore="1852-01-01" when="1852-01-01">1852</date>
                </note>
             </org>
          </listOrg>
