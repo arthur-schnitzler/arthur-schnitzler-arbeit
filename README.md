@@ -12,3 +12,8 @@ The GitHub Action exports METS from Transkribus and converts them to XML/TEI.
 Code originally from @csae8092, adaptions by @laurauntner
 
 The original page2tei-transformation is from @dariok with contributions from @tboenig, @peterstadler and @tillgrallert.
+
+## add handle-pids
+
+* set handle credentials as environment variables called `username` and `pw`
+* run `python add_handles.py` (needs `acdh-tei-pyutils`)
