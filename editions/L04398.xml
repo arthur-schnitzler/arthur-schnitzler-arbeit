@@ -1,14 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04428">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions"
+     xml:id="L04398">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Hugo von Hofmannsthal und Arthur Schnitzler an Gustav Schwarzkopf,
-               30. 6. [1902]</title>
-            <author ref="#pmb11740">Hofmannsthal, Hugo von</author>
+            <title level="a">Arthur und Olga Schnitzler an Gustav Schwarzkopf, [zwischen 7. und 11. 5. 1906?]</title>
             <author ref="#pmb2121">Schnitzler, Arthur</author>
+            <author ref="#pmb2173">Schnitzler, Olga</author>
             <editor>
                <persName>Jahnke, Selma</persName>
                <persName>Müller, Martin Anton</persName>
@@ -84,23 +87,26 @@
                            <supportDesc>
                               <extent>
                                  <measure unit="karte" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="80"/>
+                                 <measure unit="zeichenanzahl" quantity="276"/>
                               </extent>
                            </supportDesc>
                         </objectDesc>
                         <handDesc hands="2">
-                           <handNote medium="blauer-buntstift" style="deutsche-kurrent" corresp="#pmb11740"/>
-                           <handNote medium="bleistift" style="nicht-anzuwenden" corresp="#pmb2121"/>
+                           <handNote medium="bleistift" style="deutsche-kurrent" corresp="#pmb2121"/>
+                           <handNote medium="bleistift" corresp="#pmb2173" style="lateinische-kurrent"/>
                         </handDesc>
                         <additions>
                            <incident type="postal">
                               <desc>
                                  <stamp n="1">
-                                    <placeName ref="#pmb50792">Salzburg
-                                       Bahnh<unclear>of</unclear>
+                                    <placeName ref="#pmb75">
+                                       <unclear>Hin</unclear>terbrü<supplied>hl</supplied>
                                     </placeName>
-                                    <date when="1902-06-30">30 <supplied>6. 02</supplied>
+                                    <date when="1906-05-08">
+                                       <gap reason="illegible" unit="chars" quantity="1"/>. V. <unclear>0</unclear>
+                                       <supplied>6</supplied>
                                     </date>
+                                    <time>VI</time>
                                  </stamp>
                               </desc>
                            </incident>
@@ -117,112 +123,84 @@
          </langUsage>
          <correspDesc>
             <correspAction type="sent">
-               <persName ref="#pmb11740">Hofmannsthal, Hugo von</persName>
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date when="1902-06-30" n="02">30. 6. [1902]</date>
-               <placeName ref="#pmb30">Salzburg</placeName>
-            </correspAction>
-            <correspAction type="transmitted">
-               <date when="1902-06-30">30. [6. 1902]</date>
-               <placeName ref="#pmb30">Salzburg</placeName>
+               <persName ref="#pmb2173">Schnitzler, Olga</persName>
+               <date notBefore="1906-05-07" notAfter="1906-05-11" n="01">[zwischen 7. und 11. 5. 1906?]</date>
+               <placeName ref="#pmb75">Hinterbrühl</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
-               <date evidence="conjecture" notBefore="1902-07-01" notAfter="1902-07-05">[1. 7. 1902 – 5. 7. 1902?]</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
-         <correspContext><ref type="belongsToCorrespondence" target="correspondence_12740">Schwarzkopf, Gustav</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L01226">Hofmannsthal, Schnitzler an Beer-Hofmann, 30. 6. 1902</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L02977">Schnitzler, Hofmannsthal an Salten, [1.] 7. 1902</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04180">Schnitzler an Schwarzkopf, [26. 1. 1902?]</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740" target="L04441">Schnitzler,  an Schwarzkopf, 3. 7. [1902]</ref>
-            </correspContext></correspDesc>
+         </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2026-06-11">Export aus Transkribus</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
-      <graphic url="HS00048772X_0162"/>
-      <graphic url="HS00048772X_0161"/>
-      <graphic url="HS00048772X_0161"/>
+      <graphic url="HS00048772X_0104"/>
+      <graphic url="HS00048772X_0103"/>
+      <graphic url="HS00048772X_0104"/>
+      <graphic url="HS00048772X_0103"/>
    </facsimile>
    <text>
       <body>
          <div type="address">
             <address>
                <addrLine>
-                  <pb facs="HS00048772X_0162"/>
-                  <hi rend="latintype">Herrn Gustav
+                  <pb facs="HS00048772X_0104"/>Herrn <hi rend="latintype">Gustav
                      Schwarzkopf</hi>
                </addrLine>
                <addrLine>
-                  <rs type="place" ref="#pmb50">
-                     <hi rend="latintype">Wien</hi>
+                  <rs type="place" ref="#pmb51">
+                     <hi rend="latintype">Wien I</hi>
                   </rs>
                </addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb207296">
-                     <hi rend="latintype">I Tiefer Graben
-                     23</hi>
+                     <hi rend="latintype">Tiefer Graben
+                  23</hi>
                   </rs>.</addrLine>
             </address>
          </div>
          <div type="image">
             <seg rend="center">
-               <pb facs="HS00048772X_0161"/>
-               <rs type="place" ref="#pmb30">
-                  <hi rend="pre-print">Salzburg</hi>
-               </rs>
+               <pb facs="HS00048772X_0103"/>
+               <hi rend="pre-print">285. – <rs type="place" ref="#pmb364311">Hinterbrühl. Wagnerstraße</rs>.</hi>
             </seg>
          </div>
          <div type="writingSession" n="1">
-            <closer>
-               <pb facs="HS00048772X_0161"/>Herzliche Grüße<lb/>von <signed>Hugo</signed>
+            <p>
+               <pb facs="HS00048772X_0104"/>
+               <salute>lieber Guſtav,</salute> es iſt fabelhaft <anchor type="commentary" xml:id="K_L04371-1"/>hübſch <rs type="place" ref="#pmb75" subtype="implied">hier</rs>
+               <note type="commentary" corresp="K_L04371-1">Zwischen 
+                  <ref type="wienerschnitzler" subtype="date-only" target="1906-05-07"/> und <ref type="wienerschnitzler" subtype="date-only" target="1906-05-14"/> wohnte <rs type="person" ref="#pmb2121">Schnitzler</rs> mit seiner <rs type="person" ref="#pmb2173 #pmb12692" subtype="implied">Familie</rs>
+                  im <rs type="place" ref="#pmb44510">Hotel Radetzky</rs> in <rs type="place" ref="#pmb75">Hinterbrühl</rs>. Die Abreise erfolgte
+                  demnach an einem Montag und nicht, wie auf der vorliegenden Karte noch angedacht, bereits am Sonntag. Das und
+                  die Aufforderung an <rs type="person" ref="#pmb12740">Schwarzkopf</rs>, doch ebenfalls herzukommen, 
+                  deutet darauf hin, dass die Karte am Anfang des Aufenthalts verfasst wurde.</note>, u das <rs type="place" ref="#pmb44510" subtype="implied">Hotel</rs> wirklich  gut. Vielleicht ko<c rendition="#gemination-m"/>en wir nach dem <rs type="event" ref="#pmb59624" subtype="implied">
+                  <rs type="work" ref="#pmb29985">Einſ. Weg</rs>
+               </rs> wieder heraus. Dem <anchor type="commentary" xml:id="K_L04371-2"/>
+               <rs type="person" ref="#pmb12692" subtype="implied">Buben</rs> gehts
+               ſchon glänzend<note type="commentary" corresp="K_L04371-2">
+                  <rs type="person" ref="#pmb12692">Heinrich</rs> hatte eine Drüsenschwellung,
+                  mit der er seit <ref type="schnitzler-tagebuch" target="1906-05-01" subtype="date-only"/> in Behandlung war.</note>. Wa<c rendition="#gemination-n"/> er<pb facs="HS00048772X_0103"/>ſcheinen Sie?</p>
+            <closer>Herzlichſt Ihr<lb/>
+               <signed>A.</signed>
             </closer>
             <postscript>
-               <dateline>
-                  <anchor type="commentary" xml:id="K_L04428-1"/>
-                  <date>30 VI</date>
-                  <note type="commentary" corresp="K_L04428-1">Die fehlende Jahresangabe ergibt sich
-                     durch den gemeinsamen Aufenthalt in <rs type="place" ref="#pmb30">Salzburg</rs> zwischen
-                     <ref type="schnitzler-tagebuch" subtype="date-only" target="1902-06-28"/> und <ref type="schnitzler-tagebuch" subtype="date-only" target="1902-07-01"/>.</note>
-               </dateline>
+               <p>(<date>So<c rendition="#gemination-n"/>tag</date> fahr ich <unclear>hinein</unclear>)</p>
             </postscript>
          </div>
          <div type="writingSession" n="2">
             <closer>
-               <signed>
-                  <handShift scribe="#pmb2121"/>Arthur</signed>
+               <handShift scribe="#pmb2173"/>Die schönſten Grüsse! <signed>OS.</signed>
             </closer>
          </div>
       </body>
       <back>
          <listPerson>
-            <person xml:id="pmb11740">
-               <persName>
-                  <forename>Hugo von</forename>
-                  <surname>Hofmannsthal</surname>
-               </persName>
-               <birth>
-                  <date when="1874-02-01">1874-02-01</date>
-                  <settlement ref="pmb50">
-                     <placeName type="pref">Wien</placeName>
-                     <location>
-                        <geo>48,208333 16,373056</geo>
-                     </location>
-                  </settlement>
-               </birth>
-               <death>
-                  <date when="1929-07-15">1929-07-15</date>
-                  <settlement ref="pmb173">
-                     <placeName type="pref">Rodaun</placeName>
-                     <location>
-                        <geo>48,132793312328 16,256152195922</geo>
-                     </location>
-                  </settlement>
-               </death>
-            </person>
             <person xml:id="pmb2121">
                <persName>
                   <surname>Schnitzler</surname>
@@ -243,6 +221,30 @@
                      <placeName type="pref">Wien</placeName>
                      <location>
                         <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2173" ana="comment">
+               <persName>
+                  <forename>Olga</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1882-01-17">1882-01-17</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1970-01-13">1970-01-13</date>
+                  <settlement ref="pmb885">
+                     <placeName type="pref">Lugano</placeName>
+                     <location>
+                        <geo>46,01008 8,96004</geo>
                      </location>
                   </settlement>
                </death>
@@ -271,29 +273,66 @@
                   </settlement>
                </death>
             </person>
+            <person xml:id="pmb12692" ana="implied">
+               <persName>
+                  <forename>Heinrich</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1902-08-09">1902-08-09</date>
+                  <settlement ref="pmb75">
+                     <placeName type="pref">Hinterbrühl</placeName>
+                     <location>
+                        <geo>48,08611 16,24809</geo>
+                     </location>
+                  </settlement>
+                  <settlement ref="pmb145165">
+                     <placeName type="pref">Hauptstraße 56</placeName>
+                     <location>
+                        <geo>48,08736 16,24924</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1982-07-12">1982-07-12</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
          </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb29985">
+               <title>Der einsame Weg. Schauspiel in fünf Akten</title>
+               <title type="werk_link">https://archive.org/details/dereinsamewegsc00schngoog/</title>
+               <title type="werk_arbeitstitel">Junggeselle</title>
+               <title type="werk_arbeitstitel">Junggesellenstück</title>
+               <title type="werk_arbeitstitel">Die Egoisten</title>
+               <title type="werk_arbeitstitel">Einsame Wege</title>
+               <title type="werk_arbeitstitel">Wege ins Dunkle</title>
+               <title type="werk_arbeitstitel">Weg zum Licht</title>
+               <title type="legacy-name-merge">Der einsame Weg</title>
+               <title type="werk_arbeitstitel">Herbst</title>
+               <title type="werk_link">https://www.degruyter.com/document/doi/10.1515/9783111334066/html</title>
+               <author ref="pmb2121" role="hat-geschaffen">Schnitzler, Arthur</author>
+            </bibl>
+         </listBibl>
          <listPlace>
-            <place xml:id="pmb50792">
-               <placeName>Hauptbahnhof Salzburg</placeName>
+            <place xml:id="pmb75" ana="comment">
+               <placeName>Hinterbrühl</placeName>
                <location type="coords">
-                  <geo>47,813139 13,045769</geo>
+                  <geo>48,08611 16,24809</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb30">Salzburg</placeName>
-                  <geo>47,80067 13,04532</geo>
-               </location>
-            </place>
-            <place xml:id="pmb30" ana="comment">
-               <placeName>Salzburg</placeName>
-               <placeName type="alternative-name">Iuvavum</placeName>
-               <placeName type="legacy-name-merge">Salzburg Stadt</placeName>
-               <placeName type="legacy-name-merge">Salzburg?</placeName>
-               <location type="coords">
-                  <geo>47,80067 13,04532</geo>
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
                </location>
                <location type="located_in_place">
-                  <placeName ref="pmb697">Salzburg [Land]</placeName>
-                  <geo>47,41667 13,25</geo>
+                  <placeName ref="pmb44413">Brühl</placeName>
+                  <geo>48,08509 16,24801</geo>
                </location>
             </place>
             <place xml:id="pmb50">
@@ -318,6 +357,24 @@
                   <geo>48,24077 16,32092</geo>
                </location>
             </place>
+            <place xml:id="pmb51">
+               <placeName>I., Innere Stadt</placeName>
+               <placeName type="alternative-name">Inner city</placeName>
+               <placeName type="alternative-name">Wien,Innere Stadt</placeName>
+               <placeName type="alternative-name">1. Wiener Gemeindebezirk</placeName>
+               <placeName type="legacy-name-merge">Wien-Innere Stadt</placeName>
+               <location type="coords">
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
             <place xml:id="pmb207296">
                <placeName>Tiefer Graben 23</placeName>
                <location type="coords">
@@ -332,7 +389,41 @@
                   <geo>48,20769 16,37049</geo>
                </location>
             </place>
+            <place xml:id="pmb364311">
+               <placeName>Wagnerstraße [Hinterbrühl]</placeName>
+               <location type="coords">
+                  <geo>48,087074 16,263413</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb75">Hinterbrühl</placeName>
+                  <geo>48,08611 16,24809</geo>
+               </location>
+            </place>
+            <place xml:id="pmb44510" ana="implied">
+               <placeName>Hotel Radetzky</placeName>
+               <placeName type="ort_namensvariante">Joseph Deigner’s Hôtel Feldmarschall Radetzky</placeName>
+               <location type="coords">
+                  <geo>48,090788 16,241739</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb75">Hinterbrühl</placeName>
+                  <geo>48,08611 16,24809</geo>
+               </location>
+            </place>
          </listPlace>
+         <listEvent>
+            <event xml:id="pmb59624" ana="implied">
+               <eventName n="Theateraufführung">Aufführung von Der einsame Weg, 15.5.1906</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb37">Theater an der Wien</placeName>
+                     <location>
+                        <geo>48,19941 16,3642</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+         </listEvent>
       </back>
    </text>
 </TEI>
