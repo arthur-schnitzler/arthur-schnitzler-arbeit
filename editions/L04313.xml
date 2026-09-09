@@ -1,447 +1,725 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04313">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
-            <title level="a">Gustav und Max Schwarzkopf an Arthur Schnitzler, 11. 5. 1904</title>
-            <author ref="#pmb12740">Schwarzkopf, Gustav</author>
-            <author ref="#pmb24648">Schwarzkopf, Max</author>
-            <editor>
-               <persName>Jahnke, Selma</persName>
-               <persName>Müller, Martin Anton</persName>
-            </editor>
-            <funder>
-               <name>Österreichischer Wissenschaftsfonds FWF</name>
-               <address>
-                  <street>Georg-Coch-Platz 2</street>
-                  <postCode>1010 Wien</postCode>
-                  <placeName>
-                     <country>A</country>
-                     <settlement>Wien</settlement>
-                  </placeName>
-               </address>
-            </funder>
-         </titleStmt>
-         <editionStmt>
-            <edition>schnitzler-briefe</edition>
-            <respStmt>
-               <resp>Transkription und Kommentierung</resp>
-               <persName>Jahnke, Selma</persName>
-               <persName>Müller, Martin Anton</persName>
-            </respStmt>
-         </editionStmt>
-         <publicationStmt>
-            <publisher>Austrian Centre for Digital Humanities</publisher>
-            <pubPlace>Vienna</pubPlace>
-            <date when="2026">2026</date>
-            <availability>
-               <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
-                  <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium
-                     vervielfältigen und weiterverbreiten Bearbeiten — das Material remixen,
-                     verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar
-                     kommerziell.</p>
-                  <p>Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die
-                     Lizenzbedingungen halten. Unter folgenden Bedingungen:</p>
-                  <p>Namensnennung — Sie müssen angemessene Urheber- und Rechteangaben machen, einen
-                     Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese
-                     Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings
-                     nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie
-                     oder Ihre Nutzung besonders. Keine weiteren Einschränkungen — Sie dürfen keine
-                     zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen
-                     rechtlich irgendetwas untersagen, was die Lizenz erlaubt.</p>
-                  <p>Hinweise:</p>
-                  <p>Sie müssen sich nicht an diese Lizenz halten hinsichtlich solcher Teile des
-                     Materials, die gemeinfrei sind, oder soweit Ihre Nutzungshandlungen durch
-                     Ausnahmen und Schranken des Urheberrechts gedeckt sind. Es werden keine
-                     Garantien gegeben und auch keine Gewähr geleistet. Die Lizenz verschafft Ihnen
-                     möglicherweise nicht alle Erlaubnisse, die Sie für die jeweilige Nutzung
-                     brauchen. Es können beispielsweise andere Rechte wie Persönlichkeits- und
-                     Datenschutzrechte zu beachten sein, die Ihre Nutzung des Materials entsprechend
-                     beschränken.</p>
-               </licence>
-            </availability>
-            <idno type="handle">XXXX</idno>
-         </publicationStmt>
-         <seriesStmt>
-            <p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
-         </seriesStmt>
-         <sourceDesc>
-            <listWit>
-               <witness n="1">
-                  <objectType corresp="brief"/>
-                  <msDesc>
-                     <msIdentifier>
-                        <country>GB</country>
-                        <settlement>Cambridge</settlement>
-                        <repository>University Library</repository>
-                        <idno>Schnitzler, B 96a</idno>
-                     </msIdentifier>
-                     <physDesc>
-                        <objectDesc>
-                           <supportDesc>
-                              <extent>
-                                 <measure unit="seite" quantity="4"/>
-                                 <measure unit="blatt" quantity="1"/>
-                                 <measure unit="zeichenanzahl" quantity="2277"/>
-                              </extent>
-                           </supportDesc>
-                        </objectDesc>
-                        <handDesc hands="1">
-                           <handNote medium="schwarze-tinte" style="deutsche-kurrent"/>
-                        </handDesc>
-                     </physDesc>
-                  </msDesc>
-               </witness>
-            </listWit>
-         </sourceDesc>
-      </fileDesc>
-      <profileDesc>
-         <langUsage>
-            <language ident="de-AT">German</language>
-         </langUsage>
-         <correspDesc>
-            <correspAction type="sent">
-               <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
-               <persName ref="#pmb24648">Schwarzkopf, Max</persName>
-               <date when="1904-05-11" n="01">11. 5. 1904</date>
-               <placeName ref="#pmb50">Wien</placeName>
-            </correspAction>
-            <correspAction type="received">
-               <persName ref="#pmb2121">Schnitzler, Arthur</persName>
-               <date evidence="conjecture" notBefore="1904-05-12" notAfter="1904-05-16">[12. 5. 1904
-                  – 16. 5. 1904?]</date>
-               <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
-            </correspAction>
-         <correspContext><ref type="belongsToCorrespondence" target="correspondence_12740">Schwarzkopf, Gustav</ref>
-               <ref subtype="previous_letter" type="withinCollection" target="L04071">Schnitzler, Schnitzler an Schwarzkopf, 9. 5. 1904</ref>
-               <ref subtype="next_letter" type="withinCollection" target="L01400">Schnitzler, Schnitzler an Beer-Hofmann, 16. 5. 1904</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04071">Schnitzler, Schnitzler an Schwarzkopf, 9. 5. 1904</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740" target="L04371">Schnitzler, Schnitzler an Schwarzkopf, 22. 5. 1904</ref>
-            </correspContext></correspDesc>
-      </profileDesc>
-      <revisionDesc status="proposed">
-         <change who="MAM" when="2026-02-20">Export aus Transkribus</change>
-      </revisionDesc>
-   </teiHeader>
-   <facsimile>
-      <graphic url="MS-SCHNITZLER-B-00096-A-000-00153-1"/>
-      <graphic url="MS-SCHNITZLER-B-00096-A-000-00154-0"/>
-      <graphic url="MS-SCHNITZLER-B-00096-A-000-00154-1"/>
-      <graphic url="MS-SCHNITZLER-B-00096-A-000-00153-0"/>
-   </facsimile>
-   <text>
-      <body>
-         <div type="writingSession" n="1">
-            <opener>
-               <dateline rend="right">
-                  <pb facs="MS-SCHNITZLER-B-00096-A-000-00153-1"/>
-                  <date>11. V. 04</date>
-               </dateline>
-            </opener>
-            <p>
-               <salute>Lieber Arthur,</salute> ich habe ihn gefunden, den »<rs type="work" ref="#pmb300273">reinen Tor</rs>«, er war in dem kleinen Schrank. Bei der
-               Gelenheit habe ich den wirklichen reinen Tor, Ihren <rs type="person" ref="#pmb12692">Heini</rs> geſehen. (Ihre <rs type="person" ref="#pmb2173" subtype="implied">Frau</rs> wird dieſe Bene<c rendition="#gemination-n"/>ung hoffentlich nicht als
-               Herabſetzung der geiſtigen Fähigkeiten <rs type="person" ref="#pmb12692">Heini’s</rs>
-               empfinden) Er hat mich sehr gnädig empfangen, hat mir alle ſeine Kunſtſtücke
-               vorgemacht, hat unter Muſikbegleitung bereitwilligſt vor mir getanzt, ohne auch nur
-               den allergeringſten Kopf dafür zu verlangen. Da<c rendition="#gemination-n"/> hat er
-               mir <pb facs="MS-SCHNITZLER-B-00096-A-000-00154-0"/>erzählt, daß er im »<rs type="place" ref="#pmb91568">Ratauspak</rs>« den »Bi<c rendition="#gemination-n"/>gbu<c rendition="#gemination-n"/>en« gesehen hat und daß er eine »Snitzler
-               Locke« hat. (Man hat ihm wirklich eine gemacht, ſeine Mittel erlauben ihm das
-               bereits) Auch über ſeinen Geſundheitszuſtand kö<c rendition="#gemination-n"/>en Sie
-               beruhigt ſein, de<c rendition="#gemination-n"/> er hat, gleichſam als Glanznu<c rendition="#gemination-m"/>er und letzte »Production« in meiner Gegenwart gezeigt,
-               daß alles tadellos funktioniert und daß er nicht an Verdauungsſtörungen leidet.</p>
-            <p>Kurz, ich habe mich mit ihm beſſer unterhalten als <anchor type="commentary" xml:id="K_L04313-1"/>neulich <rs type="event" ref="#pmb334951" subtype="implied">im »<rs type="place" ref="#pmb118">Carl Theater</rs>
-               </rs>« bei »<rs type="work" ref="#pmb334949">Tal des Lebens</rs>
-               <note type="commentary" corresp="K_L04313-1">Vom <date>3. 5. 1904</date>
-                  bis zum <date>31. 5. 1904</date> fand ein »Gesamtgastspiel« des <rs type="org" ref="#pmb35597">Deutschen Theaters Berlin</rs> im <rs type="place" ref="#pmb118">Carl-Theater</rs> statt. Gegeben wurden (mehrfach) drei Stücke:
-                     <rs type="work" ref="#pmb29827">Die Weber</rs> (von <rs type="person" ref="#pmb11617">Gerhart Hauptmann</rs>), <rs type="work" ref="#pmb334949">Das
-                     Tal des Lebens</rs> (von <rs type="person" ref="#pmb11175">Max Dreyer</rs>) 
-                  und <rs type="work" ref="#pmb29983">Der Meister</rs> (von <rs type="person" ref="#pmb10815">Hermann Bahr</rs>). Die <rs type="event" ref="#pmb334951">Premiere von <rs type="work" ref="#pmb334949">Das Tal des Lebens</rs>
-                  </rs>
-                  fand am <date when="1904-05-06">6. 5. 1904</date> statt. </note>«. Es war nicht
-               meine <pb facs="MS-SCHNITZLER-B-00096-A-000-00154-1"/>Wahl, ich wurde mitgenommen.
-               Das <rs type="work" ref="#pmb334949" subtype="implied">Stück</rs> iſt eine nette
-               Anekdote, die für einen Act reichen würde, und die mit primitiver Technik zu vier
-               Acten zerdehnt wird. Hie und da ein hübsches Witzwort, aber alles wird zehnmal geſagt
-               und jede Zweideutigkeit ſo gehetzt und breitgetreten, bis ſie den letzten Reſt von
-               Pikanterie verliert. Darſtellung (bis auf die <rs type="person" ref="#pmb12977">Trieſch</rs>) Ausſtattung, Regie unwahrſcheinlich ſchlecht. Es iſt auch ganz
-               abgefallen, nur der dritte <rs type="work" ref="#pmb334949" subtype="implied">Act</rs> hatte Beifall. Die Kritik iſt diesmal dem <rs type="org" ref="#pmb35597" subtype="implied">Gaſtſpiel</rs> gegenüber recht kritiſch, das Publikum ſehr kühl,
-               aber gute Häuſer machen ſie doch, de<c rendition="#gemination-n"/> es iſt kalt und
-               unfreundlich, der Frühling iſt wieder einmal <pb facs="MS-SCHNITZLER-B-00096-A-000-00153-0"/>ein »grünangeſtrichener Winter«, ein
-               richtiges <rs type="person" ref="#pmb10986">Brahm</rs>-Wetter<subst>
-                  <del rend="strikethrough">!</del>
-                  <add place="inline">.</add>
-               </subst> Ob er aber mit ſeinen drei <rs type="work" ref="#pmb29827 #pmb29983 #pmb334949" subtype="implied">Stücken</rs> doch das
-               Auslangen finden wird? Vielleicht ko<c rendition="#gemination-m"/>en Sie doch noch
-               daran. – <hi rend="latintype">
-                  <rs type="person" ref="#pmb12341">Angelo</rs>
-               </hi> tut ſo, als ob er wirklich Ernſt machen wollte, er hat ſo dringend die beiden
-               Exemplare verlangt als ob die <rs type="work" ref="#pmb300273" subtype="implied">Proben</rs> demnächſt begi<c rendition="#gemination-n"/>en ſollten.–  <anchor type="commentary" xml:id="K_L04313-2"/>
-               <rs type="person" ref="#pmb11740 #pmb2292">Hofmannsthal</rs> reiſen am <date>18.</date>
-               <note type="commentary" corresp="K_L04313-2">
-                  <rs type="person" ref="#pmb11740">Hugo</rs>, <rs type="person" ref="#pmb2292">Gerty</rs> und sein <rs type="person" ref="#pmb11737" subtype="implied">Vater</rs> reisten nach <rs type="place" ref="#pmb44016">Holland</rs>. </note>
-               fort, wie mir der Page geſtern erzählte. –</p>
-            <p>Daß ich nichts Mitteilenswertes erlebt habe, glauben Sie mir wol, ich bezweifle aber
-               doch nicht, daß die Welt an ſich ſchön iſt.</p>
-            <closer>Ihre <rs type="person" ref="#pmb2173" subtype="implied">Frau</rs> und Sie
-               herzlichſt grüßend,<lb/>Ihr <signed>Gustav</signed>
-            </closer>
-         </div>
-         <div type="writingSession" n="2">
-            <space dim="vertical" unit="line" quantity="1"/>
-            <p>
-               <handShift scribe="#pmb24648"/>Natürlich habe ich Grüße von <hi rend="latintype">
-                  <rs type="person" ref="#pmb12692">Heini</rs>
-               </hi> zu beſtellen</p>
-            <closer>Sie und Ihre <rs type="person" ref="#pmb2173" subtype="implied">Frau</rs> grüßt
-               herzlichſt <signed>Max.</signed>
-            </closer>
-         </div>
-      </body>
-      <back><listPerson><person xml:id="pmb10986"><persName>
-      <forename>Otto</forename>
-      <surname>Brahm</surname>
-  </persName><birth>
-    <date when="1856-02-05">1856-02-05</date>
-      <settlement ref="pmb506">
-        <placeName type="pref">Hamburg</placeName>
-        <location><geo>53,55055 9,993333</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1912-11-28">1912-11-28</date>
-      <settlement ref="pmb168">
-        <placeName type="pref">Berlin</placeName>
-        <location><geo>52,52437 13,41053</geo></location>
-      </settlement>
-      <settlement ref="pmb253956">
-        <placeName type="pref">Ungersche Klinik</placeName>
-        <location><geo>52,5037 13,3567</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb11740"><persName>
-      <forename>Hugo von</forename>
-      <surname>Hofmannsthal</surname>
-  </persName><birth>
-    <date when="1874-02-01">1874-02-01</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1929-07-15">1929-07-15</date>
-      <settlement ref="pmb173">
-        <placeName type="pref">Rodaun</placeName>
-        <location><geo>48,132793312328 16,256152195922</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb12341"><persName>
-      <forename>Angelo</forename>
-      <surname>Neumann</surname>
-  </persName><birth>
-    <date when="1838-08-18">1838-08-18</date>
-      <settlement ref="pmb44578">
-        <placeName type="pref">Stupava</placeName>
-        <location><geo>48,27474 17,03173</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1910-12-20">1910-12-20</date>
-      <settlement ref="pmb652">
-        <placeName type="pref">Prag</placeName>
-        <location><geo>50,08333 14,46667</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb12692"><persName>
-      <forename>Heinrich</forename>
-      <surname>Schnitzler</surname>
-  </persName><birth>
-    <date when="1902-08-09">1902-08-09</date>
-      <settlement ref="pmb75">
-        <placeName type="pref">Hinterbrühl</placeName>
-        <location><geo>48,08611 16,24809</geo></location>
-      </settlement>
-      <settlement ref="pmb145165">
-        <placeName type="pref">Hauptstraße 56</placeName>
-        <location><geo>48,08736 16,24924</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1982-07-12">1982-07-12</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb12740"><persName>
-      <forename>Gustav</forename>
-      <surname>Schwarzkopf</surname>
-  </persName><birth>
-    <date when="1853-11-07">1853-11-07</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1939-11-13">1939-11-13</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb12977"><persName>
-      <forename>Irene</forename>
-      <surname>Triesch</surname>
-  </persName><birth>
-    <date when="1877-04-13">1877-04-13</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1964-11-24">1964-11-24</date>
-      <settlement ref="pmb854">
-        <placeName type="pref">Basel</placeName>
-        <location><geo>47,55839 7,57327</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb2121"><persName><surname>Schnitzler</surname><forename>Arthur</forename></persName><birth><date when="1862-05-15">15. 5. 1862</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></birth><death><date when="1931-10-21">21. 10. 1931</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></death><sex value="male"/><occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation><occupation ref="pmb97">Mediziner/Medizinerin</occupation><idno type="gnd">https://d-nb.info/gnd/118609807/</idno></person><person xml:id="pmb2292"><persName>
-      <forename>Gertrude von</forename>
-      <surname>Hofmannsthal</surname>
-  </persName><birth>
-    <date when="1880-03-16">1880-03-16</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-      <settlement ref="pmb207076">
-        <placeName type="pref">Strauchgasse 1</placeName>
-        <location><geo>48,210922 16,366201</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1959-11-09">1959-11-09</date>
-      <settlement ref="pmb46885">
-        <placeName type="pref">Paddington</placeName>
-        <location><geo>51,51558 -0,1763</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb24648"><persName>
-      <forename>Max</forename>
-      <surname>Schwarzkopf</surname>
-  </persName><birth>
-    <date when="1857-06-12">1857-06-12</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1928-04-14">1928-04-14</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb10815" ana="comment"><persName>
-      <forename>Hermann</forename>
-      <surname>Bahr</surname>
-  </persName><birth>
-    <date when="1863-07-19">1863-07-19</date>
-      <settlement ref="pmb332">
-        <placeName type="pref">Linz</placeName>
-        <location><geo>48,3 14,28333</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1934-01-15">1934-01-15</date>
-      <settlement ref="pmb45258">
-        <placeName type="pref">München</placeName>
-        <location><geo>48,13743 11,57549</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb11175" ana="comment"><persName>
-      <forename>Max</forename>
-      <surname>Dreyer</surname>
-  </persName><birth>
-    <date when="1862-09-25">1862-09-25</date>
-      <settlement ref="pmb56120">
-        <placeName type="pref">Rostock</placeName>
-        <location><geo>54,0887 12,14049</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1946-11-27">1946-11-27</date>
-      <settlement ref="pmb63766">
-        <placeName type="pref">Göhren</placeName>
-        <location><geo>54,3333 13,7333</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb11617" ana="comment"><persName>
-      <forename>Gerhart</forename>
-      <surname>Hauptmann</surname>
-  </persName><birth>
-    <date when="1862-11-15">1862-11-15</date>
-      <settlement ref="pmb64427">
-        <placeName type="pref">Szczawno-Zdrój</placeName>
-        <location><geo>50,79512 16,22375</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1946-06-06">1946-06-06</date>
-      <settlement ref="pmb735">
-        <placeName type="pref">Jagniątków</placeName>
-        <location><geo>50,816944 15,609444</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb11737" ana="comment"><persName>
-      <forename>Hugo August von</forename>
-      <surname>Hofmannsthal</surname>
-  </persName><birth>
-    <date when="1841-12-21">1841-12-21</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1915-12-08">1915-12-08</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb2173" ana="implied"><persName>
-      <forename>Olga</forename>
-      <surname>Schnitzler</surname>
-  </persName><birth>
-    <date when="1882-01-17">1882-01-17</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1970-01-13">1970-01-13</date>
-      <settlement ref="pmb885">
-        <placeName type="pref">Lugano</placeName>
-        <location><geo>46,01008 8,96004</geo></location>
-      </settlement>
-  </death></person></listPerson><listBibl><bibl xml:id="pmb300273"><title type="main">Der reine Tor. Gesellschaftsstück in vier Akten</title><title type="werk_unter-diesem-namen-oder-kurzel-veroffentlicht">Franz Bergleitner</title><author role="hat-unter-pseudonym-geschrieben" ref="pmb24648">Schwarzkopf, Max</author></bibl><bibl xml:id="pmb334949"><title type="main">Das Tal des Lebens. Historischer Schwank in 4 Aufzügen</title><author role="hat-geschaffen" ref="pmb11175">Dreyer, Max</author></bibl><bibl xml:id="pmb29827" ana="comment"><title type="main">Die Weber. Schauspiel aus den vierziger Jahren</title><title type="legacy-name-merge">Die Weber</title><title type="legacy-name-merge">Die Weber</title><author role="hat-geschaffen" ref="pmb11617">Hauptmann, Gerhart</author></bibl><bibl xml:id="pmb29983" ana="comment"><title type="main">Der Meister. Komödie in drei Akten</title><title type="legacy-name-merge">Der Meister. Komödie in drei Akten</title><title type="legacy-name-merge">Der Meister</title><title type="legacy-name-merge">Der Meister</title><author role="hat-geschaffen" ref="pmb10815">Bahr, Hermann</author></bibl></listBibl><listPlace><place xml:id="pmb118"><placeName>Carl-Theater</placeName><location type="coords">
-  <geo>48,215 16,384444</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb52">II., Leopoldstadt</placeName>
-  <geo>48,21667 16,4</geo>
-</location></place><place xml:id="pmb50"><placeName>Wien</placeName><placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName><placeName type="legacy-name-merge">Wien</placeName><placeName type="alternative-name">Bécs</placeName><placeName type="alternative-name">Land Wien</placeName><placeName type="alternative-name">Vídeň</placeName><placeName type="alternative-name">Wenia</placeName><placeName type="alternative-name">Beč</placeName><placeName type="ort_fruherer-name">Vindobona</placeName><placeName type="legacy-name-merge">Vindobona</placeName><placeName type="alternative-name">Vienna</placeName><placeName type="legacy-name-merge">Vienna</placeName><placeName type="alternative-name">Vienna</placeName><location type="coords">
-  <geo>48,208333 16,373056</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location></place><place xml:id="pmb91568"><placeName>Rathauspark</placeName><placeName type="legacy-name-merge">R.park</placeName><location type="coords">
-  <geo>48,2109 16,35978</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb50">Wien</placeName>
-  <geo>48,208333 16,373056</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb51">I., Innere Stadt</placeName>
-  <geo>48,20769 16,37049</geo>
-</location></place><place xml:id="pmb44016" ana="comment"><placeName>Niederlande</placeName><placeName type="ort_namensvariante">Holland</placeName><placeName type="ort_namensvariante">Netherlands</placeName><location type="coords">
-  <geo>52,25 5,75</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb468">Europa</placeName>
-  <geo>48,69096 9,14062</geo>
-</location></place></listPlace><listOrg><org xml:id="pmb35597" ana="comment"><orgName>Deutsches Theater Berlin</orgName><orgName type="institution_namensvariante">Deutsches Theater</orgName><location type="located_in_place">
-  <placeName ref="pmb168">Berlin</placeName>
-  <geo>52,52437 13,41053</geo>
-  <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno><idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno><idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno><idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb168.html</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno><idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno><idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno><idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno><idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno><idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb168.html</idno><idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb168.html</idno><idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00313</idno><idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00093</idno><idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/pmb168</idno><idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00001836</idno><idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004523</idno><idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb168</idno><idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno><idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.3</idno></location><location type="located_in_place">
-  <placeName ref="pmb3">Deutsches Theater Berlin</placeName>
-  <geo>52,524444 13,382222</geo>
-  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb3.html</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/3/</idno><idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb3.html</idno><idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb3.html</idno><idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb3.html</idno><idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb3.html</idno></location></org></listOrg><listEvent><event xml:id="pmb334951" ana="comment"><eventName n="Theaterpremiere">Premiere von Das Tal des Lebens, 6.5.1904</eventName><listPlace>
-            <place><placeName role="veranstaltet in" ref="pmb118">Carl-Theater</placeName><location>
-                    <geo>48,215 16,384444</geo>
-                </location></place>
-        </listPlace></event></listEvent></back></text>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd"
+  xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04313">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title level="s">Arthur Schnitzler: Briefwechsel mit Autorinnen und Autoren</title>
+        <title level="a">Gustav und Max Schwarzkopf an Arthur Schnitzler, 11. 5. 1904</title>
+        <author ref="#pmb12740">Schwarzkopf, Gustav</author>
+        <author ref="#pmb24648">Schwarzkopf, Max</author>
+        <editor>
+          <persName>Jahnke, Selma</persName>
+          <persName>Müller, Martin Anton</persName>
+        </editor>
+        <funder>
+          <name>Österreichischer Wissenschaftsfonds FWF</name>
+          <address>
+            <street>Georg-Coch-Platz 2</street>
+            <postCode>1010 Wien</postCode>
+            <placeName>
+              <country>A</country>
+              <settlement>Wien</settlement>
+            </placeName>
+          </address>
+        </funder>
+      </titleStmt>
+      <editionStmt>
+        <edition>schnitzler-briefe</edition>
+        <respStmt>
+          <resp>Transkription und Kommentierung</resp>
+          <persName>Jahnke, Selma</persName>
+          <persName>Müller, Martin Anton</persName>
+        </respStmt>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Austrian Centre for Digital Humanities</publisher>
+        <pubPlace>Vienna</pubPlace>
+        <date when="2026">2026</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/deed.de">
+            <p>Sie dürfen: Teilen — das Material in jedwedem Format oder Medium vervielfältigen und
+              weiterverbreiten Bearbeiten — das Material remixen, verändern und darauf aufbauen und
+              zwar für beliebige Zwecke, sogar kommerziell.</p>
+            <p>Der Lizenzgeber kann diese Freiheiten nicht widerrufen solange Sie sich an die
+              Lizenzbedingungen halten. Unter folgenden Bedingungen:</p>
+            <p>Namensnennung — Sie müssen angemessene Urheber- und Rechteangaben machen, einen Link
+              zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese Angaben
+              dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass
+              der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie oder Ihre Nutzung
+              besonders. Keine weiteren Einschränkungen — Sie dürfen keine zusätzlichen Klauseln
+              oder technische Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was
+              die Lizenz erlaubt.</p>
+            <p>Hinweise:</p>
+            <p>Sie müssen sich nicht an diese Lizenz halten hinsichtlich solcher Teile des
+              Materials, die gemeinfrei sind, oder soweit Ihre Nutzungshandlungen durch Ausnahmen
+              und Schranken des Urheberrechts gedeckt sind. Es werden keine Garantien gegeben und
+              auch keine Gewähr geleistet. Die Lizenz verschafft Ihnen möglicherweise nicht alle
+              Erlaubnisse, die Sie für die jeweilige Nutzung brauchen. Es können beispielsweise
+              andere Rechte wie Persönlichkeits- und Datenschutzrechte zu beachten sein, die Ihre
+              Nutzung des Materials entsprechend beschränken.</p>
+          </licence>
+        </availability>
+        <idno type="handle">XXXX</idno>
+      </publicationStmt>
+      <seriesStmt>
+        <p>Machine-Readable Transcriptions of the Correspondences of Arthur Schnitzler</p>
+      </seriesStmt>
+      <sourceDesc>
+        <listWit>
+          <witness n="1">
+            <objectType corresp="brief"/>
+            <msDesc>
+              <msIdentifier>
+                <country>GB</country>
+                <settlement>Cambridge</settlement>
+                <repository>University Library</repository>
+                <idno>Schnitzler, B 96a</idno>
+              </msIdentifier>
+              <physDesc>
+                <objectDesc>
+                  <supportDesc>
+                    <extent>
+                      <measure unit="seite" quantity="4"/>
+                      <measure unit="blatt" quantity="1"/>
+                      <measure unit="zeichenanzahl" quantity="2277"/>
+                    </extent>
+                  </supportDesc>
+                </objectDesc>
+                <handDesc hands="1">
+                  <handNote medium="schwarze-tinte" style="deutsche-kurrent"/>
+                </handDesc>
+              </physDesc>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de-AT">German</language>
+      </langUsage>
+      <correspDesc>
+        <correspAction type="sent">
+          <persName ref="#pmb12740">Schwarzkopf, Gustav</persName>
+          <persName ref="#pmb24648">Schwarzkopf, Max</persName>
+          <date when="1904-05-11" n="01">11. 5. 1904</date>
+          <placeName ref="#pmb50">Wien</placeName>
+        </correspAction>
+        <correspAction type="received">
+          <persName ref="#pmb2121">Schnitzler, Arthur</persName>
+          <date evidence="conjecture" notBefore="1904-05-12" notAfter="1904-05-16">[12. 5. 1904 –
+            16. 5. 1904?]</date>
+          <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
+        </correspAction>
+        <correspContext>
+          <ref type="belongsToCorrespondence" target="correspondence_12740">Schwarzkopf,
+            Gustav</ref>
+          <ref subtype="previous_letter" type="withinCollection" target="L04071">Schnitzler,
+            Schnitzler an Schwarzkopf, 9. 5. 1904</ref>
+          <ref subtype="next_letter" type="withinCollection" target="L01400">Schnitzler, Schnitzler
+            an Beer-Hofmann, 16. 5. 1904</ref>
+          <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740"
+            target="L04071">Schnitzler, Schnitzler an Schwarzkopf, 9. 5. 1904</ref>
+          <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740"
+            target="L04371">Schnitzler, Schnitzler an Schwarzkopf, 22. 5. 1904</ref>
+        </correspContext></correspDesc>
+    </profileDesc>
+    <revisionDesc status="proposed">
+      <change who="MAM" when="2026-02-20">Export aus Transkribus</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic url="MS-SCHNITZLER-B-00096-A-000-00153-1"/>
+    <graphic url="MS-SCHNITZLER-B-00096-A-000-00154-0"/>
+    <graphic url="MS-SCHNITZLER-B-00096-A-000-00154-1"/>
+    <graphic url="MS-SCHNITZLER-B-00096-A-000-00153-0"/>
+  </facsimile>
+  <text>
+    <body>
+      <div type="writingSession" n="1">
+        <opener>
+          <dateline rend="right">
+            <pb facs="MS-SCHNITZLER-B-00096-A-000-00153-1"/>
+            <date>11. V. 04</date>
+          </dateline>
+        </opener>
+        <p>
+          <salute>Lieber Arthur,</salute> ich habe ihn gefunden, den »<rs type="work"
+            ref="#pmb300273">reinen Tor</rs>«, er war in dem kleinen Schrank. Bei der Gelenheit habe
+          ich den wirklichen reinen Tor, Ihren <rs type="person" ref="#pmb12692">Heini</rs> geſehen.
+          (Ihre <rs type="person" ref="#pmb2173" subtype="implied">Frau</rs> wird dieſe Bene<c
+            rendition="#gemination-n"/>ung hoffentlich nicht als Herabſetzung der geiſtigen
+          Fähigkeiten <rs type="person" ref="#pmb12692">Heini’s</rs> empfinden) Er hat mich sehr
+          gnädig empfangen, hat mir alle ſeine Kunſtſtücke vorgemacht, hat unter Muſikbegleitung
+          bereitwilligſt vor mir getanzt, ohne auch nur den allergeringſten Kopf dafür zu verlangen.
+            Da<c rendition="#gemination-n"/> hat er mir <pb
+            facs="MS-SCHNITZLER-B-00096-A-000-00154-0"/>erzählt, daß er im »<rs type="place"
+            ref="#pmb91568">Ratauspak</rs>« den »Bi<c rendition="#gemination-n"/>gbu<c
+            rendition="#gemination-n"/>en« gesehen hat und daß er eine »Snitzler Locke« hat. (Man
+          hat ihm wirklich eine gemacht, ſeine Mittel erlauben ihm das bereits) Auch über ſeinen
+          Geſundheitszuſtand kö<c rendition="#gemination-n"/>en Sie beruhigt ſein, de<c
+            rendition="#gemination-n"/> er hat, gleichſam als Glanznu<c rendition="#gemination-m"
+          />er und letzte »Production« in meiner Gegenwart gezeigt, daß alles tadellos funktioniert
+          und daß er nicht an Verdauungsſtörungen leidet.</p>
+        <p>Kurz, ich habe mich mit ihm beſſer unterhalten als <anchor type="commentary"
+            xml:id="K_L04313-1"/>neulich <rs type="event" ref="#pmb334951" subtype="implied">im »<rs
+              type="place" ref="#pmb118">Carl Theater</rs>
+          </rs>« bei »<rs type="work" ref="#pmb334949">Tal des Lebens</rs>
+          <note type="commentary" corresp="K_L04313-1">Vom <date>3. 5. 1904</date> bis zum
+              <date>31. 5. 1904</date> fand ein »Gesamtgastspiel« des <rs type="org" ref="#pmb35597"
+              >Deutschen Theaters Berlin</rs> im <rs type="place" ref="#pmb118">Carl-Theater</rs>
+            statt. Gegeben wurden (mehrfach) drei Stücke: <rs type="work" ref="#pmb29827">Die
+              Weber</rs> (von <rs type="person" ref="#pmb11617">Gerhart Hauptmann</rs>), <rs
+              type="work" ref="#pmb334949">Das Tal des Lebens</rs> (von <rs type="person"
+              ref="#pmb11175">Max Dreyer</rs>) und <rs type="work" ref="#pmb29983">Der Meister</rs>
+            (von <rs type="person" ref="#pmb10815">Hermann Bahr</rs>). Die <rs type="event"
+              ref="#pmb334951">Premiere von <rs type="work" ref="#pmb334949">Das Tal des Lebens</rs>
+            </rs> fand am <date when="1904-05-06">6. 5. 1904</date> statt. </note>«. Es war nicht
+          meine <pb facs="MS-SCHNITZLER-B-00096-A-000-00154-1"/>Wahl, ich wurde mitgenommen. Das <rs
+            type="work" ref="#pmb334949" subtype="implied">Stück</rs> iſt eine nette Anekdote, die
+          für einen Act reichen würde, und die mit primitiver Technik zu vier Acten zerdehnt wird.
+          Hie und da ein hübsches Witzwort, aber alles wird zehnmal geſagt und jede Zweideutigkeit
+          ſo gehetzt und breitgetreten, bis ſie den letzten Reſt von Pikanterie verliert.
+          Darſtellung (bis auf die <rs type="person" ref="#pmb12977">Trieſch</rs>) Ausſtattung,
+          Regie unwahrſcheinlich ſchlecht. Es iſt auch ganz abgefallen, nur der dritte <rs
+            type="work" ref="#pmb334949" subtype="implied">Act</rs> hatte Beifall. Die Kritik iſt
+          diesmal dem <rs type="org" ref="#pmb35597" subtype="implied">Gaſtſpiel</rs> gegenüber
+          recht kritiſch, das Publikum ſehr kühl, aber gute Häuſer machen ſie doch, de<c
+            rendition="#gemination-n"/> es iſt kalt und unfreundlich, der Frühling iſt wieder einmal
+            <pb facs="MS-SCHNITZLER-B-00096-A-000-00153-0"/>ein »grünangeſtrichener Winter«, ein
+          richtiges <rs type="person" ref="#pmb10986">Brahm</rs>-Wetter<subst>
+            <del rend="strikethrough">!</del>
+            <add place="inline">.</add>
+          </subst> Ob er aber mit ſeinen drei <rs type="work" ref="#pmb29827 #pmb29983 #pmb334949"
+            subtype="implied">Stücken</rs> doch das Auslangen finden wird? Vielleicht ko<c
+            rendition="#gemination-m"/>en Sie doch noch daran. – <hi rend="latintype">
+            <rs type="person" ref="#pmb12341">Angelo</rs>
+          </hi> tut ſo, als ob er wirklich Ernſt machen wollte, er hat ſo dringend die beiden
+          Exemplare verlangt als ob die <rs type="work" ref="#pmb300273" subtype="implied"
+            >Proben</rs> demnächſt begi<c rendition="#gemination-n"/>en ſollten.–  <anchor
+            type="commentary" xml:id="K_L04313-2"/>
+          <rs type="person" ref="#pmb11740 #pmb2292">Hofmannsthal</rs> reiſen am <date>18.</date>
+          <note type="commentary" corresp="K_L04313-2">
+            <rs type="person" ref="#pmb11740">Hugo</rs>, <rs type="person" ref="#pmb2292">Gerty</rs>
+            und sein <rs type="person" ref="#pmb11737" subtype="implied">Vater</rs> reisten nach <rs
+              type="place" ref="#pmb44016">Holland</rs>. </note> fort, wie mir der Page geſtern
+          erzählte. –</p>
+        <p>Daß ich nichts Mitteilenswertes erlebt habe, glauben Sie mir wol, ich bezweifle aber doch
+          nicht, daß die Welt an ſich ſchön iſt.</p>
+        <closer>Ihre <rs type="person" ref="#pmb2173" subtype="implied">Frau</rs> und Sie herzlichſt
+          grüßend,<lb/>Ihr <signed>Gustav</signed>
+        </closer>
+        <postscript>
+          <p>Natürlich habe ich Grüße von <hi rend="latintype">
+              <rs type="person" ref="#pmb12692">Heini</rs>
+            </hi> zu beſtellen</p>
+        </postscript>
+      </div>
+      <div type="writingSession" n="2">
+        <closer><handShift scribe="#pmb24648"/>Sie und Ihre <rs type="person" ref="#pmb2173"
+            subtype="implied">Frau</rs> grüßt herzlichſt <signed>Max.</signed>
+        </closer>
+      </div>
+    </body>
+    <back><listPerson>
+        <person xml:id="pmb10986">
+          <persName>
+            <forename>Otto</forename>
+            <surname>Brahm</surname>
+          </persName>
+          <birth>
+            <date when="1856-02-05">1856-02-05</date>
+            <settlement ref="pmb506">
+              <placeName type="pref">Hamburg</placeName>
+              <location>
+                <geo>53,55055 9,993333</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1912-11-28">1912-11-28</date>
+            <settlement ref="pmb168">
+              <placeName type="pref">Berlin</placeName>
+              <location>
+                <geo>52,52437 13,41053</geo>
+              </location>
+            </settlement>
+            <settlement ref="pmb253956">
+              <placeName type="pref">Ungersche Klinik</placeName>
+              <location>
+                <geo>52,5037 13,3567</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb11740">
+          <persName>
+            <forename>Hugo von</forename>
+            <surname>Hofmannsthal</surname>
+          </persName>
+          <birth>
+            <date when="1874-02-01">1874-02-01</date>
+            <settlement ref="pmb50">
+              <placeName type="pref">Wien</placeName>
+              <location>
+                <geo>48,208333 16,373056</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1929-07-15">1929-07-15</date>
+            <settlement ref="pmb173">
+              <placeName type="pref">Rodaun</placeName>
+              <location>
+                <geo>48,132793312328 16,256152195922</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb12341">
+          <persName>
+            <forename>Angelo</forename>
+            <surname>Neumann</surname>
+          </persName>
+          <birth>
+            <date when="1838-08-18">1838-08-18</date>
+            <settlement ref="pmb44578">
+              <placeName type="pref">Stupava</placeName>
+              <location>
+                <geo>48,27474 17,03173</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1910-12-20">1910-12-20</date>
+            <settlement ref="pmb652">
+              <placeName type="pref">Prag</placeName>
+              <location>
+                <geo>50,08333 14,46667</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb12692">
+          <persName>
+            <forename>Heinrich</forename>
+            <surname>Schnitzler</surname>
+          </persName>
+          <birth>
+            <date when="1902-08-09">1902-08-09</date>
+            <settlement ref="pmb75">
+              <placeName type="pref">Hinterbrühl</placeName>
+              <location>
+                <geo>48,08611 16,24809</geo>
+              </location>
+            </settlement>
+            <settlement ref="pmb145165">
+              <placeName type="pref">Hauptstraße 56</placeName>
+              <location>
+                <geo>48,08736 16,24924</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1982-07-12">1982-07-12</date>
+            <settlement ref="pmb50">
+              <placeName type="pref">Wien</placeName>
+              <location>
+                <geo>48,208333 16,373056</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb12740">
+          <persName>
+            <forename>Gustav</forename>
+            <surname>Schwarzkopf</surname>
+          </persName>
+          <birth>
+            <date when="1853-11-07">1853-11-07</date>
+            <settlement ref="pmb50">
+              <placeName type="pref">Wien</placeName>
+              <location>
+                <geo>48,208333 16,373056</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1939-11-13">1939-11-13</date>
+            <settlement ref="pmb50">
+              <placeName type="pref">Wien</placeName>
+              <location>
+                <geo>48,208333 16,373056</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb12977">
+          <persName>
+            <forename>Irene</forename>
+            <surname>Triesch</surname>
+          </persName>
+          <birth>
+            <date when="1877-04-13">1877-04-13</date>
+            <settlement ref="pmb50">
+              <placeName type="pref">Wien</placeName>
+              <location>
+                <geo>48,208333 16,373056</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1964-11-24">1964-11-24</date>
+            <settlement ref="pmb854">
+              <placeName type="pref">Basel</placeName>
+              <location>
+                <geo>47,55839 7,57327</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb2121">
+          <persName><surname>Schnitzler</surname><forename>Arthur</forename></persName>
+          <birth>
+            <date when="1862-05-15">15. 5. 1862</date>
+            <settlement ref="pmb50"><placeName type="pref">Wien</placeName><location>
+                <geo>48,208333 16,373056</geo>
+              </location></settlement>
+          </birth>
+          <death>
+            <date when="1931-10-21">21. 10. 1931</date>
+            <settlement ref="pmb50"><placeName type="pref">Wien</placeName><location>
+                <geo>48,208333 16,373056</geo>
+              </location></settlement>
+          </death>
+          <sex value="male"/>
+          <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+          <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+          <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+        </person>
+        <person xml:id="pmb2292">
+          <persName>
+            <forename>Gertrude von</forename>
+            <surname>Hofmannsthal</surname>
+          </persName>
+          <birth>
+            <date when="1880-03-16">1880-03-16</date>
+            <settlement ref="pmb50">
+              <placeName type="pref">Wien</placeName>
+              <location>
+                <geo>48,208333 16,373056</geo>
+              </location>
+            </settlement>
+            <settlement ref="pmb207076">
+              <placeName type="pref">Strauchgasse 1</placeName>
+              <location>
+                <geo>48,210922 16,366201</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1959-11-09">1959-11-09</date>
+            <settlement ref="pmb46885">
+              <placeName type="pref">Paddington</placeName>
+              <location>
+                <geo>51,51558 -0,1763</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb24648">
+          <persName>
+            <forename>Max</forename>
+            <surname>Schwarzkopf</surname>
+          </persName>
+          <birth>
+            <date when="1857-06-12">1857-06-12</date>
+            <settlement ref="pmb50">
+              <placeName type="pref">Wien</placeName>
+              <location>
+                <geo>48,208333 16,373056</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1928-04-14">1928-04-14</date>
+            <settlement ref="pmb50">
+              <placeName type="pref">Wien</placeName>
+              <location>
+                <geo>48,208333 16,373056</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb10815" ana="comment">
+          <persName>
+            <forename>Hermann</forename>
+            <surname>Bahr</surname>
+          </persName>
+          <birth>
+            <date when="1863-07-19">1863-07-19</date>
+            <settlement ref="pmb332">
+              <placeName type="pref">Linz</placeName>
+              <location>
+                <geo>48,3 14,28333</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1934-01-15">1934-01-15</date>
+            <settlement ref="pmb45258">
+              <placeName type="pref">München</placeName>
+              <location>
+                <geo>48,13743 11,57549</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb11175" ana="comment">
+          <persName>
+            <forename>Max</forename>
+            <surname>Dreyer</surname>
+          </persName>
+          <birth>
+            <date when="1862-09-25">1862-09-25</date>
+            <settlement ref="pmb56120">
+              <placeName type="pref">Rostock</placeName>
+              <location>
+                <geo>54,0887 12,14049</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1946-11-27">1946-11-27</date>
+            <settlement ref="pmb63766">
+              <placeName type="pref">Göhren</placeName>
+              <location>
+                <geo>54,3333 13,7333</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb11617" ana="comment">
+          <persName>
+            <forename>Gerhart</forename>
+            <surname>Hauptmann</surname>
+          </persName>
+          <birth>
+            <date when="1862-11-15">1862-11-15</date>
+            <settlement ref="pmb64427">
+              <placeName type="pref">Szczawno-Zdrój</placeName>
+              <location>
+                <geo>50,79512 16,22375</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1946-06-06">1946-06-06</date>
+            <settlement ref="pmb735">
+              <placeName type="pref">Jagniątków</placeName>
+              <location>
+                <geo>50,816944 15,609444</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb11737" ana="comment">
+          <persName>
+            <forename>Hugo August von</forename>
+            <surname>Hofmannsthal</surname>
+          </persName>
+          <birth>
+            <date when="1841-12-21">1841-12-21</date>
+            <settlement ref="pmb50">
+              <placeName type="pref">Wien</placeName>
+              <location>
+                <geo>48,208333 16,373056</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1915-12-08">1915-12-08</date>
+            <settlement ref="pmb50">
+              <placeName type="pref">Wien</placeName>
+              <location>
+                <geo>48,208333 16,373056</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+        <person xml:id="pmb2173" ana="implied">
+          <persName>
+            <forename>Olga</forename>
+            <surname>Schnitzler</surname>
+          </persName>
+          <birth>
+            <date when="1882-01-17">1882-01-17</date>
+            <settlement ref="pmb50">
+              <placeName type="pref">Wien</placeName>
+              <location>
+                <geo>48,208333 16,373056</geo>
+              </location>
+            </settlement>
+          </birth>
+          <death>
+            <date when="1970-01-13">1970-01-13</date>
+            <settlement ref="pmb885">
+              <placeName type="pref">Lugano</placeName>
+              <location>
+                <geo>46,01008 8,96004</geo>
+              </location>
+            </settlement>
+          </death>
+        </person>
+      </listPerson><listBibl><bibl xml:id="pmb300273">
+          <title type="main">Der reine Tor. Gesellschaftsstück in vier Akten</title>
+          <title type="werk_unter-diesem-namen-oder-kurzel-veroffentlicht">Franz Bergleitner</title>
+          <author role="hat-unter-pseudonym-geschrieben" ref="pmb24648">Schwarzkopf, Max</author>
+        </bibl><bibl xml:id="pmb334949">
+          <title type="main">Das Tal des Lebens. Historischer Schwank in 4 Aufzügen</title>
+          <author role="hat-geschaffen" ref="pmb11175">Dreyer, Max</author>
+        </bibl><bibl xml:id="pmb29827" ana="comment">
+          <title type="main">Die Weber. Schauspiel aus den vierziger Jahren</title>
+          <title type="legacy-name-merge">Die Weber</title>
+          <title type="legacy-name-merge">Die Weber</title>
+          <author role="hat-geschaffen" ref="pmb11617">Hauptmann, Gerhart</author>
+        </bibl><bibl xml:id="pmb29983" ana="comment">
+          <title type="main">Der Meister. Komödie in drei Akten</title>
+          <title type="legacy-name-merge">Der Meister. Komödie in drei Akten</title>
+          <title type="legacy-name-merge">Der Meister</title>
+          <title type="legacy-name-merge">Der Meister</title>
+          <author role="hat-geschaffen" ref="pmb10815">Bahr, Hermann</author>
+        </bibl></listBibl><listPlace>
+        <place xml:id="pmb118">
+          <placeName>Carl-Theater</placeName>
+          <location type="coords">
+            <geo>48,215 16,384444</geo>
+          </location>
+          <location type="located_in_place">
+            <placeName ref="pmb52">II., Leopoldstadt</placeName>
+            <geo>48,21667 16,4</geo>
+          </location>
+        </place>
+        <place xml:id="pmb50">
+          <placeName>Wien</placeName>
+          <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+          <placeName type="legacy-name-merge">Wien</placeName>
+          <placeName type="alternative-name">Bécs</placeName>
+          <placeName type="alternative-name">Land Wien</placeName>
+          <placeName type="alternative-name">Vídeň</placeName>
+          <placeName type="alternative-name">Wenia</placeName>
+          <placeName type="alternative-name">Beč</placeName>
+          <placeName type="ort_fruherer-name">Vindobona</placeName>
+          <placeName type="legacy-name-merge">Vindobona</placeName>
+          <placeName type="alternative-name">Vienna</placeName>
+          <placeName type="legacy-name-merge">Vienna</placeName>
+          <placeName type="alternative-name">Vienna</placeName>
+          <location type="coords">
+            <geo>48,208333 16,373056</geo>
+          </location>
+          <location type="located_in_place">
+            <placeName ref="pmb41240">Österreich</placeName>
+            <geo>47,33333 13,33333</geo>
+          </location>
+        </place>
+        <place xml:id="pmb91568">
+          <placeName>Rathauspark</placeName>
+          <placeName type="legacy-name-merge">R.park</placeName>
+          <location type="coords">
+            <geo>48,2109 16,35978</geo>
+          </location>
+          <location type="located_in_place">
+            <placeName ref="pmb41240">Österreich</placeName>
+            <geo>47,33333 13,33333</geo>
+          </location>
+          <location type="located_in_place">
+            <placeName ref="pmb50">Wien</placeName>
+            <geo>48,208333 16,373056</geo>
+          </location>
+          <location type="located_in_place">
+            <placeName ref="pmb51">I., Innere Stadt</placeName>
+            <geo>48,20769 16,37049</geo>
+          </location>
+        </place>
+        <place xml:id="pmb44016" ana="comment">
+          <placeName>Niederlande</placeName>
+          <placeName type="ort_namensvariante">Holland</placeName>
+          <placeName type="ort_namensvariante">Netherlands</placeName>
+          <location type="coords">
+            <geo>52,25 5,75</geo>
+          </location>
+          <location type="located_in_place">
+            <placeName ref="pmb468">Europa</placeName>
+            <geo>48,69096 9,14062</geo>
+          </location>
+        </place>
+      </listPlace><listOrg>
+        <org xml:id="pmb35597" ana="comment">
+          <orgName>Deutsches Theater Berlin</orgName>
+          <orgName type="institution_namensvariante">Deutsches Theater</orgName>
+          <location type="located_in_place">
+            <placeName ref="pmb168">Berlin</placeName>
+            <geo>52,52437 13,41053</geo>
+            <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
+            <idno type="URL" subtype="schnitzler-bahr"
+              >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
+            <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
+            <idno type="URL" subtype="kraus"
+              >https://www.kraus.wienbibliothek.at/legalkraus/pmb168.html</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
+            <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
+            <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
+            <idno type="URL" subtype="schnitzler-interviews"
+              >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
+            <idno type="URL" subtype="schnitzler-tagebuch"
+              >https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+            <idno type="URL" subtype="wienerschnitzler"
+              >https://wienerschnitzler.org/pmb168.html</idno>
+            <idno type="URL" subtype="schnitzler-kultur"
+              >https://schnitzler-kultur.acdh.oeaw.ac.at/pmb168.html</idno>
+            <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00313</idno>
+            <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00093</idno>
+            <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/pmb168</idno>
+            <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00001836</idno>
+            <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004523</idno>
+            <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb168</idno>
+            <idno type="URL" subtype="schnitzler-briefe"
+              >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
+            <idno type="URL" subtype="schoenberg-ue"
+              >https://www.schoenberg-ue.at/ue/places/place.2.3</idno>
+          </location>
+          <location type="located_in_place">
+            <placeName ref="pmb3">Deutsches Theater Berlin</placeName>
+            <geo>52,524444 13,382222</geo>
+            <idno type="URL" subtype="schnitzler-bahr"
+              >https://schnitzler-bahr.acdh.oeaw.ac.at/pmb3.html</idno>
+            <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/3/</idno>
+            <idno type="URL" subtype="schnitzler-interviews"
+              >https://schnitzler-interviews.acdh.oeaw.ac.at/pmb3.html</idno>
+            <idno type="URL" subtype="wienerschnitzler"
+              >https://wienerschnitzler.org/pmb3.html</idno>
+            <idno type="URL" subtype="schnitzler-kultur"
+              >https://schnitzler-kultur.acdh.oeaw.ac.at/pmb3.html</idno>
+            <idno type="URL" subtype="schnitzler-briefe"
+              >https://schnitzler-briefe.acdh.oeaw.ac.at/pmb3.html</idno>
+          </location>
+        </org>
+      </listOrg><listEvent>
+        <event xml:id="pmb334951" ana="comment">
+          <eventName n="Theaterpremiere">Premiere von Das Tal des Lebens, 6.5.1904</eventName>
+          <listPlace>
+            <place>
+              <placeName role="veranstaltet in" ref="pmb118">Carl-Theater</placeName>
+              <location>
+                <geo>48,215 16,384444</geo>
+              </location>
+            </place>
+          </listPlace>
+        </event>
+      </listEvent></back>
+  </text>
 </TEI>
