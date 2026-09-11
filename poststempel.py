@@ -10,7 +10,7 @@ einem übermittelten Datum stammt:
 
 Öffnet pro Kandidat die HTML-Ansicht im Browser und die XML-Datei in
 OxygenXML, zeigt Briefdatum vs. Poststempeldatum und lässt den Befund
-klassifizieren: bestätigt · korrigiert · Prüffall · später
+klassifizieren: bestätigt · korrigiert · Prüffall
 
 Der Bearbeitungsstand wird lokal in poststempel.status.json gespeichert
 (nicht git-getrackt) und ist über mehrere Sitzungen hinweg fortsetzbar.
@@ -54,7 +54,6 @@ STATUS_LABELS = {
     "bestaetigt": "bestätigt",
     "korrigiert": "korrigiert",
     "pruefen": "Prüffall",
-    "spaeter": "später",
     "offen": "offen",
 }
 
@@ -69,7 +68,7 @@ if not sys.stdout.isatty():
 
 STATUS_COLOR = {
     "bestaetigt": C["green"], "korrigiert": C["mag"],
-    "pruefen": C["yellow"], "spaeter": C["dim"], "offen": C["dim"],
+    "pruefen": C["yellow"], "offen": C["dim"],
 }
 
 
@@ -166,13 +165,13 @@ def open_in_oxygen(fid):
 # Anzeige
 # ---------------------------------------------------------------------------
 def print_stats(candidates, status):
-    counts = {"bestaetigt": 0, "korrigiert": 0, "pruefen": 0, "spaeter": 0, "offen": 0}
+    counts = {"bestaetigt": 0, "korrigiert": 0, "pruefen": 0, "offen": 0}
     for cand in candidates:
         st = status.get(cand["id"], {}).get("status", "offen")
         counts[st] = counts.get(st, 0) + 1
     total = len(candidates)
     print(f"\n{C['bold']}Bearbeitungsstand{C['reset']}  ({total} Kandidaten)")
-    for st in ("bestaetigt", "korrigiert", "pruefen", "spaeter", "offen"):
+    for st in ("bestaetigt", "korrigiert", "pruefen", "offen"):
         col = STATUS_COLOR[st]
         print(f"  {col}{STATUS_LABELS[st]:<10}{C['reset']} {counts.get(st, 0)}")
     print()
@@ -196,8 +195,7 @@ def show_candidate(cand, status, position, richtung):
     print(f"{C['bold']}{position}{C['reset']}   "
           f"{C['cyan']}{C['bold']}{cand['id']}{C['reset']}   "
           f"{C['dim']}{richtung}{C['reset']}")
-    print(f"Status: {col}{STATUS_LABELS[st]}{C['reset']}"
-          + (f"  {C['dim']}({st_entry.get('note', '')}){C['reset']}" if st_entry.get("note") else ""))
+    print(f"Status: {col}{STATUS_LABELS[st]}{C['reset']}")
     print()
     print(f"  Brief:    {cand['sent'] or '?'}")
     stamps = ", ".join(cand["stamps"]) if cand["stamps"] else "?"
@@ -210,7 +208,7 @@ def show_candidate(cand, status, position, richtung):
 # Interaktive Schleife
 # ---------------------------------------------------------------------------
 HELP = f"""
-  {C['bold']}b{C['reset']} bestätigt   {C['bold']}k{C['reset']} korrigiert   {C['bold']}f{C['reset']} Prüffall   {C['bold']}s{C['reset']} später   {C['bold']}o{C['reset']} offen (zurücksetzen)
+  {C['bold']}b{C['reset']} bestätigt   {C['bold']}k{C['reset']} korrigiert   {C['bold']}f{C['reset']} Prüffall   {C['bold']}o{C['reset']} offen (zurücksetzen)
   {C['bold']}Enter{C['reset']}/{C['bold']}n{C['reset']} nächster (ohne Änderung)   {C['bold']}z{C['reset']} zurück
   {C['bold']}r{C['reset']} Apps erneut öffnen   {C['bold']}g{C['reset']} <Nr> springen   {C['bold']}l{C['reset']} Liste   {C['bold']}?{C['reset']} Hilfe   {C['bold']}q{C['reset']} beenden
 """
@@ -232,7 +230,7 @@ def review(candidates, status, status_path, richtung, do_open=True):
             last_opened = cand["id"]
 
         try:
-            cmd = input(f"\n  {C['bold']}›{C['reset']} [b/k/f/s/o · n/z · ?] ").strip()
+            cmd = input(f"\n  {C['bold']}›{C['reset']} [b/k/f/o · n/z · q · ?] ").strip()
         except (EOFError, KeyboardInterrupt):
             print("\nBeendet.")
             break
@@ -260,12 +258,9 @@ def review(candidates, status, status_path, richtung, do_open=True):
                 idx = int(arg) - 1
             else:
                 print("  Ungültige Nummer.")
-        elif low in ("b", "k", "f", "s", "o"):
-            mapping = {"b": "bestaetigt", "k": "korrigiert", "f": "pruefen", "s": "spaeter", "o": "offen"}
+        elif low in ("b", "k", "f", "o"):
+            mapping = {"b": "bestaetigt", "k": "korrigiert", "f": "pruefen", "o": "offen"}
             new = mapping[low]
-            note = ""
-            if low in ("k", "f"):
-                note = input(f"  Notiz zu »{STATUS_LABELS[new]}« (optional): ").strip()
             if new == "offen":
                 status.pop(cand["id"], None)
             else:
@@ -274,8 +269,6 @@ def review(candidates, status, status_path, richtung, do_open=True):
                     "sent": cand["sent"],
                     "stamps": cand["stamps"],
                 }
-                if note:
-                    status[cand["id"]]["note"] = note
             save_status(status_path, status)
             col = STATUS_COLOR[new]
             print(f"  → {col}{STATUS_LABELS[new]}{C['reset']} gespeichert.")
