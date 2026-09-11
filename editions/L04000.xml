@@ -1,6 +1,10 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04000">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions"
+     xml:id="L04000">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -103,8 +107,7 @@
             <correspAction type="sent">
                <persName ref="#pmb2312">Zuckerkandl, Berta</persName>
                <date when="1920-07-30" n="02">30. 7. 1920</date>
-               <placeName ref="#pmb36503" evidence="conjecture">Breitenstein am
-                  Semmering</placeName>
+               <placeName ref="#pmb36503" evidence="conjecture">Breitenstein am Semmering</placeName>
             </correspAction>
             <correspAction type="received">
                <persName ref="#pmb2121">Schnitzler, Arthur</persName>
@@ -112,12 +115,20 @@
                   – 31. 7. 1920?]</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
-            <correspContext><ref type="belongsToCorrespondence" target="correspondence_2312">Zuckerkandl, Berta</ref>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2312">Zuckerkandl, Berta</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L02352">Hofmannsthal an Schnitzler, 30. 7. 1920</ref>
                <ref subtype="next_letter" type="withinCollection" target="L03982">Schnitzler an Zuckerkandl, 31. 7. 1920</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_2312" target="L03991">Schnitzler an Zuckerkandl, Jänner 1919</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_2312" target="L03982">Schnitzler an Zuckerkandl, 31. 7. 1920</ref>
-            </correspContext></correspDesc>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2312"
+                    target="L03991">Schnitzler an Zuckerkandl, Jänner 1919</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2312"
+                    target="L03982">Schnitzler an Zuckerkandl, 31. 7. 1920</ref>
+            </correspContext>
+         </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2025-11-11">Export aus Transkribus</change>
@@ -158,68 +169,158 @@
             </closer>
          </div>
       </body>
-      <back><listPerson><person xml:id="pmb12160"><persName>
-      <forename>Alma Maria</forename>
-      <surname>Mahler-Werfel</surname>
-  </persName><birth>
-    <date when="1879-08-31">1879-08-31</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1964-12-11">1964-12-11</date>
-      <settlement ref="pmb44053">
-        <placeName type="pref">New York City</placeName>
-        <location><geo>40,71427 -74,00597</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb2121"><persName><surname>Schnitzler</surname><forename>Arthur</forename></persName><birth><date when="1862-05-15">15. 5. 1862</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></birth><death><date when="1931-10-21">21. 10. 1931</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></death><sex value="male"/><occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation><occupation ref="pmb97">Mediziner/Medizinerin</occupation><idno type="gnd">https://d-nb.info/gnd/118609807/</idno></person><person xml:id="pmb2312"><persName>
-      <forename>Berta</forename>
-      <surname>Zuckerkandl</surname>
-  </persName><birth>
-    <date when="1864-04-13">1864-04-13</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1945-10-16">1945-10-16</date>
-      <settlement ref="pmb182">
-        <placeName type="pref">Paris</placeName>
-        <location><geo>48,85341 2,3488</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb2173" ana="comment"><persName>
-      <forename>Olga</forename>
-      <surname>Schnitzler</surname>
-  </persName><birth>
-    <date when="1882-01-17">1882-01-17</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1970-01-13">1970-01-13</date>
-      <settlement ref="pmb885">
-        <placeName type="pref">Lugano</placeName>
-        <location><geo>46,01008 8,96004</geo></location>
-      </settlement>
-  </death></person></listPerson><listPlace><place xml:id="pmb36503"><placeName>Breitenstein am Semmering</placeName><placeName type="legacy-name">Breitenstein am Semmering</placeName><location type="coords">
-  <geo>47,65949 15,82151</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location></place><place xml:id="pmb50"><placeName>Wien</placeName><placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName><placeName type="legacy-name-merge">Wien</placeName><placeName type="alternative-name">Bécs</placeName><placeName type="alternative-name">Land Wien</placeName><placeName type="alternative-name">Vídeň</placeName><placeName type="alternative-name">Wenia</placeName><placeName type="alternative-name">Beč</placeName><placeName type="ort_fruherer-name">Vindobona</placeName><placeName type="legacy-name-merge">Vindobona</placeName><placeName type="alternative-name">Vienna</placeName><placeName type="legacy-name-merge">Vienna</placeName><placeName type="alternative-name">Vienna</placeName><location type="coords">
-  <geo>48,208333 16,373056</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location></place><place xml:id="pmb36506" ana="comment"><placeName>Haus Mahler</placeName><location type="coords">
-  <geo>47,66791 15,7961</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb91067">Kreuzberg [Breitenstein]</placeName>
-  <geo>47,66667 15,81667</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb36503">Breitenstein am Semmering</placeName>
-  <geo>47,65949 15,82151</geo>
-</location></place></listPlace></back></text>
+      <back>
+         <listPerson>
+            <person xml:id="pmb12160">
+               <persName>
+                  <forename>Alma Maria</forename>
+                  <surname>Mahler-Werfel</surname>
+               </persName>
+               <birth>
+                  <date when="1879-08-31">1879-08-31</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1964-12-11">1964-12-11</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb2312">
+               <persName>
+                  <forename>Berta</forename>
+                  <surname>Zuckerkandl</surname>
+               </persName>
+               <birth>
+                  <date when="1864-04-13">1864-04-13</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-10-16">1945-10-16</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2173" ana="comment">
+               <persName>
+                  <forename>Olga</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1882-01-17">1882-01-17</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1970-01-13">1970-01-13</date>
+                  <settlement ref="pmb885">
+                     <placeName type="pref">Lugano</placeName>
+                     <location>
+                        <geo>46,01008 8,96004</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+         </listPerson>
+         <listPlace>
+            <place xml:id="pmb36503">
+               <placeName>Breitenstein am Semmering</placeName>
+               <placeName type="legacy-name">Breitenstein am Semmering</placeName>
+               <location type="coords">
+                  <geo>47,65949 15,82151</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb36506" ana="comment">
+               <placeName>Haus Mahler</placeName>
+               <location type="coords">
+                  <geo>47,66791 15,7961</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb91067">Kreuzberg [Breitenstein]</placeName>
+                  <geo>47,66667 15,81667</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb36503">Breitenstein am Semmering</placeName>
+                  <geo>47,65949 15,82151</geo>
+               </location>
+            </place>
+         </listPlace>
+      </back>
+   </text>
 </TEI>

@@ -1,6 +1,10 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04230">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions"
+     xml:id="L04230">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -111,12 +115,20 @@
                   – 28. 5. 1901?]</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
-         <correspContext><ref type="belongsToCorrespondence" target="correspondence_9941">Sosnosky, Theodor von</ref>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_9941">Sosnosky, Theodor von</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L01123">Brandes an Schnitzler, 22. 5. 1901</ref>
                <ref subtype="next_letter" type="withinCollection" target="L04234">Schnitzler an Sosnosky, 26. 5. 1901</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_9941" target="L04238">Schnitzler an Sosnosky, [24.?] 4. 1901</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_9941" target="L04234">Schnitzler an Sosnosky, 26. 5. 1901</ref>
-            </correspContext></correspDesc>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_9941"
+                    target="L04238">Schnitzler an Sosnosky, [24.?] 4. 1901</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_9941"
+                    target="L04234">Schnitzler an Sosnosky, 26. 5. 1901</ref>
+            </correspContext>
+         </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2026-02-17">Export aus Transkribus</change>
@@ -132,7 +144,7 @@
          <div type="writingSession" n="1">
             <opener>
                <dateline>
-                 <pb facs="HS00043433_0023"/>
+                  <pb facs="HS00043433_0023"/>
                   <anchor type="textConst" xml:id="T_L04230-1"/>dzt <rs type="place" ref="#pmb48393">
                      <hi rend="latintype">Kr</hi>
                   </rs>
@@ -169,33 +181,171 @@
             </closer>
          </div>
       </body>
-      <back><listPerson><person xml:id="pmb2121"><persName><surname>Schnitzler</surname><forename>Arthur</forename></persName><birth><date when="1862-05-15">15. 5. 1862</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></birth><death><date when="1931-10-21">21. 10. 1931</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></death><sex value="male"/><occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation><occupation ref="pmb97">Mediziner/Medizinerin</occupation><idno type="gnd">https://d-nb.info/gnd/118609807/</idno></person><person xml:id="pmb9941"><persName>
-      <forename>Theodor von</forename>
-      <surname>Sosnosky</surname>
-  </persName><birth>
-    <date when="1866-01-04">1866-01-04</date>
-      <settlement ref="pmb43471">
-        <placeName type="pref">Budapest</placeName>
-        <location><geo>47,49835 19,04045</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1943-02-13">1943-02-13</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </death></person></listPerson><listBibl><bibl xml:id="pmb29853"><title type="main">Lieutenant Gustl. Novelle</title><title type="werk_bibliografische-angabe">Arthur Schnitzler: Lieutenant Gustl. In: Neue Freie Presse, Nr. 13053, 25. 12. 1900, Morgenblatt, S. 34–41</title><title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19001225&amp;seite=34</title><title type="werk_namensvariante">Leutnant Gustl</title><author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author></bibl><bibl xml:id="pmb29899"><title type="main">Freiwild. Schauspiel in 3 Akten</title><title type="legacy-name-merge">Freiwild</title><author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author></bibl><bibl xml:id="pmb335010"><title type="main">?? [Zeitschrift, die Theodor von Sosnoskys Besprechung von »Bertha Garlan« zurückweist]</title><author role="hat-herausgegeben" ref="pmb335051">?? [Herausgeber einer reichsdeutschen Zeitschrift]</author></bibl><bibl xml:id="pmb36374"><title type="main">Neue Freie Presse</title><title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=nfp</title><title type="legacy-name-merge">Neue freie Presse (Zeitung, Wien)</title><author role="hat-herausgegeben" ref="pmb10809">Bacher, Eduard</author><author role="hat-herausgegeben" ref="pmb10875">Benedikt, Moriz</author><author role="hat-herausgegeben" ref="pmb10872">Benedikt, Ernst</author></bibl><bibl xml:id="pmb30486" ana="comment"><title type="main">Frau Bertha Garlan. Roman</title><title type="werk_bibliografische-angabe">Neue Deutsche Rundschau, Jg. 12, H. 1, Januar, S. 41–64; H. 2, Februar, S. 181–206; H. 3, März, S. 237–272, 1901</title><author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author></bibl><bibl xml:id="pmb334897" ana="comment"><title type="main">Bücher und Zeitschriftenschau [Frau Bertha Garlan]</title><title type="werk_link">https://schnitzler-zeitungen.acdh.oeaw.ac.at/223910_0021.html</title><title type="werk_unter-diesem-namen-oder-kurzel-veroffentlicht">Th. v. S.</title><title type="werk_bibliografische-angabe">Th. v. S. [= Theodor von Sosnosky]: Bücher und Zeitschriftenschau. In: Norddeutsche Allgemeine Zeitung, Nr. 50, 28.2.1902, Beilage.</title><author role="hat-unter-einem-kurzel-veroffentlicht" ref="pmb9941">Sosnosky, Theodor von</author></bibl><bibl xml:id="pmb334898" ana="comment"><title type="main">Norddeutsche Allgemeine Zeitung</title><title type="werk_namensvariante">Deutsche Allgemeine Zeitung</title></bibl><bibl xml:id="pmb47979" ana="comment"><title type="main">Börsenblatt für den Deutschen Buchhandel</title><title type="werk_link">https://www.boersenblatt-digital.de</title></bibl></listBibl><listPlace><place xml:id="pmb48393"><placeName>Kremsmünster</placeName><placeName type="legacy-name">Kremsmünster</placeName><location type="coords">
-  <geo>48,05301 14,12842</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location></place><place xml:id="pmb50"><placeName>Wien</placeName><placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName><placeName type="legacy-name-merge">Wien</placeName><placeName type="alternative-name">Bécs</placeName><placeName type="alternative-name">Land Wien</placeName><placeName type="alternative-name">Vídeň</placeName><placeName type="alternative-name">Wenia</placeName><placeName type="alternative-name">Beč</placeName><placeName type="ort_fruherer-name">Vindobona</placeName><placeName type="legacy-name-merge">Vindobona</placeName><placeName type="alternative-name">Vienna</placeName><placeName type="legacy-name-merge">Vienna</placeName><placeName type="alternative-name">Vienna</placeName><location type="coords">
-  <geo>48,208333 16,373056</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location></place></listPlace><listOrg><org xml:id="pmb29807"><orgName>Die Nation</orgName><location type="located_in_place">
-  <placeName ref="pmb168">Berlin</placeName>
-  <geo>52,52437 13,41053</geo>
-  <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno><idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno><idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno><idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb168.html</idno><idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno><idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno><idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno><idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno><idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno><idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb168.html</idno><idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb168.html</idno><idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00313</idno><idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00093</idno><idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/pmb168</idno><idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00001836</idno><idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004523</idno><idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb168</idno><idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno><idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.3</idno></location></org></listOrg></back></text>
+      <back>
+         <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb9941">
+               <persName>
+                  <forename>Theodor von</forename>
+                  <surname>Sosnosky</surname>
+               </persName>
+               <birth>
+                  <date when="1866-01-04">1866-01-04</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1943-02-13">1943-02-13</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+         </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb29853">
+               <title type="main">Lieutenant Gustl. Novelle</title>
+               <title type="werk_bibliografische-angabe">Arthur Schnitzler: Lieutenant Gustl. In: Neue Freie Presse, Nr. 13053, 25. 12. 1900, Morgenblatt, S. 34–41</title>
+               <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=nfp&amp;datum=19001225&amp;seite=34</title>
+               <title type="werk_namensvariante">Leutnant Gustl</title>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+            </bibl>
+            <bibl xml:id="pmb29899">
+               <title type="main">Freiwild. Schauspiel in 3 Akten</title>
+               <title type="legacy-name-merge">Freiwild</title>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+            </bibl>
+            <bibl xml:id="pmb335010">
+               <title type="main">?? [Zeitschrift, die Theodor von Sosnoskys Besprechung von »Bertha Garlan« zurückweist]</title>
+               <author role="hat-herausgegeben" ref="pmb335051">?? [Herausgeber einer reichsdeutschen Zeitschrift]</author>
+            </bibl>
+            <bibl xml:id="pmb36374">
+               <title type="main">Neue Freie Presse</title>
+               <title type="werk_link">http://anno.onb.ac.at/cgi-content/anno?aid=nfp</title>
+               <title type="legacy-name-merge">Neue freie Presse (Zeitung, Wien)</title>
+               <author role="hat-herausgegeben" ref="pmb10809">Bacher, Eduard</author>
+               <author role="hat-herausgegeben" ref="pmb10875">Benedikt, Moriz</author>
+               <author role="hat-herausgegeben" ref="pmb10872">Benedikt, Ernst</author>
+            </bibl>
+            <bibl xml:id="pmb30486" ana="comment">
+               <title type="main">Frau Bertha Garlan. Roman</title>
+               <title type="werk_bibliografische-angabe">Neue Deutsche Rundschau, Jg. 12, H. 1, Januar, S. 41–64; H. 2, Februar, S. 181–206; H. 3, März, S. 237–272, 1901</title>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+            </bibl>
+            <bibl xml:id="pmb334897" ana="comment">
+               <title type="main">Bücher und Zeitschriftenschau [Frau Bertha Garlan]</title>
+               <title type="werk_link">https://schnitzler-zeitungen.acdh.oeaw.ac.at/223910_0021.html</title>
+               <title type="werk_unter-diesem-namen-oder-kurzel-veroffentlicht">Th. v. S.</title>
+               <title type="werk_bibliografische-angabe">Th. v. S. [= Theodor von Sosnosky]: Bücher und Zeitschriftenschau. In: Norddeutsche Allgemeine Zeitung, Nr. 50, 28.2.1902, Beilage.</title>
+               <author role="hat-unter-einem-kurzel-veroffentlicht" ref="pmb9941">Sosnosky, Theodor von</author>
+            </bibl>
+            <bibl xml:id="pmb334898" ana="comment">
+               <title type="main">Norddeutsche Allgemeine Zeitung</title>
+               <title type="werk_namensvariante">Deutsche Allgemeine Zeitung</title>
+            </bibl>
+            <bibl xml:id="pmb47979" ana="comment">
+               <title type="main">Börsenblatt für den Deutschen Buchhandel</title>
+               <title type="werk_link">https://www.boersenblatt-digital.de</title>
+            </bibl>
+         </listBibl>
+         <listPlace>
+            <place xml:id="pmb48393">
+               <placeName>Kremsmünster</placeName>
+               <placeName type="legacy-name">Kremsmünster</placeName>
+               <location type="coords">
+                  <geo>48,05301 14,12842</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+         </listPlace>
+         <listOrg>
+            <org xml:id="pmb29807">
+               <orgName>Die Nation</orgName>
+               <location type="located_in_place">
+                  <placeName ref="pmb168">Berlin</placeName>
+                  <geo>52,52437 13,41053</geo>
+                  <idno type="URL" subtype="geonames">https://sws.geonames.org/2950159/</idno>
+                  <idno type="URL" subtype="schnitzler-bahr">https://schnitzler-bahr.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="d-nb">https://d-nb.info/gnd/4005728-8</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/168/</idno>
+                  <idno type="URL" subtype="kraus">https://www.kraus.wienbibliothek.at/legalkraus/pmb168.html</idno>
+                  <idno type="URL" subtype="pmb">https://pmb.acdh.oeaw.ac.at/entity/92171/</idno>
+                  <idno type="URL" subtype="wikidata">http://www.wikidata.org/entity/Q64</idno>
+                  <idno type="URL" subtype="wikipedia">https://de.wikipedia.org/wiki/Berlin</idno>
+                  <idno type="URL" subtype="schnitzler-interviews">https://schnitzler-interviews.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="schnitzler-tagebuch">https://schnitzler-tagebuch.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="wienerschnitzler">https://wienerschnitzler.org/pmb168.html</idno>
+                  <idno type="URL" subtype="schnitzler-kultur">https://schnitzler-kultur.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00313</idno>
+                  <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/DWplace00093</idno>
+                  <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/pmb168</idno>
+                  <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00001836</idno>
+                  <idno type="URL" subtype="sk">https://sk.acdh.oeaw.ac.at/fa_place00004523</idno>
+                  <idno type="URL" subtype="biblio">https://biblio.ub.uni-freiburg.de/sf/#pmb168</idno>
+                  <idno type="URL" subtype="schnitzler-briefe">https://schnitzler-briefe.acdh.oeaw.ac.at/pmb168.html</idno>
+                  <idno type="URL" subtype="schoenberg-ue">https://www.schoenberg-ue.at/ue/places/place.2.3</idno>
+               </location>
+            </org>
+         </listOrg>
+      </back>
+   </text>
 </TEI>

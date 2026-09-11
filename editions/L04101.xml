@@ -1,6 +1,10 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04101">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions"
+     xml:id="L04101">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -122,12 +126,20 @@
                   – 3. 6. 1893?]</date>
                <placeName ref="#pmb50">Wien</placeName>
             </correspAction>
-            <correspContext><ref type="belongsToCorrespondence" target="correspondence_12740">Schwarzkopf, Gustav</ref>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_12740">Schwarzkopf, Gustav</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L00214">Hofmannsthal an Schnitzler, 27. 5. 1893</ref>
                <ref subtype="next_letter" type="withinCollection" target="L00215">Schnitzler an Bölsche, 1. 6. 1893</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_12740" target="L04100">Schnitzler an Schwarzkopf, 10. 12. 1892</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_12740" target="L04102">Schnitzler an Schwarzkopf, 10. 6. 1893</ref>
-            </correspContext></correspDesc>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_12740"
+                    target="L04100">Schnitzler an Schwarzkopf, 10. 12. 1892</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_12740"
+                    target="L04102">Schnitzler an Schwarzkopf, 10. 6. 1893</ref>
+            </correspContext>
+         </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2025-12-10">Export aus Transkribus</change>
@@ -143,13 +155,16 @@
             <address>
                <addrLine>
                   <pb facs="MS-SCHNITZLER-B-00096-B-000-00175"/>Herrn <hi rend="latintype">Gustav
-                     Schwarzkopf</hi></addrLine>
+                     Schwarzkopf</hi>
+               </addrLine>
                <addrLine>
-                  <rs type="place" ref="#pmb50">Wien</rs></addrLine>
+                  <rs type="place" ref="#pmb50">Wien</rs>
+               </addrLine>
                <addrLine>
                   <rs type="place" ref="#pmb207296">
                      <hi rend="latintype">I. Tiefer Graben 23</hi>
-                  </rs></addrLine>
+                  </rs>
+               </addrLine>
             </address>
          </div>
          <div type="writingSession" n="1">
@@ -174,122 +189,253 @@
             </closer>
          </div>
       </body>
-      <back><listPerson><person xml:id="pmb10863"><persName>
-      <forename>Richard</forename>
-      <surname>Beer-Hofmann</surname>
-  </persName><birth>
-    <date when="1866-07-11">1866-07-11</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1945-09-26">1945-09-26</date>
-      <settlement ref="pmb44053">
-        <placeName type="pref">New York City</placeName>
-        <location><geo>40,71427 -74,00597</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb11740"><persName>
-      <forename>Hugo von</forename>
-      <surname>Hofmannsthal</surname>
-  </persName><birth>
-    <date when="1874-02-01">1874-02-01</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1929-07-15">1929-07-15</date>
-      <settlement ref="pmb173">
-        <placeName type="pref">Rodaun</placeName>
-        <location><geo>48,132793312328 16,256152195922</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb12740"><persName>
-      <forename>Gustav</forename>
-      <surname>Schwarzkopf</surname>
-  </persName><birth>
-    <date when="1853-11-07">1853-11-07</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1939-11-13">1939-11-13</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb2121"><persName><surname>Schnitzler</surname><forename>Arthur</forename></persName><birth><date when="1862-05-15">15. 5. 1862</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></birth><death><date when="1931-10-21">21. 10. 1931</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></death><sex value="male"/><occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation><occupation ref="pmb97">Mediziner/Medizinerin</occupation><idno type="gnd">https://d-nb.info/gnd/118609807/</idno></person><person xml:id="pmb2167"><persName>
-      <forename>Felix</forename>
-      <surname>Salten</surname>
-  </persName><birth>
-    <date when="1869-09-06">1869-09-06</date>
-      <settlement ref="pmb43471">
-        <placeName type="pref">Budapest</placeName>
-        <location><geo>47,49835 19,04045</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1945-10-08">1945-10-08</date>
-      <settlement ref="pmb484">
-        <placeName type="pref">Zürich</placeName>
-        <location><geo>47,37174 8,54226</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb26392"><persName>
-      <forename>Leo</forename>
-      <surname>Van-Jung</surname>
-  </persName><birth>
-    <date when="1866-10-15">1866-10-15</date>
-      <settlement ref="pmb420">
-        <placeName type="pref">Odessa</placeName>
-        <location><geo>46,47747 30,73262</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1939-07-02">1939-07-02</date>
-      <settlement ref="pmb46637">
-        <placeName type="pref">Riga</placeName>
-        <location><geo>56,946 24,10589</geo></location>
-      </settlement>
-  </death></person></listPerson><listPlace><place xml:id="pmb104"><placeName>Café Arkaden</placeName><placeName type="ort_namensvariante">Wiener Arcaden-Café</placeName><location type="coords">
-  <geo>48,2139714 16,3589854</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb51">I., Innere Stadt</placeName>
-  <geo>48,20769 16,37049</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb653">Universitätsstraße</placeName>
-  <geo>48,214120366337 16,358756425131</geo>
-</location></place><place xml:id="pmb207296"><placeName>Tiefer Graben 23</placeName><location type="coords">
-  <geo>48,213038 16,368738</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb50825">Tiefer Graben</placeName>
-  <geo>48,2125 16,368333</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb51">I., Innere Stadt</placeName>
-  <geo>48,20769 16,37049</geo>
-</location></place><place xml:id="pmb50"><placeName>Wien</placeName><placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName><placeName type="legacy-name-merge">Wien</placeName><placeName type="alternative-name">Bécs</placeName><placeName type="alternative-name">Land Wien</placeName><placeName type="alternative-name">Vídeň</placeName><placeName type="alternative-name">Wenia</placeName><placeName type="alternative-name">Beč</placeName><placeName type="ort_fruherer-name">Vindobona</placeName><placeName type="legacy-name-merge">Vindobona</placeName><placeName type="alternative-name">Vienna</placeName><placeName type="legacy-name-merge">Vienna</placeName><placeName type="alternative-name">Vienna</placeName><location type="coords">
-  <geo>48,208333 16,373056</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location></place><place xml:id="pmb50178"><placeName>Café Reichsrath (Inh. Karl Auböck)</placeName><placeName type="namensvariante">Café Auböck</placeName><location type="coords">
-  <geo>48,21273 16,35866</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb50">Wien</placeName>
-  <geo>48,208333 16,373056</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb51">I., Innere Stadt</placeName>
-  <geo>48,20769 16,37049</geo>
-</location></place><place xml:id="pmb58"><placeName>VIII., Josefstadt</placeName><placeName type="alternative-name">Josefstadt (Wien-Josefstadt)</placeName><placeName type="legacy-name-merge">VIII., Josefstadt</placeName><placeName type="legacy-name-merge">Josefstadt</placeName><location type="coords">
-  <geo>48,21126 16,34706</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb50">Wien</placeName>
-  <geo>48,208333 16,373056</geo>
-</location></place><place xml:id="pmb776"><placeName>Österreichisches Parlament</placeName><placeName type="ort_fruherer-name">Reichsrat</placeName><location type="coords">
-  <geo>48,20803 16,35812</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb51">I., Innere Stadt</placeName>
-  <geo>48,20769 16,37049</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb775">Herrenhaus</placeName>
-  <geo>48,20804 16,35919</geo>
-</location></place></listPlace></back></text>
+      <back>
+         <listPerson>
+            <person xml:id="pmb10863">
+               <persName>
+                  <forename>Richard</forename>
+                  <surname>Beer-Hofmann</surname>
+               </persName>
+               <birth>
+                  <date when="1866-07-11">1866-07-11</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-09-26">1945-09-26</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb11740">
+               <persName>
+                  <forename>Hugo von</forename>
+                  <surname>Hofmannsthal</surname>
+               </persName>
+               <birth>
+                  <date when="1874-02-01">1874-02-01</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1929-07-15">1929-07-15</date>
+                  <settlement ref="pmb173">
+                     <placeName type="pref">Rodaun</placeName>
+                     <location>
+                        <geo>48,132793312328 16,256152195922</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb12740">
+               <persName>
+                  <forename>Gustav</forename>
+                  <surname>Schwarzkopf</surname>
+               </persName>
+               <birth>
+                  <date when="1853-11-07">1853-11-07</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1939-11-13">1939-11-13</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb2167">
+               <persName>
+                  <forename>Felix</forename>
+                  <surname>Salten</surname>
+               </persName>
+               <birth>
+                  <date when="1869-09-06">1869-09-06</date>
+                  <settlement ref="pmb43471">
+                     <placeName type="pref">Budapest</placeName>
+                     <location>
+                        <geo>47,49835 19,04045</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-10-08">1945-10-08</date>
+                  <settlement ref="pmb484">
+                     <placeName type="pref">Zürich</placeName>
+                     <location>
+                        <geo>47,37174 8,54226</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb26392">
+               <persName>
+                  <forename>Leo</forename>
+                  <surname>Van-Jung</surname>
+               </persName>
+               <birth>
+                  <date when="1866-10-15">1866-10-15</date>
+                  <settlement ref="pmb420">
+                     <placeName type="pref">Odessa</placeName>
+                     <location>
+                        <geo>46,47747 30,73262</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1939-07-02">1939-07-02</date>
+                  <settlement ref="pmb46637">
+                     <placeName type="pref">Riga</placeName>
+                     <location>
+                        <geo>56,946 24,10589</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+         </listPerson>
+         <listPlace>
+            <place xml:id="pmb104">
+               <placeName>Café Arkaden</placeName>
+               <placeName type="ort_namensvariante">Wiener Arcaden-Café</placeName>
+               <location type="coords">
+                  <geo>48,2139714 16,3589854</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb653">Universitätsstraße</placeName>
+                  <geo>48,214120366337 16,358756425131</geo>
+               </location>
+            </place>
+            <place xml:id="pmb207296">
+               <placeName>Tiefer Graben 23</placeName>
+               <location type="coords">
+                  <geo>48,213038 16,368738</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50825">Tiefer Graben</placeName>
+                  <geo>48,2125 16,368333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50178">
+               <placeName>Café Reichsrath (Inh. Karl Auböck)</placeName>
+               <placeName type="namensvariante">Café Auböck</placeName>
+               <location type="coords">
+                  <geo>48,21273 16,35866</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+            </place>
+            <place xml:id="pmb58">
+               <placeName>VIII., Josefstadt</placeName>
+               <placeName type="alternative-name">Josefstadt (Wien-Josefstadt)</placeName>
+               <placeName type="legacy-name-merge">VIII., Josefstadt</placeName>
+               <placeName type="legacy-name-merge">Josefstadt</placeName>
+               <location type="coords">
+                  <geo>48,21126 16,34706</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb50">Wien</placeName>
+                  <geo>48,208333 16,373056</geo>
+               </location>
+            </place>
+            <place xml:id="pmb776">
+               <placeName>Österreichisches Parlament</placeName>
+               <placeName type="ort_fruherer-name">Reichsrat</placeName>
+               <location type="coords">
+                  <geo>48,20803 16,35812</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb51">I., Innere Stadt</placeName>
+                  <geo>48,20769 16,37049</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb775">Herrenhaus</placeName>
+                  <geo>48,20804 16,35919</geo>
+               </location>
+            </place>
+         </listPlace>
+      </back>
+   </text>
 </TEI>

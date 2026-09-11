@@ -1,6 +1,10 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L01613" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd"
+     xml:id="L01613"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -147,12 +151,20 @@
                   – 22. 7. 1906?]</date>
                <placeName ref="#pmb173">Rodaun</placeName>
             </correspAction>
-            <correspContext><ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_10863">Beer-Hofmann, Richard</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L04273">Schwarzkopf, Schwarzkopf an Schnitzler, 14. 7. 1906</ref>
                <ref subtype="next_letter" type="withinCollection" target="L04377">Schnitzler an Schwarzkopf, 1[7?]. 7. 1906</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_10863" target="L01611">Beer-Hofmann an Schnitzler, 13. 7. 1906</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_10863" target="L01614">Schnitzler, Schnitzler an Beer-Hofmann, 24. 7. 1906</ref>
-            </correspContext></correspDesc>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_10863"
+                    target="L01611">Beer-Hofmann an Schnitzler, 13. 7. 1906</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_10863"
+                    target="L01614">Schnitzler, Schnitzler an Beer-Hofmann, 24. 7. 1906</ref>
+            </correspContext>
+         </correspDesc>
       </profileDesc>
       <revisionDesc status="approved">
          <change who="MAM" when="2019-06-12">Automatisch angelegt aus Buchausgabe</change>
@@ -171,13 +183,16 @@
             <address>
                <addrLine>
                   <pb facs="1906_AS_RBH_1_00012"/>
-                  <hi rend="latintype">Dr. Richard</hi></addrLine>
+                  <hi rend="latintype">Dr. Richard</hi>
+               </addrLine>
                <addrLine>
-                  <hi rend="latintype">Beer-Hofmann</hi></addrLine>
+                  <hi rend="latintype">Beer-Hofmann</hi>
+               </addrLine>
                <addrLine>
                   <rs ref="#pmb173" type="place">
                      <hi rend="latintype">Rodaun</hi>
-                  </rs></addrLine>
+                  </rs>
+               </addrLine>
                <addrLine>
                   <hi rend="latintype">bei <rs type="place" ref="#pmb50">Wien</rs>
                   </hi>.</addrLine>
@@ -186,104 +201,226 @@
                      <hi rend="latintype">Liesingerstraße 1</hi>
                   </rs>.</addrLine>
                <addrLine>
-                  <rs ref="#pmb41240" type="place">Austria</rs></addrLine>
+                  <rs ref="#pmb41240" type="place">Austria</rs>
+               </addrLine>
             </address>
          </div>
          <div type="image">
             <p>
                <pb facs="1906_AS_RBH_1_00011"/>
                <hi rend="pre-print">
-                  <rs type="work" ref="#pmb30009">Hamlets</rs> Statue</hi></p>
+                  <rs type="work" ref="#pmb30009">Hamlets</rs> Statue</hi>
+            </p>
          </div>
          <div type="writingSession" n="1">
             <p>
-               <pb facs="1906_AS_RBH_1_00012"/>Ihre <anchor type="commentary" xml:id="K_L01613-1"/><rs ref="#pmb939" type="place">Heiligenkreuz</rs>erkarte<note type="commentary" corresp="K_L01613-1"><ref type="schnitzler-briefe" target="L01611"/>.</note> beko<c rendition="#gemination-m"/>en. Herzlichen Dank u
+               <pb facs="1906_AS_RBH_1_00012"/>Ihre <anchor type="commentary" xml:id="K_L01613-1"/>
+               <rs ref="#pmb939" type="place">Heiligenkreuz</rs>erkarte<note type="commentary" corresp="K_L01613-1">
+                  <ref type="schnitzler-briefe" target="L01611"/>.</note> beko<c rendition="#gemination-m"/>en. Herzlichen Dank u
                Gruſs. Wohin gehn Sie? Oder bleiben Sie? Wir dürften noch 3 Wochen hier verweilen;
                ich arbeite. Sind mit Natur, Kunſt und Küche ſehr zufrieden. <rs ref="#pmb12692" type="person">Heini</rs> zeichnet täglich einen Block voll. Laſſen Sie was von
                ſich hören. Eine Karte, auf der die Hälfte von mir iſt, genügt mir nicht.</p>
             <closer>Herzlichſt
-               Ihr <signed>A.</signed></closer>
+               Ihr <signed>A.</signed>
+            </closer>
             <postscript>
                <p>
                   <pb facs="1906_AS_RBH_1_00011"/>Viele Grüße von uns allen an Sie alle.</p>
             </postscript>
          </div>
       </body>
-      <back><listPerson><person xml:id="pmb10863"><persName>
-      <forename>Richard</forename>
-      <surname>Beer-Hofmann</surname>
-  </persName><birth>
-    <date when="1866-07-11">1866-07-11</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1945-09-26">1945-09-26</date>
-      <settlement ref="pmb44053">
-        <placeName type="pref">New York City</placeName>
-        <location><geo>40,71427 -74,00597</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb12692"><persName>
-      <forename>Heinrich</forename>
-      <surname>Schnitzler</surname>
-  </persName><birth>
-    <date when="1902-08-09">1902-08-09</date>
-      <settlement ref="pmb75">
-        <placeName type="pref">Hinterbrühl</placeName>
-        <location><geo>48,08611 16,24809</geo></location>
-      </settlement>
-      <settlement ref="pmb145165">
-        <placeName type="pref">Hauptstraße 56</placeName>
-        <location><geo>48,08736 16,24924</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1982-07-12">1982-07-12</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb2121"><persName><surname>Schnitzler</surname><forename>Arthur</forename></persName><birth><date when="1862-05-15">15. 5. 1862</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></birth><death><date when="1931-10-21">21. 10. 1931</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></death><sex value="male"/><occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation><occupation ref="pmb97">Mediziner/Medizinerin</occupation><idno type="gnd">https://d-nb.info/gnd/118609807/</idno></person></listPerson><listBibl><bibl xml:id="pmb30009"><title type="main">Hamlet</title><author role="hat-geschaffen" ref="pmb2412">Shakespeare, William</author></bibl></listBibl><listPlace><place xml:id="pmb173"><placeName>Rodaun</placeName><placeName type="legacy-name-merge">Rodaun bei Wien</placeName><placeName type="legacy-name-merge">Rodaun</placeName><placeName type="legacy-name-merge">Rodaun</placeName><location type="coords">
-  <geo>48,132793312328 16,256152195922</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb73">XXIII., Liesing</placeName>
-  <geo>48,13333 16,3</geo>
-</location></place><place xml:id="pmb40101"><placeName>Liesingerstraße</placeName><location type="coords">
-  <geo>48,1332 16,25864</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb173">Rodaun</placeName>
-  <geo>48,132793312328 16,256152195922</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb40103">Ketzergasse</placeName>
-  <geo>48,133896 16,272342</geo>
-</location></place><place xml:id="pmb41240"><placeName>Österreich</placeName><placeName type="alternative-name">Republik Österreich</placeName><placeName type="legacy-name-merge">Österreich</placeName><placeName type="alternative-name">Republic of Austria</placeName><placeName type="legacy-name-merge">Österreich</placeName><placeName type="legacy-name-merge">Deutsch Österreich</placeName><placeName type="legacy-name-merge">Altoesterreich</placeName><location type="coords">
-  <geo>47,33333 13,33333</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb468">Europa</placeName>
-  <geo>48,69096 9,14062</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb298373">Cisleithanien</placeName>
-  <geo>48,5 16,383333333333333</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb687">Österreich-Ungarn</placeName>
-  <geo>48,4054 16,4887</geo>
-</location></place><place xml:id="pmb50"><placeName>Wien</placeName><placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName><placeName type="legacy-name-merge">Wien</placeName><placeName type="alternative-name">Bécs</placeName><placeName type="alternative-name">Land Wien</placeName><placeName type="alternative-name">Vídeň</placeName><placeName type="alternative-name">Wenia</placeName><placeName type="alternative-name">Beč</placeName><placeName type="ort_fruherer-name">Vindobona</placeName><placeName type="legacy-name-merge">Vindobona</placeName><placeName type="alternative-name">Vienna</placeName><placeName type="legacy-name-merge">Vienna</placeName><placeName type="alternative-name">Vienna</placeName><location type="coords">
-  <geo>48,208333 16,373056</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location></place><place xml:id="pmb726"><placeName>Helsingør</placeName><placeName type="legacy-name-merge">Höielt</placeName><location type="coords">
-  <geo>56,03606 12,6136</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb43570">Dänemark</placeName>
-  <geo>56,0 10,0</geo>
-</location></place><place xml:id="pmb939"><placeName>Heiligenkreuz</placeName><placeName type="legacy-name-merge">Heiligenkreuz</placeName><location type="coords">
-  <geo>48,04261 16,15292</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location></place></listPlace></back></text>
+      <back>
+         <listPerson>
+            <person xml:id="pmb10863">
+               <persName>
+                  <forename>Richard</forename>
+                  <surname>Beer-Hofmann</surname>
+               </persName>
+               <birth>
+                  <date when="1866-07-11">1866-07-11</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-09-26">1945-09-26</date>
+                  <settlement ref="pmb44053">
+                     <placeName type="pref">New York City</placeName>
+                     <location>
+                        <geo>40,71427 -74,00597</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb12692">
+               <persName>
+                  <forename>Heinrich</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1902-08-09">1902-08-09</date>
+                  <settlement ref="pmb75">
+                     <placeName type="pref">Hinterbrühl</placeName>
+                     <location>
+                        <geo>48,08611 16,24809</geo>
+                     </location>
+                  </settlement>
+                  <settlement ref="pmb145165">
+                     <placeName type="pref">Hauptstraße 56</placeName>
+                     <location>
+                        <geo>48,08736 16,24924</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1982-07-12">1982-07-12</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+         </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb30009">
+               <title type="main">Hamlet</title>
+               <author role="hat-geschaffen" ref="pmb2412">Shakespeare, William</author>
+            </bibl>
+         </listBibl>
+         <listPlace>
+            <place xml:id="pmb173">
+               <placeName>Rodaun</placeName>
+               <placeName type="legacy-name-merge">Rodaun bei Wien</placeName>
+               <placeName type="legacy-name-merge">Rodaun</placeName>
+               <placeName type="legacy-name-merge">Rodaun</placeName>
+               <location type="coords">
+                  <geo>48,132793312328 16,256152195922</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb73">XXIII., Liesing</placeName>
+                  <geo>48,13333 16,3</geo>
+               </location>
+            </place>
+            <place xml:id="pmb40101">
+               <placeName>Liesingerstraße</placeName>
+               <location type="coords">
+                  <geo>48,1332 16,25864</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb173">Rodaun</placeName>
+                  <geo>48,132793312328 16,256152195922</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb40103">Ketzergasse</placeName>
+                  <geo>48,133896 16,272342</geo>
+               </location>
+            </place>
+            <place xml:id="pmb41240">
+               <placeName>Österreich</placeName>
+               <placeName type="alternative-name">Republik Österreich</placeName>
+               <placeName type="legacy-name-merge">Österreich</placeName>
+               <placeName type="alternative-name">Republic of Austria</placeName>
+               <placeName type="legacy-name-merge">Österreich</placeName>
+               <placeName type="legacy-name-merge">Deutsch Österreich</placeName>
+               <placeName type="legacy-name-merge">Altoesterreich</placeName>
+               <location type="coords">
+                  <geo>47,33333 13,33333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb468">Europa</placeName>
+                  <geo>48,69096 9,14062</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb298373">Cisleithanien</placeName>
+                  <geo>48,5 16,383333333333333</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb687">Österreich-Ungarn</placeName>
+                  <geo>48,4054 16,4887</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+            <place xml:id="pmb726">
+               <placeName>Helsingør</placeName>
+               <placeName type="legacy-name-merge">Höielt</placeName>
+               <location type="coords">
+                  <geo>56,03606 12,6136</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb43570">Dänemark</placeName>
+                  <geo>56,0 10,0</geo>
+               </location>
+            </place>
+            <place xml:id="pmb939">
+               <placeName>Heiligenkreuz</placeName>
+               <placeName type="legacy-name-merge">Heiligenkreuz</placeName>
+               <location type="coords">
+                  <geo>48,04261 16,15292</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+         </listPlace>
+      </back>
+   </text>
 </TEI>

@@ -1,6 +1,10 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:id="L04016" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd"
+     xml:id="L04016"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -111,17 +115,26 @@
                <date evidence="conjecture" notBefore="1912-05-11" notAfter="1912-05-15">[11. 5. 1912 – 15. 5. 1912?]</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
-            <correspContext><ref type="belongsToCorrespondence" target="correspondence_2128">Plessner, Elsa</ref>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2128">Plessner, Elsa</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L02062">Altenberg an Schnitzler, [10.? 5. 1912]</ref>
                <ref subtype="next_letter" type="withinCollection" target="L02063">Schnitzler an Beer-Hofmann, 13. 5. 1912</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_2128" target="L03728">Plessner an Schnitzler, 12. 10. 1900</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_2128" target="L03733">Plessner an Schnitzler, 6. 12. 1912</ref>
-            </correspContext></correspDesc>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2128"
+                    target="L03728">Plessner an Schnitzler, 12. 10. 1900</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2128"
+                    target="L03733">Plessner an Schnitzler, 6. 12. 1912</ref>
+            </correspContext>
+         </correspDesc>
       </profileDesc>
       <revisionDesc status="approved">
          <change who="MAM" when="2025-12-04">Angelegt</change>
          <change who="MAM" when="2026-02-09">Durchsicht</change>
-         <change who="MAM" when="2026-02-09">Index check</change><change who="SJ" when="2026-03-16">Durchsicht</change>
+         <change who="MAM" when="2026-02-09">Index check</change>
+         <change who="SJ" when="2026-03-16">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -174,54 +187,139 @@
             </closer>
          </div>
       </body>
-      <back><listPerson><person xml:id="pmb2121"><persName><surname>Schnitzler</surname><forename>Arthur</forename></persName><birth><date when="1862-05-15">15. 5. 1862</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></birth><death><date when="1931-10-21">21. 10. 1931</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></death><sex value="male"/><occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation><occupation ref="pmb97">Mediziner/Medizinerin</occupation><idno type="gnd">https://d-nb.info/gnd/118609807/</idno></person><person xml:id="pmb2128"><persName>
-      <forename>Elsa</forename>
-      <surname>Plessner</surname>
-  </persName><birth>
-    <date when="1875-08-22">1875-08-22</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1932-05-07">1932-05-07</date>
-      <settlement ref="pmb49185">
-        <placeName type="pref">Alicante</placeName>
-        <location><geo>38,34517 -0,48149</geo></location>
-      </settlement>
-      <settlement ref="pmb296401">
-        <placeName type="pref">calle Gravina 15</placeName>
-        <location><geo>38,3456446 -0,47927879</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb294754"><persName>
-      <forename>Wilhelm</forename>
-      <surname>Ginsberg</surname>
-  </persName><birth>
-    <date when="1880-06-06">1880-06-06</date>
-      <settlement ref="pmb168">
-        <placeName type="pref">Berlin</placeName>
-        <location><geo>52,52437 13,41053</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1960-05-13">1960-05-13</date>
-      <settlement ref="pmb58674">
-        <placeName type="pref">Gent</placeName>
-        <location><geo>51,05 3,71667</geo></location>
-      </settlement>
-  </death></person></listPerson><listPlace><place xml:id="pmb140"><placeName>Halle (Saale)</placeName><placeName type="ort_fruherer-name">Halle an der Saale</placeName><placeName type="legacy-name-merge">Halle (Saale)</placeName><placeName type="legacy-name-merge">Halle a. d. Saale</placeName><placeName type="legacy-name-merge">Halle an der Saale</placeName><location type="coords">
-  <geo>51,48158 11,97947</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb209">Sachsen</placeName>
-  <geo>51,0 13,25</geo>
-</location></place><place xml:id="pmb300422"><placeName>Lafontainestraße 36</placeName><location type="coords">
-  <geo>51,496369 11,963698</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb140">Halle (Saale)</placeName>
-  <geo>51,48158 11,97947</geo>
-</location></place><place xml:id="pmb50"><placeName>Wien</placeName><placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName><placeName type="legacy-name-merge">Wien</placeName><placeName type="alternative-name">Bécs</placeName><placeName type="alternative-name">Land Wien</placeName><placeName type="alternative-name">Vídeň</placeName><placeName type="alternative-name">Wenia</placeName><placeName type="alternative-name">Beč</placeName><placeName type="ort_fruherer-name">Vindobona</placeName><placeName type="legacy-name-merge">Vindobona</placeName><placeName type="alternative-name">Vienna</placeName><placeName type="legacy-name-merge">Vienna</placeName><placeName type="alternative-name">Vienna</placeName><location type="coords">
-  <geo>48,208333 16,373056</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location></place></listPlace></back></text>
+      <back>
+         <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb2128">
+               <persName>
+                  <forename>Elsa</forename>
+                  <surname>Plessner</surname>
+               </persName>
+               <birth>
+                  <date when="1875-08-22">1875-08-22</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1932-05-07">1932-05-07</date>
+                  <settlement ref="pmb49185">
+                     <placeName type="pref">Alicante</placeName>
+                     <location>
+                        <geo>38,34517 -0,48149</geo>
+                     </location>
+                  </settlement>
+                  <settlement ref="pmb296401">
+                     <placeName type="pref">calle Gravina 15</placeName>
+                     <location>
+                        <geo>38,3456446 -0,47927879</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb294754">
+               <persName>
+                  <forename>Wilhelm</forename>
+                  <surname>Ginsberg</surname>
+               </persName>
+               <birth>
+                  <date when="1880-06-06">1880-06-06</date>
+                  <settlement ref="pmb168">
+                     <placeName type="pref">Berlin</placeName>
+                     <location>
+                        <geo>52,52437 13,41053</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1960-05-13">1960-05-13</date>
+                  <settlement ref="pmb58674">
+                     <placeName type="pref">Gent</placeName>
+                     <location>
+                        <geo>51,05 3,71667</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+         </listPerson>
+         <listPlace>
+            <place xml:id="pmb140">
+               <placeName>Halle (Saale)</placeName>
+               <placeName type="ort_fruherer-name">Halle an der Saale</placeName>
+               <placeName type="legacy-name-merge">Halle (Saale)</placeName>
+               <placeName type="legacy-name-merge">Halle a. d. Saale</placeName>
+               <placeName type="legacy-name-merge">Halle an der Saale</placeName>
+               <location type="coords">
+                  <geo>51,48158 11,97947</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb209">Sachsen</placeName>
+                  <geo>51,0 13,25</geo>
+               </location>
+            </place>
+            <place xml:id="pmb300422">
+               <placeName>Lafontainestraße 36</placeName>
+               <location type="coords">
+                  <geo>51,496369 11,963698</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb140">Halle (Saale)</placeName>
+                  <geo>51,48158 11,97947</geo>
+               </location>
+            </place>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+         </listPlace>
+      </back>
+   </text>
 </TEI>

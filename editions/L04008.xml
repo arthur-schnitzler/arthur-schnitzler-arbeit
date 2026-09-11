@@ -1,6 +1,10 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L04008">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions"
+     xml:id="L04008">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -116,12 +120,20 @@
                <date evidence="conjecture" notBefore="1924-10-11" notAfter="1924-10-14">[11. 10. 1924 – 14. 10. 1924?]</date>
                <placeName ref="#pmb50" evidence="conjecture">Wien</placeName>
             </correspAction>
-            <correspContext><ref type="belongsToCorrespondence" target="correspondence_2312">Zuckerkandl, Berta</ref>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2312">Zuckerkandl, Berta</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L02415">Braun an Schnitzler, 2. 10. 1924</ref>
                <ref subtype="next_letter" type="withinCollection" target="L02416">Schnitzler an Braun, 19. 10. 1924</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_2312" target="L03953">Schnitzler an Zuckerkandl, 31. 1. 1924</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_2312" target="L03954">Schnitzler an Zuckerkandl, 20. 11. 1924</ref>
-            </correspContext></correspDesc>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2312"
+                    target="L03953">Schnitzler an Zuckerkandl, 31. 1. 1924</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2312"
+                    target="L03954">Schnitzler an Zuckerkandl, 20. 11. 1924</ref>
+            </correspContext>
+         </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
          <change who="MAM" when="2025-11-11">Export aus Transkribus</change>
@@ -146,7 +158,8 @@
                sagen.</p>
             <p>Ich habe mich längst damit abgefunden, und bin sogar froh, nicht mehr Kritiker zu
                sein. Aber diesmal war mir weh um’s Herz. Diesmal hätte ich so sehnsüchtig Vieles,
-               Vieles sagen wollen, über dieses Ihr verschleiert wehmütig wissendes <rs type="work" ref="#pmb30205" subtype="implied">Werk</rs>. So kann ich Ihnen nur danken <pb facs="MS-SCHNITZLER-B-00200-000-00053"/>für so viel Reichtum den Sie schencken<c rendition="#dots" n="5"/> wenn man versteht.<c rendition="#dots" n="9"/></p>
+               Vieles sagen wollen, über dieses Ihr verschleiert wehmütig wissendes <rs type="work" ref="#pmb30205" subtype="implied">Werk</rs>. So kann ich Ihnen nur danken <pb facs="MS-SCHNITZLER-B-00200-000-00053"/>für so viel Reichtum den Sie schencken<c rendition="#dots" n="5"/> wenn man versteht.<c rendition="#dots" n="9"/>
+            </p>
             <p>Ich hoffe Sie <anchor type="commentary" xml:id="K_L04008-1"/>noch <date>diese
                   Woche</date>
                <note type="commentary" corresp="K_L04008-1">Am <ref type="schnitzler-tagebuch" target="1924-10-17" subtype="date-only"/> traf <rs type="person" ref="#pmb2121">Schnitzler</rs>
@@ -165,70 +178,178 @@
             </postscript>
          </div>
       </body>
-      <back><listPerson><person xml:id="pmb2121"><persName><surname>Schnitzler</surname><forename>Arthur</forename></persName><birth><date when="1862-05-15">15. 5. 1862</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></birth><death><date when="1931-10-21">21. 10. 1931</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></death><sex value="male"/><occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation><occupation ref="pmb97">Mediziner/Medizinerin</occupation><idno type="gnd">https://d-nb.info/gnd/118609807/</idno></person><person xml:id="pmb2173"><persName>
-      <forename>Olga</forename>
-      <surname>Schnitzler</surname>
-  </persName><birth>
-    <date when="1882-01-17">1882-01-17</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1970-01-13">1970-01-13</date>
-      <settlement ref="pmb885">
-        <placeName type="pref">Lugano</placeName>
-        <location><geo>46,01008 8,96004</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb2312"><persName>
-      <forename>Berta</forename>
-      <surname>Zuckerkandl</surname>
-  </persName><birth>
-    <date when="1864-04-13">1864-04-13</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1945-10-16">1945-10-16</date>
-      <settlement ref="pmb182">
-        <placeName type="pref">Paris</placeName>
-        <location><geo>48,85341 2,3488</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb15024" ana="comment"><persName>
-      <forename>Sophie</forename>
-      <surname>Clemenceau</surname>
-  </persName><birth>
-    <date when="1862-05-25">1862-05-25</date>
-  </birth><death>
-    <date when="1937-09-24">1937-09-24</date>
-  </death></person><person xml:id="pmb25793" ana="comment"><persName>
-      <forename>Julius</forename>
-      <surname>Szeps</surname>
-  </persName><birth>
-    <date when="1867-10-27">1867-10-27</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1924-10-27">1924-10-27</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </death></person></listPerson><listBibl><bibl xml:id="pmb30205" ana="implied"><title type="main">Komödie der Verführung. In drei Akten</title><title type="werk_link">https://www.schnitzler-edition.net/genetisch?openWorkInfo=10049#werkinfo-10049</title><title type="werk_arbeitstitel">Der Verführer</title><title type="legacy-name-merge">Komödie der Verführung</title><author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author></bibl></listBibl><listPlace><place xml:id="pmb50"><placeName>Wien</placeName><placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName><placeName type="legacy-name-merge">Wien</placeName><placeName type="alternative-name">Bécs</placeName><placeName type="alternative-name">Land Wien</placeName><placeName type="alternative-name">Vídeň</placeName><placeName type="alternative-name">Wenia</placeName><placeName type="alternative-name">Beč</placeName><placeName type="ort_fruherer-name">Vindobona</placeName><placeName type="legacy-name-merge">Vindobona</placeName><placeName type="alternative-name">Vienna</placeName><placeName type="legacy-name-merge">Vienna</placeName><placeName type="alternative-name">Vienna</placeName><location type="coords">
-  <geo>48,208333 16,373056</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location></place></listPlace><listEvent><event xml:id="pmb210305"><eventName n="Generalprobe">Generalprobe von Komödie der Verführung, 10.10.1924</eventName><listPlace>
-            <place><placeName role="veranstaltet in" ref="pmb14">Burgtheater</placeName><location>
-                    <geo>48,210333 16,361139</geo>
-                </location></place>
-        </listPlace></event><event xml:id="pmb210307" ana="comment"><eventName n="Liederkonzert">Konzert von Jean Untermeyer, 17.10.1924</eventName><listPlace>
-            <place><placeName role="veranstaltet in" ref="pmb516">Musikverein</placeName><location>
-                    <geo>48,201265597319 16,372564182283</geo>
-                </location></place>
-        </listPlace></event></listEvent></back></text>
+      <back>
+         <listPerson>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb2173">
+               <persName>
+                  <forename>Olga</forename>
+                  <surname>Schnitzler</surname>
+               </persName>
+               <birth>
+                  <date when="1882-01-17">1882-01-17</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1970-01-13">1970-01-13</date>
+                  <settlement ref="pmb885">
+                     <placeName type="pref">Lugano</placeName>
+                     <location>
+                        <geo>46,01008 8,96004</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2312">
+               <persName>
+                  <forename>Berta</forename>
+                  <surname>Zuckerkandl</surname>
+               </persName>
+               <birth>
+                  <date when="1864-04-13">1864-04-13</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-10-16">1945-10-16</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb15024" ana="comment">
+               <persName>
+                  <forename>Sophie</forename>
+                  <surname>Clemenceau</surname>
+               </persName>
+               <birth>
+                  <date when="1862-05-25">1862-05-25</date>
+               </birth>
+               <death>
+                  <date when="1937-09-24">1937-09-24</date>
+               </death>
+            </person>
+            <person xml:id="pmb25793" ana="comment">
+               <persName>
+                  <forename>Julius</forename>
+                  <surname>Szeps</surname>
+               </persName>
+               <birth>
+                  <date when="1867-10-27">1867-10-27</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1924-10-27">1924-10-27</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+         </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb30205" ana="implied">
+               <title type="main">Komödie der Verführung. In drei Akten</title>
+               <title type="werk_link">https://www.schnitzler-edition.net/genetisch?openWorkInfo=10049#werkinfo-10049</title>
+               <title type="werk_arbeitstitel">Der Verführer</title>
+               <title type="legacy-name-merge">Komödie der Verführung</title>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+            </bibl>
+         </listBibl>
+         <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+         </listPlace>
+         <listEvent>
+            <event xml:id="pmb210305">
+               <eventName n="Generalprobe">Generalprobe von Komödie der Verführung, 10.10.1924</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb14">Burgtheater</placeName>
+                     <location>
+                        <geo>48,210333 16,361139</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+            <event xml:id="pmb210307" ana="comment">
+               <eventName n="Liederkonzert">Konzert von Jean Untermeyer, 17.10.1924</eventName>
+               <listPlace>
+                  <place>
+                     <placeName role="veranstaltet in" ref="pmb516">Musikverein</placeName>
+                     <location>
+                        <geo>48,201265597319 16,372564182283</geo>
+                     </location>
+                  </place>
+               </listPlace>
+            </event>
+         </listEvent>
+      </back>
+   </text>
 </TEI>

@@ -1,6 +1,10 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../meta/schnitzler-briefe-schematron.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd" xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions" xml:id="L03990">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../meta/schnitzler-briefe-schema.xsd"
+     xml:base="https://id.acdh.oeaw.ac.at/schnitzler/schnitzler-briefe/editions"
+     xml:id="L03990">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -111,15 +115,24 @@
                <date evidence="conjecture" notBefore="1930-01-31" notAfter="1930-02-04">[31. 1. 1930
                   – 4. 2. 1930?]</date>
             </correspAction>
-            <correspContext><ref type="belongsToCorrespondence" target="correspondence_2312">Zuckerkandl, Berta</ref>
+            <correspContext>
+               <ref type="belongsToCorrespondence" target="correspondence_2312">Zuckerkandl, Berta</ref>
                <ref subtype="previous_letter" type="withinCollection" target="L02530">Adam an Schnitzler, 5. 1. 1930</ref>
                <ref subtype="next_letter" type="withinCollection" target="L02531">Schnitzler an Bahr, 16. 2. 1930</ref>
-               <ref subtype="previous_letter" type="withinCorrespondence" source="correspondence_2312" target="L03979">Schnitzler an Zuckerkandl, 2. 12. 1929</ref>
-               <ref subtype="next_letter" type="withinCorrespondence" source="correspondence_2312" target="L03980">Schnitzler an Zuckerkandl, 3. 6. 1931</ref>
-            </correspContext></correspDesc>
+               <ref subtype="previous_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2312"
+                    target="L03979">Schnitzler an Zuckerkandl, 2. 12. 1929</ref>
+               <ref subtype="next_letter"
+                    type="withinCorrespondence"
+                    source="correspondence_2312"
+                    target="L03980">Schnitzler an Zuckerkandl, 3. 6. 1931</ref>
+            </correspContext>
+         </correspDesc>
       </profileDesc>
       <revisionDesc status="proposed">
-         <change who="MAM" when="2025-11-05">Angelegt mit Fotografie</change><change who="SJ" when="2026-02-09">Durchsicht</change>
+         <change who="MAM" when="2025-11-05">Angelegt mit Fotografie</change>
+         <change who="SJ" when="2026-02-09">Durchsicht</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -144,7 +157,8 @@
                         <rs type="work" ref="#pmb36056">La pénombre des ames</rs>
                      </foreign>
                   </hi>
-               </hi></p>
+               </hi>
+            </p>
          </div>
          <div type="writingSession" n="2">
             <space dim="vertical" unit="line" quantity="1"/>
@@ -152,7 +166,8 @@
                <pb facs=""/>
                <hi rend="pre-print">
                   <hi rend="capitals">Arthur Schnitzler</hi>
-               </hi></p>
+               </hi>
+            </p>
             <p rend="center">
                <hi rend="pre-print">
                   <hi rend="capitals">
@@ -160,29 +175,34 @@
                         <rs type="work" ref="#pmb36056">La<lb/>pénombre<lb/>des ames</rs>
                      </foreign>
                   </hi>
-               </hi></p>
+               </hi>
+            </p>
             <p rend="center">
                <hi rend="pre-print">
                   <hi rend="italics">
                      <foreign xml:lang="fr">Nouvelles traduites de l’allemand par</foreign>
                   </hi>
-               </hi></p>
+               </hi>
+            </p>
             <p rend="center">
                <hi rend="pre-print">
                   <rs type="person" ref="#pmb15015">Suzanne <hi rend="capitals">Clauser</hi>
                   </rs>
-               </hi></p>
+               </hi>
+            </p>
             <space dim="vertical" unit="line" quantity="1"/>
             <p rend="center">
                <hi rend="pre-print">
                   <hi rend="capitals">
                      <foreign xml:lang="fr">Le cabinet cosmopolite</foreign>
                   </hi>
-               </hi></p>
+               </hi>
+            </p>
             <p rend="center">
                <hi rend="pre-print">
                   <foreign xml:lang="fr">Tous droits réservés.</foreign>
-               </hi></p>
+               </hi>
+            </p>
             <p rend="center">
                <hi rend="pre-print">
                   <hi rend="capitals">
@@ -190,7 +210,8 @@
                         <rs type="org" ref="#pmb29741">Librairie Stock</rs>
                      </foreign>
                   </hi>
-               </hi></p>
+               </hi>
+            </p>
             <p rend="center">
                <hi rend="pre-print">
                   <hi rend="capitals">
@@ -198,88 +219,199 @@
                         <rs type="person" ref="#pmb15296 #pmb299504">Delamain</rs> et <rs type="person" ref="#pmb259336">Boutelleau</rs>
                      </foreign>
                   </hi>
-               </hi></p>
+               </hi>
+            </p>
          </div>
       </body>
-      <back><listPerson><person xml:id="pmb15015"><persName>
-      <forename>Suzanne</forename>
-      <surname>Clauser</surname>
-  </persName><birth>
-    <date when="1898-05-16">1898-05-16</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1981-09-11">1981-09-11</date>
-      <settlement ref="pmb182">
-        <placeName type="pref">Paris</placeName>
-        <location><geo>48,85341 2,3488</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb15296"><persName>
-      <forename>Maurice</forename>
-      <surname>Delamain</surname>
-  </persName><birth>
-    <date when="1883-04-28">1883-04-28</date>
-      <settlement ref="pmb299451">
-        <placeName type="pref">Jarnac</placeName>
-        <location><geo>45,681388888889 -0,17583333333333</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1974-05-02">1974-05-02</date>
-      <settlement ref="pmb182">
-        <placeName type="pref">Paris</placeName>
-        <location><geo>48,85341 2,3488</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb2121"><persName><surname>Schnitzler</surname><forename>Arthur</forename></persName><birth><date when="1862-05-15">15. 5. 1862</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></birth><death><date when="1931-10-21">21. 10. 1931</date><settlement ref="pmb50"><placeName type="pref">Wien</placeName><location><geo>48,208333 16,373056</geo></location></settlement></death><sex value="male"/><occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation><occupation ref="pmb97">Mediziner/Medizinerin</occupation><idno type="gnd">https://d-nb.info/gnd/118609807/</idno></person><person xml:id="pmb2312"><persName>
-      <forename>Berta</forename>
-      <surname>Zuckerkandl</surname>
-  </persName><birth>
-    <date when="1864-04-13">1864-04-13</date>
-      <settlement ref="pmb50">
-        <placeName type="pref">Wien</placeName>
-        <location><geo>48,208333 16,373056</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1945-10-16">1945-10-16</date>
-      <settlement ref="pmb182">
-        <placeName type="pref">Paris</placeName>
-        <location><geo>48,85341 2,3488</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb259336"><persName>
-      <forename>Jacques</forename>
-      <surname>Chardonne</surname>
-  </persName><birth>
-    <date when="1884-01-02">1884-01-02</date>
-      <settlement ref="pmb259337">
-        <placeName type="pref">Barbezieux-Saint-Hilaire</placeName>
-        <location><geo>45,472777777778 -0,15555555555556</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1968-05-29">1968-05-29</date>
-      <settlement ref="pmb259339">
-        <placeName type="pref">La Frette-sur-Seine</placeName>
-        <location><geo>48,974166666667 2,1783333333333</geo></location>
-      </settlement>
-  </death></person><person xml:id="pmb299504"><persName>
-      <forename>Jacques</forename>
-      <surname>Delamain</surname>
-  </persName><birth>
-    <date when="1874-12-20">1874-12-20</date>
-      <settlement ref="pmb299451">
-        <placeName type="pref">Jarnac</placeName>
-        <location><geo>45,681388888889 -0,17583333333333</geo></location>
-      </settlement>
-  </birth><death>
-    <date when="1953-02-05">1953-02-05</date>
-      <settlement ref="pmb299506">
-        <placeName type="pref">Saint-Brice</placeName>
-        <location><geo>45,688055555556 -0,27722222222222</geo></location>
-      </settlement>
-  </death></person></listPerson><listBibl><bibl xml:id="pmb36056"><title type="main">La pénombre des âmes</title><author role="hat-ubersetzt" ref="pmb15015">Clauser, Suzanne</author><author role="hat-einen-beitrag-geschaffen-zu" ref="pmb117260">Bertaux, Félix</author><author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author></bibl></listBibl><listPlace><place xml:id="pmb50"><placeName>Wien</placeName><placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName><placeName type="legacy-name-merge">Wien</placeName><placeName type="alternative-name">Bécs</placeName><placeName type="alternative-name">Land Wien</placeName><placeName type="alternative-name">Vídeň</placeName><placeName type="alternative-name">Wenia</placeName><placeName type="alternative-name">Beč</placeName><placeName type="ort_fruherer-name">Vindobona</placeName><placeName type="legacy-name-merge">Vindobona</placeName><placeName type="alternative-name">Vienna</placeName><placeName type="legacy-name-merge">Vienna</placeName><placeName type="alternative-name">Vienna</placeName><location type="coords">
-  <geo>48,208333 16,373056</geo>
-</location><location type="located_in_place">
-  <placeName ref="pmb41240">Österreich</placeName>
-  <geo>47,33333 13,33333</geo>
-</location></place></listPlace><listOrg><org xml:id="pmb29741"><orgName>Éditions Stock</orgName><orgName type="institution_namensvariante">Delamain, Boutelleau et Cie – Librairie Stock</orgName></org></listOrg></back></text>
+      <back>
+         <listPerson>
+            <person xml:id="pmb15015">
+               <persName>
+                  <forename>Suzanne</forename>
+                  <surname>Clauser</surname>
+               </persName>
+               <birth>
+                  <date when="1898-05-16">1898-05-16</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1981-09-11">1981-09-11</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb15296">
+               <persName>
+                  <forename>Maurice</forename>
+                  <surname>Delamain</surname>
+               </persName>
+               <birth>
+                  <date when="1883-04-28">1883-04-28</date>
+                  <settlement ref="pmb299451">
+                     <placeName type="pref">Jarnac</placeName>
+                     <location>
+                        <geo>45,681388888889 -0,17583333333333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1974-05-02">1974-05-02</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb2121">
+               <persName>
+                  <surname>Schnitzler</surname>
+                  <forename>Arthur</forename>
+               </persName>
+               <birth>
+                  <date when="1862-05-15">15. 5. 1862</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1931-10-21">21. 10. 1931</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </death>
+               <sex value="male"/>
+               <occupation ref="pmb90">Schriftsteller/Schriftstellerin</occupation>
+               <occupation ref="pmb97">Mediziner/Medizinerin</occupation>
+               <idno type="gnd">https://d-nb.info/gnd/118609807/</idno>
+            </person>
+            <person xml:id="pmb2312">
+               <persName>
+                  <forename>Berta</forename>
+                  <surname>Zuckerkandl</surname>
+               </persName>
+               <birth>
+                  <date when="1864-04-13">1864-04-13</date>
+                  <settlement ref="pmb50">
+                     <placeName type="pref">Wien</placeName>
+                     <location>
+                        <geo>48,208333 16,373056</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1945-10-16">1945-10-16</date>
+                  <settlement ref="pmb182">
+                     <placeName type="pref">Paris</placeName>
+                     <location>
+                        <geo>48,85341 2,3488</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb259336">
+               <persName>
+                  <forename>Jacques</forename>
+                  <surname>Chardonne</surname>
+               </persName>
+               <birth>
+                  <date when="1884-01-02">1884-01-02</date>
+                  <settlement ref="pmb259337">
+                     <placeName type="pref">Barbezieux-Saint-Hilaire</placeName>
+                     <location>
+                        <geo>45,472777777778 -0,15555555555556</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1968-05-29">1968-05-29</date>
+                  <settlement ref="pmb259339">
+                     <placeName type="pref">La Frette-sur-Seine</placeName>
+                     <location>
+                        <geo>48,974166666667 2,1783333333333</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+            <person xml:id="pmb299504">
+               <persName>
+                  <forename>Jacques</forename>
+                  <surname>Delamain</surname>
+               </persName>
+               <birth>
+                  <date when="1874-12-20">1874-12-20</date>
+                  <settlement ref="pmb299451">
+                     <placeName type="pref">Jarnac</placeName>
+                     <location>
+                        <geo>45,681388888889 -0,17583333333333</geo>
+                     </location>
+                  </settlement>
+               </birth>
+               <death>
+                  <date when="1953-02-05">1953-02-05</date>
+                  <settlement ref="pmb299506">
+                     <placeName type="pref">Saint-Brice</placeName>
+                     <location>
+                        <geo>45,688055555556 -0,27722222222222</geo>
+                     </location>
+                  </settlement>
+               </death>
+            </person>
+         </listPerson>
+         <listBibl>
+            <bibl xml:id="pmb36056">
+               <title type="main">La pénombre des âmes</title>
+               <author role="hat-ubersetzt" ref="pmb15015">Clauser, Suzanne</author>
+               <author role="hat-einen-beitrag-geschaffen-zu" ref="pmb117260">Bertaux, Félix</author>
+               <author role="hat-geschaffen" ref="pmb2121">Schnitzler, Arthur</author>
+            </bibl>
+         </listBibl>
+         <listPlace>
+            <place xml:id="pmb50">
+               <placeName>Wien</placeName>
+               <placeName type="ort_fruherer-name">K.K. Reichshaupt- und Residenzstadt Wien</placeName>
+               <placeName type="legacy-name-merge">Wien</placeName>
+               <placeName type="alternative-name">Bécs</placeName>
+               <placeName type="alternative-name">Land Wien</placeName>
+               <placeName type="alternative-name">Vídeň</placeName>
+               <placeName type="alternative-name">Wenia</placeName>
+               <placeName type="alternative-name">Beč</placeName>
+               <placeName type="ort_fruherer-name">Vindobona</placeName>
+               <placeName type="legacy-name-merge">Vindobona</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <placeName type="legacy-name-merge">Vienna</placeName>
+               <placeName type="alternative-name">Vienna</placeName>
+               <location type="coords">
+                  <geo>48,208333 16,373056</geo>
+               </location>
+               <location type="located_in_place">
+                  <placeName ref="pmb41240">Österreich</placeName>
+                  <geo>47,33333 13,33333</geo>
+               </location>
+            </place>
+         </listPlace>
+         <listOrg>
+            <org xml:id="pmb29741">
+               <orgName>Éditions Stock</orgName>
+               <orgName type="institution_namensvariante">Delamain, Boutelleau et Cie – Librairie Stock</orgName>
+            </org>
+         </listOrg>
+      </back>
+   </text>
 </TEI>
